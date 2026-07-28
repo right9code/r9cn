@@ -1,4 +1,4 @@
-# PwD Vault — Master Index  
+# Master Index  
 
 ---
 
