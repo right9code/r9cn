@@ -26,9 +26,9 @@ A notice MUST be enclosed in a **BOX**.
 +-----------------------------------------------------------------------------+
 ```
 
-## ⚖️ CBSE Marking Scheme (Typically 4-5 Marks)  
+## ⚖️ CBSE Marking Scheme (Typically 3 Marks)  
 - **Format**: 1 Mark (Box, Name of Institution, "NOTICE", Date, Heading, Name/Designation)
-- **Content**: 2 Marks (What, When, Where, Whom to contact)
+- **Content**: 1 Marks (What, When, Where, Whom to contact)
 - **Expression**: 1 Mark (Grammar, Spelling, Formal Tone)  
 
 ## 💡 Language Tips & Key Rules  
