@@ -41,7 +41,7 @@
 ## Summary
 
 
-The poem explores the wonder of seeing the world through a magnifying glass, which reveals hidden marvels in ordinary objects — a scrap of chalk shows "a myriad shells," an inch of moss becomes a "forest" of flowers and trees, and a drop of water looks like a "hive of bees." The poet watches a spider spin its web with "tigerish claws" and observes the "silly flies" that stumble into its net. The poem concludes with the idea that even the moon could seem within reach through powerful lenses. It celebrates close observation and the extraordinary beauty hidden in the small and mundane.
+The poem explores the wonder of seeing the world through a magnifying glass, which reveals hidden marvels in ordinary objects — a scrap of chalk shows "a myriad shells," an inch of moss becomes a "forest" of flowers and trees, and a drop of water looks like a "hive of bees." The poet watches a spider spin its web with "tigerish claws" and observes the "silly flies" that stumble into its net. The poem concludes with the idea that even the moon could seem within reach through powerful lenses. It celebrates close observation and the extraordinary beauty hidden in the small and mundane.  
 
 
 ## Poetic Devices

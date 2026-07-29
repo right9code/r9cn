@@ -124,7 +124,7 @@
 ## Summary
 
 
-Gopi, a young girl, is tasked with gathering wild beans, rice, and mangoes but instead spends her time drawing pictures in the sand. A mysterious man gives her a magic brush with one rule: paint only for the poor, never for the wealthy. Gopi uses the brush to paint food, clothing, and tools for villagers in need. When the greedy Zamindar demands she paint treasures for him, she refuses and is thrown in prison. That night, she paints a road and a horse that carry her to freedom. The poem celebrates selfless generosity, courage, and the triumph of good over greed.
+Gopi, a young girl, is tasked with gathering wild beans, rice, and mangoes but instead spends her time drawing pictures in the sand. A mysterious man gives her a magic brush with one rule: paint only for the poor, never for the wealthy. Gopi uses the brush to paint food, clothing, and tools for villagers in need. When the greedy Zamindar demands she paint treasures for him, she refuses and is thrown in prison. That night, she paints a road and a horse that carry her to freedom. The poem celebrates selfless generosity, courage, and the triumph of good over greed.  
 
 
 ## Poetic Devices

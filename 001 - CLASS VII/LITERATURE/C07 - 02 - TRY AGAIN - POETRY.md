@@ -81,7 +81,7 @@ And that time did not fail.*
 ## Summary
 
 
-King Bruce of Scotland is in deep despair after failing repeatedly to accomplish a great deed for his people. While sitting in low spirits, he watches a spider attempt to climb to its cobweb home, falling nine times but persisting each time. Despite the King's doubts, the spider succeeds on its tenth attempt. Inspired by the spider's determination, King Bruce braces his mind and tries again, this time succeeding. The poem teaches that perseverance and refusal to give up are the keys to overcoming failure.
+King Bruce of Scotland is in deep despair after failing repeatedly to accomplish a great deed for his people. While sitting in low spirits, he watches a spider attempt to climb to its cobweb home, falling nine times but persisting each time. Despite the King's doubts, the spider succeeds on its tenth attempt. Inspired by the spider's determination, King Bruce braces his mind and tries again, this time succeeding. The poem teaches that perseverance and refusal to give up are the keys to overcoming failure.  
 
 
 ## Poetic Devices

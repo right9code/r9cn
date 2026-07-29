@@ -25,7 +25,7 @@ May the Lord bless you all!!
 ## Summary
 
 
-The poem is a heartfelt tribute to the soldiers who defend India's borders in all conditions — wind, snow, and scorching heat. Dr. Kalam highlights their tireless commitment as they guard mountains, valleys, deserts, marshes, seas, and air, sacrificing the prime of their youth for the nation. The soldiers are compared to yogis for their disciplined, selfless lives in lonely expanses. The poem concludes with a prayer and blessing for the brave soldiers, expressing the nation's deep gratitude and admiration.
+The poem is a heartfelt tribute to the soldiers who defend India's borders in all conditions — wind, snow, and scorching heat. Dr. Kalam highlights their tireless commitment as they guard mountains, valleys, deserts, marshes, seas, and air, sacrificing the prime of their youth for the nation. The soldiers are compared to yogis for their disciplined, selfless lives in lonely expanses. The poem concludes with a prayer and blessing for the brave soldiers, expressing the nation's deep gratitude and admiration.  
 
 
 ## Poetic Devices

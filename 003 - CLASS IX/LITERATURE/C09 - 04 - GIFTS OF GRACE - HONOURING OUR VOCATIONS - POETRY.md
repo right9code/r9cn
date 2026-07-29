@@ -37,7 +37,7 @@
 ## Summary
 
 
-The poem celebrates the diverse vocations of India's working people — craftspersons, artisans with lutes, carpenters, electricians, boatmen, shoemakers, cooks, designers, and masons. Each vocation is described as a source of identity and pride, with workers celebrating their unique contributions through music, rhythm, and song. The poem emphasizes that the voice of one's vocation is the voice of one's identity, paying tribute to the dignity and richness of skilled labor.
+The poem celebrates the diverse vocations of India's working people — craftspersons, artisans with lutes, carpenters, electricians, boatmen, shoemakers, cooks, designers, and masons. Each vocation is described as a source of identity and pride, with workers celebrating their unique contributions through music, rhythm, and song. The poem emphasizes that the voice of one's vocation is the voice of one's identity, paying tribute to the dignity and richness of skilled labor.  
 
 
 ## Poetic Devices

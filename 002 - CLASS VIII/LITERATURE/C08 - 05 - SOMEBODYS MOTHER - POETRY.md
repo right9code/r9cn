@@ -68,7 +68,7 @@
 ## Summary
 
 
-On a cold winter day, an old, ragged woman stands alone at a street crossing, too afraid to cross the slippery road. Schoolboys rush past her without a thought, but one kind boy pauses, offers his help, and safely guides her across. He returns to his friends, explaining that she is "somebody's mother" and hoping that someone would do the same for his own mother someday. That night, the old woman prays for the noble boy. The poem celebrates kindness, empathy, and the golden rule of treating others as we wish to be treated.
+On a cold winter day, an old, ragged woman stands alone at a street crossing, too afraid to cross the slippery road. Schoolboys rush past her without a thought, but one kind boy pauses, offers his help, and safely guides her across. He returns to his friends, explaining that she is "somebody's mother" and hoping that someone would do the same for his own mother someday. That night, the old woman prays for the noble boy. The poem celebrates kindness, empathy, and the golden rule of treating others as we wish to be treated.  
 
 
 ## Poetic Devices

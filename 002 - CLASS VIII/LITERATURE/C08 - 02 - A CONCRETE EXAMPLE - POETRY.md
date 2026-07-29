@@ -32,7 +32,7 @@
 ## Summary
 
 
-The poem humorously describes Mrs. Jones, the speaker's next-door neighbour, who is passionate about her peculiar garden full of stones. Her garden includes a "crazy path," a lily pond, a rockery, and a sundial with a strange device. She plants tiny, delicate plants between the stones — so small the speaker jokes they could be planted with a pin. When Mrs. Jones invites the speaker to admire a flower, the speaker discovers they have been standing on it the whole time. The poem is a light-hearted commentary on different perceptions of beauty and the irony of overlooking what is right in front of us.
+The poem humorously describes Mrs. Jones, the speaker's next-door neighbour, who is passionate about her peculiar garden full of stones. Her garden includes a "crazy path," a lily pond, a rockery, and a sundial with a strange device. She plants tiny, delicate plants between the stones — so small the speaker jokes they could be planted with a pin. When Mrs. Jones invites the speaker to admire a flower, the speaker discovers they have been standing on it the whole time. The poem is a light-hearted commentary on different perceptions of beauty and the irony of overlooking what is right in front of us.  
 
 
 ## Poetic Devices

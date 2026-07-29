@@ -54,7 +54,7 @@
 ## Summary
 
 
-At a Special Olympics hundred-yard dash, nine athletes line up to compete. When the race begins, the smallest runner stumbles and falls. Instead of continuing to race, all eight other runners stop, turn back, and help him to his feet. They then join hands and finish the race together, walking across the finish line as one. The crowd gives them a standing ovation, and all nine athletes receive gold medals. The poem powerfully illustrates that compassion and solidarity matter more than competition.
+At a Special Olympics hundred-yard dash, nine athletes line up to compete. When the race begins, the smallest runner stumbles and falls. Instead of continuing to race, all eight other runners stop, turn back, and help him to his feet. They then join hands and finish the race together, walking across the finish line as one. The crowd gives them a standing ovation, and all nine athletes receive gold medals. The poem powerfully illustrates that compassion and solidarity matter more than competition.  
 
 
 ## Poetic Devices

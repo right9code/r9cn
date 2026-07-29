@@ -26,7 +26,7 @@
 ## Summary
 
 
-The speaker, despite living miles from the railroad, is constantly aware of the train — hearing its whistle shriek during the busy day and seeing its red cinders glow against the night sky. Even though the speaker has warm friendships and is content with current companions, there is an irresistible pull toward the train and the promise of adventure it represents. The poem conveys the universal longing for travel and new experiences, suggesting that the desire to explore transcends comfort and familiarity. The train becomes a symbol of opportunity, adventure, and the unknown.
+The speaker, despite living miles from the railroad, is constantly aware of the train — hearing its whistle shriek during the busy day and seeing its red cinders glow against the night sky. Even though the speaker has warm friendships and is content with current companions, there is an irresistible pull toward the train and the promise of adventure it represents. The poem conveys the universal longing for travel and new experiences, suggesting that the desire to explore transcends comfort and familiarity. The train becomes a symbol of opportunity, adventure, and the unknown.  
 
 
 ## Poetic Devices

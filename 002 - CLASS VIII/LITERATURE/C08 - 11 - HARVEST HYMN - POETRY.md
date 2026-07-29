@@ -53,7 +53,7 @@ We praise thee, O Bramha, with cymbal and prayer.
 ## Summary
 
 
-The poem is a harvest hymn structured as a call-and-response prayer, with men's voices, women's voices, and all voices praising different deities for the bounty of the harvest. The men praise Surya (the Sun) and Varuna (Rain/Water) for nourishing the crops; the women praise Prithvi (the Earth) for her fertile, nurturing bosom; and all voices together praise Brahma, the Lord of the Universe, as the ultimate source of life and blessing. The poem is a celebration of nature's gifts, agricultural abundance, and the spiritual connection between humanity and the divine.
+The poem is a harvest hymn structured as a call-and-response prayer, with men's voices, women's voices, and all voices praising different deities for the bounty of the harvest. The men praise Surya (the Sun) and Varuna (Rain/Water) for nourishing the crops; the women praise Prithvi (the Earth) for her fertile, nurturing bosom; and all voices together praise Brahma, the Lord of the Universe, as the ultimate source of life and blessing. The poem is a celebration of nature's gifts, agricultural abundance, and the spiritual connection between humanity and the divine.  
 
 
 ## Poetic Devices

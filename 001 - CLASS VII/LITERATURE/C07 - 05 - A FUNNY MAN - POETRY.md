@@ -41,7 +41,7 @@
 ## Summary
 
 
-The poem describes a bizarre and amusing encounter with a "funny kind of man" who does everything in an upside-down manner — wearing a shoe on his head and hats on his feet, offering a currant bun as a "rose," and hopping home on his head. The speaker engages with the man, finding his behavior absurd yet oddly charming. The poet uses dialogue and repetition of the word "funny" to emphasize the nonsensical, lighthearted nature of the encounter. The poem celebrates harmless silliness and the joy of unexpected humor in everyday life.
+The poem describes a bizarre and amusing encounter with a "funny kind of man" who does everything in an upside-down manner — wearing a shoe on his head and hats on his feet, offering a currant bun as a "rose," and hopping home on his head. The speaker engages with the man, finding his behavior absurd yet oddly charming. The poet uses dialogue and repetition of the word "funny" to emphasize the nonsensical, lighthearted nature of the encounter. The poem celebrates harmless silliness and the joy of unexpected humor in everyday life.  
 
 
 ## Poetic Devices

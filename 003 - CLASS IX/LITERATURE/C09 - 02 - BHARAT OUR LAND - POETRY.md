@@ -27,7 +27,7 @@
 ## Summary
 
 
-The poem is a patriotic ode celebrating India's natural beauty, spiritual heritage, and historical greatness. The poet praises the mighty Himalayas as unparalleled, the generous Ganga for her unmatched grace, and the sacred Upanishads as supreme scriptures. He highlights the gallant warriors, sages, and the deep-rooted Brahma-knowledge and Buddha's Dhamma that have enriched the land. The refrain "she's peerless, let's praise her!" reinforces the poem's central message of national pride and reverence.
+The poem is a patriotic ode celebrating India's natural beauty, spiritual heritage, and historical greatness. The poet praises the mighty Himalayas as unparalleled, the generous Ganga for her unmatched grace, and the sacred Upanishads as supreme scriptures. He highlights the gallant warriors, sages, and the deep-rooted Brahma-knowledge and Buddha's Dhamma that have enriched the land. The refrain "she's peerless, let's praise her!" reinforces the poem's central message of national pride and reverence.  
 
 
 ## Poetic Devices

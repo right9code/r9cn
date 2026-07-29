@@ -27,7 +27,7 @@
 ## Summary
 
 
-A child floats paper boats down a running stream each day, writing their name and village on them in the hope that someone in a strange land will discover who they are. The boats are loaded with shiuli flowers, and the child imagines clouds as playmates racing against the boats. At night, the child dreams that the boats continue to float under the midnight stars, sailed by fairies of sleep carrying baskets full of dreams. The poem captures the innocence, imagination, and gentle yearning of childhood — the desire to be known and connected across distances.
+A child floats paper boats down a running stream each day, writing their name and village on them in the hope that someone in a strange land will discover who they are. The boats are loaded with shiuli flowers, and the child imagines clouds as playmates racing against the boats. At night, the child dreams that the boats continue to float under the midnight stars, sailed by fairies of sleep carrying baskets full of dreams. The poem captures the innocence, imagination, and gentle yearning of childhood — the desire to be known and connected across distances.  
 
 
 ## Poetic Devices

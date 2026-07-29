@@ -41,7 +41,7 @@
 ## Summary
 
 
-The poem reflects on the inadequacy of words to truly satisfy the heart. Words are compared to summer birds that depart leaving empty air, and to weeds of little worth. The poet argues that a few sincere words can bring deeper joy than "hosts of words" that reach the head but never touch the heart. Empty words are likened to plants that blossom impressively but produce no fruit. The poem values sincerity and brevity over verbosity.
+The poem reflects on the inadequacy of words to truly satisfy the heart. Words are compared to summer birds that depart leaving empty air, and to weeds of little worth. The poet argues that a few sincere words can bring deeper joy than "hosts of words" that reach the head but never touch the heart. Empty words are likened to plants that blossom impressively but produce no fruit. The poem values sincerity and brevity over verbosity.  
 
 
 ## Poetic Devices

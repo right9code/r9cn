@@ -31,7 +31,7 @@
 ## Summary
 
 
-The poem is a motivational address urging the reader to face life's challenges with courage and self-belief. The speaker acknowledges that the first step is the hardest and that fear can push one back, but comfort and the status quo are not what humans are made for — growth requires leaving ease behind. The poem concludes that believing in yourself is the key to getting your future on track. It is a direct, encouraging call to personal responsibility and inner strength.
+The poem is a motivational address urging the reader to face life's challenges with courage and self-belief. The speaker acknowledges that the first step is the hardest and that fear can push one back, but comfort and the status quo are not what humans are made for — growth requires leaving ease behind. The poem concludes that believing in yourself is the key to getting your future on track. It is a direct, encouraging call to personal responsibility and inner strength.  
 
 
 ## Poetic Devices
