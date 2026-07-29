@@ -25,6 +25,55 @@
 
 **REGINALD ARKELL**  
 
+
+---
+
+
+## Summary
+
+
+The poem humorously describes Mrs. Jones, the speaker's next-door neighbour, who is passionate about her peculiar garden full of stones. Her garden includes a "crazy path," a lily pond, a rockery, and a sundial with a strange device. She plants tiny, delicate plants between the stones — so small the speaker jokes they could be planted with a pin. When Mrs. Jones invites the speaker to admire a flower, the speaker discovers they have been standing on it the whole time. The poem is a light-hearted commentary on different perceptions of beauty and the irony of overlooking what is right in front of us.
+
+
+## Poetic Devices
+
+
+- **Refrain** — "My next-door neighbour, Mrs. Jones" is repeated at the start of each stanza, anchoring the poem's structure.
+
+
+- **Irony** — The situational irony of the speaker standing on the very flower they are admiring creates a humorous twist.
+
+
+- **Pun** — The title "A Concrete Example" works literally (concrete/stones in the garden) and figuratively (a clear illustration of Mrs. Jones's gardening habits).
+
+
+- **Hyperbole** — "They don't mean anything at all" and "planted them with a pin" exaggerate the speaker's dismissiveness.
+
+
+- **Imagery** — "A crazy path, a lily pond, a rockery" and "delicate and small" plants create vivid visual pictures of the garden.
+
+
+- **Enjambment** — Lines flow into each other without punctuation breaks, maintaining a conversational, anecdotal pace.
+
+
+- **Anticlimax** — The build-up of describing Mrs. Jones's garden leads to the anticlimactic reveal that the speaker has been standing on the flower — the grand moment is deflated for comic effect.
+
+
+- **Understatement** — "They don't mean anything at all" understates the speaker's ignorance, making the irony sharper.
+
+
+- **Tone:** Humorous, light-hearted, and gently mocking.
+
+
+## Rhyme Scheme
+
+
+ABBACC — each stanza follows this six-line pattern (e.g., Jones/stones/pond/beyond/device/nice).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Complete the following summary with exact words from the poem. One example has been done for you. Share your answers with your classmates and teacher.**  

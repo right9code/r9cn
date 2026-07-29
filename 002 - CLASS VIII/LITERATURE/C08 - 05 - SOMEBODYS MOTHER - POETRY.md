@@ -61,6 +61,58 @@
 
 **MARY DOW BRINE**  
 
+
+---
+
+
+## Summary
+
+
+On a cold winter day, an old, ragged woman stands alone at a street crossing, too afraid to cross the slippery road. Schoolboys rush past her without a thought, but one kind boy pauses, offers his help, and safely guides her across. He returns to his friends, explaining that she is "somebody's mother" and hoping that someone would do the same for his own mother someday. That night, the old woman prays for the noble boy. The poem celebrates kindness, empathy, and the golden rule of treating others as we wish to be treated.
+
+
+## Poetic Devices
+
+
+- **Simile** — "Came the boys like a flock of sheep" compares the rushing schoolboys to a flock, emphasizing their thoughtless, herd-like behavior.
+
+
+- **Repetition** — "Somebody's mother" is repeated to emphasize the woman's identity and evoke empathy.
+
+
+- **Alliteration** — "meek, timid," "slippery street" create rhythmic sound patterns.
+
+
+- **Imagery** — "The street was wet with a recent snow," "the woman's feet were aged and slow" create vivid visual and tactile images of cold and vulnerability.
+
+
+- **Contrast** — The indifference of the crowd vs. the kindness of one boy; the old woman's frailty vs. the boy's strength.
+
+
+- **Foreshadowing** — The boy's hope that "some fellow will lend a hand / To help my mother" foreshadows the moral reciprocity at the poem's heart.
+
+
+- **Narrative Arc** — The poem follows a clear storytelling structure: setting (cold day, old woman), rising action (boys passing by), climax (one boy helps), resolution (woman prays).
+
+
+- **Pathos** — "Alone, uncared for, amid the throng" and "the prayer she said" evoke deep sympathy and emotional resonance.
+
+
+- **Direct Address** — "She's somebody's mother, boys, you know" breaks the narrative to speak directly to the reader, reinforcing the moral.
+
+
+- **Tone:** Sympathetic, hopeful, and morally uplifting.
+
+
+## Rhyme Scheme
+
+
+AABB — each stanza uses couplet rhymes (e.g., grey/day, snow/slow, long/throng, by/by).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Arrange the events of the poem in the correct order of occurrence. Share your answers with your classmates and teacher.**  

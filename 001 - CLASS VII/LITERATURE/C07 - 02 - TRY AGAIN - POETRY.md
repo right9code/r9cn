@@ -74,6 +74,61 @@ And that time did not fail.*
 
 **ELIZA COOK**  
 
+
+---
+
+
+## Summary
+
+
+King Bruce of Scotland is in deep despair after failing repeatedly to accomplish a great deed for his people. While sitting in low spirits, he watches a spider attempt to climb to its cobweb home, falling nine times but persisting each time. Despite the King's doubts, the spider succeeds on its tenth attempt. Inspired by the spider's determination, King Bruce braces his mind and tries again, this time succeeding. The poem teaches that perseverance and refusal to give up are the keys to overcoming failure.
+
+
+## Poetic Devices
+
+
+- **Metaphor** — The spider's repeated climbing is an implied comparison to King Bruce's own struggles; both must persist despite failure.
+
+
+- **Personification** — The spider is given human qualities: it "utter[s] the least complaint," its "head grew steady," suggesting thought and resolve.
+
+
+- **Repetition** — "tried and tried," "up, up," "steadily, steadily" emphasize continuous, untiring effort and build rhythmic momentum.
+
+
+- **Alliteration** — "slippery sprawl," "silken, filmy," "cling and crawl" create sound patterns that mirror the spider's labored movement.
+
+
+- **Simile** — "As grieved as man could be" directly compares the King's sorrow to the deepest human grief.
+
+
+- **Imagery** — "Steadily, steadily, inch by inch / Higher and higher he got" creates a vivid picture of the spider's slow, determined ascent.
+
+
+- **Exclamation** — "Bravo, bravo!", "Ah me!", "Oh say, will he lose or win it?" convey emotional intensity and the King's growing excitement.
+
+
+- **Rhetorical Question** — "He conquered, and why shouldn't I?" prompts the reader to agree that if a spider can succeed, so can a human.
+
+
+- **Narrative Structure** — The poem tells a complete story with a beginning (despair), middle (watching the spider), and end (inspired action), functioning as a parable.
+
+
+- **Antithesis** — The King's initial despair is set against his final determination; the spider's repeated falls contrast with its ultimate success.
+
+
+- **Enjambment** — Lines flow across breaks ("It soon began to cling and crawl / Straight up with strong endeavour"), mirroring the spider's continuous climb.
+
+
+## Rhyme Scheme
+
+
+ABAB — each stanza follows an alternating rhyme pattern (e.g., think/crown/sink/down).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Complete the summary of the poem by filling in the blanks with suitable words from the text given in the box below. Share your answers with the teacher. An example has been given.**  

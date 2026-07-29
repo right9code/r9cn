@@ -17,6 +17,55 @@
 
 **MAYA ANTHONY**  
 
+
+---
+
+
+## Summary
+
+
+The poem uses the metaphor of painting to describe gardening, portraying the earth as a rich palette where gardeners' dreams take root. Seeds are compared to brushstrokes dropped onto the soil, and blossoms bloom as a "painted sight" dancing in morning light. Each garden plot becomes a wide canvas where art and nature coincide, and through the gardener's patient efforts, gardens transform into living paintings that shift with the seasons. The poem celebrates the creativity inherent in working with the land — the careful selection of colours, the layering of textures, the gradual revelation of beauty that mirrors the act of creating art. It can also be read as an allegory for life's journey: the preparation of the soil represents laying foundations, the planting represents effort and hope, and the blooming represents the rewards of perseverance. The diversity of colours and forms in the garden mirrors the richness of human experience and the beauty of a life well tended.
+
+
+## Poetic Devices
+
+
+- **Metaphor** — "Palette of earth," "Brushstrokes of seeds," "Each plot, a canvas wide" — the entire poem is an extended metaphor comparing gardening to painting.
+
+
+- **Personification** — "Blossoms bloom, a painted sight / Dancing in the morning light" gives flowers human-like movement.
+
+
+- **Alliteration** — "Blossoms bloom," "planted... palette," "green... garden."
+
+
+- **Imagery** — "Shades of green, red, and blue," "vibrant hue," "painted sight" create vivid visual pictures.
+
+
+- **Allegory** — The garden symbolizes life's journey, growth, and harmony; diversity of colors represents diversity of experience.
+
+
+- **Enjambment** — Lines flow without breaks ("Palette of earth, rich and deep, / Where dreams of gardeners seep"), mimicking the gradual, organic process of growth.
+
+
+- **Oxymoron** — "Gardens become paintings still" merges the living (gardens) with the static (paintings), suggesting nature's art is timeless.
+
+
+- **Synesthesia** — "Vibrant hue" and "painted sight" blend visual experiences, enhancing the poem's artistic quality.
+
+
+- **Tone:** Appreciative, joyful.
+
+
+## Rhyme Scheme
+
+
+AABB — couplet rhymes throughout (e.g., deep/seep, true/hue, sight/light, blue/new, wide/coincide, till/still).
+
+
+---
+
+
 ### Check Your Understanding  
 
 **I. Read the poem again and complete the summary of each stanza by filling in the blanks.**  

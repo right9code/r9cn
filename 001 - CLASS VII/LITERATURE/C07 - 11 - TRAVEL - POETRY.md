@@ -19,6 +19,52 @@
 
 **EDNA ST. VINCENT MILLAY**  
 
+
+---
+
+
+## Summary
+
+
+The speaker, despite living miles from the railroad, is constantly aware of the train — hearing its whistle shriek during the busy day and seeing its red cinders glow against the night sky. Even though the speaker has warm friendships and is content with current companions, there is an irresistible pull toward the train and the promise of adventure it represents. The poem conveys the universal longing for travel and new experiences, suggesting that the desire to explore transcends comfort and familiarity. The train becomes a symbol of opportunity, adventure, and the unknown.
+
+
+## Poetic Devices
+
+
+- **Personification** — The train's whistle is described as "shrieking," giving it a human-like vocal quality; the engine is said to be "steaming" as if alive.
+
+
+- **Symbolism** — The train symbolizes adventure and opportunities for exploration and discovery.
+
+
+- **Imagery** — "cinders red on the sky" (visual), "whistle shrieking" (auditory), "day is loud with voices speaking" (auditory), "heart is warm" (emotional/tactile).
+
+
+- **Repetition** — "There isn't a train goes by" is repeated in all three stanzas to emphasize the speaker's constant preoccupation with the train.
+
+
+- **Enjambment** — Lines flow without pause ("The railroad track is miles away, / And the day is loud with voices speaking"), creating a breathless, longing rhythm.
+
+
+- **Juxtaposition** — The busy day is set against the still night; contentment with friends is set against the restless pull of the train, creating tension between satisfaction and wanderlust.
+
+
+- **Contrast** — The busy day vs. the still night; contentment with friends vs. restless desire to travel.
+
+
+- **Tone:** Enthusiastic, thoughtful, and curious.
+
+
+## Rhyme Scheme
+
+
+ABAB — each stanza uses alternating rhymes (e.g., away/speaking/day/shrieking; by/dreaming/sky/steaming; make/knowing/take/going).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. The main ideas of each stanza of the poem are given below. Write the number of the stanza against the matching main idea.**  

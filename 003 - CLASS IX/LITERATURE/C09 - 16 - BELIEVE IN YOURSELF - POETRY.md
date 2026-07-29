@@ -25,6 +25,53 @@
 **ROBERT LANGLEY**  
 
 
+---
+
+
+## Summary
+
+
+The poem is a motivational address urging the reader to face life's challenges with courage and self-belief. The speaker acknowledges that the first step is the hardest and that fear can push one back, but comfort and the status quo are not what humans are made for — growth requires leaving ease behind. The poem concludes that believing in yourself is the key to getting your future on track. It is a direct, encouraging call to personal responsibility and inner strength.
+
+
+## Poetic Devices
+
+
+- **Imagery** — "There is no crowd to see," "push you back in fear," "the first step is the hardest" create mental pictures of solitary struggle and determination.
+
+
+- **Symbolism** — "The future" symbolizes potential and destiny; "the first step" represents the courage to begin change.
+
+
+- **Contrast** — "Ease in comfort" vs. "This isn't how we grow"; "pull you forward" vs. "push you back in fear."
+
+
+- **Direct Address** — The use of "You" creates an intimate, conversational tone as if the speaker is talking directly to the reader.
+
+
+- **Antithesis** — "Ease in comfort" vs. "This isn't how we grow"; "pull you forward" vs. "push you back in fear" create binary choices that heighten the poem's urgency.
+
+
+- **Enjambment** — Lines flow without breaks ("Step up to the challenge / There is no crowd to see"), creating a sense of forward momentum.
+
+
+- **Parallelism** — "This isn't what we are made for / This isn't how we grow" uses parallel structure to reinforce the message.
+
+
+- **Apostrophe** — The poet directly addresses the reader ("You just need to believe in yourself"), creating an intimate, coaching relationship.
+
+
+- **Tone:** Motivational, encouraging, determined.
+
+
+## Rhyme Scheme
+
+
+AABB — couplet rhymes throughout (e.g., see/be, fear/near, quo/grow, back/track).
+
+
+---
+
 
 **I. Based on your understanding of the poem, select the correct central idea for each stanza from the options given.**  
 

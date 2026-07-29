@@ -21,6 +21,58 @@
 
 **RABINDRANATH TAGORE**  
 
+
+---
+
+
+## Summary
+
+
+The poet cannot consciously remember his mother, but her presence lingers through sensory memories — a tune that hovers over his playthings, the scent of shiuli flowers on an autumn morning, and the stillness of the sky that reminds him of her gaze. Each stanza uses a different sense (hearing, smell, sight) to evoke the mother's presence. The refrain "I cannot remember my mother" underscores the bittersweet nature of memory — she is gone from conscious recall but alive in the poet's senses and emotions.
+
+
+## Poetic Devices
+
+
+- **Refrain** — "I cannot remember my mother" is repeated at the start of each stanza, creating a haunting, meditative rhythm.
+
+
+- **Sensory Imagery** — Auditory (tune of a song she hummed), olfactory (smell of shiuli flowers, scent of temple service), visual (stillness of her gaze spread across the sky).
+
+
+- **Symbolism** — Shiuli flowers symbolize the mother's lingering presence; the sky represents the vastness of her memory; the hovering tune represents the subconscious echo of her love.
+
+
+- **Personification** — "A tune seems to hover over my playthings" gives the tune a ghostly, living quality.
+
+
+- **Alliteration** — "stillness... spread," "shiuli... scent," "play... playthings."
+
+
+- **Synesthesia** — "The stillness of / my mother's gaze on my face / has spread all over the sky" blends visual (gaze) with spatial (spread across sky), creating an ethereal, boundless sensation.
+
+
+- **Enjambment** — Lines flow without breaks, mirroring the way memories drift and blend across senses.
+
+
+- **Antithesis** — "I cannot remember" is set against the vivid sensory memories that follow, creating a paradox: the mother is forgotten consciously but present subconsciously.
+
+
+- **Pathos** — The title itself — "I Cannot Remember My Mother" — immediately evokes deep sadness and longing.
+
+
+- **Tone:** Nostalgic, tender, bittersweet.
+
+
+## Rhyme Scheme
+
+
+Free verse — the poem uses prose-like lines without a consistent rhyme scheme.
+
+
+---
+
+
 ### Check Your Understanding  
 
 **I. Fill in the blanks with appropriate words.**  

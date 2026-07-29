@@ -34,6 +34,58 @@
 
 **WALTER DE LA MARE**  
 
+
+---
+
+
+## Summary
+
+
+The poem explores the wonder of seeing the world through a magnifying glass, which reveals hidden marvels in ordinary objects — a scrap of chalk shows "a myriad shells," an inch of moss becomes a "forest" of flowers and trees, and a drop of water looks like a "hive of bees." The poet watches a spider spin its web with "tigerish claws" and observes the "silly flies" that stumble into its net. The poem concludes with the idea that even the moon could seem within reach through powerful lenses. It celebrates close observation and the extraordinary beauty hidden in the small and mundane.
+
+
+## Poetic Devices
+
+
+- **Metaphor** — "I can make Magic talk" personifies the magnifying glass as a magical, speaking entity; moss is called a "forest."
+
+
+- **Simile** — "A drop of water / Like hive of bees" directly compares a water droplet to a beehive.
+
+
+- **Personification** — The magnifying glass is said to "make Magic talk"; the spider is described with "tigerish claws."
+
+
+- **Alliteration** — "deft spider," "woven web-silk," "spinnerets" create rhythmic consonant patterns.
+
+
+- **Imagery** — "A myriad shells show / In a scrap of chalk," "A forest — flowers and trees" create vivid visual pictures of magnified worlds.
+
+
+- **Exclamation** — "The tigerish claws he has!" and "With all those eyes!" convey the poet's excitement and wonder.
+
+
+- **Enjambment** — Lines flow without breaks ("Of but an inch of moss / A forest—flowers and trees"), mirroring the seamless expansion of vision through the lens.
+
+
+- **Climactic Structure** — The poem builds from small earthly objects (chalk, moss, water) to the celestial (moon), creating a sense of escalating wonder.
+
+
+- **Oxymoron** — "Magic talk" combines the tangible (glass) with the supernatural (magic), capturing the paradox of scientific observation producing awe.
+
+
+- **Tone:** Wonder, curiosity, and fascination.
+
+
+## Rhyme Scheme
+
+
+ABCB — each quatrain rhymes lines 2 and 4 (e.g., talk/chalk, trees/bees, jets/eyes, glass/surpass).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Complete the summary of the poem given below with suitable words from the poem.**  

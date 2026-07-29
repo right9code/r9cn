@@ -18,6 +18,67 @@ May the Lord bless you all!!
 
 **A.P.J. ABDUL KALAM**  
 
+
+---
+
+
+## Summary
+
+
+The poem is a heartfelt tribute to the soldiers who defend India's borders in all conditions — wind, snow, and scorching heat. Dr. Kalam highlights their tireless commitment as they guard mountains, valleys, deserts, marshes, seas, and air, sacrificing the prime of their youth for the nation. The soldiers are compared to yogis for their disciplined, selfless lives in lonely expanses. The poem concludes with a prayer and blessing for the brave soldiers, expressing the nation's deep gratitude and admiration.
+
+
+## Poetic Devices
+
+
+- **Simile** — "Treading the lonely expanses as yogis" compares soldiers to yogis, emphasizing their discipline and self-sacrifice.
+
+
+- **Metaphor** — "Wind chimes of my land vibrate your feat" uses wind chimes as a metaphor for nature celebrating the soldiers' achievements.
+
+
+- **Personification** — The wind chimes are given the ability to "vibrate" in honor of the soldiers.
+
+
+- **Repetition** — "You" and "we" are repeated throughout to contrast the soldiers who protect and the citizens who sleep safely.
+
+
+- **Alliteration** — "season or snowy," "scorching sun's sweltering" create rhythmic emphasis on harsh conditions.
+
+
+- **Imagery** — "Windy season or snowy days / Or scorching sun's sweltering rays," "Climbing the heights or striding the valleys" paint vivid pictures of diverse terrains and weather.
+
+
+- **Hyperbole** — "Prime of your youth given to the nation!!" amplifies the scale of sacrifice.
+
+
+- **Anaphora** — "You" is repeated at the start of multiple lines ("You are great sons," "You still hold on," "You are there guarding"), creating a direct, hymn-like address.
+
+
+- **Asyndeton** — The listing of terrains without conjunctions ("Climbing the heights or striding the valleys / Defending the deserts or guarding the marshes") emphasizes the vast range of the soldiers' duty.
+
+
+- **Apostrophe** — The poem directly addresses the soldiers ("Oh! Defenders of borders"), creating an intimate, emotional connection.
+
+
+- **Antithesis** — "When we are all asleep / You still hold on to your deed" contrasts citizens' rest with soldiers' vigilance.
+
+
+- **Exclamation** — Multiple exclamation marks ("given to the nation!!", "We pray for you brave men!!") convey intense emotion and reverence.
+
+
+- **Tone:** Admiring, respectful, grateful, and prayerful.
+
+
+## Rhyme Scheme
+
+
+Free verse — the poem does not follow a strict rhyme scheme but uses rhythmic lines and exclamatory endings for emotional impact.
+
+
+---
+
+
 | Note                                                                                                                 |  
 | -------------------------------------------------------------------------------------------------------------------- |  
 | When the poet mentions 'great sons' he is actually referring to all the soldiers (men and women) serving the nation. |  

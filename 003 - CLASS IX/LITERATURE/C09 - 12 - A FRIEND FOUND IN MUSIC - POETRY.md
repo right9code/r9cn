@@ -20,6 +20,50 @@
 **BRYANNA T. PERKINS**  
 
 
+---
+
+
+## Summary
+
+
+The poem expresses the profound and multifaceted role music plays in the poet's life. Music is compared to an ocean that pulls her irresistibly to the shore — vast, deep, and all-consuming in its emotional power. It is also a rhythm that moves her to the core, a physical force that resonates in her body and soul. When sadness strikes, music becomes therapy that heals emotional wounds and lifts her spirits during difficult times. It is present not only in sorrow but also during her happiest moments, underscoring joy and amplifying celebration. Above all, music is described as a "needed friend" — dependable, constant, and unwavering when no one else seems to care. The poem builds through these metaphors to show that music is not merely entertainment but a lifeline, a companion, and a source of strength that carries the poet through every emotional landscape of life.
+
+
+## Poetic Devices
+
+
+- **Metaphor** — "Music is the ocean," "Music is the rhythm," "Music is the therapy," "Music is the needed friend" — each metaphor reveals a different facet of music's role.
+
+
+- **Personification** — Music is given human qualities: it "lifts my spirits," acts as a "friend," and "pulls me to the shore."
+
+
+- **Repetition** — The word "Music" is repeated at the start of multiple lines to emphasize its centrality and create a rhythmic, chant-like quality.
+
+
+- **Idiom** — "Feel blue" means feeling sad or depressed.
+
+
+- **Enjambment** — Lines flow without breaks ("Music is the ocean / That pulls me to the shore"), creating a smooth, musical rhythm that mirrors the subject.
+
+
+- **Paradox** — Music is both "the ocean" (vast, overwhelming) and "the needed friend" (intimate, personal), capturing its multifaceted nature.
+
+
+- **Epanalepsis** — The repetition of "Music" at the start of multiple lines creates a circular, meditative structure.
+
+
+- **Tone:** Thoughtful, grateful, reflective.
+
+
+## Rhyme Scheme
+
+
+AABB — couplet rhymes (e.g., ocean/shore, rhythm/core, blue/through, there/care).
+
+
+---
+
 
 **I. Read the poem again to complete the poet's diary about her feelings on music. Fill in the blanks with words from the poem.**  
 

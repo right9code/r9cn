@@ -34,6 +34,49 @@ You'll find it true.
 
 **Moral :** One good turn deserves another.  
 
+
+---
+
+
+## Summary
+
+
+The poem reflects on the simple yet profound truth that kindness creates a ripple effect in life. It describes how strangers help one another in times of trouble — changing a tyre on a roadside, giving a gift without expecting payment, or offering assistance when someone is in danger. Each of these small, selfless acts carries a significance far beyond the moment, because goodness "will last forever" in the memory and heart of the one who receives it. The poet shares this "rhyme of life" with the reader directly, in the hope they will find it true from their own experience. The poem carries the moral "One good turn deserves another," but goes beyond mere reciprocity — it suggests that kindness is its own reward and that investing in good deeds creates a cycle of generosity that enriches both giver and receiver. The title itself implies that life follows a pattern, a rhyme, and that pattern is one of mutual care and compassion.
+
+
+## Poetic Devices
+
+
+- **Repetition** — The phrase "rhyme of life" is repeated to reinforce the poem's central message about the cycle of kindness.
+
+
+- **Symbolism** — The "rhyme of life" symbolizes the interconnected nature of human kindness and its enduring impact.
+
+
+- **Imagery** — "Changing a tyre / Giving a gift" creates visual images of everyday acts of kindness.
+
+
+- **Metaphor** — "Each human life / Can touch another" uses touch as a metaphor for the lasting impact of kindness.
+
+
+- **Parallelism** — "Changing a tyre / Giving a gift / 'Please, no payment / A simple gift'" uses parallel structures to list acts of kindness rhythmically.
+
+
+- **Direct Address** — "I give to you / In certain hope / You'll find it true" speaks directly to the reader, making the message personal.
+
+
+- **Tone:** Warm, hopeful, and reflective.
+
+
+## Rhyme Scheme
+
+
+AABB — couplet rhymes throughout (e.g., care/shared, trouble/struggle, stranger/danger, gift/lift, another/forever).
+
+
+---
+
+
 ## Overview  
 
 Kindness always pays. Every act of goodness or kindness you do today will return to you sooner or later in a rewarding way. So one should invest in good deeds. Remember, if you do so, God will fill your life's pockets with His blessings.  

@@ -21,6 +21,62 @@
 **SUBRAMANIA BHARATI**  
 
 
+---
+
+
+## Summary
+
+
+The poem is a patriotic ode celebrating India's natural beauty, spiritual heritage, and historical greatness. The poet praises the mighty Himalayas as unparalleled, the generous Ganga for her unmatched grace, and the sacred Upanishads as supreme scriptures. He highlights the gallant warriors, sages, and the deep-rooted Brahma-knowledge and Buddha's Dhamma that have enriched the land. The refrain "she's peerless, let's praise her!" reinforces the poem's central message of national pride and reverence.
+
+
+## Poetic Devices
+
+
+- **Personification** — The Ganga is given human qualities ("generous," "grace"); India is called "sunny golden land" with human-like radiance.
+
+
+- **Metaphor** — "This sunny golden land" is a metaphor for India's richness and glory.
+
+
+- **Repetition** — The refrain "she's peerless, let's praise her!" is repeated to create an anthem-like rhythm and reinforce national pride.
+
+
+- **Hyperbole** — "There's no equal anywhere on earth" and "what scriptures else to name with them?" use extreme praise to emphasize India's uniqueness.
+
+
+- **Alliteration** — "peerless... praise," "Buddha... preached," "sages... sanctified."
+
+
+- **Imagery** — "The mighty Himavant," "The generous Ganga," "sunny golden land" create vivid visual and symbolic images.
+
+
+- **Rhetorical Question** — "Which other river can match her grace?" and "What scriptures else to name with them?" challenge the reader to admit India's supremacy.
+
+
+- **Enjambment** — Lines flow into each other ("The mighty Himavant is ours- / there's no equal anywhere on earth"), creating a continuous, chant-like momentum.
+
+
+- **Apostrophe** — The poet directly addresses India and the reader, creating an intimate, patriotic bond.
+
+
+- **Elevated Diction** — Words like "mighty," "sacred," "gallant," "sanctified," "hoary antiquity" lend grandeur and reverence.
+
+
+- **Anaphora** — "The" is repeated at the start of multiple lines ("The mighty Himavant," "The generous Ganga," "The sacred Upanishads"), creating a litany-like rhythm.
+
+
+- **Tone:** Reverential, proud, celebratory.
+
+
+## Rhyme Scheme
+
+
+AABB — couplet rhymes throughout (e.g., ours/earth, ours/grace, ours/them, ours/her).
+
+
+---
+
 
 **I. Fill in the blanks by choosing appropriate words from the box given below to complete the summary of the poem.**  
 

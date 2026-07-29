@@ -117,6 +117,58 @@
 
 **ADAPTED FROM A FOLK TALE**  
 
+
+---
+
+
+## Summary
+
+
+Gopi, a young girl, is tasked with gathering wild beans, rice, and mangoes but instead spends her time drawing pictures in the sand. A mysterious man gives her a magic brush with one rule: paint only for the poor, never for the wealthy. Gopi uses the brush to paint food, clothing, and tools for villagers in need. When the greedy Zamindar demands she paint treasures for him, she refuses and is thrown in prison. That night, she paints a road and a horse that carry her to freedom. The poem celebrates selfless generosity, courage, and the triumph of good over greed.
+
+
+## Poetic Devices
+
+
+- **Symbolism** — The magic brush symbolizes talent, creativity, and the power of art to serve the common good; the Zamindar represents greed and abuse of power.
+
+
+- **Personification** — The brush is given magical life, capable of turning painted objects into reality.
+
+
+- **Dialogue** — Direct speech ("Paint not for the wealthy ones, but only for the poor") drives the moral lesson.
+
+
+- **Repetition** — "Did you gather wild beans, Gopi? / Did you fetch some rice?" repeated to create a rhythmic call-and-response pattern.
+
+
+- **Contrast** — Gopi's selflessness for the poor vs. the Zamindar's selfishness and greed.
+
+
+- **Alliteration** — "paint... poor," "seize... stamp" create rhythmic consonant patterns.
+
+
+- **Foreshadowing** — The mysterious man's instruction to "paint not for the wealthy ones" foreshadows the conflict with the Zamindar.
+
+
+- **Archetype** — Gopi represents the classic folk hero: humble, selfless, and clever; the Zamindar is the greedy antagonist.
+
+
+- **Onomatopoeia** — "Roars," "bellows," "clatter and a clank" mimic the sounds of conflict and escape.
+
+
+- **Tone:** Whimsical, moral, and adventurous.
+
+
+## Rhyme Scheme
+
+
+Irregular — the poem does not follow a strict rhyme scheme, using free-flowing lines suited to its folk-tale narrative style.
+
+
+---
+
+
 #### **Let us discuss**  
 
 **I. Arrange the events in order of occurrence in the poem. The last one has been marked for you. Share your answers with your classmates and teacher.**  

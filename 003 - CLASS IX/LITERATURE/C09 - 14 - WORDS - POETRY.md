@@ -34,6 +34,61 @@
 
 **CHARLES SWAIN**  
 
+
+---
+
+
+## Summary
+
+
+The poem reflects on the inadequacy of words to truly satisfy the heart. Words are compared to summer birds that depart leaving empty air, and to weeds of little worth. The poet argues that a few sincere words can bring deeper joy than "hosts of words" that reach the head but never touch the heart. Empty words are likened to plants that blossom impressively but produce no fruit. The poem values sincerity and brevity over verbosity.
+
+
+## Poetic Devices
+
+
+- **Simile** — "Words, like summer birds, depart" compares fleeting words to migrating birds; "words are of as little worth / As just so many weeds" compares empty words to worthless plants.
+
+
+- **Metaphor** — "The heart, a pilgrim upon earth" compares the heart to a wandering seeker; "Like plants that make a gaudy show" metaphorically compares empty words to ornamental but fruitless plants.
+
+
+- **Repetition** — "Words" and "satisfy" are repeated to reinforce the poem's central concern.
+
+
+- **Alliteration** — "sunny... say," "fewest... few," "fruit... flower."
+
+
+- **Hyperbole** — "The world might hold a feast" exaggerates the hypothetical power of satisfying words.
+
+
+- **Imagery** — "Summer birds depart," "empty air," "blossom to the root" create vivid visual and emotional images.
+
+
+- **Antithesis** — "A little said, and truly said" is set against "hosts of words, which reach the head / But never touch the heart," creating a powerful contrast between sincerity and verbosity.
+
+
+- **Enjambment** — Lines flow across breaks, mimicking the way words spill out without truly landing.
+
+
+- **Paradox** — Words are meant to satisfy the heart, yet they often "satisfy the least" — the poem's central irony.
+
+
+- **Climactic Structure** — The poem builds from disappointment (words fail) to a small but profound truth (sincerity wins).
+
+
+- **Tone:** Reflective, disillusioned, then admiring of sincerity.
+
+
+## Rhyme Scheme
+
+
+AABB — couplet rhymes throughout (e.g., heart/care, depart/air, earth/needs, worth/weeds, impart/head/heart, way/say, dear/clear, chest/test, feast/least, show/grow, root/fruit).
+
+
+---
+
+
 ### Check Your Understanding  
 
 **I. Fill in the blanks with one word from the poem.**  

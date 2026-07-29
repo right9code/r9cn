@@ -31,8 +31,58 @@
 **ANONYMOUS**  
 
 
+---
 
-**I. Based on your understanding of the poem, state whether the following statements are true or false. Also, rectify the false statements.**
+
+## Summary
+
+
+The poem celebrates the diverse vocations of India's working people — craftspersons, artisans with lutes, carpenters, electricians, boatmen, shoemakers, cooks, designers, and masons. Each vocation is described as a source of identity and pride, with workers celebrating their unique contributions through music, rhythm, and song. The poem emphasizes that the voice of one's vocation is the voice of one's identity, paying tribute to the dignity and richness of skilled labor.
+
+
+## Poetic Devices
+
+
+- **Personification** — Vocations are given human-like voices and emotions ("celebrating," "hailing," "humming," "singing").
+
+
+- **Metaphor** — "Delicious singing of the cook" is a metaphor blending taste and sound; "The voice of their vocation is the voice of their identity" equates work with selfhood.
+
+
+- **Repetition** — "I hear Bharat celebrating" is repeated at the beginning and end, creating a frame structure and emphasizing national celebration.
+
+
+- **Imagery** — "Artisans with lutes," "cables and wires to brighten our lives," "nets from the shore" create vivid visual and auditory images.
+
+
+- **Alliteration** — "varied vocations," "celebrating... craft," "designer, mason."
+
+
+- **Synesthesia** — "Delicious singing of the cook" blends taste and sound, suggesting that the quality of work is so pleasing it transcends a single sense.
+
+
+- **Anaphora** — "The" begins multiple lines ("The artisans," "The carpenters," "The electricians," "The boatmen"), creating a cumulative, celebratory catalogue.
+
+
+- **Catalogue/List Poem** — The poem lists multiple vocations in succession, building a panoramic tribute to India's working people.
+
+
+- **Enjambment** — Lines spill over without punctuation breaks, mirroring the continuous, interconnected flow of labor and life.
+
+
+- **Tone:** Celebratory, reverential, joyful.
+
+
+## Rhyme Scheme
+
+
+Free verse — no strict rhyme scheme; the poem uses prose-like lines with rhythmic flow.
+
+
+---
+
+
+**I. Based on your understanding of the poem, state whether the following statements are true or false. Also, rectify the false statements.**  
 1. The poem highlights the skilled work of craftsperson.
 2. The poet shares that musicians express emotions through their instruments.
 3. The carpenters in the poem are admired for their logical work.

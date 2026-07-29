@@ -34,6 +34,55 @@
 
 **NATALIE JOAN**  
 
+
+---
+
+
+## Summary
+
+
+The poem describes a bizarre and amusing encounter with a "funny kind of man" who does everything in an upside-down manner — wearing a shoe on his head and hats on his feet, offering a currant bun as a "rose," and hopping home on his head. The speaker engages with the man, finding his behavior absurd yet oddly charming. The poet uses dialogue and repetition of the word "funny" to emphasize the nonsensical, lighthearted nature of the encounter. The poem celebrates harmless silliness and the joy of unexpected humor in everyday life.
+
+
+## Poetic Devices
+
+
+- **Repetition** — The word "funny" is repeated throughout ("funny kind of man," "funny sounding sight," "funny looking smell," "funny feeling sound") to reinforce the humorous and absurd tone.
+
+
+- **Alliteration** — "funny feeling," "funny sounding," "funny looking" create a playful, rhythmic pattern.
+
+
+- **Inversion** — "Never had I seen before / Such a funny sounding sight" uses reversed word order for poetic rhythm.
+
+
+- **Dialogue** — The inclusion of direct speech ("Allow me to present Your Highness with a rose") makes the poem lively and conversational.
+
+
+- **Humor/Irony** — The contrast between the man's polite manners and his absurd actions creates situational irony.
+
+
+- **Synesthesia** — "Funny sounding sight," "funny looking smell," "funny feeling sound" deliberately mix sensory categories (sound+sight, sight+smell, feeling+sound), creating an absurd, disorienting effect that mirrors the man's upside-down world.
+
+
+- **Oxymoron** — "Funny sounding sight" combines contradictory sensory experiences, heightening the nonsense.
+
+
+- **Hyperbole** — The entire scenario is exaggerated beyond plausibility — a man wearing shoes on his head and hats on his feet — to maximize comedic effect.
+
+
+- **Imagery** — "He wore a shoe upon his head / And hats upon his feet" paints a vivid, comical visual.
+
+
+## Rhyme Scheme
+
+
+ABCB — each stanza uses a four-line pattern with lines 2 and 4 rhyming (e.g., street/feet, me/be, rose/nose, ground/sound).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Work in pairs. Identify the true statements. Check your answers with the teacher.**  

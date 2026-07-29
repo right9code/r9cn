@@ -20,6 +20,52 @@
 
 **RABINDRANATH TAGORE**  
 
+
+---
+
+
+## Summary
+
+
+A child floats paper boats down a running stream each day, writing their name and village on them in the hope that someone in a strange land will discover who they are. The boats are loaded with shiuli flowers, and the child imagines clouds as playmates racing against the boats. At night, the child dreams that the boats continue to float under the midnight stars, sailed by fairies of sleep carrying baskets full of dreams. The poem captures the innocence, imagination, and gentle yearning of childhood — the desire to be known and connected across distances.
+
+
+## Poetic Devices
+
+
+- **Symbolism** — Paper boats represent the child's innocence, dreams, and messages sent out into the world; shiuli flowers symbolize purity and beauty; midnight stars represent the vast universe of dreams.
+
+
+- **Personification** — Clouds are imagined as "playmates" racing with the boats; fairies of sleep are described as sailors.
+
+
+- **Imagery** — "Big black letters," "shiuli flower from our garden," "little clouds setting the white bulging sails" create vivid visual and sensory pictures.
+
+
+- **Repetition** — "Day by day," "float on and on" emphasize the passage of time and the continuity of the child's hopes.
+
+
+- **Alliteration** — "Day by day," "paper boats," "big black," "baskets full of dreams."
+
+
+- **Enjambment** — Lines flow seamlessly ("Day by day I float my paper boats one by one down the running stream"), mimicking the gentle, continuous motion of the boats.
+
+
+- **Apostrophe** — The child addresses the clouds as if they were living playmates ("I know not what playmate of mine in the sky sends them down the air").
+
+
+- **Pathetic Fallacy** — Nature mirrors the child's inner world: clouds become sails, stars become witnesses, fairies become sailors.
+
+
+## Rhyme Scheme
+
+
+Free verse — the poem does not follow a strict rhyme scheme but uses rhythmic prose-like lines.
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Choose the correct words from the brackets to complete the summary of the poem given below.**  

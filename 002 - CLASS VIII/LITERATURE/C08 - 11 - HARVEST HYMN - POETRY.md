@@ -46,6 +46,61 @@ We praise thee, O Bramha, with cymbal and prayer.
 
 **SAROJINI NAIDU**  
 
+
+---
+
+
+## Summary
+
+
+The poem is a harvest hymn structured as a call-and-response prayer, with men's voices, women's voices, and all voices praising different deities for the bounty of the harvest. The men praise Surya (the Sun) and Varuna (Rain/Water) for nourishing the crops; the women praise Prithvi (the Earth) for her fertile, nurturing bosom; and all voices together praise Brahma, the Lord of the Universe, as the ultimate source of life and blessing. The poem is a celebration of nature's gifts, agricultural abundance, and the spiritual connection between humanity and the divine.
+
+
+## Poetic Devices
+
+
+- **Personification** — The Earth is called "sweet and omnipotent mother" with a "plentiful bosom"; Sun and Rain are addressed as lords with human-like generosity.
+
+
+- **Metaphor** — "Thou art the Seed and the Scythe of our harvests" compares God to both the beginning (seed) and end (scythe) of the agricultural cycle.
+
+
+- **Repetition** — "Lord of the..." and "We bring thee..." are repeated across stanzas to create a hymn-like, ritualistic rhythm.
+
+
+- **Alliteration** — "cymbal and flute," "cymbal and pipe," "cymbal and drum" create musical sound patterns.
+
+
+- **Imagery** — "The gold of our fields and the gold of our fruit," "The wealth of our valleys, new-garnered and ripe" evoke rich visual images of harvest abundance.
+
+
+- **Symbolism** — Surya (Sun) = light and energy; Varuna (Rain) = mercy and nourishment; Prithvi (Earth) = fertility and motherhood.
+
+
+- **Apostrophe** — The speakers directly address the deities ("O Surya," "O Varuna," "O Prithvi," "O Bramha"), creating an intimate, prayerful connection.
+
+
+- **Parallelism** — Each stanza mirrors the others in structure (addressing a deity, listing their gifts, bringing tribute, praising), creating a ritualistic, ceremonial rhythm.
+
+
+- **Antithesis** — Human offerings (songs, garlands, lives) are set against divine gifts (bounty, mercy, radiance), emphasizing the reciprocal relationship.
+
+
+- **Elevated Diction** — Words like "munificent," "beneficent," "omnipotent," "ineffable" lend grandeur and formality to the hymn.
+
+
+- **Tone:** Reverential, celebratory, and devotional.
+
+
+## Rhyme Scheme
+
+
+ABCB — each four-line stanza rhymes lines 2 and 4 (e.g., morn/corn, tribute/fruit, main/grain, pipe).
+
+
+---
+
+
 #### Let us discuss  
 
 **I. Write the stanza number for the main idea of each stanza given below. Share your answers with your classmates and teacher.**  

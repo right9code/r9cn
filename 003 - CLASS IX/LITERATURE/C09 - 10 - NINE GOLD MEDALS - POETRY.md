@@ -47,6 +47,61 @@
 
 **DAVID ROTH**  
 
+
+---
+
+
+## Summary
+
+
+At a Special Olympics hundred-yard dash, nine athletes line up to compete. When the race begins, the smallest runner stumbles and falls. Instead of continuing to race, all eight other runners stop, turn back, and help him to his feet. They then join hands and finish the race together, walking across the finish line as one. The crowd gives them a standing ovation, and all nine athletes receive gold medals. The poem powerfully illustrates that compassion and solidarity matter more than competition.
+
+
+## Poetic Devices
+
+
+- **Imagery** — "The pistol exploded," "fell to the asphalt," "holding hands still," "nine beaming faces" create vivid visual and auditory scenes.
+
+
+- **Metaphor** — "His dreams and his efforts dashed in the dirt" compares shattered hopes to physical objects broken on the ground.
+
+
+- **Alliteration** — "stumbled... staggered," "resolved... run," "beaming... banner."
+
+
+- **Contrast** — The competitive setup (gold, silver, bronze) vs. the compassionate outcome (all nine win together).
+
+
+- **Symbolism** — The nine gold medals symbolize unity, empathy, and the true spirit of sportsmanship; the banner "Special Olympics" represents inclusion.
+
+
+- **Climactic Structure** — The poem builds from the excitement of the race, through the crisis (the fall), to the resolution (all nine finishing together), creating a satisfying emotional arc.
+
+
+- **Antithesis** — "The pistol exploded / And so did the runners" contrasts the explosive start with the compassionate reversal that follows.
+
+
+- **Synecdoche** — "Nine beaming faces" stands for the entire emotional experience of the athletes.
+
+
+- **Allusion** — The "Special Olympics" banner connects the poem to a real-world movement of inclusion and compassion.
+
+
+- **Enjambment** — Lines flow across breaks, mirroring the continuous, unfolding action of the race.
+
+
+- **Tone:** Moving, hopeful, celebratory.
+
+
+## Rhyme Scheme
+
+
+Irregular — the poem uses a free-verse narrative style suited to storytelling.
+
+
+---
+
+
 ### Check Your Understanding  
 
 **I. Work in pairs. Match the words and phrases in Column 1 with their meanings in Column 2. You may**  
