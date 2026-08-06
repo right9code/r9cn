@@ -272,12 +272,12 @@ You have read about the sacrifices made by the Armed Forces during war. However,
 
 **I. Complete the table given below. An example has been done for you. Check your answers with the teacher.**  
 
-| Name of the War Hero | Contribution and Achievement | Award Given |  
-| --- | --- | --- |  
-| Major Somnath Sharma | Battle of Badgam in 1947 | First Param Vir Chakra awarded posthumously |  
-| Captain Mahendra Nath Mulla | 1971 Indo-Pak War (Exemplary courage and leadership in naval operations) | Maha Vir Chakra (MVC) |  
-| Lance Naik Albert Ekka | Battle of Gangasagar in 1971 (Silenced enemy machine guns with supreme courage) | Param Vir Chakra (PVC) (posthumously) |  
-| Major Padmapani Acharya | 1999 Kargil War (Operation Vijay - Captured a heavily fortified enemy position) | Maha Vir Chakra (MVC) (posthumously) |  
+| Name of the War Hero        | Contribution and Achievement                                                    | Award Given                                 |     |
+| --------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------- | --- |
+| Major Somnath Sharma        | Battle of Badgam in 1947                                                        | First Param Vir Chakra awarded posthumously |     |
+| Captain Mahendra Nath Mulla | 1971 Indo-Pak War (Exemplary courage and leadership in naval operations)        | Maha Vir Chakra (MVC)                       |     |
+| Lance Naik Albert Ekka      | Battle of Gangasagar in 1971 (Silenced enemy machine guns with supreme courage) | Param Vir Chakra (PVC) (posthumously)       |     |
+| Major Padmapani Acharya     | 1999 Kargil War (Operation Vijay - Captured a heavily fortified enemy position) | Maha Vir Chakra (MVC) (posthumously)        |     |
 
 **II. Find the paragraph(s) and sentences in the text that evoke the feelings given below.**  
 

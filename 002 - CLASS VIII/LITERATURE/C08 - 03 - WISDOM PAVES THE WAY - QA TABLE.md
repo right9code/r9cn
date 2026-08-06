@@ -1,0 +1,32 @@
+## Q&A Table – 03 - WISDOM PAVES THE WAY
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Shiv Datt said, "I believe it has been over a week, perhaps even longer," because it had been a long time since they left the village. | Shiv Datt said, "I believe it has been over a week, perhaps even longer," because it had been a long time since they left the village. |
+| 2 | Dev Datt said, "Indeed, we ought to be united in this hope. That is why we press on towards Ujjain," because `____________`. | Dev Datt said, "Indeed, we ought to be united in this hope. That is why we press on towards Ujjain," because they all shared the common goal of finding suitable employment in the King's court. |
+| 3 | Har Datt said, "Look there, friends. A camel has passed this way. The tracks are fresh," because `____________`. | Har Datt said, "Look there, friends. A camel has passed this way. The tracks are fresh," because he noticed distinct and clear animal footprints on the dusty road. |
+| 4 | Shiv Datt said, "It appears to be a merchant, running as if pursued by trouble," because `____________`. | Shiv Datt said, "It appears to be a merchant, running as if pursued by trouble," because he saw a man hurrying breathlessly towards them with a worried expression. |
+| 5 | The merchant said, "How could you possibly know that? The poor creature has been unwell for two weeks now. Surely you are a healer!" because `____________`. | The merchant said, "How could you possibly know that? The poor creature has been unwell for two weeks now. Surely you are a healer!" because Dev Datt accurately described the camel's stomach pain with... |
+| 6 | Dev Datt said, "You are free to do as you wish, sir. If the King desires our presence, we shall be waiting under that banyan tree yonder," because `____________`. | Dev Datt said, "You are free to do as you wish, sir. If the King desires our presence, we shall be waiting under that banyan tree yonder," because they were innocent of stealing the camel and had conf... |
+| 7 | The King makes the four young men his advisers, impressed by their skills. (8) | The King makes the four young men his advisers, impressed by their skills. (8) |
+| 8 | Ram Datt explains how he infers from the tracks that the camel is lame. | Ram Datt explains how he infers from the tracks that the camel is lame. (3) |
+| 9 | The King asks the merchant to clearly state his accusation. | The King asks the merchant to clearly state his accusation. (2) |
+| 10 | The King praises the young men for their observations and dismisses the merchant's accusation. | The King praises the young men for their observations and dismisses the merchant's accusation. (7) |
+| 11 | Shiv Datt reveals that the camel is blind in its right eye as it had only chewed on the leaves on the left side of the road. | Shiv Datt reveals that the camel is blind in its right eye as it had only chewed on the leaves on the left side of the road. (4) |
+| 12 | Dev Datt explains his observation about the camel's pain and careful movement. | Dev Datt explains his observation about the camel's pain and careful movement. (6) |
+| 13 | Har Datt clarifies how he knew that the camel has a short tail. | Har Datt clarifies how he knew that the camel has a short tail. (5) |
+| 14 | The merchant accuses the four men of knowing a lot about his missing camel. | The merchant accuses the four men of knowing a lot about his missing camel. (1) |
+| 15 | DEV DATT : *Ten days are but a short span in the grand scheme of things. We may still have many more roads to wander before we find employment befitting all four of us.* | False statement: A. Dev Datt believes that finding employment is an easy task. |
+| 16 | Identify the false statement from the two given below and rectify it. | Ram Datt's confidence shows that he is optimistic, self-assured, and has high faith in his group's abilities. |
+| 17 | What does Ram Datt's confidence in gaining the King's recognition tell us about him? | B. moving forward with determination |
+| 18 | Complete the sentence given below with the correct option from those given. | C. He is cautious and thoughtful, preferring to plan ahead. |
+| 19 | Har Datt says, “We need to devise a strategy.” What can be inferred about Har Datt’s character from his statement? | B. Both (A) and (R) are true, but (R) is not the correct explanation of (A). |
+| 20 | KING: *(To the four men) You have demonstrated remarkable intelligence and the ability to see beyond the obvious. Such minds are rare and highly valued in my court. I extend to you the honour of becom... | C. notice details that others might overlook |
+| 21 | Select the option that is true for both Assertion (A) and Reason (R). | they were ordinary job seekers and had never expected to receive such a high royal post. |
+| 22 | Complete the following sentence by choosing the correct option. | The offer shows that the King values wisdom, intelligence, and keen observation over social status, seeking capable advisors for his kingdom. |
+| 23 | Complete the following sentence with a suitable reason. | The dusty road shows that the young men had endured a long, tiring, and difficult journey on foot in search of work. |
+| 24 | How does the King’s offer to the four men reflect his values as a ruler? | The merchant became suspicious because the men knew exact details about his camel without admitting to seeing it. This shows he was impulsive, quick to judge, and mistrustful. |
+| 25 | What does the dusty road leading to Ujjain tell us about the challenges of the young men's journey? | Their observations served as a turning point because the merchant took them to court, where their explanations impressed the King and led to their appointment as advisers. |
+| 26 | Why did the merchant become suspicious of the four men? What does this tell us about him? | The King believed the young men because they provided logical, step-by-step evidence based on clear observation, proving their intelligence and innocence. |
+| 27 | How do the four young men's observations about the camel serve as a turning point in the play? | Their sharp observation, logical reasoning, patience, and calm behavior make them highly qualified to give sound advice to the King. |
+| 28 | Why did the King believe the four young men and not the merchant? | The merchant felt ashamed because he realised he had falsely accused four innocent, wise men of theft without any proof, and was proven wrong in front of the King. |
