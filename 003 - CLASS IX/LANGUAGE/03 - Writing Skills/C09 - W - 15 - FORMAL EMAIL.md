@@ -12,7 +12,7 @@ The format is enclosed in a **BOX** to simulate a computer screen/email client:
 | Date    : 24 May 2026                                                       |
 | From    : student.name@email.com                                            |
 | To      : principal.school@email.com                                        |
-| CC      : principal.school@email.com                                        |
+| Cc      : principal.school@email.com                                        |
 | Bcc     : principal.school@email.com                                        |
 | Subject : Request for extension of project submission deadline.             |
 |-----------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ The format is enclosed in a **BOX** to simulate a computer screen/email client:
 | Date    : 10 October 2026                                                   |
 | From    : itclub.dps@email.com                                              |
 | To      : principal.modernschool@email.com                                  |
-| CC      : principal.school@email.com                                        |
+| Cc      : principal.school@email.com                                        |
 | Bcc     : principal.school@email.com                                        |
 | Subject : Invitation for Inter-School Coding Competition 2026               |
 |-----------------------------------------------------------------------------|
