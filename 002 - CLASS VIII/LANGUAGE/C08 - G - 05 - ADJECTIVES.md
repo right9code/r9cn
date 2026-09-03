@@ -84,20 +84,20 @@ We entered through the open gate into a large, square courtyard. No less than fi
 
 **D. Use the opposites of the words given in the box to complete the sentences.**  
 
-|  interesting | sharp | modern | wonderful | calm  |  
-| --- | --- | --- | --- | --- |  
-|  pleasing | simple | annoyed | public | hideous  |  
+| interesting | sharp  | modern  | wonderful | calm    |     |
+| ----------- | ------ | ------- | --------- | ------- | --- |
+| pleasing    | simple | annoyed | public    | hideous |     |
 
-1. This `______` knife is useless.  
-2. Yuck! This food tastes `______`.  
-3. Turn off the radio. It's very `______`.  
-4. The prince lived in a `______` castle.  
-5. I was `______` by the antics of the kittens.  
-6. The dwarf lived in an `______` cottage.  
-7. I can't read further. This is a rather `______` story.  
-8. The `______` designs on this fabric are difficult to copy.  
-9. The `______` waters of the rivulet made rowing impossible.  
-10. The actor organised a `______` screening of his film for a select audience.  
+1. This `**___BLUNT___**` knife is useless.  
+2. Yuck! This food tastes `**__HORRIBLE___**`.  
+3. Turn off the radio. It's very `******___ANNOYING___******`.  
+4. The prince lived in a `___BEAUTIFUL___` castle.  
+5. I was `___DELIGHTED___` by the antics of the kittens.  
+6. The dwarf lived in an `___PLAIN___` cottage.  
+7. I can't read further. This is a rather `___DULL___` story.  
+8. The `__COMPLEX____` designs on this fabric are difficult to copy.  
+9. The `___ROUGH___` waters of the rivulet made rowing impossible.  
+10. The actor organised a `___PRIVATE___` screening of his film for a select audience.  
 
 **E. Complete the letter using the words listed below. Be careful, there may be some extra words too.**  
 

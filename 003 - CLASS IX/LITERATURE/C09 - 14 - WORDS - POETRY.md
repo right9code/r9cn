@@ -287,7 +287,7 @@ The poet compares words to empty air because once spoken, words vanish quickly i
 The poet explains that a few sincere, deeply felt words can touch the heart and cheer a lonely soul, whereas a large quantity of empty talk only reaches the mind without providing true comfort.  
 
 3. **Do you agree that the poet presents contrasting ideas related to 'words' in the poem? If yes, why? If no, why not?**  
-Yes, the poet contrasts flashy, abundant words that reach only the head with few, quiet, sincere words that reach the heart, showing that quantity of speech does not equal emotional depth.  
+Yes, the poet contrasts the "head" (intellect) with the "heart" (emotion), and "leaves" (showy words) with "fruit" (sincere meaning). These contrasts highlight that words can either be superficial tools or profound links between people.
 
 4. **The theme of loneliness hovers over the poem. Support this statement with examples from the text.**  
 The poem describes the heart as a lonely "pilgrim upon earth" and mentions a "lonely home" that needs cheering, showing how human beings suffer in isolation when words fail to comfort them.  

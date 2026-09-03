@@ -1,4 +1,4 @@
-# Non-finite Verbs  
+  # Non-finite Verbs  
 
 Read these sets of sentences. What do you notice about the highlighted words and the underlined words?  
 
@@ -80,21 +80,21 @@ Look at these sentences.
 - I need to visit the doctor soon.  
 
 **A. Fill in the blanks with the infinitive forms of the verbs in the brackets, with or without to as the case may be.**  
-1. Let us `____`. **(eat)**  
-2. I am sorry `____` this. **(learn)**  
-3. I hope `____` the order. **(win)**  
-4. `____` was impossible. **(return)**  
-5. I will not let you `____`. **(leave)**  
-6. Bid him `____` there. **(stay)**  
-7. He was quick `____` the matter. **(understand)**  
-8. You need not `____` now. **(go)**  
-9. I saw him `____` the phone. **(take)**  
-10. I felt something cold `____` my hand. **(touch)**  
-11. The police wanted `____` the premises. **(search)**  
-12. `____` is a crime against humanity. **(waste)**  
-13. It was wrong `____` him. **(scold)**  
-14. I failed `____` you. **(reach)**  
-15. It is too late `____` now. **(start)**  
+1. Let us `__EAT__`. **(eat)**  
+2. I am sorry `__to LEaRN__` this. **(learn)**  
+3. I hope `__TO WIN__` the order. **(win)**  
+4. `_TO RETURN___` was impossible. **(return)**  
+5. I will not let you `_TO LEAVE___`. **(leave)**  
+6. Bid him `__TO STAY__` there. **(stay)**  
+7. He was quick `__TO UNDERSTAND__` the matter. **(understand)**  
+8. You need not `__TO GO__` now. **(go)**  
+9. I saw him `__TAKE__` the phone. **(take)**  
+10. I felt something cold `__TOUCH__` my hand. **(touch)**  
+11. The police wanted `__TO SEARCH__` the premises. **(search)**  
+12. `__TO WASTE__` is a crime against humanity. **(waste)**  
+13. It was wrong `_TO SCOLD___` him. **(scold)**  
+14. I failed `__TO REACH__` you. **(reach)**  
+15. It is too late `__TO START__` now. **(start)**  
 
 Look at these sentences.  
 - It is **very** cold. I cannot go out now.  
@@ -123,16 +123,16 @@ In the above pairs of sentences, we have dropped the underlined conjunction in t
 10. We were delighted when we **reached** Shimla by the toy train.  
 
 **C. Join these sets of sentences using infinitives.**  
-1. I heard of your new job. I was happy.  
-2. He has a plan. He will execute it.  
-3. Every company has a manager. He takes care of the business.  
-4. He speaks the truth. He is not afraid of it.  
-5. All teams have coaches. They guide them.  
-6. I stayed at home. I wanted rest.  
-7. He went to Mumbai. His objective was getting a job.  
-8. He must study. It is the only way of achieving success.  
-9. He collects precious stones. It is his hobby.  
-10. Our teacher is very kind. She cannot scold anyone.  
+1. I was happy to hear of your new job.  
+2. He has a plan  to execute.  
+3. Every company has a manager to take care of the business.  
+4. He is not afraid to speak the truth.  
+5. All teams have coaches to guide them.  
+6. I stayed at home to rest.  
+7. He went to Mumbai to get a job.  
+8. He must study to achieve success.  
+9. To collect precious stones is his hobby.  
+10. Our teacher is very kind to scold anyone.  
 
 **D. Complete the following sentences with a ‘to-infinitive’ and any other necessary words.**  
 1. I think you will be surprised `____`.  

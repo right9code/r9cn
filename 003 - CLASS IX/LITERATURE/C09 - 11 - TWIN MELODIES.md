@@ -318,7 +318,7 @@ Speaker / Words of the Speaker / Reason:
 Yes, Shruti will gather the courage to speak to her father because she promises her bandmates that she will talk to him at dinner, knowing she cannot hide her fusion music practice forever.  
 
 **III. Father's Reaction**  
-Shruti's father is likely to react with strict disapproval and anger. He is a passionate classical purist who believes that non-classical fusion music disrespects the violin's sacred classical tradition.  
+Shruti's fath., ., er is likely to react with strict disapproval and anger. He is a passionate classical purist who believes that non-classical fusion music disrespects the violin's sacred classical tradition.  
 
 ## Check Your Understanding – Act II  
 

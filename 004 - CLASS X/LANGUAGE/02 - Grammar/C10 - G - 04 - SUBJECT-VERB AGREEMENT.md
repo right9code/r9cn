@@ -8,11 +8,11 @@ We often need to write sentences which contain only a subject and a verb. The su
 - Plural Subject → Plural Verb  
 - When we make a sentence, we tell something about a person or a thing. The part of the sentence which states the person or thing in the sentence is called the subject of the sentence and the part which gives us more information about the subject is called the predicate of the sentence. A subject can be:  
 
-| | | |  
-| :--- | :--- | :--- |  
-| **Singular** | — | A book, an egg, a key |  
-| **Plural** | — | Women, boys, flowers |  
-| **Uncountable** | — | Sugar, water, air |  
+|                 |     |                       |     |
+| :-------------- | :-- | :-------------------- | --- |
+| **Singular**    | —   | A book, an egg, a key |     |
+| **Plural**      | —   | Women, boys, flowers  |     |
+| **Uncountable** | —   | Sugar, water, air     |     |
 
 **KNOW MORE:**  
 - **Incorrect:** A bouquet of yellow roses lend colour and fragrance to the room.  

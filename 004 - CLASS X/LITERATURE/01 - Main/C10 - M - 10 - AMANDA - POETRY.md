@@ -194,7 +194,7 @@ We know this because of the reference of a mermaid and Rapunzel. Also, the instr
 
 **Ans.** Any one of Amanda's elder's or parents is speaking to her. From the instructions given to Amanda, one can say that it is most probably Amanda's mother or governess.  
 
-3. Why are stanzas 2, 4 and 6 given in parenthesis?  
+3. c
 
 **Ans.** Stanza 2, 4 and 6 are given in parenthesis because they reflect the inner thoughts of Amanda. Amanda is lost in her dream world and is not listening to what her mother is asking/telling her.  
 

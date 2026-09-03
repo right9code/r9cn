@@ -264,7 +264,7 @@ We use another only with singular countable nouns, whereas other can be used wit
 **E.g.** I don't agree with either Ram or Shyam.  
 
 (b) We use neither with only singular countable nouns and a singular verb. Neither is the negative of either.  
-**E.g.** Neither of the two boys passed the exam.  
+**E.g.** Neither of passed the ex the two boysam.  
 
 ### 4. Possessives (My, Your, His, Her, Its, Our, Their etc)  
 
@@ -299,42 +299,42 @@ My, her, his and its are used with singular nouns, while our and their are used 
 **I. Fill in the blanks with appropriate determiners.**  
 
 **A.**  
-1. There are ... books in the library.  
-2. Have you ever had ... high fever?  
-3. ... National Health Service was set up in Britain in 1946.  
-4. In ... countries, you have to pay for the medical treatment.  
-5. My brother is ... dentist.  
-6. Only ... houses were spared by the earthquake.  
-7. You must learn ... English everyday to improve your language.  
-8. There isn't ... bread in that tin.  
-9. Sometimes ... patience and advice help more than medicine.  
-10. Could you bring me ... books I left in the garden?  
+1. There are **MANY** books in the library.  
+2. Have you ever had **A** high fever?  
+3. **THE** National Health Service was set up in Britain in 1946.  
+4. In **SOME** countries, you have to pay for the medical treatment.  
+5. My brother is **A** dentist.  
+6. Only **A FEW** houses were spared by the earthquake.  
+7. You must learn **A LITTLE** English everyday to improve your language.  
+8. There isn't **ANY** bread in that tin.  
+9. Sometimes **A LITTLE** patience and advice help more than medicine.  
+10. Could you bring me **THOSE** books I left in the garden?  
 
 **B.**  
-1. She gave a cookie to ... child.  
-2. I've got to solve ... math problems before I go to sleep.  
-3. ... Cherries are delicious.  
-4. My mother doesn't drink ... coffee.  
-5. I always keep ... money in my wallet for emergencies.  
-6. They were bored because there was ... to do.  
+1. She gave a cookie to **EACH** child.  
+2. I've got to solve **SOME** math problems before I go to sleep.  
+3. **THESE** Cherries are delicious.  
+4. My mother doesn't drink **MUCH** coffee.  
+5. I always keep **SOME** money in my wallet for emergencies.  
+6. They were bored because there was **LITTLE** to do.  
 7. We invited ... friends over to our house for a party.  
-8. ... of the cakes had been baked the day before.  
-9. ... the children went to their respective classes.  
-10. I invited Ram and Sheila to the party, but ... of them came.  
+8. **MOST** of the cakes had been baked the day before.  
+9. **ALL** the children went to their respective classes.  
+10. I invited Ram and Sheila to the party, but **NEITHER** of them came.  
 
 **II. Fill in the blanks with suitable determiners.**  
 
 **A.**  
-1. I admit that I don't have ... knowledge of the subject. I'll have to spend ... time reading.  
-2. May I taste ... of the soup that you cooked this morning? How ... pepper did you put in?  
-3. When Sapna realised that she still had ... time left, she gave me ... assistance with ... work.  
-4. I took ... apple from ... refrigerator and ate it.  
-5. The man complained that ... boys were stealing ... of his mangoes.  
-6. Are there ... sandwiches for you? If there aren't, I'll make ... more for you.  
-7. There are ... people at the theatre. I don't think we can get ... tickets.  
-8. ... children in the Kindergarten are given ... cup of milk and ... biscuits during the break.  
-9. ... goats have wandered into the garden and damaged ... plants. The gardener couldn't catch ... of them.  
-10. "How ... tablets have you taken?" The doctor inquired. "I've taken ... of them, doctor. I don't have ... more."  
+1. I admit that I don't have .**MUCH**.. knowledge of the subject. I'll have to spend .**MORE**.. time reading.  
+2. May I taste ..**A LITTLE**. of the soup that you cooked this morning? How ..**MUCH**. pepper did you put in?  
+3. When Sapna realised that she still had .**A little**.. time left, she gave me ..**SOME**. assistance with ..**MY**. work.  
+4. I took .**NA**.. apple from ..**THE**. refrigerator and ate it.  
+5. The man complained that .**SOME**.. boys were stealing ..**FEW**. of his mangoes.  
+6. Are there .**ANY**.. sandwiches for you? If there aren't, I'll make ..**SOME**. more for you.  
+7. There are ..**MANY**. people at the theatre. I don't think we can get ..**ANY**. tickets.  
+8. .**THE**.. children in the Kindergarten are given ..**A**. cup of milk and .**SOME**.. biscuits during the break.  
+9. ..**SEVERAL**. goats have wandered into the garden and damaged .**THE**.. plants. The gardener couldn't catch .**ANY**.. of them.  
+10. "How .**MANY**.. tablets have you taken?" The doctor inquired. "I've taken .**ALL**.. of them, doctor. I don't have .**ANY**.. more."  
 
 **B.**  
 1. ... of the answers that ... girls gave were wrong. ... of them has passed the test.  

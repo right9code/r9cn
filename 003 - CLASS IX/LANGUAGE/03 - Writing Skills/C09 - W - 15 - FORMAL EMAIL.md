@@ -5,28 +5,31 @@ A **formal email** is the electronic equivalent of a formal letter. It is used f
 
 ## 📝 Format / Structure (Word Limit: 100-120 words)  
 
-The format is enclosed in a **BOX** to simulate a computer screen/email client:  
+<div style="border: 1.5px solid #000; padding: 15px; border-radius: 4px; font-family: sans-serif;">
 
-```text
-+-----------------------------------------------------------------------------+
-| Date    : 24 May 2026                                                       |
-| From    : student.name@email.com                                            |
-| To      : principal.school@email.com                                        |
-| CC      : principal.school@email.com                                        |
-| Bcc     : principal.school@email.com                                        |
-| Subject : Request for extension of project submission deadline.             |
-|-----------------------------------------------------------------------------|
-| Respected Sir/Madam,                                                        |
-|                                                                             |
-| Paragraph 1: State the purpose of the email directly.                       |
-| Paragraph 2: Provide brief, necessary details or reasons.                   |
-| Paragraph 3: State the action required and conclude politely.               |
-|                                                                             |
-| Regards,                                                                    |
-| Name                                                                        |
-| Designation/Class                                                           |
-+-----------------------------------------------------------------------------+
-```
+**Date** : 24 May 2026<br>
+**From** : student.name@email.com<br>
+**To** : principal.school@email.com<br>
+**CC** : principal.school@email.com<br>
+**Bcc** : principal.school@email.com<br>
+**Subject** : Request for extension of project submission deadline.<br>
+
+<hr style="border: 0.5px solid #ccc; margin: 12px 0;">
+
+Respected Sir/Madam,<br><br>
+
+Paragraph 1: State the purpose of the email directly.<br><br>
+
+Paragraph 2: Provide brief, necessary details or reasons.<br><br>
+
+Paragraph 3: State the action required and conclude politely.<br><br>
+
+Regards,<br>
+Name<br>
+Designation/Class
+
+</div>
+
 *(Note: Some formats also include 'Cc' (Carbon Copy) and 'Bcc' (Blind Carbon Copy) below the 'To' field. Include them if your teacher specifically asks, but Date, From, To, and Subject are the essential headers.)*  
 
 ## ⚖️ CBSE Marking Scheme (Typically 5 Marks)  
@@ -50,37 +53,32 @@ The format is enclosed in a **BOX** to simulate a computer screen/email client:
 
 **Q: You are Amit/Amita, the Secretary of the IT Club of your school. Write an email to the Principal of a neighboring school inviting their students to participate in an Inter-School Coding Competition organized by your club.**  
 
-```text
-+-----------------------------------------------------------------------------+
-| Date    : 10 October 2026                                                   |
-| From    : itclub.dps@email.com                                              |
-| To      : principal.modernschool@email.com                                  |
-| CC      : principal.school@email.com                                        |
-| Bcc     : principal.school@email.com                                        |
-| Subject : Invitation for Inter-School Coding Competition 2026               |
-|-----------------------------------------------------------------------------|
-| Respected Sir/Madam,                                                        |
-|                                                                             |
-| I am writing on behalf of the IT Club of Delhi Public School to formally    |
-| invite your students to participate in our annual Inter-School Coding       |
-| Competition, 'Code-Fest 2026'.                                              |
-|                                                                             |
-| The event is scheduled to be held on 25th October 2026 in our school        |
-| computer labs from 9:00 AM to 2:00 PM. The competition is open to students  |
-| of Classes IX and X. We believe this platform will provide a great          |
-| opportunity for young tech enthusiasts to showcase their programming skills.|
-|                                                                             |
-| We have attached the detailed brochure and registration forms with this     |
-| email. We kindly request you to forward this to your Computer Science       |
-| department. The last date for registration is 18th October.                 |
-|                                                                             |
-| We look forward to enthusiastic participation from your esteemed school.    |
-|                                                                             |
-| Regards,                                                                    |
-| Amit Sharma                                                                 |
-| Secretary, IT Club, DPS                                                     |
-+-----------------------------------------------------------------------------+
-```
+<div style="border: 1.5px solid #000; padding: 15px; border-radius: 4px; font-family: sans-serif;">
+
+**Date** : 10 October 2026<br>
+**From** : itclub.dps@email.com<br>
+**To** : principal.modernschool@email.com<br>
+**CC** : principal.school@email.com<br>
+**Bcc** : principal.school@email.com<br>
+**Subject** : Invitation for Inter-School Coding Competition 2026<br>
+
+<hr style="border: 0.5px solid #ccc; margin: 12px 0;">
+
+Respected Sir/Madam,<br><br>
+
+I am writing on behalf of the IT Club of Delhi Public School to formally invite your students to participate in our annual Inter-School Coding Competition, 'Code-Fest 2026'.<br><br>
+
+The event is scheduled to be held on 25th October 2026 in our school computer labs from 9:00 AM to 2:00 PM. The competition is open to students of Classes IX and X. We believe this platform will provide a great opportunity for young tech enthusiasts to showcase their programming skills.<br><br>
+
+We have attached the detailed brochure and registration forms with this email. We kindly request you to forward this to your Computer Science department. The last date for registration is 18th October.<br><br>
+
+We look forward to enthusiastic participation from your esteemed school.<br><br>
+
+Regards,<br>
+Amit Sharma<br>
+Secretary, IT Club, DPS
+
+</div>
 
 ---
 
