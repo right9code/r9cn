@@ -8,7 +8,7 @@
 
 2. Which present tenses uses **-ing** form of verb?  
 3. Which present tense used **3rd form/past participle**. of verb?  
-4. Which present tense adds s/es with verb in SS(III)?  
+4. Which present tense adds **s/es** with verb in SS(III)?  
 5. Identify the tenses:  
 	i. `Singular subject + has + been + first form of verb + ing + ... + for/since +...`    
 	ii. I am playing a game.   
