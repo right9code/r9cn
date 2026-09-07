@@ -1,18 +1,18 @@
-### Past TENSES  
+### PRESENT TENSES  
 
 1. **HELPING VERBS** used in  
-	i. Simple Past  
-	ii. Past Continuous  
-	iii. Past Perfect  
-	iv. Past Perfect Continous  
+	i. Simple Present  
+	ii. Present Continuous  
+	iii. Present Perfect  
+	iv. Present Perfect Continous  
 
-2. Which Past tenses uses **-ing** form of verb?  
-3. Which Past tense used **3rd form/past participle**. of verb?  
-4. Which Past tense adds used 2nd form of verb?  
+2. Which present tenses uses **-ing** form of verb?  
+3. Which present tense used **3rd form/past participle**. of verb?  
+4. Which present tense adds **s/es** with verb in SS(III)?  
 5. Identify the tenses:  
-	i. `Singular subject + had + been + first form of verb + ing + ... + for/since +...`    
-	ii. I played a game.   
-	iii. `Question word + did + subject + first form of verb + ...?`    
+	i. `Singular subject + has + been + first form of verb + ing + ... + for/since +...`    
+	ii. I am playing a game.   
+	iii. `Question word + do/does + subject + first form of verb + ...?`    
 
 
 
