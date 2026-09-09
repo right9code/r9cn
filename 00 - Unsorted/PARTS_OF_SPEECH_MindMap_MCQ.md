@@ -380,3 +380,1011 @@
 | 💥 **Interjection** | Expresses emotion | — | *Hurrah! Alas!* |
 
 ---
+
+---
+
+# ✅ MCQ QUESTIONNAIRE — Parts of Speech
+
+> **Instructions:** Try each question first, then click "Answer" to reveal the correct option.
+> Covers all 9 parts of speech from Class VII & VIII notes.
+
+---
+
+## 📛 NOUN (Q1–Q8)
+
+
+<details>
+<summary><strong>Q1.</strong> Which of these is a proper noun?</summary>
+
+A. city
+B. mountain
+C. Taj Mahal
+D. beauty
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Taj Mahal** — Proper nouns name a *particular* person, place, or thing and always begin with a capital letter.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q2.</strong> "Honesty is a virtue." What type of noun is <em>honesty</em>?</summary>
+
+A. Common noun
+B. Collective noun
+C. Abstract noun
+D. Material noun
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Abstract noun** — It names a quality (honesty) that cannot be touched or seen.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q3.</strong> What is the plural of <em>knife</em>?</summary>
+
+A. knifes
+B. knifes
+C. knives
+D. knive
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. knives** — Nouns ending in *-fe* change to *-ves* in the plural.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q4.</strong> "The jury announced its verdict." What gender is <em>jury</em>?</summary>
+
+A. Masculine
+B. Feminine
+C. Neuter
+D. Common
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Neuter** — Collective nouns like *jury* are neither male nor female; they are neuter gender.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q5.</strong> Which noun can <strong>never</strong> be counted?</summary>
+
+A. apple
+B. chair
+C. furniture
+D. boy
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. furniture** — It is an uncountable noun. We cannot say "one furniture" or "many furnitures."
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q6.</strong> Which collective noun correctly completes "a ___ of lions"?</summary>
+
+A. herd
+B. pride
+C. flock
+D. swarm
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. pride** — A *pride* of lions. (Herd = cows, flock = sheep/birds, swarm = bees/locusts)
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q7.</strong> "Death is a great leveller." What type of noun is <em>death</em>?</summary>
+
+A. Common noun
+B. Abstract noun
+C. Material noun
+D. Collective noun
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Abstract noun** — Death is a state of being, not a physical object.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q8.</strong> The plural of <em>calf</em> is ___</summary>
+
+A. calfs
+B. calfes
+C. calves
+D. calve
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. calves** — Nouns ending in *-f* change to *-ves* in the plural.
+</details>
+</details>
+
+---
+
+## 🔁 PRONOUN (Q9–Q16)
+
+
+<details>
+<summary><strong>Q9.</strong> Which is a reflexive pronoun?</summary>
+
+A. he
+B. mine
+C. himself
+D. which
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. himself** — Reflexive pronouns are used when the subject and object are the same person/thing.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q10.</strong> "Each of the students must submit the work." What type of pronoun is <em>each</em>?</summary>
+
+A. Personal
+B. Indefinite
+C. Distributive
+D. Demonstrative
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Distributive** — *Each* refers to persons/things one at a time and always takes a singular verb.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q11.</strong> "Who is at the door?" What type of pronoun is <em>who</em>?</summary>
+
+A. Relative
+B. Interrogative
+C. Demonstrative
+D. Personal
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Interrogative** — It is used to ask a question.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q12.</strong> "The sisters help one another." What type of pronoun is <em>one another</em>?</summary>
+
+A. Reciprocal
+B. Reflexive
+C. Distributive
+D. Indefinite
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**A. Reciprocal** — *One another* shows mutual action between two or more people.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q13.</strong> "He himself finished the work." What type of pronoun is <em>himself</em> here?</summary>
+
+A. Reflexive
+B. Emphatic
+C. Reciprocal
+D. Distributive
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Emphatic** — It adds emphasis to the subject *He*. If removed, the sentence still makes sense: "He finished the work."
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q14.</strong> Which pronoun shows ownership and stands alone?</summary>
+
+A. my
+B. your
+C. mine
+D. his
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. mine** — *Mine* is a possessive pronoun that stands alone. *My, your, his* are possessive adjectives that come before a noun.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q15.</strong> "The boy ___ you were talking to is my captain." Which relative pronoun fits?</summary>
+
+A. who
+B. whom
+C. which
+D. whose
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. whom** — *Whom* is used when the relative pronoun is the object (you were talking to *whom*).
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q16.</strong> "___ of the two roads will take you to the station." Which pronoun fits?</summary>
+
+A. Each
+B. Every
+C. Either
+D. Neither
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Either** — *Either* is used when speaking about two persons or things (one or the other of two).
+</details>
+</details>
+
+---
+
+## 🎨 ADJECTIVE (Q17–Q23)
+
+
+<details>
+<summary><strong>Q17.</strong> Which is a participial adjective?</summary>
+
+A. brave
+B. running
+C. ten
+D. this
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. running** — Present participle (*verb + -ing*) used as an adjective (e.g., *running stream*).
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q18.</strong> "She is the tallest girl in the class." Which degree of comparison is <em>tallest</em>?</summary>
+
+A. Positive
+B. Comparative
+C. Superlative
+D. None
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Superlative** — Used to compare more than two; preceded by *the*.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q19.</strong> Which is an adjective of number?</summary>
+
+A. some
+B. beautiful
+C. first
+D. very
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. first** — An ordinal adjective of number showing order in a series.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q20.</strong> "___ book is this?" Which interrogative adjective fits?</summary>
+
+A. Which
+B. What
+C. Whose
+D. How
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Whose** — *Whose* asks about possession (ownership). *Which* would ask about a specific choice among options.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q21.</strong> Which is a possessive adjective?</summary>
+
+A. mine
+B. yours
+C. my
+D. hers
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. my** — *My* comes before a noun (*my book*). *Mine, yours, hers* are possessive pronouns that stand alone.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q22.</strong> "He is ___ to me by three years." Which adjective fits?</summary>
+
+A. elder
+B. senior
+C. older
+D. oldest
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. senior** — *Senior* is used to show rank or status, not just age. *Elder/older* are for age comparison.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q23.</strong> "The ___ cottage was razed to the ground." Which is a past participial adjective?</summary>
+
+A. running
+B. burnt
+C. interesting
+D. breaking
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. burnt** — Past participle (*verb + -ed/-t/-n*) used as an adjective.
+</details>
+</details>
+
+---
+
+## ⚡ VERB & 🔮 MODAL (Q24–Q30)
+
+
+<details>
+<summary><strong>Q24.</strong> "She wrote a letter." Is the verb <em>wrote</em> transitive or intransitive?</summary>
+
+A. Transitive
+B. Intransitive
+C. Both
+D. Neither
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**A. Transitive** — The verb has an object (*a letter*) that receives the action.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q25.</strong> In "She gave me a book," which is the indirect object?</summary>
+
+A. She
+B. gave
+C. me
+D. book
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. me** — *Me* is the indirect object (receives the direct object *book*). Ask: "She gave a book to *whom*?"
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q26.</strong> Which verb can <strong>never</strong> be transitive?</summary>
+
+A. eat
+B. go
+C. write
+D. read
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. go** — *Go* can never take an object. You cannot "go something."
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q27.</strong> "___ I come in, sir?" Which modal is correct?</summary>
+
+A. Can
+B. Could
+C. May
+D. Might
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. May** — *May* is used to ask permission in a formal manner.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q28.</strong> "You ___ be more careful." Which modal expresses advice?</summary>
+
+A. must
+B. ought
+C. should
+D. need
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. should** — *Should* is used to give advice or a suggestion.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q29.</strong> "He ___ not enter my class again." Which modal expresses a threat?</summary>
+
+A. will
+B. shall
+C. can
+D. may
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. shall** — *Shall* in the second/third person expresses a command, promise, or threat.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q30.</strong> "You ___ not worry; I will help." Which modal means "it is not necessary"?</summary>
+
+A. mustn't
+B. needn't
+C. shouldn't
+D. won't
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. needn't** — *Needn't* means it is NOT necessary. *Mustn't* means it is necessary NOT to do it (prohibition).
+</details>
+</details>
+
+---
+
+## 🌀 ADVERB (Q31–Q37)
+
+
+<details>
+<summary><strong>Q31.</strong> "He visits us regularly." What type of adverb is <em>regularly</em>?</summary>
+
+A. Adverb of time
+B. Adverb of place
+C. Adverb of frequency
+D. Adverb of manner
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Adverb of frequency** — It tells us how often something happens.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q32.</strong> Which adverb answers the question "How?"</summary>
+
+A. yesterday
+B. quickly
+C. upstairs
+D. always
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. quickly** — Adverbs of manner answer "How?" (How did he do it? → quickly)
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q33.</strong> "He is very tired." What type of adverb is <em>very</em>?</summary>
+
+A. Adverb of place
+B. Adverb of degree
+C. Adverb of time
+D. Adverb of frequency
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Adverb of degree** — It shows the intensity of *tired* (to what extent? → very).
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q34.</strong> "He received a call from his father. ___, he left." Which adverb of reason fits?</summary>
+
+A. However
+B. Therefore
+C. Nevertheless
+D. Instead
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Therefore** — *Therefore* is an adverb of reason showing cause and effect.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q35.</strong> Which adverb can be compared using degrees (positive, comparative, superlative)?</summary>
+
+A. here
+B. quickly
+C. never
+D. very
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. quickly** — *Quickly* can be compared: *quickly → more quickly → most quickly*. *Here, never, very* cannot.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q36.</strong> Which word is BOTH an adjective AND an adverb?</summary>
+
+A. careful
+B. happy
+C. fast
+D. true
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. fast** — *Fast* doesn't change form: "a **fast** car" (adj) / "run **fast**" (adv).
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q37.</strong> "___ did you arrive so late?" Which interrogative adverb fits?</summary>
+
+A. When
+B. Where
+C. Why
+D. How
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Why** — *Why* asks for a reason (interrogative adverb of reason).
+</details>
+</details>
+
+---
+
+## 📍 PREPOSITION (Q38–Q42)
+
+
+<details>
+<summary><strong>Q38.</strong> "The cat jumped ___ the table." Which preposition shows motion?</summary>
+
+A. on
+B. in
+C. onto
+D. at
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. onto** — Shows motion/direction (from one place to the surface of the table).
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q39.</strong> "She stood ___ me." Which preposition shows place/position?</summary>
+
+A. beside
+B. into
+C. towards
+D. out of
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**A. beside** — Shows where someone stood (place/position), not movement.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q40.</strong> "Please meet me ___ 8 o'clock." Which preposition fits?</summary>
+
+A. on
+B. in
+C. at
+D. by
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. at** — *At* is used for an exact point of time.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q41.</strong> "He lives ___ Canada." Which preposition fits?</summary>
+
+A. at
+B. on
+C. in
+D. to
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. in** — *In* is used for position within a country or large area.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q42.</strong> "She did it ___ her brother." Which compound preposition fits?</summary>
+
+A. in front of
+B. because of
+C. in place of
+D. in case of
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. in place of** — Means "instead of" or "as a substitute for" her brother.
+</details>
+</details>
+
+---
+
+## 🔗 CONJUNCTION (Q43–Q50)
+
+
+<details>
+<summary><strong>Q43.</strong> In "I was tired but I went to the party," what type of conjunction is <em>but</em>?</summary>
+
+A. Subordinating
+B. Coordinating
+C. Correlative
+D. Interjection
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Coordinating** — *But* joins two equal clauses; both can stand alone as sentences: "I was tired." ✓ "I went to the party." ✓
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q44.</strong> In "I left because I was tired," what type of conjunction is <em>because</em>?</summary>
+
+A. Coordinating
+B. Correlative
+C. Subordinating
+D. Relative
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Subordinating** — *"because I was tired"* is a dependent clause (cannot stand alone as a sentence ✗).
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q45.</strong> Which pair is a correlative conjunction?</summary>
+
+A. and, but
+B. because, although
+C. either…or
+D. so, yet
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. either…or** — Correlative conjunctions always work in pairs.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q46.</strong> "She was tired, ___ she finished the work on time." Which coordinating conjunction fits?</summary>
+
+A. so
+B. but
+C. because
+D. or
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. but** — Shows contrast between being tired and finishing the work.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q47.</strong> "___ you study hard, you will not pass." Which subordinating conjunction of condition fits?</summary>
+
+A. If
+B. Unless
+C. Although
+D. Because
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Unless** — *Unless* means "if not." The sentence means: "If you do NOT study hard, you will not pass."
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q48.</strong> "He was so tired ___ he fell asleep immediately." Which subordinating conjunction of result fits?</summary>
+
+A. that
+B. so
+C. such
+D. than
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**A. that** — *So...that* is a subordinating conjunction pair showing result.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q49.</strong> Which subordinating conjunction shows <strong>contrast/concession</strong>?</summary>
+
+A. because
+B. although
+C. when
+D. since
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. although** — *Although* introduces something unexpected or contrary to expectations.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q50.</strong> Which sentence uses a correlative conjunction correctly?</summary>
+
+A. Neither he nor I are going.
+B. Either she or they is responsible.
+C. Both the teacher and the student were happy.
+D. Not only he helped but also she.
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Both the teacher and the student were happy.** — *Both…and* is used correctly as a pair joining two equal nouns.
+</details>
+</details>
+
+---
+
+## 💥 INTERJECTION (Q51–Q54)
+
+
+<details>
+<summary><strong>Q51.</strong> "Alas! The old man died." What emotion does <em>Alas</em> express?</summary>
+
+A. Joy
+B. Surprise
+C. Sorrow
+D. Appreciation
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Sorrow** — *Alas* expresses grief or sadness.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q52.</strong> "Bravo! Well done!" These interjections express ___</summary>
+
+A. Sorrow
+B. Surprise
+C. Contempt
+D. Appreciation
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**D. Appreciation** — Used to praise or applaud someone.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q53.</strong> "Ugh! This tastes horrible!" What emotion does <em>Ugh</em> express?</summary>
+
+A. Pain
+B. Disgust
+C. Relief
+D. Surprise
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Disgust** — *Ugh* expresses disgust or revulsion.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q54.</strong> "Phew! That was close!" What emotion does <em>Phew</em> express?</summary>
+
+A. Joy
+B. Surprise
+C. Relief
+D. Pain
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Relief** — *Phew* expresses relief after a tense situation.
+</details>
+</details>
+
+---
+
+## 🎯 MIXED — Identify the Part of Speech (Q55–Q60)
+
+
+<details>
+<summary><strong>Q55.</strong> In "The boy ran quickly," what part of speech is <em>quickly</em>?</summary>
+
+A. Adjective
+B. Adverb
+C. Noun
+D. Preposition
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Adverb** — It modifies the verb *ran* and answers "How?"
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q56.</strong> In "This is mine," what part of speech is <em>mine</em>?</summary>
+
+A. Personal pronoun
+B. Possessive pronoun
+C. Demonstrative pronoun
+D. Reflexive pronoun
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Possessive pronoun** — It shows ownership/belonging and stands alone.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q57.</strong> "Hurrah! We won!" What part of speech is <em>Hurrah</em>?</summary>
+
+A. Noun
+B. Adverb
+C. Interjection
+D. Adjective
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Interjection** — It expresses sudden joy and has no grammatical connection to the sentence.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q58.</strong> In "The captain led the team," what type of noun is <em>captain</em>?</summary>
+
+A. Proper noun
+B. Common noun
+C. Collective noun
+D. Abstract noun
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**B. Common noun** — It is a general name for a person, not a particular name.
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q59.</strong> "She wrote beautifully." What type of adverb is <em>beautifully</em>?</summary>
+
+A. Adverb of degree
+B. Adverb of frequency
+C. Adverb of manner
+D. Adverb of time
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Adverb of manner** — It answers "How?" (How did she write? → beautifully)
+</details>
+</details>
+
+
+<details>
+<summary><strong>Q60.</strong> "Neither he nor I can do this." What part of speech is <em>Neither…nor</em>?</summary>
+
+A. Coordinating conjunction
+B. Subordinating conjunction
+C. Correlative conjunction
+D. Interjection
+
+<details>
+<summary>💡 <strong>Answer</strong></summary>
+
+**C. Correlative conjunction** — *Neither…nor* is a pair that always works together to join two equal parts.
+</details>
+</details>
+
+---
+
+*Source: Class VII & VIII English Grammar Notes*
+*Total: 60 MCQs covering all 9 parts of speech*
