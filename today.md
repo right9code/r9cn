@@ -1,158 +1,299 @@
-# MASTER TENSES GUIDE
-A comprehensive reference covering Present, Past, and Future tenses, featuring explicit formulas, subject agreement distinctions (3rd Person Singular vs. Others), negative variations including **"never"** patterns, practical use cases, structural flowcharts, and interactive self-assessments.
+# TENSES
+> Tenses denote the **time of action** in a sentence.
+## Overview
+
+| Tense | Indefinite | Continuous | Perfect | Perfect Continuous |
+| :--- | :--- | :--- | :--- | :--- |
+| **Present** | V₁ / V₁+s/es | is/am/are + V₁+ing | has/have + V₃ | has/have been + V₁+ing |
+| **Past** | V₂ | was/were + V₁+ing | had + V₃ | had been + V₁+ing |
+| **Future** | will + V₁ | will be + V₁+ing | will have + V₃ | will have been + V₁+ing |
+
 ---
-## 🗺️ Tense Decision Architecture
+## PRESENT TENSES
+### 1. Present Indefinite (Simple Present)
+**Use:** Habitual actions, universal truths, fixed schedules, general facts  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **III sing:** Subject + V₁+s/es + Object<br>**Others:** Subject + V₁ + Object |
+| ❌ | **III sing:** Subject + doesn't + V₁ + Object<br>**Others:** Subject + don't + V₁ + Object |
+| ❓ | **III sing:** Does + Subject + V₁ + Object?<br>**Others:** Do + Subject + V₁ + Object? |
+
+**Examples:**
+- She eats an orange. (Habitual)  
+- The Sun rises in the morning. (Universal truth)  
+- The bell rings at 8:50 AM. (Fixed schedule)  
+> ⚠️ **NEVER Case:** **Never** use V₁+s/es with plural subjects or "I/You/We/They". (e.g., ❌ *They eats apples.* → ✅ *They eat apples.*)
+---
+### 2. Present Continuous
+**Use:** Actions happening now, temporary situations, planned future events  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **III sing:** Subject + is + V₁+ing + Object<br>**Others:** Subject + are + V₁+ing + Object<br>**I:** I + am + V₁+ing + Object |
+| ❌ | **III sing:** Subject + isn't + V₁+ing + Object<br>**Others:** Subject + aren't + V₁+ing + Object<br>**I:** I + am not + V₁+ing + Object |
+| ❓ | **III sing:** Is + Subject + V₁+ing + Object?<br>**Others:** Are + Subject + V₁+ing + Object?<br>**I:** Am I + V₁+ing + Object? |
+
+**Examples:**
+- She is eating an orange. (Now)  
+- The stars are shining brightly tonight. (Current state)  
+- Our classes are starting late this week. (Temporary)  
+> ⚠️ **NEVER Case:** **Never** use continuous forms with stative verbs for perception or emotion like *know, love, believe, understand, hate*. (e.g., ❌ *I am knowing the answer.* → ✅ *I know the answer.*)
+---
+### 3. Present Perfect
+**Use:** Recently completed actions, past actions with present relevance  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **III sing:** Subject + has + V₃ + Object<br>**Others:** Subject + have + V₃ + Object |
+| ❌ | **III sing:** Subject + hasn't + V₃ + Object<br>**Others:** Subject + haven't + V₃ + Object |
+| ❓ | **III sing:** Has + Subject + V₃ + Object?<br>**Others:** Have + Subject + V₃ + Object? |
+
+**Examples:**
+- She has eaten her orange. (Recently completed)  
+- The bell has just rung. (Immediate past)  
+- I have eaten my breakfast already. (Present relevance)  
+> ⚠️ **NEVER Case:** **Never** use Present Perfect with specific past time expressions like *yesterday, last night, in 2010, ago*. (e.g., ❌ *I have met him yesterday.* → ✅ *I met him yesterday.*)
+---
+### 4. Present Perfect Continuous
+**Use:** Actions started in past, continuing to present (emphasizes duration)  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **III sing:** Subject + has been + V₁+ing + Object + **since/for** + Time<br>**Others:** Subject + have been + V₁+ing + Object + **since/for** + Time |
+| ❌ | **III sing:** Subject + hasn't been + V₁+ing + Object + since/for + Time<br>**Others:** Subject + haven't been + V₁+ing + Object + since/for + Time |
+| ❓ | **III sing:** Has + Subject + been + V₁+ing + Object + since/for + Time?<br>**Others:** Have + Subject + been + V₁+ing + Object + since/for + Time? |
+
+> **for** → duration (for two hours) | **since** → starting point (since 2 PM)
+**Examples:**
+- She has been eating healthy food **for** a month.  
+- I have been eating apples **since** I was a child.  
+> ⚠️ **NEVER Case:** **Never** use *since* with a duration or *for* with a specific starting time point. (e.g., ❌ *Since two hours* → ✅ *For two hours*)
+---
+## PAST TENSES
+### 5. Past Indefinite (Simple Past)
+**Use:** Completed actions at specific past time, past habits, historical facts  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + V₂ + Object |
+| ❌ | **All:** Subject + didn't + V₁ + Object |
+| ❓ | **All:** Did + Subject + V₁ + Object? |
+
+**Examples:**
+- She ate an orange yesterday. (Completed)  
+- The Sun rose at 5:45 AM. (Specific time)  
+- Lions lived in this valley many years ago. (Historical)  
+> ⚠️ **NEVER Case:** **Never** use V₂ after *did* or *didn't*. Always revert to V₁. (e.g., ❌ *She didn't ate.* → ✅ *She didn't eat.*)
+---
+### 6. Past Continuous
+**Use:** Actions ongoing at specific past point, interrupted actions  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **III sing/I:** Subject + was + V₁+ing + Object<br>**Others:** Subject + were + V₁+ing + Object |
+| ❌ | **III sing/I:** Subject + wasn't + V₁+ing + Object<br>**Others:** Subject + weren't + V₁+ing + Object |
+| ❓ | **III sing/I:** Was + Subject + V₁+ing + Object?<br>**Others:** Were + Subject + V₁+ing + Object? |
+
+**Examples:**
+- She was eating an orange when I arrived. (Interrupted)  
+- The stars were shining when the power went out. (Background)  
+> ⚠️ **NEVER Case:** **Never** use *were* with singular pronouns like *He, She, It* in real past contexts. (e.g., ❌ *He were writing.* → ✅ *He was writing.*)
+---
+### 7. Past Perfect
+**Use:** Action completed before another past action ("past of the past")  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + had + V₃ + Object |
+| ❌ | **All:** Subject + hadn't + V₃ + Object |
+| ❓ | **All:** Had + Subject + V₃ + Object? |
+
+**Examples:**
+- She had eaten the orange before lunch started.  
+- The bell had rung before I reached the gate.  
+> ⚠️ **NEVER Case:** **Never** use Past Perfect for an isolated past event when no other past event or reference point is mentioned. (e.g., ❌ *I had seen him yesterday.* → ✅ *I saw him yesterday.*)
+---
+### 8. Past Perfect Continuous
+**Use:** Actions started in past and continued up to another past point  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + had been + V₁+ing + Object + **since/for** + Time |
+| ❌ | **All:** Subject + hadn't been + V₁+ing + Object + since/for + Time |
+| ❓ | **All:** Had + Subject + been + V₁+ing + Object + since/for + Time? |
+
+**Examples:**
+- She had been eating oranges for weeks to improve her health.  
+- The fish had been swimming near the shore all day.  
+> ⚠️ **NEVER Case:** **Never** omit *been* in perfect continuous structures. (e.g., ❌ *She had eating for hours.* → ✅ *She had been eating for hours.*)
+---
+## FUTURE TENSES
+### 9. Future Indefinite (Simple Future)
+**Use:** Future actions, predictions, sudden decisions  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + will + V₁ + Object |
+| ❌ | **All:** Subject + won't + V₁ + Object |
+| ❓ | **All:** Will + Subject + V₁ + Object? |
+
+**Examples:**
+- She will eat an orange tomorrow. (Future action)  
+- The Sun will rise at 6:15 AM tomorrow. (Future fact)  
+- The stars will shine tonight if it is clear. (Prediction)  
+> ⚠️ **NEVER Case:** **Never** use *will* in conditional/time clauses introduced by *if, when, as soon as, before, after*. (e.g., ❌ *If it will rain, I will stay.* → ✅ *If it rains, I will stay.*)
+---
+### 10. Future Continuous
+**Use:** Actions in progress at specific future time  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + will be + V₁+ing + Object |
+| ❌ | **All:** Subject + won't be + V₁+ing + Object |
+| ❓ | **All:** Will + Subject + be + V₁+ing + Object? |
+
+**Examples:**
+- She will be eating her orange during the break.  
+- I will be eating my apple when you arrive.  
+> ⚠️ **NEVER Case:** **Never** omit *be* after *will* when forming continuous tenses. (e.g., ❌ *She will eating soon.* → ✅ *She will be eating soon.*)
+---
+### 11. Future Perfect
+**Use:** Actions completed by a certain future point  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + will have + V₃ + Object |
+| ❌ | **All:** Subject + won't have + V₃ + Object |
+| ❓ | **All:** Will + Subject + have + V₃ + Object? |
+
+**Examples:**
+- She will have eaten her orange before the teacher arrives.  
+- I will have eaten my breakfast by 8 AM.  
+> ⚠️ **NEVER Case:** **Never** use *will has* with singular subjects. *Will* is a modal auxiliary and always takes the base form *have*. (e.g., ❌ *She will has finished.* → ✅ *She will have finished.*)
+---
+### 12. Future Perfect Continuous
+**Use:** Actions continuing up until a future point (emphasizes duration)  
+
+| Type | Structure |
+| :--- | :--- |
+| ✅ | **All:** Subject + will have been + V₁+ing + Object + **since/for** + Time |
+| ❌ | **All:** Subject + won't have been + V₁+ing + Object + since/for + Time |
+| ❓ | **All:** Will + Subject + have been + V₁+ing + Object + since/for + Time? |
+
+**Examples:**
+- She will have been eating a balanced diet for a year by December.  
+- The lions will have been living in this reserve for fifty years by 2030.  
+> ⚠️ **NEVER Case:** **Never** use *since* to denote future duration in Future Perfect Continuous; use *from* or *for*. (e.g., ❌ *Will have been working since next week* → ✅ *Will have been working from next week*)
+---
+## QUICK REFERENCE
+### Verb Forms
+
+| Form | Name | Example |
+| :--- | :--- | :--- |
+| **V₁** | Base Form | eat, play, go |
+| **V₂** | Past Simple | ate, played, went |
+| **V₃** | Past Participle | eaten, played, gone |
+| **V₁+ing** | Present Participle | eating, playing, going |
+
+### Subject Categories
+
+| Category | Subjects |
+| :--- | :--- |
+| **III sing** | He, She, It, Singular nouns |
+| **Others** | I, You, We, They, Plural nouns |
+
+### Key Words
+
+| Tense Type | Signal Words |
+| :--- | :--- |
+| **Indefinite** | always, usually, often, every day, never |
+| **Continuous** | now, at present, at this moment, currently |
+| **Perfect** | already, just, yet, recently, lately |
+| **Perfect Continuous** | for, since, all day, how long |
+
+---
+## PRACTICE MCQS
+### Sentence Type Conversion Questions
+1. **Convert to Negative:** *"She has completed her project."*  
+   - A) She does not complete her project.  
+   - B) She has not completed her project.  
+   - C) She had not completed her project.  
+   - D) She is not completing her project.  
+   <details>
+   <summary><b>View Answer</b></summary>
+   <b>Correct Answer: B</b><br>
+   <i>Explanation:</i> Present Perfect negative structure is Subject + has/have not + V₃.
+   </details>  
+2. **Convert to Interrogative:** *"They ate all the oranges."*  
+   - A) Have they eaten all the oranges?  
+   - B) Do they eat all the oranges?  
+   - C) Did they eat all the oranges?  
+   - D) Were they eating all the oranges?  
+   <details>
+   <summary><b>View Answer</b></summary>
+   <b>Correct Answer: C</b><br>
+   <i>Explanation:</i> Past Indefinite question format requires <i>Did + Subject + V₁</i>.
+   </details>  
+3. **Convert Affirmative to Future Continuous:** *"He writes an essay."*  
+   - A) He will write an essay.  
+   - B) He will have written an essay.  
+   - C) He will be writing an essay.  
+   - D) He will have been writing an essay.  
+   <details>
+   <summary><b>View Answer</b></summary>
+   <b>Correct Answer: C</b><br>
+   <i>Explanation:</i> Future Continuous structure is Subject + will be + V₁+ing.
+   </details>  
+---
+### Tense to Tense Conversion Questions
+4. **Convert Present Continuous to Past Perfect:** *"I am studying for the exam."*  
+   - A) I studied for the exam.  
+   - B) I was studying for the exam.  
+   - C) I had studied for the exam.  
+   - D) I have studied for the exam.  
+   <details>
+   <summary><b>View Answer</b></summary>
+   <b>Correct Answer: C</b><br>
+   <i>Explanation:</i> Past Perfect uses <i>had + V₃</i> ("had studied").
+   </details>  
+5. **Convert Past Indefinite to Present Perfect Continuous:** *"She lived in Mumbai for five years."*  
+   - A) She was living in Mumbai for five years.  
+   - B) She has been living in Mumbai for five years.  
+   - C) She had been living in Mumbai for five years.  
+   - D) She lives in Mumbai since five years.  
+   <details>
+   <summary><b>View Answer</b></summary>
+   <b>Correct Answer: B</b><br>
+   <i>Explanation:</i> Present Perfect Continuous requires <i>has/have been + V₁+ing</i>.
+   </details>  
+6. **Convert Future Indefinite to Past Continuous:** *"They will play football."*  
+   - A) They played football.  
+   - B) They had played football.  
+   - C) They were playing football.  
+   - D) They had been playing football.  
+   <details>
+   <summary><b>View Answer</b></summary>
+   <b>Correct Answer: C</b><br>
+   <i>Explanation:</i> Past Continuous uses <i>was/were + V₁+ing</i> ("were playing" for plural subject).
+   </details>  
+---
+## TENSES SUMMARY DIAGRAM
 ```mermaid
-mindmap
-  root((English Tenses))
-    Present Tense
-      Simple Present
-        Formula: Subj + V1 / V1-s-es
-        Never Pattern: Subj + NEVER + V1 / V1-s-es
-        Example: She never skips breakfast.
-      Present Continuous
-        Formula: Subj + is/am/are + V1-ing
-        Never Pattern: Subj + is/am/are + NEVER + V1-ing
-        Example: He is never complaining about work.
-      Present Perfect
-        Formula: Subj + has/have + V3
-        Never Pattern: Subj + has/have + NEVER + V3
-        Example: They have never visited Paris.
-      Present Perfect Continuous
-        Formula: Subj + has/have + been + V1-ing
-        Never Pattern: Subj + has/have + NEVER + been + V1-ing
-        Example: She has never been working on Sundays.
-    Past Tense
-      Simple Past
-        Formula: Subj + V2
-        Never Pattern: Subj + NEVER + V2
-        Example: He never saw the message.
-      Past Continuous
-        Formula: Subj + was/were + V1-ing
-        Never Pattern: Subj + was/were + NEVER + V1-ing
-        Example: She was never slacking off.
-      Past Perfect
-        Formula: Subj + had + V3
-        Never Pattern: Subj + HAD + NEVER + V3
-        Example: They had never seen such a view.
-      Past Perfect Continuous
-        Formula: Subj + had + been + V1-ing
-        Never Pattern: Subj + HAD + NEVER + been + V1-ing
-        Example: He had never been running long distances.
-    Future Tense
-      Simple Future
-        Formula: Subj + will + V1
-        Never Pattern: Subj + will + NEVER + V1
-        Example: She will never give up.
-      Future Continuous
-        Formula: Subj + will + be + V1-ing
-        Never Pattern: Subj + will + NEVER + be + V1-ing
-        Example: He will never be working on weekends.
-      Future Perfect
-        Formula: Subj + will + have + V3
-        Never Pattern: Subj + will + NEVER + have + V3
-        Example: It will never have finished by noon.
-      Future Perfect Continuous
-        Formula: Subj + will + have + been + V1-ing
-        Never Pattern: Subj + will + NEVER + have + been + V1-ing
-        Example: She will never have been waiting that long.
+flowchart TD
+    ROOT[ENGLISH TENSES] --> PRESENT[PRESENT TENSE]
+    ROOT --> PAST[PAST TENSE]
+    ROOT --> FUTURE[FUTURE TENSE]
+    PRESENT --> PR_IND[Indefinite: V1 / V1+s/es]
+    PRESENT --> PR_CON[Continuous: is/am/are + V1+ing]
+    PRESENT --> PR_PER[Perfect: has/have + V3]
+    PRESENT --> PR_PC[Perf. Cont: has/have been + V1+ing]
+    PAST --> PA_IND[Indefinite: V2]
+    PAST --> PA_CON[Continuous: was/were + V1+ing]
+    PAST --> PA_PER[Perfect: had + V3]
+    PAST --> PA_PC[Perf. Cont: had been + V1+ing]
+    FUTURE --> FU_IND[Indefinite: will + V1]
+    FUTURE --> FU_CON[Continuous: will be + V1+ing]
+    FUTURE --> FU_PER[Perfect: will have + V3]
+    FUTURE --> FU_PC[Perf. Cont: will have been + V1+ing]
 ```
----
-## 📊 Complete Tense Master Matrix
-> [!NOTE]  
-> **Subject Categorization Key:**  
-> • **III Sing:** 3rd Person Singular (`He`, `She`, `It`, Singular Nouns)  
-> • **I:** 1st Person Singular  
-> • **Others:** `You`, `We`, `They`, Plural Nouns
-### 1. Present Tenses
-
-| Tense | Subject Category | Structural Formula | Standard Negative | "Never" Negative Pattern | Practical Context & Function | Time Markers |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Present Indefinite** | **III Sing**<br><br>**Others / I** | `Subj + V₁-s/es`<br><br>`Subj + V₁` | `doesn't + V₁`<br><br>`don't + V₁` | `Subj + never + V₁-s/es`<br>*(e.g., She **never eats** fast food.)*<br><br>`Subj + never + V₁`<br>*(e.g., They **never eat** fast food.)* | • Habitual actions<br>• Universal truths<br>• Fixed schedules | `always`<br>`usually`<br>`every day`<br>`never` |
-| **Present Continuous** | **III Sing**<br><br>**I**<br><br>**Others** | `Subj + is + V₁-ing`<br><br>`I + am + V₁-ing`<br><br>`Subj + are + V₁-ing` | `isn't + V₁-ing`<br><br>`am not + V₁-ing`<br><br>`aren't + V₁-ing` | `is + never + V₁-ing`<br>*(e.g., He **is never listening**.)*<br><br>`am + never + V₁-ing`<br><br>`are + never + V₁-ing` | • Actions happening right now<br>• Temporary habits<br>• Near-future plans | `now`<br>`at present`<br>`currently`<br>`this week` |
-| **Present Perfect** | **III Sing**<br><br>**Others / I** | `Subj + has + V₃`<br><br>`Subj + have + V₃` | `hasn't + V₃`<br><br>`haven't + V₃` | `has + never + V₃`<br>*(e.g., She **has never seen** snow.)*<br><br>`have + never + V₃`<br>*(e.g., I **have never seen** snow.)* | • Completed past actions with current impact<br>• Life experiences | `already`<br>`just`<br>`yet`<br>`never`<br>`ever` |
-| **Present Perfect Continuous** | **III Sing**<br><br>**Others / I** | `Subj + has been + V₁-ing`<br><br>`Subj + have been + V₁-ing` | `hasn't been + V₁-ing`<br><br>`haven't been + V₁-ing` | `has + never + been + V₁-ing`<br>*(e.g., It **has never been working** properly.)*<br><br>`have + never + been + V₁-ing` | • Action started in past and continuing to present (focus on duration) | `for [duration]`<br>`since [point]`<br>`all day` |
-
----
-### 2. Past Tenses
-
-| Tense | Subject Category | Structural Formula | Standard Negative | "Never" Negative Pattern | Practical Context & Function | Time Markers |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Past Indefinite** | **All Subjects** | `Subj + V₂` | `didn't + V₁` | `Subj + never + V₂`<br>*(e.g., She **never called** back.)*<br>*(Note: Main verb stays V₂ with "never")* | • Completed actions at a specified time in the past<br>• Historical facts | `yesterday`<br>`last week`<br>`in 2010`<br>`ago` |
-| **Past Continuous** | **III Sing / I**<br><br>**Others** | `Subj + was + V₁-ing`<br><br>`Subj + were + V₁-ing` | `wasn't + V₁-ing`<br><br>`weren't + V₁-ing` | `was + never + V₁-ing`<br>*(e.g., He **was never paying** attention.)*<br><br>`were + never + V₁-ing` | • Action in progress at a specific past moment<br>• Interrupted past action | `while`<br>`when`<br>`at that moment`<br>`all night` |
-| **Past Perfect** | **All Subjects** | `Subj + had + V₃` | `hadn't + V₃` | `had + never + V₃`<br>*(e.g., They **had never met** before the event.)* | • Action completed *before* another past event ("past of the past") | `before`<br>`after`<br>`by the time`<br>`already` |
-| **Past Perfect Continuous** | **All Subjects** | `Subj + had been + V₁-ing` | `hadn't been + V₁-ing` | `had + never + been + V₁-ing`<br>*(e.g., She **had never been living** alone until then.)* | • Continuous action ongoing up until a specific point in the past | `for [duration]`<br>`since [point]`<br>`had been` |
-
----
-### 3. Future Tenses
-
-| Tense | Subject Category | Structural Formula | Standard Negative | "Never" Negative Pattern | Practical Context & Function | Time Markers |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Future Indefinite** | **All Subjects** | `Subj + will + V₁` | `won't + V₁` | `will + never + V₁`<br>*(e.g., She **will never give up**.)* | • Instant decisions<br>• Predictions<br>• Promises and offers | `tomorrow`<br>`next year`<br>`soon`<br>`in the future` |
-| **Future Continuous** | **All Subjects** | `Subj + will be + V₁-ing` | `won't be + V₁-ing` | `will + never + be + V₁-ing`<br>*(e.g., He **will never be working** on Sundays.)* | • Action actively in progress at a specific point in the future | `at [time] tomorrow`<br>`this time next week` |
-| **Future Perfect** | **All Subjects** | `Subj + will have + V₃` | `won't have + V₃` | `will + never + have + V₃`<br>*(e.g., It **will never have finished** by noon.)* | • Action completed *before* a future deadline | `by [time]`<br>`by the time`<br>`before` |
-| **Future Perfect Continuous** | **All Subjects** | `Subj + will have been + V₁-ing` | `won't have been + V₁-ing` | `will + never + have + been + V₁-ing`<br>*(e.g., She **will never have been waiting** that long.)* | • Continuous duration of an action evaluated at a future endpoint | `for [duration] by [time]`<br>`by next year` |
-
----
-## 📌 Universal Rules for "Never" Placement
-1. **Primary Auxiliary Rule:** **`Never`** is placed immediately after the **first auxiliary verb** in compound verb structures (`is`, `am`, `are`, `was`, `were`, `has`, `have`, `had`, `will`).
-   * *Correct:* `will` + **never** + `have been` + `V₁-ing`
-   * *Incorrect:* ~~`will have been never + V₁-ing`~~
-2. **Simple Tense Nuance:**
-   * **Present Simple:** `never` replaces `doesn't/don't`, but **retains the V₁-s/es ending** for III Person Singular (`He never eats`, NOT ~~`He never eat`~~).
-   * **Past Simple:** `never` replaces `didn't`, but **retains the V₂ verb form** (`She never came`, NOT ~~`She never come`~~).
----
-## 📝 Practice Multiple Choice Questions (MCQs)
-Assess your structure retention. Click on the **Answer & Explanation** drop-downs to verify your answers.
----
-### Question 1
-Which of the following sentences correctly utilizes **"never"** in the **Past Indefinite (Simple Past)** tense?
-- **A)** He didn't never complete the report on time.
-- **B)** He never completes the report on time.
-- **C)** He never completed the report on time.
-- **D)** He was never complete the report on time.
-<details>
-<summary><b>View Answer & Explanation</b></summary>
-> **Correct Answer:** **C) He never completed the report on time.**  
->  
-> **Explanation:** When using **"never"** in Simple Past, the auxiliary `did` is omitted, and the main verb must remain in its past form (**V₂** -> *completed*).
-</details>
----
-### Question 2
-Select the correct **Present Perfect Continuous** sentence for a **3rd Person Singular** subject with **"never"**:
-- **A)** She has never been working on weekends.
-- **B)** She have never been working on weekends.
-- **C)** She has been never working on weekends.
-- **D)** She is never been working on weekends.
-<details>
-<summary><b>View Answer & Explanation</b></summary>
-> **Correct Answer:** **A) She has never been working on weekends.**  
->  
-> **Explanation:** The 3rd Person Singular requires **`has`**. **`Never`** must be placed directly after the primary auxiliary `has` and before `been + V₁-ing`.
-</details>
----
-### Question 3
-Identify the sentence that correctly preserves verb structure in the **Future Perfect** tense:
-- **A)** By 2030, the project will has finished.
-- **B)** By 2030, the project will have finished.
-- **C)** By 2030, the project will have finish.
-- **D)** By 2030, the project will has been finished.
-<details>
-<summary><b>View Answer & Explanation</b></summary>
-> **Correct Answer:** **B) By 2030, the project will have finished.**  
->  
-> **Explanation:** After the modal auxiliary **`will`**, the base form **`have`** is invariant. It never changes to ~~`has`~~ even with singular subjects like *the project*.
-</details>
----
-### Question 4
-Before I moved to London, I __________ such cold weather.
-- **A)** had never experienced
-- **B)** have never experienced
-- **C)** was never experienced
-- **D)** had never experience
-<details>
-<summary><b>View Answer & Explanation</b></summary>
-> **Correct Answer:** **A) had never experienced**  
->  
-> **Explanation:** The sentence describes an experience prior to a past point (*"before I moved"*). This requires **Past Perfect** (`had + never + V₃`).
-</details>
