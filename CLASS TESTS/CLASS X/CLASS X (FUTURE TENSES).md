@@ -31,10 +31,10 @@
 **i.** `Singular subject + will+ have + been + first form of verb + ing + ... + for/since + ...`  
 **Ans:** `____________`  
 
-**ii.** "I played a game."  
+**ii.** "I will play a game."  
 **Ans:** `____________`  
 
-**iii.** `Question word +  + subject +be ...?`  
+**iii.** `Question word + will + subject +be ...?`  
 **Ans:** `____________`  
 
 ---
