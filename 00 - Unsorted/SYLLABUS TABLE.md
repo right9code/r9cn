@@ -41,7 +41,7 @@
 | Factual Description | 120–150 words | 5 |
 | Magazine Article | 120–150 words | 5 |
 | ~~Descriptive~~ | 200–250 words | 7 |
-| ~~Narrative Essay~~ | 200–250 words | 7 |
+| Narrative Essay | 200–250 words | 7 |
 
 ---
 
