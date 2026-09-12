@@ -4,17 +4,17 @@
 
 | Grammar                                | Writing             | Prose                          | Poetry           | Suppl |
 | -------------------------------------- | ------------------- | ------------------------------ | ---------------- | ----- |
-| The Sentence                           | Paragraph Writing   | The Day The River Spoke        | Try Again        |       |
-| Nouns                                  | Essay Writing       | Three Days To See              | A Funny Man      |       |
-| Pronouns                               | Diary Writing       | Animals Birds And Dr Dolittle  | Paper Boats      |       |
-| Adjectives                             | Letter Writing      | My Brother's Great Invention   | Travel           |       |
-| Adverbs                                | Notice Writing      | North South East West          | My Dear Soldiers |       |
-| Articles                               | Report Writing      | The Tunnel                     |                  |       |
-| Simple Tenses                          | Picture Composition | Conquering The Summit          |                  |       |
-| Continuous Tense                       | Narrative Writing   | A Homage To Our Brave Soldiers |                  |       |
-| Perfect Tenses                         |                     | Rani Abbakka                   |                  |       |
-| Modals and Auxiliaries                 |                     |                                |                  |       |
-| Non-Finite Verbs                       |                     |                                |                  |       |
+| ~~The Sentence~~                       | Paragraph Writing   | The Day The River Spoke        | Try Again        |       |
+| ~~Nouns~~                              | Essay Writing       | Three Days To See              | A Funny Man      |       |
+| ~~Pronouns~~                           | Diary Writing       | Animals Birds And Dr Dolittle  | Paper Boats      |       |
+| ~~Adjectives~~                         | Letter Writing      | My Brother's Great Invention   | Travel           |       |
+| ~~Adverbs~~                            | Notice Writing      | North South East West          | My Dear Soldiers |       |
+| ~~Articles~~                           | Report Writing      | The Tunnel                     |                  |       |
+| ~~Simple Tenses~~                      | Picture Composition | Conquering The Summit          |                  |       |
+| ~~Continuous Tense~~                   | Narrative Writing   | A Homage To Our Brave Soldiers |                  |       |
+| ~~Perfect Tenses~~                     |                     | Rani Abbakka                   |                  |       |
+| ~~Modals and Auxiliaries~~             |                     |                                |                  |       |
+| ~~Non-Finite Verbs~~                   |                     |                                |                  |       |
 | Transitive and Intransitive Verbs      |                     |                                |                  |       |
 | Active and Passive Voice               |                     |                                |                  |       |
 | Subject-Verb Agreement                 |                     |                                |                  |       |
