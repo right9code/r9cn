@@ -32,16 +32,16 @@
 | Vocabulary | | | | |
 
 ### Writing Skills (20 Marks)
-| Writing Topic | Word Limit | Marks |
-|---|---|---|
-| ~~Notice~~ | Up to 50 words | 3 |
-| ~~Informal Invitation~~ | Up to 50 words | 3 |
-| ~~Letter to Editor~~ | 120–150 words | 5 |
-| ~~Formal E-mail~~ | 120–150 words | 5 |
-| Factual Description | 120–150 words | 5 |
-| Magazine Article | 120–150 words | 5 |
-| ~~Descriptive~~ | 200–250 words | 7 |
-| Narrative Essay | 200–250 words | 7 |
+| Writing Topic        | Word Limit     | Marks |
+| -------------------- | -------------- | ----- |
+| ~~Notice~~           | Up to 50 words | 3     |
+| Informal Invitation  | Up to 50 words | 3     |
+| ~~Letter to Editor~~ | 120–150 words  | 5     |
+| ~~Formal E-mail~~    | 120–150 words  | 5     |
+| Factual Description  | 120–150 words  | 5     |
+| Magazine Article     | 120–150 words  | 5     |
+| ~~Descriptive~~      | 200–250 words  | 7     |
+| Narrative Essay      | 200–250 words  | 7     |
 
 ---
 
