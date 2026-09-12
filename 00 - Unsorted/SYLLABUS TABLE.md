@@ -91,25 +91,25 @@
 
 ## Class IX
 
-| Grammar | Writing | Prose | Poetry | Suppl |
-|---|---|---|---|---|
-| Tenses | Letter to Editor | How I Taught My Grandmother To Read | Bharat Our Land | |
-| Subject-Verb Concord | Descriptive Paragraph (Place) | The Pot Maker | Gifts Of Grace — Honouring Our Vocations | |
-| Modals | Reflective Writing | Winds Of Change | Canvas Of Soil | |
-| Determiners | Poster Writing | Vitamin-M | I Cannot Remember My Mother | |
-| Reported Speech | Descriptive Paragraph (Factual Description) | The World Of Limitless Possibilities | Nine Gold Medals | |
-| Conditional Clauses — Type 1 | Descriptive Paragraphs (Writing Descriptive) | Twin Melodies | A Friend Found In Music | |
-| Clauses — Noun Clause and Relative Clause | Article | Carrier Of Words | Words | |
-| | Diary Entry | Follow That Dream | Believe In Yourself | |
-| | Notice | | | |
-| | Slogan | | | |
-| | Story Writing | | | |
-| | Informal Invitation Letter | | | |
-| | Informal Letter | | | |
-| | Narrative Essay | | | |
-| | Formal Email | | | |
-| | Speech | | | |
-| | Analytical Paragraph | | | |
+| Grammar                                   | Writing                                      | Prose                                | Poetry                                   | Suppl |
+| ----------------------------------------- | -------------------------------------------- | ------------------------------------ | ---------------------------------------- | ----- |
+| Tenses                                    | Letter to Editor                             | How I Taught My Grandmother To Read  | Bharat Our Land                          |       |
+| Subject-Verb Concord                      | Descriptive Paragraph (Place)                | The Pot Maker                        | Gifts Of Grace — Honouring Our Vocations |       |
+| Modals                                    | Reflective Writing                           | Winds Of Change                      | Canvas Of Soil                           |       |
+| Determiners                               | Poster Writing                               | Vitamin-M                            | I Cannot Remember My Mother              |       |
+| Reported Speech                           | Descriptive Paragraph (Factual Description)  | The World Of Limitless Possibilities | Nine Gold Medals                         |       |
+| Conditional Clauses — Type 1              | Descriptive Paragraphs (Writing Descriptive) | Twin Melodies                        | A Friend Found In Music                  |       |
+| Clauses — Noun Clause and Relative Clause | Article                                      | Carrier Of Words                     | Words                                    |       |
+|                                           | Diary Entry                                  | Follow That Dream                    | Believe In Yourself                      |       |
+|                                           | Notice                                       |                                      |                                          |       |
+|                                           | Slogan                                       |                                      |                                          |       |
+|                                           | Story Writing                                |                                      |                                          |       |
+|                                           | Informal Invitation Letter                   |                                      |                                          |       |
+|                                           | Informal Letter                              |                                      |                                          |       |
+|                                           | Narrative Essay                              |                                      |                                          |       |
+|                                           | Formal Email                                 |                                      |                                          |       |
+|                                           | Speech                                       |                                      |                                          |       |
+|                                           | Analytical Paragraph                         |                                      |                                          |       |
 
 ### Writing Skills (20 Marks)
 | Writing Topic | Word Limit | Marks |
@@ -127,15 +127,15 @@
 
 ## Class X
 
-| Grammar | Writing | Prose | Poetry | Suppl |
-|---|---|---|---|---|
-| Tenses | Formal Letters | A Letter To God | Dust Of Snow | A Triumph Of Surgery |
-| Modals | Analytical Paragraph | Nelson Mandela | Fire And Ice | The Thief's Story |
-| Active and Passive Voice | | Two Stories About Flying | A Tiger In The Zoo | The Midnight Visitor |
-| Subject-Verb Agreement | | From The Diary Of Anne Frank | How To Tell Wild Animals | A Question Of Trust |
-| Reported Speech | | Glimpses Of India | The Ball Poem | Footprints Without Feet |
-| Clauses | | Mijbil The Otter | Amanda | The Making Of A Scientist |
-| Determiners | | Madam Rides The Bus | The Trees | The Necklace |
-| Prepositions | | The Sermon At Benares | Fog | Bholi |
-| Integrated Grammar Exercises | | The Proposal | The Tale Of Custard The Dragon | The Book That Saved The Earth |
-| | | | For Anne Gregory | |
+| Grammar                      | Writing              | Prose                        | Poetry                         | Suppl                         |
+| ---------------------------- | -------------------- | ---------------------------- | ------------------------------ | ----------------------------- |
+| Tenses                       | Formal Letters       | A Letter To God              | Dust Of Snow                   | A Triumph Of Surgery          |
+| Modals                       | Analytical Paragraph | Nelson Mandela               | Fire And Ice                   | The Thief's Story             |
+| Active and Passive Voice     |                      | Two Stories About Flying     | A Tiger In The Zoo             | The Midnight Visitor          |
+| Subject-Verb Agreement       |                      | From The Diary Of Anne Frank | How To Tell Wild Animals       | A Question Of Trust           |
+| Reported Speech              |                      | Glimpses Of India            | The Ball Poem                  | Footprints Without Feet       |
+| Clauses                      |                      | Mijbil The Otter             | Amanda                         | The Making Of A Scientist     |
+| Determiners                  |                      | Madam Rides The Bus          | The Trees                      | The Necklace                  |
+| Prepositions                 |                      | The Sermon At Benares        | Fog                            | Bholi                         |
+| Integrated Grammar Exercises |                      | The Proposal                 | The Tale Of Custard The Dragon | The Book That Saved The Earth |
+|                              |                      |                              | For Anne Gregory               |                               |
