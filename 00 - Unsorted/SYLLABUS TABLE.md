@@ -118,15 +118,15 @@
 
 ## Class X
 
-| Grammar | Writing | Prose | Poetry | Suppl |
-|---|---|---|---|---|
-| Tenses | Formal Letters | A Letter To God | Dust Of Snow | A Triumph Of Surgery |
-| Modals | Analytical Paragraph | Nelson Mandela | Fire And Ice | The Thief's Story |
-| Active and Passive Voice | | Two Stories About Flying | A Tiger In The Zoo | The Midnight Visitor |
-| Subject-Verb Agreement | | From The Diary Of Anne Frank | How To Tell Wild Animals | A Question Of Trust |
-| Reported Speech | | Glimpses Of India | The Ball Poem | Footprints Without Feet |
-| Clauses | | Mijbil The Otter | Amanda | The Making Of A Scientist |
-| Determiners | | Madam Rides The Bus | The Trees | The Necklace |
-| Prepositions | | The Sermon At Benares | Fog | Bholi |
-| Integrated Grammar Exercises | | The Proposal | The Tale Of Custard The Dragon | The Book That Saved The Earth |
-| | | | For Anne Gregory | |
+| Grammar                      | Writing              | Prose                        | Poetry                         | Suppl                         |
+| ---------------------------- | -------------------- | ---------------------------- | ------------------------------ | ----------------------------- |
+| Tenses                       | Formal Letters       | A Letter To God              | Dust Of Snow                   | A Triumph Of Surgery          |
+| Modals                       | Analytical Paragraph | Nelson Mandela               | Fire And Ice                   | The Thief's Story             |
+| Active and Passive Voice     |                      | Two Stories About Flying     | A Tiger In The Zoo             | The Midnight Visitor          |
+| Subject-Verb Agreement       |                      | From The Diary Of Anne Frank | How To Tell Wild Animals       | A Question Of Trust           |
+| Reported Speech              |                      | Glimpses Of India            | The Ball Poem                  | Footprints Without Feet       |
+| Clauses                      |                      | Mijbil The Otter             | Amanda                         | The Making Of A Scientist     |
+| Determiners                  |                      | Madam Rides The Bus          | The Trees                      | The Necklace                  |
+| Prepositions                 |                      | The Sermon At Benares        | Fog                            | Bholi                         |
+| Integrated Grammar Exercises |                      | The Proposal                 | The Tale Of Custard The Dragon | The Book That Saved The Earth |
+|                              |                      |                              | For Anne Gregory               |                               |
