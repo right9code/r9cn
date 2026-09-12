@@ -6,14 +6,14 @@
 | -------------------------------------- | ------------------- | ------------------------------ | ---------------- | ----- |
 | The Sentence                           | Paragraph Writing   | The Day The River Spoke        | Try Again        |       |
 | Nouns                                  | Essay Writing       | Three Days To See              | A Funny Man      |       |
-| Pronouns                               | ~~Diary Writing~~   | Animals Birds And Dr Dolittle  | Paper Boats      |       |
-| Adjectives                             | ~~Letter Writing~~  | My Brother's Great Invention   | Travel           |       |
-| Adverbs                                | ~~Notice Writing~~  | North South East West          | My Dear Soldiers |       |
+| Pronouns                               | Diary Writing       | Animals Birds And Dr Dolittle  | Paper Boats      |       |
+| Adjectives                             | Letter Writing      | My Brother's Great Invention   | Travel           |       |
+| Adverbs                                | Notice Writing      | North South East West          | My Dear Soldiers |       |
 | Articles                               | Report Writing      | The Tunnel                     |                  |       |
 | Simple Tenses                          | Picture Composition | Conquering The Summit          |                  |       |
 | Continuous Tense                       | Narrative Writing   | A Homage To Our Brave Soldiers |                  |       |
 | Perfect Tenses                         |                     | Rani Abbakka                   |                  |       |
-| Modals and Auxiliaries                 | ~~Story Writing~~   |                                |                  |       |
+| Modals and Auxiliaries                 | Story Writing       |                                |                  |       |
 | Non-Finite Verbs                       |                     |                                |                  |       |
 | Transitive and Intransitive Verbs      |                     |                                |                  |       |
 | Active and Passive Voice               |                     |                                |                  |       |
@@ -33,12 +33,12 @@
 
 ### Writing Skills (20 Marks)
 
-| Writing Topic | Word Limit | Marks |
-|---|---|---|
-| Notice OR Informal Invitation | Up to 50 words | 3 |
-| Letter to Editor OR Formal E-mail | 120–150 words | 5 |
-| Factual Description OR Magazine Article | 120–150 words | 5 |
-| Descriptive OR Narrative Essay | 200–250 words | 7 |
+| Writing Topic                           | Word Limit     | Marks |
+| --------------------------------------- | -------------- | ----- |
+| Notice OR Informal Invitation           | Up to 50 words | 3     |
+| Letter to Editor OR Formal E-mail   | 120–150 words  | 5     |
+| Factual Description OR Magazine Article | 120–150 words  | 5     |
+| Descriptive OR Narrative Essay          | 200–250 words  | 7     |
 
 ---
 
