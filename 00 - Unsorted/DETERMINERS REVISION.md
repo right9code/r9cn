@@ -105,7 +105,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q1. It took him _____ hour and a half to finish the test because he had _____ unique method of calculating.  
+#### Q1. It took him `_______` hour and a half to finish the test because he had `_______` unique method of calculating.  
 * (A) a, an  
 * (B) an, a  
 * (C) an, an  
@@ -120,7 +120,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q2. I have _____ friends in this new city, so I spend most evenings alone.  
+#### Q2. I have `_______` friends in this new city, so I spend most evenings alone.  
 * (A) a few  
 * (B) few  
 * (C) little  
@@ -135,7 +135,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q3. Could you please give me _____ milk? I only need a tiny drop for my coffee.  
+#### Q3. Could you please give me `_______` milk? I only need a tiny drop for my coffee.  
 * (A) a few  
 * (B) a little  
 * (C) few  
@@ -150,7 +150,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q4. There are _____ cars on the highway today than there were on Sunday.  
+#### Q4. There are `_______` cars on the highway today than there were on Sunday.  
 * (A) less  
 * (B) fewer  
 * (C) lesser  
@@ -165,7 +165,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q5. _____ of the two applicants was suitable for the managerial post.  
+#### Q5. `_______` of the two applicants was suitable for the managerial post.  
 * (A) Neither  
 * (B) None  
 * (C) Every  
@@ -180,7 +180,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q6. The climate of Shimla is cooler than _____ of Delhi.  
+#### Q6. The climate of Shimla is cooler than `_______` of Delhi.  
 * (A) this  
 * (B) these  
 * (C) that  
@@ -195,7 +195,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q7. We had very _____ hope of his recovery, but against the odds he survived.  
+#### Q7. We had very `_______` hope of his recovery, but against the odds he survived.  
 * (A) few  
 * (B) a few  
 * (C) little  
@@ -210,7 +210,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q8. _____ European scholar met me yesterday to discuss _____ Vedas.  
+#### Q8. `_______` European scholar met me yesterday to discuss `_______` Vedas.  
 * (A) An, the  
 * (B) A, the  
 * (C) The, a  
@@ -225,7 +225,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q9. I don't like this shirt; could you show me _____ one?  
+#### Q9. I don't like this shirt; could you show me `_______` one?  
 * (A) other  
 * (B) others  
 * (C) another  
@@ -240,7 +240,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q10. _____ student in the class of fifty was given a personal mentor.  
+#### Q10. `_______` student in the class of fifty was given a personal mentor.  
 * (A) Every  
 * (B) Each  
 * (C) All  
@@ -270,7 +270,7 @@ Before picking a determiner, identify which noun bucket your word falls into:
 
 ---
 
-#### Q12. The dog injured _____ right paw while jumping over the fence.  
+#### Q12. The dog injured `_______` right paw while jumping over the fence.  
 * (A) it's  
 * (B) its'  
 * (C) its  
@@ -282,3 +282,5 @@ Before picking a determiner, identify which noun bucket your word falls into:
 > **Correct Answer:** **(C) its**  
 > **Explanation:** The possessive determiner for neuter singular / animals is **its** (no apostrophe). *It's* is a contraction of *it is*.  
 </details>
+
+
