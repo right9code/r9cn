@@ -27,20 +27,20 @@
 
 ## The Poem
 
-> Oh! Defenders of borders
-> You are great sons of my land
-> When we are all asleep
-> You still hold on to your deed
-> Windy season or snowy days
-> Or scorching sun's sweltering rays
-> You are there guarding all the time awake
-> Treading the lonely expanses as yogis
-> Climbing the heights or striding the valleys
-> Defending the deserts or guarding the marshes
-> Surveillance in seas and by securing the air
-> Prime of your youth given to the nation!!
-> Wind chimes of my land vibrate your feat
-> We pray for you brave men!!
+> Oh! Defenders of borders  
+> You are great sons of my land  
+> When we are all asleep  
+> You still hold on to your deed  
+> Windy season or snowy days  
+> Or scorching sun's sweltering rays  
+> You are there guarding all the time awake  
+> Treading the lonely expanses as yogis  
+> Climbing the heights or striding the valleys  
+> Defending the deserts or guarding the marshes  
+> Surveillance in seas and by securing the air  
+> Prime of your youth given to the nation!!  
+> Wind chimes of my land vibrate your feat  
+> We pray for you brave men!!  
 > May the Lord bless you all!!
 
 ---
@@ -184,7 +184,7 @@ The soldier's attitude of **unwavering commitment and devotion to duty**.
 
 ### Note of Gratitude (50 words)
 
-*Dear Bravehearts,*
+*Dear Bravehearts,*  
 *I would like to express my deepest gratitude for your selfless service. You sacrifice your comfort and youth to guard our borders in extreme weather so we can live in peace. Thank you for your immense courage and dedication. India is safe and proud because of you.*
 
 ---

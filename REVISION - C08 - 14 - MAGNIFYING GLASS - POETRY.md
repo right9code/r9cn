@@ -24,34 +24,34 @@
 
 ## The Poem
 
-> With this round glass
-> I can make Magic talk—
-> A myriad shells show
-> In a scrap of chalk;
->
-> Of but an inch of moss
-> A forest—flowers and trees;
-> A drop of water
-> Like hive of bees.
->
-> I lie in wait and watch
-> How the deft spider jets
-> The woven web-silk
-> From his spinnerets;
->
-> The tigerish claws he has!
-> And oh! the silly flies
-> The stumble into his net—
-> With all those eyes!
->
-> Not even the tiniest thing
-> But this my glass
-> Will make more marvellous
-> And itself surpass.
->
-> Yes, and with lenses like it,
-> Eyeing the moon,
-> 'Twould seem you'd walk there
+> With this round glass  
+> I can make Magic talk—  
+> A myriad shells show  
+> In a scrap of chalk;  
+>  
+> Of but an inch of moss  
+> A forest—flowers and trees;  
+> A drop of water  
+> Like hive of bees.  
+>  
+> I lie in wait and watch  
+> How the deft spider jets  
+> The woven web-silk  
+> From his spinnerets;  
+>  
+> The tigerish claws he has!  
+> And oh! the silly flies  
+> The stumble into his net—  
+> With all those eyes!  
+>  
+> Not even the tiniest thing  
+> But this my glass  
+> Will make more marvellous  
+> And itself surpass.  
+>  
+> Yes, and with lenses like it,  
+> Eyeing the moon,  
+> 'Twould seem you'd walk there  
 > In an afternoon!
 
 ---
