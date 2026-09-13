@@ -85,6 +85,7 @@ Here are clear, visual text-based timelines for all four chapters, designed with
 #### *Chronology of Ambition, History & the 10-Year Mastery Journey*
 
 ```text
+
   [ 1940s: HISTORICAL DISRUPTIONS ]
   │
   ├──► World War II Japanese invasion of Singapore forever changes life paths.
@@ -117,6 +118,7 @@ Here are clear, visual text-based timelines for all four chapters, designed with
   ▼
   [ REALIZATION / EVOLUTION ]
   Achieving world-class standards, or gracefully adapting as life reshapes the original dream.
+
 ```
 
 ---
@@ -125,6 +127,7 @@ Here are clear, visual text-based timelines for all four chapters, designed with
 #### *Narrative Timeline: Valliammai’s Journey to Town and Back*
 
 ```text
+
   [ PHASE 1: PREPARATION & DATA GATHERING ]
   (Weeks and Months Prior)
   │
@@ -172,4 +175,5 @@ Here are clear, visual text-based timelines for all four chapters, designed with
                  Finds her mother talking to a gossipy aunt about how
                  "many things happen in the world without our knowledge."
                  Valli smiles quietly to herself—holding the secret of her own journey.
+
 ```
