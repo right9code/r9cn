@@ -1,8 +1,8 @@
 # Revision Notes — Magnifying Glass
 
-![Class VIII](https://img.shields.io/badge/Class-VIII-blueviolet)
-![Poetry](https://img.shields.io/badge/Genre-Poetry-lightgrey)
-![Poet](https://img.shields.io/badge/Poet-Walter%20de%20la%20Mare-success)
+![Class VIII](https://img.shields.io/badge/Class-VIII-blueviolet)  
+![Poetry](https://img.shields.io/badge/Genre-Poetry-lightgrey)  
+![Poet](https://img.shields.io/badge/Poet-Walter%20de%20la%20Mare-success)  
 
 > [!TIP]
 > Cover each `<details>` answer, attempt it yourself, then expand to check.

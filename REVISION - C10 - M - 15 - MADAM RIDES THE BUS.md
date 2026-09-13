@@ -1,8 +1,8 @@
 # Revision Notes — Madam Rides the Bus
 
-![Class X](https://img.shields.io/badge/Class-X-blueviolet)
-![Story](https://img.shields.io/badge/Genre-Fiction%20%2F%20Prose-lightgrey)
-![Author](https://img.shields.io/badge/Author-Vallikkannan-success)
+![Class X](https://img.shields.io/badge/Class-X-blueviolet)  
+![Story](https://img.shields.io/badge/Genre-Fiction%20%2F%20Prose-lightgrey)  
+![Author](https://img.shields.io/badge/Author-Vallikkannan-success)  
 
 > [!TIP]
 > Cover each `<details>` answer, attempt it yourself, then expand to check.

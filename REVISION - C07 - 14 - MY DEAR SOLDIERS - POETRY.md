@@ -1,8 +1,8 @@
 # Revision Notes — My Dear Soldiers
 
-![Class VII](https://img.shields.io/badge/Class-VII-blueviolet)
-![Poetry](https://img.shields.io/badge/Genre-Poetry-lightgrey)
-![Poet](https://img.shields.io/badge/Poet-A.P.J.%20Abdul%20Kalam-success)
+![Class VII](https://img.shields.io/badge/Class-VII-blueviolet)  
+![Poetry](https://img.shields.io/badge/Genre-Poetry-lightgrey)  
+![Poet](https://img.shields.io/badge/Poet-A.P.J.%20Abdul%20Kalam-success)  
 
 > [!TIP]
 > Cover each `<details>` answer, attempt it yourself, then expand to check.

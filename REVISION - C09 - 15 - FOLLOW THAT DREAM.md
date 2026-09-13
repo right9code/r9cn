@@ -1,8 +1,8 @@
 # Revision Notes — Follow That Dream
 
-![Class IX](https://img.shields.io/badge/Class-IX-blueviolet)
-![Prose](https://img.shields.io/badge/Genre-Letter%20%2F%20Prose-lightgrey)
-![Author](https://img.shields.io/badge/Author-Irene%20Chua-success)
+![Class IX](https://img.shields.io/badge/Class-IX-blueviolet)  
+![Prose](https://img.shields.io/badge/Genre-Letter%20%2F%20Prose-lightgrey)  
+![Author](https://img.shields.io/badge/Author-Irene%20Chua-success)  
 
 > [!TIP]
 > Cover each `<details>` answer, attempt it yourself, then expand to check.
