@@ -177,72 +177,84 @@ timeline
 <summary><strong>What was Valli's favourite pastime?</strong></summary>
 
 Standing in the front doorway of her house and watching the happenings in the street outside.
+
 </details>
 
 <details>
 <summary><strong>What was the source of unending joy for Valli? Her strongest desire?</strong></summary>
 
 The bus travelling between her village and the nearest town, filled each time with a new set of passengers. Her strongest desire was to ride that bus even once.
+
 </details>
 
 <details>
 <summary><strong>What did Valli find out about the bus journey, and how?</strong></summary>
 
 That the town was six miles away, the trip took forty-five minutes, and the one-way fare was thirty paise. She learned this by listening to neighbours' and regular travellers' conversations and by asking a few discreet questions.
+
 </details>
 
 <details>
 <summary><strong>Why does the conductor call Valli "madam"?</strong></summary>
 
 Because she behaved like a mature woman — she declined his help, answered quickly, and paid her own fare. He teases her by calling her "madam".
+
 </details>
 
 <details>
 <summary><strong>Why does Valli stand on the seat? What does she see?</strong></summary>
 
 Her view was blocked by the canvas blind, so she stood up to see over it. She saw a narrow road, a canal, palm trees, grasslands, distant mountains and blue sky on one side; a deep ditch and acres of green fields on the other.
+
 </details>
 
 <details>
 <summary><strong>Why didn't Valli want to befriend the elderly woman?</strong></summary>
 
 The woman looked repulsive — big holes in her ear lobes, ugly earrings, and she chewed betel nut whose juice threatened to spill.
+
 </details>
 
 <details>
 <summary><strong>How did Valli save money? Was it easy?</strong></summary>
 
 She saved stray coins, resisting peppermints, toys, balloons and even a merry-go-round ride at the village fair. It was not easy; she had to stifle strong temptations, finally saving sixty paise.
+
 </details>
 
 <details>
 <summary><strong>What made Valli laugh on the way?</strong></summary>
 
 A young cow running in the middle of the road ahead of the bus. The more the driver honked, the faster and more frightened the cow ran — Valli laughed until tears came.
+
 </details>
 
 <details>
 <summary><strong>Why didn't she get off at the town?</strong></summary>
 
 She wanted to return on the same bus; she had only come for the ride, so she paid another thirty paise for the return fare.
+
 </details>
 
 <details>
 <summary><strong>Why did she refuse the cold drink? What does this show?</strong></summary>
 
 She had no money to pay and wouldn't accept charity — showing she was a well-mannered, self-respecting girl.
+
 </details>
 
 <details>
 <summary><strong>Why does Valli refuse to look out on the return journey?</strong></summary>
 
 She saw the dead body of the same cow that had run in front of the bus earlier. It saddened and frightened her, so she stopped looking out.
+
 </details>
 
 <details>
 <summary><strong>What does she mean by "I was just agreeing with what you said about things happening without our knowledge"?</strong></summary>
 
 She is hiding her bus ride while quietly agreeing that much happens beyond adults' knowledge — a private, proud reference to her adventure.
+
 </details>
 
 ---
@@ -253,36 +265,42 @@ She is hiding her bus ride while quietly agreeing that much happens beyond adult
 <summary><strong>What was Valli's deepest desire? Find words/phrases.</strong></summary>
 
 To go on a bus ride. Clues: "source of unending joy", "stare wistfully", "kindle in her longings, dreams and hopes".
+
 </details>
 
 <details>
 <summary><strong>Fill in the blanks (Thinking about the Text Q3).</strong></summary>
 
 (i) commandingly (ii) simply have to (iii) who is a child (iv) get on by myself, irritably (v) can take care of myself (vi) to see you again.
+
 </details>
 
 <details>
 <summary><strong>Lines showing Valli enjoyed the ride.</strong></summary>
 
 "Oh, it was all so wonderful." / "Suddenly, Valli clapped her hands with glee." / "She laughed and laughed until there were tears in her eyes." / "Valli wasn't bored in the slightest and greeted everything with the same excitement she'd felt the first time."
+
 </details>
 
 <details>
 <summary><strong>Evidence of an eight-year-old's point of view.</strong></summary>
 
 "The bus seemed on the point of gobbling up another vehicle"; "Trees came running towards them but then stopped…"; "A young cow, tail high in the air, was running very fast…"; "A speck of a train could be seen in the distance…".
+
 </details>
 
 <details>
 <summary><strong>Long answer: "Valli was a mature girl ahead of her age." Justify.</strong></summary>
 
 Valli is clever, sensitive, self-respecting and fun-loving. She gathers all the information needed for the journey and sacrifices small desires (toys, balloons) to save the fare. On the bus she is confident, bold and practical: she refuses help, refuses a stranger's drink, and speaks politely. She enjoys the scenery with enthusiasm and is yet sensitive enough to be saddened by the dead cow. These qualities mark her as mature beyond her eight years.
+
 </details>
 
 <details>
 <summary><strong>Long answer: Did Valli do right by not telling her mother?</strong></summary>
 
 No. Travelling alone was unsafe; she could have met wrong people and was simply lucky to return safely. Children should travel with parents or elders. She could have expressed her wish to her mother, who would likely have fulfilled it. Informing parents before such acts is always better.
+
 </details>
 
 ---

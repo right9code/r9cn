@@ -130,6 +130,7 @@ flowchart TD
 6. web-silk
 7. spinnerets
 8. moon
+
 </details>
 
 ### II. Choose from brackets
@@ -141,6 +142,7 @@ flowchart TD
 2. wonder and curiosity
 3. six; four
 4. ABCB
+
 </details>
 
 ### III. Poetic device examples
@@ -151,6 +153,7 @@ flowchart TD
 1. **Simile:** 'A drop of water / Like hive of bees.'
 2. **Alliteration:** 'woven web-silk' (also 'wait and watch', 'myriad shells show')
 3. **Metaphor:** 'A forest—flowers and trees' (an inch of moss compared to a forest)
+
 </details>
 
 ### IV. Imagery
@@ -160,6 +163,7 @@ flowchart TD
 
 1. Thousands of tiny, ancient shells hidden inside a small piece of chalk.
 2. How a tiny patch of moss appears as vast and detailed as a whole forest when magnified.
+
 </details>
 
 ### V. Complete with a reason
@@ -171,6 +175,7 @@ flowchart TD
 2. It gives the glass the human ability to speak and reveal hidden wonders as if by magic.
 3. It supports the theme of hidden wonders in ordinary things, as the speaker reveals how magnification turns tiny objects into vast, marvellous worlds.
 4. He wants to show that the power of magnification is limitless, bringing even distant worlds in the sky close to us.
+
 </details>
 
 ---
@@ -181,48 +186,56 @@ flowchart TD
 <summary><strong>Q1. What is the significance of the spider?</strong></summary>
 
 Magnification reveals the spider's fierce, intricate details — its "tigerish claws" and how it skilfully spins "woven web-silk" from its spinnerets.
+
 </details>
 
 <details>
 <summary><strong>Q2. How would the speaker's view change without a magnifying glass?</strong></summary>
 
 He would see only ordinary chalk, moss and water, and would miss the hidden beauty, complexity and wonder within them.
+
 </details>
 
 <details>
 <summary><strong>Q3. Why does the poem end with the moon?</strong></summary>
 
 To show magnification has no limits — just as a lens reveals hidden worlds in tiny things, larger lenses bring distant celestial bodies close.
+
 </details>
 
 <details>
 <summary><strong>Q4. What is the speaker's attitude to nature and observation?</strong></summary>
 
 Deep curiosity, wonder and appreciation, believing close observation reveals hidden magic in everyday objects.
+
 </details>
 
 <details>
 <summary><strong>Q5. Which is your favourite part and why?</strong></summary>
 
 The description of an inch of moss turning into a forest of flowers and trees, because it vividly shows how magnification turns a tiny plant into an entire magical world.
+
 </details>
 
 <details>
 <summary><strong>Q6. Extract: is "The poet uses his magical powers to make the round glass powerful" true or false?</strong></summary>
 
 **False** — the lens, not magical powers, reveals the hidden details.
+
 </details>
 
 <details>
 <summary><strong>Q7. Select the line expressing intricate patterns in ordinary objects.</strong></summary>
 
 'A myriad shells show / In a scrap of chalk;'
+
 </details>
 
 <details>
 <summary><strong>Q8. How does the poet feel about the glass revealing hidden wonders?</strong></summary>
 
 B. **Fascinated**.
+
 </details>
 
 ---

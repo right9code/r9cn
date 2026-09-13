@@ -114,48 +114,56 @@ flowchart LR
 <summary><strong>Q1. Who is the speaker? How can you tell?</strong></summary>
 
 The speaker is **Dr. A.P.J. Abdul Kalam**. His name appears at the end of the poem, and he speaks as a grateful citizen on behalf of the nation.
+
 </details>
 
 <details>
 <summary><strong>Q2. How is the theme conveyed through imagery?</strong></summary>
 
 Imagery of harsh terrains and weather — "snowy days", "scorching sun's sweltering rays", "climbing the heights", "surveillance in seas" — builds a picture of the hardship soldiers endure, conveying patriotism and sacrifice.
+
 </details>
 
 <details>
 <summary><strong>Q3. How does the poet highlight the soldiers' commitment?</strong></summary>
 
 They stay alert day and night while citizens sleep, guarding mountains, valleys, deserts, marshes, seas and air without pause.
+
 </details>
 
 <details>
 <summary><strong>Q4. Significance of "Prime of your youth given to the nation!!"?</strong></summary>
 
 It means soldiers dedicate the best, most energetic years of their lives to the nation, choosing national protection over personal comfort.
+
 </details>
 
 <details>
 <summary><strong>Q5. Why is it important for us to pray for soldiers?</strong></summary>
 
 They risk their lives daily in dangerous conditions to keep us safe. Praying shows our respect, gratitude and moral support for their sacrifice.
+
 </details>
 
 <details>
 <summary><strong>Q6. Identify a pair of opposites in the extract.</strong></summary>
 
 **asleep** and **awake**.
+
 </details>
 
 <details>
 <summary><strong>Q7. What does "still hold on to your deed" refer to?</strong></summary>
 
 The soldier's attitude of **unwavering commitment and devotion to duty**.
+
 </details>
 
 <details>
 <summary><strong>Q8. Which quality of the soldiers is highlighted in the extract?</strong></summary>
 
 **Dedication.**
+
 </details>
 
 ---

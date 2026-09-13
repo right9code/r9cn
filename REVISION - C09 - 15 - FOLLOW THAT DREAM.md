@@ -84,42 +84,49 @@ flowchart TD
 <summary><strong>1. Reaching the peak of skill demands focused, intense dedication for about a decade.</strong></summary>
 
 True.
+
 </details>
 
 <details>
 <summary><strong>2. Significant effort and personal sacrifice are essential for turning aspirations into reality.</strong></summary>
 
 True.
+
 </details>
 
 <details>
 <summary><strong>3. The path to one's deepest desires has very little difficulty.</strong></summary>
 
 False — the path is uphill and full of obstacles and sacrifices.
+
 </details>
 
 <details>
 <summary><strong>4. A person's life goals and hopes can evolve over time.</strong></summary>
 
 True.
+
 </details>
 
 <details>
 <summary><strong>5. A strong network of individuals can be a hurdle in pursuing one's ambition.</strong></summary>
 
 False — a support network helps and encourages rather than hinders.
+
 </details>
 
 <details>
 <summary><strong>6. Pursuing a major life goal will not involve any financial expense or sacrifice.</strong></summary>
 
 False — it involves years of effort, financial investment and sacrifice.
+
 </details>
 
 <details>
 <summary><strong>7. For many, aspirations remain just wishes because they don't move beyond daydreaming.</strong></summary>
 
 True.
+
 </details>
 
 ---
@@ -130,66 +137,77 @@ True.
 <summary><strong>Q1. "enthusiasm : passion :: belief : ___"</strong></summary>
 
 **conviction**
+
 </details>
 
 <details>
 <summary><strong>Q2. The word "plunge" indicates ___ involvement. (complete/gradual)</strong></summary>
 
 **complete**
+
 </details>
 
 <details>
 <summary><strong>Q3. Why is "doing what you love best" a form of intrinsic motivation?</strong></summary>
 
 Because doing what one loves brings inner satisfaction and joy even when physical stamina is exhausted.
+
 </details>
 
 <details>
 <summary><strong>Q4. What does "life itself may change a person's dreams" suggest?</strong></summary>
 
 That dreams are not static but **evolving** — they grow and shift with life's circumstances.
+
 </details>
 
 <details>
 <summary><strong>Q5. Identify the phrase showing a complex, challenging journey.</strong></summary>
 
 "negotiate a path through a maze of hurdles".
+
 </details>
 
 <details>
 <summary><strong>Q6. Why would the participants in your dreamscape be many more?</strong></summary>
 
 Because as we grow older, our pursuits involve family, mentors, colleagues and collaborators.
+
 </details>
 
 <details>
 <summary><strong>Q7. Tone of the second extract?</strong></summary>
 
 C. **optimistic and encouraging**.
+
 </details>
 
 <details>
 <summary><strong>Q8. What differentiates mere dreamers from actual achievers?</strong></summary>
 
 Achievers count the costs, act decisively and endure years of hard work. Dreamers stop at wishful thinking, choose security, and let hurdles kill their aspirations.
+
 </details>
 
 <details>
 <summary><strong>Q9. How can one attain international-level skill? Mention two ways.</strong></summary>
 
 First, commit to intense, focused practice in the field for at least ten years. Second, be willing to make continuous sacrifices, maintain stamina, and overcome obstacles.
+
 </details>
 
 <details>
 <summary><strong>Q10. How does the mother balance encouragement with caution?</strong></summary>
 
 She warmly encourages Ming to plunge in if her passion is strong, but also advises her to realistically assess years of hard work, sacrifices, changing circumstances and financial costs.
+
 </details>
 
 <details>
 <summary><strong>Q11. Is this advice relevant in contemporary society?</strong></summary>
 
 Yes — achieving world-class excellence still requires years of discipline, resilience and family support. In our fast-paced world, resisting shortcuts and staying committed to long-term goals matters more than ever.
+
 </details>
 
 ---
