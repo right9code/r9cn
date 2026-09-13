@@ -1,4 +1,3 @@
-Here are clear, visual text-based timelines for all four chapters, designed with milestones, chronological markers, and key details—without using any Mermaid code.
 
 ---
 
@@ -6,6 +5,7 @@ Here are clear, visual text-based timelines for all four chapters, designed with
 #### *Timeline of Service, Seasonal Vigilance & Daily Duty*
 
 ```text
+
   ● LIFELONG COMMITMENT: THE PRIME OF YOUTH
   │
   ├──► [Dedication of Life] 
@@ -48,6 +48,7 @@ Here are clear, visual text-based timelines for all four chapters, designed with
 #### *Observational Progression: From Microscopic Details to the Moon*
 
 ```text
+  
   [ STEP 1 ] THE TOOL IS ENGAGED
   │   The poet lifts a simple round magnifying glass.
   │   Invites scientific observation to "make Magic talk."
@@ -77,6 +78,7 @@ Here are clear, visual text-based timelines for all four chapters, designed with
       The poet scales from micro to macro.
       Looking through powerful lenses at the distant Moon, it appears so close
       that one could imagine taking an afternoon stroll across its craters.
+
 ```
 
 ---
