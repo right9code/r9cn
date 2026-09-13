@@ -29,22 +29,29 @@
 ## Timeline of the Journey
 
 ```mermaid
-timeline
-    title Valli's Bus Adventure
-    section Before the ride
-        Saves 60 paise : Skips toys, peppermints, merry-go-round
-        Slips out : Mother's afternoon nap
-    section To town
-        Stops the bus : "Stop the bus!"
-        Calls her "madam" : Conductor teases her
-        Sees views : Canal, palms, mountains, green fields
-        The running cow : Bus honks, cow gallops faster
-        Town sights : Shops, crowds, lighting
-    section Return
-        Refuses to get off : Pays return fare
-        Refuses cold drink : Self-respect
-        Dead cow : Sadness, stops looking out
-        Home at 3:40 : Mother and aunt chatting
+flowchart TD
+    subgraph B["Before the ride"]
+        A1["Saves 60 paise<br/>skips toys, peppermints, merry-go-round"]
+        A2["Slips out during mother's nap"]
+        A1 --> A2
+    end
+    subgraph T["To town"]
+        B1["Stops the bus"]
+        B2["Conductor teases her as madam"]
+        B3["Sees canal, palms, mountains, green fields"]
+        B4["Running cow amuses her"]
+        B5["Town shops and crowds amaze her"]
+        B1 --> B2 --> B3 --> B4 --> B5
+    end
+    subgraph R["Return"]
+        C1["Refuses to get off, pays return fare"]
+        C2["Refuses cold drink out of self-respect"]
+        C3["Sees the dead cow, grows sad"]
+        C4["Home by 3.40, mother and aunt chatting"]
+        C1 --> C2 --> C3 --> C4
+    end
+    A2 --> B1
+    B5 --> C1
 ```
 
 ---
