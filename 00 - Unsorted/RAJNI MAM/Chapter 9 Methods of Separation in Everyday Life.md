@@ -31,3 +31,8 @@ To separate mud from water, the mixture is kept undisturbed for some time so tha
 * **Sieving:** Separating finer flour particles from coarse bran using a mesh strainer/sieve.  
 * **Filtration:** Separating tea leaves from tea using a strainer.  
 * **Evaporation:** Obtaining salt from seawater by allowing the water to evaporate under the sun.
+
+  
+
+
+
