@@ -1,11 +1,6 @@
-# Class Test: Rani Abbakka & My Dear Soldiers  
-**Maximum Marks:** 20  
-**Time Allowed:** 45 Minutes  
-*(Note: Based strictly on the Question & Answer summaries studied in class.)*  
+#### Class Test: Rani Abbakka & My Dear Soldiers  
 
----
-
-### Section A: Fill in the Blanks & True/False (4 Marks)  
+##### Section A: Fill in the Blanks & True/False (4 Marks)  
 
 **Q1. Fill in the blanks with the correct words from the lessons:**  
 1. Rani Abbakka defied the Portuguese and established profitable trading relations with `_________`.  
@@ -17,7 +12,7 @@
 
 ---
 
-### Section B: Short Answer Questions (6 Marks)  
+##### Section B: Short Answer Questions (6 Marks)  
 
 **Q3. Answer any two of the following questions briefly: (2 × 2 = 4 Marks)**  
 1. Why did Rani Abbakka refuse to pay the tribute to the Portuguese envoy?  
@@ -29,7 +24,7 @@
 
 ---
 
-### Section C: Detailed Question & Answers (6 Marks)  
+##### Section C: Detailed Question & Answers (6 Marks)  
 
 **Q5. Answer any two of the following questions: (2 × 3 = 6 Marks)**  
 1. How does Dr. A.P.J. Abdul Kalam highlight the constant commitment and vigilance of the soldiers in the poem? Give examples.  
@@ -38,7 +33,7 @@
 
 ---
 
-### Section D: Creative Writing (4 Marks)  
+##### Section D: Creative Writing (4 Marks)  
 
 **Q6. Draft a brief note of gratitude (in about 40–50 words) to the brave soldiers, thanking them for their selfless service and protection. (4 Marks)**  
 
