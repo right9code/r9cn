@@ -1,587 +1,802 @@
-Words
-Reading for Appreciation
-If words could satisfy the heart,
-The heart might find less care;
-But words, like summer birds, depart,
-And leave but empty air.  
-The heart, a pilgrim upon earth,
-Finds often, when it needs,
-That words are of as little worth
-As just so many weeds.  
-A little said, and truly said,
-Can deeper joy impart
-Than hosts of words, which reach the head,
-But never touch the heart.  
-The voice that wins its sunny way,
-A lonely home to cheer,
-Hath oft the fewest words to say;
-But, oh! those few, how dear!  
-If words could satisfy the chest,
-The world might hold a feast;
-But words, when summoned to the test,
-Oft satisfy the least!  
-Like plants that make a gaudy show,
-All blossom to the root;
-But whose poor nature cannot grow,
-One particle of fruit!  
-CHARLES SWAIN  
-Summary
-The poem reflects on the inadequacy of words to truly satisfy the heart. Words are compared to summer birds that depart leaving empty air, and to weeds of little worth. The poet argues that a few sincere words can bring deeper joy than "hosts of words" that reach the head but never touch the heart. Empty words are likened to plants that blossom impressively but produce no fruit. The poem values sincerity and brevity over verbosity.  
-
-Poetic Devices
-Simile — "Words, like summer birds, depart" compares fleeting words to migrating birds; "words are of as little worth / As just so many weeds" compares empty words to worthless plants.
-Metaphor — "The heart, a pilgrim upon earth" compares the heart to a wandering seeker; "Like plants that make a gaudy show" metaphorically compares empty words to ornamental but fruitless plants.
-Repetition — "Words" and "satisfy" are repeated to reinforce the poem's central concern.
-Alliteration — "sunny... say," "fewest... few," "fruit... flower."
-Hyperbole — "The world might hold a feast" exaggerates the hypothetical power of satisfying words.
-Imagery — "Summer birds depart," "empty air," "blossom to the root" create vivid visual and emotional images.
-Antithesis — "A little said, and truly said" is set against "hosts of words, which reach the head / But never touch the heart," creating a powerful contrast between sincerity and verbosity.
-Enjambment — Lines flow across breaks, mimicking the way words spill out without truly landing.
-Paradox — Words are meant to satisfy the heart, yet they often "satisfy the least" — the poem's central irony.
-Climactic Structure — The poem builds from disappointment (words fail) to a small but profound truth (sincerity wins).
-Tone: Reflective, disillusioned, then admiring of sincerity.
-Rhyme Scheme
-AABB — couplet rhymes throughout (e.g., heart/care, depart/air, earth/needs, worth/weeds, impart/head/heart, way/say, dear/clear, chest/test, feast/least, show/grow, root/fruit).
-
-II Answer the following questions.
-
-What is the comparison that the poet draws between words and 'empty air'?
-According to the poet meaningful words are more precious than a lot of them. Explain.
-Do you agree that the poet presents contrasting ideas related to 'words' in the poem? If yes, why? If no, why not?
-The theme of loneliness hovers over the poem. Support this statement with examples from the text.
-How does the poet convey the superficial nature of words? What ought to be done to address this?  
-I. Write an essay on any one quotation from speaking activity. Follow the guidelines given below while drafting the essay.  
-Paragraph DivisionParagraph Content1. Introduction● Mention the quotation and the speaker. 
-● Briefly mention the reason why it appealed to you. 
-● State the purpose of the essay.2. and 3. Body of the essay● Each paragraph to explain a specific point or idea related to the quotation.  
- ● Begin with a topic sentence that introduces the main point of the paragraph.  
- ● Provide evidence, examples, or narratives to support the main point.  
- ● Ensure a smooth flow between paragraphs by using transition words. For example: In addition to..., For instance..., However..., Consequently..., Finally...4. Counterargument● Think about any possible criticism for the quotation. 
-● Give reason why that criticism is baseless.5. Conclusion● Summarise the main points discussed in the body paragraphs.  
-● End with a concluding statement that leaves a lasting impression.Answers – Words
-Check Your Understanding
-I. Fill in the blanks with one word from the poem.  
-
-depart  
-pilgrim  
-weeds  
-joy  
-lonely  
-world  
-fruit  
-II. Let us appreciate the poem.  
-
-Four sets of rhyming words and rhyme scheme:  
-Rhyming word pairs:  heart – depart  
-care – air  
-earth – worth  
-needs – weeds  
-Rhyme scheme: abab (flowing across each stanza).  
-Poetic devices and explanations:  
-(i) But words, like summer birds, depart...  Poetic Device: Simile  
-Explanation: Words fly away quickly and disappear like migratory summer birds, leaving empty space without lasting comfort.  
-(ii) heart, a pilgrim upon earth...  Poetic Device: Metaphor  
-Explanation: The heart is compared to a lonely traveler searching for true meaning and emotional solace on earth.  
-(iii) words are of as little worth / As just so many weeds  Poetic Device: Simile  
-Explanation: Meaningless words are compared to useless wild weeds that offer no value to a troubled heart.  
-(iv) If words could satisfy the chest... Oft satisfy the least!  Poetic Device: Hyperbole / Antithesis  
-Explanation: Highlights how words claim to provide comfort but fail completely when put to a real test.  
-(v) The world might hold a feast...  Poetic Device: Metaphor / Hyperbole  
-Explanation: Suggests that if words could give true satisfaction, humanity would be celebrating, but in reality, words fall short.  
-(vi) Like plants that make a gaudy show / All blossom to the root  Poetic Device: Simile  
-Explanation: Words are compared to flashy plants that look beautiful on the outside but carry no internal substance.  
-(vii) But whose poor nature cannot grow / One particle of fruit!  Poetic Device: Metaphor  
-Explanation: Empty words produce no useful result or genuine help, just as barren plants produce no fruit.  
-Repeated words and reason for repetition:  
-The word "words" (and "heart") is repeated throughout the poem.  
-Reason: The poet uses repetition to emphasize the central topic and contrast the emptiness of spoken words with the deep emotional needs of the heart.  
-Emotions expressed through exclamation marks in stanzas 4, 5, and 6:  
-Option (iii): 4. admiration 5. frustration and 6. disillusionment  
-III. Hyperbole Examples and Exercises  
-
-Hyperbole from given lines: "The world might hold a feast" (exaggerates the idea of global celebration if words could satisfy).  
-Sentences with hyperboles:  I have tonnes of things to do on this weekend.  
-The player missed the basket by a mile.  
-My mother is so tired that she can sleep for a decade.  
-I will be back in two seconds.  
-IV. Rhythm and Meter
-
-The poem uses an alternating iambic tetrameter (4 beats) and iambic trimeter (3 beats) rhythm. Stressed syllables highlight the natural beat of spoken English, giving the poem a song-like, lyrical quality.  
-Critical Reflection
-I. Extract-Based Questions  
-1. Extract 1
-
-(i) The poet refers to the heart as 'a pilgrim' because it travels through life seeking emotional comfort, truth, and genuine connection.
-
-(ii) A heart would 'need' words during times of sorrow, loneliness, heartbreak, or when seeking sincere comfort from others.
-
-(iii) The words are like weeds because they grow abundantly without effort yet provide no real nourishment or value to the heart.
-
-(iv) The heart might experience disappointment, loneliness, sorrow, or helplessness.
-
-(v) These lines suggest that spoken words often fail to convey true feelings and cannot replace genuine emotional action.  
-2. Extract 2
-
-(i) Words can 'satisfy the chest' if they could ease emotional pain, fulfill deep inner longings, and bring true comfort to a person.
-
-(ii) Words are 'summoned to the test' when a person faces real crisis or grief, testing whether spoken promises bring actual comfort.
-
-(iii) 'The world holding a feast' implies a state of universal happiness and widespread celebration.
-
-(iv) The poet mentions that words satisfy the least because mere speech lacks substance and cannot fix real problems or deep emotional hurt.
-
-(v) A. always  
-II. Short Answer Questions  
-
-What is the comparison that the poet draws between words and 'empty air'?
-
-The poet compares words to empty air because once spoken, words vanish quickly into nothingness without leaving any lasting support or comfort behind.  
-According to the poet meaningful words are more precious than a lot of them. Explain.
-
-The poet explains that a few sincere, deeply felt words can touch the heart and cheer a lonely soul, whereas a large quantity of empty talk only reaches the mind without providing true comfort.  
-Do you agree that the poet presents contrasting ideas related to 'words' in the poem? If yes, why? If no, why not?
-
-Yes, the poet contrasts the "head" (intellect) with the "heart" (emotion), and "leaves" (showy words) with "fruit" (sincere meaning). These contrasts highlight that words can either be superficial tools or profound links between people.
-The theme of loneliness hovers over the poem. Support this statement with examples from the text.
-
-The poem describes the heart as a lonely "pilgrim upon earth" and mentions a "lonely home" that needs cheering, showing how human beings suffer in isolation when words fail to comfort them.  
-How does the poet convey the superficial nature of words? What ought to be done to address this?
-
-The poet compares words to "gaudy plants" that blossom beautifully but bear no fruit. To address this, people should speak fewer words with greater sincerity, honesty, and heartfelt action.  
-Writing Task
-Essay on Quotation: "Words are, in my not-so-humble opinion, our most inexhaustible source of magic." — J.K. Rowling  
-1. Introduction
-
-Language is a powerful tool that shapes human thought and emotion. The famous quotation, "Words are, in my not-so-humble opinion, our most inexhaustible source of magic," spoken by J.K. Rowling, highlights the transformative power of language. This quote appealed to me because it reminds us that words possess the magical ability to heal, inspire, and change lives. The purpose of this essay is to explore how words influence human connections and why sincere communication matters.  
-2. The Power of Sincere Words
-
-Words possess the power to build confidence and offer comfort to troubled hearts. When chosen carefully, a few kind words can lift a person out of despair, just as Charles Swain notes in his poem that a quiet voice can cheer a lonely home. For instance, encouraging words from a teacher or parent can motivate a struggling student to achieve great success. Thus, sincere speech creates genuine magic in daily life.  
-3. Words as a Force for Change
-
-In addition to personal comfort, words have driven historical movements and inspired global progress. Great leaders like Mahatma Gandhi and Martin Luther King Jr. used speech to unite millions of people peacefully. Their speeches did not rely on grand promises but on deep truth and conviction. Consequently, words act as an endless source of strength that can transform societies across generations.  
-4. Counterargument
-
-However, critics might argue that words are merely empty sounds without physical action, making them useless in times of crisis. While it is true that empty words without action are worthless like weeds, this criticism overlooks the fact that words spark the initial thought and intention behind every noble action. Without inspiring words, positive actions would never begin.  
-5. Conclusion
-
-In conclusion, words carry an extraordinary power that can either heal or wound. As demonstrated in literature and history, meaningful words bring joy, foster hope, and connect human hearts. Therefore, we must choose our words wisely and speak with genuine sincerity to spread light and magic around us.  
-
-Follow That Dream
-Reading for Meaning
-The following excerpt is a letter taken from a collection titled 'My Daughter, My Friend', by Irene Chua. Here she shares her deepest thoughts as a mother with her daughter, Ming. The letters celebrate the special bond that often exists between a mother and her teenage daughter. The mother shares valuable insights into life, equipping her daughter for its challenges.  
-WordMeaninginsightclear and deep understandingsingularlyexclusivelyimperativenecessaryplungethrow oneself into the activitybuoyed upkept afloat19 June 1995  
-Dear Ming,  
-By all means follow that dream.  
-Great men and women become great because they have a dream and they pursue it till it comes true. What differentiates greatness from the ordinary is how much effort and sacrifice people invest to realise their dream. Do you know that to reach world-class standard in any field, one has to be singularly and intensively pursuing the subject for at least ten years?  
-It starts with a passion for a particular interest, then comes the conviction that it is imperative to realise it. Count the cost in years of effort, financial investments and sacrifice. Then if it is still burning in your blood and you are ready to commit yourself to the task, plunge. It could be in any field—sports, science, arts, business, or design. The road may be uphill most of the way and often you are buoyed up only by the knowledge that you are doing what you love best and are doing the right thing. When stamina is running out, the prospect of success will keep you on track.  
-When you watch the Academy Awards for best actors and actresses and films, the winner always thanks a host of people that formed his/her support network. So, you see that for one winner, there is a group of people who stood by him/her.  
-It is good to be able to fulfil your dreams but for a lot of people, dreams remain dreams. Although everyone at one time or other has wistfully said to oneself, “I wish I could be this or the other,” they have never got beyond just wishful thinking. They could have preferred to trade their dream for security. Perhaps circumstances changed their lives. I know of people whose dream was to go to the then Raffles College, now the National University of Singapore, but the Japanese invasion during World War II changed forever their destiny. I know too, of people who had wished to finish secondary school but they had to go out to work so that they could support their siblings through school.  
-No, I am not going to put a wet blanket on your dreams, ...but you will also have to consider the years you need to chase your dream.  
-After all the obstacles are considered, if the burning conviction is still coursing through your veins, then go ahead and do something about it.  
-From my own experience, life itself may change a person’s dreams. These hopes and aspirations are no less than the original dream of younger days. To fulfill them you will need to negotiate a path through a maze of hurdles. The dream will take a much longer time to realise, and the people who are participants in your dreamscape would be many more. For example, publishing this book is a dream I have chased in the last ten years. This was not the dream I had in my youth but my original dream has changed over the years. I am really quite excited about it. So, I wish at least one of your dreams comes true too.  
-WordMeaningwistfullylonginglydreamscapea world of dreamsLove, Mum  
-
-Check Your Understanding
-I. State whether the following sentences are true or false. Share your answers with your classmates and teacher.
-
-Reaching the peak of skill in a field typically demands a focused and intense dedication for about a decade.
-The mother believes that significant effort and personal sacrifices are essential for turning aspirations into reality.
-The path to achieving the deepest desires has very little difficulty or a few obstacles.
-The mother is of the opinion that a person's life goals and hopes can evolve over time.
-Having a strong network of individuals can be a hurdle in pursuing one's ambition.
-The mother feels that pursuing a major life goal will not involve any financial expense or sacrifice.
-For many individuals, their aspirations remain just wishes because they don't move beyond mere daydreaming.  
-I. Read the extracts given below and answer the questions that follow.  
-
-It starts with a passion for a particular interest, then comes the conviction that it is imperative to realise it. Count the cost in years of effort, financial investments and sacrifice. Then if it is still burning in your blood and you are ready to commit yourself to the task, plunge. It could be in any field—sports, science, arts, business, or design. The road may be uphill most of the way and often you are buoyed up only by the knowledge that you are doing what you love best and are doing the right thing. When stamina is running out, the prospect of success will keep you on track.  
-(i) Complete the analogy with a suitable word from the extract.
-enthusiasm: passion:: belief: ____
-
-(ii) Choose the correct option to complete the following sentence appropriately.
-The author says that a realistic assessment of effort, investment and sacrifice is crucial for preventing ____.
-A. the need for external support network
-B. an early abandonment of the dream
-C. initial excitement from fading over time
-D. others from questioning one's commitment
-
-(iii) Complete the following with the correct option from those given in the brackets.
-The word 'plunge' as used in the extract indicates a ____ (complete/gradual) involvement in a task.
-
-(iv) Complete the sentence with an appropriate reason.
-The author's emphasis on 'when you are doing what you love best and are doing the right thing' works as a form of intrinsic motivation because ____.
-
-(v) Mention one motivating factor besides 'prospect of success', that might keep a person on track, despite running out of stamina.  
-From my own experience, life itself may change a person's dreams. These hopes and aspirations are no less than the original dream of younger days. To fulfil them you will need to negotiate a path through a maze of hurdles. The dream will take a much longer time to realise, and the people who are participants in your dreamscape would be many more.  
-(i) Complete the sentence appropriately.
-The phrase 'life itself may change a person's dreams' suggests that dreams are not static but rather ____. (evolving/dynamic)
-
-(ii) What does the author mean by, 'hopes and aspirations are no less than the original dream of younger days'?
-
-(iii) Identify the phrase from the extract that indicates a complex and challenging journey.
-
-(iv) Complete the sentence with an appropriate reason.
-The author says, 'people who are participants in your dreamscape would be many more' because ____.
-
-(v) What is the tone of the author in this extract?
-A. appreciative and celebratory
-B. excited and cheerful
-C. optimistic and encouraging
-D. eager and inquisitive  
-II. Answer the following questions.  
-
-The letter begins thus, 'By all means follow that dream'. What do you think Ming must have written to her mother about?
-How can one attain an international level of skill in any field? Mention any two ways.
-What differentiates the mere dreamers from actual achievers?
-How does Ming's mother use critical questions and personal anecdotes to persuade Ming and convey her message effectively?
-How does Ming's mother balance encouragement with caution in her advice?
-In the letter, Ming's mother specifically addresses the challenges people face in pursuing their dreams. Do you think this advice is still relevant in contemporary society? If yes, why? If no, why not?
-What 'costs' in terms of effort, sacrifice, and time are you willing or unwilling to invest to pursue your goals?  
-An email (electronic mail) is a method of composing, sending, storing, and receiving messages over an electronic communication system.  
-I. You are passionate about pursuing a course in designing in future. You come across a summer workshop being conducted by a reputed design institute. Write an email to the Director of the institute enquiring the details of the workshop and expressing your interest in joining it.   
-Follow the guidelines given below to write the email.
-
-Use formal language
-Avoid use of abbreviations
-Include the following components:Header consisting of—sender, receiver, date, and subject  
-The message—introduction, seeking permission, conclusion  
-Complementary close—Yours sincerely,
-Name, (designation), and contact details of the sender  
-Format of an email:  
-From:To:Cc:Bcc:Subject:Message:Answers – Follow That Dream
-Check Your Understanding
-I. True or False
-True.  
-True.  
-False. Rectification: The path to achieving one's deepest desires is uphill and full of obstacles and sacrifices.  
-True.  
-False. Rectification: A strong support network helps and encourages a person rather than being a hurdle.  
-False. Rectification: Pursuing a major dream involves counting the cost of years of effort, financial investment, and sacrifice.  
-True.  
-Critical Reflection
-I. Extract-Based Questions
-Extract 1:
-
-(i) *enthusiasm : passion :: belief : conviction*
-
-(ii) B. an early abandonment of the dream
-
-(iii) The word 'plunge' as used in the extract indicates a complete involvement in a task.
-
-(iv) The author's emphasis works as intrinsic motivation because doing what one loves brings inner satisfaction and joy even when physical stamina is exhausted.
-
-(v) Passion for the work / doing what is right and satisfying to one's heart.  
-Extract 2:
-
-(i) The phrase 'life itself may change a person's dreams' suggests that dreams are not static but rather evolving.
-
-(ii) The author means that new or changed dreams that develop later in life carry equal value, meaning, and beauty as childhood dreams.
-
-(iii) "negotiate a path through a maze of hurdles"
-
-(iv) The author says this because as we grow older, our pursuits involve family, mentors, colleagues, and collaborators.
-
-(v) C. optimistic and encouraging  
-II. Short Answer Questions
-The letter begins thus, 'By all means follow that dream'. What do you think Ming must have written to her mother about?
-
-Ming must have written a letter to her mother expressing a deep passion and strong ambition to pursue a challenging creative or professional field, while seeking her mother's approval, guidance, and support regarding the risks involved.  
-How can one attain an international level of skill in any field? Mention any two ways.
-
-First, one must commit to intense, focused practice and learning in that specific field for at least ten years. Second, one must be willing to make continuous personal sacrifices, maintain unwavering stamina, and overcome numerous obstacles.  
-What differentiates the mere dreamers from actual achievers?
-
-Actual achievers take decisive action, count the costs, and endure years of hard work and sacrifice to realize their goals. In contrast, mere dreamers stop at wishful thinking, choose safe security, and allow hurdles to abandon their aspirations.  
-How does Ming's mother use critical questions and personal anecdotes to persuade Ming and convey her message effectively?
-
-Ming's mother asks Ming to evaluate the required effort and financial investments, while sharing her own ten-year journey of publishing a book. This combination of practical questioning and personal experience makes her advice realistic, persuasive, and relatable.  
-How does Ming's mother balance encouragement with caution in her advice?
-
-She warmly encourages Ming to plunge into her dream if her passion is strong. However, she balances this by advising Ming to realistically assess the years of hard work, potential sacrifices, changing life circumstances, and financial costs involved.  
-In the letter, Ming's mother specifically addresses the challenges people face in pursuing their dreams. Do you think this advice is still relevant in contemporary society? If yes, why? If no, why not?
-
-Yes, this advice remains highly relevant today because achieving world-class excellence still requires years of discipline, resilience, and strong family support. In our fast-paced modern world, resisting shortcuts and staying committed to long-term goals is more vital than ever.  
-What 'costs' in terms of effort, sacrifice, and time are you willing or unwilling to invest to pursue your goals?
-
-
-## Believe in Yourself  
-
-### Reading for Appreciation  
-
-*Step up to the challenge*  
-*There is no crowd to see,*  
-*It's just you and the future*  
-*And where you want to be.*  
-
-*Will it pull you forward*  
-*Or push you back in fear?*  
-*Difficult are choices*  
-*When the future is getting near.*  
-
-*There is such ease in comfort*  
-*To maintain the status quo,*  
-*But this isn't what we are made for*  
-*This isn't how we grow.*  
-
-*The first step is the hardest*  
-*There is no turning back,*  
-*You just need to believe in yourself*  
-*For your future to be on track.*  
-
-**ROBERT LANGLEY**  
-
+# The Tale of Custard the Dragon  
+
+*This poem is written in the style of a ballad — a song or poem that tells a story. You must be familiar with ballads that narrate tales of courage or heroism. This poem is a humorous ballad close to a parody.*  
+
+*Read it aloud, paying attention to the rhythm.*  
+
+Belinda lived in a little white house,  
+With a little black kitten and a little grey mouse,  
+And a little yellow dog and a little red wagon,  
+And a realio, trulio, little pet dragon.  
+
+Now the name of the little black kitten was Ink,  
+And the little grey mouse, she called him Blink,  
+And the little yellow dog was sharp as Mustard,  
+But the dragon was a coward, and she called him Custard.  
+
+Custard the dragon had big sharp teeth,  
+And spikes on top of him and scales underneath,  
+Mouth like a fireplace, chimney for a nose,  
+And realio, trulio daggers on his toes.  
+
+Belinda was as brave as a barrel full of bears,  
+And Ink and Blink chased lions down the stairs,  
+Mustard was as brave as a tiger in a rage,  
+But Custard cried for a nice safe cage.  
+
+Belinda tickled him, she tickled him unmerciful,  
+Ink, Blink and Mustard, they rudely called him Percival,  
+They all sat laughing in the little red wagon  
+At the realio, trulio, cowardly dragon.  
+
+Belinda giggled till she shook the house,  
+And Blink said Weeck! which is giggling for a mouse,  
+Ink and Mustard rudely asked his age,  
+When Custard cried for a nice safe cage.  
+
+Suddenly, suddenly they heard a nasty sound,  
+And Mustard growled, and they all looked around.  
+Meowch! cried Ink, and ooh! cried Belinda,  
+For there was a pirate, climbing in the winda.  
+
+Pistol in his left hand, pistol in his right,  
+And he held in his teeth a cutlass bright,  
+His beard was black, one leg was wood;  
+It was clear that the pirate meant no good.  
+
+Belinda paled, and she cried Help! Help!  
+But Mustard fled with a terrified yelp,  
+Ink trickled down to the bottom of the household,  
+And little mouse Blink strategically mouseholed.  
+
+But up jumped Custard, snorting like an engine,  
+Clashed his tail like irons in a dungeon,  
+With a clatter and a clank and a jangling squirm,  
+He went at the pirate like a robin at a worm.  
+
+The pirate gaped at Belinda's dragon,  
+And gulped some grog from his pocket flagon,  
+He fired two bullets, but they didn't hit,  
+And Custard gobbled him, every bit.  
+
+Belinda embraced him, Mustard licked him,  
+No one mourned for his pirate victim.  
+Ink and Blink in glee did gyrate  
+Around the dragon that ate the pirate.  
+
+But presently up spoke little dog Mustard,  
+I'd have been twice as brave if I hadn't been flustered.  
+And up spoke Ink and up spoke Blink,  
+We'd have been three times as brave, we think,  
+And Custard said, I quite agree  
+That everybody is braver than me.  
+
+Belinda still lives in her little white house,  
+With her little black kitten and her little grey mouse,  
+And her little yellow dog and her little red wagon,  
+And her realio, trulio little pet dragon.  
+
+Belinda is as brave as a barrel full of bears,  
+And Ink and Blink chase lions down the stairs,  
+Mustard is as brave as a tiger in a rage,  
+But Custard keeps crying for a nice safe cage.  
+
+OGDEN NASH  
+
+***Ogden Nash wrote over four hundred pieces of comic verse. The best of his work was published in 14 volumes between 1931 and 1972. His work is perhaps best described in this poetic tribute by Anthony Burgess:***  
+
+*...he brought a new kind of sound to our literary diversions.*  
+*And didn't care much about breaking the poetic laws of the Medes and the Persians.*  
+*He uses lines, sometimes of considerable length that are colloquial and prosy.*  
+*And at the end presents you with a rhyme...*  
+*This bringing together of the informal and the formal is what his genius chiefly loves.*  
+*I am trying to imitate him here, but he is probably quite inimitable.*  
+
+## Glossary  
+
+**grog**: a drink typically drunk by sailors  
+**gyrate**: to move around in circles  
+
+## Thinking about the Poem  
+
+1. Who are the characters in this poem? List them with their pet names.  
+2. Why did Custard cry for a nice safe cage? Why is the dragon called “cowardly dragon”?  
+3. “Belinda tickled him, she tickled him unmerciful...” Why?  
+4. The poet has employed many poetic devices in the poem. For example: “Clashed his tail like iron in a dungeon” — the poetic device here is a simile. Can you, with your partner, list some more such poetic devices used in the poem?  
+5. Read stanza three again to know how the poet describes the appearance of the dragon.  
+6. Can you find out the rhyme scheme of two or three stanzas of the poem?  
+7. Writers use words to give us a picture or image without actually saying what they mean. Can you trace some images used in the poem?  
+8. Do you find *The Tale of Custard the Dragon* to be a serious or a light-hearted poem? Give reasons to support your answer.  
+9. This poem, in ballad form, tells a story. Have you come across any such modern song or lyric that tells a story? If you know one, tell it to the class. Collect such songs as a project.  
 
 ---
 
+## Chapter 09: The Tale of Custard the Dragon  
 
-## Summary
+by OGDEN NASH  
 
+### Central Idea of the Poem  
 
-The poem is a motivational address urging the reader to face life's challenges with courage and self-belief. The speaker acknowledges that the first step is the hardest and that fear can push one back, but comfort and the status quo are not what humans are made for — growth requires leaving ease behind. The poem concludes that believing in yourself is the key to getting your future on track. It is a direct, encouraging call to personal responsibility and inner strength.  
+'The Tale of Custard the Dragon' is a story poem (ballad) that tells the story of a girl named Belinda and her four pets. The central character in the story is Belinda's pet dragon, Custard who is described as a coward. However, when a real danger comes, all the pets can away except Custard. Custard shows courage and bravery in the right moment and saves everyone's life.  
 
+### Explanation of the Poem  
 
-## Poetic Devices
+**STANZA 1**  
 
+Belinda lived in a little white house,  
+With a little black kitten and a little grey mouse,  
+And a little yellow dog and a little red wagon,  
+And a realio, trulio, little pet dragon.  
 
-- **Imagery** — "There is no crowd to see," "push you back in fear," "the first step is the hardest" create mental pictures of solitary struggle and determination.
+**Word Meanings**:  
+    **Wagon** – a carriage, a cart
+    **Realio** – really (used in the poem for effect)
+    **Trulio** – truly (used in the poem for effect).  
 
+**Explanation**: Belinda lived in a little white house with her four pets – a little black kitten, a little grey mouse, a little yellow dog, and a little dragon. She also had a little red wagon. In the last line of the stanza, 'realio' and 'trulio' are used by the poet as an expression for the little dragon meaning 'really' and 'truly' respectively.  
 
-- **Symbolism** — "The future" symbolizes potential and destiny; "the first step" represents the courage to begin change.
+**STANZA 2**  
 
+Now the name of the little black kitten was Ink,  
+And the little grey mouse, she called him Blink,  
+And the little yellow dog was sharp as Mustard,  
+But the dragon was a coward, and she called him Custard.  
 
-- **Contrast** — "Ease in comfort" vs. "This isn't how we grow"; "pull you forward" vs. "push you back in fear."
+**Word Meanings**:  
+    **Sharp** — intelligent
+    **Coward** — someone who is not brave and avoids danger, difficulty or pain  
 
+**Explanation**: The name of the little black kitten was Ink and the name of the little grey mouse was Blink. The name of the little dog was Mustard because its colour was sharp and yellow as mustard. The dragon was a coward and Belinda called him Custard.  
 
-- **Direct Address** — The use of "You" creates an intimate, conversational tone as if the speaker is talking directly to the reader.
+**STANZA 3**  
 
+Custard the dragon had big sharp teeth,  
+And spikes on top of him and scales underneath,  
+Mouth like a fireplace, chimney for a nose,  
+And realio, trulio, daggers on his toes.  
 
-- **Antithesis** — "Ease in comfort" vs. "This isn't how we grow"; "pull you forward" vs. "push you back in fear" create binary choices that heighten the poem's urgency.
+**Word Meanings**:  
+    **Spikes** - a thin pointed structures on the body
+    **Scales** - small hard flat pieces of skin on the bodies of animals
+    **Fireplace** - the place where fire is burnt to keep the house warm
+    **Chimney** - a long pipe that opens on the roof to let out the smoke released from the fireplace
+    **Dagger** - small sword  
 
+**Explanation**: Custard, the dragon has big sharp teeth, spikes on his top and scales on his stomach. His mouth has been compared to a fireplace because it is assumed by the poet that dragons can release fire from their mouth. His nose is compared to a chimney from which the smoke comes out. His toes are so pointed and sharp that they could cut anything like a dagger.  
 
-- **Enjambment** — Lines flow without breaks ("Step up to the challenge / There is no crowd to see"), creating a sense of forward momentum.
+**STANZA 4**  
 
+Belinda was as brave as a barrel full of bears,  
+And Ink and Blink chased lions down the stairs,  
+Mustard was as brave as a tiger in a rage,  
+But Custard cried for a nice safe cage.  
 
-- **Parallelism** — "This isn't what we are made for / This isn't how we grow" uses parallel structure to reinforce the message.
+**Word Meanings**:  
+    **barrel** — drum (usually used for keeping liquids)
+    **rage** — anger  
 
+**Explanation**: In these lines, the poet compares the bravery of all the characters of the poem. Belinda's bravery has been compared to the bravery of a group of bears. Ink and Blink, despite being so small in size, have the power to chase away lions down the stairs. Mustard's bravery has been compared with that of an angry tiger. But, Custard is completely opposite to all of them. He was a coward who always demanded a safe cage.  
 
-- **Apostrophe** — The poet directly addresses the reader ("You just need to believe in yourself"), creating an intimate, coaching relationship.
+**STANZA 5**  
 
+Belinda tickled him, she tickled him unmerciful,  
+Ink, Blink and Mustard, they rudely called him Percival,  
+They all sat laughing in the little red wagon  
+At the realio, trulio, cowardly dragon.  
 
-- **Tone:** Motivational, encouraging, determined.
+**Word Meanings**:  
+    **Tickle** - to touch (a body part) lightly to cause laughter
+    **Unmerciful** - cruel
+    **Percival** - a warrior in king Arthur's court
+    **Rudely** - not in a civil manner or mannerlessly  
 
+**Explanation**: Belinda used to tickle Custard cruelly. Ink, Blink and Mustard made fun of Custard by comparing him to Percival. Percival was one of the best knights of King Arthur's court who was known for his courage and bravery. All of them sat together in the little red wagon and made fun of Custard. They laughed at his cowardice (lack of bravery).  
 
-## Rhyme Scheme
+**STANZA 6**  
 
+Belinda giggled till she shook the house,  
+And Blink said Weeck!, which is giggling for a mouse,  
+Ink and Mustard rudely asked his age,  
+When Custard cried for a nice safe cage.  
 
-AABB — couplet rhymes throughout (e.g., see/be, fear/near, quo/grow, back/track).
+**Word Meanings**:  
+    **Giggling** - laughing  
 
+**Explanation**: Belinda laughed a lot at the dragon. She laughed so hard that it seemed that the house was shaking due to her laughter. Blink, the mouse used to laugh and make a sound of 'Weeck'. Ink and Mustard rudely asked the dragon's age to make fun of him, while the dragon cried for a nice safe cage for himself.  
+
+**STANZA 7**  
+
+Suddenly, suddenly they heard a nasty sound,  
+And Mustard growled, and they all looked around  
+Meowch! cried Ink, and Ooh! cried Belinda,  
+For there was a pirate, climbing in the winda.  
+
+**Word Meanings**:  
+    **Nasty** - unpleasant
+    **Growled** - the sound of growling as made by animals
+    **Pirate** - dacoit, robber
+    **Winda** - window  
+
+**Explanation**: While all of them were busy making fun of the dragon, they heard an unpleasant sound from the house. Mustard, the dog started growling and they all looked around. Ink cried 'Meowch!' and Belinda cried 'Ooh!' as they saw a pirate climbing the window of the house.  
+
+**STANZA 8**  
+
+Pistol in his left hand, pistol in his right,  
+And he held in his teeth a cutlass bright,  
+His beard was black, one leg was wood;  
+It was clear that the pirate meant no good.  
+
+**Word Meanings**:  
+    **Cutlass** - a small sword with a slightly curved blade  
+
+**Explanation**: The appearance of the pirate seemed very dangerous. He was carrying pistols in both hands and he was carrying a small sword between his teeth. He had black beard and his one leg was of wood. His looks made if very clear to the housemates that the pirate meant to harm the people and pets living there.  
+
+**STANZA 9**  
+
+Belinda paled, and she cried, Help! Help!  
+But Mustard fled with a terrified yelp,  
+Ink trickled down to the bottom of the household,  
+And little mouse Blink strategically mouseholed.  
+
+**Word Meanings**:  
+    **Paled** — became pale yellow due to fear
+    **Fled** — ran
+    **Yelp** — cry
+    **Shocked** — stepped down
+    **Strategically** — cleverly
+    **Mouseholed** — holes made by a mouse (it is not a word but has been made into a word to be rhyming scheme)  
+
+**Explanation**: Belinda became pale with fear after seeing the pirate and cried for help. All her brave pets could not help her and everyone ran away from there. Mustard made a huge cry and ran away. Ink ran down towards the bottom of the house and Blink very smartly ran into his hole.  
+
+**STANZA 10**  
+
+But up jumped Custard, snorting like an engine,  
+Clashed his tail like irons in a dungeon,  
+With a clatter and a clank and a jangling squirm  
+He went at the pirate like a robin at a worm.  
+
+**Word Meanings**:  
+    **Snorting** — huge sound made through nose
+    **Clashed** — striked
+    **Squirm** — an underground prison
+    **Clatter and a clank and a jangling** — sounds of two metals striking
+    **Squirm** — to move in a mixed manner
+    **Robin** — a bird.  
+
+**Explanation**: When everyone ran away on seeing the pirate, it was the coward dragon, Custard, who came to rescue the Belinda and fought the pirate bravely. He jumped in front of the pirate and made a loud and angry sound through his nose like an engine. He started to move his foil powerfully producing a sound like iron or metals striking in a dungeon (prison). With all these dangerous sounds, he followed the pirate like a bird follows a worm.  
+
+**STANZA 11**  
+
+The pirate gaped at Belinda's dragon,  
+And gulped some grog from his pocket flagon,  
+He fired two bullets but they didn't hit,  
+And Custard gobbled him, every bit.  
+
+**Word Meanings**:  
+    **Liped** — stared with mouth wide open
+    **Gulped** — swallowed
+    **Grog** - drink
+    **Flagon** — a container made of silver in which drink is stored
+    **Shocked** — swallowed  
+
+**Explanation**: The pirate was shocked by the dragon's reaction. He stared at Belinda's dragon with his mouth open. He drank some wine from a container that he carried in his pocket. The pirate then took out his pistol and fired two bullets at Custard. But, he failed to hit him. Finally, Custard swallowed or ate the pirate.  
+
+**STANZA 12**  
+
+Belinda embraced him, Mustard licked him,  
+No one mourned for his pirate victim  
+Ink and Blink in glee did gyrate  
+Around the dragon that ate the pirate.  
+
+**Word Meanings**:  
+    **Embrace** — to hug
+    **Licked** — to touch with tongue
+    **Mourned** — to grieve
+    **Glee** — happiness
+    **Gyrate** — make circular movements.  
+
+**Explanation**: Everyone celebrated the death of the pirate. Belinda hugged Custard and Mustard licked him affectionally. No one felt sorrow for the pirate's death. Ink and Blink started dancing in joy around the dragon who had eaten the pirate.  
+
+**STANZA 13**  
+
+But presently up spoke little dog Mustard,  
+I'd have been twice as brave if I hadn't been flustered.  
+And up spoke Ink and up spoke Blink,  
+We'd have been three times as brave, we think,  
+And Custard said, I quite agree  
+That everybody is braver than me  
+
+**Word Meanings**:  
+    **Flustered** - got nervous  
+
+**Explanation**: The incident clarifies who is coward and who is brave. Mustard said that he would have been twice as brave as Custard if he had not been nervous. After this, Ink and Blink said that they would have been thrice as brave as the custard. Custard agreed and said that everybody there was braver than him.  
+
+**STANZA 14-15**  
+
+Belinda still lives in her little white house, with her little black kitten and her little grey mouse,  
+And her little yellow dog and her little red wagon,  
+And her realio, trulio little pet dragon.  
+Belinda is as brave as a barrel full of bears,  
+And Ink and Blink chase lions down the stairs,  
+Mustard is as brave as a tiger in a rage,  
+But Custard keeps crying for a nice safe cage.  
+
+**Explanation**: Stanza 14 and 15 are an almost repetition of Stanza 1 and 4. There is only one difference that stanza 1 and 4 present the condition of the housemates in the past and stanza 14 and 15 present their condition after the pirate incident. The situation has not changed at all. Everything has gone back to normal with Belinda and her three 'brave' pets making fun of the 'cowardly', pet dragon.  
+
+### Poetic Devices Used in the Poem  
+
+**Simile**: When comparison is made between two things using 'like' and 'as'  
+- Mouth like a fireplace  
+- Sharp as Mustard  
+- Belinda as a brave as a barrel full of bears  
+- Snorting like an engine, etc.  
+
+**Repetition**: When a phrase/line is repeated to emphasise something  
+- a little  
+- a realia, trullo  
+- Suddenly, suddenly they heard  
+- she cried Help! Help!  
+- But Custard cried for a nice safe cage.  
+
+**Metaphor**: When comparison is made between two different things without the use of 'like' and 'as'  
+- Nose for a Chimney  
+
+**Personification**: When human qualities are given to objects or creatures who are not human  
+- Ink, Blink, Mustard and Custard (These are Belinda's pet animals who are given the ability to speak just like a human)  
+
+**Alliteration**: Repetition of the initial consonant sound in the same way  
+- And he held in his teeth  
+
+**Onomatopoeia**: When a word is used to describe a sound  
+- Weeck  
+- Meowch  
+
+### Rhyme Scheme  
+
+Every stanza of the poem has the rhyme scheme aabb except stanza 13. The rhyme scheme of stanza 13 is aabbcc.  
+
+### Thinking about the Poem  
+
+1. Who are the characters in this poem? List them with their pet names.  
+
+**Ans.** There are six characters in the poem. These include Belinda and her four pets, and a pirate. *Her pets are*  
+- (i) A little black kitten, Ink  
+- (ii) A little grey mouse, Blink  
+- (iii) A yellow dog, Mustard  
+- (iv) A dragon, Custard  
+
+2. Why did Custard cry for a nice safe cage? Why is the dragon called 'cowardly dragon'?  
+
+**Ans.** Custard cried for an nice safe cage because he was a 'coward' who wanted peace and safety. He is called a 'cowardly dragon' because apart from him, all other pets are described as very brave. Belinda is as brave as a big group of bears, Ink and Blink can chase lions and Mustard is like an angry tiger. Compared to all of them, the dragon demanded nice safe cage so it is called 'Cowardly dragon'.  
+
+3. 'Belinda tickled him, she tickled him unmerciful...' Why?  
+
+**Ans.** Belinda tickles her pet dragon, Custard quite cruelly. She does so because she want to excite Custard as he was a lazy dragon. In addition, it amused her. She along with her other pets laughed at the dragon's weakness (cowardness).  
+
+4. The poet has employed many poetic devices in the poem. For example 'Clashed his tail like iron in a dungeon' — the poetic device here is a simile. Can you, with your partner, list some more such poetic devices used in the poem?  
+
+**Ans.** In the poem, 'The Tale of Custard, the Dragon', the poet has used a lot of poetic devices. *Following are some of the devices used*  
+- (i) Simile: Mouth like a fireplace.  
+- (ii) Repetition: The repetitive use of the word 'little' in stanza 1.  
+- (iii) Onomatopoeia: Use of sound words such as 'weeck' and 'meowch'.  
+- (iv) Metaphor: Use of comparison such as 'Nose for a Chimney'.  
+
+5. Read stanza three again to know how the poet describes the appearance of the dragon.  
+
+Or What did Custard look like?  
+
+**Ans.** Stanza three of the poem 'The Tale of Custard the Dragon' describes the physical appearance of the dragon. Custard, the dragon has big sharp teeth. He has spikes on top and scales underneath him. His mouth is like a fireplace and his nose is like a chimney. He has daggers on his toes.  
+
+6. Can you find out the rhyme scheme of two or three stanzas of the poem?  
+
+**Ans.** The rhyme scheme of the poem is 'aabb'.  
+
+7. Writers use words to give us a picture or image without actually saying what they mean. Can you trace some images used in the poem?  
+
+Writers always use such phrases and words that do not tell us directly about what they mean but always give us an indication of the meaning. Such words or phrases are used to trigger our own imagination in painting the picture that they mean. Use of such images in the poem are 'mouth like a fireplace', 'chimney for a nose', 'brave as a barrel full of bears', 'brave as a tiger in a rage', 'went at the pirate like a robin at a worm', etc.  
+
+8. Do you find 'The Tale of Custard the Dragon' to be a serious or a light-hearted poem? Give reasons to support your answer.  
+
+'The Tale of Custard the dragon' is a very light hearted funny poem that is meant to be enjoyed by everyone. The fixed rhyme scheme and the use of wrong spelling to maintains and it, makes it easy and enjoyable to read. Even the names of the pets are rhyming and evokes laughter. The description of Belinda and her pets makes the poem entertaining. Belinda's bravery is described as equal to a group of bears. The smallest of her pets, her kitten Ink and mouse Blink have been shown so brave that they can scare a lion. The dog Mustard is like an angry tiger. But the biggest of them all, the dragon is nice and cowardly. He is always crying for a safe cage. In addition, the reactions of these characters to the dangerous pirate, also makes it funny.  
+
+9. This poem, in ballad form, tells a story. Have you come across any such modern song or lyric that tells a story? If you know one tell it to the class. Collect such songs as a project.  
+
+**Ans.** Do it yourself.  
+
+### Extract Based Questions  
+
+**[5 Marks each]**  
+
+Read the following extracts carefully and answer the questions that follow.  
+
+1. Now the name of the little black kitten was Ink, And the little gray mouse, she called her Blink, And the little yellow dog was sharp as Mustard, But the dragon was a coward, and she called him Custard.  
+
+(i) Who is 'she' in the given lines?  
+
+(a) Belinda's mother  
+(b) Belinda's sister  
+(c) Belinda  
+(d) Belinda's friend  
+
+(ii) What is the name of Belinda's Cat?  
+
+(a) Black  
+(b) Grey  
+(c) White  
+(d) Red  
+
+(iii) What was kitten and mouse called by Belind?  
+
+(a) Wink and Twink  
+(b) Ink and Blink  
+(c) Chink, Blink  
+(d) Ink and Don  
+
+(iv) Which word in the stanza means 'Scared easily'?  
+
+(a) Little  
+(b) Dragon  
+(c) Coward  
+(d) Sharp  
+
+(v) With what name does Belinda call her dog?  
+
+(a) Custard  
+(b) Blink  
+(c) Yellow  
+(d) Mustard  
+
+**Ans.**  
+    (i) (c) Belinda
+    (ii) (a) Black
+    (iii) (b) Ink and Blink
+    (iv) (c) Coward
+    (v) (d) Mustard  
+
+2. Belinda was as brave as a barrel full of bears, And Ink and Blink chased lions down the stairs, Mustard was as brave as a tiger in a rage, But Custard cried for a nice safe cage.  
+
+(i) How brave were the kitten and the mouse?  
+
+(a) Could chase wild animals  
+(b) Could lift big stones  
+(c) Could fight anyone  
+(d) All of the above  
+
+(ii) How did Mustard show his bravery?  
+
+(a) By getting violent  
+(b) By barking nonstop  
+(c) By getting angry  
+(d) By biting  
+
+(iii) Why did custard cry for a nice safe cage?  
+
+(a) He wanted to relax.  
+(b) He was a coward.  
+(c) He would not see violence.  
+(d) He was very lazy.  
+
+(iv) Ink, Blink, Mustard and Custard are  
+
+(a) Belinda's roommates  
+(b) Belinda's dragon  
+(c) Belinda's friends  
+(d) Belinda's pets  
+
+(v) Which figure of speech has been used in the first and the third line of this stanza?  
+
+(a) Simile  
+(b) Alliteration  
+(c) Metaphor  
+(d) Paradox  
+
+**Ans.**  
+    (i) (a) Could chase wild animals
+    (ii) (c) By getting angry
+    (iii) (b) He was a coward
+    (iv) (d) Belinda's pets
+    (v) (a) Simile  
+
+3. Belinda giggled till she shook the house, And Blink said Weeck!, which is giggling for a mouse, Ink and Mustard rudely asked his age, When Custard cried for a nice safe cage. Suddenly, suddenly they heard a nasty sound, And Mustard growled and they looked around.  
+
+(i) What can you infer from the repetition 'suddenly, suddenly' in the above extract?  
+
+(a) There was an immediate change in the scene.  
+(b) It focuses on the hasty attack and the loud noise.  
+(c) It emphasises that an unexpected noise was heard.  
+(d) It draws our attention to the loud cry that occurred.  
+
+(ii) A cage means captivity. Why is Custard inclined to remain in a cage despite what it symbolises? This is so because he viewed it as a  
+
+1. sanctuary  
+2. guardhouse  
+3. cubicle  
+4. refuge  
+5. booth  
+
+(a) 1, 2 & 5  
+(b) 1 & 4  
+(c) 3, 4 & 5  
+(d) 3 & 5  
+
+(iii) Why has the poet used the word 'weeck' to signify the giggling of the mouse?  
+
+(a) The poet uses it to add suspense in the poem.  
+(b) The poet has imagined how the mouse would sound in this mood.  
+(c) The poet has mocked at the mouse for giggling at Custard.  
+(d) The poet uses it to create a scary effect for readers.  
+
+(iv) Pick the option with the correct matches for columns A and B.  
+
+| A Word | B Meaning |  
+| --- | --- |  
+| 1. chuckle | A. to smile in a half-suppressed mocking way. |  
+| 2. snigger | B. to smile in an irritating, conceited manner. |  
+| 3. smirk | C. to let out a quiet and suppressed laugh. |  
+|  | D. to let out a laugh heartily and loudly. |  
+
+(a) 1-D, 2-A, 3-C (b) 1-C, 2-A, 3-B  
+(c) 1-B, 2-D, 3-C (d) 1-A, 2-C, 3-D  
+
+(v) Which belief about dragons is in contrast to Custard's behaviour in the extract.  
+
+(a) Dragons are brave and feared.  
+(b) Dragons can grant wishes.  
+(c) Dragons can become invisible at will.  
+(d) Dragons are soft-hearted and kind.  
+
+**Ans.**  
+    (i) (c) It emphasises that an unexpected noise was heard.
+    (ii) (b) 1 & 4
+    (iii) (c) The poet has mocked at the mouse for giggling at Custard.
+    (iv) (b) 1-C, 2-A, 3-B
+    (v) (a) Dragons are brave and feared.  
+
+4. Pistol in his left hand, pistol in his right, And he held in his teeth a cutlass bright, His beard was black, one leg was wood; It was clear that the pirate meant no good.  
+
+(i) How many pistols was the pirate carrying?  
+
+(a) One (b) None  
+(c) Two (d) Three  
+
+(ii) What does Cutlass mean?  
+
+(a) A huge sword (b) A knife  
+(c) A spear (d) A short sword  
+
+(iii) How did the pirate appear?  
+
+(a) Frightening (b) Sweet  
+(c) Disturbing (d) None of these  
+
+(iv) How does the poet describe his beard?  
+
+(a) It was off-white (b) Black  
+(c) Mustard (d) Very long beard  
+
+(v) What is the rhyming scheme of the given stanza?  
+
+(a) aabb (b) abcbc  
+(c) ababc (d) ababa  
+
+**Ans.**  
+    (i) (c) Two
+    (ii) (d) A short sword
+    (iii) (a) Frightening
+    (iv) (b) Black
+    (v) (a) aabb  
+
+5. "Ink trickled down to the bottom of the household, And little mouse Blink strategically mouseholed. But up jumped Custard, snorting like an engine, Clashed his tail like irons in a dungeon, With a clatter and a clank and a jangling squirm, He went at the pirate like a robin at a worm." *CBSE 2016*  
+
+(i) Which option lists the quotes that support the ideas in the extract?  
+
+1. Fear makes strangers of people who would be friends.  
+2. If you're brave enough to start, you're strong enough to finish.  
+3. Courage doesn't mean you don't get afraid. Courage means you don't let fear stop you.  
+4. You get in life what you have the courage to ask for.  
+5. Fear has a large shadow, but he himself is strong.  
+
+(a) 1 and 5  
+(b) 2, 3 and 4  
+(c) 2 and 3  
+(d) 1, 3 and 5  
+
+(ii) What is the poet's purpose of using the onomatopoeic words given in the extract?  
+
+(a) It is to emphasise on the might and boldness of Custard.  
+(b) It is to introduce the character Custard to the readers.  
+(c) It is to impress upon the readers that Custard was ready.  
+(d) It is to make Custard bold enough to face the situation.  
+
+(iii) Pick an option that best fits the usage of the word 'trickled' as used in the extract.  
+
+(a) The water trickled down the tap and filled the trough.  
+(b) Students trickled into the classroom as the teacher entered.  
+(c) Tears trickled down her cheeks as she heard the sad news.  
+(d) His enthusiasm for the task slowly trickled away.  
+
+(iv) Select the option that fits with the reaction of the characters in the context of the extract.  
+
+Ink: terrified : : Blink : i) ...  
+Pirate: ii) ... :: Custard: undaunted  
+
+(a) i) shocked ii) displeased  
+(b) i) petrified ii) wondered  
+(c) i) upset ii) dazed  
+(d) i) petrified ii) shocked  
+
+(v) 'He went at the pirate like a robin at a worm.' Why has this comparison been used here? Just like the robin catches the worm.  
+
+(a) Custard attacked the pirate after careful observation.  
+(b) Custard attacked the pirate without delay.  
+(c) Custard attacked the pirate valourously.  
+(d) Custard attacked the pirate stealthily.  
+
+**Ans.**  
+    (i) (c) 2 and 3
+    (ii) (a) It is to emphasise on the might and boldness of Custard.
+    (iii) (b) Students trickled into the classroom as the teacher entered.
+    (iv) (b) i) petrified ii) wondered
+    (v) (b) Custard attacked the pirate without delay.  
+
+6. Belinda embraced him, Mustard licked him, No one mourned for his pirate victim Ink and Blink in glee did gyrate Around the dragon that ate the pirate.  
+
+(i) Whom did Belinda embrace?  
+
+(a) Dog, mustard  
+(b) Pirate  
+(c) Dragon  
+(d) The rat  
+
+(ii) Who is called a victim here?  
+
+(a) Belinda  
+(b) Dragon  
+(c) The pirate  
+(d) Others  
+
+(iii) Which of the following is NOT true according to passage?  
+
+(a) Belinda loved her pets.  
+(b) The Dragon was a coward.  
+(c) Ink and Blink are brothers.  
+(d) Everyone was happy.  
+
+(iv) What does the word 'gyrate' means?  
+
+(a) Faint  
+(b) Circular movements  
+(c) Dance  
+(d) Steady  
+
+(v) Was everyone proved as brave as they claimed except the dragon.  
+
+(a) No  
+(b) Yes  
+(c) Can't Say  
+(d) None of these  
+
+**Ans.**  
+    (i) (c) Dragon
+    (ii) (c) The pirate
+    (iii) (c) Ink and Blink are brothers.
+    (iv) (b) Circular movements
+    (v) (a) No  
+
+### Short Answer (SA) Type Questions  
+
+**[2/3 Marks each]**  
+
+1. Where did Belinda live and with whom?  
+
+**Ans.** Belinda lived in a little white house with her four pets and a red wagon. She had a black kitten named Ink, a grey mouse named Blink, a yellow dog named Mustard and a coward dragon named Custard.  
+
+2. Did Custard match his physical appearance?  
+
+**Ans.** No, Custard did not match his appearance, as he looked dangerous but actually he was a coward. He always cried for a nice and safe cage, while everyone laughed at him for his cowardice.  
+
+3. Describe the bravery of everyone in the house.  
+
+**Ans.** In the poem, everyone in the house except the dragon was brave. Belinda was as brave as a barrel full of bears. Ink and Blink were brave enough to chase lions away. Even Mustard was as brave as an angry tiger. It was only Custard, who was a coward.  
+
+4. 'But Custard cried for a nice safe cage.' Who is Custard? Why did he cry for a 'nice safe cage'? ***CBSE 2014***  
+
+**Ans.** Custard was Belinda's pet dragon. He cried for peace and safety of a cage because of his meek (submissive) and cowardly nature.  
+
+5. Why was Custard, the dragon teased as Percival?  
+
+**Ans.** Custard, the dragon is teased as Percival by Ink, Blink and Mustard for his timidity. They teased him as Percival because unlike Custard, he was a courageous and brave knight of King Arthur. Custard on the other hand, was meek (submissive) and always cried for a nice safe cage.  
+
+6. What did everyone do when the pirate came?  
+
+**Ans.** When the pirate came, Belinda cried for help and became pale with fear. Mustard ran away with a terrified cry and Ink hid himself in the bottom of the house, while Blink disappeared in his hole. It was only Custard who jumped in front of the pirate to fight him and showed the courage to face the pirate.  
+
+7. How did Custard face the pirate?  
+
+**Ans.** When the pirate came in Belinda's house, all of her pets except Custard hid themselves. Custard jumped in front of the pirate to fight him. He even clashed his tail. During this fight, the pirate shot two bullets at him which missed its aim. Finally, Custard ate him and left no trace of him.  
+
+8. How did everyone react after Custard ate the pirate?  
+
+**Ans.** After Custard ate the pirate, there was joy all around the house. No one mourned for the pirate and everyone was grateful to the dragon. Belinda hugged Custard, while Mustard licked him. Ink and Blink started dancing around Custard.  
+
+9. How did the other three pets boast of their bravery?  
+
+**Ans.** When the pirate had been killed by the dragon, Custard, all other pets of Belinda started making excuses for their cowardice. Mustard said that if he had not been nervous he would have been twice as brave as Custard. Ink and Blink also boasted that they would have been thrice as brave as Custard.  
+
+10. Were Belinda and her pets grateful to Custard for killing the pirate? How did Custard react to their reactions?  
+
+**Ans.** Yes, Belinda and her pets were grateful to Custard for killing the pirate, but it was only temporary. Soon after expressing gratitude, Mustard, Ink and Blink started giving excuses for their cowardice and things went back to normal, as it was before the pirate incident. Custard, the dragon reacted in a humble manner and accepted that all other pets are braver than him.  
+
+11. Was everyone really as brave as they claimed?  
+
+**Ans.** Belinda and her three pets, excluding Custard, were very proud of their bravery but, they were not really brave. It was only Custard, who had the courage to face the pirate and fight him. So, among all, only Custard was brave.  
+
+### Long Answer (LA) Type Questions  
+
+**[5 Marks each]**  
+
+1. The dragon, Custard was considered a coward. The humble dragon proved his bravery in adversity. Analyse that certain qualities like bravery and courage are situational and spontaneous. Express your views with reference to the poem, "The Tale of Custard, the dragon".  
+
+**Ans.** It is true that bravery and courage are situational and spontaneous. This fact has been aptly conveyed in the poem "The Tale of Custard the Dragon", wherein the dragon was considered a coward. He was laughed at for crying for a nice safe cage. He never boasted of his bravery and courage, unlike Belinda and her other pets do. Everyone else, including Belinda, Ink, Blink and Mustard claim to be brave. They even made fun of Custard's cowardice. However, when the time to show their courage came, none of them could face the danger. They hid themselves in some corner of the house. It was only Custard who dared to face the frightening pirate. He not only fought the pirate but also ate him up. It was a dangerous situation to which Custard spontaneously responded. His courage and bravery came out in a threatening situation. Hence, it is true that qualities like courage and bravery are situational and spontaneous.  
+
+2. Do you think that one should be made fun of because of their preferences and choices in life? Explain in the context of Custard, the dragon.  
+
+**Ans.** According to me, one should never make fun of anyone on the basis of their lifestyle and their choices. One must always remember that choices and preference can depend on unexplanable factors. In the poem 'The Tale of Custard the Dragon', Custard makes one such choice of wishing for a 'nice safe cage'. He prefers comfort and safety. However, Belinda and her other pets always laugh at him. They think of him as a coward for choosing to stay in cage and make fun of him. Custard, the dragon soon proved that his choice of comfort doesn't make him a coward. Infact, instead of all the 'brave' pets of Belinda, it was Custard who fought the pirate. It was Custard who showed courage to face the pirate and kill him. Therefore, one must never judge anyone for choice. Appearance may be deceptive. Just like the dragon who appeared to be a coward but was actually courageous, another person might also be different from what show him/her to be his/her preferences.  
+
+### Self Assessment  
+
+**EXTRACT BASED QUESTION**  
+
+Read the following extract carefully and answer the questions that follow.  
+
+1. But up jumped Custard, snorting like an engine,  
+Clashed his tail like irons in a dungeon,  
+With a clatter and a clank and a jangling squirm  
+He went at the pirate like a robin at a worm.  
+
+(i) On whom did the dragon jump?  
+
+(a) The dog  
+(b) Belinda  
+(c) The pirate  
+(d) Mouse  
+
+(ii) Why did Custard jump?  
+
+(a) To run away.  
+(b) To fight the pirate.  
+(c) To go out of the house.  
+(d) None of the above.  
+
+(iii) Why is Custard, the dragon compared to a Robin?  
+
+(a) He strangled the pirate  
+(b) Fought with pirate  
+(c) Gobbled him up like. Robin eats worms  
+(d) Killed the pirate  
+
+(iv) What does the word 'jangling' means?  
+
+(a) Disturb  
+(b) Irritate  
+(c) Volting making clinking noises  
+(d) Peace  
+
+(v) Which figure of speech is used in line 3rd of the stanza?  
+
+(a) Alliteration  
+(b) Simile  
+(c) Onomotopoeia  
+(d) Metaphor  
+
+**SHORT ANSWER (SA) TYPE QUESTIONS**  
+
+2. Why is the poem 'The Tale of Custard the Dragon' called a ballad?  
+
+3. What is the true nature of Custard the dragon?  
+
+**LONG ANSWER (LA) TYPE QUESTION**  
+
+4. What does bravery mean to you? Who is a real brave heart? Elaborate with reference to 'The Tale of Custard the Dragon'.  
 
 ---
-
-
-**I. Based on your understanding of the poem, select the correct central idea for each stanza from the options given.**  
-
-**Stanza 1**
-- (i) Facing challenges requires personal responsibility and a clear focus on one's future.
-- (ii) Facing challenges is a journey best taken with support and guidance from others.  
-
-**Stanza 2**
-- (i) Fear and uncertainty make it difficult to make choices as the future approaches.
-- (ii) Facing the future with confidence makes choices easier and more straightforward.  
-
-**Stanza 3**
-- (i) Personal growth involves finding balance between comfort and change.
-- (ii) Personal growth requires leaving behind comfort and embracing change.  
-
-**Stanza 4**
-- (i) The first step towards change may feel easy if you place your trust in others to guide you and provide support.
-- (ii) The first step towards change is difficult, but having self-belief and confidence helps you stay on track.  
-
-**II. Rhyme Scheme**  
-
-Fill in the blank to complete the following sentence.
-*The poem follows a simple, yet effective rhyme scheme `____` that flows steadily through each stanza.*  
-
-**III. Tone**  
-
-State whether the following statements are true or false.
-1. The overall tone of the poem is motivational and encouraging.
-2. The tone shifts from thoughtful in the beginning to one of determination by the end of the poem.  
-
-**IV. Speaker**  
-
-Fill in the blanks with the correct options from those given in the brackets.  
-
-*The speaker in this poem is not distant; rather, he/ she comes across as a `____` (stranger/guide) who understands the struggle and is encouraging the reader to take `____` (interest in/control of) his/her own future.*  
-
-*The use of direct address 'You' creates a close connection, as though the speaker is `____`. (talking directly to the reader/addressing the reader from a distance)*  
-
-**V. Imagery**  
-
-Match the phrases from the poem in Column 1 with the imagery they represent in Column 2. An extra representation is given.  
-
-|  Column 1 | Column 2  |
-| --- | --- |
-|  1. There is no crowd to see... | (i) Represents the difficulty of beginning a new challenge or change.  |
-|  2. push you back in fear? | (ii) Suggests a solitary journey, stressing individual effort.  |
-|   | (iii) Evokes the mental barrier that prevents growth.  |  
-
-**VI. Symbolism**  
-
-Select the words/phrases from the box below to complete the given sentences.  
-
-|  unknown | self-improvement | courage  |
-| --- | --- | --- |
-|  leap of faith | stagnation |   |  
-
-1. Comfort and the status quo represent `____` and fear of change, symbolising the comfort zone that holds one back.
-2. The future symbolises the `____`, the potential for change and success that lies ahead but requires `____` to step into.
-3. The first step symbolises the initial `____` required to begin the journey of `____` or personal development.  
-
-**VII. Metaphor**  
-
-The poet uses a metaphor in the line, 'The first step is the hardest'. Explain why this is metaphorical.  
-
-**VIII. The poem uses antithesis in a couple of lines.**  
-
-**Antithesis** is a rhetorical device that pairs contrasting or opposite ideas in a parallel grammatical structure to highlight differences or create emphasis. It simplifies complex ideas through contrast, making them easier for readers or listeners to understand.  
-
-Consider the famous quote from Neil Armstrong when he stepped onto the moon:  
-
-"Setting foot on the moon may be a small step for a man, but a giant leap for mankind."  
-
-Here, the antithesis lies in contrasting the 'small step' for an individual with the 'giant leap' for all humanity. The parallel structure of the two phrases highlights the incredible significance of this event, presenting it as both a personal and massive achievement.  
-
-Other examples:
-- Speech is silver, but silence is gold.
-- Patience is bitter, but it has a sweet fruit.
-- Man proposes, God disposes.  
-
-Identify the lines from the poem that show antithesis and explain why it is so.  
-
-
-
-**I. Read the extract given below and answer the questions that follow.**  
-
-1. *Step up to the challenge*
-*There is no crowd to see,*  
-*It's just you and the future*  
-*And where you want to be.*  
-
-(i) What does the line, 'There is no crowd to see' suggest about facing challenges?
-(ii) Complete the following suitably.
-*The line 'It's just you and the future' suggests that `____`.*  
-
-(iii) Fill in the blank with the appropriate word/phrase from the extract.
-*Latha will `____` her efforts to improve her vocal performance by practicing harder each day.*  
-
-(iv) Select the most suitable title for the extract.
-- A. The Struggles of Change
-- B. Facing the Future Alone
-- C. A Journey of Growth
-- D. The Power of Fear  
-
-(v) Complete the analogy by using a word from the extract.
-*achieve: goal : : face : `____`*  
-
-**II. Answer the following questions.**  
-
-1. What is the significance of the metaphor, 'The first step is the hardest' in the context of personal growth?
-2. What message does the antithesis in the poem convey about the nature of personal development?
-3. Do you think the poet's message is realistic in the context of real-world struggles? (Clue: Evaluate whether simply 'believing in yourself' is enough to overcome obstacles or other factors are also necessary.)
-4. Consider a situation where you or someone you know had to take a difficult first step towards a goal. How does the poem's message about the importance of self-belief apply to this situation?  
-
-### Writing Task  
-
-1. Your class is conducting the morning assembly. You have been asked to deliver a speech on the topic, 'Turning Challenges into Opportunities'. Draft this speech by following the guidelines given below.  
-
-- **Opening paragraph**: Greet the audience and introduce yourself. Begin with a quotation, a question or a surprising fact. State the purpose of your speech and provide an overview of what you will be talking about.  
-
-- **Paragraphs 2 and 3—Body of the speech**: Divide the body of your speech into two paragraphs, each focusing on a different main point or idea. Use transition words, anecdotes, statistics, and other supporting evidence to strengthen your points.  
-
-- **Concluding paragraph**: Summarise the main points of your speech. End with a statement that leaves a lasting impression on the audience and convey your thanks.  
-
-- Use formal language to present ideas clearly
-- Use persuasive tone—don't you agree.../..., isn't it?  
-
-Refer to the guidelines given below.
-- Consider how challenges can lead to new learning experiences, growth, or unexpected benefits.
-- Why do you think people often feel scared or anxious when faced with change?
-- How can change open doors to new opportunities? Can you think of an example from your own life or someone you know?
-- What are some strategies or attitudes you can adopt to approach change with a positive mindset?
-- Think about how facing challenges builds skills, determination, and confidence, all of which are essential for success.  
-
----
-
----
-
-# Answers – Believe in Yourself  
-
-## Reading for Appreciation  
-### I. Central Idea Selection  
-- Stanza 1: (i) Facing challenges requires personal responsibility and a clear focus on one's future.  
-- Stanza 2: (i) Fear and uncertainty make it difficult to make choices as the future approaches.  
-- Stanza 3: (ii) Personal growth requires leaving behind comfort and embracing change.  
-- Stanza 4: (ii) The first step towards change is difficult, but having self-belief and confidence helps you stay on track.  
-
-### II. Rhyme Scheme  
-*The poem follows a simple, yet effective rhyme scheme **ABCB** that flows steadily through each stanza.*  
-
-### III. Tone  
-1. True.  
-2. True.  
-
-### IV. Speaker  
-*The speaker in this poem is not distant; rather, he/she comes across as a **guide** who understands the struggle and is encouraging the reader to take **control of** his/her own future.*  
-*The use of direct address 'You' creates a close connection, as though the speaker is **talking directly to the reader**.*  
-
-### V. Imagery  
-1. There is no crowd to see... -> (ii) Suggests a solitary journey, stressing individual effort.  
-2. push you back in fear? -> (iii) Evokes the mental barrier that prevents growth.  
-
-### VI. Symbolism  
-1. Comfort and the status quo represent **stagnation** and fear of change, symbolising the comfort zone that holds one back.  
-2. The future symbolises the **unknown**, the potential for change and success that lies ahead but requires **courage** to step into.  
-3. The first step symbolises the initial **leap of faith** required to begin the journey of **self-improvement** or personal development.  
-
-### VII. Metaphor  
-The phrase 'The first step is the hardest' is metaphorical because it refers not to a physical footstep, but to overcoming mental hesitation, fear, and inertia when starting a new goal or life path.  
-
-### VIII. Antithesis in the Poem  
-Lines showing antithesis:  
-"Will it pull you forward / Or push you back in fear?"  
-Explanation: It contrasts pulling forward (progress) with pushing back (fear/regress) using opposite directions to emphasize how choices shape our destiny.  
-
-## Critical Reflection  
-### I. Extract-Based Questions  
-1. (i) It suggests that personal success is an individual responsibility, away from public show or audience approval.  
-(ii) *The line 'It's just you and the future' suggests that **your future depends entirely on your own choices and self-belief**.*  
-(iii) *Latha will **step up** her efforts to improve her vocal performance by practicing harder each day.*  
-(iv) B. Facing the Future Alone  
-(v) *achieve : goal :: face : **challenge***  
-
-### II. Short Answer Questions  
-1. What is the significance of the metaphor, 'The first step is the hardest' in the context of personal growth?  
-This metaphor signifies that overcoming initial self-doubt, fear of failure, and the comfort of status quo is the most challenging part of any journey. Once a person takes that courageous first step, momentum builds, making progress achievable.  
-
-2. What message does the antithesis in the poem convey about the nature of personal development?  
-The antithesis contrasting "pull you forward" with "push you back in fear" conveys that personal growth is a continuous choice between courage and fear. It emphasizes that moving forward requires actively rejecting comfortable stagnation.  
-
-3. Do you think the poet's message is realistic in the context of real-world struggles?  
-While self-belief is crucial for starting any journey, real-world success also requires practical planning, persistent hard work, resourcefulness, and guidance from mentors. Self-belief provides the initial spark, but continuous discipline turns dreams into reality.  
-
-4. Consider a situation where you or someone you know had to take a difficult first step towards a goal. How does the poem's message about the importance of self-belief apply to this situation?  
-When my friend decided to learn public speaking, he was terrified of stage fear. By trusting in his potential and taking the initial step to deliver his first assembly speech, his confidence grew rapidly, proving that self-belief overcomes initial anxiety.  
-## Writing Task  
-### I. Assembly Speech: Turning Challenges into Opportunities  
-Good morning respected Principal, teachers, and my dear friends!  
-
-I am Rahul Sharma from Class IX. As Helen Keller famously said, "Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened." Today, I am honored to speak to you on the topic: 'Turning Challenges into Opportunities'.  
-
-We often feel anxious when faced with unexpected changes or difficult tasks. It is natural to prefer the ease of comfort and status quo. However, haven't you noticed that staying inside our comfort zones leads only to stagnation? Challenges force us to think creatively, acquire new skills, and build resilience. For instance, when schools transitioned to online learning during difficult times, students and teachers adapted rapidly, turning a daunting barrier into a new era of digital literacy.  
-
-To turn obstacles into stepping stones, we must cultivate self-belief and a positive growth mindset. Instead of asking "Why is this happening to me?", we should ask "What can I learn from this experience?" Facing tough situations builds true determination, discipline, and self-confidence. Don't you agree that every successful leader or athlete achieved greatness only by overcoming immense hurdles?  
-
-In conclusion, challenges are not brick walls designed to stop us; they are hurdles designed to test how badly we want to reach our goals. Let us embrace every difficulty as a valuable opportunity to learn and grow. Believe in yourself, take that courageous first step, and shape your own future.  
-
-Thank you and have a wonderful day ahead!  
-

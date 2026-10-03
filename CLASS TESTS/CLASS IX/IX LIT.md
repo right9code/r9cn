@@ -1,11 +1,9 @@
-# Class Test: Words, Follow That Dream & Believe in Yourself  
+### Class Test: Words, Follow That Dream & Believe in Yourself  
 **Maximum Marks:** 20  
-**Time Allowed:** 45 Minutes  
-*(Note: Based strictly on the Question & Answer summaries studied in class.)*  
 
 ---
 
-### Section A: Fill in the Blanks & True/False (4 Marks)  
+##### Section A: Fill in the Blanks & True/False (4 Marks)  
 
 **Q1. Fill in the blanks with the correct words from the poems/lessons:**  
 1. In the poem *Words*, the poet compares meaningless words to useless wild `_________`.  
@@ -17,7 +15,7 @@
 
 ---
 
-### Section B: Short Answer Questions (6 Marks)  
+##### Section B: Short Answer Questions (6 Marks)  
 
 **Q3. Answer any two of the following questions briefly: (2 × 2 = 4 Marks)**  
 1. What comparison does Charles Swain draw between words and summer birds in the poem *Words*?  
@@ -29,7 +27,7 @@
 
 ---
 
-### Section C: Detailed Question & Answers (6 Marks)  
+##### Section C: Detailed Question & Answers (6 Marks)  
 
 **Q5. Answer any two of the following questions: (2 × 3 = 6 Marks)**  
 1. Explain how the poet uses antithesis in *Words* to contrast sincerity with verbosity.  
@@ -38,7 +36,7 @@
 
 ---
 
-### Section D: Creative Writing (4 Marks)  
+##### Section D: Creative Writing (4 Marks)  
 
 **Q6. Draft a brief email (in about 40–50 words) to the Director of a design institute enquiring about a summer workshop, expressing your passion for pursuing design in the future. (4 Marks)**  
 
