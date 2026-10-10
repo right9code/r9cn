@@ -225,7 +225,7 @@ The tense in the reported speech remains **unchanged** when the statement expres
 **Aryan:** I have my mathematics pre-board examination tomorrow and I haven't revised geometry yet.  
 **Father:** Don't panic. Focus on the key formulas and solve two practice theorems tonight.  
 
-Father noticed Aryan looking stressed and asked him (a) ______________________. Aryan replied that (b) ______________________ his mathematics pre-board examination the next day and that (c) ______________________ geometry yet. Father advised him not to panic and instructed him (d) ______________________ on the key formulas and (e) ______________________ two practice theorems that night.  
+Father noticed Aryan looking stressed and asked him (a) `________`. Aryan replied that (b) `________` his mathematics pre-board examination the next day and that (c) `________` geometry yet. Father advised him not to panic and instructed him (d) `________` on the key formulas and (e) `________` two practice theorems that night.  
 
 ---
 

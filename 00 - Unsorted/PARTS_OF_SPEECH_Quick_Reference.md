@@ -336,7 +336,7 @@ D. Material noun
 
 
 <details>
-<summary><strong>Q3.</strong> 🟡 The plural of <u>knife</u> is ___</summary>
+<summary><strong>Q3.</strong> 🟡 The plural of <u>knife</u> is `________`</summary>
 
 A. knifes  
 B. knifes  
@@ -558,7 +558,7 @@ D. Adverb of frequency
 
 
 <details>
-<summary><strong>Q14.</strong> 🔴 "___ honest man spoke the truth." Choose the correct article.</summary>
+<summary><strong>Q14.</strong> 🔴 "`________` honest man spoke the truth." Choose the correct article.</summary>
 
 A. A  
 B. An  
@@ -576,7 +576,7 @@ D. No article
 
 
 <details>
-<summary><strong>Q15.</strong> 🔴 "___ moon was shining." Choose the correct article.</summary>
+<summary><strong>Q15.</strong> 🔴 "`________` moon was shining." Choose the correct article.</summary>
 
 A. A  
 B. An  
@@ -600,7 +600,7 @@ D. No article
 
 
 <details>
-<summary><strong>Q16.</strong> 🟠 "The cat jumped ___ the table." Choose the correct preposition.</summary>
+<summary><strong>Q16.</strong> 🟠 "The cat jumped `________` the table." Choose the correct preposition.</summary>
 
 A. in  
 B. on  
@@ -618,7 +618,7 @@ D. at
 
 
 <details>
-<summary><strong>Q17.</strong> 🟠 "She stood ___ me." What does the preposition show?</summary>
+<summary><strong>Q17.</strong> 🟠 "She stood `________` me." What does the preposition show?</summary>
 
 A. Time  
 B. Place/Position  
@@ -696,7 +696,7 @@ D. so, yet
 
 
 <details>
-<summary><strong>Q21.</strong> ⚫ "She was tired, ___ she finished the work on time." Choose the correct conjunction.</summary>
+<summary><strong>Q21.</strong> ⚫ "She was tired, `________` she finished the work on time." Choose the correct conjunction.</summary>
 
 A. so  
 B. but  
@@ -738,7 +738,7 @@ D. Appreciation
 
 
 <details>
-<summary><strong>Q23.</strong> 🟤 "Bravo! Well done!" These interjections express ___</summary>
+<summary><strong>Q23.</strong> 🟤 "Bravo! Well done!" These interjections express `________`</summary>
 
 A. Sorrow  
 B. Surprise  

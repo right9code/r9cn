@@ -202,20 +202,20 @@ Pranjol's father slowed down to allow a tractor, pulling a trailer-load of tea l
 **I.**  
 1. Look at these words: *upkeep, downpour, undergo, dropout, walk-in*. They are built up from a verb (*keep, pour, go, drop, walk*) and an adverb or a particle (*up, down, under, out, in*).  
 **Use these words appropriately in the sentences below. You may consult a dictionary.**  
-    (i) A heavy _________ has been forecast due to low pressure in the Bay of Bengal.
-    (ii) Rakesh will _________ major surgery tomorrow morning.
-    (iii) My brother is responsible for the _________ of our family property.
-    (iv) The _________ rate for this accountancy course is very high.
-    (v) She went to the Enterprise Company to attend a _________ interview.
+    (i) A heavy `________` has been forecast due to low pressure in the Bay of Bengal.
+    (ii) Rakesh will `________` major surgery tomorrow morning.
+    (iii) My brother is responsible for the `________` of our family property.
+    (iv) The `________` rate for this accountancy course is very high.
+    (v) She went to the Enterprise Company to attend a `________` interview.
 2. **Now fill in the blanks in the sentences given below by combining the verb given in brackets with one of the words from the box as appropriate.**  
 
 | over | by  | through | out | up  | down |  
 | ---- | --- | ------- | --- | --- | ---- |  
-    (i) The Army attempted unsuccessfully to _________ the Government. (throw)
-    (ii) Scientists are on the brink of a major _________ in cancer research. (break)
-    (iii) The State Government plans to build a _________ for Bhubaneswar to speed up traffic on the main highway. (pass)
-    (iv) Gautama's _________ on life changed when he realised that the world is full of sorrow. (look)
-    (v) Rakesh seemed unusually _________ after the game. (cast)  
+    (i) The Army attempted unsuccessfully to `________` the Government. (throw)
+    (ii) Scientists are on the brink of a major `________` in cancer research. (break)
+    (iii) The State Government plans to build a `________` for Bhubaneswar to speed up traffic on the main highway. (pass)
+    (iv) Gautama's `________` on life changed when he realised that the world is full of sorrow. (look)
+    (v) Rakesh seemed unusually `________` after the game. (cast)  
 
 **II.** Notice how these -ing and -ed adjectives are used.  
 

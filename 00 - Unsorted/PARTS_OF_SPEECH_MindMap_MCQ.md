@@ -474,7 +474,7 @@ D. boy
 
 
 <details>
-<summary><strong>Q6.</strong> Which collective noun correctly completes "a ___ of lions"?</summary>
+<summary><strong>Q6.</strong> Which collective noun correctly completes "a `________` of lions"?</summary>
 
 A. herd
 B. pride
@@ -506,7 +506,7 @@ D. Collective noun
 
 
 <details>
-<summary><strong>Q8.</strong> The plural of <em>calf</em> is ___</summary>
+<summary><strong>Q8.</strong> The plural of <em>calf</em> is `________`</summary>
 
 A. calfs
 B. calfes
@@ -622,7 +622,7 @@ D. his
 
 
 <details>
-<summary><strong>Q15.</strong> "The boy ___ you were talking to is my captain." Which relative pronoun fits?</summary>
+<summary><strong>Q15.</strong> "The boy `________` you were talking to is my captain." Which relative pronoun fits?</summary>
 
 A. who
 B. whom
@@ -638,7 +638,7 @@ D. whose
 
 
 <details>
-<summary><strong>Q16.</strong> "___ of the two roads will take you to the station." Which pronoun fits?</summary>
+<summary><strong>Q16.</strong> "`________` of the two roads will take you to the station." Which pronoun fits?</summary>
 
 A. Each
 B. Every
@@ -706,7 +706,7 @@ D. very
 
 
 <details>
-<summary><strong>Q20.</strong> "___ book is this?" Which interrogative adjective fits?</summary>
+<summary><strong>Q20.</strong> "`________` book is this?" Which interrogative adjective fits?</summary>
 
 A. Which
 B. What
@@ -738,7 +738,7 @@ D. hers
 
 
 <details>
-<summary><strong>Q22.</strong> "He is ___ to me by three years." Which adjective fits?</summary>
+<summary><strong>Q22.</strong> "He is `________` to me by three years." Which adjective fits?</summary>
 
 A. elder
 B. senior
@@ -754,7 +754,7 @@ D. oldest
 
 
 <details>
-<summary><strong>Q23.</strong> "The ___ cottage was razed to the ground." Which is a past participial adjective?</summary>
+<summary><strong>Q23.</strong> "The `________` cottage was razed to the ground." Which is a past participial adjective?</summary>
 
 A. running
 B. burnt
@@ -822,7 +822,7 @@ D. read
 
 
 <details>
-<summary><strong>Q27.</strong> "___ I come in, sir?" Which modal is correct?</summary>
+<summary><strong>Q27.</strong> "`________` I come in, sir?" Which modal is correct?</summary>
 
 A. Can
 B. Could
@@ -838,7 +838,7 @@ D. Might
 
 
 <details>
-<summary><strong>Q28.</strong> "You ___ be more careful." Which modal expresses advice?</summary>
+<summary><strong>Q28.</strong> "You `________` be more careful." Which modal expresses advice?</summary>
 
 A. must
 B. ought
@@ -854,7 +854,7 @@ D. need
 
 
 <details>
-<summary><strong>Q29.</strong> "He ___ not enter my class again." Which modal expresses a threat?</summary>
+<summary><strong>Q29.</strong> "He `________` not enter my class again." Which modal expresses a threat?</summary>
 
 A. will
 B. shall
@@ -870,7 +870,7 @@ D. may
 
 
 <details>
-<summary><strong>Q30.</strong> "You ___ not worry; I will help." Which modal means "it is not necessary"?</summary>
+<summary><strong>Q30.</strong> "You `________` not worry; I will help." Which modal means "it is not necessary"?</summary>
 
 A. mustn't
 B. needn't
@@ -938,7 +938,7 @@ D. Adverb of frequency
 
 
 <details>
-<summary><strong>Q34.</strong> "He received a call from his father. ___, he left." Which adverb of reason fits?</summary>
+<summary><strong>Q34.</strong> "He received a call from his father. `________`, he left." Which adverb of reason fits?</summary>
 
 A. However
 B. Therefore
@@ -986,7 +986,7 @@ D. true
 
 
 <details>
-<summary><strong>Q37.</strong> "___ did you arrive so late?" Which interrogative adverb fits?</summary>
+<summary><strong>Q37.</strong> "`________` did you arrive so late?" Which interrogative adverb fits?</summary>
 
 A. When
 B. Where
@@ -1006,7 +1006,7 @@ D. How
 
 
 <details>
-<summary><strong>Q38.</strong> "The cat jumped ___ the table." Which preposition shows motion?</summary>
+<summary><strong>Q38.</strong> "The cat jumped `________` the table." Which preposition shows motion?</summary>
 
 A. on
 B. in
@@ -1022,7 +1022,7 @@ D. at
 
 
 <details>
-<summary><strong>Q39.</strong> "She stood ___ me." Which preposition shows place/position?</summary>
+<summary><strong>Q39.</strong> "She stood `________` me." Which preposition shows place/position?</summary>
 
 A. beside
 B. into
@@ -1038,7 +1038,7 @@ D. out of
 
 
 <details>
-<summary><strong>Q40.</strong> "Please meet me ___ 8 o'clock." Which preposition fits?</summary>
+<summary><strong>Q40.</strong> "Please meet me `________` 8 o'clock." Which preposition fits?</summary>
 
 A. on
 B. in
@@ -1054,7 +1054,7 @@ D. by
 
 
 <details>
-<summary><strong>Q41.</strong> "He lives ___ Canada." Which preposition fits?</summary>
+<summary><strong>Q41.</strong> "He lives `________` Canada." Which preposition fits?</summary>
 
 A. at
 B. on
@@ -1070,7 +1070,7 @@ D. to
 
 
 <details>
-<summary><strong>Q42.</strong> "She did it ___ her brother." Which compound preposition fits?</summary>
+<summary><strong>Q42.</strong> "She did it `________` her brother." Which compound preposition fits?</summary>
 
 A. in front of
 B. because of
@@ -1138,7 +1138,7 @@ D. so, yet
 
 
 <details>
-<summary><strong>Q46.</strong> "She was tired, ___ she finished the work on time." Which coordinating conjunction fits?</summary>
+<summary><strong>Q46.</strong> "She was tired, `________` she finished the work on time." Which coordinating conjunction fits?</summary>
 
 A. so
 B. but
@@ -1154,7 +1154,7 @@ D. or
 
 
 <details>
-<summary><strong>Q47.</strong> "___ you study hard, you will not pass." Which subordinating conjunction of condition fits?</summary>
+<summary><strong>Q47.</strong> "`________` you study hard, you will not pass." Which subordinating conjunction of condition fits?</summary>
 
 A. If
 B. Unless
@@ -1170,7 +1170,7 @@ D. Because
 
 
 <details>
-<summary><strong>Q48.</strong> "He was so tired ___ he fell asleep immediately." Which subordinating conjunction of result fits?</summary>
+<summary><strong>Q48.</strong> "He was so tired `________` he fell asleep immediately." Which subordinating conjunction of result fits?</summary>
 
 A. that
 B. so
@@ -1238,7 +1238,7 @@ D. Appreciation
 
 
 <details>
-<summary><strong>Q52.</strong> "Bravo! Well done!" These interjections express ___</summary>
+<summary><strong>Q52.</strong> "Bravo! Well done!" These interjections express `________`</summary>
 
 A. Sorrow
 B. Surprise

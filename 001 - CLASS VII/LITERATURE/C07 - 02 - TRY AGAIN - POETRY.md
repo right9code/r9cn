@@ -155,9 +155,9 @@ The poem, written in a narrative style, tells the story of King Bruce of Scotlan
 
 **V. Fill in the blanks by choosing the correct answer from within the brackets.**  
 
-1. The rhyme scheme of the poem is `_________`. (AABB/ABBA/ABAB)  
-2. 'Bravo' is an example of` `_________`. (conjunction/interjection/adjective)  
-3. The poet uses 'twas and 'tis for the sake of `_________`. (rhythm/rhyme/contraction)  
+1. The rhyme scheme of the poem is `________`. (AABB/ABBA/ABAB)  
+2. 'Bravo' is an example of `________`. (conjunction/interjection/adjective)  
+3. The poet uses 'twas and 'tis for the sake of `________`. (rhythm/rhyme/contraction)  
 
 VI. The spider's climbing is compared to King Bruce's own struggles. Just as the spider repeatedly attempts to reach its web, Bruce is trying to achieve a great deed for his people. This poetic device is called **metaphor**. It strengthens the poem's message about perseverance—keep trying till we succeed.  
 

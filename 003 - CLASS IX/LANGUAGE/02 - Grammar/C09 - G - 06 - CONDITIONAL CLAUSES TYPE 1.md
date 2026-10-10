@@ -139,22 +139,22 @@ Besides *if*, several other conjunctions can be used to form Type 1 conditional 
 
 #### I. Complete the following sentences using the correct form of the verbs in brackets (Type 1 Conditional).  
 
-1. If it _______ *(snow)* tomorrow, the roads will be closed.  
-2. You will not pass the entrance test unless you _______ *(practice)* regularly.  
-3. If Mohit _______ *(wake)* up late, he will miss the school bus.  
-4. We _______ *(celebrate)* with a grand party if our team wins the trophy.  
-5. If you _______ *(not / water)* these plants daily, they will wither away.  
-6. If the Principal _______ *(arrive)* during the assembly, please inform him.  
-7. She _______ *(catch)* the early morning flight if she leaves right now.  
-8. Unless they _______ *(reduce)* their plastic consumption, pollution will keep rising.  
-9. If you need any assistance with your assignment, you _______ *(can / ask)* me anytime.  
-10. The milk _______ *(spill)* if you do not turn off the gas stove.  
+1. If it `________` *(snow)* tomorrow, the roads will be closed.  
+2. You will not pass the entrance test unless you `________` *(practice)* regularly.  
+3. If Mohit `________` *(wake)* up late, he will miss the school bus.  
+4. We `________` *(celebrate)* with a grand party if our team wins the trophy.  
+5. If you `________` *(not / water)* these plants daily, they will wither away.  
+6. If the Principal `________` *(arrive)* during the assembly, please inform him.  
+7. She `________` *(catch)* the early morning flight if she leaves right now.  
+8. Unless they `________` *(reduce)* their plastic consumption, pollution will keep rising.  
+9. If you need any assistance with your assignment, you `________` *(can / ask)* me anytime.  
+10. The milk `________` *(spill)* if you do not turn off the gas stove.  
 
 ---
 
 #### II. Multiple Choice Questions (CBSE Board Format)  
 
-**1. "If you _______ the red traffic signal, the traffic police will penalize you."**  
+**1. "If you `________` the red traffic signal, the traffic police will penalize you."**  
 - (A) will violate  
 - (B) violates  
 - (C) violate  
@@ -167,7 +167,7 @@ Besides *if*, several other conjunctions can be used to form Type 1 conditional 
 - (C) Unless you wear warm clothes, you will not catch a cold.  
 - (D) Unless you will wear warm clothes, you catch a cold.  
 
-**3. "Take your water bottle with you _______ you feel thirsty during the marathon."**  
+**3. "Take your water bottle with you `________` you feel thirsty during the marathon."**  
 - (A) unless  
 - (B) in case  
 - (C) provided  
@@ -179,7 +179,7 @@ Besides *if*, several other conjunctions can be used to form Type 1 conditional 
 - (C) If I found your lost keys, I will return them immediately.  
 - (D) If I find your lost keys, I return them immediately.  
 
-**5. "You can take my bicycle _______ you return it before 6:00 PM."**  
+**5. "You can take my bicycle `________` you return it before 6:00 PM."**  
 - (A) provided that  
 - (B) unless  
 - (C) in case  
@@ -192,11 +192,11 @@ Besides *if*, several other conjunctions can be used to form Type 1 conditional 
 
 | No. | Sentence | Incorrect | Correct |  
 | :--- | :--- | :--- | :--- |  
-| 1. | If he will come to Delhi, he will definitely stay with us. | _______ | _______ |  
-| 2. | Unless you do not apologize to the teacher, you will not be allowed in. | _______ | _______ |  
-| 3. | If the ice melts the water level will rise. | _______ | _______ |  
-| 4. | We will go for a picnic if the weather will be pleasant. | _______ | _______ |  
-| 5. | If she don't complete the task, she will lose marks. | _______ | _______ |  
+| 1. | If he will come to Delhi, he will definitely stay with us. | `________` | `________` |  
+| 2. | Unless you do not apologize to the teacher, you will not be allowed in. | `________` | `________` |  
+| 3. | If the ice melts the water level will rise. | `________` | `________` |  
+| 4. | We will go for a picnic if the weather will be pleasant. | `________` | `________` |  
+| 5. | If she don't complete the task, she will lose marks. | `________` | `________` |  
 
 ---
 
@@ -204,13 +204,13 @@ Besides *if*, several other conjunctions can be used to form Type 1 conditional 
 **Rewrite each statement as a Type 1 conditional sentence using 'If' or 'Unless' as directed.**  
 
 1. *Hurry up or you will miss the beginning of the movie.*  
-   $\rightarrow$ **If** ___________________________________________________.  
+   $\rightarrow$ **If** `________`.  
 2. *Work diligently, and you will win the annual scholarship.*  
-   $\rightarrow$ **If** ___________________________________________________.  
+   $\rightarrow$ **If** `________`.  
 3. *Do not touch the hot oven, or you will burn your fingers.*  
-   $\rightarrow$ **If** ___________________________________________________.  
+   $\rightarrow$ **If** `________`.  
 4. *You must pay the electric bill on time, otherwise the power will be disconnected.*  
-   $\rightarrow$ **Unless** ________________________________________________.  
+   $\rightarrow$ **Unless** `________`.  
 
 ---
 

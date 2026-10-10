@@ -266,23 +266,23 @@ The semi-modals (or marginal auxiliaries) are: **need, dare, used to, have to / 
 
 #### I. Fill in the blanks with the most appropriate modals from the choices provided.  
 
-1. You _______ consult a specialist immediately as your throat condition looks severe. *(should / can / might)*  
-2. _______ you please lower your voice? The baby is sleeping. *(Could / Shall / Must)*  
-3. We _______ respect our national flag and national anthem. *(ought to / may / can)*  
-4. He _______ solve complicated algebraic problems when he was only eight years old. *(could / should / might)*  
-5. Look at those dark clouds gathering over the hills; it _______ rain heavily tonight. *(may / can / must)*  
-6. You _______ not worry about the arrangements; our team has taken care of everything. *(need / dare / should)*  
-7. _______ I carry this heavy school bag for you, Grandfather? *(Shall / Will / Must)*  
-8. Candidates _______ answer all questions in Section A before attempting Section B. *(must / might / could)*  
-9. How _______ you enter the principal's room without prior permission? *(dare / need / would)*  
-10. My grandfather _______ take a long brisk walk every morning before breakfast. *(used to / ought to / must)*  
+1. You `________` consult a specialist immediately as your throat condition looks severe. *(should / can / might)*  
+2. `________` you please lower your voice? The baby is sleeping. *(Could / Shall / Must)*  
+3. We `________` respect our national flag and national anthem. *(ought to / may / can)*  
+4. He `________` solve complicated algebraic problems when he was only eight years old. *(could / should / might)*  
+5. Look at those dark clouds gathering over the hills; it `________` rain heavily tonight. *(may / can / must)*  
+6. You `________` not worry about the arrangements; our team has taken care of everything. *(need / dare / should)*  
+7. `________` I carry this heavy school bag for you, Grandfather? *(Shall / Will / Must)*  
+8. Candidates `________` answer all questions in Section A before attempting Section B. *(must / might / could)*  
+9. How `________` you enter the principal's room without prior permission? *(dare / need / would)*  
+10. My grandfather `________` take a long brisk walk every morning before breakfast. *(used to / ought to / must)*  
 
 ---
 
 #### II. Multiple Choice Questions (CBSE Exam Pattern)  
 
 **1. Choose the correct modal to complete the notice:**  
-"Visitors _______ park their vehicles in front of the emergency exit. Violators will be fined."  
+"Visitors `________` park their vehicles in front of the emergency exit. Violators will be fined."  
 - (A) must not  
 - (B) need not  
 - (C) shall not  
@@ -290,13 +290,13 @@ The semi-modals (or marginal auxiliaries) are: **need, dare, used to, have to / 
 
 **2. Choose the correct modal to complete the dialogue:**  
 *Rohan:* "I have lost my science textbook."  
-*Aman:* "You _______ check in the school library; you were sitting there during recess."  
+*Aman:* "You `________` check in the school library; you were sitting there during recess."  
 - (A) will  
 - (B) should  
 - (C) must not  
 - (D) used to  
 
-**3. "The sky is clear, but weather forecasts say it _______ shower lightly in the evening."**  
+**3. "The sky is clear, but weather forecasts say it `________` shower lightly in the evening."**  
 - (A) must  
 - (B) might  
 - (C) will  
@@ -308,7 +308,7 @@ The semi-modals (or marginal auxiliaries) are: **need, dare, used to, have to / 
 - (C) Must you come here today?  
 - (D) Shall you open the door?  
 
-**5. "Since you have already paid the complete registration fee, you _______ pay anything extra."**  
+**5. "Since you have already paid the complete registration fee, you `________` pay anything extra."**  
 - (A) must not  
 - (B) need not  
 - (C) cannot  
@@ -321,20 +321,20 @@ The semi-modals (or marginal auxiliaries) are: **need, dare, used to, have to / 
 
 | No. | Sentence | Incorrect | Correct |  
 | :--- | :--- | :--- | :--- |  
-| 1. | We must to reach the railway station before 6:00 AM. | _______ | _______ |  
-| 2. | He can ran twenty kilometers without getting tired when he was young. | _______ | _______ |  
-| 3. | Walk carefully lest you will stumble on the rocky path. | _______ | _______ |  
-| 4. | You haven't to submit the assignment today; tomorrow is also fine. | _______ | _______ |  
-| 5. | She told me that she may join the medical college next year. | _______ | _______ |  
+| 1. | We must to reach the railway station before 6:00 AM. | `________` | `________` |  
+| 2. | He can ran twenty kilometers without getting tired when he was young. | `________` | `________` |  
+| 3. | Walk carefully lest you will stumble on the rocky path. | `________` | `________` |  
+| 4. | You haven't to submit the assignment today; tomorrow is also fine. | `________` | `________` |  
+| 5. | She told me that she may join the medical college next year. | `________` | `________` |  
 
 ---
 
 #### IV. Dialogue Completion (Fill in the blanks with suitable modals)  
 
-**Doctor:** You look quite weak and exhausted. You (a) _______ take complete bed rest for at least three days.  
-**Patient:** (b) _______ I attend my practical exam tomorrow morning, Doctor?  
-**Doctor:** No, you (c) _______ not strain your body at all. It (d) _______ lead to serious complications.  
-**Patient:** Alright, Doctor. I (e) _______ follow your instructions strictly.  
+**Doctor:** You look quite weak and exhausted. You (a) `________` take complete bed rest for at least three days.  
+**Patient:** (b) `________` I attend my practical exam tomorrow morning, Doctor?  
+**Doctor:** No, you (c) `________` not strain your body at all. It (d) `________` lead to serious complications.  
+**Patient:** Alright, Doctor. I (e) `________` follow your instructions strictly.  
 
 ---
 

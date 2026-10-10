@@ -198,46 +198,46 @@ Quantifiers specify the quantity, amount, or degree of the noun.
 
 #### I. Fill in the blanks with suitable determiners.  
 
-1. _______ sun rises in the east and sets in the west.  
-2. Honesty is _______ virtue which _______ honest person cherishes.  
-3. Would you like to have _______ more hot coffee?  
-4. He had _______ friends in the new city, so he felt very lonely. *(few / a few / little)*  
-5. _______ of the two boys was able to solve the tricky riddle. *(Neither / Every / All)*  
-6. There is _______ hope of finding the lost necklace now. *(little / few / many)*  
-7. She has spent _______ money she had in her piggy bank. *(the little / the few / a few)*  
-8. Are there _______ vacant seats in the auditorium for the evening show? *(any / some / much)*  
-9. _______ student in the class must submit the project by Monday. *(Every / All / Several)*  
-10. He bought _______ umbrella and _______ one-way train ticket to Jaipur.  
+1. `________` sun rises in the east and sets in the west.  
+2. Honesty is `________` virtue which `________` honest person cherishes.  
+3. Would you like to have `________` more hot coffee?  
+4. He had `________` friends in the new city, so he felt very lonely. *(few / a few / little)*  
+5. `________` of the two boys was able to solve the tricky riddle. *(Neither / Every / All)*  
+6. There is `________` hope of finding the lost necklace now. *(little / few / many)*  
+7. She has spent `________` money she had in her piggy bank. *(the little / the few / a few)*  
+8. Are there `________` vacant seats in the auditorium for the evening show? *(any / some / much)*  
+9. `________` student in the class must submit the project by Monday. *(Every / All / Several)*  
+10. He bought `________` umbrella and `________` one-way train ticket to Jaipur.  
 
 ---
 
 #### II. Multiple Choice Questions (CBSE Exam Pattern)  
 
-**1. "There is _______ water left in the jug; it is barely enough to wet a sponge."**  
+**1. "There is `________` water left in the jug; it is barely enough to wet a sponge."**  
 - (A) a little  
 - (B) little  
 - (C) few  
 - (D) a few  
 
-**2. "_______ candidate was selected because none met the minimum qualifications."**  
+**2. "`________` candidate was selected because none met the minimum qualifications."**  
 - (A) Either  
 - (B) Neither  
 - (C) Every  
 - (D) Some  
 
-**3. "Could you please pass me _______ salt from the kitchen table?"**  
+**3. "Could you please pass me `________` salt from the kitchen table?"**  
 - (A) some  
 - (B) any  
 - (C) many  
 - (D) few  
 
-**4. "He gave me _______ advice regarding preparation for the national Olympiad."**  
+**4. "He gave me `________` advice regarding preparation for the national Olympiad."**  
 - (A) many  
 - (B) several  
 - (C) some  
 - (D) a few  
 
-**5. "_______ the members of the committee agreed to the proposed amendments."**  
+**5. "`________` the members of the committee agreed to the proposed amendments."**  
 - (A) Each  
 - (B) Every  
 - (C) All  
@@ -250,18 +250,18 @@ Quantifiers specify the quantity, amount, or degree of the noun.
 
 | No. | Sentence | Incorrect | Correct |  
 | :--- | :--- | :--- | :--- |  
-| 1. | She gave me many useful advices before my journey. | _______ | _______ |  
-| 2. | He is an European scientist working in our university. | _______ | _______ |  
-| 3. | Neither of the four answers provided in the question paper was right. | _______ | _______ |  
-| 4. | I don't have some money left to purchase these books. | _______ | _______ |  
-| 5. | A few drops of rain won't hurt, but few people attended the open fair. | _______ | _______ |  
+| 1. | She gave me many useful advices before my journey. | `________` | `________` |  
+| 2. | He is an European scientist working in our university. | `________` | `________` |  
+| 3. | Neither of the four answers provided in the question paper was right. | `________` | `________` |  
+| 4. | I don't have some money left to purchase these books. | `________` | `________` |  
+| 5. | A few drops of rain won't hurt, but few people attended the open fair. | `________` | `________` |  
 
 ---
 
 #### IV. Integrated Gap-Filling (Passage)  
 **Fill in the blanks with the most appropriate determiner.**  
 
-Forests play (a) _______ vital role in maintaining the ecological balance of our planet. (b) _______ tree absorbs carbon dioxide and releases oxygen. Unfortunately, (c) _______ human activities have led to large-scale deforestation. If we do not preserve (d) _______ remaining forest cover, we will soon face severe consequences. (e) _______ citizen must take responsibility and plant at least one sapling every year.  
+Forests play (a) `________` vital role in maintaining the ecological balance of our planet. (b) `________` tree absorbs carbon dioxide and releases oxygen. Unfortunately, (c) `________` human activities have led to large-scale deforestation. If we do not preserve (d) `________` remaining forest cover, we will soon face severe consequences. (e) `________` citizen must take responsibility and plant at least one sapling every year.  
 
 ---
 

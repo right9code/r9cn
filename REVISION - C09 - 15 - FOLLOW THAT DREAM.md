@@ -134,14 +134,14 @@ True.
 ## Active Recall — Extract & Short Answers
 
 <details>
-<summary><strong>Q1. "enthusiasm : passion :: belief : ___"</strong></summary>
+<summary><strong>Q1. "enthusiasm : passion :: belief : `________`"</strong></summary>
 
 **conviction**
 
 </details>
 
 <details>
-<summary><strong>Q2. The word "plunge" indicates ___ involvement. (complete/gradual)</strong></summary>
+<summary><strong>Q2. The word "plunge" indicates `________` involvement. (complete/gradual)</strong></summary>
 
 **complete**
 

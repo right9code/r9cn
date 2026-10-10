@@ -213,7 +213,7 @@
 ---
 
 **Q15. Complete the analogy based on the text:  
-*enthusiasm : passion :: belief : _________***  
+*enthusiasm : passion :: belief : `________`***  
 (A) sacrifice  
 (B) conviction  
 (C) insight  

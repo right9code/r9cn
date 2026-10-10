@@ -177,11 +177,11 @@ Relative clauses are divided into two crucial categories:
 
 #### III. Fill in the blanks with the most appropriate relative pronoun or noun clause connector.  
 
-1. The reason _______ he was absent has not been explained yet.  
-2. I cannot understand _______ she is feeling so anxious today.  
-3. All the passengers _______ were on board the train escaped unhurt.  
-4. The museum _______ houses the ancient Indus Valley artifacts is in New Delhi.  
-5. I will accept _______ decision the committee makes.  
+1. The reason `________` he was absent has not been explained yet.  
+2. I cannot understand `________` she is feeling so anxious today.  
+3. All the passengers `________` were on board the train escaped unhurt.  
+4. The museum `________` houses the ancient Indus Valley artifacts is in New Delhi.  
+5. I will accept `________` decision the committee makes.  
 
 ---
 
@@ -199,13 +199,13 @@ Relative clauses are divided into two crucial categories:
 - (C) The bicycle which had flat tyres was left behind.  
 - (D) She wondered if the train would be on time.  
 
-**3. "The gentleman _______ car was damaged in the storm has filed an insurance claim."**  
+**3. "The gentleman `________` car was damaged in the storm has filed an insurance claim."**  
 - (A) who  
 - (B) whom  
 - (C) whose  
 - (D) which  
 
-**4. "I know the exact spot _______ the historical monument was erected."**  
+**4. "I know the exact spot `________` the historical monument was erected."**  
 - (A) when  
 - (B) where  
 - (C) why  
