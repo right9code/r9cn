@@ -131,9 +131,203 @@ A **Relative Clause** (also called an **Adjective Clause**) is a subordinate cla
   - This is the only book **that** can help you now. *(Defining)*
   - His latest novel, **which** has sold millions of copies, won the Booker Prize. *(Non-defining)*
 
+> **Special rule for *that*:** Use *that* (not *which* or *who*) after superlatives, ordinals, and words like *only*, *all*, *nothing*, *everything*, *the very*:
+> - She is the **best** student **that** this school has ever produced.
+> - He was the **first** person **that** arrived at the venue.
+> - This is the **only** solution **that** will work.
+
 ---
 
-### Noun Clause vs. Relative Clause — Side-by-Side
+### Omission of the Relative Pronoun (Contact Clause)
+
+When the relative pronoun functions as the **object** of the relative clause (not the subject), it can often be **omitted entirely**. This is called a **contact clause** or **zero relative**.
+
+**Rule:** The relative pronoun can be dropped only when it is the **object** of the verb in the relative clause, not the subject.
+
+| Relative Pronoun | Role in Clause | Can Be Omitted? | Example |
+| :--- | :--- | :---: | :--- |
+| **that / which / whom** | **Object** of the relative clause verb | ✅ Yes | The book **(that)** I read was excellent. |
+| **who / that / which** | **Subject** of the relative clause verb | ❌ No | The man **who** called me was very polite. |
+
+**Examples:**
+- The film **(that) we watched** last night was outstanding. *(we watched = subject+verb; *that* is object → can omit)*
+- The letter **(which) she wrote** moved everyone to tears. *(she wrote; *which* = object → can omit)*
+- The teacher **who taught** us biology was very knowledgeable. *(*who* = subject → cannot omit)*
+- The award **(that) he received** was well-deserved. *(he received; *that* = object → can omit)*
+
+> **Test:** If you can remove the relative pronoun and the clause still has both a subject AND a verb, it was the object and can be dropped.
+> - *"The film [that] we watched"* → *"we watched"* still has subject (we) + verb (watched) ✅ drop *that*
+> - *"The man [who] called"* → *"called"* has no subject left ❌ keep *who*
+
+---
+
+### Reduced Relative Clauses (Participial Phrases)
+
+A **reduced relative clause** is a shortened form of a full relative clause. The relative pronoun and part of the verb are removed, leaving a **participle** (present or past). This makes sentences more compact and is common in formal writing and CBSE passages.
+
+#### A. Active Meaning — Using Present Participle (-ing)
+
+When the relative clause has an **active verb**, replace *who/which/that + is/are/was/were + V-ing* (or the full auxiliary + verb) with just the **-ing form**:
+
+| Full Relative Clause | Reduced Clause |
+| :--- | :--- |
+| The woman **who is standing** at the gate is my aunt. | The woman **standing** at the gate is my aunt. |
+| The students **who were playing** in the ground went home. | The students **playing** in the ground went home. |
+| The train **that departs** at 6 AM is always on time. | The train **departing** at 6 AM is always on time. |
+
+#### B. Passive Meaning — Using Past Participle (V3)
+
+When the relative clause has a **passive verb**, replace *which/that + is/are/was/were + V3* with just the **V3 (past participle)**:
+
+| Full Relative Clause | Reduced Clause |
+| :--- | :--- |
+| The letter **that was written** by the principal surprised us. | The letter **written** by the principal surprised us. |
+| The car **which was damaged** in the storm has been repaired. | The car **damaged** in the storm has been repaired. |
+| The monument **that was built** in 1857 is a heritage site. | The monument **built** in 1857 is a heritage site. |
+
+> **Key rule:** Reduced relative clauses are only possible with **defining** clauses. Non-defining clauses (with commas) cannot be reduced.
+> - ❌ *My uncle, **being a retired judge**, lives in Pune.* — unnatural; keep the full non-defining clause.
+
+---
+
+### Common Errors in Noun Clauses — Watch Out!
+
+| ❌ Incorrect | ✅ Correct | Rule / Reason |
+| :--- | :--- | :--- |
+| I know **where does she live**. | I know **where she lives**. | Noun clauses use statement word order (S + V), not question word order. |
+| She asked me **what was I doing**. | She asked me **what I was doing**. | After reporting verbs, use assertive order inside the noun clause. |
+| Tell me **what is your name?** | Tell me **what your name is**. | No question mark inside a noun clause. |
+| I am not sure **that** he will come. | I am not sure **whether / if** he will come. | Use *whether/if* (not *that*) when there is doubt / a yes-no question implied. |
+| It depends on **that** you decide. | It depends on **what** you decide. | After a preposition, use *what/whom/where* — never *that*. |
+| **That she passed** it is surprising. | **That she passed** is surprising. *(or: It is surprising **that** she passed.)* | A noun clause subject sounds heavy; prefer *It is... that...* structure. |
+| The fact **which** he is late annoys me. | The fact **that** he is late annoys me. | Appositional noun clauses (after *fact, news, idea, belief*) use *that*, not *which*. |
+
+---
+
+## PART III: THE ADVERB CLAUSE
+
+### Definition
+
+An **Adverb Clause** (also called an **Adverbial Clause**) is a subordinate clause that functions as an **adverb** — it modifies the main clause verb, adjective, or another adverb, telling us **when, where, why, how, under what condition, or to what extent** something happens.
+
+**E.g.**
+- She smiled **when she saw him**. *(When did she smile? → Adverb Clause of Time)*
+- He studies hard **so that he can pass**. *(Why does he study? → Adverb Clause of Purpose)*
+- We will go **if the weather is fine**. *(Under what condition? → Adverb Clause of Condition)*
+
+> **Key feature:** Like all subordinate clauses, an adverb clause cannot stand alone — it depends on the main clause. When the adverb clause comes **before** the main clause, a **comma** separates them. When it comes **after**, no comma is needed.
+
+---
+
+### Types of Adverb Clauses
+
+#### 1. Adverb Clause of Time
+Tells **when** the action in the main clause takes place.
+
+**Common subordinating conjunctions:** *when, whenever, while, as, before, after, until, till, since, as soon as, no sooner...than, hardly...when, once, now that, as long as*
+
+**E.g.**
+- **When the bell rang**, all the students rushed out of the classroom.
+- She was reading a novel **while her younger brother was doing homework**.
+- **As soon as** the results were declared, Rehan called his parents.
+- We had **hardly** sat down **when** the power went out.
+- **Before** submitting the form, verify all your details carefully.
+- I have not met her **since** she moved to Bangalore last year.
+
+#### 2. Adverb Clause of Place
+Tells **where** the action of the main clause takes place.
+
+**Common subordinating conjunctions:** *where, wherever, everywhere*
+
+**E.g.**
+- You may sit **where** you feel comfortable.
+- **Wherever** she goes, she makes new friends very quickly.
+- **Everywhere** he looked, he could see signs of neglect.
+
+#### 3. Adverb Clause of Reason / Cause
+Tells **why** the action of the main clause takes place.
+
+**Common subordinating conjunctions:** *because, since, as, for, now that, inasmuch as*
+
+**E.g.**
+- She could not attend the function **because she was unwell**.
+- **Since** it was a public holiday, the bank remained closed.
+- **As** he had not revised, he could not answer the questions properly.
+- **Now that** you have apologised, the matter is resolved.
+
+#### 4. Adverb Clause of Purpose
+Tells **for what purpose** or **with what aim** the action is done.
+
+**Common subordinating conjunctions:** *so that, in order that, lest, for fear that*
+
+**E.g.**
+- He woke up early **so that he could catch** the first train to Delhi.
+- She wrote down the instructions **in order that** she would not forget them.
+- Walk carefully **lest you should slip** on the wet floor.
+- She kept her voice low **for fear that** she might wake the baby.
+
+> **Note on *lest*:** *Lest* is always followed by **should** (not *will* or *would*):
+> - ✅ *Walk fast lest you **should** miss the bus.*
+> - ❌ *Walk fast lest you **will** miss the bus.*
+
+#### 5. Adverb Clause of Condition
+Tells **under what condition** the main clause action happens.
+
+**Common subordinating conjunctions:** *if, unless, provided that, as long as, supposing, in case, on condition that, whether…or*
+
+**E.g.**
+- **If** you practise regularly, you will improve significantly.
+- You will not succeed **unless** you give your best effort.
+- **Provided that** the weather stays clear, the match will be held tomorrow.
+- **Whether** you come with us **or** not, we will proceed with the trip.
+
+*(See Chapter 06 for a detailed treatment of conditional clauses.)*
+
+#### 6. Adverb Clause of Concession / Contrast
+Expresses a **contrast** or **concession** — the main clause happens *despite* or *although* the condition in the adverb clause.
+
+**Common subordinating conjunctions:** *although, though, even though, even if, whereas, while, however, no matter how/what/where*
+
+**E.g.**
+- **Although** she studied very hard, she could not clear the entrance examination.
+- **Even though** it was raining heavily, the parade continued on schedule.
+- He kept smiling **even if** he was in great pain inside.
+- **Whereas** Rohan is good at mathematics, his sister excels in languages.
+- **No matter how** hard the task seems, do not give up.
+
+#### 7. Adverb Clause of Manner
+Tells **how** or **in what manner** the main clause action is performed.
+
+**Common subordinating conjunctions:** *as, as if, as though, the way, in the way that*
+
+**E.g.**
+- Do the work **as** the teacher has instructed you.
+- He spoke to me **as if he were my superior**.
+- She behaved **as though** nothing had happened at all.
+
+#### 8. Adverb Clause of Degree / Comparison
+Expresses **extent or degree** of the main clause action, or makes a comparison.
+
+**Common subordinating conjunctions:** *as…as, so…that, such…that, more/less…than, the more…the more*
+
+**E.g.**
+- She is **as** talented **as** her elder sister.
+- He was **so** exhausted **that** he fell asleep immediately.
+- The film was **such** a masterpiece **that** the audience applauded for five minutes.
+- **The more** you read, **the more** you know.
+- He ran **faster than** I expected.
+
+---
+
+### All Three Clause Types — At a Glance
+
+| Clause Type | Grammatical Role | Key Question Answered | Introducing Words | Example |
+| :--- | :--- | :--- | :--- | :--- |
+| **Noun Clause** | Functions as a **noun** (subject, object, complement) | What? / Whom? | that, if, whether, what, who, where, when, why, how, whatever, whoever | I know **that she is honest**. |
+| **Relative (Adjective) Clause** | Functions as an **adjective** — modifies a noun/pronoun | Which one? / What kind of? | who, whom, whose, which, that, where, when, why | The student **who topped the class** received a prize. |
+| **Adverb Clause** | Functions as an **adverb** — modifies the verb/adjective | When? / Where? / Why? / How? / Under what condition? | when, where, because, since, if, unless, although, so that, as, than | She left **before the rain started**. |
+
+---
 
 | Feature | Noun Clause | Relative Clause |
 | :--- | :--- | :--- |

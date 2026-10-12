@@ -178,6 +178,9 @@ Type 1 conditionals can be negative in either clause or both:
 | We will win, **if** we will try harder. | We will win **if** we try harder. | No comma when main clause comes first. |
 | If she **come** early, we will start. | If she **comes** early, we will start. | Subject-verb agreement in present tense. |
 | If you will **be** ready, we can go. | If you **are** ready, we can go. | Use present simple *are*, not *will be*. |
+| If he **heats** ice, it **will melt**. *(as a general truth)* | If he **heats** ice, it **melts**. | General universal truths use Zero Conditional — both verbs present simple. |
+| Take an umbrella **in case** it **will rain**. | Take an umbrella **in case** it **rains**. | After *in case*, use present simple — never *will*. |
+| **If should** you need help, call me. | **Should** you need help, call me. *(or: If you **should** need help)* | Inverted formal structure: *should* comes first, *if* is dropped. |
 
 ---
 
