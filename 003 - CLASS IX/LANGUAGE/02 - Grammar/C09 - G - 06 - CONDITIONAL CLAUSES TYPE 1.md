@@ -1,421 +1,321 @@
-## Chapter 06: Conditional Clauses (Type 1)
-
-A **conditional sentence** is a complex sentence that expresses a condition and its probable result. It consists of two clauses:
-
-1. **The If-Clause (Conditional/Subordinate Clause):** states the condition.
-2. **The Main Clause (Result/Principal Clause):** states what happens if that condition is met.
+# Complete Guide to Conditional Clauses (Conditionals)  
+**Class 9 English Grammar**  
 
 ---
 
-### Overview of All Conditional Types
+## 1. Fundamentals: What is a Conditional?
 
-| Type | Usage | If-Clause Tense | Main Clause |
-| :--- | :--- | :--- | :--- |
-| **Zero Conditional** | General truths, laws of science | Simple Present | Simple Present |
-| **Type 1 (First)** | **Real / probable future situation** | **Simple Present** | **will / can / may / shall + V1** |
-| Type 2 (Second) | Hypothetical / unreal present or future | Simple Past | would / could / might + V1 |
-| Type 3 (Third) | Impossible / imagined past | Past Perfect | would have + V3 |
+A **conditional sentence** is a complex sentence that describes a condition (a requirement or cause) and the result (the consequence or effect) that follows when that condition is met.  
 
-This chapter focuses on **Type 1 Conditionals**, but the Zero Conditional is explained first because it shares the same tense structure and is the most common point of confusion.
+Every conditional sentence is made up of two essential building blocks:  
 
----
+1. **The If-Clause (Conditional / Subordinate Clause):**  
+   * States the situation, requirement, or condition.  
+   * Usually begins with words like *if*, *unless*, or *provided that*.  
+2. **The Main Clause (Result / Principal Clause):**  
+   * States the outcome or consequence that happens if the condition occurs.  
+   * Can stand alone as a complete sentence.  
 
-### Zero Conditional — Understanding the Difference
+```text
+       [ If it rains tomorrow, ]   +   [ we will stay indoors. ]
+               │                                   │
+          IF-CLAUSE                           MAIN CLAUSE
+       (The Condition)                    (The Expected Result)
+```
 
-The **Zero Conditional** is used to express **universal truths, scientific facts, natural laws, and habitual or automatic results** — things that are *always* true whenever the condition is met. There is no element of possibility or future here; the result is certain and permanent.
+### The Comma & Clause Order Rule
 
-**Formula:**
-$$\textbf{If + Simple Present , Simple Present}$$
+You can write either clause first without changing the meaning of the sentence. However, the punctuation changes:  
 
-**E.g.**
-- If you **heat** ice, it **melts**. *(Scientific fact — always true)*
-- If it **rains**, the ground **gets** wet. *(Natural law)*
-- If I **miss** the morning bus, I **walk** to school. *(Personal habit/routine)*
-- If you **mix** red and blue, you **get** purple. *(Universal truth)*
-
-> **Note:** In Zero Conditionals, *if* can often be replaced by *when* or *whenever* without changing the meaning:
-> - *If/When you heat ice, it melts.*
-> - *Whenever it rains, the ground gets wet.*
-
-#### Zero Conditional vs. Type 1 — Key Distinction
-
-| Feature | Zero Conditional | Type 1 Conditional |
-| :--- | :--- | :--- |
-| **Meaning** | Always true; permanent fact or habit | Possible/likely in future; result depends on condition |
-| **Main clause verb** | Simple Present (V1/s/es) | will / can / may + V1 |
-| **Time reference** | General / timeless | Future |
-| **Can replace *if* with *when*?** | ✅ Yes | ❌ No (changes meaning) |
-| **Example** | If you **freeze** water, it **turns** to ice. | If you **study** hard, you **will pass**. |
+* **If-clause first $\rightarrow$ Use a comma ( , ) after the if-clause.**  
+  * *If you work hard, you will succeed.*  
+* **Main clause first $\rightarrow$ Do NOT use a comma.**  
+  * *You will succeed if you work hard.*  
 
 ---
 
-### Type 1 Conditional — Definition and Usage
+## 2. The 4 Standard Types (The Core)
 
-**Type 1 Conditionals** describe situations that are **genuinely possible or likely** to happen in the present or future, provided a stated condition is fulfilled.
+English conditionals are grouped into four primary types based on **how likely or real** the situation is and **when** it takes place.  
 
-- *If you study regularly, you will score excellent marks.*
-*(Studying regularly is a real, achievable condition → scoring marks is the likely result.)*
-
----
-
-### Fundamental Formula
-
-$$\textbf{If + Subject + V1 (Simple Present)} \textbf{ , } \textbf{ Subject + will / shall / can / may + V1}$$
-
----
-
-### Clause Order and Punctuation
-
-| Order | Rule | Example |
-| :--- | :--- | :--- |
-| **If-clause first** | Use a **comma** after the if-clause | **If it rains,** we will cancel the match. |
-| **Main clause first** | **No comma** needed | We will cancel the match **if it rains.** |
+```text
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                      THE 4 CORE CONDITIONAL TYPES                      │
+ ├──────────────┬─────────────────────────┬───────────────────────────────┤
+ │ Type         │ Meaning                 │ Likelihood                    │
+ ├──────────────┼─────────────────────────┼───────────────────────────────┤
+ │ Zero (0)     │ Facts & Universal Laws  │ 100% True (Always happens)    │
+ │ First (1)    │ Real Future Situation   │ Probable / Highly Likely      │
+ │ Second (2)   │ Imaginary / Dream       │ Unreal / Unlikely (Present)   │
+ │ Third (3)    │ Regret / Missed Chance  │ 0% Possible (Past cannot alter)│
+ └──────────────┴─────────────────────────┴───────────────────────────────┘
+```
 
 ---
 
-### Variations in the Main Clause
+### Type 0: The Zero Conditional (Facts & Truths)
 
-The main clause is not restricted to *will*. Other modals are used depending on the intended meaning:
-
-| Modal | Meaning | Example |
-| :--- | :--- | :--- |
-| **will** | Certainty / definite result | If you practise, you **will improve**. |
-| **can** | Ability / permission | If you have a pass, you **can enter**. |
-| **may / might** | Possibility / probability | If the fog clears, the flight **may depart**. |
-| **should / must** | Advice / obligation | If you feel unwell, you **should rest**. |
-| **Imperative (V1)** | Command / instruction / request | If it starts raining, **close** all the windows. |
-
----
-
-### Variations in the If-Clause
-
-| Tense in If-Clause | Use | Example |
-| :--- | :--- | :--- |
-| **Simple Present (standard)** | General condition | If she **calls**, I will answer. |
-| **Present Continuous** | Ongoing condition at that moment | If he **is sleeping**, do not disturb him. |
-| **Present Perfect** | Condition that must be completed first | If you **have finished**, you may leave. |
+* **Usage:** Used for scientific laws, universal truths, permanent facts, and regular habits. It answers what happens *every single time* the condition occurs.  
+* **Formula:**  
+  $$\textbf{If + Simple Present (V1 / s / es) , Simple Present (V1 / s / es)}$$  
+* **Key Feature:** You can replace **if** with **when** or **whenever** without altering the meaning.  
+* **Examples:**  
+  * *If you heat ice, it melts.* (Scientific law)  
+  * *If you expose iron to moisture, it rusts.* (Chemical fact)  
+  * *When the sun sets, darkness falls.* (Universal truth)  
+  * *If I drink coffee late at night, I cannot sleep.* (Personal habit/routine)  
 
 ---
 
-### Alternative Conjunctions for Type 1
+### Type 1: The First Conditional (Real / Probable Future)
 
-Besides *if*, several other conjunctions introduce Type 1 conditionals:
-
-**(a) UNLESS** *(= if … not)*
-- *Unless* is followed by an **affirmative verb** (never double-negative).
-  - If you **do not hurry**, you will miss the bus.
-  - → **Unless** you hurry, you will miss the bus.
-
-**(b) PROVIDED THAT / PROVIDING / AS LONG AS** *(emphasise a necessary condition)*
-  - You may leave early **provided that** you complete your assignment.
-  - **As long as** you follow the rules, you will not face any problem.
-
-**(c) IN CASE** *(precaution for a possible future situation)*
-  - Take a torch **in case** the lights go out.
-
-> **IN CASE vs. IF — A Critical Difference:**
-> These two conjunctions are frequently confused but have distinct meanings:
->
-> | Conjunction | Meaning | Logic | Example |
-> | :--- | :--- | :--- | :--- |
-> | **If** | The action in the main clause happens *only when* the condition is true | Condition → Result | Take an umbrella **if** it rains. *(Take it only when it rains)* |
-> | **In case** | The action in the main clause is a **precaution taken now** for a possible future event | Precaution → *possible* future event | Take an umbrella **in case** it rains. *(Take it now, before you know if it will rain)* |
->
-> - *Lock the door **if** someone tries to enter.* *(Only lock it when they try)*
-> - *Lock the door **in case** someone tries to enter.* *(Lock it now as a precaution)*
-
-**(d) SUPPOSING / SUPPOSE** *(imagines a possible scenario)*
-  - **Supposing** the train is delayed, what will you do?
-
-**(e) ON CONDITION THAT / SO LONG AS**
-  - You may borrow the book **on condition that** you return it by Monday.
+* **Usage:** Used for real, open, and realistic possibilities in the present or future. If the condition is met, the result is likely to happen.  
+* **Formula:**  
+  $$\textbf{If + Simple Present (V1 / s / es) , will / can / may / shall + V1}$$  
+* **Golden Rule:** **Never** put *will* or *shall* inside the *if-clause*!  
+* **Variations in the Main Clause:**  
+  * **will + V1** $\rightarrow$ Definite result: *If she studies, she **will pass**.*  
+  * **can + V1** $\rightarrow$ Ability/Permission: *If you have an ID card, you **can enter**.*  
+  * **may / might + V1** $\rightarrow$ Possibility: *If clouds gather, it **may rain**.*  
+  * **should / must + V1** $\rightarrow$ Advice/Rule: *If you feel sick, you **must rest**.*  
+  * **Imperative (Base Verb)** $\rightarrow$ Command: *If the phone rings, **answer** it.*  
 
 ---
 
-### Formal / Polite Variant: *"If + should"* in the If-Clause
+### Type 2: The Second Conditional (Unreal / Imaginary Present or Future)
 
-In formal writing and business English, **should** is sometimes placed in the if-clause to make the condition sound more polite, tentative, or less direct. The *should* here does NOT carry its usual meaning of obligation — it signals **a remote but possible condition** or **a polite request**.
-
-**Formula:**
-$$\textbf{If + Subject + should + V1 , Subject + will / please + V1}$$
-
-**E.g.**
-- **If you should need** any assistance, please do not hesitate to contact us. *(Formal/polite)*
-- **If she should call** while I am away, take a message. *(Slightly less direct than "if she calls")*
-- **If there should be** any change in the schedule, all participants will be informed immediately.
-
-> **Note:**
-> - *"If you should need help"* = *"If you need help"* — same meaning, but more formal in tone.
-> - This structure is common in formal letters, official notices, and business communication.
-> - It can also be inverted (the *if* is dropped and *should* moves to the front):
->   - *If you **should** require assistance, call us.* → **Should** you require assistance, call us.
+* **Usage:** Used for hypothetical, imaginary, or impossible situations in the present or future, including daydreams, wishes, and giving advice.  
+* **Formula:**  
+  $$\textbf{If + Simple Past (V2) , would / could / might + V1}$$  
+* **The Special Subjunctive "WERE" Rule:**  
+  In formal English, use **were** for **all subjects** (including *I, he, she, it*) instead of *was*.  
+  * *If I **were** you, I would consult a doctor.* (Standard advice formula)  
+  * *If he **were** the captain, he would choose a different strategy.*  
+* **Examples:**  
+  * *If I won a lottery, I would travel around the world.* (I haven't won; it is an imaginary daydream)  
+  * *If dogs had wings, they could fly.* (Impossible present situation)  
+  * *If I had a car, I would drive to school.* (Reality: I do not own a car)  
 
 ---
 
-### Negative Type 1 Constructions
+### Type 3: The Third Conditional (Impossible Past / Regret)
 
-Type 1 conditionals can be negative in either clause or both:
-
-| Pattern | Example |
-| :--- | :--- |
-| **Negative if-clause → Positive main clause** | If you **do not study**, you will fail. |
-| **Positive if-clause → Negative main clause** | If she comes early, we **will not be** late. |
-| **Both clauses negative** | If you **do not try**, you **will not succeed**. |
-| **Unless (= negative if-clause)** | **Unless** you study, you will fail. |
-
-> **Tip:** A negative if-clause (*If you don't...*) and *unless* express the same idea. However, *unless* sounds stronger and more emphatic:
-> - *If you **don't** apologise, she won't speak to you.* ← neutral warning
-> - ***Unless** you apologise, she won't speak to you.* ← stronger, more direct
+* **Usage:** Refers to an event in the **past** that did **not** happen. It represents regrets, missed chances, or hypothetical past scenarios that can no longer be changed.  
+* **Formula:**  
+  $$\textbf{If + Past Perfect (had + V3) , would / could / might + have + V3}$$  
+* **Examples:**  
+  * *If you had studied properly, you would have passed the exam.*  
+    *(Reality: You did not study in the past, and you did not pass.)*  
+  * *If the driver had seen the signal, he could have stopped the bus in time.*  
+    *(Reality: He did not see the signal; the accident happened.)*  
+  * *If we had caught the early train, we might not have missed the ceremony.*  
 
 ---
 
-### Common Errors — Watch Out!
+## 3. Mixed Conditionals (Advanced)
 
-| ❌ Incorrect | ✅ Correct | Rule |
-| :--- | :--- | :--- |
-| If it **will rain**, we will postpone it. | If it **rains**, we will postpone it. | Never use *will* in the if-clause. |
-| **Unless you don't** study, you will fail. | **Unless you** study, you will fail. | *Unless* already means *if not* — no double negative. |
-| We will win, **if** we will try harder. | We will win **if** we try harder. | No comma when main clause comes first. |
-| If she **come** early, we will start. | If she **comes** early, we will start. | Subject-verb agreement in present tense. |
-| If you will **be** ready, we can go. | If you **are** ready, we can go. | Use present simple *are*, not *will be*. |
-| If he **heats** ice, it **will melt**. *(as a general truth)* | If he **heats** ice, it **melts**. | General universal truths use Zero Conditional — both verbs present simple. |
-| Take an umbrella **in case** it **will rain**. | Take an umbrella **in case** it **rains**. | After *in case*, use present simple — never *will*. |
-| **If should** you need help, call me. | **Should** you need help, call me. *(or: If you **should** need help)* | Inverted formal structure: *should* comes first, *if* is dropped. |
+Sometimes a condition in the past produces a result in the present, or a permanent present state affected an event in the past. These are called **Mixed Conditionals**.  
 
----
+### Pattern A: Past Condition $\rightarrow$ Present Result
+* **Formula:** `If + Past Perfect (had + V3)` , `would + V1 (Present)`  
+* **Situation:** An action you took (or missed) in the past changes your present reality.  
+* **Example:**  
+  * *If I **had slept** early last night, I **would not be** tired today.*  
+    *(Past action: slept late $\rightarrow$ Present outcome: tired now)*  
 
-### Summary: At a Glance
-
-| If-Clause | Main Clause | Example |
-| :--- | :--- | :--- |
-| If + Simple Present | will + V1 | If she calls, I **will answer**. |
-| If + Simple Present | can + V1 | If you finish, you **can go**. |
-| If + Simple Present | may / might + V1 | If it clears, it **may work**. |
-| If + Simple Present | should / must + V1 | If you are ill, you **must rest**. |
-| If + Simple Present | Imperative | If it rings, **answer** it. |
-| Unless + Affirmative | will + V1 | Unless you hurry, you **will be late**. |
+### Pattern B: Present Characteristic $\rightarrow$ Past Result
+* **Formula:** `If + Simple Past (V2)` , `would have + V3 (Past)`  
+* **Situation:** A permanent trait or ongoing present fact influenced how a past situation unfolded.  
+* **Example:**  
+  * *If she **spoke** French, she **would have helped** the tourist yesterday.*  
+    *(Ongoing trait: she does not speak French $\rightarrow$ Past outcome: could not help)*  
 
 ---
 
-### PRACTICE QUESTIONS
+## 4. Alternative Conjunctions (Beyond "If")
 
-#### I. Fill in the Blanks with the correct form of the verb given in brackets.
+Conditionals do not always use the word *if*. Learn these alternatives to score full marks in sentence-transformation tasks:  
 
-**A.**
-1. If it `________` *(snow)* in the mountains, the roads will be blocked.
-2. I will call you if I `________` *(reach)* the station before time.
-3. She may be upset if you `________` *(not / inform)* her about the change in plan.
-4. Unless you `________` *(take)* your medicine regularly, you will not recover quickly.
-5. You can use the laboratory if you `________` *(get)* permission from the science teacher.
-6. If Priya `________` *(not / come)* to the rehearsal today, we will not be able to proceed.
-7. He will lose marks if he `________` *(not / revise)* the formulas before the exam.
-8. If the temperature `________` *(rise)* above 40°C, the outdoor programme will be shifted indoors.
-9. Unless she `________` *(apologise)*, the principal will take strict action.
-10. If they `________` *(work)* together, they can finish the project before the deadline.
+### 1. Unless (= *if not*)
+* Replaces *if ... not*. Because *unless* is already negative, its clause **must always take an affirmative verb** (never use a double negative).  
+  * *If you do not run, you will miss the train.*  
+  * $\rightarrow$ ***Unless** you run, you will miss the train.*  
+  * ❌ *Incorrect:* *Unless you do not run...*  
 
-**B.**
-1. Provided that you `________` *(complete)* your chapters, you may watch television tonight.
-2. If I `________` *(find)* your lost pen, I will certainly return it to you.
-3. In case it `________` *(get)* very cold, carry an extra sweater in your bag.
-4. You `________` *(be able to)* join the advanced batch if you score above 85% in the assessment.
-5. If the committee `________` *(approve)* the proposal, the construction will begin next month.
-6. The stray cat will come back if you `~~~~~~~~` *(leave)* food outside your door daily.
-7. Supposing the internet `________` *(go)* down during the online exam, what will you do?
-8. As long as you `________` *(remain)* committed, success will follow eventually.
-9. We `________` *(shift)* the function to the hall if it rains heavily this evening.
-10. If you `________` *(not / water)* the plants for a week, they will wither.
+### 2. In Case (= *precaution taken in advance*)
+* Indicates an action done **now as a precaution**, before knowing whether the future event will happen.  
+  * *Take an umbrella **in case** it rains.* (Take it now, just to be safe.)  
+  * *Take an umbrella **if** it rains.* (Wait; only pick it up when drops start falling.)  
 
----
+### 3. Provided That / As Long As / On Condition That (= *only on this condition*)
+* Highlights a strict or binding requirement.  
+  * *You may play outside **provided that** you finish your homework first.*  
+  * ***As long as** you drive carefully, you will remain safe.*  
 
-#### II. Choose the correct option to fill in the blank.
+### 4. Supposing / Suppose (= *imagine that*)
+* Introduces hypothetical or thought-provoking scenarios (often used in questions).  
+  * ***Supposing** the flight is cancelled, what will we do?*  
 
-1. "If the bus `________`, we will have to take an auto-rickshaw."
-   - (A) will be late  *(B) is late*  (C) was late  (D) be late
-
-2. "You can borrow the camera `________` you handle it with care."
-   - (A) unless  *(B) provided that*  (C) even though  (D) whereas
-
-3. "Take an umbrella with you `________` it starts to rain in the afternoon."
-   - (A) unless  *(B) in case*  (C) even if  (D) otherwise
-
-4. "`________` you continue to eat oily food, your health will deteriorate further."
-   - *(A) If*  (B) Unless  (C) Provided that  (D) Supposing
-
-5. "If she `________` now, she will catch the 6 o'clock train to Jaipur."
-   - (A) leaves  *(A) leaves*  (B) will leave  (C) left  (D) has left
-
-6. "`________` they reduce production costs, the company will have to raise the product price."
-   - *(A) Unless*  (B) If  (C) Provided that  (D) As long as
-
-7. "If you complete the assignment tonight, you `________` submit it first thing tomorrow."
-   - (A) can  *(A) can*  (B) could  (C) would  (D) should have
-
-8. "I will wait here `________` you are ready to leave."
-   - (A) if  *(B) until*  (C) in case  (D) unless
-
-9. "`________` the principal arrives during the assembly, inform the class teacher immediately."
-   - *(A) If*  (B) Unless  (C) Until  (D) Although
-
-10. "She might not recognise you `________` you are wearing a mask."
-    - *(A) if*  (B) unless  (C) provided that  (D) as long as
+### 5. But for / Without (= *if it were not for / if it had not been for*)
+* Followed by a noun phrase rather than a full subject + verb clause.  
+  * ***Without** your guidance, I would have failed.*  
+  * ***But for** his quick reflexes, the boy would have fallen.*  
 
 ---
 
-#### III. Read the conversations and rewrite them as Type 1 conditional sentences.
+## 5. Inversion (Formal English / Dropping "If")
 
-**Example:**
-*Ananya:* "Practise more. You'll win the competition."
-→ *Ananya told him that if he practised more, he would win the competition.*
+In formal, written, and exam-level English, we can drop the word **if** by moving an auxiliary verb to the very front of the sentence.  
 
-1. *Teacher:* "Submit your project on time. You will get full marks."
-2. *Doctor:* "Follow this diet for a month. Your cholesterol will come down."
-3. *Father:* "Don't stay up late. You'll feel fresh tomorrow."
-4. *Coach:* "Train every day. You can represent the state team."
-5. *Librarian:* "Don't return the book late. You won't be fined."
+```text
+ ┌──────────────┬───────────────────────────────┬────────────────────────────────┐
+ │ Type         │ Standard Structure            │ Inverted Structure (No "If")   │
+ ├──────────────┼───────────────────────────────┼────────────────────────────────┤
+ │ Type 1       │ If you should need help...    │ Should you need help...        │
+ │ Type 2       │ If I were the minister...     │ Were I the minister...         │
+ │ Type 3       │ If I had known the answer...  │ Had I known the answer...      │
+ └──────────────┴───────────────────────────────┴────────────────────────────────┘
+```
 
----
-
-#### IV. Identify and correct the error in each sentence.
-
-| No. | Incorrect Sentence | Error | Correction |
-| :--- | :--- | :--- | :--- |
-| 1. | If he will come to our house, we will show him the project. | `________` | `________` |
-| 2. | Unless you don't complete the task, you cannot go home. | `________` | `________` |
-| 3. | If the water will boil, please turn off the gas. | `________` | `________` |
-| 4. | We will go for the trip, if the weather will be sunny. | `________` | `________` |
-| 5. | If she don't cooperate, the team won't succeed. | `________` | `________` |
-| 6. | Unless you not apologise, the matter will not be resolved. | `________` | `________` |
-| 7. | If I will find the keys, I will open the locker for you. | `________` | `________` |
-| 8. | You shall get the discount, if you buy three or more items. | `________` | `________` |
+* **Type 1 Inversion (with *Should*):**  
+  * Standard: *If you should encounter any difficulty, contact reception.*  
+  * Inverted: ***Should** you encounter any difficulty, contact reception.*  
+* **Type 2 Inversion (with *Were*):**  
+  * Standard: *If I were rich, I would build a library.*  
+  * Inverted: ***Were** I rich, I would build a library.*  
+* **Type 3 Inversion (with *Had*):**  
+  * Standard: *If she had checked the map, she would not have lost her way.*  
+  * Inverted: ***Had** she checked the map, she would not have lost her way.*  
 
 ---
 
-#### V. Complete the sentences by filling in the missing clause. (Open-ended)
+## 6. Master Comparison Matrix & Common Traps
 
-**(a) If-clause given — complete the main clause:**
-1. If the examination is postponed, ...
-2. If you do not carry your identity card, ...
-3. If she scores the highest in the class, ...
-4. If we leave now, ...
-5. Unless the committee meets this week, ...
+### Master Comparison Matrix
 
-**(b) Main clause given — write a suitable if-clause:**
-1. ..., the match will be abandoned.
-2. ..., she will be selected for the debate team.
-3. ..., you can take a day off tomorrow.
-4. ..., the guests will arrive on time.
-5. ..., we will have to cancel the trip.
+| Conditional | Time Reference | Reality Level | If-Clause Tense | Main Clause Verb Form |
+| :--- | :--- | :--- | :--- | :--- |
+| **Zero** | Timeless / Habit | 100% True | Simple Present | Simple Present |
+| **Type 1** | Present / Future | Realistic / Likely | Simple Present | will / can / may + V1 |
+| **Type 2** | Present / Future | Unreal / Imaginary | Simple Past (were) | would / could / might + V1 |
+| **Type 3** | Past | Impossible / Unalterable | Past Perfect (had + V3) | would have + V3 |
 
 ---
 
-#### VI. Rewrite the following sentences using the conjunction given in brackets without changing the meaning.
+### Top 5 Exam Traps to Avoid
 
-1. If you do not revise daily, you will not retain what you learn. **[Unless]**
-2. Unless you carry the admission form, they will not let you sit for the exam. **[If]**
-3. You can watch the documentary provided that you finish your homework first. **[If]**
-4. As long as you are honest, people will always trust you. **[If]**
-5. In case the meeting is cancelled, please inform all the members immediately. **[If]**
-6. If she does not reach within the next ten minutes, we will leave without her. **[Unless]**
-7. Unless the doctor gives approval, he cannot resume playing cricket. **[If]**
-
----
-
-### Answer Key
-
-#### I. Fill in the Blanks
-
-**A.**
-1. snows
-2. reach
-3. do not inform
-4. take
-5. get
-6. does not come
-7. does not revise
-8. rises
-9. apologises
-10. work
-
-**B.**
-1. complete
-2. find
-3. gets
-4. will be able to
-5. approves
-6. leave
-7. goes
-8. remain
-9. will shift
-10. do not water
+1. ❌ **Trap 1: Using *will* or *would* in the if-clause.**  
+   * *Incorrect:* If it **will rain**, the match will be cancelled.  
+   * *Correct:* If it **rains**, the match will be cancelled.  
+2. ❌ **Trap 2: Double negatives with *unless*.**  
+   * *Incorrect:* Unless you **do not apologise**, she won't forgive you.  
+   * *Correct:* Unless you **apologise**, she won't forgive you.  
+3. ❌ **Trap 3: Mixing up Type 2 and Type 3 verb pairs.**  
+   * *Incorrect:* If you worked hard, you **would have passed**.  
+   * *Correct:* If you worked hard, you **would pass**. *(Type 2)*  
+   * *Correct:* If you had worked hard, you **would have passed**. *(Type 3)*  
+4. ❌ **Trap 4: Using *was* instead of *were* in unreal conditions.**  
+   * *Weak/Informal:* If I **was** an astronaut...  
+   * *Formal/Exam standard:* If I **were** an astronaut...  
+5. ❌ **Trap 5: Using *will* after *in case*.**  
+   * *Incorrect:* Keep water ready in case you **will feel** thirsty.  
+   * *Correct:* Keep water ready in case you **feel** thirsty.  
 
 ---
 
-#### II. Choose the Correct Option
+## 7. Practice Exercises
 
-1. **(B) is late**
-2. **(B) provided that**
-3. **(B) in case**
-4. **(A) If**
-5. **(A) leaves**
-6. **(A) Unless**
-7. **(A) can**
-8. **(B) until**
-9. **(A) If**
-10. **(A) if**
+### Exercise 1: Fill in the Blanks
+Fill in the blanks with the correct form of the verbs given in brackets.  
 
----
-
-#### III. Indirect Reporting of Conditionals
-
-1. The teacher told him that if he submitted his project on time, he would get full marks.
-2. The doctor told the patient that if he followed that diet for a month, his cholesterol would come down.
-3. Father told him not to stay up late, adding that if he did, he would feel fresh the next day. / Father said that if he did not stay up late, he would feel fresh the next day.
-4. The coach said that if he trained every day, he could represent the state team.
-5. The librarian advised him that if he did not return the book late, he would not be fined.
+1. If you heat water to 100°C, it `________` *(boil)*.  
+2. If Rohan `________` *(invite)* me to his birthday party, I will buy him a book.  
+3. If I `________` *(be)* the Prime Minister, I would increase the budget for education.  
+4. We `________` *(reach)* the station on time yesterday if our taxi had not broken down.  
+5. Unless you `________` *(water)* these saplings, they will wither away.  
+6. If birds `________` *(have)* teeth, their eating habits would be completely different.  
+7. She would have answered your call if she `________` *(not / leave)* her phone at home.  
+8. If you `________` *(mix)* yellow and blue paint, you get green.  
+9. Should you `________` *(face)* any login issues, please contact the helpline.  
+10. If he had attended the seminar yesterday, he `________` *(know)* the rules today.  
 
 ---
 
-#### IV. Error Correction
+### Exercise 2: Error Identification and Correction
+Each sentence below contains one grammatical error related to conditionals. Identify the error and write down the corrected sentence.  
 
-| No. | Error | Correction |
-| :--- | :--- | :--- |
-| 1. | will come | comes *(no 'will' in if-clause)* |
-| 2. | don't complete | complete *(unless = if not; no double negative)* |
-| 3. | will boil | boils *(present simple in if-clause)* |
-| 4. | will be sunny | is sunny *(present simple after 'if')* |
-| 5. | don't | doesn't *(3rd person singular – she)* |
-| 6. | not apologise | apologise *(unless already has negative meaning)* |
-| 7. | will find | find *(present simple in if-clause)* |
-| 8. | shall | will *(shall is old-fashioned here; will is standard)* |
-
----
-
-#### V. Suggested Answers
-
-**(a)**
-1. ...the school will notify students well in advance.
-2. ...you will not be allowed entry into the exam hall.
-3. ...she will receive the school's merit award.
-4. ...we may reach the station before the train departs.
-5. ...the decision cannot be made this week.
-
-**(b)**
-1. If heavy rain is forecast, ...
-2. If she scores above 90% in the selection test, ...
-3. If you finish your work by 5 PM, ...
-4. If there is no traffic on the highway, ...
-5. If the bus service is suspended tomorrow, ...
+| No. | Sentence with Error | Error | Correct Word / Phrase |
+| :---: | :--- | :--- | :--- |
+| 1. | If you will arrive early, we can rehearse together. | | |
+| 2. | Unless you do not work regularly, you will fall behind. | | |
+| 3. | If he was a bird, he would cross the border freely. | | |
+| 4. | If they had played carefully, they would win yesterday's game. | | |
+| 5. | Take a spare tyre in case the vehicle will get a flat. | | |
+| 6. | Had you informed me earlier, I would assist you. | | |
+| 7. | If plants do not receive sunlight, they withered. | | |
+| 8. | Provided that you will pay attention, you will understand the concept. | | |
 
 ---
 
-#### VI. Rewriting with Different Conjunctions
+### Exercise 3: Sentence Transformation and Rewriting
+Rewrite the following sentences as directed without changing their original meaning.  
 
-1. Unless you revise daily, you will not retain what you learn.
-2. If you do not carry the admission form, they will not let you sit for the exam.
-3. If you finish your homework first, you can watch the documentary.
-4. If you are honest, people will always trust you.
-5. If the meeting is cancelled, please inform all the members immediately.
-6. Unless she reaches within the next ten minutes, we will leave without her.
-7. If the doctor does not give approval, he cannot resume playing cricket.
+1. If you do not wear a helmet while riding, you will be fined.  
+   *(Rewrite using **Unless**)*  
+2. She didn't wake up on time, so she missed the morning assembly.  
+   *(Rewrite as a **Type 3 Conditional**)*  
+3. If you should need any further information, please write to us.  
+   *(Rewrite using **Inversion** without 'If')*  
+4. I am not rich, so I cannot buy a luxury yacht.  
+   *(Rewrite as a **Type 2 Conditional**)*  
+5. If the guard had checked the gate, the stray dogs would not have entered.  
+   *(Rewrite beginning with **Had...**)*  
+6. Keep the medicine handy because you might get a headache.  
+   *(Rewrite using **in case**)*  
+7. You may use the playground only if you get the sports teacher's written permission.  
+   *(Rewrite using **provided that**)*  
+8. Unless they repair the roof, rainwater will leak into the classrooms.  
+   *(Rewrite using **If**)*  
 
 ---
+
+## Solutions & Explanations
+
+### Solutions for Exercise 1
+1. **boils** *(Zero conditional: permanent scientific fact)*  
+2. **invites** *(Type 1: simple present in if-clause for singular third person)*  
+3. **were** *(Type 2: subjunctive 'were' for imaginary state)*  
+4. **would have reached** *(Type 3: would have + V3 in main clause)*  
+5. **water** *(Type 1 with unless: affirmative simple present)*  
+6. **had** *(Type 2: imaginary present condition uses simple past)*  
+7. **had not left** *(Type 3: past perfect in if-clause)*  
+8. **mix** *(Zero conditional: universal fact)*  
+9. **face** *(Inverted Type 1: auxiliary 'should' takes base verb V1)*  
+10. **would know** *(Mixed conditional: past condition leading to a present result today)*  
+
+---
+
+### Solutions for Exercise 2
+
+| No. | Error | Correct Form | Corrected Sentence |
+| :---: | :--- | :--- | :--- |
+| 1. | will arrive | arrive | If you **arrive** early, we can rehearse together. |
+| 2. | do not work | work | Unless you **work** regularly, you will fall behind. |
+| 3. | was | were | If he **were** a bird, he would cross the border freely. |
+| 4. | would win | would have won | If they had played carefully, they **would have won** yesterday's game. |
+| 5. | will get | gets | Take a spare tyre in case the vehicle **gets** a flat. |
+| 6. | would assist | would have assisted | Had you informed me earlier, I **would have assisted** you. |
+| 7. | withered | wither | If plants do not receive sunlight, they **wither**. |
+| 8. | will pay | pay | Provided that you **pay** attention, you will understand the concept. |
+
+---
+
+### Solutions for Exercise 3
+1. **Unless you wear a helmet while riding, you will be fined.**  
+2. **If she had woken up on time, she would not have missed the morning assembly.**  
+3. **Should you need any further information, please write to us.**  
+4. **If I were rich, I would buy a luxury yacht.**  
+5. **Had the guard checked the gate, the stray dogs would not have entered.**  
+6. **Keep the medicine handy in case you get a headache.**  
+7. **You may use the playground provided that you get the sports teacher's written permission.**  
+8. **If they do not repair the roof, rainwater will leak into the classrooms.**
