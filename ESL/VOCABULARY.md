@@ -21,7 +21,7 @@
 104. never | 132. become | 133. between | 134. high | 135. really | 136. something | 137. most | 138. another | 139. much | 140. family
 105. own | 142. leave | 143. put | 144. old | 145. while | 146. mean | 147. on | 148. keep | 149. student | 150. why
 106. let | 152. great | 153. same | 154. big | 155. group | 156. begin | 157. seem | 158. country | 159. help | 160. talk
-107. where | 162. turn | 163. problem | 164. every | 165. start | 166. hand | 167. might | 168. American | 169. show | 170. part
+107. where | 162. turn | 163. problem | 164. every | 165. start | 166. hand | 167. might | 168. Indian | 169. show | 170. part
 108. about | 172. against | 173. place | 174. over | 175. such | 176. again | 177. few | 178. case | 179. most | 180. week
 109. company | 182. where | 183. system | 184. each | 185. right | 186. program | 187. hear | 188. so | 189. question | 190. during
 110. work | 192. play | 193. government | 194. run | 195. small | 196. number | 197. off | 198. always | 199. move | 200. like
