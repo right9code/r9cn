@@ -380,4 +380,130 @@
 2909. torment | 2982. toxic | 2983. toxicity | 2984. trace | 2985. traction | 2986. trait | 2987. trajectory | 2988. tranquil | 2989. transaction | 2990. transcript  
 2910. transform | 2992. translation | 2993. transmission | 2994. transparency | 2995. trauma | 2996. treasure | 2997. treaty | 2998. tribute | 2999. trigger | 3000. triumph
 
-	
+	## Batch 7: Words 3,001 – 3,500
+
+### 3,001 – 3,100
+3001. abolish | 3002. abrupt | 3003. absurd | 3004. accelerate | 3005. accentuate | 3006. accessible | 3007. accommodate | 3008. accumulate | 3009. accurate | 3010. acute  
+3002. adhere | 3012. adjacent | 3013. administer | 3014. adolescent | 3015. advocate | 3016. aesthetic | 3017. affluent | 3018. aggravate | 3019. aggregate | 3020. agrarian  
+3003. albeit | 3022. align | 3023. allege | 3024. allocate | 3025. allusion | 3026. alter | 3027. ambiguous | 3028. ambivalent | 3029. amend | 3030. amiable  
+3004. amplify | 3032. analogous | 3033. anomaly | 3034. anonymously | 3035. anticipate | 3036. antidote | 3037. antiquated | 3038. apparatus | 3039. appease | 3040. applaud  
+3005. appraisal | 3042. apprehension | 3043. arbitrary | 3044. arduous | 3045. articulate | 3046. ascertain | 3047. aspiration | 3048. assert | 3049. assimilate | 3050. asylum  
+3006. attain | 3052. attribute | 3053. authentic | 3054. autonomy | 3055. avert | 3056. avid | 3057. awkward | 3058. bankruptcy | 3059. barren | 3060. benchmark  
+3007. benevolent | 3062. bestow | 3063. betrayal | 3064. bilateral | 3065. bizarre | 3066. blatant | 3067. bleak | 3068. blueprint | 3069. bolster | 3070. bounce  
+3008. boycott | 3072. breach | 3073. breathtaking | 3074. brittle | 3075. brutal | 3076. buffer | 3077. bureaucratic | 3078. burgeoning | 3079. calamity | 3080. candid  
+3009. canvas | 3082. capitulate | 3083. capricious | 3084. casualty | 3085. catalyst | 3086. catastrophe | 3087. categorical | 3088. cater | 3089. cautionary | 3090. ceasefire  
+3010. censure | 3092. chaotic | 3093. charisma | 3094. cherish | 3095. chronic | 3096. chronicle | 3097. circulate | 3098. citation | 3099. civic | 3100. clarify  
+
+### 3,101 – 3,200
+3101. clerical | 3102. coalition | 3103. coexist | 3104. cognition | 3105. coherent | 3106. coincide | 3107. collaborate | 3108. colossal | 3109. commence | 3110. commend  
+3102. commodity | 3112. compassion | 3113. compatible | 3114. compelling | 3115. compensate | 3116. competence | 3117. compile | 3118. complacency | 3119. complement | 3120. compliance  
+3103. comprehend | 3122. comprehensive | 3123. compromise | 3124. concede | 3125. conceal | 3126. conceive | 3127. concise | 3128. concur | 3129. condone | 3130. conducive  
+3104. configure | 3132. confine | 3133. conform | 3134. congested | 3135. conglomerate | 3136. congregate | 3137. congruent | 3138. conjunction | 3139. conquer | 3140. conscience  
+3105. conscientious | 3142. consecutive | 3143. consensus | 3144. consolidate | 3145. conspicuous | 3146. conspiracy | 3147. constrain | 3148. contaminate | 3149. contemplate | 3150. contend  
+3106. contingent | 3152. contour | 3153. convene | 3154. converge | 3155. conviction | 3156. copious | 3157. correlation | 3158. corroborate | 3159. corrode | 3160. cosmopolitan  
+3107. counteract | 3162. counterfeit | 3163. covet | 3164. credibility | 3165. criterion | 3166. cultivate | 3167. cumulative | 3168. curtail | 3169. daunting | 3170. deadlock  
+3108. debris | 3172. debunk | 3173. decency | 3174. decisive | 3175. decompose | 3176. decree | 3177. dedicate | 3178. deduction | 3179. default | 3180. defer  
+3109. deficiency | 3182. deficit | 3183. degrade | 3184. delegate | 3185. detrimental | 3186. diffuse | 3187. dignity | 3188. dilemma | 3189. diligence | 3190. diminish  
+3110. discard | 3192. discern | 3193. disclose | 3194. discrepancy | 3195. discrete | 3196. disdain | 3197. dismissive | 3198. dismantle | 3199. disparage | 3200. disperse  
+
+### 3,201 – 3,300
+3201. disrupt | 3202. dissect | 3203. dissent | 3204. dissipate | 3205. distort | 3206. diverge | 3207. divert | 3208. dormant | 3209. dwindle | 3210. eclectic  
+3202. elevate | 3212. elicit | 3213. eloquent | 3214. elucidate | 3215. elude | 3216. emanate | 3217. emancipate | 3218. embark | 3219. embody | 3220. emulate  
+3203. enact | 3222. encapsulate | 3223. endorse | 3224. enduring | 3225. engulf | 3226. enhance | 3227. enigma | 3228. enlighten | 3229. enmity | 3230. ensue  
+3204. entail | 3232. ephemeral | 3233. epitome | 3234. equilibrium | 3235. equate | 3236. eradicate | 3237. erratic | 3238. escalate | 3239. evoke | 3240. exacerbate  
+3205. exemplary | 3242. exempt | 3243. exert | 3244. exile | 3245. exonerate | 3246. expedite | 3247. explicit | 3248. exploit | 3249. exquisite | 3250. fabricate  
+3206. facet | 3252. facilitate | 3253. faction | 3254. faculty | 3255. fallout | 3256. falter | 3257. fanatic | 3258. farce | 3259. fatal | 3260. fathom  
+3207. feasible | 3262. feat | 3263. feeble | 3264. fermentation | 3265. ferocious | 3266. fervent | 3267. feud | 3268. fiasco | 3269. filament | 3270. finale  
+3208. finite | 3272. fiscal | 3273. fission | 3274. fixture | 3275. flagrant | 3276. flair | 3277. flank | 3278. flaunt | 3279. flaw | 3280. fledgling  
+3209. fleeting | 3282. flicker | 3283. fling | 3284. flourish | 3285. fluctuate | 3286. foe | 3287. foil | 3288. foliage | 3289. fond | 3290. footage  
+3210. forage | 3292. forbearance | 3293. foreclose | 3294. forefront | 3295. forensic | 3296. forerunner | 3297. foresee | 3298. forfeit | 3299. formidable | 3300. formulate  
+
+### 3,301 – 3,400
+3301. forsake | 3302. forte | 3303. fortify | 3304. fortuitous | 3305. foster | 3306. fracture | 3307. fragile | 3308. frail | 3309. franchise | 3310. frantic  
+3302. fraught | 3312. friction | 3313. fringe | 3314. frivolous | 3315. frugal | 3316. fulfill | 3317. fumes | 3318. furious | 3319. futile | 3320. gadget  
+3303. galvanize | 3322. garrison | 3323. generic | 3324. genesis | 3325. genial | 3326. genre | 3327. gigantic | 3328. glamour | 3329. gloomy | 3330. glut  
+3304. gorgeous | 3332. govern | 3333. gradient | 3334. graft | 3335. grandeur | 3336. grasp | 3337. gravitational | 3338. grievance | 3339. grim | 3340. groove  
+3305. grudge | 3342. grueling | 3343. gullible | 3344. habitat | 3345. hallmark | 3346. halt | 3347. hamper | 3348. haphazard | 3349. harass | 3350. harbinger  
+3306. hardy | 3352. harness | 3353. havoc | 3354. hazard | 3355. hectic | 3356. hegemony | 3357. heed | 3358. heinous | 3359. hemisphere | 3360. hemorrhage  
+3307. hierarchy | 3362. hijack | 3363. hinder | 3364. hindrance | 3365. hindsight | 3366. hoard | 3367. hollow | 3368. homage | 3369. homogeneity | 3370. hostage  
+3308. hover | 3372. hub | 3373. humane | 3374. humanitarian | 3375. humble | 3376. hygiene | 3377. hypocrisy | 3378. hypothesis | 3379. hysteria | 3380. icon  
+3309. identical | 3382. ideology | 3383. idiom | 3384. idiosyncrasy | 3385. ignite | 3386. illuminate | 3387. illusion | 3388. illusory | 3389. illustrative | 3390. imbalance  
+3310. immerse | 3392. imminent | 3393. immortal | 3394. immune | 3395. immunity | 3396. impair | 3397. impart | 3398. impartial | 3399. impassioned | 3400. impassive  
+
+### 3,401 – 3,500
+3401. impeccable | 3402. impede | 3403. imperative | 3404. impersonal | 3405. impersonate | 3406. impetus | 3407. implicit | 3408. implore | 3409. imply | 3410. imposing  
+3402. impoverish | 3412. impractical | 3413. imprecise | 3414. imprint | 3415. impromptu | 3416. impulse | 3417. impulsive | 3418. impunity | 3419. inadvertent | 3420. inalienable  
+3403. inanimate | 3422. inaugurate | 3423. incandescent | 3424. incarcerate | 3425. incidence | 3426. incidental | 3427. incinerate | 3428. incisive | 3429. incite | 3430. inclination  
+3404. inclusive | 3432. incoherent | 3433. incompatible | 3434. incongruous | 3435. inconclusive | 3436. incorporate | 3437. incumbent | 3438. incurable | 3439. indefinite | 3440. indelible  
+3405. indemnify | 3442. index | 3443. indict | 3444. indigenous | 3445. indignant | 3446. indisputable | 3447. indistinct | 3448. induce | 3449. indulge | 3450. inert  
+3406. inevitable | 3452. inexorable | 3453. infallible | 3454. infamous | 3455. infantry | 3456. infer | 3457. inference | 3458. inferior | 3459. infiltrate | 3460. infinitesimal  
+3407. inflate | 3462. inflict | 3463. influx | 3464. informed | 3465. infrared | 3466. infrastructure | 3467. infringe | 3468. ingenious | 3469. ingest | 3470. ingrained  
+3408. ingredient | 3472. inhabit | 3473. inherent | 3474. inherit | 3475. inhibit | 3476. initial | 3477. initiate | 3478. inject | 3479. injunction | 3480. innate  
+3409. innocence | 3482. innocuous | 3483. innovate | 3484. inordinate | 3485. inquiry | 3486. insane | 3487. inscription | 3488. insect | 3489. insecure | 3490. insensitive  
+3410. insight | 3492. insignia | 3493. insistence | 3494. insoluble | 3495. insomnia | 3496. inspect | 3497. inspiration | 3498. inspire | 3499. instability | 3500. installment  
+
+---
+
+## Batch 8: Words 3,501 – 4,000
+
+### 3,501 – 3,600
+3501. instantaneous | 3502. instigate | 3503. instill | 3504. institute | 3505. insulate | 3506. insult | 3507. insurmountable | 3508. intact | 3509. integral | 3510. integrate  
+3502. integrity | 3512. intelligible | 3513. intensify | 3514. intensive | 3515. interchange | 3516. interdisciplinary | 3517. interim | 3518. interlock | 3519. intermediate | 3520. interrogate  
+3503. intersect | 3522. intersection | 3523. interstellar | 3524. intervene | 3525. intestine | 3526. intimate | 3527. intimidation | 3528. intolerance | 3529. intractable | 3530. intrepid  
+3504. intricate | 3532. intrigue | 3533. intrinsic | 3534. intuitive | 3535. inundate | 3536. invalid | 3537. invalidate | 3538. invasive | 3539. inverse | 3540. inversion  
+3505. invoke | 3542. involuntary | 3543. irony | 3544. irrational | 3545. irreconcilable | 3546. irrefutable | 3547. irregularity | 3548. irrelevant | 3549. irreparable | 3550. irresistible  
+3506. irreversible | 3552. irritate | 3553. isolate | 3554. itinerary | 3555. jeopardy | 3556. journalism | 3557. jubilee | 3558. judicial | 3559. judicious | 3560. junction  
+3507. jurisdiction | 3562. jurisprudence | 3563. justification | 3564. juvenile | 3565. juxtapose | 3566. kaleidoscope | 3567. kidnap | 3568. kindle | 3569. kinetic | 3570. knack  
+3508. laminate | 3572. languish | 3573. lapse | 3574. lateral | 3575. laudable | 3576. lavish | 3577. layman | 3578. lease | 3579. leftover | 3580. legendary  
+3509. legislation | 3582. legume | 3583. leisure | 3584. lenient | 3585. lethal | 3586. leverage | 3587. levy | 3588. liaison | 3589. libel | 3590. liberate  
+3510. lieu | 3592. ligament | 3593. lineage | 3594. linguist | 3595. liquidate | 3596. literacy | 3597. litigation | 3598. livelihood | 3599. livestock | 3600. locale  
+
+### 3,601 – 3,700
+3601. longevity | 3602. longitude | 3603. loop | 3604. lucrative | 3605. lull | 3606. luminous | 3607. lunar | 3608. lure | 3609. lurk | 3610. luster  
+3602. luxurious | 3612. lyrical | 3613. magistrate | 3614. magnify | 3615. magnitude | 3616. mainstream | 3617. malice | 3618. malicious | 3619. manageable | 3620. mandatory  
+3603. manifest | 3622. manifestation | 3623. manifesto | 3624. manipulate | 3625. maneuver | 3626. marginalize | 3627. maritime | 3628. martial | 3629. martyr | 3630. masculine  
+3604. masquerade | 3632. massacre | 3633. mastery | 3634. maternal | 3635. maturity | 3636. maxim | 3637. mediocre | 3638. meditate | 3639. meditative | 3640. melee  
+3605. melodrama | 3642. membrane | 3643. memento | 3644. memoir | 3645. menacing | 3646. mercenary | 3647. mercurial | 3648. merge | 3649. metabolism | 3650. methodology  
+3606. meticulous | 3652. metric | 3653. metropolis | 3654. microchip | 3655. migrate | 3656. militia | 3657. milestone | 3658. mimic | 3659. miniature | 3660. minimize  
+3607. ministerial | 3662. mischievous | 3663. misconception | 3664. misfortune | 3665. mitigate | 3666. mitigation | 3667. mobilize | 3668. mock | 3669. modify | 3670. momentum  
+3608. monarch | 3672. monetary | 3673. monopoly | 3674. monotone | 3675. monotonous | 3676. monumental | 3677. morale | 3678. morbid | 3679. mosaic | 3680. motive  
+3609. motley | 3682. mundane | 3683. murmur | 3684. mutate | 3685. mutation | 3686. mythology | 3687. naive | 3688. narrative | 3689. nascent | 3690. navigate  
+3610. nebula | 3692. negate | 3693. negligence | 3694. negligent | 3695. negotiable | 3696. neutralize | 3697. nomadic | 3698. nominal | 3699. nostalgia | 3700. nostalgic  
+
+### 3,701 – 3,800
+3701. notary | 3702. notify | 3703. notorious | 3704. nourish | 3705. novelty | 3706. novice | 3707. nuance | 3708. nucleus | 3709. nullify | 3710. numeric  
+3702. nurture | 3712. obedient | 3713. oblique | 3714. oblivious | 3715. obnoxious | 3716. obscure | 3717. obsolete | 3718. obstinate | 3719. obstruct | 3720. obstruction  
+3703. occasion | 3722. occult | 3723. omnipotent | 3724. omit | 3725. onshore | 3726. opaque | 3727. optimal | 3728. optimism | 3729. opulent | 3730. orator  
+3704. orbit | 3732. orchestra | 3733. ordeal | 3734. ordinate | 3735. orient | 3736. originate | 3737. orthodox | 3738. oscillate | 3739. outbreak | 3740. outcast  
+3705. outcry | 3742. outdo | 3743. outfit | 3744. outgrow | 3745. outing | 3746. outlaw | 3747. outlet | 3748. outlook | 3749. outlying | 3750. outnumber  
+3706. output | 3752. outright | 3753. outspoken | 3754. outstrip | 3755. outweigh | 3756. ovation | 3757. overflow | 3758. overhaul | 3759. overlap | 3760. overlook  
+3707. overpower | 3762. override | 3763. oversee | 3764. overt | 3765. overtake | 3766. overthrow | 3767. overview | 3768. overwhelm | 3769. pageant | 3770. palate  
+3708. pamphlet | 3772. pandemic | 3773. panic | 3774. paradigm | 3775. paradox | 3776. paralysis | 3777. parameter | 3778. paramount | 3779. paranoia | 3780. paraphrase  
+3709. parasite | 3782. parity | 3783. parole | 3784. partiality | 3785. particle | 3786. partisan | 3787. passive | 3788. pastoral | 3789. patent | 3790. pathogen  
+3710. patriarch | 3792. patrimony | 3793. patronage | 3794. patronize | 3795. peasant | 3796. peculiar | 3797. pedagogy | 3798. peer | 3799. penalize | 3800. penalty  
+
+### 3,801 – 3,900
+3801. pend | 3802. pending | 3803. pendulum | 3804. penetrate | 3805. pension | 3806. perceive | 3807. perceptible | 3808. perennial | 3809. peril | 3810. perilous  
+3802. periodic | 3812. peripheral | 3813. periphery | 3814. perish | 3815. perjury | 3816. permanence | 3817. permeate | 3818. perpendicular | 3819. perpetrate | 3820. perpetual  
+3803. perpetuate | 3822. perplex | 3823. persecute | 3824. perseverance | 3825. persevere | 3826. persist | 3827. persistence | 3828. persona | 3829. personify | 3830. pertain  
+3804. pertinent | 3832. perturb | 3833. pervasive | 3834. pessimism | 3835. phantom | 3836. philanthropy | 3837. picturesque | 3838. piety | 3839. pilgrim | 3840. pilgrimage  
+3805. pious | 3842. pipeline | 3843. pinnacle | 3844. pirate | 3845. pivot | 3846. pivotal | 3847. placebo | 3848. plagiarize | 3849. plague | 3850. plateau  
+3806. plausible | 3852. playoff | 3853. pleasant | 3854. plight | 3855. pluck | 3856. poignant | 3857. polarize | 3858. ponder | 3859. pop | 3860. populate  
+3807. populous | 3862. portfolio | 3863. portray | 3864. poster | 3865. postulate | 3866. potent | 3867. pottery | 3868. pragmatic | 3869. practitioner | 3870. precedent  
+3808. precinct | 3872. precipitate | 3873. precision | 3874. preclude | 3875. predator | 3876. predecessor | 3877. predicament | 3878. predict | 3879. preface | 3880. premier  
+3809. premise | 3882. premium | 3883. prescribe | 3884. preservation | 3885. preside | 3886. prestige | 3887. presumable | 3888. presuppose | 3889. prevailing | 3890. prevalence  
+3810. prevalent | 3892. prioritize | 3893. probation | 3894. proceed | 3895. proclamation | 3896. productivity | 3897. profane | 3898. profess | 3899. proficient | 3900. profit  
+
+### 3,901 – 4,000
+3901. profound | 3902. profuse | 3903. progeny | 3904. prognosis | 3905. progressive | 3906. prohibit | 3907. proliferate | 3908. prolific | 3909. prologue | 3910. prolong  
+3902. prominent | 3912. promenade | 3913. propaganda | 3914. propagate | 3915. propel | 3916. propensity | 3917. prophecy | 3918. proponent | 3919. proportion | 3920. proprietary  
+3903. prosecute | 3922. proselytize | 3923. prospect | 3924. prospectus | 3925. prosper | 3926. prosperity | 3927. protagonist | 3928. protégé | 3929. protocol | 3930. prototype  
+3904. protract | 3932. protrude | 3933. proverb | 3934. provincial | 3935. provoke | 3936. proximity | 3937. proxy | 3938. prudence | 3939. pseudo | 3940. psychosis  
+3905. pub | 3942. pulse | 3943. punctuate | 3944. pungent | 3945. pupa | 3946. purge | 3947. purport | 3948. pursue | 3949. puzzle | 3950. quadrant  
+3906. qualify | 3952. qualitative | 3953. quantum | 3954. quarantine | 3955. quarry | 3956. quasi | 3957. questionnaire | 3958. quiver | 3959. quota | 3960. quotient  
+3907. radiant | 3962. radiate | 3963. radical | 3964. randomize | 3965. rational | 3966. rationale | 3967. react | 3968. reaction | 3969. reactionary | 3970. readily  
+3908. realm | 3972. reap | 3973. reassurance | 3974. reassure | 3975. rebellious | 3976. reboot | 3977. rebuke | 3978. rebut | 3979. rebuttal | 3980. recalcitrant  
+3909. recall | 3982. recapture | 3983. recede | 3984. reception | 3985. receptive | 3986. recipient | 3987. reciprocal | 3988. reclaim | 3989. recluse | 3990. recognition  
+3910. recognize | 3992. recoil | 3993. recollect | 3994. reconcile | 3995. reconciliation | 3996. reconnaissance | 3997. reconstruction | 3998. recount | 3999. recourse | 4000. recruit
+
+
