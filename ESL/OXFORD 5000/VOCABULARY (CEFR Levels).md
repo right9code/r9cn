@@ -8,15 +8,16 @@ Complete word list of the Oxford 3000 and 5000 vocabulary arranged by CEFR level
 
 | Level | Description | Entries | Details Note | Link |
 | :---: | :--- | :---: | :--- | :--- |
-| **A1** | Beginner / Elementary | **1076** | [A1.md](A1.md) | [Jump to Level A1](#level-a1) |
-| **A2** | Pre-Intermediate | **990** | [A2.md](A2.md) | [Jump to Level A2](#level-a2) |
-| **B1** | Intermediate | **902** | [B1.md](B1.md) | [Jump to Level B1](#level-b1) |
-| **B2** | Upper-Intermediate | **1571** | [B2.md](B2.md) | [Jump to Level B2](#level-b2) |
-| **C1** | Advanced | **1404** | [C1.md](C1.md) | [Jump to Level C1](#level-c1) |
-| **Unclassified** | Additional / Uncategorized | **5** | [Unclassified.md](Unclassified.md) | [Jump to Level Unclassified](#level-unclassified) |
+| **A1** | Beginner / Elementary | **1076** | [A1.md](A1.md) | [[#Level A1\|Jump to Level A1]] |
+| **A2** | Pre-Intermediate | **990** | [A2.md](A2.md) | [[#Level A2\|Jump to Level A2]] |
+| **B1** | Intermediate | **902** | [B1.md](B1.md) | [[#Level B1\|Jump to Level B1]] |
+| **B2** | Upper-Intermediate | **1571** | [B2.md](B2.md) | [[#Level B2\|Jump to Level B2]] |
+| **C1** | Advanced | **1404** | [C1.md](C1.md) | [[#Level C1\|Jump to Level C1]] |
+| **Unclassified** | Additional / Uncategorized | **5** | [Unclassified.md](Unclassified.md) | [[#Level Unclassified\|Jump to Level Unclassified]] |
 
 ---
 
+<a id="level-a1"></a>
 ## Level A1
 **Description:** Beginner / Elementary | **Total Entries:** 1076 words | [View Full Definitions, Audio & Examples →](A1.md)
 
@@ -294,6 +295,7 @@ Complete word list of the Oxford 3000 and 5000 vocabulary arranged by CEFR level
 
 ---
 
+<a id="level-a2"></a>
 ## Level A2
 **Description:** Pre-Intermediate | **Total Entries:** 990 words | [View Full Definitions, Audio & Examples →](A2.md)
 
@@ -550,6 +552,7 @@ Complete word list of the Oxford 3000 and 5000 vocabulary arranged by CEFR level
 
 ---
 
+<a id="level-b1"></a>
 ## Level B1
 **Description:** Intermediate | **Total Entries:** 902 words | [View Full Definitions, Audio & Examples →](B1.md)
 
@@ -784,6 +787,7 @@ Complete word list of the Oxford 3000 and 5000 vocabulary arranged by CEFR level
 
 ---
 
+<a id="level-b2"></a>
 ## Level B2
 **Description:** Upper-Intermediate | **Total Entries:** 1571 words | [View Full Definitions, Audio & Examples →](B2.md)
 
@@ -1185,6 +1189,7 @@ Complete word list of the Oxford 3000 and 5000 vocabulary arranged by CEFR level
 
 ---
 
+<a id="level-c1"></a>
 ## Level C1
 **Description:** Advanced | **Total Entries:** 1404 words | [View Full Definitions, Audio & Examples →](C1.md)
 
@@ -1544,6 +1549,7 @@ Complete word list of the Oxford 3000 and 5000 vocabulary arranged by CEFR level
 
 ---
 
+<a id="level-unclassified"></a>
 ## Level Unclassified
 **Description:** Additional / Uncategorized | **Total Entries:** 5 words | [View Full Definitions, Audio & Examples →](Unclassified.md)
 
