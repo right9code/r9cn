@@ -506,4 +506,132 @@
 3909. recall | 3982. recapture | 3983. recede | 3984. reception | 3985. receptive | 3986. recipient | 3987. reciprocal | 3988. reclaim | 3989. recluse | 3990. recognition  
 3910. recognize | 3992. recoil | 3993. recollect | 3994. reconcile | 3995. reconciliation | 3996. reconnaissance | 3997. reconstruction | 3998. recount | 3999. recourse | 4000. recruit
 
+## Batch 9: Words 4,001 – 4,500
+
+### 4,001 – 4,100
+4001. rectify | 4002. rectitude | 4003. recurrent | 4004. redeem | 4005. redemption | 4006. redoubtable | 4007. redress | 4008. redundancy | 4009. redundant | 4010. referendum  
+4002. refine | 4012. reflection | 4013. reflective | 4014. reflux | 4015. refraction | 4016. refutation | 4017. refute | 4018. regal | 4019. regale | 4020. regatta  
+4003. regenerate | 4022. regeneration | 4023. regimen | 4024. regionalism | 4025. register | 4026. registry | 4027. regression | 4028. regulate | 4029. regulatory | 4030. rehabilitate  
+4004. reiterate | 4032. rejuvenation | 4033. relapse | 4034. relative | 4035. relativity | 4036. relaxation | 4037. relegated | 4038. relentless | 4039. relic | 4040. relinquish  
+4005. relish | 4042. relocate | 4043. reluctant | 4044. remediate | 4045. reminiscence | 4046. reminisce | 4047. remission | 4048. remnant | 4049. remorse | 4050. remote  
+4006. remunerate | 4052. render | 4053. rendition | 4054. renegade | 4055. renew | 4056. renounce | 4057. renovate | 4058. renown | 4059. repayment | 4060. repel  
+4007. repellant | 4062. repent | 4063. repertoire | 4064. repertory | 4065. repetitive | 4066. replenish | 4067. replete | 4068. replica | 4069. replicate | 4070. repository  
+4008. reprehensible | 4072. repress | 4073. reprieve | 4074. reprimand | 4075. reprint | 4076. reproach | 4077. reproduce | 4078. repudiate | 4079. repugnant | 4080. repulsion  
+4009. repute | 4082. requisition | 4083. resemblance | 4084. resent | 4085. reservation | 4086. reservoir | 4087. residual | 4088. residue | 4089. resign | 4090. resilience  
+4010. resilient | 4092. resolute | 4093. resonant | 4094. resort | 4095. resound | 4096. respectable | 4097. respiration | 4098. resplendent | 4099. respondent | 4100. restitution  
+
+### 4,101 – 4,200
+4101. restorative | 4102. restrain | 4103. restrict | 4104. restriction | 4105. resume | 4106. resurgent | 4107. resurrect | 4108. retail | 4109. retain | 4110. retainer  
+4102. retaliate | 4112. retaliation | 4113. retard | 4114. retention | 4115. reticent | 4116. retinue | 4117. retort | 4118. retract | 4119. retraction | 4120. retreat  
+4103. retrieve | 4122. retroactive | 4123. retrograde | 4124. retrospect | 4125. retrospective | 4126. revel | 4127. revelation | 4128. reverberate | 4129. revere | 4130. reverence  
+4104. reverent | 4132. revert | 4133. revile | 4134. revise | 4135. revitalize | 4136. revival | 4137. revoke | 4138. revolt | 4139. revulsion | 4140. rhetoric  
+4105. rhetorical | 4142. rhinoceros | 4143. rhythmic | 4144. ribald | 4145. ridicule | 4146. ridiculous | 4147. rife | 4148. righteous | 4149. rightful | 4150. rigidity  
+4106. rigorous | 4152. rinse | 4153. rip | 4154. ripple | 4155. ritual | 4156. rivalry | 4157. robust | 4158. rookie | 4159. roster | 4160. rotate  
+4107. rotor | 4162. rouge | 4163. roughly | 4164. round | 4165. rout | 4166. routine | 4167. rover | 4168. royalty | 4169. rudimentary | 4170. rueful  
+4108. ruffle | 4172. rug | 4173. rugged | 4174. ruinous | 4175. rummage | 4176. rumor | 4177. rupture | 4178. rustic | 4179. ruthless | 4180. sabotage  
+4109. saccharine | 4182. sacred | 4183. sacrifice | 4184. sacrilege | 4185. sadden | 4186. safari | 4187. safeguard | 4188. saga | 4189. sage | 4190. saintly  
+4110. salient | 4192. salinity | 4193. saliva | 4194. salvage | 4195. salvation | 4196. sanctify | 4197. sanction | 4198. sanctuary | 4199. sandal | 4200. sanitation  
+
+### 4,201 – 4,300
+4201. sarcasm | 4202. sarcastic | 4203. sardonic | 4204. satellite | 4205. satiate | 4206. satire | 4207. satirist | 4208. saturate | 4209. saturation | 4210. sauce  
+4202. saunter | 4212. savvy | 4213. scaffold | 4214. scald | 4215. scale | 4216. scam | 4217. scamper | 4218. scandal | 4219. scanner | 4220. scapegoat  
+4203. scarce | 4222. scarcity | 4223. scare | 4224. scatter | 4225. scenic | 4226. sceptic | 4227. schematic | 4228. scholarship | 4229. scoff | 4230. scope  
+4204. scorch | 4232. score | 4233. scorn | 4234. scourge | 4235. scramble | 4236. scrap | 4237. scribble | 4238. script | 4239. scrub | 4240. scruple  
+4205. scrupulous | 4242. scrutinize | 4243. scrutiny | 4244. scuffle | 4245. sculptor | 4246. sculpture | 4247. seal | 4248. seam | 4249. sear | 4250. seasonal  
+4206. secede | 4252. secession | 4253. seclusion | 4254. second | 4255. secondary | 4256. secrecy | 4257. secretarial | 4258. sectarian | 4259. secular | 4260. sedentary  
+4207. sediment | 4262. sedimentary | 4263. sedition | 4264. seduce | 4265. seduction | 4266. seductive | 4267. segment | 4268. segregated | 4269. segregation | 4270. seismic  
+4208. seldom | 4272. selective | 4273. semicircle | 4274. seminar | 4275. seminary | 4276. sensational | 4277. sensibility | 4278. sensitivity | 4279. sensor | 4280. sensory  
+4209. sensual | 4282. sentient | 4283. sentiment | 4284. sentinel | 4285. sequential | 4286. sequester | 4287. serendipity | 4288. serial | 4289. sermon | 4290. serpentine  
+4210. serrated | 4292. servile | 4293. servitude | 4294. severance | 4295. shabby | 4296. shade | 4297. shadow | 4298. shaman | 4299. shatter | 4300. shear  
+
+### 4,301 – 4,400
+4301. sheath | 4302. shimmer | 4303. shiver | 4304. shoal | 4305. shock | 4306. shorthand | 4307. showcase | 4308. shred | 4309. shrewd | 4310. shrine  
+4302. shudder | 4312. shuffle | 4313. sibling | 4314. sidestep | 4315. siege | 4316. sierra | 4317. sieve | 4318. silhouette | 4319. simplistic | 4320. simulate  
+4303. simulation | 4322. simultaneous | 4323. sincerity | 4324. sinuous | 4325. siren | 4326. skeleton | 4327. skeptic | 4328. skeptical | 4329. skewed | 4330. skirmish  
+4304. skull | 4332. slacken | 4333. slander | 4334. slanderous | 4335. slapstick | 4336. slate | 4337. sleek | 4338. sleepless | 4339. slight | 4340. slippery  
+4305. sloth | 4342. sluggish | 4343. slumber | 4344. smirk | 4345. smudge | 4346. smug | 4347. snare | 4348. sneer | 4349. sober | 4350. sobriety  
+4306. socialist | 4352. societal | 4353. sociology | 4354. sodden | 4355. solace | 4356. solder | 4357. soldier | 4358. solemn | 4359. solemnity | 4360. solicit  
+4307. solicitor | 4362. solicitous | 4363. solitude | 4364. soluble | 4365. solvent | 4366. somatic | 4367. somber | 4368. somnolent | 4369. sonic | 4370. sonnet  
+4308. sophistication | 4372. sophomore | 4373. soporific | 4374. sorghum | 4375. sorrow | 4376. sovereign | 4377. sovereignty | 4378. spatial | 4379. spawn | 4380. specialization  
+4309. specialty | 4382. specimen | 4383. specious | 4384. speck | 4385. spectacle | 4386. spectator | 4387. spectral | 4388. spectrum | 4389. speculate | 4390. speculation  
+4310. spellbound | 4392. sphere | 4393. spherical | 4394. sphinx | 4395. spice | 4396. spiral | 4397. spiritual | 4398. spirituality | 4399. spiteful | 4400. splendid  
+
+### 4,401 – 4,500
+4401. splinter | 4402. spontaneous | 4403. sporadic | 4404. spotlight | 4405. sprout | 4406. spurn | 4407. squalid | 4408. squalor | 4409. squander | 4410. squeamish  
+4402. stability | 4412. stagnant | 4413. stagnate | 4414. stammer | 4415. stance | 4416. stanza | 4417. stark | 4418. static | 4419. stationary | 4420. stationer  
+4403. statistics | 4422. statue | 4423. stature | 4424. statute | 4425. steadfast | 4426. stealth | 4427. stealthy | 4428. sterilize | 4429. sterile | 4430. sterling  
+4404. stern | 4432. stimulate | 4433. stimulus | 4434. stingy | 4435. stipend | 4436. stipulation | 4437. stipulate | 4438. stoic | 4439. stoicism | 4440. straightforward  
+4405. strand | 4442. strangle | 4443. strategist | 4444. stratosphere | 4445. stratum | 4446. strenuous | 4447. stride | 4448. strife | 4449. stringent | 4450. strip  
+4406. strive | 4452. stroke | 4453. stroll | 4454. structural | 4455. structure | 4456. stubborn | 4457. subjugate | 4458. sublime | 4459. subliminal | 4460. submarine  
+4407. submissive | 4462. subordinate | 4463. subpoena | 4464. subsequent | 4465. subside | 4466. subsidize | 4467. subsidiary | 4468. subsistence | 4469. substance | 4470. substantiate  
+4408. substantive | 4472. subtle | 4473. suburban | 4474. subversive | 4475. subvert | 4476. succession | 4477. successive | 4478. successor | 4479. succinct | 4480. succumb  
+4409. suffice | 4482. suffrage | 4483. suggestible | 4484. suicidal | 4485. sultan | 4486. summarize | 4487. summary | 4488. sumptuous | 4489. sunder | 4490. supercilious  
+4410. superficial | 4492. superfluous | 4493. superintend | 4494. superlative | 4495. supersonic | 4496. superstition | 4497. superstitious | 4498. supervise | 4499. supervision | 4500. supplant  
+
+---
+
+## Batch 10: Words 4,501 – 5,000
+
+### 4,501 – 4,600
+4501. supple | 4502. supplement | 4503. supplication | 4504. supply | 4505. suppress | 4506. supremacy | 4507. supreme | 4508. surcharge | 4509. surety | 4510. surface  
+4502. surfeit | 4512. surgeon | 4513. surgical | 4514. surly | 4515. surmise | 4516. surmount | 4517. surpass | 4518. surplus | 4519. surrender | 4520. surrogate  
+4503. surveillance | 4522. survey | 4523. susceptible | 4524. suspend | 4525. suspension | 4526. suspense | 4527. suspicion | 4528. sustain | 4529. sustenance | 4530. suture  
+4504. swagger | 4532. swallow | 4533. swamp | 4534. swarm | 4535. swatch | 4536. swelter | 4537. sweltering | 4538. swiftness | 4539. symmetry | 4540. symptomatic  
+4505. synchronicity | 4542. synchronize | 4543. synchronous | 4544. syncopation | 4545. syndicate | 4546. syndrome | 4547. synergy | 4548. synonymous | 4549. synopsis | 4550. synthesize  
+4506. synthetic | 4552. syringe | 4553. systematic | 4554. taboo | 4555. tacit | 4556. taciturn | 4557. tactile | 4558. taint | 4559. tangible | 4560. tantamount  
+4507. taper | 4562. tapestry | 4563. tardy | 4564. tariff | 4565. tarnish | 4566. tarot | 4567. tart | 4568. tasteless | 4569. tatter | 4570. taunt  
+4508. taut | 4572. tautology | 4573. taxation | 4574. taxonomy | 4575. tedious | 4576. tedium | 4577. teem | 4578. teeming | 4579. telepathy | 4580. telescope  
+4509. temperament | 4582. tempest | 4583. tempestuous | 4584. temple | 4585. temporal | 4586. temporize | 4587. tenacious | 4588. tenacity | 4589. tenant | 4590. tendency  
+4510. tenement | 4592. tensile | 4593. tentative | 4594. tenuous | 4595. tepid | 4596. terminate | 4597. terminology | 4598. terminus | 4599. terrestrial | 4600. terrible  
+
+### 4,601 – 4,700
+4601. terrier | 4602. terrify | 4603. territorial | 4604. territory | 4605. terse | 4606. testament | 4607. testify | 4608. testimony | 4609. tether | 4610. textile  
+4602. theorem | 4612. thermal | 4613. thermometer | 4614. thermos | 4615. thespian | 4616. threshold | 4617. thrift | 4618. thrifty | 4619. thrive | 4620. throng  
+4603. throttle | 4622. thrust | 4623. thwart | 4624. tidy | 4625. timber | 4626. timbre | 4627. timetable | 4628. timid | 4629. timidity | 4630. timorous  
+4604. tinge | 4632. tinker | 4633. tirade | 4634. titanic | 4635. titular | 4636. toddler | 4637. tolerate | 4638. tolerance | 4639. tonal | 4640. topography  
+4605. torment | 4642. torpedo | 4643. torpid | 4644. torque | 4645. torrent | 4646. torrential | 4647. torso | 4648. tortoise | 4649. tortuous | 4650. torture  
+4606. totalitarian | 4652. totem | 4653. touchstone | 4654. tout | 4655. toxic | 4656. toxicology | 4657. toxoid | 4658. traceable | 4659. tracker | 4660. traction  
+4607. tractable | 4662. tradecraft | 4663. traditional | 4664. traduce | 4665. tragedy | 4666. trait | 4667. traitor | 4668. trajectory | 4669. trammel | 4670. trample  
+4608. trance | 4672. tranquil | 4673. tranquility | 4674. transcend | 4675. transcendence | 4676. transcribe | 4677. transcript | 4678. transformer | 4679. transfusion | 4680. transgress  
+4609. transgression | 4682. transient | 4683. transition | 4684. transitory | 4685. translate | 4686. transliteration | 4687. translucent | 4688. transmitted | 4689. transmutation | 4690. transparent  
+4610. transpiration | 4692. transpose | 4693. trauma | 4694. traverse | 4695. travesty | 4696. treacherous | 4697. treachery | 4698. treatise | 4699. tremor | 4700. trenchant  
+
+### 4,701 – 4,800
+4701. trepidation | 4702. triad | 4703. tributary | 4704. tribute | 4705. trickle | 4706. trifle | 4707. trifling | 4708. trigger | 4709. trilogy | 4710. trim  
+4702. trinity | 4712. trio | 4713. triple | 4714. tripod | 4715. trite | 4716. triumph | 4717. trivial | 4718. trivia | 4719. trodden | 4720. trolley  
+4703. troop | 4722. trophy | 4723. tropical | 4724. troposphere | 4725. troupe | 4726. truant | 4727. truce | 4728. truck | 4729. truncate | 4730. trust  
+4704. truthful | 4732. tumult | 4733. tumultuous | 4734. turbine | 4735. turbulent | 4736. turbulence | 4737. turgid | 4738. turmoil | 4739. turnover | 4740. tutor  
+4705. tutorial | 4742. twilight | 4743. twinkle | 4744. tycoon | 4745. typhoon | 4746. typical | 4747. typography | 4748. tyrannical | 4749. tyranny | 4750. tyrant  
+4706. ubiquitous | 4752. ulterior | 4753. ultimate | 4754. ultimatum | 4755. umbilical | 4756. umbrage | 4757. unabated | 4758. unanimous | 4759. unassuming | 4760. uncanny  
+4707. uncharted | 4762. unyielding | 4763. unbridled | 4764. unconscious | 4765. unconstitutional | 4766. uncover | 4767. undercharge | 4768. underestimate | 4769. undergo | 4770. undergraduate  
+4708. underground | 4772. underlie | 4773. underline | 4774. undermine | 4775. underneath | 4776. underpaid | 4777. underscore | 4778. undersecretary | 4779. understand | 4780. understate  
+4709. undertake | 4782. underwater | 4783. underwear | 4784. underworld | 4785. underwrite | 4786. undesirable | 4787. undo | 4788. undoing | 4789. undoubted | 4790. undulate  
+4710. undue | 4792. unearth | 4793. uneasy | 4794. unemployment | 4795. uneven | 4796. unfamiliar | 4797. unfavourable | 4798. unforeseen | 4799. unfortunate | 4800. unfold  
+
+### 4,801 – 4,900
+4801. uniform | 4802. unify | 4803. unilateral | 4804. unimpeachable | 4805. uninterested | 4806. unique | 4807. unison | 4808. unit | 4809. universal | 4810. unjust  
+4802. unknown | 4812. unleash | 4813. unless | 4814. unlike | 4815. unlikely | 4816. unlimited | 4817. unload | 4818. unlock | 4819. unmask | 4820. unnatural  
+4803. unnecessary | 4822. unnoticed | 4823. unorganized | 4824. unpack | 4825. unplug | 4826. unprecedented | 4827. unpredictable | 4828. unprejudiced | 4829. unprepared | 4830. unpublished  
+4804. unqualified | 4832. unquestionable | 4833. unravel | 4834. unreal | 4835. unreachable | 4836. unreasonable | 4837. unrelenting | 4838. unreliable | 4839. unrest | 4840. unrestricted  
+4805. unruly | 4842. unsafe | 4843. unsatisfactory | 4844. unseen | 4845. unsettled | 4846. unskilled | 4847. unsolved | 4848. unstable | 4849. unsteady | 4850. unstructured  
+4806. unsuccessful | 4852. unsuitable | 4853. unsure | 4854. untidy | 4855. untie | 4856. untrue | 4857. unused | 4858. unusual | 4859. unveil | 4860. unwarranted  
+4807. unwieldy | 4862. unwilling | 4863. unwind | 4864. unwise | 4865. unworthy | 4866. upbeat | 4867. upgrade | 4868. upheaval | 4869. uphill | 4870. uphold  
+4808. upkeep | 4872. uplift | 4873. upon | 4874. upper | 4875. uppermost | 4876. uprising | 4877. uproar | 4878. uproot | 4879. upset | 4880. upside  
+4809. upstairs | 4882. upstream | 4883. uptake | 4884. upward | 4885. urban | 4886. urge | 4887. urgent | 4888. usage | 4889. user | 4890. utensil  
+4810. utilize | 4892. utility | 4893. utopian | 4894. utter | 4895. utterly | 4896. vacancy | 4897. vacant | 4898. vacate | 4899. vacation | 4900. vaccine  
+
+### 4,901 – 5,000
+4901. vacuum | 4902. vague | 4903. vaguely | 4904. vain | 4905. valedictory | 4906. valiant | 4907. validate | 4908. validity | 4909. valley | 4910. valuable  
+4902. evaluate | 4912. valuation | 4913. value | 4914. valve | 4915. vanguard | 4916. vanish | 4917. vanity | 4918. vanquish | 4919. variable | 4920. variance  
+4903. variant | 4922. variation | 4923. variety | 4924. various | 4925. varnish | 4926. vascular | 4927. vault | 4928. vector | 4929. vegan | 4930. veer  
+4904. vegetate | 4932. vegetation | 4933. vehicle | 4934. vehicular | 4935. veil | 4936. vein | 4937. velocity | 4938. vendor | 4939. veneer | 4940. venerate  
+4905. venial | 4942. venom | 4943. venomous | 4944. vent | 4945. ventilate | 4946. ventilation | 4947. venture | 4948. venue | 4949. veracious | 4950. veracity  
+4906. verbatim | 4952. verbose | 4953. verdict | 4954. verge | 4955. verify | 4956. veritable | 4957. vernacular | 4958. versatile | 4959. versatility | 4960. vertebrate  
+4907. vertical | 4962. vertigo | 4963. vessel | 4964. vestige | 4965. veteran | 4966. veterinarian | 4967. veto | 4968. vex | 4969. vexation | 4970. viable  
+4908. vibrancy | 4972. vibrant | 4973. vicar | 4974. vicarious | 4975. vice | 4976. vicinity | 4977. vicious | 4978. vicissitude | 4979. victim | 4980. victor  
+4909. victorious | 4982. victory | 4983. vigil | 4984. vigilance | 4985. vigilant | 4986. vignette | 4987. vigorous | 4988. vigor | 4989. vile | 4990. vilify  
+4910. villa | 4992. village | 4993. villain | 4994. vindicate | 4995. vindication | 4996. vintage | 4997. violate | 4998. violation | 4999. violence | 5000. zenith
+
+	  
+
 
