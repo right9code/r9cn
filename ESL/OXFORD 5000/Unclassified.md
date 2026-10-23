@@ -10,6 +10,16 @@
 
 ---
 
+## Word Index
+
+**Vocabulary List (5 words):**
+
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| [accounting](#a) | [angrily](#a) | [cleaning](#c) | [feeding](#f) | [major](#m) |
+
+---
+
 ## A
 
 ### [accounting](https://www.oxfordlearnersdictionaries.com/definition/english/accounting) *(noun)*
