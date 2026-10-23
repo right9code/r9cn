@@ -5,7 +5,8 @@ This repository contains structured vocabulary notes extracted from Oxford Learn
 **Total Vocabulary Count:** 5948 words across CEFR levels.
 
 - 📖 **Complete Word List (by CEFR Level):** [VOCABULARY (CEFR Levels).md](<VOCABULARY (CEFR Levels).md>) — All 5,948 word entries across levels with Parts of Speech (A–Z letter tables).
-- 📊 **General Frequency Lexicon:** [../VOCABULARY (frequency).md](<../VOCABULARY (frequency).md>) — Top 5,000 most used English words by frequency (COCA / NGSL).
+- 📊 **General Frequency Lexicon (Full Notes):** [../FREQUENCY 5000/README.md](<../FREQUENCY 5000/README.md>) — 5,000 most used English words across 5 batches with full definitions.
+- 📋 **General Frequency Word List (Quick View):** [../VOCABULARY (frequency).md](<../VOCABULARY (frequency).md>) — Compact table view of all 5,000 words.
 
 ## Levels Breakdown
 
