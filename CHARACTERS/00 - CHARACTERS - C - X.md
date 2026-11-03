@@ -110,15 +110,15 @@ Part II — Coorg:
 
 Part III — Tea from Assam:
 
-| Character | Who they are |
-|-----------|--------------|
-| Pranjol | Rajvir's classmate from Assam, reading a detective book on the train, son of the tea-garden manager |
-| Rajvir | Pranjol's classmate visiting Assam, fascinated by the tea gardens and full of knowledge of tea legends |
-| Mr Barua (Pranjol's father) | manager of the Dhekiabari Tea Estate, impressed with Rajvir's preparation about tea |
-| Pranjol's mother | waiting to receive the boys outside the station |
-| Tea vendor | calls out "chai-garam" and sells tea to Pranjol and Rajvir on the platform |
-| Bodhidharma | Buddhist monk in a legend who cut off his eyelids, which sprouted into tea leaves |
-| Chinese emperor | in a legend, discovered tea when leaves accidentally fell into boiling water |
+| Character                   | Who they are                                                                                           |
+| --------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Pranjol                     | Rajvir's classmate from Assam, reading a detective book on the train, son of the tea-garden manager    |
+| Rajvir                      | Pranjol's classmate visiting Assam, fascinated by the tea gardens and full of knowledge of tea legends |
+| Mr Barua (Pranjol's father) | manager of the Dhekiabari Tea Estate, impressed with Rajvir's preparation about tea                    |
+| Pranjol's mother            | waiting to receive the boys outside the station                                                        |
+| Tea vendor                  | calls out "chai-garam" and sells tea to Pranjol and Rajvir on the platform                             |
+| Bodhidharma                 | Buddhist monk in a legend who cut off his eyelids, which sprouted into tea leaves                      |
+| Chinese emperor             | in a legend, discovered tea when leaves accidentally fell into boiling water                           |
 
 ### Main 06 — [[C10 - M - 13 - MIJBIL THE OTTER|Mijbil the Otter]]
 
