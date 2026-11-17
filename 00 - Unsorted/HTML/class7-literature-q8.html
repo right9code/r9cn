@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Literature — Q8 Poem Extracts (8)</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 12px; border-radius: 999px; font-size: .85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.poem { background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 10px; padding: 12px; margin: 10px 0; font-size: .98rem; }
+.poem p { margin: 0 0 6px; }
+.poem p:last-of-type { margin-bottom: 0; }
+.poem .cite { display: none; margin-top: 8px; font-size: .82rem; color: var(--muted); font-style: italic; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 600; margin-bottom: 8px; font-size: .97rem; }
+.qhead .num { color: var(--primary); font-weight: 700; margin-right: 4px; }
+.options { display: flex; flex-direction: column; gap: 7px; }
+.opt { display: flex; gap: 8px; align-items: flex-start; text-align: left; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 10px; font-size: .93rem; cursor: pointer; width: 100%; }
+.opt .letter { font-weight: 700; color: var(--muted); flex: 0 0 auto; }
+.opt.selected { border-color: var(--primary); background: var(--primary-soft); }
+.opt.selected .letter { color: var(--primary); }
+.opt.ok { border-color: var(--success); background: var(--success-soft); }
+.opt.bad { border-color: var(--danger); background: var(--danger-soft); }
+.fill { margin: 4px 0 2px; }
+.fillrow { margin-bottom: 10px; }
+.filllabel { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); display: block; margin-bottom: 5px; }
+.slot { display: flex; flex-wrap: wrap; gap: 6px; min-height: 40px; padding: 6px; border: 1px dashed var(--border); border-radius: 10px; background: var(--surface-2); }
+.slot .placeholder { color: var(--muted); font-size: .85rem; align-self: center; padding: 2px 4px; }
+.slot.ok { border-style: solid; border-color: var(--success); background: var(--success-soft); }
+.slot.bad { border-style: solid; border-color: var(--danger); background: var(--danger-soft); }
+.chip { border: 1px solid var(--primary); background: var(--primary-soft); color: var(--text); border-radius: 8px; padding: 5px 9px; font-size: .88rem; font-weight: 600; cursor: pointer; }
+.tiles { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 7px; }
+.tile { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; padding: 7px 11px; font-size: .9rem; cursor: pointer; }
+.tile.used { opacity: .35; }
+.feedback { margin-top: 8px; font-size: .88rem; font-weight: 600; min-height: 1.1em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.qtools { margin-top: 8px; display: flex; gap: 14px; }
+.link-btn { background: none; border: none; color: var(--primary); font-size: .85rem; font-weight: 600; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.score { font-weight: 700; font-size: .95rem; margin-top: 10px; }
+.nav { display: flex; justify-content: space-between; gap: 8px; margin-top: 12px; }
+.overall { font-size: .88rem; color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Literature (Q8: Poem Extract)</h1>
+      <p class="sub">8 extracts · 5 questions each · 40 questions</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section C — Literature</span>
+    <p class="note"><strong>Same pattern as the paper:</strong> each extract is two stanzas, followed by (i) detail, (ii) meaning, (iii) identify the poem and poet, (iv) inference, (v) one word from the extract.</p>
+    <p class="note" style="margin-top:8px">In (iii) you <strong>build the answer from jumbled words</strong> — tap the words of the poem’s name in order, then the poet’s name in order. Both word sets contain extra words, including other poets’ names, so a right poem with a wrong writer is possible: only one full answer is correct. Tap a filled word to take it back.</p>
+    <p class="note" style="margin-top:8px">The poem’s name stays hidden until you check. No extract here is the one printed in the paper.</p>
+    <p class="overall" id="overall" style="margin:10px 0 0"></p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" id="tabs" role="tablist"></div>
+  </div>
+
+  <div id="stage"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var t = localStorage.getItem('c7-q8-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-q8-theme', next); } catch (e) {}
+  });
+
+  var ROMAN = ['i', 'ii', 'iii', 'iv', 'v'];
+  var LETTER = ['a', 'b', 'c', 'd'];
+
+  var POEMS = {
+    pb: 'Paper Boats — Rabindranath Tagore',
+    fm: 'A Funny Man — Natalie Joan',
+    tr: 'Travel — Edna St. Vincent Millay',
+    ms: 'My Dear Soldiers — A.P.J. Abdul Kalam'
+  };
+
+  // (iii) is no longer an MCQ. The answer is assembled from jumbled word tiles;
+  // each bank carries at least one decoy (another poem's word, another poet's
+  // name) so only one full combination is correct.
+  function identify(poemName, poetName, poemTiles, poetTiles, why) {
+    return {
+      type: 'fill',
+      q: 'Identify the poem and the poet.',
+      why: why,
+      parts: [
+        { label: 'Poem', answer: poemName, tiles: poemTiles },
+        { label: 'Poet', answer: poetName, tiles: poetTiles }
+      ]
+    };
+  }
+
+  var extracts = [
+    {
+      label: 'Extract 1', poem: POEMS.pb,
+      text: [
+        "I launch my paper boats and look up into the sky and see the little clouds setting the white bulging sails.",
+        "I know not what playmate of mine in the sky sends them down the air to race with my boats!",
+        "When night comes I bury my face in my arms and dream that my paper boats float on and on under the midnight stars.",
+        "The fairies of sleep are sailing in them, and the lading is their baskets full of dreams."
+      ],
+      questions: [
+        { q: 'What does the child see in the sky when he looks up?',
+          options: ['Kites flying over the village', 'Little clouds that look like white sails', 'Birds returning home at dusk', 'The moon rising above the stream'],
+          answer: 1, why: '“I look up into the sky and see the little clouds setting the white bulging sails” — the clouds are imagined as sails.' },
+        { q: 'What does “playmate of mine in the sky” suggest?',
+          options: ['He has a friend who lives in another land', 'He imagines the clouds as companions who send boats to race with his', 'Other children are flying kites with him', 'Someone in the sky writes letters to him'],
+          answer: 1, why: 'The child treats the clouds as playmates racing his boats — a child’s way of turning the sky into a playground.' },
+        identify('Paper Boats', 'Rabindranath Tagore',
+          ['Boats', 'Travel', 'Paper'],
+          ['Natalie', 'Tagore', 'Joan', 'Rabindranath'],
+          'Paper boats raced by cloud playmates and sailed by the fairies of sleep: “Paper Boats” by Rabindranath Tagore.'),
+        { q: 'The last two lines show that the child’s boats carry',
+          options: ['flowers to a strange land', 'his name and the name of his village', 'dreams, sailed by the fairies of sleep', 'letters for his friends across the stream'],
+          answer: 2, why: '“The fairies of sleep are sailing in them, and the lading is their baskets full of dreams.”' },
+        { q: 'Which word in the extract means the goods carried in a boat?',
+          options: ['lading', 'bulging', 'playmate', 'midnight'],
+          answer: 0, why: '“Lading” is the cargo a boat carries — here, baskets full of dreams.' }
+      ]
+    },
+    {
+      label: 'Extract 2', poem: POEMS.fm,
+      text: [
+        'One day a funny kind of man', 'Came walking down this street',
+        'He wore a shoe upon his head', 'And hats upon his feet.',
+        'He raised the shoe and smiled at me,', 'His manners were polite;',
+        'But never had I seen before', 'Such a funny sounding sight.'
+      ],
+      questions: [
+        { q: 'What did the man wear on his head?',
+          options: ['A cap', 'A hat', 'A shoe', 'A turban'],
+          answer: 2, why: '“He wore a shoe upon his head / And hats upon his feet” — everything about him is the wrong way round.' },
+        { q: '“His manners were polite” means that the man',
+          options: ['spoke in a very loud voice', 'behaved in a courteous, well-mannered way', 'was in a great hurry', 'was dressed very smartly'],
+          answer: 1, why: 'Polite manners are courteous behaviour — his behaviour is courteous even though his appearance is absurd.' },
+        identify('A Funny Man', 'Natalie Joan',
+          ['Funny', 'Travel', 'A', 'Man'],
+          ['Joan', 'Tagore', 'Rabindranath', 'Natalie'],
+          'The man with a shoe on his head and hats on his feet: “A Funny Man” by Natalie Joan.'),
+        { q: '“Such a funny sounding sight” is an example of',
+          options: ['a simile', 'alliteration', 'a mixture of the senses', 'a rhyme'],
+          answer: 2, why: 'A sight cannot really be “sounding”; the poet mixes seeing and hearing to show how strange the man looked.' },
+        { q: 'Which word in the extract means strange and amusing?',
+          options: ['polite', 'funny', 'raised', 'street'],
+          answer: 1, why: '“Funny” is repeated through the poem for exactly this meaning — odd and laughable.' }
+      ]
+    },
+    {
+      label: 'Extract 3', poem: POEMS.fm,
+      text: [
+        "He said, 'Allow me to present", "Your Highness with a rose.'",
+        'And taking out a currant bun', 'He held it to my nose.',
+        'I staggered back against the wall', "And then I answered, 'Well!",
+        "I never saw a rose with such", "A funny looking smell.'"
+      ],
+      questions: [
+        { q: 'What did the man actually hold out as a “rose”?',
+          options: ['A garden flower', 'A currant bun', 'A paper rose', 'A piece of fruit'],
+          answer: 1, why: '“And taking out a currant bun / He held it to my nose.” The “rose” is only a bun.' },
+        { q: 'Why did he hold it to the poet’s nose?',
+          options: ['So that she could smell it, as one smells a rose', 'So that she would take it from him', 'Because it was too hot to hold', 'To hide his face from her'],
+          answer: 0, why: 'A rose is offered to be smelt; he follows the ritual of offering a flower, but with a bun.' },
+        identify('A Funny Man', 'Natalie Joan',
+          ['Man', 'A', 'Funny', 'Boats'],
+          ['Rabindranath', 'Natalie', 'Tagore', 'Joan'],
+          '“Your Highness”, the currant bun offered as a rose: “A Funny Man” by Natalie Joan.'),
+        { q: 'Why did the poet stagger back against the wall?',
+          options: ['She was pushed by the man', 'She was startled by the absurd trick played on her', 'She was tired after walking', 'She wanted to run away from the street'],
+          answer: 1, why: '“I staggered back” — she is taken aback by being offered a bun as if it were a rose.' },
+        { q: 'Which word in the extract means moved unsteadily?',
+          options: ['staggered', 'present', 'currant', 'highness'],
+          answer: 0, why: 'To stagger is to move or step unsteadily, as she does against the wall.' }
+      ]
+    },
+    {
+      label: 'Extract 4', poem: POEMS.fm,
+      text: [
+        'He then began to sing a song,', 'And sat down on the ground;',
+        'You never heard in all your life', 'Such a funny feeling sound.',
+        "'My friend, why do you wear two hats", "Upon your feet?' I said.",
+        'He turned the other way about,', 'And hopped home on his head.'
+      ],
+      questions: [
+        { q: 'What question did the poet ask the man?',
+          options: ['Why he wore a shoe on his head', 'Why he wore two hats upon his feet', 'Where he lived in the town', 'Why he was singing on the ground'],
+          answer: 1, why: '“My friend, why do you wear two hats / Upon your feet?” I said.' },
+        { q: '“Such a funny feeling sound” suggests that the sound',
+          options: ['was too soft to be heard', 'seemed to be felt as well as heard', 'made the poet feel sleepy', 'came from a musical instrument'],
+          answer: 1, why: 'The poet mixes hearing with feeling, just as she mixed sight with sound earlier.' },
+        identify('A Funny Man', 'Natalie Joan',
+          ['A', 'Man', 'Funny', 'Soldiers'],
+          ['Joan', 'Natalie', 'Millay'],
+          'The man who sang on the ground and “hopped home on his head”: “A Funny Man” by Natalie Joan.'),
+        { q: 'What does the last line tell us about the man?',
+          options: ['He was angry at the question', 'He answered with another absurd action instead of words', 'He could not understand the question', 'He was in a hurry to reach home before dark'],
+          answer: 1, why: 'Asked a sensible question, he simply turns about and hops home on his head — the nonsense never stops.' },
+        { q: 'Which word in the extract means jumped on one foot?',
+          options: ['hopped', 'turned', 'staggered', 'feeling'],
+          answer: 0, why: '“Hopped home on his head” — to hop is to spring along on one foot.' }
+      ]
+    },
+    {
+      label: 'Extract 5', poem: POEMS.tr,
+      text: [
+        'The railroad track is miles away,', 'And the day is loud with voices speaking,',
+        "Yet there isn't a train goes by all day", 'But I hear its whistle shrieking.',
+        "All night there isn't a train goes by,", 'Though the night is still for sleep and dreaming,',
+        'But I see its cinders red on the sky,', 'And hear its engine steaming.'
+      ],
+      questions: [
+        { q: 'How far away is the railroad track?',
+          options: ['Just beyond the garden', 'A few streets away', 'Miles away', 'On the other side of the hill'],
+          answer: 2, why: 'The poem opens with “The railroad track is miles away” — yet she notices every train.' },
+        { q: '“The day is loud with voices speaking” means that the day is',
+          options: ['full of the noise of people talking', 'unusually silent and empty', 'full of music from the train', 'too hot to go outside'],
+          answer: 0, why: 'The day is noisy with human chatter, and still she catches the whistle above it.' },
+        identify('Travel', 'Edna St. Vincent Millay',
+          ['Travel', 'Boats'],
+          ['Millay', 'Tagore', 'Vincent', 'Edna', 'St.'],
+          'The railroad miles away and the whistle she cannot stop hearing: “Travel” by Edna St. Vincent Millay.'),
+        { q: 'Even though the track is far away, the speaker says that',
+          options: ['she never actually hears a train', 'she hears the whistle of every train that passes', 'she walks to the track every evening', 'the trains stop running at night'],
+          answer: 1, why: '“Yet there isn’t a train goes by all day / But I hear its whistle shrieking” — she hears them all.' },
+        { q: 'Which word in the extract describes a sharp, shrill cry?',
+          options: ['shrieking', 'steaming', 'still', 'cinders'],
+          answer: 0, why: '“Whistle shrieking” — shrieking is a sharp, piercing sound, and it makes the whistle seem alive.' }
+      ]
+    },
+    {
+      label: 'Extract 6', poem: POEMS.tr,
+      text: [
+        "All night there isn't a train goes by,", 'Though the night is still for sleep and dreaming,',
+        'But I see its cinders red on the sky,', 'And hear its engine steaming.',
+        'My heart is warm with the friends I make,', "And better friends I'll not be knowing,",
+        "Yet there isn't a train I wouldn't take,", "No matter where it's going."
+      ],
+      questions: [
+        { q: 'When does the speaker see the red cinders on the sky?',
+          options: ['At dawn', 'At noon', 'All night', 'Only in winter'],
+          answer: 2, why: '“All night there isn’t a train goes by … But I see its cinders red on the sky.”' },
+        { q: '“The night is still for sleep and dreaming” tells us that the night is',
+          options: ['quiet and meant for rest', 'cold and uncomfortable', 'full of the noise of trains', 'too short for sleeping'],
+          answer: 0, why: 'The night is silent and made for rest — yet she is still watching and listening for trains.' },
+        identify('Travel', 'Edna St. Vincent Millay',
+          ['Man', 'Travel'],
+          ['Vincent', 'St.', 'Kalam', 'Edna', 'Millay'],
+          'Cinders at night and “no matter where it’s going”: “Travel” by Edna St. Vincent Millay.'),
+        { q: 'What do these lines show about the speaker?',
+          options: ['She dislikes the place she lives in', 'The thought of the train is always on her mind', 'She is afraid of travelling alone', 'She sleeps badly every night'],
+          answer: 1, why: 'She notices the train by day and by night, even while valuing her friends — travel fills her thoughts.' },
+        { q: 'Which word in the extract suggests the engine is giving off steam?',
+          options: ['steaming', 'dreaming', 'cinders', 'going'],
+          answer: 0, why: '“Hear its engine steaming” — steaming shows the engine letting out steam as it runs.' }
+      ]
+    },
+    {
+      label: 'Extract 7', poem: POEMS.ms,
+      text: [
+        'Climbing the heights or striding the valleys',
+        'Defending the deserts or guarding the marshes',
+        'Surveillance in seas and by securing the air',
+        'Prime of your youth given to the nation!!'
+      ],
+      questions: [
+        { q: 'Which places does the poet say the soldiers guard?',
+          options: ['Only the mountains and the deserts', 'Heights, valleys, deserts, marshes, seas and the air', 'Villages and cities', 'Rivers and forests only'],
+          answer: 1, why: 'The lines list heights, valleys, deserts, marshes, seas and air — the soldiers guard every kind of terrain.' },
+        { q: '“Surveillance in seas and by securing the air” means that the soldiers',
+          options: ['travel by ship and by plane', 'watch over the sea and guard the air space', 'build roads across the sea', 'train others to fly'],
+          answer: 1, why: 'Surveillance is close watching — they keep watch at sea and secure the country’s air.' },
+        identify('My Dear Soldiers', 'A.P.J. Abdul Kalam',
+          ['Soldiers', 'Dear', 'My', 'Man'],
+          ['Kalam', 'Abdul', 'Tagore', 'A.P.J.'],
+          'Heights, valleys, deserts and “Prime of your youth given to the nation!!”: “My Dear Soldiers” by A.P.J. Abdul Kalam.'),
+        { q: '“Prime of your youth given to the nation” shows the soldiers’',
+          options: ['love of adventure', 'sacrifice of their best years', 'wish for promotion', 'training in many terrains'],
+          answer: 1, why: '“Prime of youth” is the strongest, best time of life — they spend it in service of the country.' },
+        { q: 'Which word in the extract means the best or most vigorous period?',
+          options: ['prime', 'marshes', 'surveillance', 'striding'],
+          answer: 0, why: 'Prime means the peak — the best years of a person’s life.' }
+      ]
+    },
+    {
+      label: 'Extract 8', poem: POEMS.ms,
+      text: [
+        'Wind chimes of my land vibrate your feat',
+        'We pray for you brave men!!',
+        'May the Lord bless you all!!'
+      ],
+      questions: [
+        { q: 'What do the “wind chimes of my land” do?',
+          options: ['Hang outside the soldiers’ houses', 'Sound in honour of the soldiers’ achievement', 'Warn the soldiers of danger', 'Ring to wake the soldiers each morning'],
+          answer: 1, why: '“Wind chimes of my land vibrate your feat” — the land itself seems to ring out for their deed.' },
+        { q: '“Vibrate your feat” means that the chimes',
+          options: ['make a sound in praise of the soldiers’ achievement', 'shake because of the strong wind', 'hang above the soldiers’ camp', 'are played by the soldiers themselves'],
+          answer: 0, why: 'Their feat — their brave achievement — is what the chimes of the land answer with sound.' },
+        identify('My Dear Soldiers', 'A.P.J. Abdul Kalam',
+          ['My', 'Boats', 'Soldiers', 'Dear'],
+          ['A.P.J.', 'Kalam', 'Joan', 'Abdul'],
+          'The wind chimes, the prayer for “brave men” and the blessing: “My Dear Soldiers” by A.P.J. Abdul Kalam.'),
+        { q: 'The poem ends with a prayer, which shows the poet’s',
+          options: ['fear for the country', 'gratitude and goodwill towards the soldiers', 'hope for peace talks', 'sorrow at their leaving home'],
+          answer: 1, why: '“We pray for you brave men!! / May the Lord bless you all!!” — the prayer is thanks and a wish for their safety.' },
+        { q: 'Which word in the extract means a remarkable achievement?',
+          options: ['feat', 'vibrate', 'brave', 'bless'],
+          answer: 0, why: 'A feat is a brave or remarkable act — here, the soldiers’ service to the nation.' }
+      ]
+    }
+  ];
+
+  var tabsEl = document.getElementById('tabs');
+  var stage = document.getElementById('stage');
+  var overallEl = document.getElementById('overall');
+  var current = 0;
+  var TOTAL = extracts.reduce(function (a, e) { return a + e.questions.length; }, 0);
+
+  function blankState(ex) {
+    return {
+      picked: ex.questions.map(function (q) { return q.type === 'fill' ? q.parts.map(function () { return []; }) : null; }),
+      checked: false,
+      revealed: ex.questions.map(function () { return false; }),
+      correct: null
+    };
+  }
+  var state = extracts.map(blankState);
+
+  extracts.forEach(function (ex, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'tab' + (i === 0 ? ' active' : ''); b.textContent = ex.label;
+    b.addEventListener('click', function () { show(i); });
+    tabsEl.appendChild(b);
+  });
+
+  function updateOverall() {
+    var done = 0, got = 0;
+    state.forEach(function (s) { if (s.checked) { done++; got += s.correct; } });
+    overallEl.textContent = done === 0 ? '' : 'Checked ' + done + ' of ' + extracts.length + ' extracts · overall ' + got + ' / ' + TOTAL;
+  }
+
+  function show(i) {
+    current = i;
+    Array.prototype.forEach.call(tabsEl.children, function (c, k) { c.classList.toggle('active', k === i); });
+    render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function render() {
+    var ex = extracts[current], st = state[current];
+    stage.innerHTML = '';
+
+    var card = document.createElement('div'); card.className = 'card';
+    var tag = document.createElement('span'); tag.className = 'section-tag'; tag.textContent = ex.label + ' of ' + extracts.length;
+    card.appendChild(tag);
+    var h = document.createElement('div'); h.className = 'qhead'; h.style.fontSize = '1.02rem';
+    h.textContent = 'Read the two stanzas and answer the questions that follow.';
+    card.appendChild(h);
+
+    var poem = document.createElement('div'); poem.className = 'poem';
+    ex.text.forEach(function (line) { var p = document.createElement('p'); p.textContent = line; poem.appendChild(p); });
+    var cite = document.createElement('span'); cite.className = 'cite'; cite.style.display = 'none'; cite.textContent = ex.poem; poem.appendChild(cite);
+    card.appendChild(poem);
+    stage.appendChild(card);
+
+    ex.questions.forEach(function (q, qi) {
+      var qc = document.createElement('div'); qc.className = 'q';
+      var qh = document.createElement('div'); qh.className = 'qhead';
+      qh.innerHTML = '<span class="num">(' + ROMAN[qi] + ')</span>';
+      qh.appendChild(document.createTextNode(' ' + q.q));
+      qc.appendChild(qh);
+
+      var fb = document.createElement('div'); fb.className = 'feedback';
+
+      if (q.type === 'fill') {
+        var wrap = document.createElement('div'); wrap.className = 'fill';
+        q.parts.forEach(function (part, pi) {
+          var row = document.createElement('div'); row.className = 'fillrow';
+          var lb = document.createElement('span'); lb.className = 'filllabel'; lb.textContent = part.label;
+          row.appendChild(lb);
+          var slot = document.createElement('div'); slot.className = 'slot';
+          row.appendChild(slot);
+          var tiles = document.createElement('div'); tiles.className = 'tiles';
+          row.appendChild(tiles);
+          wrap.appendChild(row);
+
+          var need = part.answer.split(' ').length;
+
+          function drawSlot() {
+            slot.innerHTML = '';
+            if (st.picked[qi][pi].length === 0) {
+              var ph = document.createElement('span'); ph.className = 'placeholder';
+              ph.textContent = 'tap the words below, in order';
+              slot.appendChild(ph);
+            }
+            st.picked[qi][pi].forEach(function (word, wi) {
+              var chip = document.createElement('button');
+              chip.type = 'button'; chip.className = 'chip'; chip.textContent = word;
+              chip.addEventListener('click', function () {
+                if (st.checked) return;
+                st.picked[qi][pi].splice(wi, 1);
+                drawSlot(); drawTiles();
+              });
+              slot.appendChild(chip);
+            });
+          }
+
+          function drawTiles() {
+            tiles.innerHTML = '';
+            part.tiles.forEach(function (word) {
+              var used = st.picked[qi][pi].indexOf(word) !== -1;
+              var b = document.createElement('button');
+              b.type = 'button'; b.className = 'tile' + (used ? ' used' : ''); b.textContent = word;
+              b.disabled = used || st.picked[qi][pi].length >= need;
+              b.addEventListener('click', function () {
+                if (st.checked || st.picked[qi][pi].length >= need) return;
+                st.picked[qi][pi].push(word);
+                drawSlot(); drawTiles();
+              });
+              tiles.appendChild(b);
+            });
+          }
+
+          drawSlot(); drawTiles();
+
+          var toolsRow = document.createElement('div'); toolsRow.className = 'qtools';
+          var clearBtn = document.createElement('button');
+          clearBtn.type = 'button'; clearBtn.className = 'link-btn'; clearBtn.textContent = 'Clear';
+          clearBtn.addEventListener('click', function () {
+            if (st.checked) return;
+            st.picked[qi][pi] = [];
+            drawSlot(); drawTiles();
+          });
+          toolsRow.appendChild(clearBtn);
+          row.appendChild(toolsRow);
+        });
+        qc.appendChild(wrap);
+      } else {
+        var opts = document.createElement('div'); opts.className = 'options';
+        q.options.forEach(function (text, oi) {
+          var b = document.createElement('button');
+          b.type = 'button'; b.className = 'opt' + (st.picked[qi] === oi ? ' selected' : '');
+          b.innerHTML = '<span class="letter">(' + LETTER[oi] + ')</span><span></span>';
+          b.lastChild.textContent = text;
+          b.addEventListener('click', function () {
+            if (st.checked) return;
+            st.picked[qi] = oi;
+            Array.prototype.forEach.call(opts.children, function (c, k) { c.classList.toggle('selected', k === oi); });
+          });
+          opts.appendChild(b);
+        });
+        qc.appendChild(opts);
+      }
+
+      var tools = document.createElement('div'); tools.className = 'qtools';
+      var showBtn = document.createElement('button');
+      showBtn.type = 'button'; showBtn.className = 'link-btn';
+      showBtn.textContent = st.revealed[qi] ? 'Hide answer' : 'Show answer';
+      tools.appendChild(showBtn);
+      qc.appendChild(tools);
+      qc.appendChild(fb);
+
+      showBtn.addEventListener('click', function () {
+        st.revealed[qi] = !st.revealed[qi];
+        showBtn.textContent = st.revealed[qi] ? 'Hide answer' : 'Show answer';
+        if (st.revealed[qi]) {
+          fb.className = 'feedback info';
+          fb.textContent = q.type === 'fill'
+            ? 'Answer: ' + q.parts[0].answer + ' — ' + q.parts[1].answer + '. ' + q.why
+            : 'Answer: (' + LETTER[q.answer] + ') ' + q.options[q.answer] + ' — ' + q.why;
+        } else { fb.className = 'feedback'; fb.textContent = ''; }
+      });
+
+      stage.appendChild(qc);
+    });
+
+    var actions = document.createElement('div'); actions.className = 'actions';
+    var check = document.createElement('button'); check.type = 'button'; check.className = 'btn primary'; check.textContent = 'Check answers';
+    var reset = document.createElement('button'); reset.type = 'button'; reset.className = 'btn'; reset.textContent = 'Reset this extract';
+    actions.appendChild(check); actions.appendChild(reset);
+    stage.appendChild(actions);
+
+    var score = document.createElement('div'); score.className = 'score';
+    stage.appendChild(score);
+
+    var nav = document.createElement('div'); nav.className = 'nav';
+    var prev = document.createElement('button'); prev.type = 'button'; prev.className = 'btn'; prev.textContent = '‹ Previous extract';
+    var next = document.createElement('button'); next.type = 'button'; next.className = 'btn primary'; next.textContent = 'Next extract ›';
+    prev.disabled = current === 0; next.disabled = current === extracts.length - 1;
+    prev.style.opacity = current === 0 ? '.45' : '1';
+    next.style.opacity = current === extracts.length - 1 ? '.45' : '1';
+    prev.addEventListener('click', function () { if (current > 0) show(current - 1); });
+    next.addEventListener('click', function () { if (current < extracts.length - 1) show(current + 1); });
+    nav.appendChild(prev); nav.appendChild(next);
+    stage.appendChild(nav);
+
+    if (st.checked) { markAll(); }
+
+    function answeredCount() {
+      return ex.questions.filter(function (q, qi) {
+        if (q.type === 'fill') {
+          return q.parts.every(function (part, pi) { return st.picked[qi][pi].length === part.answer.split(' ').length; });
+        }
+        return st.picked[qi] !== null;
+      }).length;
+    }
+
+    check.addEventListener('click', function () {
+      var answered = answeredCount();
+      if (answered < ex.questions.length) {
+        score.className = 'score';
+        score.style.color = 'var(--muted)';
+        score.textContent = 'Answer all five questions first. (' + answered + ' of ' + ex.questions.length + ' complete)';
+        return;
+      }
+      st.checked = true;
+      markAll();
+      updateOverall();
+    });
+
+    reset.addEventListener('click', function () {
+      state[current] = blankState(ex);
+      updateOverall();
+      render();
+    });
+
+    function markAll() {
+      var rows = stage.querySelectorAll('.q');
+      var correct = 0;
+      ex.questions.forEach(function (q, qi) {
+        var row = rows[qi];
+        var fb = row.querySelector('.feedback');
+        var isRight;
+
+        if (q.type === 'fill') {
+          isRight = true;
+          var partsRight = q.parts.map(function (part, pi) {
+            var ok = st.picked[qi][pi].join(' ') === part.answer;
+            if (!ok) isRight = false;
+            return ok;
+          });
+          row.querySelectorAll('.slot').forEach(function (s, si) {
+            s.classList.remove('ok', 'bad');
+            s.classList.add(partsRight[si] ? 'ok' : 'bad');
+          });
+          if (!st.revealed[qi]) {
+            fb.className = 'feedback ' + (isRight ? 'ok' : 'bad');
+            fb.textContent = isRight
+              ? 'Correct — ' + q.parts[0].answer + ' by ' + q.parts[1].answer + '. ' + q.why
+              : (partsRight[0] ? 'Poem right, ' : 'Poem wrong, ') + (partsRight[1] ? 'poet right' : 'poet wrong') +
+                ' — the answer is ' + q.parts[0].answer + ' by ' + q.parts[1].answer + '.';
+          }
+        } else {
+          var chosen = st.picked[qi];
+          isRight = chosen === q.answer;
+          var opts = row.querySelectorAll('.opt');
+          Array.prototype.forEach.call(opts, function (c, k) {
+            c.classList.remove('selected');
+            if (k === q.answer) c.classList.add('ok');
+            else if (k === chosen) c.classList.add('bad');
+          });
+          if (!st.revealed[qi]) {
+            fb.className = 'feedback ' + (isRight ? 'ok' : 'bad');
+            fb.textContent = isRight ? 'Correct — ' + q.why : 'Look again. The correct option is marked in green.';
+          }
+        }
+
+        if (isRight) correct++;
+        row.classList.toggle('correct', isRight);
+        row.classList.toggle('wrong', !isRight);
+      });
+      cite.style.display = 'block';
+      st.correct = correct;
+      score.className = 'score';
+      score.style.color = correct === ex.questions.length ? 'var(--success)' : 'var(--text)';
+      score.textContent = 'Score: ' + correct + ' / ' + ex.questions.length + (correct === ex.questions.length ? ' — all correct!' : '');
+    }
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

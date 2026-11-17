@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Reading Demo — Section A (Q2)</title>
+<style>
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --border: #d8dee8;
+  --primary: #2563eb;
+  --primary-soft: #dbeafe;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #334155;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a5f;
+  --success: #4ade80;
+  --success-soft: #14532d;
+  --danger: #f87171;
+  --danger-soft: #7f1d1d;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+h1 { font-size: 1.2rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.section-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px;
+}
+h2 { font-size: 1rem; margin: 0 0 8px; }
+.passage { font-size: 1rem; }
+.passage p { margin: 0 0 10px; }
+.passage p:last-child { margin-bottom: 0; }
+.table-wrap { overflow-x: auto; margin: 10px 0; }
+table { width: 100%; border-collapse: collapse; min-width: 280px; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--surface-2); font-weight: 700; }
+.instructions { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
+.q {
+  border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px;
+  background: var(--surface);
+}
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 600; margin-bottom: 8px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.options { display: grid; gap: 8px; }
+.opt {
+  display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 12px; border-radius: 10px; font-size: .97rem; cursor: pointer;
+}
+.opt.selected { border-color: var(--primary); background: var(--primary-soft); }
+.opt.correct { border-color: var(--success); background: var(--success-soft); }
+.opt.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.opt .letter { font-weight: 700; min-width: 1.2em; }
+.word-input {
+  width: 100%; max-width: 260px; padding: 10px 12px; font-size: 1rem; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+}
+.word-input.correct { border-color: var(--success); background: var(--success-soft); }
+.word-input.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qtools { margin-top: 8px; }
+.link-btn {
+  border: 0; background: none; color: var(--primary); padding: 0; font: inherit; font-size: .88rem;
+  font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+}
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); }
+.feedback.bad { color: var(--danger); }
+.feedback.info { color: var(--muted); font-weight: 500; }
+.feedback .why { display: block; margin-top: 4px; font-weight: 500; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.btn {
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.scorebar {
+  margin-top: 12px; padding: 12px; border-radius: 12px; background: var(--surface-2);
+  border: 1px solid var(--border); font-weight: 700;
+}
+.small { font-size: .86rem; color: var(--muted); font-weight: 500; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Reading Skill (Q2)</h1>
+      <p class="sub">Section A, Q2 style: passage with data table + 10 questions</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section A — Reading Skill</span>
+    <h2>2. Read the passage given below:</h2>
+    <div class="passage">
+      <p>Water is essential for life, yet fresh water is limited and must be used wisely. Only a tiny share of the water on earth is fit for drinking, and the same supply has to serve farms, factories, hospitals and homes. In many towns, people waste water without realising it, because it arrives so easily from a tap.</p>
+      <p>A single dripping tap can waste nearly 20 litres of water in a day. That is enough drinking water for a small family. Leaking pipes in bathrooms and gardens often go unnoticed for weeks, quietly draining away a resource that millions of people walk kilometres to collect.</p>
+      <p>Simple habits can make a big difference. Turning off the tap while brushing your teeth, fixing leaking pipes, and using a bucket instead of a hose to wash vehicles can save hundreds of litres every month. Taking shorter showers and watering plants in the evening also help, because less water evaporates in the cooler air.</p>
+      <p>Schools and communities can also help by practising rainwater harvesting, a method of collecting and storing rainwater from rooftops for later use. The collected water can be used for gardening and cleaning, which reduces the pressure on the town supply. In 2024, Sunrise Public School began a "Save Every Drop" campaign. Students checked taps for leaks, placed posters around the campus, and recorded how much water different actions saved in one month.</p>
+      <p>The results showed that small efforts, when done regularly, can stop water from being wasted and protect this precious resource for the future. The school now repeats the campaign every year, and several neighbouring schools have asked the students to explain their method.</p>
+      <div class="table-wrap">
+        <table aria-label="Water saved in one month during the campaign">
+          <thead>
+            <tr>
+              <th>Water-saving action</th>
+              <th>Water saved in one month (litres)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Fixing leaking taps</td><td>120</td></tr>
+            <tr><td>Turning off taps while brushing</td><td>90</td></tr>
+            <tr><td>Using buckets for cleaning</td><td>80</td></tr>
+            <tr><td>Collecting rainwater</td><td>60</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="quiz">
+    <p class="instructions"><strong>Answer the questions.</strong> For (i)–(v), tap the correct option. For (vi)–(x), type <strong>one word</strong> where the answer is one word (capital/small letters both accepted); tap an option where the answer is more than one word. Use <strong>Check answers</strong> for feedback, or <strong>Show answer</strong> on a question to see the model answer and why.</p>
+
+    <div class="q" data-q="i" data-type="mcq" data-answer="c" data-why="The passage states that a single dripping tap can waste nearly 20 litres of water in a day.">
+      <div class="qhead"><span class="num">(i)</span> How much water can a single dripping tap waste in a day?</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>5 litres</span></button>
+        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>10 litres</span></button>
+        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>Nearly 20 litres</span></button>
+        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>Nearly 100 litres</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="ii" data-type="mcq" data-answer="b" data-why="Rainwater harvesting is the method of collecting and storing rainwater from rooftops for later use.">
+      <div class="qhead"><span class="num">(ii)</span> What is the method of collecting and storing rainwater from rooftops called?</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>Water recycling</span></button>
+        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>Rainwater harvesting</span></button>
+        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>Drip irrigation</span></button>
+        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>Water filtering</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="iii" data-type="mcq" data-answer="a" data-why="According to the table, fixing leaking taps saved 120 litres, which is the highest amount.">
+      <div class="qhead"><span class="num">(iii)</span> According to the table, which action saved the most water in one month?</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>Fixing leaking taps</span></button>
+        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>Turning off taps while brushing</span></button>
+        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>Using buckets for cleaning</span></button>
+        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>Collecting rainwater</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="iv" data-type="mcq" data-answer="d" data-why="The total is 120 + 90 + 80 + 60 = 350 litres saved in one month.">
+      <div class="qhead"><span class="num">(iv)</span> What was the total amount of water saved in one month?</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>290 litres</span></button>
+        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>310 litres</span></button>
+        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>330 litres</span></button>
+        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>350 litres</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="v" data-type="mcq" data-answer="c" data-why="According to the table, collecting rainwater saved 60 litres, which is the least among the actions listed.">
+      <div class="qhead"><span class="num">(v)</span> Which action saved the least amount of water according to the table?</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>Fixing leaking taps</span></button>
+        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>Using buckets for cleaning</span></button>
+        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>Collecting rainwater</span></button>
+        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>Turning off taps while brushing</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="vi" data-type="text" data-answer="2024" data-why="The passage states that in 2024, Sunrise Public School began a ‘Save Every Drop’ campaign.">
+      <div class="qhead"><span class="num">(vi)</span> In which year did Sunrise Public School begin the campaign? <span style="font-weight:500;color:var(--muted)">(one word)</span></div>
+      <input class="word-input" type="text" inputmode="numeric" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word" aria-label="Answer for question vi">
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="vii" data-type="text" data-answer="wasted" data-why="Fixing leaks and saving regularly can stop water from being wasted.">
+      <div class="qhead"><span class="num">(vii)</span> Fill in the blank: Fixing leaks can stop water from being ____________. <span style="font-weight:500;color:var(--muted)">(one word)</span></div>
+      <input class="word-input" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word" aria-label="Answer for question vii">
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="viii" data-type="mcq" data-answer="false" data-why="The passage clearly states that fresh water is limited and must be used wisely.">
+      <div class="qhead"><span class="num">(viii)</span> State whether the following statement is TRUE or FALSE: "Fresh water is unlimited and will never run out."</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="true"><span class="letter"></span><span>TRUE</span></button>
+        <button type="button" class="opt" data-val="false"><span class="letter"></span><span>FALSE</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="ix" data-type="mcq" data-answer="b" data-why="Saving water is important because fresh water is limited and needs to be protected for the future.">
+      <div class="qhead"><span class="num">(ix)</span> Complete the sentence: Saving water is important because ____________.</div>
+      <div class="options">
+        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>water has no use in daily life</span></button>
+        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>fresh water is limited and must be protected</span></button>
+        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>leaking taps save more water</span></button>
+        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>rain never falls on rooftops</span></button>
+      </div>
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="q" data-q="x" data-type="text" data-answer="brushing" data-why="The passage suggests turning off the tap while brushing your teeth to save water.">
+      <div class="qhead"><span class="num">(x)</span> Fill in the blank: Turn off the tap while ____________ your teeth. <span style="font-weight:500;color:var(--muted)">(one word)</span></div>
+      <input class="word-input" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word" aria-label="Answer for question x">
+      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="actions">
+      <button class="btn primary" id="checkBtn" type="button">Check answers</button>
+      <button class="btn" id="resetBtn" type="button">Reset</button>
+    </div>
+    <div class="scorebar" id="scorebar" aria-live="polite">Score: — / 10
+      <div class="small">Tap an option to change it. Type answers in small or capital letters. Use “Check answers” for instant feedback on all questions.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c7-reading-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-reading-theme', next); } catch (e) {}
+  });
+
+  function norm(s) {
+    return (s || '').toString().trim().toLowerCase().replace(/\s+/g, ' ');
+  }
+
+  var quiz = document.getElementById('quiz');
+
+  quiz.querySelectorAll('.q[data-type="mcq"]').forEach(function (q) {
+    q.querySelectorAll('.opt').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
+        btn.classList.add('selected');
+        q.dataset.selected = btn.getAttribute('data-val');
+        q.classList.remove('correct', 'wrong');
+        q.querySelector('.feedback').textContent = '';
+        q.querySelector('.feedback').className = 'feedback';
+        var sb = q.querySelector('.show-ans'); if (sb) { sb.setAttribute('data-shown','false'); sb.textContent = 'Show answer'; }
+      });
+    });
+  });
+
+  quiz.querySelectorAll('.q[data-type="text"] .word-input, .q[data-type="text-multi"] .word-input').forEach(function (inp) {
+    inp.addEventListener('input', function () {
+      var q = inp.closest('.q');
+      q.classList.remove('correct', 'wrong');
+      inp.classList.remove('correct', 'wrong');
+      q.querySelectorAll('.word-input').forEach(function(i){ i.classList.remove('correct','wrong'); });
+      q.querySelector('.feedback').textContent = '';
+      q.querySelector('.feedback').className = 'feedback';
+      var sb = q.querySelector('.show-ans'); if (sb) { sb.setAttribute('data-shown','false'); sb.textContent = 'Show answer'; }
+    });
+  });
+
+  function escapeHtml(s) {
+    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function whyHtml(q) {
+    var w = q.getAttribute('data-why');
+    return w ? '<span class="why">' + escapeHtml(w) + '</span>' : '';
+  }
+  function matchesAny(val, answers) {
+    return answers.split('|').some(function (a) { return norm(val) === norm(a); });
+  }
+
+  function hideModel(q) {
+    var fb = q.querySelector('.feedback');
+    q.classList.remove('correct', 'wrong');
+    q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+    q.querySelectorAll('.word-input').forEach(function (i) { i.classList.remove('correct', 'wrong'); });
+    fb.textContent = '';
+    fb.className = 'feedback';
+    var btn = q.querySelector('.show-ans');
+    if (btn) { btn.setAttribute('data-shown', 'false'); btn.textContent = 'Show answer'; }
+  }
+
+  function showModel(q) {
+    var type = q.getAttribute('data-type');
+    var fb = q.querySelector('.feedback');
+    q.classList.remove('correct', 'wrong');
+    q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+    q.querySelectorAll('.word-input').forEach(function (i) { i.classList.remove('correct', 'wrong'); });
+    var text = '';
+    if (type === 'mcq') {
+      var ans = q.getAttribute('data-answer');
+      q.querySelectorAll('.opt').forEach(function (b) { if (b.getAttribute('data-val') === ans) b.classList.add('correct'); });
+      var opt = q.querySelector('.opt[data-val="' + ans + '"]');
+      text = 'Answer: ' + (opt ? opt.textContent.replace(/\s+/g, ' ').trim() : ans) + '.';
+    } else if (type === 'text') {
+      text = 'Answer: ' + q.getAttribute('data-answer').split('|')[0] + '.';
+    } else if (type === 'text-multi') {
+      var parts = q.getAttribute('data-answers').split('|');
+      text = 'Answers: (a) ' + parts[0] + ', (b) ' + parts[1] + '.';
+    }
+    fb.innerHTML = escapeHtml(text) + whyHtml(q);
+    fb.className = 'feedback info';
+    var btn = q.querySelector('.show-ans');
+    if (btn) { btn.setAttribute('data-shown', 'true'); btn.textContent = 'Hide answer'; }
+  }
+
+  function markQuestion(q) {
+    var type = q.getAttribute('data-type');
+    var fb = q.querySelector('.feedback');
+    var ok = false;
+    q.classList.remove('correct', 'wrong');
+
+    if (type === 'mcq') {
+      var ans = q.getAttribute('data-answer');
+      var sel = q.dataset.selected || '';
+      q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+      if (!sel) {
+        fb.textContent = 'Not answered yet.';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      q.querySelectorAll('.opt').forEach(function (b) {
+        var v = b.getAttribute('data-val');
+        if (v === ans) b.classList.add('correct');
+        if (v === sel && sel !== ans) b.classList.add('wrong');
+      });
+      ok = sel === ans;
+      fb.innerHTML = escapeHtml(ok ? 'Correct.' : 'Not quite. The correct answer is highlighted.') + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    } else if (type === 'text') {
+      var inp = q.querySelector('.word-input');
+      var expected = q.getAttribute('data-answer');
+      var val = norm(inp.value);
+      inp.classList.remove('correct', 'wrong');
+      if (!val) {
+        fb.textContent = 'Not answered yet (type one word).';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      ok = matchesAny(val, expected);
+      inp.classList.add(ok ? 'correct' : 'wrong');
+      fb.innerHTML = escapeHtml(ok ? 'Correct.' : 'Not quite. Correct answer: ' + expected.split('|')[0] + '.') + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    } else if (type === 'text-multi') {
+      var expectedParts = q.getAttribute('data-answers').split('|');
+      var inputs = Array.from(q.querySelectorAll('.word-input'));
+      var allFilled = true;
+      inputs.forEach(function (inp) {
+        inp.classList.remove('correct', 'wrong');
+        if (!norm(inp.value)) allFilled = false;
+      });
+      if (!allFilled) {
+        fb.textContent = 'Not answered yet (fill in both parts, one word each).';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      var correctCount = 0;
+      inputs.forEach(function (inp, idx) {
+        var val = norm(inp.value);
+        var good = matchesAny(val, expectedParts[idx]);
+        if (good) { correctCount++; inp.classList.add('correct'); }
+        else { inp.classList.add('wrong'); }
+      });
+      ok = correctCount === expectedParts.length;
+      if (ok) {
+        fb.innerHTML = 'Correct.' + whyHtml(q);
+        fb.className = 'feedback ok';
+      } else {
+        fb.innerHTML = escapeHtml('Not quite. Correct answers: (a) ' + expectedParts[0].split('|')[0] + ', (b) ' + expectedParts[1].split('|')[0] + '.') + whyHtml(q);
+        fb.className = 'feedback bad';
+      }
+    }
+
+    q.classList.add(ok ? 'correct' : 'wrong');
+    return ok;
+  }
+
+  quiz.querySelectorAll('.show-ans').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var q = btn.closest('.q');
+      if (btn.getAttribute('data-shown') === 'true') hideModel(q);
+      else showModel(q);
+    });
+  });
+
+  document.getElementById('checkBtn').addEventListener('click', function () {
+    var qs = Array.from(quiz.querySelectorAll('.q'));
+    var score = 0;
+    qs.forEach(function (q) { if (markQuestion(q)) score++; });
+    document.getElementById('scorebar').childNodes[0].textContent = 'Score: ' + score + ' / ' + qs.length + '\n      ';
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function () {
+    quiz.querySelectorAll('.q').forEach(function (q) {
+      q.classList.remove('correct', 'wrong');
+      delete q.dataset.selected;
+      q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
+      q.querySelectorAll('.word-input').forEach(function (i) { i.value = ''; i.classList.remove('correct', 'wrong'); });
+      var fb = q.querySelector('.feedback');
+      fb.textContent = '';
+      fb.className = 'feedback';
+      var sb = q.querySelector('.show-ans'); if (sb) { sb.setAttribute('data-shown','false'); sb.textContent = 'Show answer'; }
+    });
+    document.getElementById('scorebar').childNodes[0].textContent = 'Score: — / 10\n      ';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+</body>
+</html>

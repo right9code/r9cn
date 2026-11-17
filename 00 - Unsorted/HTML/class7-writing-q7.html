@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Writing — Q7 Essay &amp; Article</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.write-box .ttl { text-align: center; font-weight: 800; font-size: 1.02rem; }
+.write-box .byline { text-align: center; font-style: italic; color: var(--muted); font-size: .9rem; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Writing (Q7)</h1>
+      <p class="sub">Section B · Essay / Article · Format + tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q7:</strong> Essay OR Article (~120–150 words). Practice the structure and key content using <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone).</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-essay" type="button">Essay</button>
+      <button class="tab" id="tab-article" type="button">Article</button>
+    </div>
+  </div>
+
+  <div id="panel-essay" class="panel active"></div>
+  <div id="panel-article" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c7-q7-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-q7-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabEssay = document.getElementById('tab-essay'), tabArticle = document.getElementById('tab-article');
+  var panelEssay = document.getElementById('panel-essay'), panelArticle = document.getElementById('panel-article');
+  tabEssay.addEventListener('click', function(){ tabEssay.classList.add('active'); tabArticle.classList.remove('active'); panelEssay.classList.add('active'); panelArticle.classList.remove('active'); });
+  tabArticle.addEventListener('click', function(){ tabArticle.classList.add('active'); tabEssay.classList.remove('active'); panelArticle.classList.add('active'); panelEssay.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Topic:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      var p=document.createElement(block.tag||'p'); if(block.cls) p.className=block.cls;
+      block.parts.forEach(function(part){ if(typeof part==='string') p.appendChild(document.createTextNode(part)); else if(part && part.html){ var sp=document.createElement('span'); sp.innerHTML=part.html; p.appendChild(sp); } else p.appendChild(makeBlank(part.k)); });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // ESSAY TAB
+  makeSequenceCard(panelEssay, 'Arrange the parts of an essay in the correct order', [
+    'Title',
+    'Introduction: hook and main idea (thesis)',
+    'Body paragraph 1: first point with example',
+    'Body paragraph 2: second point with example',
+    'Body paragraph 3: third point / personal view',
+    'Conclusion: round off and leave a strong final thought'
+  ]);
+
+  var essayQs = [
+    {
+      title: 'Tap-to-fill essay (1)',
+      scenario: 'The Joy of Helping Others (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['We do not need money or power to help another person. Sometimes a kind word or a small act of ', {k:'intro'}, ' is enough to change someone\'s whole day.']},
+        {parts:['Helping others begins at home. I can ', {k:'b1'}, ' my mother in the kitchen, carry bags for my grandfather or help a younger sibling with homework. Such small duties teach us ', {k:'b1b'}, ' and make us feel useful.']},
+        {parts:['At school, we can share notes with a classmate who was absent, guide a new student or include someone who sits alone. When we do this, we build ', {k:'b2'}, ' and earn the trust of our friends. A helpful classroom is a happy classroom.']},
+        {parts:['In the neighbourhood too, there is much to do. We can give old clothes and books to those in need, or simply listen patiently to an elderly neighbour. Every such act spreads ', {k:'b3'}, '.']},
+        {parts:['The best part of helping others is the ', {k:'close'}, ' it gives us. Let us remember that even the smallest kindness, done regularly, can make the world a warmer place.']}
+      ],
+      blanks: { title:{answer:'The Joy of Helping Others'}, intro:{answer:'kindness'}, b1:{answer:'assist'}, b1b:{answer:'responsibility'}, b2:{answer:'friendship'}, b3:{answer:'happiness'}, close:{answer:'satisfaction'} },
+      bank: ['The Joy of Helping Others','kindness','assist','responsibility','friendship','happiness','satisfaction','cruelty','ignore','laziness','quarrel','sadness','boredom','A Day at the Beach']
+    },
+    {
+      title: 'Tap-to-fill essay (2)',
+      scenario: 'Why Trees Matter (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['Trees stand quietly on our streets and in our parks, yet we rarely stop to think how much we owe them. They are the ', {k:'intro'}, ' of our planet.']},
+        {parts:['Trees give us the ', {k:'b1'}, ' we breathe. Through a process called photosynthesis, they take in carbon dioxide and release oxygen, cleaning the air around us. They also cool the streets, hold the soil together with their ', {k:'b1b'}, ' and invite birds to build their nests in their branches.']},
+        {parts:['Sadly, thousands of trees are cut every year for buildings and roads. Without them, cities grow hotter, soil washes away in heavy rain, and the air becomes ', {k:'b2'}, '. Cutting down forests also destroys the homes of countless animals.']},
+        {parts:['The answer is simple and within our reach. We can plant a sapling every ', {k:'b3'}, ', water the trees near our homes and never waste paper. Schools can celebrate a tree-planting day and keep a record of every new sapling added to the campus.']},
+        {parts:['Each new tree is a promise to the future. If every student plants and cares for just one tree, our towns will become greener, cooler and ', {k:'close'}, '.']}
+      ],
+      blanks: { title:{answer:'Why Trees Matter'}, intro:{answer:'green lungs'}, b1:{answer:'oxygen'}, b1b:{answer:'roots'}, b2:{answer:'polluted'}, b3:{answer:'monsoon'}, close:{answer:'healthier'} },
+      bank: ['Why Trees Matter','green lungs','oxygen','roots','polluted','monsoon','healthier','smoke','leaves','cleaner','summer','weaker','A Picnic by the River']
+    },
+    {
+      title: 'Tap-to-fill essay (3)',
+      scenario: 'My Favourite Extra-curricular Activity (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['Studies are important, but I believe every student needs an activity that brings ', {k:'intro'}, '. My favourite extra-curricular activity is ', {k:'intro2'}, '.']},
+        {parts:['I practise every evening for about an hour. At first I found it difficult, but with regular practice I improved a lot. My coach and my friends always ', {k:'b1'}, ' me to do better. I have learnt that ', {k:'b1b'}, ' is the key to success.']},
+        {parts:['This activity has changed me in many ways. It has made me more ', {k:'b2'}, ' and disciplined. It also gives me an outlet for my ', {k:'b2b'}, ' after a long day of school work.']},
+        {parts:['Sometimes it is hard to find time between homework and tests, but I try to manage my ', {k:'b3'}, ' wisely. Keeping a hobby has helped me concentrate better in class as well.']},
+        {parts:['I would encourage every student to find such a hobby. It makes life ', {k:'close'}, ' and teaches us lessons that no textbook can.']}
+      ],
+      blanks: { title:{answer:'My Favourite Extra-curricular Activity'}, intro:{answer:'joy'}, intro2:{answer:'playing the guitar'}, b1:{answer:'encourage'}, b1b:{answer:'patience'}, b2:{answer:'confident'}, b2b:{answer:'creativity'}, b3:{answer:'time'}, close:{answer:'colourful'} },
+      bank: ['My Favourite Extra-curricular Activity','joy','playing the guitar','encourage','patience','confident','creativity','time','colourful','sadness','watching TV','discourage','anger','laziness','money']
+    },
+    {
+      title: 'Tap-to-fill essay (4)',
+      scenario: 'A Memorable Day in My Life (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['Some days are ordinary, but a few stay in our memory forever. One such day was ', {k:'intro'}, '.']},
+        {parts:['It began with an exciting ', {k:'b1'}, '. We left home early in the morning and reached the venue before sunrise. Everything looked fresh and beautiful, and everyone in my family was in high ', {k:'b1b'}, '.']},
+        {parts:['The most memorable moment came in the afternoon. I had never expected it, and when it happened I felt a wave of ', {k:'b2'}, '. Everyone around me clapped and ', {k:'b2b'}, ' me warmly.']},
+        {parts:['On the way home I kept thinking about the ', {k:'b3'}, '. It was not a big event, but it gave me a sense of ', {k:'b3b'}, ' and happiness.']},
+        {parts:['That day taught me that happiness often comes from ', {k:'close'}, '. I will always treasure this memory.']}
+      ],
+      blanks: { title:{answer:'A Memorable Day in My Life'}, intro:{answer:'my twelfth birthday picnic'}, b1:{answer:'surprise'}, b1b:{answer:'spirits'}, b2:{answer:'pride'}, b2b:{answer:'praised'}, b3:{answer:'kind words'}, b3b:{answer:'achievement'}, close:{answer:'small moments'} },
+      bank: ['A Memorable Day in My Life','my twelfth birthday picnic','surprise','spirits','pride','praised','achievement','small moments','a boring day','quarrel','sadness','blamed','failure','kind words','The Rainy Season']
+    }
+  ];
+  essayQs.forEach(function(q,i){ makeTapFill(panelEssay, (i+2)+'.', q); });
+
+  // ARTICLE TAB
+  makeSequenceCard(panelArticle, 'Arrange the parts of an article in the correct order', [
+    'Title (catchy and centred)',
+    'Byline (By Name, Class)',
+    'Introduction: a striking hook, then the topic',
+    'Body: causes and effects / analysis',
+    'Conclusion: practical solutions and a call to action'
+  ]);
+
+  var articleQs = [
+    {
+      title: 'Tap-to-fill article (1)',
+      scenario: 'Article for the school magazine on “Every Drop Counts”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['Have you ever counted how long the tap runs while you soap your hands? A single dripping tap can waste nearly ', {k:'hook'}, ' litres of water in a day — enough drinking water for a small family.']},
+        {parts:['The causes are ordinary and easy to overlook. Leaking pipes go unrepaired for weeks, gardens are hosed at noon when most water evaporates, and long showers are treated as a reward. In towns where supply is ', {k:'cause'}, ', these habits decide who goes without water in summer.']},
+        {parts:['The effects are serious. Groundwater levels fall, borewells run dry and women and children walk farther to fetch a single pot. Hospitals and schools that once had running water begin buying tankers at high cost.']},
+        {parts:['The solutions are simple. Repair leaks promptly, close taps while brushing, wash vehicles with a ', {k:'sol1'}, ' instead of a hose, and store rainwater from rooftops. Schools can appoint water monitors and display monthly ', {k:'sol2'}, ' figures on notice boards.']},
+        {parts:['Water is not an endless gift. It is a shared ', {k:'close'}, ' that must be protected by every one of us, every single day.']}
+      ],
+      blanks: { title:{answer:'Every Drop Counts'}, byline:{answer:'By Ananya, Class VII-A'}, hook:{answer:'twenty'}, cause:{answer:'limited'}, sol1:{answer:'bucket'}, sol2:{answer:'savings'}, close:{answer:'responsibility'} },
+      bank: ['Every Drop Counts','By Ananya, Class VII-A','twenty','limited','bucket','savings','responsibility','hundred','unlimited','hose','loss','right','A Day at the Fair']
+    },
+    {
+      title: 'Tap-to-fill article (2)',
+      scenario: 'Article on “The Importance of Reading”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['In a world of endless scrolling, a quiet hour with a book has become rare — and yet reading remains one of the most ', {k:'hook'}, ' habits a student can build.']},
+        {parts:['Studies show that regular readers develop a wider ', {k:'cause'}, ' and write more clearly than those who read only textbooks. Yet there is a growing problem: with screens everywhere, many students spend their free time on ', {k:'cause2'}, ' instead of books.']},
+        {parts:['The remedy is simple. Every school can set aside a short ', {k:'sol1'}, ' for free reading and build a welcoming library. Families can keep a few books at home and gift them instead of gadgets. Students can begin with ', {k:'sol2'}, ' and gradually move on to longer books.']},
+        {parts:['If we make reading a daily habit, we will gain knowledge, patience and ', {k:'close'}, '. A book costs very little, but its gift lasts for life.']}
+      ],
+      blanks: { title:{answer:'The Importance of Reading'}, byline:{answer:'By Kabir, Class VII-C'}, hook:{answer:'rewarding'}, cause:{answer:'vocabulary'}, cause2:{answer:'social media'}, sol1:{answer:'reading period'}, sol2:{answer:'short stories'}, close:{answer:'imagination' } },
+      bank: ['The Importance of Reading','By Kabir, Class VII-C','rewarding','vocabulary','social media','reading period','short stories','imagination','boring','money','cartoons','sports','long novels','punishment']
+    },
+    {
+      title: 'Tap-to-fill article (3)',
+      scenario: 'Article on “The Value of Sports for Students”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['Did you know that students who play a sport every week often do better in class? Sports are not a distraction from studies — they are ', {k:'hook'}, ' of them.']},
+        {parts:['Regular play improves ', {k:'cause'}, ' and concentration, which helps students focus during lessons. However, many children get too little exercise because of long screen hours and heavy ', {k:'cause2'}, '. The result is poor fitness and short attention spans.']},
+        {parts:['The answer is practical. Every school should protect at least one ', {k:'sol1'}, ' for games each week and encourage mixed teams. Parents can plan a family walk or a game on ', {k:'sol2'}, '. Students can simply add twenty minutes of activity to their daily routine.']},
+        {parts:['A healthy body supports a healthy ', {k:'close'}, '. Let us play today for a stronger tomorrow.']}
+      ],
+      blanks: { title:{answer:'The Value of Sports for Students'}, byline:{answer:'By Meera, Class VII-B'}, hook:{answer:'part'}, cause:{answer:'stamina'}, cause2:{answer:'homework load'}, sol1:{answer:'period'}, sol2:{answer:'weekends'}, close:{answer:'mind' } },
+      bank: ['The Value of Sports for Students','By Meera, Class VII-B','part','stamina','homework load','period','weekends','mind','enemy','illness','cartoons','holidays','pocket money','desk']
+    },
+    {
+      title: 'Tap-to-fill article (4)',
+      scenario: 'Article on “Managing Exam Stress”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['A racing heart the night before a test — almost every student knows that feeling. A little stress is normal, but too much can harm ', {k:'hook'}, '.']},
+        {parts:['Exam pressure often comes from fear of ', {k:'cause'}, ', comparison with friends and parents’ expectations. When this pressure builds up, students lose sleep, lose appetite and find it hard to ', {k:'cause2'}, '.']},
+        {parts:['There are simple ways to cope. Study ', {k:'sol1'}, ' instead of cramming everything the night before, take short breaks and get enough sleep. Talking to a parent, teacher or friend about worries helps a lot, and a few minutes of ', {k:'sol2'}, ' each day can calm a busy mind.']},
+        {parts:['Remember, marks do not measure your whole ', {k:'close'}, '. Prepare well, stay calm and ask for help when needed.']}
+      ],
+      blanks: { title:{answer:'Managing Exam Stress'}, byline:{answer:'By Rohan, Class VII-A'}, hook:{answer:'performance'}, cause:{answer:'failure'}, cause2:{answer:'concentrate'}, sol1:{answer:'regularly'}, sol2:{answer:'exercise or meditation'}, close:{answer:'worth' } },
+      bank: ['Managing Exam Stress','By Rohan, Class VII-A','performance','failure','concentrate','regularly','exercise or meditation','worth','appearance','success','celebrate','shouting','all night','marks']
+    }
+  ];
+  articleQs.forEach(function(q,i){ makeTapFill(panelArticle, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

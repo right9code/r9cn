@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Literature — Q9 Prose Extracts</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 12px; border-radius: 999px; font-size: .85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.passage { background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 10px; padding: 12px; margin: 10px 0; font-size: .97rem; }
+.passage p { margin: 0 0 8px; }
+.passage p:last-of-type { margin-bottom: 0; }
+.passage .cite { display: none; margin-top: 8px; font-size: .82rem; color: var(--muted); font-style: italic; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 600; margin-bottom: 8px; font-size: .97rem; }
+.qhead .num { color: var(--primary); font-weight: 700; margin-right: 4px; }
+.options { display: flex; flex-direction: column; gap: 7px; }
+.opt { display: flex; gap: 8px; align-items: flex-start; text-align: left; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 10px; font-size: .93rem; cursor: pointer; width: 100%; }
+.opt .letter { font-weight: 700; color: var(--muted); flex: 0 0 auto; }
+.opt.selected { border-color: var(--primary); background: var(--primary-soft); }
+.opt.selected .letter { color: var(--primary); }
+.opt.ok { border-color: var(--success); background: var(--success-soft); }
+.opt.bad { border-color: var(--danger); background: var(--danger-soft); }
+.feedback { margin-top: 8px; font-size: .88rem; font-weight: 600; min-height: 1.1em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.qtools { margin-top: 8px; }
+.link-btn { background: none; border: none; color: var(--primary); font-size: .85rem; font-weight: 600; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.score { font-weight: 700; font-size: .95rem; margin-top: 10px; }
+.nav { display: flex; justify-content: space-between; gap: 8px; margin-top: 12px; }
+.overall { font-size: .88rem; color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Literature (Q9: Prose Extract)</h1>
+      <p class="sub">12 extracts · 5 questions each · 60 questions</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section C — Literature</span>
+    <p class="note"><strong>Same pattern as the paper:</strong> each extract is followed by (i) true or false, (ii) and (iii) detail, (iv) inference or character, (v) meaning and vocabulary. Tap an option, then <strong>Check answers</strong>.</p>
+    <p class="note" style="margin-top:8px">The chapter’s name stays hidden until you check. Two extracts are given from each prose chapter, and no extract here is the one printed in the paper.</p>
+    <p class="overall" id="overall" style="margin:10px 0 0"></p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" id="tabs" role="tablist"></div>
+  </div>
+
+  <div id="stage"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var t = localStorage.getItem('c7-q9-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-q9-theme', next); } catch (e) {}
+  });
+
+  var ROMAN = ['i', 'ii', 'iii', 'iv', 'v'];
+  var LETTER = ['a', 'b', 'c', 'd'];
+
+  function tf(statement, answer, why) {
+    return { q: 'State whether the following statement is true or false: ' + statement, options: ['True', 'False'], answer: answer, why: why };
+  }
+
+  var extracts = [
+    {
+      label: 'Extract 1', source: 'The Day the River Spoke — Kamala Nair',
+      text: [
+        'A big bright tear splashed down her nose. And another. A kingfisher swept down, its wings an arrow of blue in the sunlight. And a green lizard slithered down to the river’s edge to bask in the sun.',
+        '“Dear, dear!” said a sleepy, murmuring voice, “What’s the matter?”',
+        'Jahnavi was startled, because she was sure she had been quite alone. It couldn’t have been the lizard. And the kingfisher was up in the thicket of bamboo eating the fish it had caught. It couldn’t be the parrots, because parrots shrieked and this was such a sleepy voice. She looked around her. There wasn’t a soul in sight. She was rather scared and wanted to run away.'
+      ],
+      questions: [
+        tf('Jahnavi believed she was alone by the river before she heard the voice.', 0, '“Jahnavi was startled, because she was sure she had been quite alone.” The voice took her by surprise.'),
+        { q: 'What swept down over the river, described as “an arrow of blue”?',
+          options: ['A parrot', 'A kingfisher', 'A green lizard', 'A dragonfly'],
+          answer: 1, why: '“A kingfisher swept down, its wings an arrow of blue in the sunlight” — the blue wings are the arrow.' },
+        { q: 'Why did Jahnavi decide that the parrots could not be the ones speaking?',
+          options: ['The parrots had flown away', 'Parrots shrieked, and this voice was sleepy and low', 'Parrots cannot speak at all', 'The parrots were too far away to be heard'],
+          answer: 1, why: '“It couldn’t be the parrots, because parrots shrieked and this was such a sleepy voice.”' },
+        { q: 'What does “There wasn’t a soul in sight” tell us?',
+          options: ['She could see nobody anywhere around her', 'She was the only person who lived there', 'The river was completely dry', 'She had lost her way in the bamboo'],
+          answer: 0, why: '“Not a soul in sight” means not a single person was visible — though someone was clearly speaking.' },
+        { q: 'The word “murmuring” describes a voice that is',
+          options: ['sharp and angry', 'low and soft', 'loud and clear', 'fast and breathless'],
+          answer: 1, why: 'To murmur is to speak in a low, soft voice — which is why the voice sounded sleepy.' }
+      ]
+    },
+    {
+      label: 'Extract 2', source: 'The Day the River Spoke — Kamala Nair',
+      text: [
+        'Jahnavi saw the teacher walking up the steps to their gate the next evening when she was lighting the lamp. She could see her father scratching his cheek the way he did when he was worried and the teacher was nodding and saying something she couldn’t make out.',
+        'And Mother said, “Little Jahnavi, I shall miss you when you go to school. Girls should learn as much as they want. When I was your age, I wanted to go to school, but your grandmother said ‘No’, but now, I am glad the teacher came to talk to your father.”',
+        'And Jahnavi said, “Mother, when I grow up, I’ll be a teacher and I’ll go from house to house in our village and ask all the little girls to come to my school.”'
+      ],
+      questions: [
+        tf('Jahnavi’s mother was unhappy that Jahnavi would go to school.', 1, 'Mother says she will miss her, but also that “Girls should learn as much as they want” — she is glad, not unhappy.'),
+        { q: 'Who came to the family’s gate the next evening?',
+          options: ['The teacher', 'The village headman', 'Ettan', 'Chandu'],
+          answer: 0, why: '“Jahnavi saw the teacher walking up the steps to their gate the next evening.”' },
+        { q: 'What was Jahnavi’s father doing while the teacher spoke to him?',
+          options: ['Lighting the lamp', 'Scratching his cheek, as he did when worried', 'Reading a newspaper', 'Working in the fields'],
+          answer: 1, why: '“She could see her father scratching his cheek the way he did when he was worried.”' },
+        { q: 'Mother’s words show that she',
+          options: ['did not want Jahnavi to study', 'believed girls should learn as much as they want', 'was angry with the teacher', 'wanted Jahnavi to stay at home and mind Appu'],
+          answer: 1, why: 'She says she wanted to go to school herself and that “Girls should learn as much as they want.”' },
+        { q: 'What does Jahnavi say she will do when she grows up?',
+          options: ['Become a teacher and bring the village girls to her school', 'Work in the fields with her mother', 'Travel to the sea in Chandu’s catamaran', 'Write a book about the river'],
+          answer: 0, why: 'She promises to be a teacher and “go from house to house … and ask all the little girls to come to my school.”' }
+      ]
+    },
+    {
+      label: 'Extract 3', source: 'Animals, Birds, and Dr. Dolittle — Hugh Lofting',
+      text: [
+        'Doctor Dolittle was sitting in his kitchen talking with the Cat’s-food-Man who had come to see him with a stomach-ache.',
+        '“Why don’t you give up being a people’s doctor, and be an animal doctor?” asked the Cat’s-food-Man.',
+        'The parrot, Polynesia, was sitting in the window looking out at the rain and singing a sailor song to herself. She stopped singing and started to listen.',
+        '“You know all about animals—much more than what these vets here do. That book you wrote—about cats, why, it’s wonderful! … You might have been a cat yourself. You know the way they think.”'
+      ],
+      questions: [
+        tf('The Cat’s-food-Man had come to Doctor Dolittle because of a stomach-ache.', 0, 'The opening line says he “had come to see him with a stomach-ache” — he was the patient.'),
+        { q: 'What did the Cat’s-food-Man advise the Doctor to do?',
+          options: ['Write another book about cats', 'Give up being a people’s doctor and become an animal doctor', 'Move to a bigger house', 'Stop treating the parrot'],
+          answer: 1, why: 'His advice is direct: “give up being a people’s doctor, and be an animal doctor.”' },
+        { q: 'Who was Polynesia?',
+          options: ['The Doctor’s sister', 'The Cat’s-food-Man’s wife', 'The Doctor’s parrot', 'A cat from the neighbourhood'],
+          answer: 2, why: '“The parrot, Polynesia, was sitting in the window” — she is the Doctor’s parrot.' },
+        { q: 'What does Polynesia’s behaviour in this passage suggest about her?',
+          options: ['She is asleep through the conversation', 'She is interested in what the visitor says about the Doctor', 'She dislikes the Doctor', 'She is trying to leave the house'],
+          answer: 1, why: 'She stops singing and listens — she follows the advice being given, then repeats it to the Doctor.' },
+        { q: 'The Cat’s-food-Man calls his wife Theodosia a “scholar”, which means',
+          options: ['a person who sells books', 'a learned person', 'a doctor’s assistant', 'a person who cannot read'],
+          answer: 1, why: 'A scholar is a learned person — he says she read the Doctor’s book to him.' }
+      ]
+    },
+    {
+      label: 'Extract 4', source: 'Animals, Birds, and Dr. Dolittle — Hugh Lofting',
+      text: [
+        '“But animals don’t always speak with their mouths,” said the parrot in a high voice, raising her eyebrows. “They talk with their ears, with their feet, with their tails—with everything. Sometimes they don’t want to make a noise. Do you see now the way he’s twitching up one side of his nose?”',
+        '“What’s that mean?” asked the Doctor.',
+        '“That means, ‘Can’t you see that it has stopped raining?’” Polynesia answered. “He is asking you a question. Dogs nearly always use their noses for asking questions.”',
+        'After a while, with the parrot’s help, the Doctor got to learn the language of the animals so well that he could talk to them himself and understand everything they said.'
+      ],
+      questions: [
+        tf('According to Polynesia, animals sometimes speak without making any noise.', 0, 'She says they talk “with their ears, with their feet, with their tails” and that “Sometimes they don’t want to make a noise.”'),
+        { q: 'What was the dog doing with one side of his nose?',
+          options: ['Sniffing the Doctor’s hand', 'Twitching it', 'Hiding it under his paw', 'Pressing it to the window'],
+          answer: 1, why: 'Polynesia asks, “Do you see now the way he’s twitching up one side of his nose?”' },
+        { q: 'What did the nose twitch actually mean?',
+          options: ['“I am hungry”', '“Can’t you see that it has stopped raining?”', '“Let us go for a walk”', '“There is a stranger outside”'],
+          answer: 1, why: 'Polynesia translates it for the Doctor: “That means, ‘Can’t you see that it has stopped raining?’”' },
+        { q: 'What does Polynesia’s explanation show about animals?',
+          options: ['They only copy human speech', 'They communicate with many parts of their bodies', 'They cannot understand one another', 'They speak only in the morning'],
+          answer: 1, why: 'Ears, feet, tails, noses — animals use their whole bodies to talk, not only their mouths.' },
+        { q: 'The word “twitching” in the passage means',
+          options: ['moving with small jerks', 'barking softly', 'turning round slowly', 'scratching the ground'],
+          answer: 0, why: 'A twitch is a small, sudden movement — the dog’s nose jerks up on one side.' }
+      ]
+    },
+    {
+      label: 'Extract 5', source: 'Say the Right Thing',
+      text: [
+        'MRS. SHAW: I can’t tell you everything, but you’ll always be right if you’re kind to people. Say things that will please them. Then they’ll like you. Laugh a lot, and try to make them laugh too. And if everyone stops talking, say something to make them talk again. They don’t want to sit here and look at the floor without speaking.',
+        'MARY: What shall I do when they want to go?',
+        'MRS. SHAW: Ask them to stay a little while longer. Just say, “Must you go? Can’t you stay?” or something like that. You like them and you want them to stay, and you must let them understand that.',
+        'MARY: That’s not very hard, is it? I’ll remember that. “Must you go? Can’t you stay?”'
+      ],
+      questions: [
+        tf('Mrs. Shaw tells Mary to look glad when the guests want to leave.', 1, 'She says the opposite: Mary must not jump up gladly, but ask them to stay a little longer.'),
+        { q: 'According to Mrs. Shaw, Mary will “always be right” if she',
+          options: ['talks as much as possible', 'is kind to people', 'keeps quiet all evening', 'says exactly what her mother tells her'],
+          answer: 1, why: '“You’ll always be right if you’re kind to people. Say things that will please them.”' },
+        { q: 'What should Mary say when the guests want to go?',
+          options: ['“Goodbye and thank you.”', '“Must you go? Can’t you stay?”', '“I am glad you came.”', '“Please come again another day.”'],
+          answer: 1, why: 'Mrs. Shaw gives her the exact words: “Must you go? Can’t you stay?”' },
+        { q: 'Mrs. Shaw’s advice in this passage shows that she',
+          options: ['wants the visit to go well and to be liked by the guests', 'is tired of having visitors', 'thinks Mary is too old to be corrected', 'does not want Mary in the room at all'],
+          answer: 0, why: 'She explains that she wants to know Mrs. Harding and have more friends, so the talk must please them.' },
+        { q: 'Mrs. Shaw tells Mary to “laugh a lot, and try to make them laugh too” so that',
+          options: ['the guests stay cheerful and the talk does not die', 'Mary can hide her mistakes', 'the guests leave early', 'Mary does not have to speak at all'],
+          answer: 0, why: 'Laughter keeps the conversation alive — she adds that guests do not want to sit looking at the floor in silence.' }
+      ]
+    },
+    {
+      label: 'Extract 6', source: 'Say the Right Thing',
+      text: [
+        'MARY: What beautiful children you have, Mrs. Harding! I’ve often seen them walking along the road.',
+        'MRS. HARDING: Oh, I haven’t any children.',
+        'MARY: Oh, yes, you have! I’ve seen them: a little boy and a little girl.',
+        'MRS. HARDING: (not very pleased) I have no children; believe me.',
+        'MARY: Oh, Mr. Best! He lives here and he works in London. He goes all the way to London by train every morning, and then he comes all the way back by train every night. He lives in trains! But he’s only a banker, and bankers can’t think.',
+        'MRS. LEE: My brother’s a banker. He goes to London by train every morning and comes back every night.'
+      ],
+      questions: [
+        tf('Mrs. Harding had two children.', 1, 'She says twice that she has no children; Mary had mistaken someone else’s children for hers.'),
+        { q: 'Why was Mrs. Harding “not very pleased”?',
+          options: ['Mary was laughing at her dress', 'Mary kept insisting that she had children', 'Mary had not offered her tea', 'Mary spoke about London'],
+          answer: 1, why: 'Mary contradicts her — “Oh, yes, you have!” — after Mrs. Harding has said she has none.' },
+        { q: 'What did Mary say about Mr. Best?',
+          options: ['That he lives in trains and reads only newspapers', 'That he is a kind neighbour who helps her mother', 'That he owns a big house in Lanfield', 'That he works in a bank in Lanfield'],
+          answer: 0, why: '“He lives in trains!” she says, and adds that he reads two newspapers and never a book.' },
+        { q: 'Mary’s remarks in this passage show that she',
+          options: ['is careful about other people’s feelings', 'speaks without thinking about who is listening', 'is too shy to say anything', 'remembers her mother’s advice perfectly'],
+          answer: 1, why: 'She insults bankers in front of a banker’s sister and contradicts a guest — exactly the blunders her mother feared.' },
+        { q: 'The word “blunders” means',
+          options: ['careless mistakes', 'polite greetings', 'clever answers', 'loud laughter'],
+          answer: 0, why: 'A blunder is a careless mistake — the play is built on Mary’s awkward remarks.' }
+      ]
+    },
+    {
+      label: 'Extract 7', source: 'My Brother’s Great Invention — Anita Rau Badami',
+      text: [
+        '“Who put that water bag here?” roared my father from the front doorstep. “Your burglar alarm,” I hissed to my brother Anand, who was getting ready to disappear from the house. Ma rushed in to see what the racket was all about and found Papa standing there, sopping wet and scowling.',
+        '“You see,” Anand explained smugly, “A thief tries to open the door stealthily. I’ve rigged it up so that the alarm works only when the door is opened gently.”',
+        'I was sceptical. “Remember, if Papa asks, I’m not involved,” I warned. “Now clean up this mess before anyone gets home.”'
+      ],
+      questions: [
+        tf('The water bag fell on Anand.', 1, 'It fell on Papa, who “always opens the door softly” — which is exactly what set the alarm off.'),
+        { q: 'What did Anand call the detailed drawing of his invention?',
+          options: ['A blueprint', 'A diary', 'A chart', 'A plan of action'],
+          answer: 0, why: 'Anand “loves words like blueprint—it makes him feel professional”, as Anita says.' },
+        { q: 'The alarm was rigged to work when the door was',
+          options: ['slammed shut', 'opened gently', 'locked from inside', 'left open for a long time'],
+          answer: 1, why: '“I’ve rigged it up so that the alarm works only when the door is opened gently” — the opposite of what a thief would do.' },
+        { q: 'Anita’s words “I was sceptical” show that she',
+          options: ['doubted the invention would work', 'was excited about the invention', 'wanted to help build it', 'was angry with her father'],
+          answer: 0, why: 'To be sceptical is to doubt — and her doubt is proved right when Papa is soaked.' },
+        { q: 'The word “stealthily” means',
+          options: ['in a great hurry', 'quietly, so as not to be seen or heard', 'with a lot of noise', 'by force'],
+          answer: 1, why: 'Stealthily means moving quietly and carefully so as not to be noticed — as a thief would.' }
+      ]
+    },
+    {
+      label: 'Extract 8', source: 'My Brother’s Great Invention — Anita Rau Badami',
+      text: [
+        'Before we could do anything, the door swung open and we found ourselves looking at a ruffianly fellow with a green scarf around his neck. Anand gasped.',
+        '“Hey, it’s Boppa!” I whispered. It was indeed the fellow who had recently begun sweeping out the compounds in our row of houses.',
+        'The fellow gave an evil grin. “One squeak out of you and see what happens,” he said, brandishing his cudgel and backing out of the room. We heard him slide the latch in.',
+        '“What do we do now?” I asked in a low voice.'
+      ],
+      questions: [
+        tf('The intruder was someone the children recognised.', 0, 'Anita whispers, “Hey, it’s Boppa!” — the man who swept the compounds in their row of houses.'),
+        { q: 'What did the man carry in his hand?',
+          options: ['A green scarf', 'A cudgel', 'A torch', 'A bunch of keys'],
+          answer: 1, why: 'He is “brandishing his cudgel” — a short, thick stick used as a weapon.' },
+        { q: 'What did the man demand to know?',
+          options: ['Where their father’s room was', 'Where the keys were kept', 'When their parents would return', 'Who else was in the house'],
+          answer: 0, why: '“Now, where is your father’s room?” he asks, before going upstairs.' },
+        { q: 'Anand’s quick answer about the room shows that he',
+          options: ['was too frightened to speak', 'was thinking fast to buy them time', 'wanted the thief to find the money', 'had forgotten which room was whose'],
+          answer: 1, why: 'He sends the man to his own room and explains, “At least it will give us some time to think of something.”' },
+        { q: 'The word “brandishing” means',
+          options: ['waving something about in a threatening way', 'hiding something behind the back', 'handing something over politely', 'dropping something by mistake'],
+          answer: 0, why: 'He waves the cudgel to frighten them into silence.' }
+      ]
+    },
+    {
+      label: 'Extract 9', source: 'North, South, East, West — C.G. Salamander',
+      text: [
+        '30 April 20XX: “I’m way up north, at the Thajiwas glacier in Kashmir. The glaciers are white and blue and we have to wear four layers of clothes. Appa and Amma love it here, and they like throwing snowballs at each other. But they say there was much more snow last year.”',
+        '10 May 20XX: “We took another train yesterday and reached Himachal Pradesh. It is very quiet, and we can see so many mountains from our cabin. Colourful birds wake me with their chirping when the Sun rises in the east. I also think I hear bears growling in the west when it gets dark. But Amma says that’s just Appa snoring.”'
+      ],
+      questions: [
+        tf('Shaana had to wear four layers of clothes at the glacier.', 0, 'She writes that the glaciers are white and blue “and we have to wear four layers of clothes.”'),
+        { q: 'Where is the Thajiwas glacier?',
+          options: ['In Himachal Pradesh', 'In Kashmir', 'In Arunachal Pradesh', 'In Gujarat'],
+          answer: 1, why: 'Shaana writes: “I’m way up north, at the Thajiwas glacier in Kashmir.”' },
+        { q: 'What did Shaana think she heard in the west at night?',
+          options: ['Bears growling', 'A train whistle', 'Birds chirping', 'Her parents laughing'],
+          answer: 0, why: 'She says she thinks she hears bears growling — but it turns out to be Appa snoring.' },
+        { q: 'What does the Himachal postcard show about Shaana?',
+          options: ['She is imaginative and playful', 'She is homesick and unhappy', 'She dislikes travelling by train', 'She is frightened of the mountains'],
+          answer: 0, why: 'She turns her father’s snoring into growling bears and jokes about hugging one — playful and full of imagination.' },
+        { q: 'The word “chirping” describes',
+          options: ['short, sharp sounds made by birds', 'a low humming sound', 'the noise of a train', 'the sound of snoring'],
+          answer: 0, why: 'Chirping is the short, sharp sound birds make — it wakes Shaana at sunrise.' }
+      ]
+    },
+    {
+      label: 'Extract 10', source: 'North, South, East, West — C.G. Salamander',
+      text: [
+        '7 June 20XX: “Today was the best day ever! We drove east from the desert to the Narmada river, which flows all the way to the centre of India, and it only took us six hours. In the afternoon, Amma, Appa, and I went rafting in the river and you won’t believe how wild and scary it was. I always thought rivers were calm, but up close they’re really fast. Appa says that there used to be a lot more water, and rafting was much scarier then.”',
+        '12 June 20XX: “There are also a lot of tunnels that the train goes through. I used to be afraid of tunnels, but I’m not any more. Someday, I wish we could all go on a tour of the plateaus.”'
+      ],
+      questions: [
+        tf('Shaana had expected rivers to be calm before she went rafting.', 0, 'She writes: “I always thought rivers were calm, but up close they’re really fast.”'),
+        { q: 'Which river did the family go rafting in?',
+          options: ['The Narmada', 'The Ganga', 'The Yamuna', 'The Kaveri'],
+          answer: 0, why: '“We drove east from the desert to the Narmada river … we went rafting in the river.”' },
+        { q: 'How long did the drive from the desert to the river take?',
+          options: ['Two hours', 'Six hours', 'Two and a half days', 'A whole day'],
+          answer: 1, why: 'She says it “only took us six hours” to reach the Narmada from the desert.' },
+        { q: 'Appa’s promise never to go rafting again suggests that he',
+          options: ['found the experience frightening', 'preferred swimming to rafting', 'had hurt his arm on the river', 'wanted to go back to the desert'],
+          answer: 0, why: '“Appa was so scared that he decided never to go rafting ever again” — the ride frightened him.' },
+        { q: '“Rafting” means',
+          options: ['travelling down a river in an air-filled rubber boat', 'swimming across a river', 'fishing from a boat at night', 'walking along the bank of a river'],
+          answer: 0, why: 'The glossary defines rafting as the sport of travelling down a river in an air-filled rubber boat.' }
+      ]
+    },
+    {
+      label: 'Extract 11', source: 'The Tunnel — Ruskin Bond',
+      text: [
+        'It was almost noon, and the jungle was very still, very silent. Heat waves shimmered along the railway embankment where it cut a path through the tall evergreen trees. The railway lines were two straight black serpents disappearing into the tunnel in the hillside.',
+        'Suraj stood near the cutting, waiting for the midday train. It wasn’t a station, and he wasn’t catching a train. He was waiting so that he could watch the steam engine come roaring out of the tunnel.'
+      ],
+      questions: [
+        tf('Suraj was waiting at the tunnel because he wanted to catch a train.', 1, '“It wasn’t a station, and he wasn’t catching a train” — he only wanted to watch the engine come out.'),
+        { q: 'What did Suraj want to watch?',
+          options: ['The watchman at work', 'The steam engine coming out of the tunnel', 'A leopard crossing the lines', 'The sun setting over the hills'],
+          answer: 1, why: 'He waits “so that he could watch the steam engine come roaring out of the tunnel.”' },
+        { q: 'The railway lines are compared to',
+          options: ['two straight black serpents', 'two silver ribbons', 'long iron ladders', 'shining needles'],
+          answer: 0, why: '“The railway lines were two straight black serpents disappearing into the tunnel in the hillside.”' },
+        { q: 'The jungle at noon is described as',
+          options: ['noisy and crowded', 'still and silent, with heat waves shimmering', 'cool and damp', 'full of birds and animals'],
+          answer: 1, why: '“It was almost noon, and the jungle was very still, very silent. Heat waves shimmered…”' },
+        { q: 'The word “shimmered” means',
+          options: ['shone with a wavering, unsteady light', 'moved very fast', 'made a loud noise', 'disappeared suddenly'],
+          answer: 0, why: 'Heat waves shimmer — they seem to tremble and shine in the hot air.' }
+      ]
+    },
+    {
+      label: 'Extract 12', source: 'The Tunnel — Ruskin Bond',
+      text: [
+        '“It is,” said the watchman. “It is truly my tunnel, since no one else will have anything to do with it. I have only lent it to the Government.”',
+        '“There is one train during the day. And there is one train during the night. Have you seen the night mail come through the tunnel?”',
+        '“No. At what time does it come?”',
+        '“About nine o’clock, if it isn’t late. You could come and sit here with me, if you like. And after it has gone, instead of going to sleep I will take you home.”'
+      ],
+      questions: [
+        tf('Sunder Singh says he has lent the tunnel to the Government.', 0, '“I have only lent it to the Government,” he tells Suraj, claiming the tunnel as his own.'),
+        { q: 'How many trains pass through the tunnel in a day, according to the watchman?',
+          options: ['Only one, at noon', 'One during the day and one during the night', 'Two during the day and two at night', 'None, except on Sundays'],
+          answer: 1, why: '“There is one train during the day. And there is one train during the night.”' },
+        { q: 'What did the watchman offer Suraj?',
+          options: ['A ride on the engine', 'A place to sit and watch the night mail, and a walk home after', 'A job as his assistant', 'A lamp to carry back to the village'],
+          answer: 1, why: 'He invites him to sit with him, and says he will take him home after the night train has gone.' },
+        { q: 'The watchman’s remark, “It is truly my tunnel”, suggests that he',
+          options: ['is proud of the tunnel and feels responsible for it', 'wants to sell the tunnel', 'dislikes the railway company', 'is angry with Suraj for entering it'],
+          answer: 0, why: 'He looks after it alone and calls it his, even though it belongs to the railway — pride and a sense of ownership.' },
+        { q: 'The “night mail” is',
+          options: ['a train that runs at night', 'a letter delivered at night', 'the watchman’s night duty', 'a lamp hung at the hut door'],
+          answer: 0, why: 'The night mail is the train that comes through the tunnel at about nine o’clock.' }
+      ]
+    }
+  ];
+
+  var tabsEl = document.getElementById('tabs');
+  var stage = document.getElementById('stage');
+  var overallEl = document.getElementById('overall');
+  var current = 0;
+  var TOTAL = extracts.reduce(function (a, e) { return a + e.questions.length; }, 0);
+
+  function blankState(ex) {
+    return {
+      picked: ex.questions.map(function () { return null; }),
+      checked: false,
+      revealed: ex.questions.map(function () { return false; }),
+      correct: null
+    };
+  }
+  var state = extracts.map(blankState);
+
+  extracts.forEach(function (ex, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'tab' + (i === 0 ? ' active' : ''); b.textContent = ex.label;
+    b.addEventListener('click', function () { show(i); });
+    tabsEl.appendChild(b);
+  });
+
+  function updateOverall() {
+    var done = 0, got = 0;
+    state.forEach(function (s) { if (s.checked) { done++; got += s.correct; } });
+    overallEl.textContent = done === 0 ? '' : 'Checked ' + done + ' of ' + extracts.length + ' extracts · overall ' + got + ' / ' + TOTAL;
+  }
+
+  function show(i) {
+    current = i;
+    Array.prototype.forEach.call(tabsEl.children, function (c, k) { c.classList.toggle('active', k === i); });
+    render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function render() {
+    var ex = extracts[current], st = state[current];
+    stage.innerHTML = '';
+
+    var card = document.createElement('div'); card.className = 'card';
+    var tag = document.createElement('span'); tag.className = 'section-tag'; tag.textContent = ex.label + ' of ' + extracts.length;
+    card.appendChild(tag);
+    var h = document.createElement('div'); h.className = 'qhead'; h.style.fontSize = '1.02rem';
+    h.textContent = 'Read the extract and answer the questions that follow.';
+    card.appendChild(h);
+
+    var passage = document.createElement('div'); passage.className = 'passage';
+    ex.text.forEach(function (line) { var p = document.createElement('p'); p.textContent = line; passage.appendChild(p); });
+    var cite = document.createElement('span'); cite.className = 'cite'; cite.style.display = 'none'; cite.textContent = ex.source; passage.appendChild(cite);
+    card.appendChild(passage);
+    stage.appendChild(card);
+
+    ex.questions.forEach(function (q, qi) {
+      var qc = document.createElement('div'); qc.className = 'q';
+      var qh = document.createElement('div'); qh.className = 'qhead';
+      qh.innerHTML = '<span class="num">(' + ROMAN[qi] + ')</span>';
+      qh.appendChild(document.createTextNode(' ' + q.q));
+      qc.appendChild(qh);
+
+      var opts = document.createElement('div'); opts.className = 'options';
+      q.options.forEach(function (text, oi) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'opt' + (st.picked[qi] === oi ? ' selected' : '');
+        b.innerHTML = '<span class="letter">(' + LETTER[oi] + ')</span><span></span>';
+        b.lastChild.textContent = text;
+        b.addEventListener('click', function () {
+          if (st.checked) return;
+          st.picked[qi] = oi;
+          Array.prototype.forEach.call(opts.children, function (c, k) { c.classList.toggle('selected', k === oi); });
+        });
+        opts.appendChild(b);
+      });
+      qc.appendChild(opts);
+
+      var tools = document.createElement('div'); tools.className = 'qtools';
+      var showBtn = document.createElement('button');
+      showBtn.type = 'button'; showBtn.className = 'link-btn';
+      showBtn.textContent = st.revealed[qi] ? 'Hide answer' : 'Show answer';
+      tools.appendChild(showBtn);
+      qc.appendChild(tools);
+
+      var fb = document.createElement('div'); fb.className = 'feedback';
+      if (st.revealed[qi]) {
+        fb.className = 'feedback info';
+        fb.textContent = 'Answer: (' + LETTER[q.answer] + ') ' + q.options[q.answer] + ' — ' + q.why;
+      }
+      qc.appendChild(fb);
+
+      showBtn.addEventListener('click', function () {
+        st.revealed[qi] = !st.revealed[qi];
+        showBtn.textContent = st.revealed[qi] ? 'Hide answer' : 'Show answer';
+        if (st.revealed[qi]) {
+          fb.className = 'feedback info';
+          fb.textContent = 'Answer: (' + LETTER[q.answer] + ') ' + q.options[q.answer] + ' — ' + q.why;
+        } else { fb.className = 'feedback'; fb.textContent = ''; }
+      });
+
+      stage.appendChild(qc);
+    });
+
+    var actions = document.createElement('div'); actions.className = 'actions';
+    var check = document.createElement('button'); check.type = 'button'; check.className = 'btn primary'; check.textContent = 'Check answers';
+    var reset = document.createElement('button'); reset.type = 'button'; reset.className = 'btn'; reset.textContent = 'Reset this extract';
+    actions.appendChild(check); actions.appendChild(reset);
+    stage.appendChild(actions);
+
+    var score = document.createElement('div'); score.className = 'score';
+    stage.appendChild(score);
+
+    var nav = document.createElement('div'); nav.className = 'nav';
+    var prev = document.createElement('button'); prev.type = 'button'; prev.className = 'btn'; prev.textContent = '‹ Previous extract';
+    var next = document.createElement('button'); next.type = 'button'; next.className = 'btn primary'; next.textContent = 'Next extract ›';
+    prev.disabled = current === 0; next.disabled = current === extracts.length - 1;
+    prev.style.opacity = current === 0 ? '.45' : '1';
+    next.style.opacity = current === extracts.length - 1 ? '.45' : '1';
+    prev.addEventListener('click', function () { if (current > 0) show(current - 1); });
+    next.addEventListener('click', function () { if (current < extracts.length - 1) show(current + 1); });
+    nav.appendChild(prev); nav.appendChild(next);
+    stage.appendChild(nav);
+
+    if (st.checked) { markAll(); }
+
+    check.addEventListener('click', function () {
+      var answered = st.picked.filter(function (p) { return p !== null; }).length;
+      if (answered < ex.questions.length) {
+        score.className = 'score';
+        score.style.color = 'var(--muted)';
+        score.textContent = 'Answer all five questions first. (' + answered + ' of ' + ex.questions.length + ' answered)';
+        return;
+      }
+      st.checked = true;
+      markAll();
+      updateOverall();
+    });
+
+    reset.addEventListener('click', function () {
+      state[current] = blankState(ex);
+      updateOverall();
+      render();
+    });
+
+    function markAll() {
+      var rows = stage.querySelectorAll('.q');
+      var correct = 0;
+      ex.questions.forEach(function (q, qi) {
+        var row = rows[qi];
+        var opts = row.querySelectorAll('.opt');
+        var chosen = st.picked[qi];
+        var isRight = chosen === q.answer;
+        if (isRight) correct++;
+        Array.prototype.forEach.call(opts, function (c, k) {
+          c.classList.remove('selected');
+          if (k === q.answer) c.classList.add('ok');
+          else if (k === chosen) c.classList.add('bad');
+        });
+        row.classList.toggle('correct', isRight);
+        row.classList.toggle('wrong', !isRight);
+        var fb = row.querySelector('.feedback');
+        if (!st.revealed[qi]) {
+          fb.className = 'feedback ' + (isRight ? 'ok' : 'bad');
+          fb.textContent = isRight ? 'Correct — ' + q.why : 'Look again. The correct option is marked in green.';
+        }
+      });
+      cite.style.display = 'block';
+      st.correct = correct;
+      score.className = 'score';
+      score.style.color = correct === ex.questions.length ? 'var(--success)' : 'var(--text)';
+      score.textContent = 'Score: ' + correct + ' / ' + ex.questions.length + (correct === ex.questions.length ? ' — all correct!' : '');
+    }
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>
