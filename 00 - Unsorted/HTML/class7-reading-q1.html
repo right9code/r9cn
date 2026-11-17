@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Class VII Reading Demo — Section A (Q1)</title>
+<title>Class VII Reading — Section A (Q1)</title>
 <style>
 :root {
   --bg: #f4f6f8;
@@ -51,7 +51,14 @@ h1 { font-size: 1.2rem; margin: 0 0 4px; line-height: 1.25; }
 .icon-btn {
   border: 1px solid var(--border); background: var(--surface); color: var(--text);
   border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer;
+  flex: 0 0 auto;
 }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; margin-bottom: 8px; }
+.tab {
+  flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+  padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer;
+}
+.tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
   padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow);
@@ -64,6 +71,10 @@ h2 { font-size: 1rem; margin: 0 0 8px; }
 .passage { font-size: 1rem; }
 .passage p { margin: 0 0 10px; }
 .passage p:last-child { margin-bottom: 0; }
+.table-wrap { overflow-x: auto; margin: 10px 0 0; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--surface-2); font-weight: 700; }
 .instructions { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
 .q {
   border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px;
@@ -73,6 +84,7 @@ h2 { font-size: 1rem; margin: 0 0 8px; }
 .q.wrong { border-color: var(--danger); background: var(--danger-soft); }
 .qhead { font-weight: 600; margin-bottom: 8px; }
 .qhead .num { color: var(--primary); margin-right: 4px; }
+.hint { font-weight: 500; color: var(--muted); }
 .options { display: grid; gap: 8px; }
 .opt {
   display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left;
@@ -118,340 +130,417 @@ h2 { font-size: 1rem; margin: 0 0 8px; }
 <div class="wrap">
   <header>
     <div>
-      <h1>Class VII — Reading Skill (Demo)</h1>
-      <p class="sub">Section A, Q1 style: discursive passage + 10 questions</p>
+      <h1>Class VII — Reading Skill (Q1)</h1>
+      <p class="sub">Section A, Q1 style · 5 passages × 10 questions</p>
     </div>
     <button class="icon-btn" id="themeBtn" type="button">Theme</button>
   </header>
 
-  <div class="card">
-    <span class="section-tag">Section A — Reading Skill</span>
-    <h2>1. Read the passage given below:</h2>
-    <div class="passage">
-      <p>Ravi grew up in Sundarpur, a small town surrounded by fields and dusty roads. Life there moved slowly. Farmers walked to their fields at dawn, and in the afternoon the main bazaar grew quiet and sleepy. Most families knew one another, and children played in the lanes until the light faded.</p>
-      <p>Near Ravi's house, however, there was an empty plot of land that nobody looked after. People often dumped broken furniture and plastic bags there. The place smelled unpleasant, and flies buzzed around it all day. Every time Ravi walked past it, he felt that such a large open space was being wasted.</p>
-      <p>One Sunday morning, Ravi suggested to his friends that they should clean the plot and turn it into a garden. At first, the idea seemed impossible because the children had no tools and very little money. Some neighbours even laughed at them, saying that a group of schoolchildren could never change a dumping ground.</p>
-      <p>Instead of giving up, the group decided to ask for help. They borrowed brooms and spades from their neighbours and collected seeds from their own homes. Every Sunday, they met to pull out weeds, level the soil, and plant saplings. They carried water in buckets from a nearby tap and covered the young plants with leaves to protect them from the heat.</p>
-      <p>Slowly, the barren plot began to change. Green shoots appeared, flowers bloomed, and the air felt fresher. Birds returned to the branches, and butterflies hovered over the beds. Villagers who once ignored the place started visiting it in the evenings to sit and relax.</p>
-      <p>The children learned that cooperation and patience could transform even a neglected corner into something beautiful. Because it brought peace to everyone, the villagers fondly called the garden <em>Sukoon</em>. Today the garden is looked after by a new group of young volunteers, and the plot that once embarrassed the town has become its favourite meeting place.</p>
-    </div>
-  </div>
-
-  <div class="card" id="quiz">
-    <p class="instructions"><strong>Answer the questions.</strong> For (i)–(v), tap the correct option. For (vi)–(x), type <strong>one word</strong> where the answer is one word (capital/small letters both accepted); tap an option where the answer is more than one word. Use <strong>Check answers</strong> for feedback, or <strong>Show answer</strong> on a question to see the model answer and why.</p>
-
-    <div class="q" data-q="i" data-type="mcq" data-answer="b" data-why="The passage states that Ravi grew up in Sundarpur, a small town.">
-      <div class="qhead"><span class="num">(i)</span> Where did Ravi grow up?</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>In a large coastal city</span></button>
-        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>In Sundarpur, a small town</span></button>
-        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>In a mountain village</span></button>
-        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>Near a railway station in Delhi</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="ii" data-type="mcq" data-answer="c" data-why="Every Sunday they met to pull out weeds, level the soil, and plant saplings.">
-      <div class="qhead"><span class="num">(ii)</span> What did Ravi and his friends do every Sunday?</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>They played cricket in the fields</span></button>
-        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>They sold flowers in the market</span></button>
-        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>They worked together to clean the plot and plant saplings</span></button>
-        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>They collected plastic bags to dump there</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="iii" data-type="mcq" data-answer="a" data-why="Villagers started visiting in the evenings to sit and relax in the fresh, peaceful garden.">
-      <div class="qhead"><span class="num">(iii)</span> Why did villagers start visiting the garden in the evenings?</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>To sit and relax in the fresh, peaceful place</span></button>
-        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>To throw away their household waste</span></button>
-        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>To bring tools for the children</span></button>
-        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>To cut down the saplings</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="iv" data-type="mcq" data-answer="d" data-why="The passage says the children learned that cooperation and patience could transform a neglected corner.">
-      <div class="qhead"><span class="num">(iv)</span> What did the children learn from this activity?</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>That money is needed for every good work</span></button>
-        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>That gardens grow without any care</span></button>
-        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>That it is better to ignore dirty places</span></button>
-        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>That cooperation and patience can bring change</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="v" data-type="mcq" data-answer="b" data-why="The barren, dirty plot slowly changed and was transformed into a beautiful garden.">
-      <div class="qhead"><span class="num">(v)</span> What happened to the empty plot in the end?</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>It was sold to build a shop</span></button>
-        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>It was transformed into a beautiful garden</span></button>
-        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>It remained full of rubbish</span></button>
-        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>It was turned into a parking area</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="vi" data-type="text" data-answer="sukoon" data-why="The villagers fondly called the garden ‘Sukoon’ because it brought peace to everyone.">
-      <div class="qhead"><span class="num">(vi)</span> What name did the villagers fondly give to the garden? <span style="font-weight:500;color:var(--muted)">(one word)</span></div>
-      <input class="word-input" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word" aria-label="Answer for question vi">
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="vii" data-type="text-multi" data-answers="barren|neglected" data-why="‘Barren’ means not producing plants/empty and dry, and ‘neglected’ means not cared for or ignored.">
-      <div class="qhead"><span class="num">(vii)</span> Find words from the passage which mean the following: <span style="font-weight:500;color:var(--muted)">(one word each)</span></div>
-      <div class="subpart">
-        <label for="vii-a">(a) not producing plants; empty and dry —</label>
-        <input id="vii-a" class="word-input" data-part="0" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word">
-      </div>
-      <div class="subpart">
-        <label for="vii-b">(b) not cared for; ignored —</label>
-        <input id="vii-b" class="word-input" data-part="1" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word">
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="viii" data-type="mcq" data-answer="false" data-why="The children borrowed tools from neighbours and collected seeds from their own homes; they did not buy everything.">
-      <div class="qhead"><span class="num">(viii)</span> State whether the following statement is TRUE or FALSE: "The children bought all the tools and seeds with their own money."</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="true"><span class="letter"></span><span>TRUE</span></button>
-        <button type="button" class="opt" data-val="false"><span class="letter"></span><span>FALSE</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="ix" data-type="mcq" data-answer="b" data-why="At first the idea seemed impossible because the children had no tools and very little money.">
-      <div class="qhead"><span class="num">(ix)</span> Complete the sentence: At first, the idea seemed impossible because ____________.</div>
-      <div class="options">
-        <button type="button" class="opt" data-val="a"><span class="letter">(a)</span><span>the villagers refused to help</span></button>
-        <button type="button" class="opt" data-val="b"><span class="letter">(b)</span><span>the children had no tools and very little money</span></button>
-        <button type="button" class="opt" data-val="c"><span class="letter">(c)</span><span>there was no water in the town</span></button>
-        <button type="button" class="opt" data-val="d"><span class="letter">(d)</span><span>the plot was already a garden</span></button>
-      </div>
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="q" data-q="x" data-type="text" data-answer="cooperation|co-operation" data-why="The passage states: ‘The children learned that cooperation and patience could transform even a neglected corner…’">
-      <div class="qhead"><span class="num">(x)</span> Fill in the blank: The children learned that ____________ and patience could transform a neglected corner. <span style="font-weight:500;color:var(--muted)">(one word)</span></div>
-      <input class="word-input" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word" aria-label="Answer for question x">
-      <div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="actions">
-      <button class="btn primary" id="checkBtn" type="button">Check answers</button>
-      <button class="btn" id="resetBtn" type="button">Reset</button>
-    </div>
-    <div class="scorebar" id="scorebar" aria-live="polite">Score: — / 10
-      <div class="small">Tap an option to change it. Type answers in small or capital letters. Use “Check answers” for instant feedback on all questions.</div>
-    </div>
-  </div>
+  <nav class="tabs" id="tabs" aria-label="Choose a passage"></nav>
+  <div class="card" id="passageCard"></div>
+  <div class="card" id="quiz"></div>
+  <div class="scorebar" id="scorebar" aria-live="polite"></div>
 </div>
 
 <script>
 (function () {
+  var PASSAGES = [
+    {
+      title: 'The Garden Called Sukoon',
+      paras: [
+        'Ravi grew up in Sundarpur, a small town surrounded by fields and dusty roads. Life there moved slowly. Farmers walked to their fields at dawn, and in the afternoon the main bazaar grew quiet and sleepy. Most families knew one another, and children played in the lanes until the light faded.',
+        'Near Ravi’s house, however, there was an empty plot of land that nobody looked after. People often dumped broken furniture and plastic bags there. The place smelled unpleasant, and flies buzzed around it all day. Every time Ravi walked past it, he felt that such a large open space was being wasted.',
+        'One Sunday morning, Ravi suggested to his friends that they should clean the plot and turn it into a garden. At first, the idea seemed impossible because the children had no tools and very little money. Some neighbours even laughed at them, saying that a group of schoolchildren could never change a dumping ground.',
+        'Instead of giving up, the group decided to ask for help. They borrowed brooms and spades from their neighbours and collected seeds from their own homes. Every Sunday, they met to pull out weeds, level the soil, and plant saplings. They carried water in buckets from a nearby tap and covered the young plants with leaves to protect them from the heat.',
+        'Slowly, the barren plot began to change. Green shoots appeared, flowers bloomed, and the air felt fresher. Birds returned to the branches, and butterflies hovered over the beds. Villagers who once ignored the place started visiting it in the evenings to sit and relax.',
+        'The children learned that cooperation and patience could transform even a neglected corner into something beautiful. Because it brought peace to everyone, the villagers fondly called the garden <em>Sukoon</em>. Today the garden is looked after by a new group of young volunteers, and the plot that once embarrassed the town has become its favourite meeting place.'
+      ],
+      questions: [
+        { t: 'mcq', q: 'Where did Ravi grow up?', opts: ['In a large coastal city', 'In Sundarpur, a small town', 'In a mountain village', 'Near a railway station in Delhi'], a: 1, why: 'The passage states that Ravi grew up in Sundarpur, a small town.' },
+        { t: 'mcq', q: 'What did Ravi and his friends do every Sunday?', opts: ['They played cricket in the fields', 'They sold flowers in the market', 'They worked together to clean the plot and plant saplings', 'They collected plastic bags to dump there'], a: 2, why: 'Every Sunday they met to pull out weeds, level the soil, and plant saplings.' },
+        { t: 'mcq', q: 'Why did villagers start visiting the garden in the evenings?', opts: ['To sit and relax in the fresh, peaceful place', 'To throw away their household waste', 'To bring tools for the children', 'To cut down the saplings'], a: 0, why: 'Villagers started visiting in the evenings to sit and relax in the fresh, peaceful garden.' },
+        { t: 'mcq', q: 'What did the children learn from this activity?', opts: ['That money is needed for every good work', 'That gardens grow without any care', 'That it is better to ignore dirty places', 'That cooperation and patience can bring change'], a: 3, why: 'The passage says the children learned that cooperation and patience could transform a neglected corner.' },
+        { t: 'mcq', q: 'What happened to the empty plot in the end?', opts: ['It was sold to build a shop', 'It was transformed into a beautiful garden', 'It remained full of rubbish', 'It was turned into a parking area'], a: 1, why: 'The barren, dirty plot slowly changed and was transformed into a beautiful garden.' },
+        { t: 'text', q: 'What name did the villagers fondly give to the garden? <span class="hint">(one word)</span>', parts: [{ a: ['sukoon'] }], why: 'The villagers fondly called the garden ‘Sukoon’ because it brought peace to everyone.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) not producing plants; empty and dry —', a: ['barren'] }, { label: '(b) not cared for; ignored —', a: ['neglected'] }], why: '‘Barren’ means not producing plants, empty and dry; ‘neglected’ means not cared for or ignored.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “The children bought all the tools and seeds with their own money.”', a: false, why: 'The children borrowed tools from neighbours and collected seeds from their own homes; they did not buy everything.' },
+        { t: 'mcq', q: 'Complete the sentence: At first, the idea seemed impossible because ____________.', opts: ['the villagers refused to help', 'the children had no tools and very little money', 'there was no water in the town', 'the plot was already a garden'], a: 1, why: 'At first the idea seemed impossible because the children had no tools and very little money.' },
+        { t: 'text', q: 'Fill in the blank: The children learned that ____________ and patience could transform a neglected corner. <span class="hint">(one word)</span>', parts: [{ a: ['cooperation', 'co-operation'] }], why: 'The passage states: “The children learned that cooperation and patience could transform even a neglected corner…”' }
+      ]
+    },
+    {
+      title: 'The School That Opens After Sunset',
+      paras: [
+        'In Bhindol, a village of about four hundred families, the government school closes at two in the afternoon. For most children the rest of the day was spent helping at home or wandering near the highway. Two years ago, Lalita Devi, a retired teacher of sixty-eight, decided that the empty building should not stay idle. She gathered five other women from the village, none of them younger than fifty, and started an evening class from five to seven.',
+        'The class is not like a normal school. There are no bells, no uniforms and no marks. Children come when their chores are done, and the women teach whatever the children ask for — a difficult sum, a letter to a distant father, the spelling of a word heard on the radio. The older women often say that they learn as much as they teach, because a child’s question rarely has an easy answer.',
+        'Everything is made from what the village already has. Old newspapers serve as notebooks, the walls are painted with charcoal and chalk, and the class library is a tin trunk holding forty-three books donated by families. When the electricity fails, which happens often, the class moves to the veranda and continues under the light of two lanterns.',
+        'Not everyone approved at first. Some parents thought the evening class was a waste of time, and a few said girls should not go out after dark. Lalita Devi answered by walking to each house, and by the second year twenty-two girls were attending regularly. Now the panchayat has given the group a small grant for lanterns and mats, and a younger teacher comes twice a week.',
+        'Attendance is still uneven — during harvest, the class empties. Nobody minds very much. The women say that learning can wait for a day, but a family cannot, and that a class which understands this is likely to last longer than one which does not.'
+      ],
+      questions: [
+        { t: 'mcq', q: 'When does the government school in Bhindol close each day?', opts: ['At noon', 'At two in the afternoon', 'At four in the evening', 'At sunset'], a: 1, why: 'The passage opens by saying the government school closes at two in the afternoon.' },
+        { t: 'mcq', q: 'Who started the evening class?', opts: ['A retired teacher named Lalita Devi', 'A panchayat officer', 'Two college students', 'The village headman'], a: 0, why: 'Lalita Devi, a retired teacher of sixty-eight, decided that the empty building should not stay idle.' },
+        { t: 'mcq', q: 'What do the women teach in the evening class?', opts: ['Only mathematics and spelling', 'Whatever the children ask for', 'The same lessons as the day school', 'Songs and dances only'], a: 1, why: 'Children come when their chores are done, and the women teach whatever the children ask for.' },
+        { t: 'mcq', q: 'Where does the class move when the electricity fails?', opts: ['To the temple', 'Under a banyan tree', 'To the veranda, under two lanterns', 'It closes for the day'], a: 2, why: 'When the electricity fails, the class moves to the veranda and continues under the light of two lanterns.' },
+        { t: 'mcq', q: 'How did Lalita Devi answer the parents who objected?', opts: ['She stopped the class for a year', 'She walked to each house and spoke to them', 'She asked the police for help', 'She wrote a letter to the newspaper'], a: 1, why: 'She answered by walking to each house, and by the second year twenty-two girls were attending regularly.' },
+        { t: 'text', q: 'How many books are there in the class library? <span class="hint">(one word)</span>', parts: [{ a: ['forty-three', '43', 'forty three'] }], why: 'The class library is a tin trunk holding forty-three books donated by families.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) not the same every time; varying —', a: ['uneven'] }, { label: '(b) given away as a gift —', a: ['donated'] }], why: '‘Uneven’ means not regular or varying; ‘donated’ means given away as a gift.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Every parent supported the evening class from the beginning.”', a: false, why: 'The passage says not everyone approved at first; some parents thought the class was a waste of time.' },
+        { t: 'mcq', q: 'Complete the sentence: Attendance falls during harvest because ____________.', opts: ['the lanterns run out of oil', 'children help their families in the fields', 'the teachers go on holiday', 'the school building is being repaired'], a: 1, why: 'During harvest the class empties, because families need the children in the fields.' },
+        { t: 'text', q: 'Fill in the blank: The class has no bells, no uniforms and no ____________. <span class="hint">(one word)</span>', parts: [{ a: ['marks'] }], why: 'The passage says there are no bells, no uniforms and no marks.' }
+      ]
+    },
+    {
+      title: 'Why a City Needs Old Trees',
+      paras: [
+        'A tree planted today will not shade a street properly for thirty years. That single fact explains why the oldest trees in a city are worth more than their timber, and why cutting one down is rarely a small decision. An old tree has a canopy wide enough to cool a whole lane, roots that hold soil in place during heavy rain, and hollows and cracks that insects, owls and squirrels have used for generations.',
+        'The cooling is measurable. Shade and evaporation from leaves can lower the temperature beneath a large tree by several degrees, which matters more each summer. Streets without trees stay hotter long after sunset, because concrete and tar store heat during the day and release it slowly at night. A row of trees along a road therefore does two jobs at once: it cools the air and it makes walking pleasant enough that people leave their cars at home.',
+        'Old trees also protect the ground. When rain falls hard on bare soil, it runs off quickly, carrying mud into drains and causing local flooding. Roots break the force of the rain and hold the soil together, so water soaks in slowly instead of rushing away.',
+        'None of this is visible in a photograph of a new park, which is why old trees are so easily lost. A road-widening plan may show a neat green strip of saplings and call it compensation. But a sapling cannot replace a tree that took four decades to grow; it can only, in time, become one.',
+        'Some cities have begun to count trees as public property rather than decoration. They number each old tree, record its age and health, and require permission before it is removed. In one such city, a plan to cut seventeen trees for a bus terminal was dropped after residents showed that nine of them were older than the neighbourhood itself. The terminal was built elsewhere, and no tree was cut.'
+      ],
+      questions: [
+        { t: 'mcq', q: 'According to the passage, how long does a tree need before it shades a street properly?', opts: ['About five years', 'About ten years', 'About thirty years', 'About a hundred years'], a: 2, why: 'The passage begins: a tree planted today will not shade a street properly for thirty years.' },
+        { t: 'mcq', q: 'What two jobs does a row of trees along a road do?', opts: ['It hides the traffic and stops the rain', 'It cools the air and makes walking pleasant', 'It stores heat and blocks sunlight', 'It holds soil and blocks the drains'], a: 1, why: 'A row of trees cools the air and makes walking pleasant enough that people leave their cars at home.' },
+        { t: 'mcq', q: 'Why do streets without trees stay hot long after sunset?', opts: ['Concrete and tar store heat and release it slowly', 'The wind cannot enter narrow streets', 'Street lights give out a lot of heat', 'There is no rain in such streets'], a: 0, why: 'Concrete and tar store heat during the day and release it slowly at night.' },
+        { t: 'mcq', q: 'What happens when heavy rain falls on bare soil?', opts: ['It soaks in slowly and stays there', 'It runs off quickly, carrying mud into drains', 'It turns the soil into stone', 'It keeps the soil cool for months'], a: 1, why: 'It runs off quickly, carrying mud into drains and causing local flooding.' },
+        { t: 'mcq', q: 'What happened to the plan to cut seventeen trees for a bus terminal?', opts: ['All seventeen trees were cut', 'The plan was dropped and the trees stayed', 'Only nine of the trees were cut', 'The trees were dug up and moved to a park'], a: 1, why: 'Residents showed that nine of the seventeen were older than the neighbourhood; the plan was dropped and no tree was cut.' },
+        { t: 'text', q: 'How many decades does a large tree need to grow? <span class="hint">(one word)</span>', parts: [{ a: ['four', '4'] }], why: 'A sapling cannot replace a tree that took four decades to grow.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) wood used for building —', a: ['timber'] }, { label: '(b) the spreading upper part of a tree —', a: ['canopy'] }], why: '‘Timber’ is wood used for building; the ‘canopy’ is the spreading upper part of a tree.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “A sapling planted now can immediately replace an old tree.”', a: false, why: 'The passage says a sapling cannot replace a tree that took four decades to grow.' },
+        { t: 'mcq', q: 'Complete the sentence: Old trees are easily lost because ____________.', opts: ['they cost too much to water', 'their value is not visible in a photograph of a new park', 'nobody likes shade in a city', 'they grow faster than saplings'], a: 1, why: 'The passage says none of this is visible in a photograph of a new park, which is why old trees are easily lost.' },
+        { t: 'text', q: 'Fill in the blank: Some cities now count old trees as public ____________. <span class="hint">(one word)</span>', parts: [{ a: ['property'] }], why: 'Some cities have begun to count trees as public property rather than decoration.' }
+      ]
+    },
+    {
+      title: 'The Boy Who Kept a Rain Diary',
+      paras: [
+        'Every evening during the monsoon, a fourteen-year-old named Imran climbs to the flat roof of his house in a village near Kota and reads the rain gauge his uncle fixed there. He writes three things in a notebook: the date, the depth of water in the gauge, and one line about the sky. The notebook is cheap, the gauge is a plastic tube, and the whole habit takes four minutes.',
+        'Imran began because his father, a farmer, could never decide when to sow. The first heavy shower is not the same as the start of the rains; if seeds go into dry soil after a single shower, they may never sprout. Old farmers in the village read the sky by signs — the direction of the wind, the calling of a particular bird, the way ants move — but nobody had ever written these signs down.',
+        'After two monsoons, Imran had a page for every day. Reading it again, he noticed something the older men had felt but never stated: in his village the first steady rain of the season usually arrived about eleven days after the first heavy shower, and the gap was almost never shorter than a week. He took the notebook to the village meeting and read out the numbers. Some farmers were amused. Three tried it the following year, waited, and sowed later. Their fields came up more evenly than their neighbours’.',
+        'Word travelled slowly, which is how it usually travels in villages. A teacher at the school asked Imran to keep the diary for the whole block, and now six students share the work, taking turns with two gauges and a chart pinned in the classroom. The chart is not a forecast and Imran says so plainly. It is a record, and a record is what a forecast needs before it can be trusted.'
+      ],
+      questions: [
+        { t: 'mcq', q: 'What three things does Imran write in his notebook?', opts: ['The date, the depth of water and one line about the sky', 'The time, the temperature and the wind', 'The date, the crop and the price', 'The rain, the soil and the harvest'], a: 0, why: 'He writes three things: the date, the depth of water in the gauge, and one line about the sky.' },
+        { t: 'mcq', q: 'Why did Imran begin keeping the diary?', opts: ['His teacher gave it as homework', 'His father could never decide when to sow', 'The village paid him for it', 'He wanted to win a prize'], a: 1, why: 'Imran began because his father, a farmer, could never decide when to sow.' },
+        { t: 'mcq', q: 'What may happen if seeds go into dry soil after a single shower?', opts: ['They grow faster than usual', 'They may never sprout', 'They need less water later', 'They attract birds to the field'], a: 1, why: 'If seeds go into dry soil after a single shower, they may never sprout.' },
+        { t: 'mcq', q: 'What did Imran notice after two monsoons?', opts: ['The rain always began in June', 'The first steady rain came about eleven days after the first heavy shower', 'The gauge had been giving wrong readings', 'Farmers sowed at the same time every year'], a: 1, why: 'In his village the first steady rain usually arrived about eleven days after the first heavy shower.' },
+        { t: 'mcq', q: 'What does Imran say his chart is not?', opts: ['A record', 'A forecast', 'A lesson', 'A school project'], a: 1, why: 'The chart is not a forecast, Imran says plainly; it is a record.' },
+        { t: 'text', q: 'How many farmers tried his method the following year? <span class="hint">(one word)</span>', parts: [{ a: ['three', '3'] }], why: 'Three farmers tried it the following year, waited, and sowed later.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) to begin to grow, as a seed does —', a: ['sprout'] }, { label: '(b) a statement about future weather —', a: ['forecast'] }], why: '‘Sprout’ means to begin to grow; a ‘forecast’ is a statement about future weather.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Imran claims his chart can predict the weather.”', a: false, why: 'He says plainly that the chart is not a forecast; it is only a record.' },
+        { t: 'mcq', q: 'Complete the sentence: Old farmers read the sky by signs such as ____________.', opts: ['the direction of the wind and the calling of a bird', 'the price of seeds in the market', 'the colour of the soil after rain', 'the number of tractors in the field'], a: 0, why: 'Old farmers read the sky by the direction of the wind, the calling of a particular bird, and the way ants move.' },
+        { t: 'text', q: 'Fill in the blank: Imran’s rain gauge is made of ____________. <span class="hint">(one word)</span>', parts: [{ a: ['plastic'] }], why: 'The gauge is a plastic tube fixed on the roof by his uncle.' }
+      ]
+    },
+    {
+      title: 'The Shop of Imperfect Things',
+      paras: [
+        'The shop near the bus stand in Panvel sells vegetables that no other shop will take: tomatoes with a split skin, cucumbers bent like question marks, carrots too short for a machine to peel. None of them is rotten. Each was rejected for its shape, and each would otherwise have been thrown away.',
+        'Meera, who runs the shop, learned the trade by accident. She once helped at a wedding where four crates of beans were left over because they were the wrong length for the caterer’s machines. She filled two bags and took them home, and then spent the evening wondering how much good food leaves a market every day simply because it looks unusual.',
+        'Her shop works on a simple rule: the price is half the market rate, and the customer is told why the vegetable is there. A hand-written board above the counter says, “These are the ones that were refused. They taste the same.” Some customers laugh at first. Then they come back, because a family that saves forty rupees on vegetables every week notices the saving.',
+        'The farmers gain as well. A farmer paid for a full crate no longer loses money on the part of it that the wholesale buyer refuses, and Meera collects directly from six farms, so nothing makes a second journey. Last year the shop sold about nine hundred kilograms of vegetables that would have gone to waste, and the compost heap behind the counter took what even she could not sell.',
+        'There has been one complaint, from a neighbour who says the shop makes the street untidy on collection days. Meera agrees that it does and has moved her crates inside. She is not interested in arguing that her shop is a good deed. She would rather it were simply a shop that made sense.'
+      ],
+      questions: [
+        { t: 'mcq', q: 'Which vegetables does Meera’s shop sell?', opts: ['Vegetables that are rotten', 'Vegetables rejected for their shape but not rotten', 'Only the cheapest vegetables in the market', 'Vegetables grown in her own garden'], a: 1, why: 'None of them is rotten; each was rejected for its shape.' },
+        { t: 'mcq', q: 'How did Meera learn this trade?', opts: ['From a training course', 'By accident, after a wedding left four crates of beans', 'From her mother', 'By reading a newspaper article'], a: 1, why: 'She learned the trade by accident, when a wedding left over four crates of beans.' },
+        { t: 'mcq', q: 'What is the shop’s rule about price?', opts: ['The price is half the market rate and the customer is told why the vegetable is there', 'Everything costs ten rupees', 'The price changes every hour', 'Customers pay whatever they wish'], a: 0, why: 'The price is half the market rate, and the customer is told why the vegetable is there.' },
+        { t: 'mcq', q: 'How do the farmers gain from the shop?', opts: ['They get free seeds from Meera', 'A farmer paid for a full crate no longer loses money on the refused part', 'They sell their vegetables at double the price', 'They no longer need to grow vegetables'], a: 1, why: 'A farmer paid for a full crate no longer loses money on the part that the wholesale buyer refuses.' },
+        { t: 'mcq', q: 'What did Meera do about her neighbour’s complaint?', opts: ['She closed the shop', 'She moved her crates inside', 'She argued with the neighbour', 'She complained to the council'], a: 1, why: 'Meera agrees that it does and has moved her crates inside.' },
+        { t: 'text', q: 'How many rupees does a family save on vegetables each week? <span class="hint">(one word)</span>', parts: [{ a: ['forty', '40'] }], why: 'The passage says a family that saves forty rupees on vegetables every week notices the saving.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) no longer good enough to eat; decayed —', a: ['rotten'] }, { label: '(b) refused; not accepted —', a: ['rejected'] }], why: '‘Rotten’ means decayed; ‘rejected’ means refused or not accepted.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “The vegetables sold in the shop are rotten.”', a: false, why: 'The passage says plainly that none of them is rotten.' },
+        { t: 'mcq', q: 'Complete the sentence: Meera is not interested in arguing that her shop is a good deed because ____________.', opts: ['she earns a large profit from it', 'she would rather it were simply a shop that made sense', 'the neighbours disagree with her', 'the farmers do not support her'], a: 1, why: 'She would rather it were simply a shop that made sense.' },
+        { t: 'text', q: 'What took the vegetables that even Meera could not sell? <span class="hint">(one word)</span>', parts: [{ a: ['compost'] }], why: 'The compost heap behind the counter took what even she could not sell.' }
+      ]
+    }
+  ];
+
+  var ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
+  var LETTERS = ['a', 'b', 'c', 'd'];
+
   var root = document.documentElement;
-  var saved = null;
-  try { saved = localStorage.getItem('c7-reading-theme'); } catch (e) {}
-  if (saved) root.setAttribute('data-theme', saved);
+  try { var savedTheme = localStorage.getItem('c7-reading-theme'); if (savedTheme) root.setAttribute('data-theme', savedTheme); } catch (e) {}
   document.getElementById('themeBtn').addEventListener('click', function () {
     var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('c7-reading-theme', next); } catch (e) {}
   });
 
-  function norm(s) {
-    return (s || '').toString().trim().toLowerCase().replace(/\s+/g, ' ');
-  }
-
+  var tabsEl = document.getElementById('tabs');
+  var passageCard = document.getElementById('passageCard');
   var quiz = document.getElementById('quiz');
+  var scorebar = document.getElementById('scorebar');
+  var cur = 0;
+  var state = PASSAGES.map(function () { return { sel: {}, text: {}, res: {}, score: null }; });
 
-  // MCQ/option selection
-  quiz.querySelectorAll('.q[data-type="mcq"]').forEach(function (q) {
-    q.querySelectorAll('.opt').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
-        btn.classList.add('selected');
-        q.dataset.selected = btn.getAttribute('data-val');
-        q.classList.remove('correct', 'wrong');
-        q.querySelector('.feedback').textContent = '';
-        q.querySelector('.feedback').className = 'feedback';
-        var sb = q.querySelector('.show-ans'); if (sb) { sb.setAttribute('data-shown','false'); sb.textContent = 'Show answer'; }
-      });
-    });
-  });
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function norm(s) { return (s || '').toString().trim().toLowerCase().replace(/\s+/g, ' '); }
+  function whyHtml(q) { return q.why ? '<span class="why">' + esc(q.why) + '</span>' : ''; }
 
-  // Clear feedback while typing
-  quiz.querySelectorAll('.q[data-type="text"] .word-input, .q[data-type="text-multi"] .word-input').forEach(function (inp) {
-    inp.addEventListener('input', function () {
-      var q = inp.closest('.q');
-      q.classList.remove('correct', 'wrong');
-      inp.classList.remove('correct', 'wrong');
-      q.querySelectorAll('.word-input').forEach(function(i){ i.classList.remove('correct','wrong'); });
-      q.querySelector('.feedback').textContent = '';
-      q.querySelector('.feedback').className = 'feedback';
-      var sb = q.querySelector('.show-ans'); if (sb) { sb.setAttribute('data-shown','false'); sb.textContent = 'Show answer'; }
-    });
-  });
-
-  function escapeHtml(s) {
-    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-  function whyHtml(q) {
-    var w = q.getAttribute('data-why');
-    return w ? '<span class="why">' + escapeHtml(w) + '</span>' : '';
-  }
-  function matchesAny(val, answers) {
-    return answers.split('|').some(function (a) { return norm(val) === norm(a); });
+  function renderTabs() {
+    tabsEl.innerHTML = PASSAGES.map(function (p, i) {
+      return '<button type="button" class="tab' + (i === cur ? ' active' : '') + '" data-i="' + i + '">Passage ' + (i + 1) + '</button>';
+    }).join('');
   }
 
-  function hideModel(q) {
-    var fb = q.querySelector('.feedback');
-    q.classList.remove('correct', 'wrong');
-    q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
-    q.querySelectorAll('.word-input').forEach(function (i) { i.classList.remove('correct', 'wrong'); });
-    fb.textContent = '';
-    fb.className = 'feedback';
-    var btn = q.querySelector('.show-ans');
-    if (btn) { btn.setAttribute('data-shown', 'false'); btn.textContent = 'Show answer'; }
-  }
-
-  function showModel(q) {
-    var type = q.getAttribute('data-type');
-    var fb = q.querySelector('.feedback');
-    q.classList.remove('correct', 'wrong');
-    q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
-    q.querySelectorAll('.word-input').forEach(function (i) { i.classList.remove('correct', 'wrong'); });
-    var text = '';
-    if (type === 'mcq') {
-      var ans = q.getAttribute('data-answer');
-      q.querySelectorAll('.opt').forEach(function (b) { if (b.getAttribute('data-val') === ans) b.classList.add('correct'); });
-      var opt = q.querySelector('.opt[data-val="' + ans + '"]');
-      text = 'Answer: ' + (opt ? opt.textContent.replace(/\s+/g, ' ').trim() : ans) + '.';
-    } else if (type === 'text') {
-      text = 'Answer: ' + q.getAttribute('data-answer').split('|')[0] + '.';
-    } else if (type === 'text-multi') {
-      var parts = q.getAttribute('data-answers').split('|');
-      text = 'Answers: (a) ' + parts[0] + ', (b) ' + parts[1] + '.';
+  function renderPassage() {
+    var p = PASSAGES[cur];
+    var html = '<span class="section-tag">Section A — Reading Skill</span>';
+    html += '<h2>' + (cur + 1) + '. ' + esc(p.title) + '</h2>';
+    html += '<div class="passage">' + p.paras.map(function (t) { return '<p>' + t + '</p>'; }).join('');
+    if (p.table) {
+      var tb = p.table;
+      html += '<div class="table-wrap"><table aria-label="' + esc(tb.caption) + '"><thead><tr>' +
+        tb.head.map(function (h) { return '<th>' + esc(h) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+        tb.rows.map(function (r) {
+          return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>';
     }
-    fb.innerHTML = escapeHtml(text) + whyHtml(q);
-    fb.className = 'feedback info';
-    var btn = q.querySelector('.show-ans');
-    if (btn) { btn.setAttribute('data-shown', 'true'); btn.textContent = 'Hide answer'; }
+    html += '</div>';
+    passageCard.innerHTML = html;
   }
 
-  function markQuestion(q) {
-    var type = q.getAttribute('data-type');
-    var fb = q.querySelector('.feedback');
-    var ok = false;
-    q.classList.remove('correct', 'wrong');
+  function questionHtml(q, qi) {
+    var h = '<div class="q" data-qi="' + qi + '">';
+    h += '<div class="qhead"><span class="num">(' + ROMAN[qi] + ')</span> ' + q.q + '</div>';
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var opts = q.t === 'tf' ? ['TRUE', 'FALSE'] : q.opts;
+      h += '<div class="options">';
+      opts.forEach(function (o, oi) {
+        var val = q.t === 'tf' ? (oi === 0 ? 'true' : 'false') : String(oi);
+        h += '<button type="button" class="opt" data-val="' + val + '">' +
+          (q.t === 'tf' ? '' : '<span class="letter">(' + LETTERS[oi] + ')</span>') +
+          '<span>' + esc(o) + '</span></button>';
+      });
+      h += '</div>';
+    } else {
+      q.parts.forEach(function (part, pi) {
+        var id = 'q' + qi + 'p' + pi;
+        h += '<div class="subpart">';
+        if (part.label) h += '<label for="' + id + '">' + esc(part.label) + '</label>';
+        h += '<input id="' + id + '" class="word-input" data-part="' + pi + '" type="text" inputmode="' +
+          (part.num ? 'numeric' : 'text') + '" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word">';
+        h += '</div>';
+      });
+    }
+    h += '<div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>';
+    h += '<div class="feedback"></div>';
+    h += '</div>';
+    return h;
+  }
 
-    if (type === 'mcq') {
-      var ans = q.getAttribute('data-answer');
-      var sel = q.dataset.selected || '';
-      q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
-      if (!sel) {
+  function renderQuiz() {
+    var p = PASSAGES[cur];
+    var html = '<p class="instructions"><strong>Answer the questions.</strong> Tap an option where choices are given; type <strong>one word</strong> where the answer is one word (capital or small letters both accepted). Use <strong>Check answers</strong> for feedback on all ten, or <strong>Show answer</strong> on a single question to see the model answer and why.</p>';
+    html += p.questions.map(questionHtml).join('');
+    html += '<div class="actions"><button class="btn primary" id="checkBtn" type="button">Check answers</button>' +
+      '<button class="btn" id="resetBtn" type="button">Reset this passage</button></div>';
+    quiz.innerHTML = html;
+    restore();
+    updateScore();
+  }
+
+  function resetShow(qEl) {
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'false'); sb.textContent = 'Show answer'; }
+  }
+
+  function mark(q, qi) {
+    var st = state[cur];
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return false;
+    var fb = qEl.querySelector('.feedback');
+    var ok = false;
+    qEl.classList.remove('correct', 'wrong');
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var ans = q.t === 'tf' ? String(q.a) : String(q.a);
+      var sel = st.sel[qi];
+      qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+      var good = qEl.querySelector('.opt[data-val="' + ans + '"]');
+      if (good) good.classList.add('correct');
+      if (sel === undefined) {
+        if (good) good.classList.remove('correct');
         fb.textContent = 'Not answered yet.';
         fb.className = 'feedback bad';
         return false;
       }
-      q.querySelectorAll('.opt').forEach(function (b) {
-        var v = b.getAttribute('data-val');
-        if (v === ans) b.classList.add('correct');
-        if (v === sel && sel !== ans) b.classList.add('wrong');
-      });
+      if (sel !== ans) {
+        var bad = qEl.querySelector('.opt[data-val="' + sel + '"]');
+        if (bad) { bad.classList.remove('correct'); bad.classList.add('wrong'); }
+      }
       ok = sel === ans;
-      fb.innerHTML = escapeHtml(ok ? 'Correct.' : 'Not quite. The correct answer is highlighted.') + whyHtml(q);
+      fb.innerHTML = esc(ok ? 'Correct.' : 'Not quite. The correct answer is highlighted.') + whyHtml(q);
       fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
-    } else if (type === 'text') {
-      var inp = q.querySelector('.word-input');
-      var expected = q.getAttribute('data-answer');
-      var val = norm(inp.value);
-      inp.classList.remove('correct', 'wrong');
-      if (!val) {
-        fb.textContent = 'Not answered yet (type one word).';
-        fb.className = 'feedback bad';
-        return false;
-      }
-      ok = matchesAny(val, expected);
-      inp.classList.add(ok ? 'correct' : 'wrong');
-      fb.innerHTML = escapeHtml(ok ? 'Correct.' : 'Not quite. Correct answer: ' + expected.split('|')[0] + '.') + whyHtml(q);
-      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
-    } else if (type === 'text-multi') {
-      var expectedParts = q.getAttribute('data-answers').split('|');
-      var inputs = Array.from(q.querySelectorAll('.word-input'));
-      var allFilled = true;
-      inputs.forEach(function (inp) {
+    } else {
+      var inputs = qEl.querySelectorAll('.word-input');
+      var filled = true, goodCount = 0;
+      q.parts.forEach(function (part, pi) {
+        var inp = inputs[pi];
+        var val = norm((st.text[qi] || [])[pi] || '');
+        if (!inp) return;
         inp.classList.remove('correct', 'wrong');
-        if (!norm(inp.value)) allFilled = false;
+        if (!val) { filled = false; return; }
+        if (part.a.some(function (x) { return norm(x) === val; })) { goodCount++; inp.classList.add('correct'); }
+        else inp.classList.add('wrong');
       });
-      if (!allFilled) {
-        fb.textContent = 'Not answered yet (fill in both parts, one word each).';
+      if (!filled) {
+        fb.textContent = q.parts.length > 1 ? 'Not answered yet (fill in both parts, one word each).' : 'Not answered yet (type one word).';
         fb.className = 'feedback bad';
         return false;
       }
-      var correctCount = 0;
-      inputs.forEach(function (inp, idx) {
-        var val = norm(inp.value);
-        var good = matchesAny(val, expectedParts[idx]);
-        if (good) { correctCount++; inp.classList.add('correct'); }
-        else { inp.classList.add('wrong'); }
-      });
-      ok = correctCount === expectedParts.length;
-      if (ok) {
-        fb.innerHTML = 'Correct.' + whyHtml(q);
-        fb.className = 'feedback ok';
-      } else {
-        fb.innerHTML = escapeHtml('Not quite. Correct answers: (a) ' + expectedParts[0].split('|')[0] + ', (b) ' + expectedParts[1].split('|')[0] + '.') + whyHtml(q);
-        fb.className = 'feedback bad';
-      }
+      ok = goodCount === q.parts.length;
+      var msg;
+      if (ok) msg = 'Correct.';
+      else if (q.parts.length > 1) msg = 'Not quite. Correct answers: ' + q.parts.map(function (part, pi) { return '(' + LETTERS[pi] + ') ' + part.a[0]; }).join(', ') + '.';
+      else msg = 'Not quite. Correct answer: ' + q.parts[0].a[0] + '.';
+      fb.innerHTML = esc(msg) + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
     }
-
-    q.classList.add(ok ? 'correct' : 'wrong');
+    qEl.classList.add(ok ? 'correct' : 'wrong');
+    st.res[qi] = ok;
     return ok;
   }
 
-  quiz.querySelectorAll('.show-ans').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var q = btn.closest('.q');
-      if (btn.getAttribute('data-shown') === 'true') hideModel(q);
-      else showModel(q);
+  function showAnswer(q, qi) {
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return;
+    var fb = qEl.querySelector('.feedback');
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var ans = String(q.a);
+      qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.toggle('correct', b.getAttribute('data-val') === ans); });
+      var label = q.t === 'tf' ? (q.a ? 'TRUE' : 'FALSE') : '(' + LETTERS[q.a] + ') ' + q.opts[q.a];
+      fb.innerHTML = esc('Answer: ' + label + '.') + whyHtml(q);
+    } else {
+      var txt = q.parts.map(function (part, pi) {
+        return q.parts.length > 1 ? '(' + LETTERS[pi] + ') ' + part.a[0] : part.a[0];
+      }).join('; ');
+      fb.innerHTML = esc('Answer: ' + txt + '.') + whyHtml(q);
+    }
+    fb.className = 'feedback info';
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'true'); sb.textContent = 'Hide answer'; }
+  }
+
+  function restore() {
+    var st = state[cur];
+    PASSAGES[cur].questions.forEach(function (q, qi) {
+      var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+      if (!qEl) return;
+      if (st.sel[qi] !== undefined) {
+        var b = qEl.querySelector('.opt[data-val="' + st.sel[qi] + '"]');
+        if (b) b.classList.add('selected');
+      }
+      if (st.text[qi]) {
+        var inputs = qEl.querySelectorAll('.word-input');
+        st.text[qi].forEach(function (v, pi) { if (inputs[pi]) inputs[pi].value = v; });
+      }
     });
+    if (st.score !== null) {
+      PASSAGES[cur].questions.forEach(function (q, qi) { mark(q, qi); });
+    }
+  }
+
+  function updateScore() {
+    var st = state[cur];
+    var checked = state.filter(function (s) { return s.score !== null; });
+    var total = checked.reduce(function (a, s) { return a + s.score; }, 0);
+    var head = 'Passage ' + (cur + 1) + ': ' + (st.score === null ? '—' : st.score) + ' / ' + PASSAGES[cur].questions.length;
+    var note = checked.length
+      ? 'Checked so far: ' + checked.length + ' of ' + PASSAGES.length + ' passages · ' + total + ' / ' + (checked.length * PASSAGES[cur].questions.length) + ' correct.'
+      : 'Tap an option to choose it; you can change it any time before you check.';
+    scorebar.innerHTML = head + '<div class="small">' + note + '</div>';
+  }
+
+  document.addEventListener('click', function (ev) {
+    var tab = ev.target.closest('.tab');
+    if (tab) {
+      cur = Number(tab.getAttribute('data-i'));
+      renderTabs();
+      renderPassage();
+      renderQuiz();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (ev.target.id === 'checkBtn') {
+      var score = 0;
+      PASSAGES[cur].questions.forEach(function (q, qi) { if (mark(q, qi)) score++; });
+      state[cur].score = score;
+      updateScore();
+      return;
+    }
+
+    if (ev.target.id === 'resetBtn') {
+      state[cur] = { sel: {}, text: {}, res: {}, score: null };
+      renderQuiz();
+      updateScore();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    var sb = ev.target.closest('.show-ans');
+    if (sb && quiz.contains(sb)) {
+      var qEl = sb.closest('.q');
+      var qi = Number(qEl.getAttribute('data-qi'));
+      if (sb.getAttribute('data-shown') === 'true') {
+        var fb = qEl.querySelector('.feedback');
+        fb.textContent = '';
+        fb.className = 'feedback';
+        qEl.classList.remove('correct', 'wrong');
+        qEl.querySelectorAll('.opt').forEach(function (b) {
+          b.classList.remove('correct', 'wrong');
+          if (state[cur].sel[qi] !== undefined && b.getAttribute('data-val') === state[cur].sel[qi]) b.classList.add('selected');
+        });
+        resetShow(qEl);
+      } else {
+        showAnswer(PASSAGES[cur].questions[qi], qi);
+      }
+      return;
+    }
+
+    var opt = ev.target.closest('.opt');
+    if (opt && quiz.contains(opt)) {
+      var qBox = opt.closest('.q');
+      var qi2 = Number(qBox.getAttribute('data-qi'));
+      qBox.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
+      opt.classList.add('selected');
+      state[cur].sel[qi2] = opt.getAttribute('data-val');
+      delete state[cur].res[qi2];
+      state[cur].score = null;
+      qBox.classList.remove('correct', 'wrong');
+      var fb2 = qBox.querySelector('.feedback');
+      fb2.textContent = '';
+      fb2.className = 'feedback';
+      resetShow(qBox);
+      updateScore();
+    }
   });
 
-  document.getElementById('checkBtn').addEventListener('click', function () {
-    var qs = Array.from(quiz.querySelectorAll('.q'));
-    var score = 0;
-    qs.forEach(function (q) { if (markQuestion(q)) score++; });
-    document.getElementById('scorebar').childNodes[0].textContent = 'Score: ' + score + ' / ' + qs.length + '\n      ';
+  document.addEventListener('input', function (ev) {
+    var inp = ev.target.closest ? ev.target.closest('.word-input') : null;
+    if (!inp || !quiz.contains(inp)) return;
+    var qBox = inp.closest('.q');
+    var qi = Number(qBox.getAttribute('data-qi'));
+    var pi = Number(inp.getAttribute('data-part'));
+    var st = state[cur];
+    st.text[qi] = st.text[qi] || [];
+    st.text[qi][pi] = inp.value;
+    delete st.res[qi];
+    st.score = null;
+    inp.classList.remove('correct', 'wrong');
+    qBox.classList.remove('correct', 'wrong');
+    var fb = qBox.querySelector('.feedback');
+    fb.textContent = '';
+    fb.className = 'feedback';
+    resetShow(qBox);
+    updateScore();
   });
 
-  document.getElementById('resetBtn').addEventListener('click', function () {
-    quiz.querySelectorAll('.q').forEach(function (q) {
-      q.classList.remove('correct', 'wrong');
-      delete q.dataset.selected;
-      q.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
-      q.querySelectorAll('.word-input').forEach(function (i) { i.value = ''; i.classList.remove('correct', 'wrong'); });
-      var fb = q.querySelector('.feedback');
-      fb.textContent = '';
-      fb.className = 'feedback';
-      var sb = q.querySelector('.show-ans'); if (sb) { sb.setAttribute('data-shown','false'); sb.textContent = 'Show answer'; }
-    });
-    document.getElementById('scorebar').childNodes[0].textContent = 'Score: — / 10\n      ';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  renderTabs();
+  renderPassage();
+  renderQuiz();
 })();
 </script>
 </body>
