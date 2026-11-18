@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class IX Writing — Q9 Descriptive & Narrative Essay</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class IX — Writing (Q9)</h1>
+      <p class="sub">Section B · Descriptive OR Narrative essay (200–250 words)</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q9:</strong> Descriptive OR Narrative essay (about 200–250 words). Learn the structure with the <strong>sequence card</strong>, then complete solved samples by <strong>tapping blanks</strong>.</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-desc" type="button">Descriptive</button>
+      <button class="tab" id="tab-narr" type="button">Narrative</button>
+    </div>
+  </div>
+
+  <div id="panel-desc" class="panel active"></div>
+  <div id="panel-narr" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c9-q9-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c9-q9-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabDesc = document.getElementById('tab-desc'), tabNarr = document.getElementById('tab-narr');
+  var panelDesc = document.getElementById('panel-desc'), panelNarr = document.getElementById('panel-narr');
+  tabDesc.addEventListener('click', function(){ tabDesc.classList.add('active'); tabNarr.classList.remove('active'); panelDesc.classList.add('active'); panelNarr.classList.remove('active'); });
+  tabNarr.addEventListener('click', function(){ tabNarr.classList.add('active'); tabDesc.classList.remove('active'); panelNarr.classList.add('active'); panelDesc.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){
+        if(typeof part==='string') p.appendChild(document.createTextNode(part));
+        else if(part && part.html){ var span=document.createElement('span'); span.innerHTML=part.html; p.appendChild(span); }
+        else p.appendChild(makeBlank(part.k));
+      });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // DESCRIPTIVE TAB
+  makeSequenceCard(panelDesc, 'Arrange the parts of a descriptive essay in the correct order', [
+    'Title',
+    'Introduction: set the scene (where and when)',
+    'Body: describe the place or thing through the senses \u2014 sight, sound, smell',
+    'Body: the people and small details that make the scene alive',
+    'Conclusion: the feeling the place leaves you with'
+  ]);
+
+  var descQs = [
+    {
+      title: 'Tap-to-fill essay (1) — A Rainy Evening at the Railway Station',
+      scenario: 'Write a descriptive essay in about 200\u2013250 words on \u201cA Rainy Evening at the Railway Station\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['The July train was late by forty minutes, and the ', {k:'place'}, ' wore the look of a wet, breathing animal \u2014 steaming, noisy and strangely cosy at the same time.'], tag:'p'},
+        {parts:['Rain fell in long silver threads past the platform lights. Passengers pressed against the pillared waiting hall, and a hundred umbrellas opened and closed like slow, clumsy ', {k:'s1'}, '. The smell of wet concrete mixed with ', {k:'s2'}, ' drifting from the tea stall, and somewhere a porter\u2019s whistle cut through the drumming of the rain.'], tag:'p'},
+        {parts:['On the benches sat a small theatre of life. An old man shared his newspaper with a college student so that neither had to get wet. A mother rocked a ', {k:'s3'}, ' under the shelter, humming over the noise, while a boy counted ', {k:'s4'}, ' as they slid past the iron rails. Vendors shouted \u2014 ', {k:'s5'}, ', roasted peanuts, hot ', {k:'s6'}, ' \u2014 their baskets steaming in the cool air.'], tag:'p'},
+        {parts:['When the train finally glided in, its windows were fogged squares of light, and the crowd surged forward with a happy ', {k:'s7'}, '. I stood back and simply watched: strangers helping lift ', {k:'s8'}, ', the announcement crackling overhead, the smell of ', {k:'s9'}, ' smoke hanging low over the tracks.'], tag:'p'},
+        {parts:['Long after my train pulled away, the memory stayed with me \u2014 warm, crowded and completely ', {k:'s10'}, '. A rainy platform, I realised, is one of the few places where the whole country seems to arrive at once.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'A Rainy Evening at the Railway Station'}, place:{answer:'railway station'}, s1:{answer:'flowers'}, s2:{answer:'frying samosas'}, s3:{answer:'sleeping baby'}, s4:{answer:'sparkling raindrops'}, s5:{answer:'strong milk chai'}, s6:{answer:'corn'}, s7:{answer:'gust of laughter'}, s8:{answer:'heavy trunks'}, s9:{answer:'engine'}, s10:{answer:'alive'} },
+      bank: ['A Rainy Evening at the Railway Station','railway station','flowers','frying samosas','sleeping baby','sparkling raindrops','strong milk chai','corn','gust of laughter','heavy trunks','engine','alive','airport lounge','dry bricks','butter toast','bouncing ball','sleepy pigeons','dead']
+    },
+    {
+      title: 'Tap-to-fill essay (2) — The Book Fair in My Town',
+      scenario: 'Write a descriptive essay in about 200\u2013250 words on \u201cThe Book Fair in My Town\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['Every February, the district ground behind the old clock tower turns into a city of ', {k:'place'}, ' \u2014 hundreds of stalls under one enormous canvas sky.'], tag:'p'},
+        {parts:['From the gate itself, the fair announces itself. Banners of every ', {k:'s1'}, ' flutter overhead \u2014 history, science, folk tales, thrillers \u2014 and the air smells of fresh ', {k:'s2'}, ' and roasted groundnuts. Inside, the aisles hum like beehives: publishers call out discounts, children argue over comic ', {k:'s3'}, ', and college students crowd around the second-hand stall where classics sell by the kilo.'], tag:'p'},
+        {parts:['The people are the best part. There is always a grandfather reading aloud to his ', {k:'s4'}, ' on a bench, ignoring the crowd; a teacher hunting rare ', {k:'s5'}, ' for her school library; a small girl standing on tiptoe to reach a shelf of ', {k:'s6'}, '. Writers sign autographs in one corner while an artist ', {k:'s7'}, ' the whole scene in quick pencil strokes.'], tag:'p'},
+        {parts:['By evening the lights come on, the crowd thickens, and the air grows warmer with ', {k:'s8'}, ' and chatter. I bought three books that day \u2014 a book of poems, an atlas, and a thick novel with a ', {k:'s9'}, ' cover.'], tag:'p'},
+        {parts:['Walking home under the street lamps, my bag heavy on one shoulder, I felt quietly ', {k:'s10'}, '. A town with a book fair is a town that still believes in stories.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Book Fair in My Town'}, place:{answer:'paper'}, s1:{answer:'subject'}, s2:{answer:'ink'}, s3:{answer:'editions'}, s4:{answer:'granddaughter'}, s5:{answer:'maps'}, s6:{answer:'fairy tales'}, s7:{answer:'sketches'}, s8:{answer:'fried snacks'}, s9:{answer:'cracked leather'}, s10:{answer:'rich'} },
+      bank: ['The Book Fair in My Town','paper','subject','ink','editions','granddaughter','maps','fairy tales','sketches','fried snacks','cracked leather','rich','stadium','plastic','old clothes','grandson','timetables','science fiction','paints','bitter coffee','tired']
+    },
+    {
+      title: 'Tap-to-fill essay (3) — My Grandmother\u2019s Courtyard in Summer',
+      scenario: 'Write a descriptive essay in about 200\u2013250 words on \u201cMy Grandmother\u2019s Courtyard in Summer\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['The hottest month of the year turns my grandmother\u2019s courtyard into the coolest ', {k:'place'}, ' in our town.'], tag:'p'},
+        {parts:['The courtyard is a square of pale stone ', {k:'s1'}, ' by rooms on all four sides, so the sun can only lean in at noon. In the centre stands an old ', {k:'s2'}, ' tree, its branches spread like an umbrella, and beneath it my grandmother keeps two ', {k:'s3'}, ' chairs and a string cot.'], tag:'p'},
+        {parts:['Summer mornings begin with its sounds. Water splashes from the ', {k:'s4'}, ' as my grandmother sprinkles the stones; sparrows quarrel in the neem; and from the kitchen drift the smell of ', {k:'s5'}, ' and roasting cumin. By ten, she spreads washed ', {k:'s6'}, ' on the drying line \u2014 they snap like small sails in the hot wind.'], tag:'p'},
+        {parts:['Evenings are for the senses. She slices raw ', {k:'s7'}, ' with salt and chilli; cousins play carrom till the light fails; and somewhere a ', {k:'s8'}, ' spins its slow, sleepy song. The sky above the courtyard fills with ', {k:'s9'}, ', and the first lamp is lit under the tulsi.'], tag:'p'},
+        {parts:['People ask why we travel so far every summer. They have never slept on that string cot under the ', {k:'s10'}, ' tree, listening to stories older than the stones themselves.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'My Grandmother\u2019s Courtyard in Summer'}, place:{answer:'room'}, s1:{answer:'surrounded'}, s2:{answer:'peepal'}, s3:{answer:'wicker'}, s4:{answer:'hand pump'}, s5:{answer:'boiling milk'}, s6:{answer:'saris'}, s7:{answer:'mango'}, s8:{answer:'hand fan'}, s9:{answer:'first stars'}, s10:{answer:'neem'} },
+      bank: ['My Grandmother\u2019s Courtyard in Summer','room','surrounded','peepal','wicker','hand pump','boiling milk','saris','mango','hand fan','first stars','neem','rooftop','enclosed','plastic','electric meter','boiling dal','kurtas','jackfruit','ceiling fan','last buses','banyan']
+    },
+    {
+      title: 'Tap-to-fill essay (4) — The Last Bell Before the Holidays',
+      scenario: 'Write a descriptive essay in about 200\u2013250 words on \u201cThe Last Bell Before the Holidays\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['There is a moment every student knows \u2014 the last ', {k:'s1'}, ' of the last period before the holidays \u2014 when the whole school seems to hold its breath.'], tag:'p'},
+        {parts:['That afternoon, even our strictest teacher smiled as she wrote the holiday ', {k:'s2'}, ' on the board. Outside the window, the neem trees stood still in the heat, and the ', {k:'s3'}, ' of the basketball court had somehow gone quiet, as if the ground itself was waiting.'], tag:'p'},
+        {parts:['Then the bell rang \u2014 long, loud and ', {k:'s4'}, '. In one second the corridors exploded: benches scraped, bags flew, and a river of students in ', {k:'s5'}, ' flooded the staircases, shouting holiday plans over one another. The lab assistant laughed as someone dashed past with a ', {k:'s6'}, ' still open, pens and pencils sliding out behind him.'], tag:'p'},
+        {parts:['At the gate the crowd split into its little streams \u2014 the cyclists ringing bells in triumph, the bus queue pushing cheerfully, and a group of us walking slowly past the ', {k:'s7'}, ' shop, splitting a packet of ', {k:'s8'}, ' as if it were a feast. Even the school ', {k:'s9'}, ', waving from the gate, looked glad to see us go.'], tag:'p'},
+        {parts:['Holidays promise weeks of freedom, but nothing quite equals that first ', {k:'s10'}, ' of walking out with an empty homework bag and a summer waiting ahead.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Last Bell Before the Holidays'}, s1:{answer:'stroke'}, s2:{answer:'homework'}, s3:{answer:'bounce'}, s4:{answer:'merciless'}, s5:{answer:'white uniforms'}, s6:{answer:'geometry box'}, s7:{answer:'samosa'}, s8:{answer:'jalebis'}, s9:{answer:'gardener'}, s10:{answer:'hour'} },
+      bank: ['The Last Bell Before the Holidays','stroke','homework','bounce','merciless','white uniforms','geometry box','samosa','jalebis','gardener','hour','ring','syllabus','squeak','gentle','grey sweaters','lunch box','samosas','sweets','watchman','minute']
+    }
+  ];
+  descQs.forEach(function(q,i){ makeTapFill(panelDesc, (i+2)+'.', q); });
+
+  // NARRATIVE TAB
+  makeSequenceCard(panelNarr, 'Arrange the parts of a narrative essay in the correct order', [
+    'Title',
+    'Beginning: set the scene and hint that something is going to happen',
+    'Middle: the events in order, building interest',
+    'Climax: the turning point or most exciting moment',
+    'Ending: how it all settled, and what you learnt or felt'
+  ]);
+
+  var narrQs = [
+    {
+      title: 'Tap-to-fill essay (1) — The Wallet I Returned',
+      scenario: 'Write a narrative essay in about 200\u2013250 words on \u201cThe Wallet I Returned\u201d, recounting a real-life incident.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['Last winter, on a cold Sunday ', {k:'when'}, ', I found a brown leather wallet lying near the bus stop \u2014 and for ten long minutes it made me someone I had never met before.'], tag:'p'},
+        {parts:['I had gone to the market to buy ', {k:'b1'}, ' for my mother. Inside the wallet were two ', {k:'b2'}, ' notes, some coins, a bus pass and an identity card with a photograph of a middle-aged man. My friends were waiting at the ', {k:'b3'}, ', and the new game had just released. For a moment I honestly thought of keeping the ', {k:'b4'}, ' and telling nobody.'], tag:'p'},
+        {parts:['Then I looked at the photograph again. The man had a thin ', {k:'b5'}, ' and tired eyes, and the card said he worked as a ', {k:'b6'}, ' \u2014 someone whose whole month probably depended on those notes. My friends shouted at me to hurry; I shouted back that I would be late.'], tag:'p'},
+        {parts:['The address on the card was two streets away. I rang the bell, and a woman opened the door with a ', {k:'b7'}, ' \u2014 the man, her husband, had been searching the whole neighbourhood since morning. When I handed over the wallet he counted the money quickly, then simply ', {k:'b8'}, ' my hand without a word.'], tag:'p'},
+        {parts:['I reached the ground forty minutes late and lost the first match. Yet walking home, I felt taller than any ', {k:'b9'}, ' could make me. Some victories are never announced on a ', {k:'b10'}, ' \u2014 they are simply kept.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Wallet I Returned'}, when:{answer:'morning'}, b1:{answer:'vegetables'}, b2:{answer:'five-hundred'}, b3:{answer:'cricket ground'}, b4:{answer:'money'}, b5:{answer:'moustache'}, b6:{answer:'bus conductor'}, b7:{answer:'worried face'}, b8:{answer:'held'}, b9:{answer:'trophy'}, b10:{answer:'scoreboard'} },
+      bank: ['The Wallet I Returned','morning','vegetables','five-hundred','cricket ground','money','moustache','bus conductor','worried face','held','trophy','scoreboard','evening','stationery','thousand','park gate','coins','beard','postman','smiling face','shook','medal','noticeboard']
+    },
+    {
+      title: 'Tap-to-fill essay (2) — A Football Match to Remember',
+      scenario: 'Write a narrative essay in about 200\u2013250 words on \u201cA Football Match to Remember\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['Nobody gave our team a chance that Saturday \u2014 we were the ', {k:'b1'}, ' of Class IX, facing the undefeated Class X side in the inter-class ', {k:'b2'}, '.'], tag:'p'},
+        {parts:['The match began badly. Within ten minutes their tall striker had ', {k:'b3'}, ' twice, and our supporters on the boundary had gone silent. Our captain, Anmol, called us together at the ', {k:'b4'}, ' and said only one sentence: \u201cStop chasing them; start passing.\u201d'], tag:'p'},
+        {parts:['Something changed after that. We stopped running after the ball and began to move it \u2014 short, quick passes that slowly pulled their defence apart. Five minutes before half-time, Rehan ', {k:'b5'}, ' from the edge of the box, and the ball flew in off the post. The boundary erupted; even our PT teacher was on his ', {k:'b6'}, '.'], tag:'p'},
+        {parts:['The second half was war. Their players pushed harder, our goalkeeper saved twice with his ', {k:'b7'}, ', and legs grew heavy as the sun sank. In the last minute, a corner kick found my head \u2014 I still do not know how \u2014 and the net rippled. ', {k:'b8'}, ', the referee blew the final whistle: Class IX had won, two to ', {k:'b9'}, '.'], tag:'p'},
+        {parts:['We carried Anmol on our shoulders around the field. The trophy gathered dust within a year, but the lesson never did: a team that keeps ', {k:'b10'}, ' can beat a team that only chases.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'A Football Match to Remember'}, b1:{answer:'underdogs'}, b2:{answer:'final'}, b3:{answer:'scored'}, b4:{answer:'halfway line'}, b5:{answer:'struck'}, b6:{answer:'feet'}, b7:{answer:'fingertips'}, b8:{answer:'Seconds later'}, b9:{answer:'one'}, b10:{answer:'passing'} },
+      bank: ['A Football Match to Remember','underdogs','final','scored','halfway line','struck','feet','fingertips','Seconds later','one','passing','favourites','semi-final','missed','goalpost','slid','hands','Minutes earlier','three','shooting','knees']
+    },
+    {
+      title: 'Tap-to-fill essay (3) — The Night of the Power Cut',
+      scenario: 'Write a narrative essay in about 200\u2013250 words on \u201cThe Night of the Power Cut\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['The summer storm struck at ', {k:'b1'}, ', and with one loud crack the whole colony went ', {k:'b2'}, '.'], tag:'p'},
+        {parts:['At first it was almost fun. Father lit the kitchen ', {k:'b3'}, ' while we counted the seconds of thunder between the flashes of lightning. Then the ', {k:'b4'}, ' rose, the fans stopped turning, and the house grew as airless as an oven. My little sister began to cry because her night lamp \u2014 and, she insisted, her ', {k:'b5'}, ' \u2014 had both died.'], tag:'p'},
+        {parts:['Grandmother solved it her own way. She spread the string cot in the courtyard, carried out the last of the ', {k:'b6'}, ', and began a story about the monsoon of 1978, when the entire village had spent a week under one tin roof. Soon the neighbours drifted in with ', {k:'b7'}, ' and a pack of cards, and the darkness that had divided us into separate rooms now sat us all in one ', {k:'b8'}, '.'], tag:'p'},
+        {parts:['The lights returned near ', {k:'b9'}, '. Every television in the colony blinked to life, and every family drifted back indoors. I stayed out a moment longer, looking up at the ', {k:'b10'}, ' \u2014 for the first time in months, the city sky showed its stars.'], tag:'p'},
+        {parts:['Power cuts steal our electricity, but that night I learnt they can also return something we had quietly lost: an hour together, without a single screen.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Night of the Power Cut'}, b1:{answer:'nine o\u2019clock'}, b2:{answer:'dark'}, b3:{answer:'candle'}, b4:{answer:'temperature'}, b5:{answer:'night story'}, b6:{answer:'laddoos'}, b7:{answer:'tea'}, b8:{answer:'circle'}, b9:{answer:'midnight'}, b10:{answer:'clear sky'} },
+      bank: ['The Night of the Power Cut','nine o\u2019clock','dark','candle','temperature','night story','laddoos','tea','circle','midnight','clear sky','noon','bright','torch','humidity','bedtime cartoon','biscuits','coffee','queue','dawn','cloudy night']
+    },
+    {
+      title: 'Tap-to-fill essay (4) — An Unexpected Train Journey',
+      scenario: 'Write a narrative essay in about 200\u2013250 words on \u201cAn Unexpected Train Journey\u201d.',
+      template: [
+        {parts:[{html:'<strong>'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:['I had taken that route a hundred times, but the evening the ', {k:'b1'}, ' stopped between two stations, I finally understood why grown-ups say a journey is never just a journey.'], tag:'p'},
+        {parts:['It began normally. I boarded the 6:10 local with my ', {k:'b2'}, ' bag and my headphones, mentally rehearsing the ', {k:'b3'}, ' I had to recite the next morning. Twenty minutes out, the train shuddered, slowed and died beside a field of ', {k:'b4'}, ' \u2014 the driver announced a signal failure ahead.'], tag:'p'},
+        {parts:['Grumbling filled the compartment. Then the man opposite me, a ', {k:'b5'}, ' with a box of mangoes, cut two slices and offered them around as if we were old friends. Within half an hour, strangers were exchanging stories: the schoolteacher travelling to her village, the boy who had never seen a ', {k:'b6'}, ', the old woman correcting everyone\u2019s facts about the ', {k:'b7'}, ' line.'], tag:'p'},
+        {parts:['When the train finally lurched forward, a small cheer went up \u2014 and, strangely, a few people looked almost ', {k:'b8'}, '. The mango-seller tipped his hat as everyone ', {k:'b9'}, ' at the next station.'], tag:'p'},
+        {parts:['I reached home late, my poem only half-remembered. But I had learnt something no rehearsal could teach me: the most unexpected ', {k:'b10'}, ' of a journey are often the people trapped inside it with you.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'An Unexpected Train Journey'}, b1:{answer:'local train'}, b2:{answer:'school'}, b3:{answer:'poem'}, b4:{answer:'mustard flowers'}, b5:{answer:'fruit seller'}, b6:{answer:'steam engine'}, b7:{answer:'railway'}, b8:{answer:'disappointed'}, b9:{answer:'alighted'}, b10:{answer:'sights'} },
+      bank: ['An Unexpected Train Journey','local train','school','poem','mustard flowers','fruit seller','steam engine','railway','disappointed','alighted','sights','metro rail','tuition','essay','sunflower fields','ticket checker','megaproject','highway','relieved','boarded','sounds']
+    }
+  ];
+  narrQs.forEach(function(q,i){ makeTapFill(panelNarr, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

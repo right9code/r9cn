@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class IX Reading — Section A (Q2)</title>
+<style>
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --border: #d8dee8;
+  --primary: #2563eb;
+  --primary-soft: #dbeafe;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #334155;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a5f;
+  --success: #4ade80;
+  --success-soft: #14532d;
+  --danger: #f87171;
+  --danger-soft: #7f1d1d;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+h1 { font-size: 1.2rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer;
+  flex: 0 0 auto;
+}
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; margin-bottom: 8px; }
+.tab {
+  flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+  padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer;
+}
+.tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.section-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px;
+}
+h2 { font-size: 1rem; margin: 0 0 8px; }
+.passage { font-size: 1rem; }
+.passage p { margin: 0 0 10px; }
+.passage p:last-child { margin-bottom: 0; }
+.instructions { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
+.q {
+  border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px;
+  background: var(--surface);
+}
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 600; margin-bottom: 8px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.qhead u { text-decoration: underline; text-underline-offset: 2px; }
+.hint { font-weight: 500; color: var(--muted); }
+.options { display: grid; gap: 8px; }
+.opt {
+  display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 12px; border-radius: 10px; font-size: .97rem; cursor: pointer;
+}
+.opt.selected { border-color: var(--primary); background: var(--primary-soft); }
+.opt.correct { border-color: var(--success); background: var(--success-soft); }
+.opt.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.opt .letter { font-weight: 700; min-width: 1.2em; }
+.word-input {
+  width: 100%; max-width: 260px; padding: 10px 12px; font-size: 1rem; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+}
+.word-input.correct { border-color: var(--success); background: var(--success-soft); }
+.word-input.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.subpart { margin-top: 8px; }
+.subpart label { display: block; font-size: .92rem; margin-bottom: 4px; color: var(--muted); }
+.qtools { margin-top: 8px; }
+.link-btn {
+  border: 0; background: none; color: var(--primary); padding: 0; font: inherit; font-size: .88rem;
+  font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+}
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); }
+.feedback.bad { color: var(--danger); }
+.feedback.info { color: var(--muted); font-weight: 500; }
+.feedback .why { display: block; margin-top: 4px; font-weight: 500; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.btn {
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.scorebar {
+  margin-top: 12px; padding: 12px; border-radius: 12px; background: var(--surface-2);
+  border: 1px solid var(--border); font-weight: 700;
+}
+.small { font-size: .86rem; color: var(--muted); font-weight: 500; margin-top: 4px; }
+.chart { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-top: 12px; }
+.chart-title { background: var(--surface-2); padding: 8px 10px; font-weight: 700; font-size: .9rem; }
+.chart-body { padding: 10px 10px 12px; }
+.bar-row { display: grid; grid-template-columns: 5.2rem 1fr 3.2rem; align-items: center; gap: 8px; margin-bottom: 6px; }
+.bar-row:last-child { margin-bottom: 0; }
+.bar-label { font-size: .82rem; font-weight: 600; }
+.bar-track { background: var(--surface-2); border-radius: 6px; height: 14px; overflow: hidden; }
+.bar-fill { background: var(--primary); height: 100%; border-radius: 6px; }
+.bar-val { font-size: .8rem; font-weight: 700; text-align: right; }
+.chart-note { margin-top: 8px; font-size: .78rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class IX — Reading Skills (Q2)</h1>
+      <p class="sub">Section A, Q2 style · 5 case-based passages × 10 questions with data</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Choose a passage"></nav>
+  <div class="card" id="passageCard"></div>
+  <div class="card" id="quiz"></div>
+  <div class="scorebar" id="scorebar" aria-live="polite"></div>
+</div>
+
+<script>
+(function () {
+  var PASSAGES = [
+    {
+      title: 'Library Footfall at Riverside Public School',
+      paras: [
+        'The librarian of Riverside Public School tracks how many students visit the library each weekday during one sample week in October. On Monday the library recorded 120 visits, and Tuesday brought a slight rise to 140. Wednesday, mid-week, dipped to 100 visits as several classes were away on an excursion.',
+        'Thursday recovered strongly with 180 visits, the highest of the week, because two senior sections had scheduled research periods. Friday recorded 160 visits, and Saturday, a half-day with only junior sections attending, closed the week with 80 visits.',
+        'Adding the six figures gives the weekly total: 120 + 140 + 100 + 180 + 160 + 80 = 780 visits. This means the library handled an average of 130 visits per day across the six-day week (780 ÷ 6 = 130).',
+        'The two busiest days together — Thursday and Friday — account for 180 + 160 = 340 visits, which is just under 44% of the whole week’s footfall. By contrast, the two quietest days, Saturday and Wednesday, together saw only 180 visits, under a quarter of the weekly total.',
+        'The librarian noted that footfall rises whenever the stock of newly catalogued reference books grows, and dips when doubt-clearing tests clash with library periods. She plans to keep Saturday slots for story-reading sessions so that the quietest day attracts more junior readers.'
+      ],
+      bars: [
+        ['Monday', 120], ['Tuesday', 140], ['Wednesday', 100],
+        ['Thursday', 180], ['Friday', 160], ['Saturday', 80]
+      ],
+      barMax: 180, barUnit: 'visits',
+      questions: [
+        { t: 'mcq', q: 'On which day did the library record its highest footfall?', opts: ['Monday', 'Tuesday', 'Thursday', 'Friday'], a: 2, why: 'The passage and bar chart show Thursday with 180 visits, the highest of the week.' },
+        { t: 'mcq', q: 'What is the total number of library visits recorded during the six-day week?', opts: ['680', '720', '840', '780'], a: 3, why: '120 + 140 + 100 + 180 + 160 + 80 = 780 visits.' },
+        { t: 'mcq', q: 'How many visits did Monday and Wednesday record together?', opts: ['200', '220', '240', '260'], a: 1, why: 'Monday (120) + Wednesday (100) = 220 visits.' },
+        { t: 'mcq', q: 'Which pair of days together recorded the LOWEST number of visits?', opts: ['Saturday and Wednesday', 'Monday and Saturday', 'Wednesday and Tuesday', 'Friday and Saturday'], a: 0, why: 'Saturday (80) and Wednesday (100) total 180 — the lowest pair, as stated in Paragraph 4.' },
+        { t: 'text', q: 'Based on the data, complete the following: The average number of visits per day across the six-day week is ____________. <span class="hint">(a number)</span>', parts: [{ label: 'Answer:', a: ['130'], num: true }], why: '780 ÷ 6 = 130 visits per day on average.' },
+        { t: 'mcq', q: 'Roughly what share of the week’s total footfall came from Thursday and Friday together?', opts: ['About 25%', 'About 44%', 'About 60%', 'About 75%'], a: 1, why: 'Thursday and Friday together give 340 of 780 visits, which is just under 44%.' },
+        { t: 'text', q: 'Find a word in Paragraph 1 which means “an outing organised for study or pleasure”: <span class="hint">(one word)</span>', parts: [{ a: ['excursion'] }], why: 'Paragraph 1 uses “excursion” (“several classes were away on an excursion”).' },
+        { t: 'mcq', q: 'According to the librarian, when does footfall tend to RISE?', opts: ['When doubt-clearing tests clash with library periods', 'When the school closes for holidays', 'When junior sections skip story-reading', 'When newly catalogued reference books are added'], a: 3, why: 'Paragraph 5 states footfall rises whenever the stock of newly catalogued reference books grows.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Saturday recorded fewer than half the visits of Thursday.”', a: true, why: 'Saturday had 80 visits while Thursday had 180; 80 is fewer than half of 180 (90).' },
+        { t: 'mcq', q: 'Complete the sentence based on the passage: To attract more junior readers on the quietest day, the librarian plans to hold ____________ on Saturdays.', opts: ['story-reading sessions', 'doubt-clearing tests', 'teacher training workshops', 'inter-house quizzes'], a: 0, why: 'Paragraph 5 says she plans Saturday story-reading sessions so the quietest day attracts more junior readers.' }
+      ]
+    },
+    {
+      title: 'Rainfall Recorded at Hillview Weather Station',
+      paras: [
+        'The weather station on the ridge above Hillview town logs daily rainfall during the peak monsoon month of July. On the 1st of July the gauge collected 14 mm, followed by 22 mm on the 2nd. The 3rd stayed dry with no rain at all.',
+        'Heavy cloud moved in from the valley on the 4th, bringing 40 mm — the highest single-day reading of the period. The 5th added 12 mm, and the 6th dried up again with 0 mm recorded.',
+        'Adding the six readings gives the six-day total: 14 + 22 + 0 + 40 + 12 + 0 = 88 mm. Two of the six days, the 3rd and the 6th, recorded no rain whatsoever, so the average across all six days works out to about 14.7 mm (88 ÷ 6 ≈ 14.7).',
+        'The single wettest day, the 4th, contributed 40 mm — nearly half of the entire period’s rainfall. By contrast, the two dry days together contributed nothing, and the remaining three days accounted for the other 48 mm.',
+        'The station keeper observes that the gauge readings rise sharply whenever moisture-laden winds funnel up the valley, and fall when easterly winds push the cloud belt away. Farmers in the terraced fields below have learnt to finish sowing just before such heavy spells, since surface runoff on the slopes washes away freshly scattered seed.'
+      ],
+      bars: [
+        ['1 July', 14], ['2 July', 22], ['3 July', 0],
+        ['4 July', 40], ['5 July', 12], ['6 July', 0]
+      ],
+      barMax: 40, barUnit: 'mm',
+      questions: [
+        { t: 'mcq', q: 'Which date recorded the HIGHEST rainfall of the period?', opts: ['1 July', '2 July', '4 July', '5 July'], a: 2, why: 'The bar chart shows 4 July with 40 mm, the highest single-day reading.' },
+        { t: 'mcq', q: 'What is the total rainfall recorded across the six days?', opts: ['88 mm', '78 mm', '98 mm', '108 mm'], a: 0, why: '14 + 22 + 0 + 40 + 12 + 0 = 88 mm.' },
+        { t: 'mcq', q: 'How many of the six days recorded NO rainfall at all?', opts: ['One', 'Two', 'Three', 'Four'], a: 1, why: 'The 3rd and the 6th of July both recorded 0 mm.' },
+        { t: 'mcq', q: 'Which pair of dates together recorded the LOWEST combined rainfall?', opts: ['1 and 2 July', '3 and 6 July', '4 and 5 July', '2 and 5 July'], a: 1, why: '3 July and 6 July both recorded 0 mm, so together they total 0 mm — the lowest possible pair.' },
+        { t: 'text', q: 'Based on the data, complete the following: The single wettest day contributed ____________ mm, nearly half of the period’s total. <span class="hint">(a number)</span>', parts: [{ label: 'Answer:', a: ['40'], num: true }], why: '4 July recorded 40 mm, which is nearly half of the 88 mm total.' },
+        { t: 'mcq', q: 'Roughly what is the average rainfall per day over the six-day period?', opts: ['About 8.8 mm', 'About 22 mm', 'About 40 mm', 'About 14.7 mm'], a: 3, why: '88 ÷ 6 ≈ 14.7 mm per day on average.' },
+        { t: 'text', q: 'Find a word in Paragraph 5 which means “water that flows over the ground after rain”: <span class="hint">(one word)</span>', parts: [{ a: ['runoff'] }], why: 'Paragraph 5 uses “runoff” (“surface runoff on the slopes washes away freshly scattered seed”).' },
+        { t: 'mcq', q: 'According to the station keeper, when do the gauge readings fall?', opts: ['When moisture-laden winds funnel up the valley', 'When easterly winds push the cloud belt away', 'When farmers finish sowing early', 'When the ridge becomes cooler at night'], a: 1, why: 'Paragraph 5 says readings fall when easterly winds push the cloud belt away.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Farmers prefer to sow seeds during the heaviest spells of rain.”', a: false, why: 'Paragraph 5 states farmers sow just before heavy spells, since runoff washes away freshly scattered seed.' },
+        { t: 'mcq', q: 'Complete the sentence based on the passage: The heavy rain on 4 July arrived when heavy cloud moved in ____________.', opts: ['from the ridge tops', 'from the eastern desert', 'from the terrace fields', 'from the valley'], a: 3, why: 'Paragraph 2 states heavy cloud moved in from the valley on the 4th, bringing 40 mm.' }
+      ]
+    },
+    {
+      title: 'Cycles Sold by Metro Cycle Mart in One Week',
+      paras: [
+        'Metro Cycle Mart records how many bicycles it sold each day during a festive-season week. On Monday the shop sold 25 cycles. Sales picked up on Tuesday with 30 cycles, and Wednesday matched Monday’s figure with 25 sold.',
+        'Thursday, the first day of the festive discount scheme, saw the week’s highest sales of 45 cycles. Friday followed closely with 40 cycles, and Saturday, the weekly half-day, closed with 15 cycles sold.',
+        'Adding the six figures gives the weekly total: 25 + 30 + 25 + 45 + 40 + 15 = 180 cycles. Across the six-day week, the shop therefore averaged 30 cycles per day (180 ÷ 6 = 30).',
+        'The two busiest days, Thursday and Friday, together account for 45 + 40 = 85 cycles — nearly half of the entire week’s sales. The quietest day, Saturday, sold only 15 cycles, exactly one-third of Thursday’s figure.',
+        'The shop manager attributes the Thursday–Friday surge to the festive discount scheme combined with salary week, when most households have cash in hand. He notes that Sunday holiday demand gets absorbed by neighbouring showrooms, so Metro Cycle Mart plans to extend the discount scheme through Saturday evening next season to lift the weakest sales day.'
+      ],
+      bars: [
+        ['Monday', 25], ['Tuesday', 30], ['Wednesday', 25],
+        ['Thursday', 45], ['Friday', 40], ['Saturday', 15]
+      ],
+      barMax: 45, barUnit: 'cycles',
+      questions: [
+        { t: 'mcq', q: 'On which day were the most cycles sold?', opts: ['Monday', 'Thursday', 'Friday', 'Tuesday'], a: 1, why: 'The bar chart shows Thursday with 45 cycles, the week’s highest.' },
+        { t: 'mcq', q: 'What was the total number of cycles sold during the week?', opts: ['160', '170', '180', '190'], a: 2, why: '25 + 30 + 25 + 45 + 40 + 15 = 180 cycles.' },
+        { t: 'mcq', q: 'How many cycles were sold on Wednesday and Friday together?', opts: ['65', '55', '60', '70'], a: 0, why: 'Wednesday (25) + Friday (40) = 65 cycles.' },
+        { t: 'mcq', q: 'Which day recorded the LOWEST sales of the week?', opts: ['Monday', 'Wednesday', 'Friday', 'Saturday'], a: 3, why: 'Saturday recorded only 15 cycles, the lowest single-day figure.' },
+        { t: 'text', q: 'Based on the data, complete the following: The average number of cycles sold per day across the six-day week is ____________. <span class="hint">(a number)</span>', parts: [{ label: 'Answer:', a: ['30'], num: true }], why: '180 ÷ 6 = 30 cycles per day on average.' },
+        { t: 'mcq', q: 'Roughly what share of the week’s sales came from Thursday and Friday together?', opts: ['About a quarter', 'About one-third', 'Nearly half', 'Nearly three-quarters'], a: 2, why: 'Thursday and Friday together sold 85 of 180 cycles — nearly half of the week’s sales.' },
+        { t: 'text', q: 'Find a word in Paragraph 5 which means “a sudden strong increase”: <span class="hint">(one word)</span>', parts: [{ a: ['surge'] }], why: 'Paragraph 5 uses “surge” (“the Thursday–Friday surge to the festive discount scheme”).' },
+        { t: 'mcq', q: 'According to the shop manager, why were Thursday and Friday the busiest days?', opts: ['The showroom opened for longer hours', 'A festive discount scheme coincided with salary week', 'Sunday demand shifted to the shop', 'Free helmets were given to every buyer'], a: 1, why: 'Paragraph 5 attributes the surge to the festive discount scheme combined with salary week.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Saturday’s sales were exactly one-third of Thursday’s.”', a: true, why: 'Paragraph 4 states Saturday sold 15 cycles, exactly one-third of Thursday’s 45.' },
+        { t: 'mcq', q: 'Complete the sentence based on the passage: To lift the weakest sales day, the manager plans to ____________ next season.', opts: ['close the shop on Sundays', 'raise cycle prices on weekdays', 'shift the showroom to the highway', 'extend the discount scheme through Saturday evening'], a: 3, why: 'Paragraph 5 says he plans to extend the discount scheme through Saturday evening to lift the weakest day.' }
+      ]
+    },
+    {
+      title: 'Solar Units Generated by Sunshine Hostel',
+      paras: [
+        'Sunshine Hostel tracks how many units of electricity its rooftop solar panels generate each day during a clear week in March. On Sunday the meter read 20 units. Monday was equally bright with 24 units, and Tuesday dropped slightly to 18 units.',
+        'Wednesday proved the sunniest day of the week, generating 32 units. Thursday produced 26 units, and a brief spell of haze on Friday brought the figure down to 10 units.',
+        'Adding the six figures gives the weekly total: 20 + 24 + 18 + 32 + 26 + 10 = 130 units. The hostel therefore generated an average of about 21.7 units per day across the six days (130 ÷ 6 ≈ 21.7).',
+        'The best day, Wednesday, alone supplied nearly a quarter of the week’s clean energy (32 of 130 units). By contrast, the haze-hit Friday contributed only 10 units — under one-third of Wednesday’s output and the weakest day of the week.',
+        'The hostel warden observes that output tracks sunshine closely: generation rises whenever skies stay cloudless from dawn, and dips when dust or mist settles over the ridge. He plans to add a second battery bank so surplus units from bright days can be stored and used on haze-affected evenings.'
+      ],
+      bars: [
+        ['Sunday', 20], ['Monday', 24], ['Tuesday', 18],
+        ['Wednesday', 32], ['Thursday', 26], ['Friday', 10]
+      ],
+      barMax: 32, barUnit: 'units',
+      questions: [
+        { t: 'mcq', q: 'Which day generated the MOST solar units?', opts: ['Sunday', 'Monday', 'Wednesday', 'Thursday'], a: 2, why: 'The bar chart shows Wednesday with 32 units, the week’s highest output.' },
+        { t: 'mcq', q: 'What is the total number of solar units generated during the six days?', opts: ['110', '120', '130', '140'], a: 2, why: '20 + 24 + 18 + 32 + 26 + 10 = 130 units.' },
+        { t: 'mcq', q: 'How many units did Tuesday and Thursday produce together?', opts: ['34', '44', '54', '64'], a: 1, why: 'Tuesday (18) + Thursday (26) = 44 units.' },
+        { t: 'mcq', q: 'Which day recorded the LOWEST generation?', opts: ['Tuesday', 'Thursday', 'Sunday', 'Friday'], a: 3, why: 'Friday generated only 10 units because of haze — the weakest day of the week.' },
+        { t: 'text', q: 'Based on the data, complete the following: The average daily generation across the six days is about ____________ units. <span class="hint">(a number, one decimal place)</span>', parts: [{ label: 'Answer:', a: ['21.7'], num: true }], why: '130 ÷ 6 ≈ 21.7 units per day on average.' },
+        { t: 'mcq', q: 'Roughly what fraction of the week’s clean energy did Wednesday alone supply?', opts: ['Nearly one-quarter', 'Nearly one-tenth', 'Nearly one-half', 'Nearly three-quarters'], a: 0, why: 'Wednesday generated 32 of 130 units — nearly a quarter of the weekly total.' },
+        { t: 'text', q: 'Find a word in Paragraph 2 which means “thin cloud that reduces visibility”: <span class="hint">(one word)</span>', parts: [{ a: ['haze'] }], why: 'Paragraph 2 uses “haze” (“a brief spell of haze on Friday brought the figure down to 10 units”).' },
+        { t: 'mcq', q: 'According to the warden, when does solar generation dip?', opts: ['When skies stay cloudless from dawn', 'When dust or mist settles over the ridge', 'When the second battery bank is added', 'When students use fewer lights'], a: 1, why: 'Paragraph 5 states output dips when dust or mist settles over the ridge.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Friday’s output was under one-third of Wednesday’s.”', a: true, why: 'Paragraph 4 states Friday contributed only 10 units, under one-third of Wednesday’s 32.' },
+        { t: 'mcq', q: 'Complete the sentence based on the passage: The warden plans to add a second battery bank so that ____________.', opts: ['surplus units from bright days can be stored for hazy evenings', 'the hostel can sell power to the grid', 'panels can be tilted towards the sun', 'the meter readings become easier to log'], a: 0, why: 'Paragraph 5 says surplus units from bright days can be stored and used on haze-affected evenings.' }
+      ]
+    },
+    {
+      title: 'Saplings Planted by Green Valley Club',
+      paras: [
+        'Green Valley Club logs how many saplings its volunteers plant each day during a tree-plantation drive week. On Monday the team planted 30 saplings. Tuesday saw better turnout with 40 saplings, and Wednesday matched Tuesday’s figure with 40 planted.',
+        'Thursday, when a local college group joined the drive, the club planted 60 saplings — the week’s best. Friday recorded 50 saplings, and Saturday’s shorter two-hour session closed the week with 20 saplings.',
+        'Adding the six figures gives the weekly total: 30 + 40 + 40 + 60 + 50 + 20 = 240 saplings. Across the six-day drive, the team therefore averaged 40 saplings per day (240 ÷ 6 = 40).',
+        'The strongest day, Thursday, contributed 60 saplings — one-fourth of the entire week’s plantation. The weakest day, Saturday, added only 20 saplings, exactly one-third of Thursday’s figure and one-twelfth of the weekly total.',
+        'The club secretary notes that turnout rises whenever college groups join the drive, and dips during examination weeks when regular volunteers are busy. She plans to invite neighbourhood resident associations for the next drive so that even short sessions like Saturday’s draw more planting hands.'
+      ],
+      bars: [
+        ['Monday', 30], ['Tuesday', 40], ['Wednesday', 40],
+        ['Thursday', 60], ['Friday', 50], ['Saturday', 20]
+      ],
+      barMax: 60, barUnit: 'saplings',
+      questions: [
+        { t: 'mcq', q: 'On which day were the most saplings planted?', opts: ['Monday', 'Tuesday', 'Thursday', 'Friday'], a: 2, why: 'The bar chart shows Thursday with 60 saplings, the week’s best.' },
+        { t: 'mcq', q: 'What is the total number of saplings planted during the six-day drive?', opts: ['220', '230', '250', '240'], a: 3, why: '30 + 40 + 40 + 60 + 50 + 20 = 240 saplings.' },
+        { t: 'mcq', q: 'How many saplings were planted on Monday and Friday together?', opts: ['70', '75', '80', '85'], a: 2, why: 'Monday (30) + Friday (50) = 80 saplings.' },
+        { t: 'mcq', q: 'Which day recorded the LOWEST number of saplings planted?', opts: ['Saturday', 'Monday', 'Wednesday', 'Tuesday'], a: 0, why: 'Saturday recorded only 20 saplings, the weakest day of the drive.' },
+        { t: 'text', q: 'Based on the data, complete the following: The average number of saplings planted per day across the six-day drive is ____________. <span class="hint">(a number)</span>', parts: [{ label: 'Answer:', a: ['40'], num: true }], why: '240 ÷ 6 = 40 saplings per day on average.' },
+        { t: 'mcq', q: 'What fraction of the entire week’s plantation came from Thursday alone?', opts: ['One-tenth', 'One-eighth', 'One-sixth', 'One-fourth'], a: 3, why: 'Thursday contributed 60 of 240 saplings — exactly one-fourth of the weekly total.' },
+        { t: 'text', q: 'Find a word in Paragraph 1 which means “the number of people present at an event”: <span class="hint">(one word)</span>', parts: [{ a: ['turnout'] }], why: 'Paragraph 1 uses “turnout” (“Tuesday saw better turnout with 40 saplings”).' },
+        { t: 'mcq', q: 'According to the club secretary, when does turnout DIP?', opts: ['During examination weeks when volunteers are busy', 'When college groups join the drive', 'When resident associations are invited', 'During short two-hour sessions'], a: 0, why: 'Paragraph 5 states turnout dips during examination weeks when regular volunteers are busy.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Thursday’s plantation figure was joined by a local college group.”', a: true, why: 'Paragraph 2 states that on Thursday, when a local college group joined the drive, the club planted 60 saplings.' },
+        { t: 'mcq', q: 'Complete the sentence based on the passage: For the next drive, the secretary plans to invite ____________ so that even short sessions draw more planting hands.', opts: ['district officials', 'neighbourhood resident associations', 'professional gardeners', 'foreign volunteers'], a: 1, why: 'Paragraph 5 says she plans to invite neighbourhood resident associations for the next drive.' }
+      ]
+    }
+  ];
+
+  var ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
+  var LETTERS = ['a', 'b', 'c', 'd'];
+
+  var root = document.documentElement;
+  try { var savedTheme = localStorage.getItem('c9-reading-q2-theme'); if (savedTheme) root.setAttribute('data-theme', savedTheme); } catch (e) {}
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c9-reading-q2-theme', next); } catch (e) {}
+  });
+
+  var tabsEl = document.getElementById('tabs');
+  var passageCard = document.getElementById('passageCard');
+  var quiz = document.getElementById('quiz');
+  var scorebar = document.getElementById('scorebar');
+  var cur = 0;
+  var state = PASSAGES.map(function () { return { sel: {}, text: {}, res: {}, score: null }; });
+
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function norm(s) { return (s || '').toString().trim().toLowerCase().replace(/\s+/g, ' '); }
+  function whyHtml(q) { return q.why ? '<span class="why">' + esc(q.why) + '</span>' : ''; }
+
+  function chartHtml(p) {
+    var h = '<div class="chart"><div class="chart-title">' + esc(p.title) + ' — ' + esc(p.barUnit) + '</div><div class="chart-body">';
+    p.bars.forEach(function (b) {
+      var pct = Math.round((b[1] / p.barMax) * 100);
+      h += '<div class="bar-row"><span class="bar-label">' + esc(b[0]) + '</span>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+        '<span class="bar-val">' + b[1] + '</span></div>';
+    });
+    h += '<div class="chart-note">Values are labelled on each bar; the passage text contains the same figures.</div>';
+    h += '</div></div>';
+    return h;
+  }
+
+  function renderTabs() {
+    tabsEl.innerHTML = PASSAGES.map(function (p, i) {
+      return '<button type="button" class="tab' + (i === cur ? ' active' : '') + '" data-i="' + i + '">Set ' + (i + 1) + '</button>';
+    }).join('');
+  }
+
+  function renderPassage() {
+    var p = PASSAGES[cur];
+    var html = '<span class="section-tag">Section A — Reading Skills · Case-based</span>';
+    html += '<h2>' + (cur + 1) + '. ' + esc(p.title) + '</h2>';
+    html += '<div class="passage">' + p.paras.map(function (t) { return '<p>' + t + '</p>'; }).join('') + '</div>';
+    html += chartHtml(p);
+    passageCard.innerHTML = html;
+  }
+
+  function questionHtml(q, qi) {
+    var h = '<div class="q" data-qi="' + qi + '">';
+    h += '<div class="qhead"><span class="num">(' + ROMAN[qi] + ')</span> ' + q.q + '</div>';
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var opts = q.t === 'tf' ? ['TRUE', 'FALSE'] : q.opts;
+      h += '<div class="options">';
+      opts.forEach(function (o, oi) {
+        var val = q.t === 'tf' ? (oi === 0 ? 'true' : 'false') : String(oi);
+        h += '<button type="button" class="opt" data-val="' + val + '">' +
+          (q.t === 'tf' ? '' : '<span class="letter">(' + LETTERS[oi] + ')</span>') +
+          '<span>' + esc(o) + '</span></button>';
+      });
+      h += '</div>';
+    } else {
+      q.parts.forEach(function (part, pi) {
+        var id = 'q' + qi + 'p' + pi;
+        h += '<div class="subpart">';
+        if (part.label) h += '<label for="' + id + '">' + esc(part.label) + '</label>';
+        h += '<input id="' + id + '" class="word-input" data-part="' + pi + '" type="text" inputmode="' +
+          (part.num ? 'decimal' : 'text') + '" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="' +
+          (part.num ? 'Type a number' : 'Type one word') + '">';
+        h += '</div>';
+      });
+    }
+    h += '<div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>';
+    h += '<div class="feedback"></div>';
+    h += '</div>';
+    return h;
+  }
+
+  function renderQuiz() {
+    var p = PASSAGES[cur];
+    var html = '<p class="instructions"><strong>Answer the questions.</strong> Tap an option where choices are given; type your answer where a box is provided (for number answers, digits only). Use <strong>Check answers</strong> for feedback on all ten, or <strong>Show answer</strong> on a single question to see the model answer and how it is worked out.</p>';
+    html += p.questions.map(questionHtml).join('');
+    html += '<div class="actions"><button class="btn primary" id="checkBtn" type="button">Check answers</button>' +
+      '<button class="btn" id="resetBtn" type="button">Reset this set</button></div>';
+    quiz.innerHTML = html;
+    restore();
+    updateScore();
+  }
+
+  function resetShow(qEl) {
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'false'); sb.textContent = 'Show answer'; }
+  }
+
+  function mark(q, qi) {
+    var st = state[cur];
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return false;
+    var fb = qEl.querySelector('.feedback');
+    var ok = false;
+    qEl.classList.remove('correct', 'wrong');
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var ans = String(q.a);
+      var sel = st.sel[qi];
+      qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+      var good = qEl.querySelector('.opt[data-val="' + ans + '"]');
+      if (good) good.classList.add('correct');
+      if (sel === undefined) {
+        if (good) good.classList.remove('correct');
+        fb.textContent = 'Not answered yet.';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      if (sel !== ans) {
+        var bad = qEl.querySelector('.opt[data-val="' + sel + '"]');
+        if (bad) { bad.classList.remove('correct'); bad.classList.add('wrong'); }
+      }
+      ok = sel === ans;
+      fb.innerHTML = esc(ok ? 'Correct.' : 'Not quite. The correct answer is highlighted.') + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    } else {
+      var inputs = qEl.querySelectorAll('.word-input');
+      var filled = true, goodCount = 0;
+      q.parts.forEach(function (part, pi) {
+        var inp = inputs[pi];
+        var val = norm((st.text[qi] || [])[pi] || '');
+        if (!inp) return;
+        inp.classList.remove('correct', 'wrong');
+        if (!val) { filled = false; return; }
+        var match = part.num
+          ? part.a.some(function (x) { return norm(x) === val || Number(x) === Number(val); })
+          : part.a.some(function (x) { return norm(x) === val; });
+        if (match) { goodCount++; inp.classList.add('correct'); }
+        else inp.classList.add('wrong');
+      });
+      if (!filled) {
+        fb.textContent = 'Not answered yet.';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      ok = goodCount === q.parts.length;
+      var msg;
+      if (ok) msg = 'Correct.';
+      else msg = 'Not quite. Correct answer: ' + q.parts.map(function (part) { return part.a[0]; }).join('; ') + '.';
+      fb.innerHTML = esc(msg) + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    }
+    qEl.classList.add(ok ? 'correct' : 'wrong');
+    st.res[qi] = ok;
+    return ok;
+  }
+
+  function showAnswer(q, qi) {
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return;
+    var fb = qEl.querySelector('.feedback');
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var ans = String(q.a);
+      qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.toggle('correct', b.getAttribute('data-val') === ans); });
+      var label = q.t === 'tf' ? (q.a ? 'TRUE' : 'FALSE') : '(' + LETTERS[q.a] + ') ' + q.opts[q.a];
+      fb.innerHTML = esc('Answer: ' + label + '.') + whyHtml(q);
+    } else {
+      var txt = q.parts.map(function (part) { return part.a[0]; }).join('; ');
+      fb.innerHTML = esc('Answer: ' + txt + '.') + whyHtml(q);
+    }
+    fb.className = 'feedback info';
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'true'); sb.textContent = 'Hide answer'; }
+  }
+
+  function restore() {
+    var st = state[cur];
+    PASSAGES[cur].questions.forEach(function (q, qi) {
+      var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+      if (!qEl) return;
+      if (st.sel[qi] !== undefined) {
+        var b = qEl.querySelector('.opt[data-val="' + st.sel[qi] + '"]');
+        if (b) b.classList.add('selected');
+      }
+      if (st.text[qi]) {
+        var inputs = qEl.querySelectorAll('.word-input');
+        st.text[qi].forEach(function (v, pi) { if (inputs[pi]) inputs[pi].value = v; });
+      }
+    });
+    if (st.score !== null) {
+      PASSAGES[cur].questions.forEach(function (q, qi) { mark(q, qi); });
+    }
+  }
+
+  function updateScore() {
+    var st = state[cur];
+    var checked = state.filter(function (s) { return s.score !== null; });
+    var total = checked.reduce(function (a, s) { return a + s.score; }, 0);
+    var head = 'Set ' + (cur + 1) + ': ' + (st.score === null ? '—' : st.score) + ' / ' + PASSAGES[cur].questions.length;
+    var note = checked.length
+      ? 'Checked so far: ' + checked.length + ' of ' + PASSAGES.length + ' sets · ' + total + ' / ' + (checked.length * PASSAGES[cur].questions.length) + ' correct.'
+      : 'Tap an option to choose it; you can change it any time before you check.';
+    scorebar.innerHTML = head + '<div class="small">' + note + '</div>';
+  }
+
+  document.addEventListener('click', function (ev) {
+    var tab = ev.target.closest('.tab');
+    if (tab) {
+      cur = Number(tab.getAttribute('data-i'));
+      renderTabs();
+      renderPassage();
+      renderQuiz();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (ev.target.id === 'checkBtn') {
+      var score = 0;
+      PASSAGES[cur].questions.forEach(function (q, qi) { if (mark(q, qi)) score++; });
+      state[cur].score = score;
+      updateScore();
+      return;
+    }
+
+    if (ev.target.id === 'resetBtn') {
+      state[cur] = { sel: {}, text: {}, res: {}, score: null };
+      renderQuiz();
+      updateScore();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    var sb = ev.target.closest('.show-ans');
+    if (sb && quiz.contains(sb)) {
+      var qEl = sb.closest('.q');
+      var qi = Number(qEl.getAttribute('data-qi'));
+      if (sb.getAttribute('data-shown') === 'true') {
+        var fb = qEl.querySelector('.feedback');
+        fb.textContent = '';
+        fb.className = 'feedback';
+        qEl.classList.remove('correct', 'wrong');
+        qEl.querySelectorAll('.opt').forEach(function (b) {
+          b.classList.remove('correct', 'wrong');
+          if (state[cur].sel[qi] !== undefined && b.getAttribute('data-val') === state[cur].sel[qi]) b.classList.add('selected');
+        });
+        resetShow(qEl);
+      } else {
+        showAnswer(PASSAGES[cur].questions[qi], qi);
+      }
+      return;
+    }
+
+    var opt = ev.target.closest('.opt');
+    if (opt && quiz.contains(opt)) {
+      var qBox = opt.closest('.q');
+      var qi2 = Number(qBox.getAttribute('data-qi'));
+      qBox.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
+      opt.classList.add('selected');
+      state[cur].sel[qi2] = opt.getAttribute('data-val');
+      delete state[cur].res[qi2];
+      state[cur].score = null;
+      qBox.classList.remove('correct', 'wrong');
+      var fb2 = qBox.querySelector('.feedback');
+      fb2.textContent = '';
+      fb2.className = 'feedback';
+      resetShow(qBox);
+      updateScore();
+    }
+  });
+
+  document.addEventListener('input', function (ev) {
+    var inp = ev.target.closest ? ev.target.closest('.word-input') : null;
+    if (!inp || !quiz.contains(inp)) return;
+    var qBox = inp.closest('.q');
+    var qi = Number(qBox.getAttribute('data-qi'));
+    var pi = Number(inp.getAttribute('data-part'));
+    var st = state[cur];
+    st.text[qi] = st.text[qi] || [];
+    st.text[qi][pi] = inp.value;
+    delete st.res[qi];
+    st.score = null;
+    inp.classList.remove('correct', 'wrong');
+    qBox.classList.remove('correct', 'wrong');
+    var fb = qBox.querySelector('.feedback');
+    fb.textContent = '';
+    fb.className = 'feedback';
+    resetShow(qBox);
+    updateScore();
+  });
+
+  renderTabs();
+  renderPassage();
+  renderQuiz();
+})();
+</script>
+</body>
+</html>

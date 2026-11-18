@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class IX Literature — Q12 Short Answers</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.qhead .chap { float: right; font-size: .8rem; color: var(--muted); font-weight: 600; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.ansbox { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.ansbox p { margin: 6px 0; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.bank-label { width: 100%; font-size: .8rem; color: var(--muted); font-weight: 600; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.totalbar { margin-top: 12px; padding: 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); font-weight: 700; }
+.small { font-size: .86rem; color: var(--muted); font-weight: 500; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class IX — Literature: Short Answers (Q12)</h1>
+      <p class="sub">Section C · ANY FIVE in 40–50 words · tap-to-fill model answers</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section C — Literature</span>
+    <p class="note"><strong>Q12:</strong> Answer ANY FIVE in about 40–50 words. Practise by completing each 40–50-word model answer: tap a <strong>blank</strong>, then tap the right word from the shuffled bank. Tap a filled blank to take the word back.</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-prose" type="button">Prose (18)</button>
+      <button class="tab" id="tab-poetry" type="button">Poetry (15)</button>
+    </div>
+  </div>
+
+  <div class="card totalbar" id="totalbar" aria-live="polite"></div>
+
+  <div id="panel-prose" class="panel active"></div>
+  <div id="panel-poetry" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var ITEMS = [
+    // ===== PROSE =====
+    { tab: 'prose', chap: 'How I Taught My Grandmother to Read',
+      q: 'Why did the grandmother feel embarrassed to ask someone else to read to her while the narrator was away?',
+      parts: ['The grandmother was an ', {k:'b1'}, ' and deeply respected lady of the village. She felt ', {k:'b2'}, ' to show her inability to read to strangers, and she did not want to feel dependent on ', {k:'b3'}, ' for something so personal, so she waited silently for her granddaughter to return.'],
+      blanks: { b1:{a:'elderly',d:['tiny','foreign']}, b2:{a:'ashamed',d:['proud','delighted']}, b3:{a:'others',d:['machines','almanacs']} } },
+    { tab: 'prose', chap: 'How I Taught My Grandmother to Read',
+      q: 'What significance does the story of \u201cKashi Yatre\u201d have in both the grandmother\u2019s life and the story?',
+      parts: ['\u201cKashi Yatre\u201d tells of an old lady who gives away her ', {k:'b1'}, ' to help an orphan girl instead of visiting Kashi. The grandmother identified deeply with this ', {k:'b2'}, ' because she too longed for Kashi, and the serial planted in her the desire to become ', {k:'b3'}, ' so she could read on her own.'],
+      blanks: { b1:{a:'savings',d:['memories','jewels']}, b2:{a:'protagonist',d:['villain','author']}, b3:{a:'literate',d:['wealthy','famous']} } },
+    { tab: 'prose', chap: 'How I Taught My Grandmother to Read',
+      q: 'What lessons can we infer from the grandmother\u2019s action of touching the narrator\u2019s feet?',
+      parts: ['When the sixty-two-year-old grandmother bent down and touched her young teacher\u2019s ', {k:'b1'}, ', she taught that a teacher deserves respect ', {k:'b2'}, ' of age or gender. It surprised everyone because elders never touch the feet of the young, and it showed that true learning demands ', {k:'b3'}, ' and gratitude.'],
+      blanks: { b1:{a:'feet',d:['shoulders','books']}, b2:{a:'regardless',d:['depending','judging']}, b3:{a:'humility',d:['money','speed']} } },
+    { tab: 'prose', chap: 'The Pot Maker',
+      q: 'What warning was given to Mesoba by the village council?',
+      parts: ['The village council warned Mesoba that it was Arenla\u2019s ', {k:'b1'}, ' to teach her daughter the skill handed down from generation to generation. Since skills like pot making ', {k:'b2'}, ' to the needs of the people, experts must pass them on to ', {k:'b3'}, ' who wished to learn, not only their own children.'],
+      blanks: { b1:{a:'duty',d:['hobby','punishment']}, b2:{a:'cater',d:['object','bend']}, b3:{a:'anyone',d:['nobody','elders']} } },
+    { tab: 'prose', chap: 'The Pot Maker',
+      q: 'How did Sentila feel when she failed at pot making even after a year of training with her mother?',
+      parts: ['After a year of training under her mother, Sentila still could not ', {k:'b1'}, ' the lump into a pot, and she hung her head in shame and ', {k:'b2'}, '. The failure shows how much she wanted the craft, and how badly she needed a ', {k:'b3'}, ' who could teach her gently.'],
+      blanks: { b1:{a:'turn',d:['throw','melt']}, b2:{a:'frustration',d:['joy','hunger']}, b3:{a:'teacher',d:['kiln','shawl']} } },
+    { tab: 'prose', chap: 'The Pot Maker',
+      q: 'What is the significance of the concluding line of the story, \u201cA new pot maker was born\u201d?',
+      parts: ['The concluding line, \u201cA new pot maker was ', {k:'b1'}, '\u201d, means that the family\u2019s artistic gift had passed intact to the next ', {k:'b2'}, '. The two rows of identical pots proved that the daughter now worked with her mother\u2019s own speed and ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'born',d:['sold','broken']}, b2:{a:'generation',d:['village','market']}, b3:{a:'dexterity',d:['slowness','fear']} } },
+    { tab: 'prose', chap: 'Winds of Change',
+      q: 'Support the statement \u201cThe structure and design of pankhas are testimony to the cultural identity of the region\u201d with two examples.',
+      parts: ['Gujarat\u2019s mirror-work hand fans reflect the state\u2019s famous textile and embroidery ', {k:'b1'}, ', while Rajasthan\u2019s zardozi and engraved brass temple fans highlight its rich royal history and temple ', {k:'b2'}, '. Each design, therefore, stands as a ', {k:'b3'}, ' of the region that crafts it.'],
+      blanks: { b1:{a:'traditions',d:['tariffs','weather']}, b2:{a:'art',d:['canteens','budgets']}, b3:{a:'badge',d:['punishment','accident']} } },
+    { tab: 'prose', chap: 'Winds of Change',
+      q: 'How might initiatives such as pankha-making workshops contribute to the preservation of this traditional craft?',
+      parts: ['Pankha-making workshops teach the public and the ', {k:'b1'}, ' generations about the history, skill and cultural value of hand fans. Hands-on experience at exhibitions creates ', {k:'b2'}, ' interest, boosts demand, and encourages people to support local artisans, helping the craft survive and giving craftsmen a ', {k:'b3'}, ' livelihood.'],
+      blanks: { b1:{a:'younger',d:['richer','older']}, b2:{a:'public',d:['private','hidden']}, b3:{a:'sustainable',d:['risky','seasonal']} } },
+    { tab: 'prose', chap: 'Winds of Change',
+      q: 'How does the restriction of the use of pankha for decorative purposes reflect the changing cultural role of these traditional fans in modern India?',
+      parts: ['Once essential for everyday cooling, the pankha has been replaced by electric fans and coolers. Restricted now to ', {k:'b1'}, ' use, it has become a cherished symbol of cultural heritage and a ceremonial offering in ', {k:'b2'}, ' and religious festivals, showing how a utilitarian object can turn into pure ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'decorative',d:['practical','medical']}, b2:{a:'temples',d:['offices','garages']}, b3:{a:'art',d:['waste','secret']} } },
+    { tab: 'prose', chap: 'Vitamin-M',
+      q: 'Grandpa is portrayed as a person with failing memory at the beginning of the story. Give two evidences to disprove the statement.',
+      parts: ['Two proofs show Grandpa\u2019s memory was sharp. First, he could recall complex chess moves played by ', {k:'b1'}, ' like Karpov and Fischer. Second, he remembered his ', {k:'b2'}, ' of giving birthday gifts to every child, while his daughter had forgotten the date. His teasing detective gift proved he had not been ', {k:'b3'}, ' at all.'],
+      blanks: { b1:{a:'grandmasters',d:['gardeners','postmen']}, b2:{a:'tradition',d:['rule','dream']}, b3:{a:'fooled',d:['rewarded','photographed']} } },
+    { tab: 'prose', chap: 'Vitamin-M',
+      q: 'Why was Ravi worried about what Grandfather had at the tea stall?',
+      parts: ['Ravi was worried because Grandpa was forbidden ', {k:'b1'}, ' at home. At the tea stall he sipped a sugary cup of tea, ate two bananas and then tucked into an ice ', {k:'b2'}, ' \u2014 items his daughter had strictly ', {k:'b3'}, ' for health reasons.'],
+      blanks: { b1:{a:'sugar',d:['exercise','medicine']}, b2:{a:'cream',d:['water','candy']}, b3:{a:'banned',d:['served','cooked']} } },
+    { tab: 'prose', chap: 'Vitamin-M',
+      q: 'Was Grandfather aware that Ravi was following him? How do you know?',
+      parts: ['Yes, Grandfather knew Ravi was following him. He handed his yellow cap to a stranger, slipped away, and returned home to ', {k:'b1'}, ' peacefully. Later he gifted Ravi a detective book and joked about avoiding being ', {k:'b2'}, ' while trailing a suspect \u2014 a mischievous ', {k:'b3'}, ' of the whole day.'],
+      blanks: { b1:{a:'snore',d:['shout','weep']}, b2:{a:'fooled',d:['rewarded','photographed']}, b3:{a:'hint',d:['denial','order']} } },
+    { tab: 'prose', chap: 'Twin Melodies',
+      q: 'Justify the title \u201cTwin Melodies\u201d. How does the play explore the theme of tradition and modernity?',
+      parts: ['The title \u201cTwin Melodies\u201d suits the play\u2019s two ', {k:'b1'}, ' running side by side: the classical Hindustani tradition Nabin upholds and the modern ', {k:'b2'}, ' fusion the children love. The twin tunes finally meet when Nabin, himself once a rebel, agrees to ', {k:'b3'}, ' for Shruti\u2019s group at the concert.'],
+      blanks: { b1:{a:'melodies',d:['rumours','arguments']}, b2:{a:'Indo-Western',d:['military','street']}, b3:{a:'root',d:['charge','hide']} } },
+    { tab: 'prose', chap: 'Twin Melodies',
+      q: 'What are the different perspectives of Peter, Iqbal and Avinash regarding confronting figures of authority?',
+      parts: ['Peter advises Shruti to tell her parents she practises from ', {k:'b1'}, ' to five, Iqbal believes a father will understand any honest way of speaking, and Avinash warns that hiding only makes matters ', {k:'b2'}, '. Their contrasting advice reveals each friend\u2019s own way of facing ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'four',d:['seven','nine']}, b2:{a:'worse',d:['easier','quieter']}, b3:{a:'authority',d:['music','holidays']} } },
+    { tab: 'prose', chap: 'Twin Melodies',
+      q: 'Analyse the character of Nabin Sharma. How does his attitude towards music evolve throughout the play?',
+      parts: ['Nabin begins as a strict ', {k:'b1'}, ' who calls fusion \u201cphoo\u201d music and refuses to listen. Watching the children perform changes him: he claps furiously, offers them the music room, and admits he had ', {k:'b2'}, ' their own music\u2019s power \u2014 finally promising to root for the group at the ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'purist',d:['novice','critic']}, b2:{a:'underestimated',d:['praised','feared']}, b3:{a:'concert',d:['wedding','interview']} } },
+    { tab: 'prose', chap: 'Follow That Dream',
+      q: 'What differentiates the mere dreamers from actual achievers?',
+      parts: ['Actual achievers take ', {k:'b1'}, ' action, count the costs, and endure years of hard work and ', {k:'b2'}, ' to realise their goals. Mere dreamers, in contrast, stop at wishful thinking, trade their dream for ', {k:'b3'}, ', and let hurdles make them abandon their aspirations.'],
+      blanks: { b1:{a:'decisive',d:['delayed','casual']}, b2:{a:'sacrifice',d:['profit','sleep']}, b3:{a:'security',d:['fame','holidays']} } },
+    { tab: 'prose', chap: 'Follow That Dream',
+      q: 'How can one attain an international level of skill in any field? Mention any two ways.',
+      parts: ['To reach world-class standard in any field, one must pursue the subject ', {k:'b1'}, ' and intensively for at least ten years. One should start with a genuine passion, be ready to commit with years of effort and ', {k:'b2'}, ', buoyed up by doing what one loves ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'singularly',d:['casually','occasionally']}, b2:{a:'sacrifice',d:['profit','luck']}, b3:{a:'best',d:['least','rarely']} } },
+    { tab: 'prose', chap: 'Follow That Dream',
+      q: 'How does Ming\u2019s mother use critical questions and personal anecdotes to persuade Ming?',
+      parts: ['Ming\u2019s mother persuades by pairing hard questions with her own ', {k:'b1'}, '. She asks Ming to count the cost in years of effort and money, then shares how she chased her dream of ', {k:'b2'}, ' a book for ten years. This mix of practical questioning and personal experience makes her advice ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'wisdom',d:['anger','luck']}, b2:{a:'publishing',d:['burning','borrowing']}, b3:{a:'realistic',d:['funny','cruel']} } },
+    // ===== POETRY =====
+    { tab: 'poetry', chap: 'Bharat Our Land',
+      q: 'What can you infer about the poet\u2019s attitude towards India from the repeated phrase \u201cshe\u2019s peerless, let\u2019s praise her\u201d?',
+      parts: ['The repeated phrase \u201cshe\u2019s peerless, let\u2019s praise her!\u201d shows the poet\u2019s deep ', {k:'b1'}, ' for India. The refrain acts as a solemn invocation, filling the reader with ', {k:'b2'}, ' pride and reverence, and it insists that no other land can ', {k:'b3'}, ' with her.'],
+      blanks: { b1:{a:'devotion',d:['envy','doubt']}, b2:{a:'patriotic',d:['fearful','personal']}, b3:{a:'match',d:['argue','compete']} } },
+    { tab: 'poetry', chap: 'Bharat Our Land',
+      q: 'What does the line \u201cmany a sage has sanctified this land\u201d suggest about India\u2019s spiritual heritage?',
+      parts: ['The line \u201cmany a sage has sanctified this land\u201d suggests that India\u2019s spiritual heritage was deepened by ', {k:'b1'}, ' who meditated and taught here for ages. Their presence made the land holy, so spirituality is presented as part of the country\u2019s very ', {k:'b2'}, ' \u2014 a greatness that no ', {k:'b3'}, ' can destroy.'],
+      blanks: { b1:{a:'sages',d:['traders','tourists']}, b2:{a:'identity',d:['border','weather']}, b3:{a:'conquest',d:['festival','river']} } },
+    { tab: 'poetry', chap: 'Bharat Our Land',
+      q: 'How does the poet connect warriors and music to India\u2019s greatness?',
+      parts: ['The poet connects warriors and music to India\u2019s greatness by showing that the land nurtures both ', {k:'b1'}, ' and art. Gallant warriors protected her, while the divinest music has been heard here \u2014 proof that her greatness is many-sided, covering courage, spirituality and ', {k:'b2'}, ', which is why she remains ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'bravery',d:['farming','cooking']}, b2:{a:'beauty',d:['silence','anger']}, b3:{a:'peerless',d:['ordinary','defeated']} } },
+    { tab: 'poetry', chap: 'I Cannot Remember My Mother',
+      q: 'What is the emotional impact of the refrain, \u201cI cannot remember my mother\u201d?',
+      parts: ['The refrain \u201cI cannot remember my mother\u201d repeats at the start of each ', {k:'b1'}, ', creating a haunting, sad rhythm. It stresses the loss of conscious memory, yet each stanza then shows her presence living on through the ', {k:'b2'}, ' \u2014 a tune, a scent, the sky\u2019s stillness \u2014 so love outlasts ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'stanza',d:['sentence','chorus']}, b2:{a:'senses',d:['albums','letters']}, b3:{a:'forgetting',d:['meeting','distance']} } },
+    { tab: 'poetry', chap: 'I Cannot Remember My Mother',
+      q: 'Interpret the connection between the poet\u2019s mother and the shiuli flowers and the humming tune.',
+      parts: ['The poet connects his mother with the shiuli flowers whose ', {k:'b1'}, ' floats in the air on autumn mornings, and with the tune she used to hum while rocking his ', {k:'b2'}, '. The temple service\u2019s scent becomes her scent, and the hovering tune becomes her ', {k:'b3'}, ' around him.'],
+      blanks: { b1:{a:'fragrance',d:['colour','shadow']}, b2:{a:'cradle',d:['garden','school']}, b3:{a:'presence',d:['absence','silence']} } },
+    { tab: 'poetry', chap: 'I Cannot Remember My Mother',
+      q: 'What role does nature play in the poet\u2019s description of the memory of his mother?',
+      parts: ['Nature becomes the keeper of the mother\u2019s memory. A song hummed over the ', {k:'b1'}, ', the shiuli flowers of early autumn and the still blue of the distant ', {k:'b2'}, ' all return her to the child. Nothing artificial is needed; ordinary nature carries her love to him ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'playthings',d:['rooftops','calendars']}, b2:{a:'sky',d:['sea','tunnel']}, b3:{a:'everywhere',d:['never','rarely']} } },
+    { tab: 'poetry', chap: 'A Friend Found in Music',
+      q: 'How is music able to move the poet \u201cto the core\u201d?',
+      parts: ['Music moves the poet \u201cto the core\u201d because its ', {k:'b1'}, ' is not just heard but felt in the body and soul. Like an ocean, it ', {k:'b2'}, ' her towards itself, and its steady rhythm resonates through her, touching the deepest, most ', {k:'b3'}, ' part of her being.'],
+      blanks: { b1:{a:'power',d:['price','length']}, b2:{a:'pulls',d:['pushes','throws']}, b3:{a:'inner',d:['outer','public']} } },
+    { tab: 'poetry', chap: 'A Friend Found in Music',
+      q: 'Why does the poet compare music to a \u201cneeded friend\u201d?',
+      parts: ['The poet compares music to a \u201cneeded friend\u201d because it stays beside her in every mood. It is therapy when she feels ', {k:'b1'}, ', a partner in her happiest times, and a constant companion when no one else seems to ', {k:'b2'}, ' \u2014 dependable, healing and always ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'blue',d:['tall','hungry']}, b2:{a:'care',d:['sleep','travel']}, b3:{a:'near',d:['away','silent']} } },
+    { tab: 'poetry', chap: 'A Friend Found in Music',
+      q: 'Support the opinion that this poem has a universal appeal.',
+      parts: ['The poem has universal appeal because everyone, in every ', {k:'b1'}, ', leans on some companion in sorrow and joy. By calling music an ocean, a therapy and a needed ', {k:'b2'}, ', the poet describes an experience anyone can recognise, so readers everywhere connect her feelings to their own ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'culture',d:['cupboard','timetable']}, b2:{a:'friend',d:['enemy','teacher']}, b3:{a:'lives',d:['debts','houses']} } },
+    { tab: 'poetry', chap: 'Words',
+      q: 'What is the comparison that the poet draws between words and \u201cempty air\u201d?',
+      parts: ['The poet compares words to summer birds that ', {k:'b1'}, ' away, leaving nothing behind but empty air. Like gaudy plants that blossom but bear no ', {k:'b2'}, ', impressive words may please the ear, yet when they are tested they satisfy the ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'depart',d:['settle','gather']}, b2:{a:'fruit',d:['shade','flower']}, b3:{a:'least',d:['most','whole']} } },
+    { tab: 'poetry', chap: 'Words',
+      q: 'According to the poet, meaningful words are more precious than a lot of them. Explain.',
+      parts: ['According to the poet, \u201ca little said, and truly said\u201d can impart deeper ', {k:'b1'}, ' than hosts of words that reach the head but never touch the ', {k:'b2'}, '. The voice that cheers a lonely home often says the fewest words, and those few are how ', {k:'b3'}, '!'],
+      blanks: { b1:{a:'joy',d:['fame','fear']}, b2:{a:'heart',d:['wallet','roof']}, b3:{a:'dear',d:['cheap','lengthy']} } },
+    { tab: 'poetry', chap: 'Words',
+      q: 'How does the poet convey the superficial nature of words? What ought to be done to address this?',
+      parts: ['The poet conveys the superficiality of words through similes: words are summer birds that ', {k:'b1'}, ' and weeds of little ', {k:'b2'}, '. The remedy is sincerity \u2014 speak a little, speak truly, and let the voice that cheers a lonely ', {k:'b3'}, ' carry warmth, for genuine few words outshine empty noise.'],
+      blanks: { b1:{a:'depart',d:['gather','return']}, b2:{a:'worth',d:['colour','height']}, b3:{a:'home',d:['court','station']} } },
+    { tab: 'poetry', chap: 'Believe in Yourself',
+      q: 'What is the significance of the metaphor, \u201cThe first step is the hardest\u201d, in the context of personal growth?',
+      parts: ['The metaphor \u201cThe first step is the hardest\u201d means that beginning any ', {k:'b1'}, ' demands the greatest courage. Once we take that step, there is no turning ', {k:'b2'}, ', and self-belief keeps our future on track \u2014 so growth begins the moment we dare to ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'change',d:['game','routine']}, b2:{a:'back',d:['forward','aside']}, b3:{a:'try',d:['quit','wait']} } },
+    { tab: 'poetry', chap: 'Believe in Yourself',
+      q: 'What message does the antithesis in the poem convey about the nature of personal development?',
+      parts: ['The antithesis between the ease of comfort and the truth that \u201cthis isn\u2019t how we grow\u201d tells us that personal development demands ', {k:'b1'}, '. Staying with the status quo feels safe, but stagnation contradicts human ', {k:'b2'}, '; only by leaving comfort behind can we truly ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'courage',d:['money','luck']}, b2:{a:'potential',d:['weakness','memory']}, b3:{a:'evolve',d:['retire','sleep']} } },
+    { tab: 'poetry', chap: 'Believe in Yourself',
+      q: 'Do you think the poet\u2019s message is realistic in the context of real-world struggles?',
+      parts: ['The poet\u2019s message is largely ', {k:'b1'}, ', yet belief alone is not enough. Believing in yourself gives the confidence to take the first step, but steady effort, guidance and practice must ', {k:'b2'}, ' it. The poem is a starting push, not the whole ', {k:'b3'}, '.'],
+      blanks: { b1:{a:'true',d:['false','silly']}, b2:{a:'follow',d:['replace','cancel']}, b3:{a:'journey',d:['ticket','excuse']} } }
+  ];
+
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c9-lit-q12-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c9-lit-q12-theme', next); } catch (e) {}
+  });
+
+  function shuffleDet(arr, seed) {
+    var a = arr.slice(); var s = (seed * 2654435761) % 4294967296;
+    for (var i = a.length - 1; i > 0; i--) {
+      s = (s * 1103515245 + 12345) % 2147483648;
+      var j = s % (i + 1); var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    var same = a.every(function (v, idx) { return v === arr[idx]; });
+    if (same && a.length > 1) a.push(a.shift());
+    return a;
+  }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var prosePanel = document.getElementById('panel-prose');
+  var poetryPanel = document.getElementById('panel-poetry');
+  var totalbar = document.getElementById('totalbar');
+  var tabProse = document.getElementById('tab-prose'), tabPoetry = document.getElementById('tab-poetry');
+  tabProse.addEventListener('click', function(){ tabProse.classList.add('active'); tabPoetry.classList.remove('active'); prosePanel.classList.add('active'); poetryPanel.classList.remove('active'); });
+  tabPoetry.addEventListener('click', function(){ tabPoetry.classList.add('active'); tabProse.classList.remove('active'); poetryPanel.classList.add('active'); prosePanel.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  var cardState = ITEMS.map(function () { return { vals: {}, active: null, checked: null }; });
+
+  function chipsFor(idx) {
+    var it = ITEMS[idx];
+    var bank = [];
+    Object.keys(it.blanks).forEach(function (k) {
+      bank.push(it.blanks[k].a);
+      bank.push(it.blanks[k].d[0]);
+      bank.push(it.blanks[k].d[1]);
+    });
+    return shuffleDet(bank, idx * 7 + 3);
+  }
+
+  function cardHtml(idx) {
+    var it = ITEMS[idx];
+    var h = '<div class="q" data-idx="' + idx + '">';
+    h += '<div class="qhead"><span class="num">' + (idx + 1) + '.</span><span class="chap">' + escapeHtml(it.chap) + '</span></div>';
+    h += '<p class="prompt">' + escapeHtml(it.q) + '</p>';
+    h += '<div class="ansbox">';
+    it.parts.forEach(function (part) {
+      if (typeof part === 'string') { h += escapeHtml(part); }
+      else h += '<span class="blank" data-k="' + part.k + '">tap to fill</span>';
+    });
+    h += '</div>';
+    var usedWords = Object.keys(cardState[idx].vals).map(function (k) { return cardState[idx].vals[k]; });
+    h += '<div class="bank"><span class="bank-label">Word bank \u2014 3 blanks, 9 chips:</span></div>';
+    h += '<div class="bank chips" data-idx="' + idx + '">';
+    chipsFor(idx).forEach(function (w) {
+      h += '<button type="button" class="chip' + (usedWords.indexOf(w) !== -1 ? ' used' : '') + '" data-w="' + escapeHtml(w) + '">' + escapeHtml(w) + '</button>';
+    });
+    h += '</div>';
+    h += '<div class="actions"><button class="btn primary" type="button" data-act="check">Check</button>' +
+      '<button class="btn" type="button" data-act="reset">Reset</button>' +
+      '<button class="btn" type="button" data-act="show">Show answer</button></div>';
+    h += '<div class="feedback"></div>';
+    h += '</div>';
+    return h;
+  }
+
+  function renderPanel(tab) {
+    var panel = tab === 'prose' ? prosePanel : poetryPanel;
+    var items = ITEMS.map(function (it, i) { return { it: it, i: i }; }).filter(function (x) { return x.it.tab === tab; });
+    var perChap = {};
+    items.forEach(function (x) { perChap[x.it.chap] = (perChap[x.it.chap] || 0) + 1; });
+    var n = 0;
+    panel.innerHTML = items.map(function (x) {
+      n++;
+      return cardHtml(x.i).replace('<span class="num">' + (x.i + 1) + '.</span>', '<span class="num">' + n + '.</span>');
+    }).join('');
+  }
+
+  function updateTotal() {
+    var blanks = 0, correct = 0, cardsChecked = 0;
+    ITEMS.forEach(function (it, i) {
+      var st = cardState[i];
+      blanks += 3;
+      if (st.checked !== null) {
+        cardsChecked++;
+        Object.keys(it.blanks).forEach(function (k) {
+          if (st.vals[k] === it.blanks[k].a) correct++;
+        });
+      }
+    });
+    totalbar.innerHTML = 'Blanks correct so far: ' + correct + ' / ' + blanks +
+      '<div class="small">' + (cardsChecked ? cardsChecked + ' card' + (cardsChecked > 1 ? 's' : '') + ' checked.' : 'Tap a blank, then a chip to fill it. Check each card to score it.') + '</div>';
+  }
+
+  function markCard(idx, opts) {
+    opts = opts || {};
+    var it = ITEMS[idx];
+    var st = cardState[idx];
+    var qEl = document.querySelector('.q[data-idx="' + idx + '"]');
+    if (!qEl) return;
+    var fb = qEl.querySelector('.feedback');
+    var missing = Object.keys(it.blanks).filter(function (k) { return !st.vals[k]; });
+    if (missing.length) {
+      st.checked = null;
+      fb.textContent = 'Fill all 3 blanks before checking. (' + (3 - missing.length) + ' filled.)';
+      fb.className = 'feedback info';
+      updateTotal();
+      return;
+    }
+    var ok = 0;
+    qEl.querySelectorAll('.blank').forEach(function (b) {
+      var k = b.getAttribute('data-k');
+      b.classList.remove('correct', 'wrong');
+      if (st.vals[k] === it.blanks[k].a) { b.classList.add('correct'); ok++; }
+      else b.classList.add('wrong');
+    });
+    st.checked = ok;
+    fb.textContent = ok + ' / 3 blanks correct.' + (ok === 3 ? ' Well done!' : ' Tap red blanks to clear and try again.');
+    fb.className = 'feedback ' + (ok === 3 ? 'ok' : 'bad');
+    updateTotal();
+  }
+
+  function showAnswer(idx) {
+    var it = ITEMS[idx];
+    var qEl = document.querySelector('.q[data-idx="' + idx + '"]');
+    if (!qEl) return;
+    cardState[idx].vals = {};
+    Object.keys(it.blanks).forEach(function (k) { cardState[idx].vals[k] = it.blanks[k].a; });
+    refreshCard(idx);
+    cardState[idx].checked = null;
+    var fb = qEl.querySelector('.feedback');
+    fb.textContent = 'Answer filled \u2014 read it once, then Reset to practise.';
+    fb.className = 'feedback info';
+    updateTotal();
+  }
+
+  function refreshCard(idx) {
+    var st = cardState[idx];
+    var qEl = document.querySelector('.q[data-idx="' + idx + '"]');
+    if (!qEl) return;
+    qEl.querySelectorAll('.blank').forEach(function (b) {
+      var k = b.getAttribute('data-k');
+      var v = st.vals[k];
+      b.textContent = v || 'tap to fill';
+      b.classList.toggle('filled', !!v);
+      if (!v) b.classList.remove('correct', 'wrong', 'active');
+    });
+    var usedWords = Object.keys(st.vals).map(function (k) { return st.vals[k]; });
+    qEl.querySelectorAll('.chip').forEach(function (chip) {
+      var w = chip.getAttribute('data-w');
+      chip.classList.toggle('used', usedWords.indexOf(w) !== -1);
+    });
+    var fb = qEl.querySelector('.feedback');
+    fb.textContent = '';
+    fb.className = 'feedback';
+  }
+
+  document.addEventListener('click', function (ev) {
+    var blank = ev.target.closest('.blank');
+    if (blank) {
+      var idx = Number(blank.closest('.q').getAttribute('data-idx'));
+      var st = cardState[idx];
+      var k = blank.getAttribute('data-k');
+      if (st.vals[k]) {
+        delete st.vals[k];
+        st.checked = null;
+        refreshCard(idx);
+        updateTotal();
+        return;
+      }
+      var wasActive = blank.classList.contains('active');
+      document.querySelectorAll('.blank.active').forEach(function (b) { b.classList.remove('active'); });
+      if (wasActive) { st.active = null; return; }
+      blank.classList.add('active');
+      st.active = k;
+      return;
+    }
+
+    var chip = ev.target.closest('.chip');
+    if (chip) {
+      var idx2 = Number(chip.closest('.chips').getAttribute('data-idx'));
+      var st2 = cardState[idx2];
+      if (chip.classList.contains('used')) return;
+      var k2 = st2.active;
+      if (!k2) {
+        var first = document.querySelector('.q[data-idx="' + idx2 + '"] .blank:not(.filled)');
+        if (!first) return;
+        k2 = first.getAttribute('data-k');
+      }
+      st2.vals[k2] = chip.getAttribute('data-w');
+      st2.active = null;
+      st2.checked = null;
+      refreshCard(idx2);
+      updateTotal();
+      return;
+    }
+
+    var btn = ev.target.closest('button[data-act]');
+    if (btn) {
+      var idx3 = Number(btn.closest('.q').getAttribute('data-idx'));
+      var act = btn.getAttribute('data-act');
+      if (act === 'check') markCard(idx3);
+      else if (act === 'reset') {
+        cardState[idx3] = { vals: {}, active: null, checked: null };
+        refreshCard(idx3);
+        updateTotal();
+      } else if (act === 'show') showAnswer(idx3);
+      return;
+    }
+  });
+
+  renderPanel('prose');
+  renderPanel('poetry');
+  updateTotal();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VIII Writing — Q8 Informal Letter & Invitation</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 2px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.write-box .hr { border-top: 1px solid var(--border); margin: 8px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VIII — Writing (Q8)</h1>
+      <p class="sub">Section B · Informal Letter / Informal Invitation · Tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q8:</strong> Informal letter OR Informal invitation (~120–150 words). First fix the <strong>format order</strong>, then practise the content with <strong>tap-to-fill</strong> on solved samples (almost no typing).</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-letter" type="button">Informal Letter</button>
+      <button class="tab" id="tab-invite" type="button">Informal Invitation</button>
+    </div>
+  </div>
+
+  <div id="panel-letter" class="panel active"></div>
+  <div id="panel-invite" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c8-q8-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c8-q8-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabLetter = document.getElementById('tab-letter'), tabInvite = document.getElementById('tab-invite');
+  var panelLetter = document.getElementById('panel-letter'), panelInvite = document.getElementById('panel-invite');
+  tabLetter.addEventListener('click', function(){ tabLetter.classList.add('active'); tabInvite.classList.remove('active'); panelLetter.classList.add('active'); panelInvite.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+  tabInvite.addEventListener('click', function(){ tabInvite.classList.add('active'); tabLetter.classList.remove('active'); panelInvite.classList.add('active'); panelLetter.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      if(block.hr){ var hr=document.createElement('div'); hr.className='hr'; box.appendChild(hr); return; }
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){ if(typeof part==='string') p.appendChild(document.createTextNode(part)); else if(part && part.html){ var sp=document.createElement('span'); sp.innerHTML=part.html; p.appendChild(sp); } else p.appendChild(makeBlank(part.k)); });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // INFORMAL LETTER TAB
+  makeSequenceCard(panelLetter, 'Arrange the parts of an informal letter in the correct order', [
+    'Sender’s address',
+    'Date',
+    'Salutation (e.g. Dear Isha,)',
+    'Introduction: greeting and reason for writing',
+    'Main body: details, feelings, or news',
+    'Conclusion: closing remarks / hope to meet or hear back',
+    'Subscription (e.g. Yours lovingly,)',
+    'Sender’s name'
+  ]);
+
+  var letterQs = [
+    {
+      title: 'Tap-to-fill informal letter (1) — describing a visit',
+      scenario: 'You are Meera. Write a letter to your friend describing your visit to a newspaper printing press with your class.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. Last Friday our class visited a ', {k:'place'}, ', and I want to describe the whole morning to you.']},
+        {parts:['The huge machines printed thousands of copies every hour, and the rolls of paper were almost as tall as a ', {k:'comp'}, '. A kind editor showed us how reporters type a story, how pages are ', {k:'verb'}, ', and how the bundles are loaded onto vans before dawn. He even let us hold a freshly printed page, still ', {k:'warm'}, ' from the machine.']},
+        {parts:['I kept thinking how much you would have enjoyed it, since you love reading the news. I am sure you would have asked the editor a dozen questions. Do write back and tell me about your own week, and give my regards to your parents.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'14 Nehru Colony'}, addr2:{answer:'Nagpur'}, date:{answer:'9 August 2026'}, sal:{answer:'Dear Isha,'}, place:{answer:'newspaper printing press'}, comp:{answer:'two-storey building'}, verb:{answer:'designed'}, warm:{answer:'warm'}, close:{answer:'Yours lovingly,'}, name:{answer:'Meera'} },
+      bank: ['14 Nehru Colony','Nagpur','9 August 2026','Dear Isha,','newspaper printing press','two-storey building','designed','warm','Yours lovingly,','Meera','Respected Sir,','Yours faithfully,','slowly']
+    },
+    {
+      title: 'Tap-to-fill informal letter (2) — news from school',
+      scenario: 'You are Rohan. Write a letter to your cousin about the new science laboratory in your school.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope this letter finds you well. I have some exciting news: our school has opened a brand-new ', {k:'place'}, ', and we had our first practical lesson there yesterday.']},
+        {parts:['The room has long white tables with sinks, shiny taps, and cupboards full of ', {k:'items'}, '. Our teacher showed us how to light a Bunsen burner safely and how to test whether a liquid is an ', {k:'prop'}, ' using litmus paper. My partner and I were quite ', {k:'feel'}, ' at first, but our teacher guided us patiently. Everything we had only read about in the textbook suddenly made sense.']},
+        {parts:['I wish you could visit and see it for yourself. Write to me when you can and tell me whether your school has a lab like this. Give my love to Uncle and Aunty.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'7 Gandhi Road'}, addr2:{answer:'Bhopal'}, date:{answer:'22 September 2026'}, sal:{answer:'Dear Tanvi,'}, place:{answer:'science laboratory'}, items:{answer:'glass apparatus'}, prop:{answer:'acid'}, feel:{answer:'nervous'}, close:{answer:'Yours affectionately,'}, name:{answer:'Rohan'} },
+      bank: ['7 Gandhi Road','Bhopal','22 September 2026','Dear Tanvi,','science laboratory','glass apparatus','acid','nervous','Yours affectionately,','Rohan','Respected Madam,','Yours faithfully,','alkali']
+    },
+    {
+      title: 'Tap-to-fill informal letter (3) — something new I learnt',
+      scenario: 'You are Aditi. Write a letter to your friend about the swimming classes you joined this summer.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope your holidays are going well. I have finally done something I was afraid of for years: I have joined ', {k:'act'}, ' at the community pool near my house.']},
+        {parts:['For the first three days I only practised putting my face in the water and blowing ', {k:'noun'}, '. My coach, a cheerful young woman, never let me give up. By the end of the first week I could float on my back, and yesterday I swam a whole ', {k:'dist'}, ' without stopping. I was so ', {k:'feel'}, ' that I clapped for myself in the middle of the pool!']},
+        {parts:['The classes have also made me stronger and far less afraid of water. Do join me next summer if you can. Write soon and tell me how you are spending your holidays.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'33 Riverside Apartments'}, addr2:{answer:'Kochi'}, date:{answer:'12 May 2026'}, sal:{answer:'Dear Sneha,'}, act:{answer:'swimming classes'}, noun:{answer:'bubbles'}, dist:{answer:'length'}, feel:{answer:'proud'}, close:{answer:'Yours lovingly,'}, name:{answer:'Aditi'} },
+      bank: ['33 Riverside Apartments','Kochi','12 May 2026','Dear Sneha,','swimming classes','bubbles','length','proud','Yours lovingly,','Aditi','Respected Sir,','Yours faithfully,','relieved']
+    },
+    {
+      title: 'Tap-to-fill informal letter (4) — saying sorry',
+      scenario: 'You are Farhan. Write a letter to your friend apologising for losing a book you had borrowed from him/her.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. I am writing with an apology that I should have sent much ', {k:'adv'}, '. Do you remember the ', {k:'item'}, ' you lent me last month? I have lost it.']},
+        {parts:['I kept it in my school bag, and I think it fell out on the bus during the heavy rain on Monday. I searched the bus, the lost-and-found desk, and even the conductor, but nobody had seen it. I feel terrible because it was your ', {k:'adj'}, ' copy, and you trusted me with it.']},
+        {parts:['I have already ordered a new copy from the bookshop, and it should reach me by Friday. I will bring it to you myself. I hope you will not mind waiting for a few days. Please forgive my ', {k:'noun'}, ', and thank you for being such a patient friend.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'5 Bakery Lane'}, addr2:{answer:'Hyderabad'}, date:{answer:'3 November 2026'}, sal:{answer:'Dear Nikhil,'}, adv:{answer:'earlier'}, item:{answer:'detective novel'}, adj:{answer:'favourite'}, noun:{answer:'carelessness'}, close:{answer:'Yours affectionately,'}, name:{answer:'Farhan'} },
+      bank: ['5 Bakery Lane','Hyderabad','3 November 2026','Dear Nikhil,','earlier','detective novel','favourite','carelessness','Yours affectionately,','Farhan','Regards,','Yours faithfully,','kindness']
+    }
+  ];
+  letterQs.forEach(function(q,i){ makeTapFill(panelLetter, (i+2)+'.', q); });
+
+  // INFORMAL INVITATION TAB
+  makeSequenceCard(panelInvite, 'Arrange the parts of an informal invitation letter in the correct order', [
+    'Sender’s address',
+    'Date',
+    'Salutation (e.g. Dear Aarav,)',
+    'Opening: the reason for writing (the invitation)',
+    'Details: what, when and where',
+    'What to bring or how to reply',
+    'Closing: hope they can come',
+    'Subscription (e.g. Yours affectionately,)',
+    'Sender’s name'
+  ]);
+
+  var inviteQs = [
+    {
+      title: 'Tap-to-fill invitation (1) — a night of star-gazing',
+      scenario: 'You are Dev. Write a letter inviting your friend to a star-gazing evening on your terrace.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. My father has borrowed a small telescope for the weekend, and I am inviting a few friends to my ', {k:'place'}, ' on Saturday to look at the night sky.']},
+        {parts:['We will start at ', {k:'time'}, ', when the sky is darkest. My father will show us the craters of the moon, the rings of Saturn, and perhaps a shooting star or two. Amma is making hot ', {k:'food'}, ' and sandwiches, so we will not feel the cold. Please bring a warm ', {k:'item'}, ' and, if you have one, a pair of binoculars.']},
+        {parts:['It would be wonderful to have you with us. Tell me by Thursday so that I can arrange a sleeping bag for you. I am looking forward to a night full of stars and stories.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'18 Hill View Road'}, addr2:{answer:'Dehradun'}, date:{answer:'6 January 2026'}, sal:{answer:'Dear Aarav,'}, place:{answer:'terrace'}, time:{answer:'7:30 PM'}, food:{answer:'cocoa'}, item:{answer:'jacket'}, close:{answer:'Yours affectionately,'}, name:{answer:'Dev'} },
+      bank: ['18 Hill View Road','Dehradun','6 January 2026','Dear Aarav,','terrace','7:30 PM','cocoa','jacket','Yours affectionately,','Dev','Respected Sir,','Yours faithfully,','4:00 PM']
+    },
+    {
+      title: 'Tap-to-fill invitation (2) — our school science fair',
+      scenario: 'You are Diya. Write a letter inviting your cousin to your school’s science fair next Saturday.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. Our school is holding its annual ', {k:'event'}, ' next Saturday, and I would love you to come and see it with your family.']},
+        {parts:['My group has built a working model of a ', {k:'model'}, ', and we will explain it to visitors at ', {k:'time'}, '. There will be more than fifty stalls, with robots, simple machines, and a planetarium show in the audio-visual room. Our teacher says the best stalls win a small prize. The fair stays open till ', {k:'end'}, ', so you can come whenever it suits you.']},
+        {parts:['Please ask Uncle to drop you at the main gate at ten, and I will meet you there. Do tell me by Wednesday whether you can come, because I want to show you our poster before the crowd arrives.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'26 Rose Villa'}, addr2:{answer:'Surat'}, date:{answer:'14 February 2026'}, sal:{answer:'Dear Meher,'}, event:{answer:'science fair'}, model:{answer:'rainwater harvester'}, time:{answer:'10:00 AM'}, end:{answer:'4:00 PM'}, close:{answer:'Yours lovingly,'}, name:{answer:'Diya'} },
+      bank: ['26 Rose Villa','Surat','14 February 2026','Dear Meher,','science fair','rainwater harvester','10:00 AM','4:00 PM','Yours lovingly,','Diya','Respected Madam,','Yours faithfully,','7:00 PM']
+    },
+    {
+      title: 'Tap-to-fill invitation (3) — mango season at the farm',
+      scenario: 'You are Ishaan. Write a letter inviting your friend to spend a few days at your uncle’s farm during the mango season.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. My uncle has invited me to his ', {k:'place'}, ' for the last week of May, and he has kindly said that I may bring a friend.']},
+        {parts:['The mango trees will be heavy with fruit, and we can help the workers pick baskets of ', {k:'fruit'}, ' every morning. There is also a pond where we can swim, a bicycle each for the lanes, and a pair of gentle bullocks to watch being fed. The whole house smells of ', {k:'food'}, ' and fresh bread all day.']},
+        {parts:['I have started counting the days. We would return on ', {k:'date2'}, ', well before school reopens. Please ask your parents and let me know soon, because Aunty wants to know how many plates to set at the table.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'9 Canal Road'}, addr2:{answer:'Ludhiana'}, date:{answer:'20 April 2026'}, sal:{answer:'Dear Vivaan,'}, place:{answer:'farm'}, fruit:{answer:'mangoes'}, food:{answer:'pickle'}, date2:{answer:'30 May'}, close:{answer:'Yours affectionately,'}, name:{answer:'Ishaan'} },
+      bank: ['9 Canal Road','Ludhiana','20 April 2026','Dear Vivaan,','farm','mangoes','pickle','30 May','Yours affectionately,','Ishaan','Regards,','Yours faithfully,','orchard']
+    },
+    {
+      title: 'Tap-to-fill invitation (4) — a book-swap party',
+      scenario: 'You are Naina. Write a letter inviting your friend to a book-swap party at your home on Sunday.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. I am having a small ', {k:'event'}, ' at my home on Sunday, and I would be delighted if you could join us. You always find the best titles.']},
+        {parts:['The idea is simple: everyone brings two books they have finished reading and goes home with two new ones. We will spread a mat on the ', {k:'place'}, ', put out cushions, and spend the afternoon reading, talking and eating. Amma is baking ', {k:'food'}, ', and I have made a list of books to recommend to you.']},
+        {parts:['Please come at ', {k:'time'}, ' and bring the two books you are ready to part with. Do tell me by Friday, so that I can write a name tag for each reader. I am looking forward to swapping stories with you.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'41 Library Street'}, addr2:{answer:'Kolkata'}, date:{answer:'8 December 2026'}, sal:{answer:'Dear Tara,'}, event:{answer:'book-swap party'}, place:{answer:'floor'}, food:{answer:'cookies'}, time:{answer:'4:00 PM'}, close:{answer:'Yours lovingly,'}, name:{answer:'Naina'} },
+      bank: ['41 Library Street','Kolkata','8 December 2026','Dear Tara,','book-swap party','floor','cookies','4:00 PM','Yours lovingly,','Naina','Respected Sir,','Yours faithfully,','terrace']
+    }
+  ];
+  inviteQs.forEach(function(q,i){ makeTapFill(panelInvite, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

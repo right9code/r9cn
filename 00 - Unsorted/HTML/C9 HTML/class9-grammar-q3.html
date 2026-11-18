@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class IX Grammar — Q3 Fill in the Blanks</title>
+<style>
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --border: #d8dee8;
+  --primary: #2563eb;
+  --primary-soft: #dbeafe;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #334155;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a5f;
+  --success: #4ade80;
+  --success-soft: #14532d;
+  --danger: #f87171;
+  --danger-soft: #7f1d1d;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+h1 { font-size: 1.2rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer;
+  flex: 0 0 auto;
+}
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; margin-bottom: 8px; }
+.tab {
+  flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+  padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer;
+}
+.tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.section-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px;
+}
+h2 { font-size: 1rem; margin: 0 0 8px; }
+.instructions { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
+.q {
+  border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px;
+  background: var(--surface);
+}
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 600; margin-bottom: 8px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.qhead u { text-decoration: underline; text-underline-offset: 2px; }
+.options { display: grid; gap: 8px; }
+.opt {
+  display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 12px; border-radius: 10px; font-size: .97rem; cursor: pointer;
+}
+.opt.selected { border-color: var(--primary); background: var(--primary-soft); }
+.opt.correct { border-color: var(--success); background: var(--success-soft); }
+.opt.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.opt .letter { font-weight: 700; min-width: 1.2em; }
+.qtools { margin-top: 8px; }
+.link-btn {
+  border: 0; background: none; color: var(--primary); padding: 0; font: inherit; font-size: .88rem;
+  font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+}
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); }
+.feedback.bad { color: var(--danger); }
+.feedback.info { color: var(--muted); font-weight: 500; }
+.feedback .why { display: block; margin-top: 4px; font-weight: 500; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.btn {
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.scorebar {
+  margin-top: 12px; padding: 12px; border-radius: 12px; background: var(--surface-2);
+  border: 1px solid var(--border); font-weight: 700;
+}
+.small { font-size: .86rem; color: var(--muted); font-weight: 500; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class IX — Grammar: Fill in the Blanks (Q3)</h1>
+      <p class="sub">Section B, Q3 style · 5 topic tabs · tap the correct option</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Choose a grammar topic"></nav>
+  <div class="card" id="topicCard"></div>
+  <div class="card" id="quiz"></div>
+  <div class="scorebar" id="scorebar" aria-live="polite"></div>
+</div>
+
+<script>
+(function () {
+  var TOPICS = [
+    {
+      name: 'Tenses',
+      source: 'Notes: G-01 Tenses',
+      questions: [
+        { q: 'The bell __________ at 8:50 AM every day.', opts: ['ring', 'rings', 'is ringing', 'rang'], a: 1, why: 'Fixed schedules take the Present Indefinite: singular subject + verb + s/es (the bell rings).' },
+        { q: 'The Sun __________ in the east.', opts: ['rise', 'rises', 'rose', 'is rising'], a: 1, why: 'Universal truths take the Present Indefinite: The Sun rises in the east.' },
+        { q: 'Listen! The baby __________ in the next room.', opts: ['cries', 'is crying', 'cried', 'was crying'], a: 1, why: 'An action happening right now (Listen!) takes the Present Continuous: is + verb-ing.' },
+        { q: 'Our classes __________ late this week.', opts: ['start', 'are starting', 'started', 'were starting'], a: 1, why: 'A temporary situation this week takes the Present Continuous: are starting.' },
+        { q: 'She __________ an orange when I arrived.', opts: ['ate', 'was eating', 'is eating', 'has eaten'], a: 1, why: 'An action in progress at a past point takes the Past Continuous: was + verb-ing.' },
+        { q: 'I __________ an apple while reading a book.', opts: ['eat', 'was eating', 'am eating', 'had eaten'], a: 1, why: 'Parallel past actions take the Past Continuous: was + verb-ing.' },
+        { q: 'The stars __________ brightly when the power went out.', opts: ['shone', 'were shining', 'shine', 'had shone'], a: 1, why: 'A background state interrupted by another past action takes the Past Continuous: were shining.' },
+        { q: 'The bell __________ as the students entered the hall.', opts: ['rang', 'was ringing', 'rings', 'has rung'], a: 1, why: 'An ongoing action at a past moment takes the Past Continuous: was ringing.' },
+        { q: 'She __________ just __________ her homework.', opts: ['has / finished', 'have / finished', 'had / finish', 'is / finishing'], a: 0, why: 'A just-completed action takes the Present Perfect: has/have + past participle (has finished).' },
+        { q: 'Priya __________ classical dance since morning.', opts: ['practises', 'has been practising', 'is practising', 'practised'], a: 1, why: 'An action continuing from a past starting point (since morning) takes the Present Perfect Continuous.' },
+        { q: 'The train __________ before we reached the station.', opts: ['left', 'had left', 'has left', 'leaves'], a: 1, why: 'The earlier of two past actions takes the Past Perfect: had left.' },
+        { q: 'He __________ for two hours before the guests arrived.', opts: ['worked', 'had been working', 'was working', 'works'], a: 1, why: 'A continuing action up to a past point (for two hours before) takes the Past Perfect Continuous.' },
+        { q: 'I __________ fifteen on my next birthday.', opts: ['will be', 'was', 'am', 'had been'], a: 0, why: 'A certain future event takes the Future Indefinite: will/shall + verb (will be).' },
+        { q: 'This time tomorrow we __________ to the capital.', opts: ['shall fly', 'shall be flying', 'fly', 'flew'], a: 1, why: 'An action that will be in progress at a future moment takes the Future Continuous: shall be flying.' },
+        { q: 'By next Sunday they __________ the whole syllabus.', opts: ['will complete', 'will have completed', 'will be completing', 'complete'], a: 1, why: 'An action finished before a future point (by next Sunday) takes the Future Perfect: will have completed.' },
+        { q: 'By March next year she __________ here for five years.', opts: ['will teach', 'will have been teaching', 'teaches', 'will be teaching'], a: 1, why: 'A duration continuing up to a future point takes the Future Perfect Continuous: will have been teaching.' },
+        { q: 'Columbus __________ America in 1492.', opts: ['discovers', 'discovered', 'had discovered', 'has discovered'], a: 1, why: 'A completed action at a stated past time (in 1492) takes the Past Indefinite: discovered.' },
+        { q: 'He __________ know the answer.', opts: ["doesn't", "don't", "isn't", "aren't"], a: 0, why: 'A singular subject takes does not + verb (I) in the Present Indefinite negative.' },
+        { q: '__________ your father read the newspaper every morning?', opts: ['Do', 'Does', 'Is', 'Has'], a: 1, why: 'A singular subject in a Present Indefinite question takes Does + verb (I).' },
+        { q: 'My grandmother __________ tell us folk tales every night before sleep.', opts: ['used to', 'is used to', 'will', 'was'], a: 0, why: 'A discontinued past habit takes used to + verb (I): used to tell.' }
+      ]
+    },
+    {
+      name: 'Subject–Verb Concord',
+      source: 'Notes: G-02 Subject-Verb Concord',
+      questions: [
+        { q: 'Anita and her brothers __________ at school.', opts: ['is', 'are', 'was', 'has'], a: 1, why: 'A compound subject joined by “and” is plural, so it takes are.' },
+        { q: 'Either my father or my mother __________ coming to the meeting.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'With either…or, the verb agrees with the nearer subject (my mother → is).' },
+        { q: 'Ravi and Rahul __________ want to see the play.', opts: ["doesn't", "don't", "hasn't", "isn't"], a: 1, why: 'A plural compound subject takes do not.' },
+        { q: 'He __________ know the answer.', opts: ["doesn't", "don't", "didn't to", "haven't"], a: 0, why: 'A singular subject takes does not.' },
+        { q: 'One of my friends __________ going to London on a trip.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'The verb agrees with “one” (singular), not with the plural in the of-phrase.' },
+        { q: 'The man with all the cats __________ on my street.', opts: ['live', 'lives', 'living', 'lived to'], a: 1, why: 'The verb agrees with the head noun “the man”; “with all the cats” is only a modifier.' },
+        { q: 'The movie, including all the previews, __________ about two hours to watch.', opts: ['take', 'takes', 'taking', 'have taken'], a: 1, why: 'Interrupting phrases like “including all the previews” do not change the singular head noun.' },
+        { q: 'The players, as well as the captain, __________ to win.', opts: ['want', 'wants', 'wanting', 'has wanted'], a: 0, why: '“As well as” does not make the subject plural; the verb agrees with “the players”.' },
+        { q: 'Either answer __________ acceptable.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'Either used as a pronoun for two items is singular.' },
+        { q: 'Everyone of those books __________ fiction.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'Everyone is singular, even though “of those books” follows it.' },
+        { q: 'Nobody __________ the problems I have faced.', opts: ['know', 'knows', 'knowing', 'have known'], a: 1, why: 'Indefinite pronouns like nobody are singular and take a singular verb.' },
+        { q: 'This is one of the best pictures that __________ been released this year.', opts: ['has', 'have', 'is', 'was'], a: 1, why: 'The relative pronoun “that” refers to “pictures” (plural), so the verb in the clause is plural.' },
+        { q: 'Fifty rupees __________ the fare from Patel Nagar to Shivaji Nagar.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'A sum of money treated as a single amount takes a singular verb.' },
+        { q: 'The committee __________ these questions carefully.', opts: ['debate', 'debates', 'debating', 'have debated'], a: 1, why: 'A collective noun acting as one unit takes a singular verb.' },
+        { q: 'The committee members __________ very different lives in private.', opts: ['leads', 'lead', 'leading', 'has led'], a: 1, why: '“Members” is a plural noun, so it takes a plural verb.' },
+        { q: 'All of the vases, even the cracked one, __________ in this box.', opts: ['is', 'are', 'was', 'has'], a: 1, why: 'The verb agrees with the plural “vases”, not with the parenthetical “even the cracked one”.' },
+        { q: 'Two-thirds of the city __________ in ruins.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'Fractions of an uncountable/mass idea like “the city” take a singular verb.' },
+        { q: 'The formation of paragraphs __________ very important.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'The head noun is the singular “formation”; “of paragraphs” is only a modifier.' },
+        { q: 'A bouquet of yellow roses __________ colour and fragrance to the room.', opts: ['lend', 'lends', 'lending', 'have lent'], a: 1, why: 'The verb agrees with the singular head noun “a bouquet”, not with “roses”.' },
+        { q: 'The quality of these mangoes __________ good this season.', opts: ['is', 'are', 'were', 'have'], a: 0, why: 'The head noun “quality” is singular; “of these mangoes” does not change it.' }
+      ]
+    },
+    {
+      name: 'Modals',
+      source: 'Notes: G-03 Modals',
+      questions: [
+        { q: 'You __________ consult a specialist immediately as your throat condition looks severe.', opts: ['should', 'can', 'might', 'would'], a: 0, why: 'Strong recommendation/advice is expressed by should.' },
+        { q: '__________ you please lower your voice? The baby is sleeping.', opts: ['Could', 'Shall', 'Must', 'Will'], a: 0, why: 'A polite request is expressed by Could you please…' },
+        { q: 'We __________ respect our national flag and national anthem.', opts: ['ought to', 'may', 'can', 'shall'], a: 0, why: 'Moral duty is expressed by ought to.' },
+        { q: 'He __________ solve complicated algebraic problems when he was only eight years old.', opts: ['could', 'should', 'might', 'must'], a: 0, why: 'Ability in the past is expressed by could.' },
+        { q: 'Look at those dark clouds gathering over the hills; it __________ rain heavily tonight.', opts: ['may', 'can', 'must', 'should'], a: 0, why: 'A strong, realistic possibility is expressed by may.' },
+        { q: 'You __________ not worry about the arrangements; our team has taken care of everything.', opts: ['need', 'dare', 'should', 'would'], a: 0, why: 'Need not expresses the absence of necessity.' },
+        { q: '__________ I carry this heavy school bag for you, Grandfather?', opts: ['Shall', 'Will', 'Must', 'May'], a: 0, why: 'A polite offer of help with a first-person subject takes Shall I…' },
+        { q: 'Candidates __________ answer all questions in Section A before attempting Section B.', opts: ['must', 'might', 'could', 'should'], a: 0, why: 'A compulsory rule or requirement is expressed by must.' },
+        { q: 'How __________ you enter the principal’s room without prior permission?', opts: ['dare', 'need', 'would', 'could'], a: 0, why: 'Dare expresses boldness/outrage in questions: How dare you…' },
+        { q: 'My grandfather __________ take a long brisk walk every morning before breakfast.', opts: ['used to', 'ought to', 'must', 'is used to'], a: 0, why: 'A discontinued past routine is expressed by used to + verb (I).' },
+        { q: '“Visitors __________ park their vehicles in front of the emergency exit. Violators will be fined.”', opts: ['must not', 'need not', 'shall not', 'might not'], a: 0, why: 'A strict prohibition is expressed by must not.' },
+        { q: 'Rohan: “I have lost my science textbook.” Aman: “You __________ check in the school library; you were sitting there during recess.”', opts: ['will', 'should', 'must not', 'used to'], a: 1, why: 'A suggestion/advice about a sensible next step is expressed by should.' },
+        { q: 'The sky is clear, but weather forecasts say it __________ shower lightly in the evening.', opts: ['must', 'might', 'will', 'shall'], a: 1, why: 'A weak or remote possibility is expressed by might.' },
+        { q: 'Which sentence expresses a polite request?', opts: ['Will you do this work now?', 'Would you mind helping me with this suitcase?', 'Must you come here today?', 'Shall you open the door?'], a: 1, why: '“Would you mind + -ing” is the politest request form among these.' },
+        { q: 'Since you have already paid the complete registration fee, you __________ pay anything extra.', opts: ['must not', 'need not', 'cannot', 'ought not'], a: 1, why: 'The absence of obligation is expressed by need not.' },
+        { q: 'We __________ obey traffic rules for our own safety and the safety of others.', opts: ['may', 'must', 'could', 'might'], a: 1, why: 'A strong obligation/necessity for safety is expressed by must.' },
+        { q: 'Doctor: “You look quite weak and exhausted. You __________ take complete bed rest for at least three days.”', opts: ['must', 'need', 'might', 'dare'], a: 0, why: 'The doctor’s strong advice/necessity is expressed by must (should is also acceptable).' },
+        { q: 'Patient: “__________ I attend my practical exam tomorrow morning, Doctor?”', opts: ['May', 'Must', 'Should', 'Shall'], a: 0, why: 'Asking permission takes May (or Can) I…' },
+        { q: 'Doctor: “No, you __________ not strain your body at all. It __________ lead to serious complications.” (choose the FIRST blank)', opts: ['must', 'may', 'need', 'dare'], a: 0, why: 'Prohibition from the doctor is expressed by must not (or should not).' },
+        { q: 'Doctor: “No, you must not strain your body at all. It __________ lead to serious complications.” (choose the SECOND blank)', opts: ['might', 'must', 'shall', 'would'], a: 0, why: 'A possible consequence is expressed by might (may/could also possible).' },
+        { q: 'Patient: “Alright, Doctor. I __________ follow your instructions strictly.”', opts: ['will', 'would', 'may', 'might'], a: 0, why: 'A promise/decision about the future is expressed by will.' }
+      ]
+    },
+    {
+      name: 'Determiners & Articles',
+      source: 'Notes: G-04 Determiners',
+      questions: [
+        { q: '__________ sun rises in the east and sets in the west.', opts: ['The', 'A', 'An', 'Some'], a: 0, why: 'Unique celestial bodies take the definite article The.' },
+        { q: 'Honesty is __________ virtue which __________ honest person cherishes. (choose the FIRST blank)', opts: ['a', 'an', 'the', 'some'], a: 0, why: '“Virtue” begins with the consonant sound /v/, so it takes a.' },
+        { q: 'Honesty is a virtue which __________ honest person cherishes. (choose the SECOND blank)', opts: ['an', 'a', 'the', 'some'], a: 0, why: '“Honest” begins with a vowel sound (the h is silent), so it takes an.' },
+        { q: 'Would you like to have __________ more hot coffee?', opts: ['some', 'any', 'many', 'few'], a: 0, why: 'In polite offers, some is used even in question form.' },
+        { q: 'He had __________ friends in the new city, so he felt very lonely.', opts: ['few', 'a few', 'little', 'a little'], a: 0, why: 'Few (with a countable plural noun) means almost none — hence loneliness.' },
+        { q: '__________ of the two boys was able to solve the tricky riddle.', opts: ['Neither', 'Every', 'All', 'Much'], a: 0, why: 'For “not one of two”, Neither is correct.' },
+        { q: 'There is __________ hope of finding the lost necklace now.', opts: ['little', 'few', 'many', 'several'], a: 0, why: 'Hope is uncountable with a negative sense, so little is correct.' },
+        { q: 'She has spent __________ money she had in her piggy bank.', opts: ['the little', 'the few', 'a few', 'a little'], a: 0, why: 'The little means the whole small amount she possessed.' },
+        { q: 'Are there __________ vacant seats in the auditorium for the evening show?', opts: ['any', 'some', 'much', 'few'], a: 0, why: 'Interrogative sentences normally take any.' },
+        { q: '__________ student in the class must submit the project by Monday.', opts: ['Every', 'All', 'Several', 'Much'], a: 0, why: 'With a singular countable noun (“student”), Every is correct.' },
+        { q: 'He bought __________ umbrella and __________ one-way train ticket to Jaipur. (choose the FIRST blank)', opts: ['an', 'a', 'the', 'some'], a: 0, why: '“Umbrella” begins with the vowel sound /ʌ/, so it takes an.' },
+        { q: 'He bought an umbrella and __________ one-way train ticket to Jaipur. (choose the SECOND blank)', opts: ['a', 'an', 'the', 'any'], a: 0, why: '“One-way” begins with the consonant sound /w/ (of “one”), so it takes a.' },
+        { q: '“There is __________ water left in the jug; it is barely enough to wet a sponge.”', opts: ['a little', 'little', 'few', 'a few'], a: 1, why: 'Little (without a) means almost none — barely enough.' },
+        { q: '“__________ candidate was selected because none met the minimum qualifications.”', opts: ['Either', 'Neither', 'Every', 'Some'], a: 1, why: 'No candidate of the two was selected → Neither.' },
+        { q: '“Could you please pass me __________ salt from the kitchen table?”', opts: ['some', 'any', 'many', 'few'], a: 0, why: 'A polite request with an uncountable noun takes some.' },
+        { q: '“He gave me __________ advice regarding preparation for the national Olympiad.”', opts: ['many', 'several', 'some', 'a few'], a: 2, why: 'Advice is uncountable, so some is correct; many/several/a few take countable nouns.' },
+        { q: '“__________ the members of the committee agreed to the proposed amendments.”', opts: ['Each', 'Every', 'All', 'Either'], a: 2, why: 'All is used before a plural countable noun with the: All the members.' },
+        { q: 'Forests play __________ vital role in maintaining the ecological balance of our planet.', opts: ['a', 'an', 'the', 'some'], a: 0, why: '“Vital” begins with the consonant sound /v/, so a vital role is correct.' },
+        { q: '__________ tree absorbs carbon dioxide and releases oxygen.', opts: ['Every', 'All', 'Several', 'Much'], a: 0, why: 'With the singular noun “tree”, Every is correct.' },
+        { q: 'Unfortunately, __________ human activities have led to large-scale deforestation.', opts: ['many', 'much', 'every', 'each'], a: 0, why: 'Activities is a plural countable noun, so many is correct.' },
+        { q: 'If we do not preserve __________ remaining forest cover, we will soon face severe consequences.', opts: ['the', 'a', 'an', 'some'], a: 0, why: 'A specific remaining quantity takes the definite article the.' },
+        { q: 'She met __________ European professor who gave an inspiring lecture on robotics.', opts: ['a', 'an', 'the', 'some'], a: 0, why: '“European” begins with the consonant sound /juː/, so a is correct.' }
+      ]
+    },
+    {
+      name: 'Reported Speech',
+      source: 'Notes: G-05 Reported Speech',
+      questions: [
+        { q: 'Rohan said to me, “I am preparing a science model for the national exhibition.”', opts: ['Rohan told me that he was preparing a science model for the national exhibition.', 'Rohan told me that he is preparing a science model for the national exhibition.', 'Rohan said to me that he had prepared a science model for the national exhibition.', 'Rohan asked me if he was preparing a science model for the national exhibition.'], a: 0, why: 'Past reporting verb + present continuous → was preparing (said to becomes told).' },
+        { q: 'The teacher said, “Water boils at 100 degrees Celsius.”', opts: ['The teacher said that water boiled at 100 degrees Celsius.', 'The teacher said that water boils at 100 degrees Celsius.', 'The teacher told that water had boiled at 100 degrees Celsius.', 'The teacher asked if water boils at 100 degrees Celsius.'], a: 1, why: 'Universal scientific truths do not change tense in indirect speech.' },
+        { q: 'She said to him, “Did you see the eclipse yesterday?”', opts: ['She asked him if he had seen the eclipse the previous day.', 'She told him if he saw the eclipse yesterday.', 'She asked him that he saw the eclipse the previous day.', 'She enquired him did he see the eclipse yesterday.'], a: 0, why: 'Yes/No questions take if/whether; simple past → past perfect; yesterday → the previous day.' },
+        { q: 'The police officer said to the driver, “Show me your driving licence.”', opts: ['The police officer ordered the driver to show him his driving licence.', 'The police officer asked the driver that he show his driving licence.', 'The police officer requested the driver if he showed his driving licence.', 'The police officer said the driver to show his driving licence.'], a: 0, why: 'Commands become ordered/told + object + to + verb (I).' },
+        { q: 'Mother said to Varun, “Why are you sitting idle in your room?”', opts: ['Mother asked Varun why he was sitting idle in his room.', 'Mother asked Varun why was he sitting idle in his room.', 'Mother told Varun why he is sitting idle in his room.', 'Mother requested Varun that why he sat idle in his room.'], a: 0, why: 'Wh-questions keep the wh-word with assertive order (subject + verb), not interrogative inversion.' },
+        { q: 'Priya said, “I have been practising classical dance since morning.”', opts: ['Priya said that she had been practising classical dance since morning.', 'Priya said that she has been practising classical dance since morning.', 'Priya said that she was practising classical dance since morning.', 'Priya said that she practised classical dance since morning.'], a: 0, why: 'Present Perfect Continuous becomes Past Perfect Continuous with a past reporting verb.' },
+        { q: 'The librarian said to the students, “Do not make noise in the reading hall.”', opts: ['The librarian ordered the students not to make noise in the reading hall.', 'The librarian told the students do not make noise in the reading hall.', 'The librarian asked the students if they made noise in the reading hall.', 'The librarian requested the students that they should make noise in the reading hall.'], a: 0, why: 'Negative commands become ordered + object + not to + verb (I).' },
+        { q: 'Ananya said, “Hurrah! My elder sister has cleared the civil services exam!”', opts: ['Ananya exclaimed with joy that her elder sister had cleared the civil services exam.', 'Ananya said with joy that her elder sister has cleared the civil services exam.', 'Ananya asked joyfully if her elder sister had cleared the civil services exam.', 'Ananya exclaimed with sorrow that her elder sister had cleared the civil services exam.'], a: 0, why: 'Hurrah expresses joy → exclaimed with joy; present perfect → past perfect.' },
+        { q: 'He said, “I will definitely help you tomorrow.”', opts: ['He said that he would definitely help me the next day.', 'He said that he will definitely help me tomorrow.', 'He said that he would definitely helped me the next day.', 'He told that he would definitely help me tomorrow.'], a: 0, why: 'Will becomes would and tomorrow becomes the next day with a past reporting verb.' },
+        { q: 'The doctor said to the patient, “Take these medicines regularly for two weeks.”', opts: ['The doctor advised the patient to take those medicines regularly for two weeks.', 'The doctor advised the patient take those medicines regularly for two weeks.', 'The doctor asked the patient if he took those medicines regularly for two weeks.', 'The doctor said the patient to take this medicines regularly for two weeks.'], a: 0, why: 'Advice becomes advised + object + to + verb (I); these becomes those.' },
+        { q: 'Rohan said, “I am reading an interesting novel.”', opts: ['Rohan said that he was reading an interesting novel.', 'Rohan said that he is reading an interesting novel.', 'Rohan said that he had been read an interesting novel.', 'Rohan asked that he was reading an interesting novel.'], a: 0, why: 'Past reporting verb + present continuous → was reading.' },
+        { q: 'The teacher said, “The sun is a huge ball of burning gases.”', opts: ['The teacher said that the sun was a huge ball of burning gases.', 'The teacher said that the sun is a huge ball of burning gases.', 'The teacher told that the sun had been a huge ball of burning gases.', 'The teacher asked if the sun is a huge ball of burning gases.'], a: 1, why: 'Universal truths keep their tense even after a past reporting verb.' },
+        { q: 'Kavita said to me, “Can you lend me your dictionary for an hour?”', opts: ['Kavita asked me that if I could lend her my dictionary for an hour.', 'Kavita told me if I can lend her my dictionary for an hour.', 'Kavita asked me if I could lend her my dictionary for an hour.', 'Kavita requested me that I could lend her my dictionary for an hour.'], a: 2, why: 'Requests with can become asked + if + could (with pronoun changes).' },
+        { q: 'The inspector said to the suspect, “Where were you at 9:00 PM yesterday?”', opts: ['The inspector asked the suspect where he was at 9:00 PM the previous day.', 'The inspector asked the suspect where had he been at 9:00 PM yesterday.', 'The inspector asked the suspect where he had been at 9:00 PM the previous day.', 'The inspector enquired the suspect where he was at 9:00 PM the previous day.'], a: 2, why: 'Simple past → past perfect, with assertive order and yesterday → the previous day.' },
+        { q: 'Father noticed Aryan looking stressed and asked him __________. (choose the FIRST blank)', opts: ['why he was looking so worried', 'why was he looking so worried', 'why is he looking so worried', 'that why he looked so worried'], a: 0, why: 'Reported wh-questions keep the wh-word and use assertive (subject + verb) order.' },
+        { q: 'Aryan replied that __________ his mathematics pre-board examination the next day. (choose the SECOND blank)', opts: ['he had', 'he has', 'he was having', 'he would have'], a: 0, why: 'Present simple “I have” becomes Past Perfect “he had” with a past reporting verb.' },
+        { q: 'Aryan replied that he had his examination the next day and that __________ geometry yet. (choose the THIRD blank)', opts: ['he had not revised', 'he has not revised', 'he did not revise', 'he would not revise'], a: 0, why: 'Present Perfect “I haven’t revised” becomes Past Perfect “he had not revised”.' },
+        { q: 'Father advised him not to panic and instructed him __________ on the key formulas. (choose the FOURTH blank)', opts: ['to focus', 'focusing', 'that he focus', 'for focusing'], a: 0, why: 'Imperatives are reported with instructed/advised + object + to + verb (I).' },
+        { q: 'Father instructed him to focus on the key formulas and __________ two practice theorems that night. (choose the FIFTH blank)', opts: ['to solve', 'solving', 'that he solved', 'for solving'], a: 0, why: 'A second instruction keeps the same to + verb (I) structure.' },
+        { q: 'He said, “Alas! I have lost my wallet.”', opts: ['He exclaimed with sorrow that he had lost his wallet.', 'He exclaimed with sorrow that he has lost his wallet.', 'He exclaimed with joy that he had lost his wallet.', 'He said with sorrow that he loses his wallet.'], a: 0, why: 'Alas expresses sorrow → exclaimed with sorrow; present perfect → past perfect.' }
+      ]
+    }
+  ];
+
+  var LETTERS = ['a', 'b', 'c', 'd'];
+
+  var root = document.documentElement;
+  try { var savedTheme = localStorage.getItem('c9-grammar-q3-theme'); if (savedTheme) root.setAttribute('data-theme', savedTheme); } catch (e) {}
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c9-grammar-q3-theme', next); } catch (e) {}
+  });
+
+  var tabsEl = document.getElementById('tabs');
+  var topicCard = document.getElementById('topicCard');
+  var quiz = document.getElementById('quiz');
+  var scorebar = document.getElementById('scorebar');
+  var cur = 0;
+  var state = TOPICS.map(function () { return { sel: {}, res: {}, score: null }; });
+
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function whyHtml(q) { return q.why ? '<span class="why">' + esc(q.why) + '</span>' : ''; }
+
+  // Deterministic rotation so correct answers are not always (a) on screen.
+  function rotOff(qi) { return ((qi * 3) + cur) % 4; }
+  function ansVal(q, qi) { return (q.a + rotOff(qi)) % 4; }
+
+  function renderTabs() {
+    tabsEl.innerHTML = TOPICS.map(function (t, i) {
+      return '<button type="button" class="tab' + (i === cur ? ' active' : '') + '" data-i="' + i + '">' + esc(t.name) + '</button>';
+    }).join('');
+  }
+
+  function renderTopic() {
+    var t = TOPICS[cur];
+    var html = '<span class="section-tag">Section B — Grammar</span>';
+    html += '<h2>' + esc(t.name) + '</h2>';
+    html += '<p class="instructions">' + esc(t.source) + ' · ' + t.questions.length + ' questions. Fill in the blank by tapping the correct option, then <strong>Check answers</strong>.</p>';
+    topicCard.innerHTML = html;
+  }
+
+  function questionHtml(q, qi) {
+    var off = rotOff(qi);
+    var h = '<div class="q" data-qi="' + qi + '">';
+    h += '<div class="qhead"><span class="num">' + (qi + 1) + '.</span> ' + q.q + '</div>';
+    h += '<div class="options">';
+    for (var oi = 0; oi < 4; oi++) {
+      var src = (oi - off + 4) % 4;
+      h += '<button type="button" class="opt" data-val="' + oi + '"><span class="letter">(' + LETTERS[oi] + ')</span><span>' + esc(q.opts[src]) + '</span></button>';
+    }
+    h += '</div>';
+    h += '<div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>';
+    h += '<div class="feedback"></div>';
+    h += '</div>';
+    return h;
+  }
+
+  function renderQuiz() {
+    var t = TOPICS[cur];
+    quiz.innerHTML = t.questions.map(questionHtml).join('') +
+      '<div class="actions"><button class="btn primary" id="checkBtn" type="button">Check answers</button>' +
+      '<button class="btn" id="resetBtn" type="button">Reset this topic</button></div>';
+    restore();
+    updateScore();
+  }
+
+  function mark(q, qi) {
+    var st = state[cur];
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return false;
+    var fb = qEl.querySelector('.feedback');
+    var ans = String(ansVal(q, qi));
+    var sel = st.sel[qi];
+    qEl.classList.remove('correct', 'wrong');
+    qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+    var good = qEl.querySelector('.opt[data-val="' + ans + '"]');
+    if (good) good.classList.add('correct');
+    if (sel === undefined) {
+      if (good) good.classList.remove('correct');
+      fb.textContent = 'Not answered yet.';
+      fb.className = 'feedback bad';
+      return false;
+    }
+    if (sel !== ans) {
+      var bad = qEl.querySelector('.opt[data-val="' + sel + '"]');
+      if (bad) { bad.classList.remove('correct'); bad.classList.add('wrong'); }
+    }
+    var ok = sel === ans;
+    fb.innerHTML = esc(ok ? 'Correct.' : 'Not quite. The correct answer is highlighted.') + whyHtml(q);
+    fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    qEl.classList.add(ok ? 'correct' : 'wrong');
+    st.res[qi] = ok;
+    return ok;
+  }
+
+  function showAnswer(q, qi) {
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return;
+    var fb = qEl.querySelector('.feedback');
+    var av = ansVal(q, qi);
+    qEl.querySelectorAll('.opt').forEach(function (b) {
+      b.classList.toggle('correct', b.getAttribute('data-val') === String(av));
+    });
+    fb.innerHTML = esc('Answer: (' + LETTERS[av] + ') ' + q.opts[q.a] + '.') + whyHtml(q);
+    fb.className = 'feedback info';
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'true'); sb.textContent = 'Hide answer'; }
+  }
+
+  function restore() {
+    var st = state[cur];
+    TOPICS[cur].questions.forEach(function (q, qi) {
+      var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+      if (!qEl) return;
+      if (st.sel[qi] !== undefined) {
+        var b = qEl.querySelector('.opt[data-val="' + st.sel[qi] + '"]');
+        if (b) b.classList.add('selected');
+      }
+    });
+    if (st.score !== null) {
+      TOPICS[cur].questions.forEach(function (q, qi) { mark(q, qi); });
+    }
+  }
+
+  function updateScore() {
+    var st = state[cur];
+    var checked = state.filter(function (s) { return s.score !== null; });
+    var total = checked.reduce(function (a, s) { return a + s.score; }, 0);
+    var head = esc(TOPICS[cur].name) + ': ' + (st.score === null ? '—' : st.score) + ' / ' + TOPICS[cur].questions.length;
+    var note = checked.length
+      ? 'Checked so far: ' + checked.length + ' of ' + TOPICS.length + ' topics · ' + total + ' / ' + (checked.reduce(function (a, s, i) { return a + TOPICS[i].questions.length; }, 0)) + ' correct.'
+      : 'Tap an option to choose it; you can change it any time before you check.';
+    scorebar.innerHTML = head + '<div class="small">' + note + '</div>';
+  }
+
+  document.addEventListener('click', function (ev) {
+    var tab = ev.target.closest('.tab');
+    if (tab) {
+      cur = Number(tab.getAttribute('data-i'));
+      renderTabs();
+      renderTopic();
+      renderQuiz();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (ev.target.id === 'checkBtn') {
+      var score = 0;
+      TOPICS[cur].questions.forEach(function (q, qi) { if (mark(q, qi)) score++; });
+      state[cur].score = score;
+      updateScore();
+      return;
+    }
+
+    if (ev.target.id === 'resetBtn') {
+      state[cur] = { sel: {}, res: {}, score: null };
+      renderQuiz();
+      updateScore();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    var sb = ev.target.closest('.show-ans');
+    if (sb && quiz.contains(sb)) {
+      var qEl = sb.closest('.q');
+      var qi = Number(qEl.getAttribute('data-qi'));
+      if (sb.getAttribute('data-shown') === 'true') {
+        var fb = qEl.querySelector('.feedback');
+        fb.textContent = '';
+        fb.className = 'feedback';
+        qEl.classList.remove('correct', 'wrong');
+        qEl.querySelectorAll('.opt').forEach(function (b) {
+          b.classList.remove('correct', 'wrong');
+          if (state[cur].sel[qi] !== undefined && b.getAttribute('data-val') === state[cur].sel[qi]) b.classList.add('selected');
+        });
+        sb.setAttribute('data-shown', 'false');
+        sb.textContent = 'Show answer';
+      } else {
+        showAnswer(TOPICS[cur].questions[qi], qi);
+      }
+      return;
+    }
+
+    var opt = ev.target.closest('.opt');
+    if (opt && quiz.contains(opt)) {
+      var qBox = opt.closest('.q');
+      var qi2 = Number(qBox.getAttribute('data-qi'));
+      qBox.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
+      opt.classList.add('selected');
+      state[cur].sel[qi2] = opt.getAttribute('data-val');
+      delete state[cur].res[qi2];
+      state[cur].score = null;
+      qBox.classList.remove('correct', 'wrong');
+      var fb2 = qBox.querySelector('.feedback');
+      fb2.textContent = '';
+      fb2.className = 'feedback';
+      var sbx = qBox.querySelector('.show-ans');
+      if (sbx) { sbx.setAttribute('data-shown', 'false'); sbx.textContent = 'Show answer'; }
+      updateScore();
+    }
+  });
+
+  renderTabs();
+  renderTopic();
+  renderQuiz();
+})();
+</script>
+</body>
+</html>

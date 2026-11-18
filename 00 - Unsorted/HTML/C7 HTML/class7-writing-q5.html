@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Writing — Q5 Diary & Story Completion</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+.cue { font-style: italic; background: var(--surface-2); padding: 8px 10px; border-radius: 8px; border-left: 3px solid var(--primary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Writing (Q5)</h1>
+      <p class="sub">Section B · Diary Entry / Story Completion · Tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q5:</strong> Diary entry OR Story completion (~120–150 words). Practice the format and key content using <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone).</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-diary" type="button">Diary Entry</button>
+      <button class="tab" id="tab-story" type="button">Story Completion</button>
+    </div>
+  </div>
+
+  <div id="panel-diary" class="panel active"></div>
+  <div id="panel-story" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c7-q5-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-q5-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabDiary = document.getElementById('tab-diary'), tabStory = document.getElementById('tab-story');
+  var panelDiary = document.getElementById('panel-diary'), panelStory = document.getElementById('panel-story');
+  tabDiary.addEventListener('click', function(){ tabDiary.classList.add('active'); tabStory.classList.remove('active'); panelDiary.classList.add('active'); panelStory.classList.remove('active'); });
+  tabStory.addEventListener('click', function(){ tabStory.classList.add('active'); tabDiary.classList.remove('active'); panelStory.classList.add('active'); panelDiary.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+    if(qd.cue){ var cue=document.createElement('div'); cue.className='cue'; cue.innerHTML='<strong>Given opening:</strong> '+escapeHtml(qd.cue); card.appendChild(cue); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){
+        if(typeof part==='string') p.appendChild(document.createTextNode(part));
+        else if(part && part.html){ var span=document.createElement('span'); span.innerHTML=part.html; p.appendChild(span); }
+        else p.appendChild(makeBlank(part.k));
+      });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // DIARY TAB
+  makeSequenceCard(panelDiary, 'Arrange the parts of a diary entry in the correct order', [
+    'Date and day (and time, if needed)',
+    'Salutation (e.g. "Dear Diary,")',
+    'Opening: introduce the event and your feelings',
+    'Body: describe what happened (events/details)',
+    'Closing: reflect on feelings or hope for tomorrow',
+    'Name / sign-off'
+  ]);
+
+  var diaryQs = [
+    {
+      title: 'Tap-to-fill diary entry (1)',
+      scenario: 'You won the first prize in a school painting competition today. Write a diary entry about how you felt.',
+      template: [
+        {parts:['', {k:'date'}]},
+        {parts:['', {k:'time'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['Today was one of the ', {k:'feel'}, ' days of my life! I won the ', {k:'prize'}, ' in our school painting competition. When my name was announced, I felt ', {k:'emotion'}, ' and proud.']},
+        {parts:['I had worked hard on my painting for a whole week, choosing bright colours and careful strokes. My art teacher praised my effort and my friends ', {k:'react'}, ' warmly. This experience has filled me with ', {k:'close'}, ' to keep improving my skills.']},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { date:{answer:'Friday, 14 August 2026'}, time:{answer:'9:00 p.m.'}, sal:{answer:'Dear Diary,'}, feel:{answer:'happiest'}, prize:{answer:'first prize'}, emotion:{answer:'overjoyed'}, react:{answer:'congratulated me'}, close:{answer:'confidence'}, name:{answer:'Meera'} },
+      bank: ['Friday, 14 August 2026','9:00 p.m.','Dear Diary,','happiest','first prize','overjoyed','congratulated me','confidence','Meera','sad','last prize','angry','10:00 a.m.','Yours sincerely']
+    },
+    {
+      title: 'Tap-to-fill diary entry (2)',
+      scenario: 'You helped an elderly neighbour carry groceries home in the rain. Write a diary entry about the experience.',
+      template: [
+        {parts:[{k:'date'}]},
+        {parts:[{k:'time'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['This evening I felt truly ', {k:'feel'}, ' after helping someone in need. On my way home from school, I saw my elderly neighbour, Mrs Das, struggling to carry heavy ', {k:'item'}, ' in the ', {k:'weather'}, '.']},
+        {parts:['I quickly held my umbrella over her and carried the bags to her doorstep. She smiled gratefully and thanked me with kind words. Helping her taught me that small acts of ', {k:'value'}, ' can bring great happiness. I will always try to be ', {k:'close'}, ' to others.']},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { date:{answer:'Tuesday, 7 July 2026'}, time:{answer:'8:30 p.m.'}, sal:{answer:'Dear Diary,'}, feel:{answer:'content'}, item:{answer:'groceries'}, weather:{answer:'rain'}, value:{answer:'kindness'}, close:{answer:'helpful'}, name:{answer:'Arun'} },
+      bank: ['Tuesday, 7 July 2026','8:30 p.m.','Dear Diary,','content','groceries','rain','kindness','helpful','Arun','bored','books','sunshine','rudeness','careless']
+    },
+    {
+      title: 'Tap-to-fill diary entry (3)',
+      scenario: 'You visited a science museum with your class and learnt something fascinating. Write a diary entry about it.',
+      template: [
+        {parts:[{k:'date'}]},
+        {parts:[{k:'time'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['What an ', {k:'feel'}, ' day it was! Our class visited the City Science Museum today. I was ', {k:'emotion'}, ' to see the giant models of planets and the working ', {k:'thing'}, ' in the space gallery.']},
+        {parts:['Our teacher explained how rockets are launched, and we even took part in a fun quiz. The visit made science feel ', {k:'value'}, ' and real. I returned home feeling ', {k:'close'}, ' and eager to learn more about the universe.']},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { date:{answer:'Wednesday, 11 November 2026'}, time:{answer:'7:45 p.m.'}, sal:{answer:'Dear Diary,'}, feel:{answer:'exciting'}, emotion:{answer:'amazed'}, thing:{answer:'rocket model'}, value:{answer:'alive'}, close:{answer:'inspired'}, name:{answer:'Riya'} },
+      bank: ['Wednesday, 11 November 2026','7:45 p.m.','Dear Diary,','exciting','amazed','rocket model','alive','inspired','Riya','dull','frightened','painting','boring','tired']
+    },
+    {
+      title: 'Tap-to-fill diary entry (4)',
+      scenario: 'You were caught in a sudden hailstorm on your way home from school. Write a diary entry about the experience.',
+      template: [
+        {parts:[{k:'date'}]},
+        {parts:[{k:'time'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['What a strange afternoon it turned out to be! The sky was clear when school ended, but halfway home a sudden ', {k:'event'}, ' began. Hailstones as big as marbles bounced off the road, and I was extremely ', {k:'feel'}, '.']},
+        {parts:['I ran to a nearby bus shelter where several others had gathered. A kind shopkeeper brought us hot tea and allowed us to wait inside his shop. We sat together for over an hour, and I realised how ', {k:'value'}, ' strangers can be in a difficult moment. When the storm ended, the streets were covered in white ice and everyone helped one another clear the water. I reached home late but ', {k:'close'}, '.']},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { date:{answer:'Thursday, 12 February 2026'}, time:{answer:'7:30 p.m.'}, sal:{answer:'Dear Diary,'}, event:{answer:'hailstorm'}, feel:{answer:'frightened'}, value:{answer:'helpful'}, close:{answer:'safe'}, name:{answer:'Karan'} },
+      bank: ['Thursday, 12 February 2026','7:30 p.m.','Dear Diary,','hailstorm','frightened','helpful','safe','Karan','excited','heat wave','selfish','late']
+    }
+  ];
+  diaryQs.forEach(function(q,i){ makeTapFill(panelDiary, (i+2)+'.', q); });
+
+  // STORY TAB
+  makeSequenceCard(panelStory, 'Arrange the parts of a story completion in the correct order', [
+    'Title',
+    'Given opening / beginning (the cue)',
+    'Middle: develop the situation and build interest',
+    'Climax / turning point (problem or key moment)',
+    'Ending: resolution with a clear closing or message'
+  ]);
+
+  var storyQs = [
+    {
+      title: 'Tap-to-fill story completion (1)',
+      cue: '"Ravi was walking home from school when he noticed a small wallet lying on the footpath..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['Ravi was walking home from school when he noticed a small wallet lying on the footpath. He picked it up and found some money and an identity card inside.'], tag:'p'},
+        {parts:['Instead of keeping it, Ravi decided to be ', {k:'value'}, '. He looked at the address on the card and walked to the nearby house. An elderly man opened the door and looked very ', {k:'feel'}, ' when he realised his wallet was missing.'], tag:'p'},
+        {parts:['Ravi returned the wallet with everything intact. The man thanked him warmly and blessed him for his ', {k:'act'}, '. Ravi walked home feeling ', {k:'endfeel'}, ', knowing he had done the right thing.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'Honesty Rewarded'}, value:{answer:'honest'}, feel:{answer:'worried'}, act:{answer:'honesty'}, endfeel:{answer:'proud'} },
+      bank: ['Honesty Rewarded','honest','worried','honesty','proud','The Lost Kite','careless','happy','greed','ashamed']
+    },
+    {
+      title: 'Tap-to-fill story completion (2)',
+      cue: '"Halfway up the hill, the sky suddenly turned dark and the first heavy drops of rain began to fall..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['Halfway up the hill, the sky suddenly turned dark and the first heavy drops of rain began to fall. Within minutes the road had turned into a stream of muddy water, so I ran towards a small ', {k:'place'}, ' at the corner for shelter.'], tag:'p'},
+        {parts:['Inside, an old man sat shivering near the door. His clothes were soaked and he had no umbrella. I opened my bag, took out my spare ', {k:'value'}, ' and gave it to him without a second thought.'], tag:'p'},
+        {parts:['When the rain stopped, I helped him walk to his house nearby. He thanked me again and again for my simple ', {k:'act'}, '. Walking home in the cool, wet evening, I felt truly ', {k:'endfeel'}, ' — I had lost nothing at all.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'Caught in the Rain'}, place:{answer:'tea shop'}, value:{answer:'raincoat'}, act:{answer:'kindness'}, endfeel:{answer:'happy'} },
+      bank: ['Caught in the Rain','tea shop','raincoat','kindness','happy','A Sunny Afternoon','bus stop','umbrella','anger','sad']
+    },
+    {
+      title: 'Tap-to-fill story completion (3)',
+      cue: '"Meena found an injured bird under the banyan tree in her school garden..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['Meena found an injured bird under the banyan tree in her school garden. Its wing was hurt and it could not fly. Meena felt ', {k:'feel'}, ' and wanted to help.'], tag:'p'},
+        {parts:['She gently picked up the bird, placed it in a small box, and took it to her science teacher. Together they cleaned the wound and gave it some water. For a few days, Meena cared for the bird with great ', {k:'value'}, '.'], tag:'p'},
+        {parts:['Soon the bird grew strong and was ready to ', {k:'act'}, ' again. As it soared into the sky, Meena smiled, filled with ', {k:'endfeel'}, ' and joy.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'A Little Act of Kindness'}, feel:{answer:'sad'}, value:{answer:'patience'}, act:{answer:'fly'}, endfeel:{answer:'happiness'} },
+      bank: ['A Little Act of Kindness','sad','patience','fly','happiness','The Broken Toy','angry','haste','hide','regret']
+    },
+    {
+      title: 'Tap-to-fill story completion (4)',
+      cue: '"It was the day of the final match, and Aman had practised for weeks but still felt unsure..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['It was the day of the final match, and Aman had practised for weeks but still felt unsure. As he stepped onto the field, he remembered his coach\'s words about never giving up.'], tag:'p'},
+        {parts:['The game was tough and the opposing team was strong. Aman missed the first chance but did not lose ', {k:'value'}, '. In the final minutes, he focused carefully and scored the winning ', {k:'act'}, '.'], tag:'p'},
+        {parts:['His teammates cheered loudly and lifted him in celebration. Aman learnt that hard work and ', {k:'feel'}, ' can lead to ', {k:'endfeel'}, '.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'Never Give Up'}, value:{answer:'hope'}, act:{answer:'goal'}, feel:{answer:'determination'}, endfeel:{answer:'success'} },
+      bank: ['Never Give Up','hope','goal','determination','success','The Lost Match','fear','mistake','laziness','failure']
+    }
+  ];
+  storyQs.forEach(function(q,i){ makeTapFill(panelStory, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

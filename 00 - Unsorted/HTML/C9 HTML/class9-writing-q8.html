@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class IX Writing — Q8 Article & Informal Invitation</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class IX — Writing (Q8)</h1>
+      <p class="sub">Section B · Article OR Informal invitation (120–150 words)</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q8:</strong> Article OR Informal invitation (about 120–150 words). Learn the layout with the <strong>sequence card</strong>, then complete solved samples by <strong>tapping blanks</strong>.</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-article" type="button">Article</button>
+      <button class="tab" id="tab-invite" type="button">Informal Invitation</button>
+    </div>
+  </div>
+
+  <div id="panel-article" class="panel active"></div>
+  <div id="panel-invite" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c9-q8-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c9-q8-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabArticle = document.getElementById('tab-article'), tabInvite = document.getElementById('tab-invite');
+  var panelArticle = document.getElementById('panel-article'), panelInvite = document.getElementById('panel-invite');
+  tabArticle.addEventListener('click', function(){ tabArticle.classList.add('active'); tabInvite.classList.remove('active'); panelArticle.classList.add('active'); panelInvite.classList.remove('active'); });
+  tabInvite.addEventListener('click', function(){ tabInvite.classList.add('active'); tabArticle.classList.remove('active'); panelInvite.classList.add('active'); panelArticle.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){
+        if(typeof part==='string') p.appendChild(document.createTextNode(part));
+        else if(part && part.html){ var span=document.createElement('span'); span.innerHTML=part.html; p.appendChild(span); }
+        else p.appendChild(makeBlank(part.k));
+      });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // ARTICLE TAB
+  makeSequenceCard(panelArticle, 'Arrange the parts of an article in the correct order', [
+    'Centred title',
+    'Byline: By Name, Class',
+    'Introduction with a hook (a question, fact or scene)',
+    'Body: causes / effects in two short paragraphs',
+    'Conclusion: suggestion and call to action'
+  ]);
+
+  var articleQs = [
+    {
+      title: 'Tap-to-fill article (1) — The Value of Morning Walks',
+      scenario: 'Write an article in about 120\u2013150 words for your school magazine on \u201cThe Value of Morning Walks\u201d.',
+      template: [
+        {parts:[{html:'<strong style="font-size:1.05rem">'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:[{html:'By '}, {k:'by'}], tag:'p', style:'text-align:center'},
+        {parts:['What costs nothing, needs no equipment and still changes your whole day? A ', {k:'answer'}, '. Before the traffic wakes, the world quietly belongs to the walker.'], tag:'p'},
+        {parts:['A brisk walk in the fresh air wakes up the body gently. Doctors say thirty minutes of walking strengthens the ', {k:'b1'}, ', improves ', {k:'b2'}, ' and steadies the ', {k:'b3'}, '. The green silence of the park does what no alarm clock can \u2014 it clears the head before the day begins.'], tag:'p'},
+        {parts:['There are other gains too. Morning walkers greet the same ', {k:'b4'}, ' \u2014 the newspaper vendor, the sweeper, the retired colonel with his ', {k:'b5'}, ' \u2014 and a silent neighbourhood slowly becomes a community. Early walkers say they concentrate ', {k:'b6'}, ' and sleep better at night.'], tag:'p'},
+        {parts:['The morning walk asks for one thing only: that you get out of bed a little ', {k:'b7'}, '. Tie your ', {k:'b8'}, ' tomorrow \u2014 your body and mind will both thank you.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Value of Morning Walks'}, by:{answer:'Aditi Rao, Class IX'}, answer:{answer:'morning walk'}, b1:{answer:'heart'}, b2:{answer:'digestion'}, b3:{answer:'mind'}, b4:{answer:'familiar faces'}, b5:{answer:'golden retriever'}, b6:{answer:'better'}, b7:{answer:'earlier'}, b8:{answer:'shoelaces'} },
+      bank: ['The Value of Morning Walks','Aditi Rao, Class IX','morning walk','heart','digestion','mind','familiar faces','golden retriever','better','earlier','shoelaces','evening stroll','lungs by half','worse','later','sports shoes','angry stray dog']
+    },
+    {
+      title: 'Tap-to-fill article (2) — Cycling to School',
+      scenario: 'Write an article in about 120\u2013150 words for your school notice board on \u201cCycling to School: Small Wheels, Big Change\u201d.',
+      template: [
+        {parts:[{html:'<strong style="font-size:1.05rem">'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:[{html:'By '}, {k:'by'}], tag:'p', style:'text-align:center'},
+        {parts:['Two wheels, no ', {k:'b1'}, ' and a whole city of benefits \u2014 the humble ', {k:'b2'}, ' may be the smartest vehicle ever invented.'], tag:'p'},
+        {parts:['Cycling to school keeps you ', {k:'b3'}, ' without costing a rupee. Leg muscles grow strong, breathing deepens, and the short ride burns more energy than an hour of scrolling on a phone. Because cycles take up little ', {k:'b4'}, ', a class of forty cyclists can untangle a jam that forty cars would create.'], tag:'p'},
+        {parts:['The Earth gains too. A cycle releases no ', {k:'b5'}, ', makes no noise and asks for no ', {k:'b6'}, '. Parents who once drove children door to door find that a neighbourhood cycling group gives children safety, friendship and fresh air.'], tag:'p'},
+        {parts:['So dig that bicycle out of the corner, oil its ', {k:'b7'}, ' and pump its ', {k:'b8'}, '. Every pedal push takes you \u2014 and your city \u2014 one step closer to cleaner ', {k:'b9'}, '.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'Cycling to School: Small Wheels, Big Change'}, by:{answer:'Vivaan Gupta, Class IX-C'}, b1:{answer:'fuel'}, b2:{answer:'bicycle'}, b3:{answer:'fit'}, b4:{answer:'road space'}, b5:{answer:'smoke'}, b6:{answer:'parking lot'}, b7:{answer:'chain'}, b8:{answer:'tyres'}, b9:{answer:'air'} },
+      bank: ['Cycling to School: Small Wheels, Big Change','Vivaan Gupta, Class IX-C','fuel','bicycle','fit','road space','smoke','parking lot','chain','tyres','air','diesel bus','tired','footpath','traffic policeman','brakes','helmet','water']
+    },
+    {
+      title: 'Tap-to-fill article (3) — Sorting Waste at Home',
+      scenario: 'Write an article in about 120\u2013150 words for your school newsletter on \u201cSorting Waste at Home: A Small Step for the City\u201d.',
+      template: [
+        {parts:[{html:'<strong style="font-size:1.05rem">'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:[{html:'By '}, {k:'by'}], tag:'p', style:'text-align:center'},
+        {parts:['Did you know that more than half of what we throw away could be ', {k:'b1'}, ' or composted? The trouble is that everything lands in one ', {k:'b2'}, '.'], tag:'p'},
+        {parts:['Sorting waste at home takes barely five minutes a day. Keep two bins: one for ', {k:'b3'}, ' such as paper, plastic and metal, and another for ', {k:'b4'}, ' like vegetable peels and leftover food. Wrap broken glass in newspaper and keep it aside \u2014 it can injure collectors if mixed carelessly.'], tag:'p'},
+        {parts:['The gains are huge. Dry waste reaches recyclers instead of a ', {k:'b5'}, '; wet waste turns into ', {k:'b6'}, ' for potted plants; and the garbage truck collects less. Cities that introduced two-bin systems have cut the waste reaching their dumps by nearly a ', {k:'b7'}, '.'], tag:'p'},
+        {parts:['Change begins in the ', {k:'b8'}, ', not the landfill. Start tonight \u2014 label two boxes, and teach the youngest member of the house to ', {k:'b9'}, ' first.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'Sorting Waste at Home: A Small Step for the City'}, by:{answer:'Naina Bedi, Class IX-A'}, b1:{answer:'recycled'}, b2:{answer:'bin'}, b3:{answer:'dry waste'}, b4:{answer:'wet waste'}, b5:{answer:'landfill'}, b6:{answer:'compost'}, b7:{answer:'third'}, b8:{answer:'kitchen'}, b9:{answer:'sort'} },
+      bank: ['Sorting Waste at Home: A Small Step for the City','Naina Bedi, Class IX-A','recycled','bin','dry waste','wet waste','landfill','compost','third','kitchen','sort','burned','dustbin man','e-waste','landlord','manure','half','bathroom','wash']
+    },
+    {
+      title: 'Tap-to-fill article (4) — The Joys of Caring for a Garden',
+      scenario: 'Write an article in about 120\u2013150 words for your school magazine on \u201cThe Joys of Caring for a Garden\u201d.',
+      template: [
+        {parts:[{html:'<strong style="font-size:1.05rem">'}, {k:'title'}, {html:'</strong>'}], tag:'p', style:'text-align:center'},
+        {parts:[{html:'By '}, {k:'by'}], tag:'p', style:'text-align:center'},
+        {parts:['In an age of instant everything, a garden is the slowest, wisest ', {k:'b1'}, ' a student can have.'], tag:'p'},
+        {parts:['A garden rewards attention, not money. Sow a ', {k:'b2'}, ', water it daily and in two weeks a green head pushes through the ', {k:'b3'}, ' \u2014 an excitement no screen can match. Pulling ', {k:'b4'}, ', loosening soil and watching buds open trains the eye better than any textbook diagram.'], tag:'p'},
+        {parts:['Gardening also feeds the family and the birds. A balcony with pots of ', {k:'b5'}, ', chillies and tomatoes trims the vegetable bill, while a shallow water bowl turns the space into a rest stop for ', {k:'b6'}, ' and sunbirds. Even apartment dwellers can grow mint in an old paint box.'], tag:'p'},
+        {parts:['Start small: one ', {k:'b7'}, ', one season, one success. Hands that learn to plant a seed learn, almost secretly, to care for the ', {k:'b8'}, '.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Joys of Caring for a Garden'}, by:{answer:'Ritika Menon, Class IX-B'}, b1:{answer:'teacher'}, b2:{answer:'seed'}, b3:{answer:'soil'}, b4:{answer:'weeds'}, b5:{answer:'spinach'}, b6:{answer:'sparrows'}, b7:{answer:'pot'}, b8:{answer:'planet'} },
+      bank: ['The Joys of Caring for a Garden','Ritika Menon, Class IX-B','teacher','seed','soil','weeds','spinach','sparrows','pot','planet','smartphone','shovel','sand','roses','crows','bucket','country']
+    }
+  ];
+  articleQs.forEach(function(q,i){ makeTapFill(panelArticle, (i+2)+'.', q); });
+
+  // INVITATION TAB
+  makeSequenceCard(panelInvite, 'Arrange the parts of an informal invitation letter in the correct order', [
+    'Sender\u2019s address and the date below it',
+    'Salutation: Dear \u2026',
+    'Opening: why you are writing (the invitation itself)',
+    'Details: what, when and where',
+    'What to bring or why the friend is specially needed',
+    'Closing line + Yours affectionately / lovingly, and your name'
+  ]);
+
+  var inviteQs = [
+    {
+      title: 'Tap-to-fill invitation (1) — Join my quiz team',
+      scenario: 'Write a letter to your classmate Kavya inviting her to be the third member of your team for the inter-school Science Quiz.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p', style:'margin:0;'},
+        {parts:[{k:'date'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Dear '}, {k:'sal'}], tag:'p'},
+        {parts:['The inter-school ', {k:'what'}, ' has been announced for 12 December \u2014 and you also know that our school may send only one ', {k:'howmany'}, ' of three. I have already registered a team, and there is one seat left: ', {k:'left'}, '.'], tag:'p'},
+        {parts:['Here is my honest reason for writing. You were the one who explained ', {k:'reason'}, ' to the whole class last term, and your quick recall of inventors\u2019 names amazed even Sir. Between your physics and my biology, plus Dev\u2019s ', {k:'third'}, ', we could actually bring the trophy home.'], tag:'p'},
+        {parts:['Practices would be twice a week \u2014 ', {k:'when'}, ', 3 to 4 p.m., in the ', {k:'where'}, ' \u2014 for the next three weeks. Nothing else is needed except that famous memory of yours.'], tag:'p'},
+        {parts:['Do say yes by ', {k:'deadline'}, '; the entry closes on Saturday.'], tag:'p'},
+        {parts:[{html:'Yours affectionately,'}], tag:'p'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'31, Ashoka Enclave, Dehradun'}, date:{answer:'2 December 2026'}, sal:{answer:'Kavya'}, what:{answer:'Science Quiz'}, howmany:{answer:'team'}, left:{answer:'yours'}, reason:{answer:'electric circuits'}, third:{answer:'chemistry'}, when:{answer:'Tuesday and Thursday'}, where:{answer:'library'}, deadline:{answer:'Friday'}, signer:{answer:'Tanvi'} },
+      bank: ['31, Ashoka Enclave, Dehradun','2 December 2026','Kavya','Science Quiz','team','yours','electric circuits','chemistry','Tuesday and Thursday','library','Friday','Tanvi','Maths Olympiad','pair','mine','the water cycle','geography','Monday and Friday','auditorium','Sunday','Thursday','Priya']
+    },
+    {
+      title: 'Tap-to-fill invitation (2) — Bird-watching morning at the lake',
+      scenario: 'Write a letter to your cousin Sameer inviting him to a bird-watching morning at the lake during the winter holidays.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p', style:'margin:0;'},
+        {parts:[{k:'date'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Dear '}, {k:'sal'}], tag:'p'},
+        {parts:['Our ', {k:'when1'}, ' begin on 24 December, and I have a plan I think you will like: a ', {k:'what'}, ' at Sultanpur Lake on the 27th.'], tag:'p'},
+        {parts:['My uncle, who volunteers with the local ', {k:'group'}, ', will guide us. He says this is the best week of the year \u2014 the migratory ducks, pintails and even a flamingo or two pass through exactly then. We will start at 6:30 a.m. from the main ', {k:'where'}, ', walk the nature trail for two hours, and finish with hot ', {k:'end1'}, ' at the lake canteen.'], tag:'p'},
+        {parts:['Bring your ', {k:'bring'}, ' if you still have them, wear dull colours \u2014 bright clothes frighten the birds \u2014 and carry a ', {k:'carry'}, '; my uncle says watchers who note what they see become the best at it.'], tag:'p'},
+        {parts:['Reply by ', {k:'reply'}, ' tonight so I can book the entry passes.'], tag:'p'},
+        {parts:[{html:'Yours lovingly,'}], tag:'p'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'14, Sector 7, Gurugram'}, date:{answer:'21 December 2026'}, sal:{answer:'Sameer'}, when1:{answer:'winter holidays'}, what:{answer:'bird-watching morning'}, group:{answer:'bird-count group'}, where:{answer:'gate'}, end1:{answer:'tea'}, bring:{answer:'binoculars'}, carry:{answer:'notebook'}, reply:{answer:'phone'}, signer:{answer:'Arjun'} },
+      bank: ['14, Sector 7, Gurugram','21 December 2026','Sameer','winter holidays','bird-watching morning','bird-count group','gate','tea','binoculars','notebook','phone','Arjun','summer camp','picnic morning','cycling club','ticket counter','coffee','camera','sketchbook','letter','email','Aditya']
+    },
+    {
+      title: 'Tap-to-fill invitation (3) — Run the fete stall with me',
+      scenario: 'Write a letter to your friend Nandini inviting her to run the class\u2019s book-and-lemonade stall with you at the school fete.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p', style:'margin:0;'},
+        {parts:[{k:'date'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Dear '}, {k:'sal'}], tag:'p'},
+        {parts:['Our school ', {k:'event'}, ' is on 14 February, and our class has been given the book-and-lemonade stall this year. Will you run it with ', {k:'who'}, '?'], tag:'p'},
+        {parts:['You were the star of last year\u2019s book fair \u2014 you sold forty old ', {k:'item'}, ' in an hour \u2014 so pricing and display can be your department, while I handle the ', {k:'item2'}, ' and the cash box. I have already collected two cartons of donated books from the teachers.'], tag:'p'},
+        {parts:['We would need to come an hour early, at ', {k:'time'}, ', to arrange the table near the main gate, and to stay back half an hour after the fete closes. ', {k:'extra'}, ' and posters will be ready.'], tag:'p'},
+        {parts:['Mother has promised us samosas afterwards as ', {k:'reward'}, '! Tell me by ', {k:'reply'}, ' so I can add your name to the duty list.'], tag:'p'},
+        {parts:[{html:'Yours affectionately,'}], tag:'p'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'6, Model Mill Road, Indore'}, date:{answer:'9 February 2027'}, sal:{answer:'Nandini'}, event:{answer:'fete'}, who:{answer:'me'}, item:{answer:'comics'}, item2:{answer:'lemonade jug'}, time:{answer:'8 a.m.'}, extra:{answer:'Aprons'}, reward:{answer:'wages'}, reply:{answer:'Wednesday'}, signer:{answer:'Zoya'} },
+      bank: ['6, Model Mill Road, Indore','9 February 2027','Nandini','fete','me','comics','lemonade jug','8 a.m.','Aprons','wages','Wednesday','Zoya','sports day','you','novels','juice jug','9 a.m.','Gloves','medals','Friday','Tuesday','Meera']
+    },
+    {
+      title: 'Tap-to-fill invitation (4) — Play keyboard in my band',
+      scenario: 'Write a letter to your classmate Rohan inviting him to play the keyboard in your band for the Annual Day performance.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p', style:'margin:0;'},
+        {parts:[{k:'date'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Dear '}, {k:'sal'}], tag:'p'},
+        {parts:['Remember how the whole school hummed our tune at the class party? Here is a chance to do it properly: the ', {k:'event'}, ' committee has opened entries for student bands, and I want you on the ', {k:'instr'}, '.'], tag:'p'},
+        {parts:['I will play the guitar, Sana is on the ', {k:'instr2'}, ', and we need exactly your soft, steady touch to hold us together \u2014 and, let us be honest, no one else in Class IX can read ', {k:'skill'}, ' the way you do. The song choice is ours; I am thinking of the ', {k:'song'}, ' we once jammed to.'], tag:'p'},
+        {parts:['Auditions are on ', {k:'date'}, ' at the music room; selected bands get two weeks of practice slots. We would meet every ', {k:'day'}, ' at my place first.'], tag:'p'},
+        {parts:['Practice cannot start without you. ', {k:'call'}, ' tonight?'], tag:'p'},
+        {parts:[{html:'Yours affectionately,'}], tag:'p'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'19, Hill Crest Colony, Shillong'}, date:{answer:'28 July 2026'}, sal:{answer:'Rohan'}, event:{answer:'Annual Day'}, instr:{answer:'keyboard'}, instr2:{answer:'drums'}, skill:{answer:'sheet music'}, song:{answer:'folk melody'}, date:{answer:'5 August'}, day:{answer:'Sunday'}, call:{answer:'Call me'}, signer:{answer:'Imran'} },
+      bank: ['19, Hill Crest Colony, Shillong','28 July 2026','Rohan','Annual Day','keyboard','drums','sheet music','folk melody','5 August','Sunday','Call me','Imran','Sports Meet','violin','flute','guitar chords','film song','15 August','Saturday','Ring the bell','Write a letter','Karan']
+    }
+  ];
+  inviteQs.forEach(function(q,i){ makeTapFill(panelInvite, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

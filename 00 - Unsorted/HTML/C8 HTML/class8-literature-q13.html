@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VIII Literature — Q13 Long Answers</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.qcard { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.qtop { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; margin-bottom: 6px; }
+.qnum { font-size: .78rem; font-weight: 800; color: var(--primary); }
+.src { font-size: .78rem; color: var(--muted); font-style: italic; text-align: right; }
+.qtext { font-weight: 600; margin: 0 0 10px; font-size: .97rem; }
+.wc { font-size: .76rem; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+.answer { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; font-size: .95rem; line-height: 2; }
+.blank { display: inline-block; min-width: 84px; border: 1px dashed var(--primary); background: var(--surface); color: var(--text); border-radius: 8px; padding: 2px 8px; margin: 0 2px; font-size: .9rem; font-weight: 600; cursor: pointer; line-height: 1.5; }
+.blank.active { border-style: solid; box-shadow: 0 0 0 2px var(--primary-soft); }
+.blank.filled { background: var(--primary-soft); border-style: solid; }
+.blank.ok { background: var(--success-soft); border-color: var(--success); color: var(--success); }
+.blank.bad { background: var(--danger-soft); border-color: var(--danger); color: var(--danger); }
+.bank { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+.chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; padding: 6px 10px; font-size: .88rem; cursor: pointer; }
+.chip.used { opacity: .35; }
+.fb { margin-top: 8px; font-size: .88rem; font-weight: 700; min-height: 1.1em; }
+.fb.ok { color: var(--success); } .fb.bad { color: var(--danger); } .fb.info { color: var(--muted); font-weight: 500; }
+.row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; align-items: center; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 9px 14px; border-radius: 10px; font-size: .92rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.link-btn { background: none; border: none; color: var(--primary); font-size: .85rem; font-weight: 600; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+.overall { font-size: .88rem; color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VIII — Literature (Q13: Long Answers)</h1>
+      <p class="sub">5 answers · any one in the exam · 120–150 words · 5 marks</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section C — Literature</span>
+    <p class="note"><strong>The paper gives two options and asks for any one, in 120–150 words, for 5 marks.</strong> Here you get five model answers from the same two poems. The paper’s own two questions are among them, unmarked. Each answer is already written — you build it by tapping the right words into the blanks.</p>
+    <p class="note" style="margin-top:8px">Tap a blank, then tap a word below it. Tap a filled blank to take the word back.</p>
+    <p class="overall" id="overall" style="margin:10px 0 0"></p>
+  </div>
+
+  <div id="stage"></div>
+</div>
+
+<script>
+(function () {
+  var QUESTIONS = [
+    {
+      src: "Somebody’s Mother",
+      q: "Justify the appropriateness of the title of the poem “Somebody’s Mother”. The boy hoped that someone would help his own mother one day if needed. Describe a situation where you or someone you know showed kindness to an elderly person in public, and the feeling it created.",
+      parts: [
+        "The title works because it turns a stranger into a relationship. The old woman at the crossing is described only by her age and her worn clothes, so it would be easy to walk past her, and the boys do — “like a flock of sheep”. The boy’s words to his friends, that ",
+        ["she is somebody’s mother","she is only a stranger","she is nobody’s concern",0],
+        ", give her back a family and a place in someone’s life. Because he says it, we also think of ",
+        ["his own mother, far away and growing old","the teacher waiting at school","the crowd that hurried past",0],
+        ", and the old woman’s night prayer answers him with “somebody’s son”. Once I helped an elderly neighbour carry her shopping up three floors when the lift failed; her thanks felt far bigger than the effort, and I understood the poem’s point — ",
+        ["kindness costs little and is remembered long","old people should stay indoors","strangers cannot be trusted",0],
+        ". That is why the title is exactly right: ",
+        ["it makes every old person somebody’s own","it names the old woman in the poem","it describes the boy’s family",0],
+        "."
+      ]
+    },
+    {
+      src: "Somebody’s Mother",
+      q: "How does the poet make us feel the old woman’s helplessness and the crowd’s indifference? Refer to the images, the contrast and the simile used in the poem.",
+      parts: [
+        "The poet builds helplessness out of small physical details rather than statements. The woman is “old and ragged and grey”, “bent with the chill”, her feet “aged and slow”, and she is ",
+        ["“alone, uncared for, amid the throng”","“glad in the freedom of school let out”","“proud that his own were firm and strong”",0],
+        ". She stands at the crossing and does not dare to stir, afraid of ",
+        ["the carriage wheels and the horses’ feet","the boys laughing at her","the snow on her shoes",0],
+        ". Against her the poet sets the schoolboys, who come “like a flock of sheep”, a simile that makes them ",
+        ["thoughtless and herd-like rather than cruel","kind and eager to help","slow and tired after school",0],
+        ". Their speed and her stillness, their strength and her trembling feet, do all the work of the poem. Not one of them speaks to her; only one stops, and even he ",
+        ["whispers gently before offering his arm","shouts so that his friends can hear","asks her for money first",0],
+        "."
+      ]
+    },
+    {
+      src: "Somebody’s Mother",
+      q: "What lesson does the poem teach about kindness and gratitude? How does the old woman’s prayer at the end complete the poem’s message?",
+      parts: [
+        "The poem teaches its lesson without preaching: it shows one small action and then lets the consequences speak. A boy gives up a few minutes of a snowball afternoon to ",
+        ["guide a frightened old woman across a slippery street","carry an old woman’s shopping home","walk an old woman to the market",0],
+        ", and that evening she prays for “the noble boy, who is somebody’s son”. Her prayer is the reward the poem offers, and it is ",
+        ["worth more than any prize","the only reward he wanted","a reward he never learns about",0],
+        ". The other boys are not punished; they simply lose the chance to be remembered in someone’s prayer. The woman’s gratitude also ",
+        ["turns a stranger into somebody’s son","shows that she had no family","proves that the boys were unkind",0],
+        ", closing the circle the boy opened when he called her somebody’s mother. For a society, the message is that ",
+        ["small, ordinary kindness is what holds people together","only great sacrifices count","children should not talk to strangers",0],
+        "."
+      ]
+    },
+    {
+      src: "The Magic Brush of Dreams",
+      q: "Gopi refused to paint riches for the greedy Zamindar and used the magic brush only to help needy villagers. If you were gifted the magic brush in today’s world, what three things would you paint to solve problems in your community or school, and why?",
+      parts: [
+        "If the brush came to me, I would keep the stranger’s condition and paint only what a community cannot buy. First, ",
+        ["clean drinking water for the lanes that run dry every May","a marble fountain for the school gate","a swimming pool behind the staff room",0],
+        ", because illness and lost school days in my area both begin with bad water. Second, a small ",
+        ["public library with lamps and chairs, open till night","cricket ground with floodlights","shopping complex beside the bus stop",0],
+        ", since the children who crowd the pavement outside my house have nowhere quiet to study once daylight goes. Third, ",
+        ["rainwater tanks on the roofs of the poorest houses","a taller water tank for the temple","a fountain in the market square",0],
+        ", so that a dry June does not empty every tap. None of these makes anyone rich; all three keep working after the paint dries, which is exactly what the old man in the poem wanted — ",
+        ["relief for the needy rather than treasure for the powerful","fame for the painter","beauty for its own sake",0],
+        "."
+      ]
+    },
+    {
+      src: "The Magic Brush of Dreams",
+      q: "The stranger who gives Gopi the brush adds one condition to it. Why is that condition the real test of the poem, and how does Gopi’s refusal of the Zamindar prove she deserves the gift?",
+      parts: [
+        "The condition attached to the brush is the poem’s real test. The stranger does not say paint nothing; he says ",
+        ["“Paint not for the wealthy ones, but only for the poor.”","“Paint only what you yourself need.”","“Never let anyone watch you paint.”",0],
+        ", which turns a magical gift into a promise. Gopi’s paintings are ordinary and useful — khichdi, a muffler, a plough, a shawl, a fan — so the brush becomes ",
+        ["a way of feeding and clothing people","a way of becoming famous","a way of pleasing the ruler",0],
+        ". The Zamindar wants a fortress, gold and rubies, and his order ",
+        ["would have turned the gift into a weapon of greed","would have made the village rich","would have been easy to refuse politely",0],
+        ". Her refusal costs her freedom, and her escape is painted, not fought: a road, a horse, a river. That is why the ending feels like a victory for ",
+        ["imagination and generosity over force","cleverness over kindness","the village over the town",0],
+        "."
+      ]
+    }
+  ];
+
+  // Tidy spacing: a blank followed by punctuation should not leave a gap before it.
+  QUESTIONS.forEach(function (q) {
+    q.parts = q.parts.map(function (p) {
+      return typeof p === 'string' ? p.replace(/\s+([,.;:!?])/g, '$1') : p;
+    });
+  });
+
+  function fullAnswer(q) {
+    return q.parts.map(function (p) { return Array.isArray(p) ? p[p[3]] : p; }).join('').replace(/\s+/g, ' ').trim();
+  }
+  function wordCount(q) { return fullAnswer(q).split(' ').length; }
+
+  var stage = document.getElementById('stage');
+  var overallEl = document.getElementById('overall');
+
+  var TOTAL_BLANKS = QUESTIONS.reduce(function (sum, q) {
+    return sum + q.parts.filter(function (p) { return Array.isArray(p); }).length;
+  }, 0);
+
+  var state = QUESTIONS.map(function (q) {
+    var n = q.parts.filter(function (p) { return Array.isArray(p); }).length;
+    return { filled: new Array(n).fill(null), done: new Array(n).fill(false), checked: false };
+  });
+
+  function updateOverall() {
+    var got = 0, total = 0;
+    state.forEach(function (s) {
+      if (!s.checked) return;
+      s.done.forEach(function (d, i) { total++; if (d) got++; });
+    });
+    overallEl.textContent = total === 0 ? '' : 'Blanks correct so far: ' + got + ' / ' + total + ' (all answers total ' + TOTAL_BLANKS + ' blanks)';
+  }
+
+  function render() {
+    stage.innerHTML = '';
+    var qs = QUESTIONS.map(function (q, i) { return { q: q, i: i }; });
+
+    qs.forEach(function (entry, pos) {
+      var q = entry.q, st = state[entry.i];
+      var card = document.createElement('div'); card.className = 'qcard';
+
+      var top = document.createElement('div'); top.className = 'qtop';
+      var num = document.createElement('div'); num.className = 'qnum';
+      num.textContent = 'Q' + (pos + 1) + ' of ' + qs.length;
+      top.appendChild(num);
+      var src = document.createElement('div'); src.className = 'src'; src.textContent = q.src;
+      top.appendChild(src);
+      card.appendChild(top);
+
+      var qt = document.createElement('p'); qt.className = 'qtext';
+      qt.textContent = q.q;
+      card.appendChild(qt);
+
+      var wc = document.createElement('p'); wc.className = 'wc';
+      wc.textContent = 'Model answer: ' + wordCount(q) + ' words · limit 120–150 words · 5 marks';
+      card.appendChild(wc);
+
+      var ans = document.createElement('div'); ans.className = 'answer';
+      var blankEls = [];
+      var bi = 0;
+
+      q.parts.forEach(function (part) {
+        if (Array.isArray(part)) {
+          var idx = bi++;
+          var b = document.createElement('button');
+          b.type = 'button'; b.className = 'blank';
+          b.dataset.blank = idx;
+          var fill = st.filled[idx];
+          if (fill) { b.textContent = fill; b.classList.add('filled'); }
+          else { b.textContent = '________'; }
+          b.addEventListener('click', function () {
+            if (st.checked) return;
+            if (st.filled[idx]) {
+              st.filled[idx] = null;
+              redraw();
+              return;
+            }
+            activeBlank = idx;
+            redraw();
+          });
+          blankEls.push(b);
+          ans.appendChild(b);
+        } else {
+          ans.appendChild(document.createTextNode(part));
+        }
+      });
+      card.appendChild(ans);
+
+      var bank = document.createElement('div'); bank.className = 'bank';
+      var options = [];
+      q.parts.forEach(function (part) {
+        if (Array.isArray(part)) part.slice(0, 3).forEach(function (o) { options.push(o); });
+      });
+      options = options.map(function (o, k) { return { o: o, k: (k * 7 + 3) % 11 }; })
+        .sort(function (a, b) { return a.k - b.k; })
+        .map(function (x) { return x.o; });
+
+      var activeBlank = null;
+
+      function redraw() {
+        blankEls.forEach(function (el, idx) {
+          el.textContent = st.filled[idx] ? st.filled[idx] : '________';
+          el.className = 'blank' + (st.filled[idx] ? ' filled' : '') +
+            (!st.checked && activeBlank === idx ? ' active' : '') +
+            (st.checked ? (st.done[idx] ? ' ok' : ' bad') : '');
+        });
+        Array.prototype.forEach.call(bank.children, function (c) {
+          var used = st.filled.indexOf(c.dataset.word) !== -1;
+          c.className = 'chip' + (used ? ' used' : '');
+          c.disabled = used || st.checked;
+        });
+        var firstEmpty = st.filled.indexOf(null);
+        if (activeBlank !== null && st.filled[activeBlank]) activeBlank = null;
+        if (activeBlank === null) activeBlank = firstEmpty === -1 ? null : firstEmpty;
+        blankEls.forEach(function (el, idx) { el.classList.toggle('active', activeBlank === idx); });
+      }
+
+      options.forEach(function (word) {
+        var c = document.createElement('button');
+        c.type = 'button'; c.className = 'chip'; c.textContent = word; c.dataset.word = word;
+        c.addEventListener('click', function () {
+          if (st.checked) return;
+          var target = activeBlank;
+          if (target === null) target = st.filled.indexOf(null);
+          if (target === null || target === -1) return;
+          st.filled[target] = word;
+          activeBlank = st.filled.indexOf(null);
+          redraw();
+        });
+        bank.appendChild(c);
+      });
+      card.appendChild(bank);
+
+      var fb = document.createElement('div'); fb.className = 'fb';
+      card.appendChild(fb);
+
+      var row = document.createElement('div'); row.className = 'row';
+      var check = document.createElement('button'); check.type = 'button'; check.className = 'btn primary'; check.textContent = 'Check';
+      var reset = document.createElement('button'); reset.type = 'button'; reset.className = 'btn'; reset.textContent = 'Reset';
+      var show = document.createElement('button'); show.type = 'button'; show.className = 'link-btn'; show.textContent = 'Show answer';
+      row.appendChild(check); row.appendChild(reset); row.appendChild(show);
+      card.appendChild(row);
+
+      var correctIdx = q.parts.filter(function (p) { return Array.isArray(p); }).map(function (p) { return p[3]; });
+
+      check.addEventListener('click', function () {
+        var unanswered = st.filled.filter(function (f) { return f === null; }).length;
+        if (unanswered > 0) {
+          fb.className = 'fb info';
+          fb.textContent = 'Fill all ' + st.filled.length + ' blanks first. (' + (st.filled.length - unanswered) + ' done)';
+          return;
+        }
+        st.checked = true;
+        var right = 0;
+        blankEls.forEach(function (el, idx) {
+          var ok = st.filled[idx] === q.parts.filter(function (p) { return Array.isArray(p); })[idx][correctIdx[idx]];
+          st.done[idx] = ok;
+          if (ok) right++;
+          el.className = 'blank ' + (ok ? 'ok' : 'bad');
+        });
+        fb.className = 'fb ' + (right === st.filled.length ? 'ok' : 'bad');
+        fb.textContent = 'Score: ' + right + ' / ' + st.filled.length + (right === st.filled.length ? ' — correct!' : ' blanks correct.');
+        redraw();
+        updateOverall();
+      });
+
+      reset.addEventListener('click', function () {
+        state[entry.i] = { filled: new Array(st.filled.length).fill(null), done: new Array(st.filled.length).fill(false), checked: false };
+        fb.className = 'fb'; fb.textContent = '';
+        updateOverall();
+        render();
+      });
+
+      show.addEventListener('click', function () {
+        var parts = q.parts.filter(function (p) { return Array.isArray(p); });
+        blankEls.forEach(function (el, idx) {
+          el.textContent = parts[idx][correctIdx[idx]];
+          el.className = 'blank ok';
+        });
+        st.filled = parts.map(function (p, idx) { return p[correctIdx[idx]]; });
+        fb.className = 'fb info';
+        fb.textContent = 'The words in green complete a full ' + wordCount(q) + '-word answer — inside the 120–150 word limit.';
+        Array.prototype.forEach.call(bank.children, function (c) { c.disabled = true; c.classList.add('used'); });
+      });
+
+      redraw();
+      if (st.checked) {
+        blankEls.forEach(function (el, idx) {
+          el.className = 'blank ' + (st.filled[idx] === q.parts.filter(function (p) { return Array.isArray(p); })[idx][correctIdx[idx]] ? 'ok' : 'bad');
+        });
+      }
+      stage.appendChild(card);
+    });
+  }
+
+  // theme
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c8-q13-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c8-q13-theme', next); } catch (e) {}
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

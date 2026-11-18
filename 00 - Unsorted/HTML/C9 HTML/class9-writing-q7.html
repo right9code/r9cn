@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class IX Writing — Q7 Formal Email & Letter to the Editor</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+.hr { border-top: 1px solid var(--border); margin: 8px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class IX — Writing (Q7)</h1>
+      <p class="sub">Section B · Formal email OR Letter to the Editor (120–150 words)</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q7:</strong> Formal email OR Letter to the Editor (about 120–150 words). Learn the layout with the <strong>sequence card</strong>, then complete solved samples by <strong>tapping blanks</strong>.</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-email" type="button">Formal Email</button>
+      <button class="tab" id="tab-editor" type="button">Letter to the Editor</button>
+    </div>
+  </div>
+
+  <div id="panel-email" class="panel active"></div>
+  <div id="panel-editor" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c9-q7-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c9-q7-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabEmail = document.getElementById('tab-email'), tabEditor = document.getElementById('tab-editor');
+  var panelEmail = document.getElementById('panel-email'), panelEditor = document.getElementById('panel-editor');
+  tabEmail.addEventListener('click', function(){ tabEmail.classList.add('active'); tabEditor.classList.remove('active'); panelEmail.classList.add('active'); panelEditor.classList.remove('active'); });
+  tabEditor.addEventListener('click', function(){ tabEditor.classList.add('active'); tabEmail.classList.remove('active'); panelEditor.classList.add('active'); panelEmail.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      if(block.hr){ var h=document.createElement('div'); h.className='hr'; box.appendChild(h); return; }
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){
+        if(typeof part==='string') p.appendChild(document.createTextNode(part));
+        else if(part && part.html){ var span=document.createElement('span'); span.innerHTML=part.html; p.appendChild(span); }
+        else p.appendChild(makeBlank(part.k));
+      });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // FORMAL EMAIL TAB
+  makeSequenceCard(panelEmail, 'Arrange the parts of a formal email in the correct order', [
+    'Date',
+    'From (your email address)',
+    'To (the recipient\u2019s email address)',
+    'Cc (copy recipient)',
+    'Bcc (hidden copy recipient)',
+    'Subject (what the email is about, in a line)',
+    'Salutation: Dear Sir / Dear Madam',
+    'Body: purpose \u2014 details \u2014 request (120\u2013150 words)',
+    'Regards, then name and class/designation'
+  ]);
+
+  var emailQs = [
+    {
+      title: 'Tap-to-fill email (1) — Upgrading the sports equipment',
+      scenario: 'Write a formal email to the Principal of your school requesting an upgrade of the sports equipment, mentioning worn-out gear, safety concerns and the coming annual meet.',
+      template: [
+        {parts:[{html:'Date: 8 October 2026'}], tag:'p'},
+        {parts:[{html:'From: '}, {k:'from'}], tag:'p'},
+        {parts:[{html:'To: '}, {k:'to'}], tag:'p'},
+        {parts:[{html:'Cc: '}, {k:'cc'}], tag:'p'},
+        {parts:[{html:'Bcc: '}, {k:'bcc'}], tag:'p'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {hr:true},
+        {parts:[{html:'Dear Madam,'}], tag:'p'},
+        {parts:['On behalf of the students of Classes IX and X, I wish to draw your kind attention to the ', {k:'state'}, ' of our sports equipment. The footballs in the storeroom have lost their shape, the ', {k:'item'}, ' of the volleyball team is frayed, and several cricket bats have developed cracks. Students have begun to ', {k:'risk'}, ' during practice, and with the Annual Sports Day scheduled for next month, this is the right moment to act.']},
+        {parts:['I therefore request you to approve a budget for new equipment and, if possible, a small ', {k:'repair'}, ' workshop where minor faults can be fixed quickly. Better gear will raise the standard of play and reduce injuries. I am confident the school community will benefit from this timely ', {k:'endword'}, '.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:10px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { from:{answer:'riya.sharma.ixb@school.edu.in'}, to:{answer:'principal@school.edu.in'}, cc:{answer:'sports@school.edu.in'}, bcc:{answer:'records@school.edu.in'}, subject:{answer:'Request for upgrading sports equipment'}, state:{answer:'poor'}, item:{answer:'net'}, risk:{answer:'get hurt'}, repair:{answer:'weekend'}, endword:{answer:'upgrade'}, close:{answer:'Regards,'}, signer:{answer:'Riya Sharma, Class IX-B'} },
+      bank: ['riya.sharma.ixb@school.edu.in','principal@school.edu.in','sports@school.edu.in','records@school.edu.in','Request for upgrading sports equipment','poor','net','get hurt','weekend','upgrade','Riya Sharma, Class IX-B','Complaint about sports day','coach','fall sick','monthly','purchase','Regards,']
+    },
+    {
+      title: 'Tap-to-fill email (2) — Remedial classes before the exams',
+      scenario: 'Write a formal email to the Principal requesting extra remedial classes in Mathematics before the final examination, mentioning the difficulty of the syllabus and the willingness of students.',
+      template: [
+        {parts:[{html:'Date: 3 February 2027'}], tag:'p'},
+        {parts:[{html:'From: '}, {k:'from'}], tag:'p'},
+        {parts:[{html:'To: '}, {k:'to'}], tag:'p'},
+        {parts:[{html:'Cc: '}, {k:'cc'}], tag:'p'},
+        {parts:[{html:'Bcc: '}, {k:'bcc'}], tag:'p'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {hr:true},
+        {parts:[{html:'Respected Sir,'}], tag:'p'},
+        {parts:['The revised syllabus in Mathematics this year has been ', {k:'adj'}, ', and several students of Class IX are finding it difficult to complete the chapters on their own. With the final examination only two months away, they feel anxious about ', {k:'topic'}, '.']},
+        {parts:['Many of us have approached our subject teacher, who has kindly agreed to conduct ', {k:'how'}, ' after school hours if the school permits. We request you to allow two extra periods a week in March, and to arrange the ', {k:'room'}, ' for these sessions. We are also willing to bring our own reference books. We assure you of full attendance and discipline.'], tag:'p'},
+        {parts:['We shall remain grateful for this ', {k:'kind'}, '.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:10px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { from:{answer:'arjun.pillai.ixc@school.edu.in'}, to:{answer:'principal@school.edu.in'}, cc:{answer:'maths@school.edu.in'}, bcc:{answer:'records@school.edu.in'}, subject:{answer:'Request for remedial classes in Mathematics'}, adj:{answer:'demanding'}, topic:{answer:'algebra and geometry'}, how:{answer:'doubt-clearing classes'}, room:{answer:'mathematics lab'}, kind:{answer:'support'}, close:{answer:'Regards,'}, signer:{answer:'Arjun Pillai, Class IX-C'} },
+      bank: ['arjun.pillai.ixc@school.edu.in','principal@school.edu.in','maths@school.edu.in','records@school.edu.in','Request for remedial classes in Mathematics','demanding','algebra and geometry','doubt-clearing classes','mathematics lab','support','Arjun Pillai, Class IX-C','holiday','easy chapters','games period','library','guarantee','Regards,']
+    },
+    {
+      title: 'Tap-to-fill email (3) — Extending library hours before exams',
+      scenario: 'Write a formal email to the school librarian requesting that the library remain open for longer hours in the weeks before the annual examination.',
+      template: [
+        {parts:[{html:'Date: 20 January 2027'}], tag:'p'},
+        {parts:[{html:'From: '}, {k:'from'}], tag:'p'},
+        {parts:[{html:'To: '}, {k:'to'}], tag:'p'},
+        {parts:[{html:'Cc: '}, {k:'cc'}], tag:'p'},
+        {parts:[{html:'Bcc: '}, {k:'bcc'}], tag:'p'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {hr:true},
+        {parts:[{html:'Dear Sir,'}], tag:'p'},
+        {parts:['As the annual examination approaches, students of Classes IX and X are finding the present library timings — 8 a.m. to ', {k:'time'}, ' — too short for serious study. Reference books on ', {k:'subj'}, ' are in great demand, and many of us stay back after school only to find the library ', {k:'state'}, '.']},
+        {parts:['I request you to keep the library open till 5 p.m. for the next six weeks and to allow ', {k:'priv'}, ' of two extra books per student during this period. A longer reading window will help us revise from authentic sources instead of unreliable notes. We are willing to follow every library rule in return.'], tag:'p'},
+        {parts:['We shall cooperate with every rule that the library finds necessary to ', {k:'manage'}, '.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:10px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { from:{answer:'farah.qureshi.ixa@school.edu.in'}, to:{answer:'librarian@school.edu.in'}, cc:{answer:'studentcouncil@school.edu.in'}, bcc:{answer:'records@school.edu.in'}, subject:{answer:'Request to extend library hours before exams'}, time:{answer:'2 p.m.'}, subj:{answer:'science and history'}, state:{answer:'shut'}, priv:{answer:'issue'}, manage:{answer:'maintain order'}, close:{answer:'Regards,'}, signer:{answer:'Farah Qureshi, Class IX-A'} },
+      bank: ['farah.qureshi.ixa@school.edu.in','librarian@school.edu.in','studentcouncil@school.edu.in','records@school.edu.in','Request to extend library hours before exams','2 p.m.','science and history','shut','issue','maintain order','Farah Qureshi, Class IX-A','4 p.m.','cricket','open','lend','close early','Regards,']
+    },
+    {
+      title: 'Tap-to-fill email (4) — Permission for a class visit to the planetarium',
+      scenario: 'Write a formal email to the Principal seeking permission for a Class IX educational visit to the city planetarium, mentioning the learning value and the costs.',
+      template: [
+        {parts:[{html:'Date: 11 November 2026'}], tag:'p'},
+        {parts:[{html:'From: '}, {k:'from'}], tag:'p'},
+        {parts:[{html:'To: '}, {k:'to'}], tag:'p'},
+        {parts:[{html:'Cc: '}, {k:'cc'}], tag:'p'},
+        {parts:[{html:'Bcc: '}, {k:'bcc'}], tag:'p'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {hr:true},
+        {parts:[{html:'Dear Madam,'}], tag:'p'},
+        {parts:['Our science teacher, Ms Nair, has suggested an educational visit to the city planetarium, whose current show explains the ', {k:'topic'}, ' — exactly what our syllabus covers this term. A two-hour visit on a ', {k:'day'}, ' would fit our timetable without disturbing the tests.']},
+        {parts:['The planetarium charges ', {k:'cost'}, ' per head, and the bus hire will add about fifty rupees more. Class IX has ', {k:'strength'}, ' students, so we propose that the school bear the bus fare while parents pay the entry fee. Ms Nair has agreed to prepare a worksheet so that we can note down what we learn during the show. We request your kind approval and the ', {k:'staff'}, ' of two teachers for supervision.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:10px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { from:{answer:'kabir.sethi.ixb@school.edu.in'}, to:{answer:'principal@school.edu.in'}, cc:{answer:'science@school.edu.in'}, bcc:{answer:'records@school.edu.in'}, subject:{answer:'Permission for a Class IX visit to the planetarium'}, topic:{answer:'solar system'}, day:{answer:'Saturday'}, cost:{answer:'thirty rupees'}, strength:{answer:'forty-two'}, staff:{answer:'company'}, close:{answer:'Regards,'}, signer:{answer:'Kabir Sethi, Class IX-B'} },
+      bank: ['kabir.sethi.ixb@school.edu.in','principal@school.edu.in','science@school.edu.in','records@school.edu.in','Permission for a Class IX visit to the planetarium','solar system','Saturday','thirty rupees','forty-two','company','Kabir Sethi, Class IX-B','Sunday','hundred rupees','twenty','absence','Regards,']
+    }
+  ];
+  emailQs.forEach(function(q,i){ makeTapFill(panelEmail, (i+2)+'.', q); });
+
+  // LETTER TO THE EDITOR TAB
+  makeSequenceCard(panelEditor, 'Arrange the parts of a letter to the editor in the correct order', [
+    'Sender\u2019s address',
+    'Date',
+    'The Editor\u2019s address (newspaper name and city)',
+    'Subject line: concerning the issue',
+    'Salutation: Sir / Madam',
+    'Body: introduce the issue \u2014 give facts \u2014 express concern \u2014 suggest steps (120\u2013150 words)',
+    'Regards, then name and class/designation',
+    'Name (with address line)'
+  ]);
+
+  var editorQs = [
+    {
+      title: 'Tap-to-fill letter (1) — Waterlogging after every shower',
+      scenario: 'Write a letter to the Editor of a national daily about the waterlogging that paralyses your locality every monsoon, and suggest lasting measures.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p'},
+        {parts:[{html:'7 June 2027'}], tag:'p', style:'margin:8px 0 12px;'},
+        {parts:[{html:'The Editor,'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'The National Herald'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'New Delhi'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'&nbsp;'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {parts:[{html:'Sir,'}], tag:'p'},
+        {parts:['Through the columns of your respected daily, I wish to highlight the ', {k:'state'}, ' of drains in Model Town Extension. Every monsoon, a single shower leaves the main road under a foot of ', {k:'water'}, ', and school buses refuse to enter our lanes for hours.'], tag:'p'},
+        {parts:['Commuters wade through filthy slush, small shops lose their day\u2019s earnings, and ', {k:'risk'}, ' breeds freely in the stagnant pools. The pump installed last year lies idle for want of repair.']},
+        {parts:['I request the municipal corporation to desilt all drains before June, to raise the manhole covers on our stretch, and to publish a ', {k:'plan'}, ' monsoon preparedness roster so that residents know whom to call. Timely action will spare the locality another ', {k:'end'}, ' of flooded streets.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'14, Model Town Extension, Delhi'}, subject:{answer:'Waterlogging in Model Town Extension'}, state:{answer:'neglected'}, water:{answer:'standing water'}, risk:{answer:'mosquito breeding'}, plan:{answer:'ward-wise'}, end:{answer:'season'}, close:{answer:'Yours truly,'}, signer:{answer:'Nikhil Bansal'} },
+      bank: ['14, Model Town Extension, Delhi','Waterlogging in Model Town Extension','neglected','standing water','mosquito breeding','ward-wise','season','Yours truly,','Nikhil Bansal','22, Mall Road, Shimla','Potholes on the highway','paved','rainwater harvesting','holiday','year','Yours faithfully']
+    },
+    {
+      title: 'Tap-to-fill letter (2) — Stray dogs and evening walkers',
+      scenario: 'Write a letter to the Editor drawing attention to the growing stray-dog menace in your colony and suggesting humane steps.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p'},
+        {parts:[{html:'12 September 2026'}], tag:'p', style:'margin:8px 0 12px;'},
+        {parts:[{html:'The Editor,'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'The Tribune'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'Chandigarh'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'&nbsp;'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {parts:[{html:'Sir,'}], tag:'p'},
+        {parts:['Residents of Sunlight Colony, especially senior citizens and schoolchildren, are increasingly troubled by the stray-dog ', {k:'state'}, ' in our area. Evening walks have become risky, and two delivery workers were ', {k:'hurt'}, ' near the market last week.'], tag:'p'},
+        {parts:['I understand that street dogs cannot simply be driven away; the answer lies in humane ', {k:'step'}, '. The municipal team should complete the pending sterilisation drive, set up feeding points away from the market, and treat the animals against ', {k:'disease'}, '. Resident volunteers, including many students, are ready to assist the veterinary staff.']},
+        {parts:['Kindly use your influential columns to press the corporation for a fixed ', {k:'when'}, ' so that our mornings and evenings become safe again.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'27, Sunlight Colony, Nagpur'}, subject:{answer:'Stray-dog menace in Sunlight Colony'}, state:{answer:'menace'}, hurt:{answer:'bitten'}, step:{answer:'measures'}, disease:{answer:'rabies'}, when:{answer:'timetable'}, close:{answer:'Yours faithfully,'}, signer:{answer:'Sunita Deshmukh'} },
+      bank: ['27, Sunlight Colony, Nagpur','Stray-dog menace in Sunlight Colony','menace','bitten','measures','rabies','timetable','Sunita Deshmukh','5, Gandhi Nagar, Jaipur','Monkey scare on rooftops','quiet','chased','punishment','vaccines','tomorrow','Yours faithfully,']
+    },
+    {
+      title: 'Tap-to-fill letter (3) — Loudspeakers till midnight',
+      scenario: 'Write a letter to the Editor about the use of loudspeakers at late-night events in your area and its effect on students and the elderly.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p'},
+        {parts:[{html:'4 March 2027'}], tag:'p', style:'margin:8px 0 12px;'},
+        {parts:[{html:'The Editor,'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'The Statesman'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'Kolkata'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'&nbsp;'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {parts:[{html:'Sir,'}], tag:'p'},
+        {parts:['For the past three weeks, loudspeakers at open-air ', {k:'event'}, ' in Lake Gardens have been played well past midnight. Students preparing for their board examinations cannot ', {k:'study'}, ', and many elderly residents have complained of sleeplessness and ', {k:'health'}, '.'], tag:'p'},
+        {parts:['The Noise Pollution Rules fix 10 p.m. as the limit, yet no one seems to ', {k:'enforce'}, ' it. I am not against celebration; I only ask that the volume be lowered after ten and that ', {k:'perm'}, ' be issued only for declared hours. Silence after ten is all that we ask for.']},
+        {parts:['Through your esteemed daily, I appeal to the police and the civic body to act before the examination ', {k:'end'}, '.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'9/2, Lake Gardens, Kolkata'}, subject:{answer:'Late-night loudspeakers in Lake Gardens'}, event:{answer:'concerts'}, study:{answer:'concentrate'}, health:{answer:'headaches'}, enforce:{answer:'implement'}, perm:{answer:'permission'}, end:{answer:'season begins'}, close:{answer:'Yours truly,'}, signer:{answer:'Rahul Bose'} },
+      bank: ['9/2, Lake Gardens, Kolkata','Late-night loudspeakers in Lake Gardens','concerts','concentrate','headaches','implement','permission','season begins','Rahul Bose','3, Park Street, Kolkata','Wedding processions at noon','sing','relax','fever','explain','festival ends','Yours truly,']
+    },
+    {
+      title: 'Tap-to-fill letter (4) — The last playground is shrinking',
+      scenario: 'Write a letter to the Editor about the loss of the neighbourhood\u2019s only open playground to construction and suggest alternatives.',
+      template: [
+        {parts:[{k:'addr'}], tag:'p'},
+        {parts:[{html:'18 July 2026'}], tag:'p', style:'margin:8px 0 12px;'},
+        {parts:[{html:'The Editor,'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'The Hindu'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'Chennai'}], tag:'p', style:'margin:0;'},
+        {parts:[{html:'&nbsp;'}], tag:'p', style:'margin:0 0 10px;'},
+        {parts:[{html:'Subject: '}, {k:'subject'}], tag:'p'},
+        {parts:[{html:'Sir,'}], tag:'p'},
+        {parts:['A compound wall has quietly come up around the only open ', {k:'place'}, ' of Anna Nagar West, and children who played there every evening now sit indoors with ', {k:'thing'}, '. The ground served three schools and nearly ', {k:'howmany'}, ' families of the locality.'], tag:'p'},
+        {parts:['I do not dispute the need for development, but every plan should reserve ', {k:'share'}, ' of built-up space for recreation, as our town-planning rules once required. The corporation could open school grounds after hours or create a small park on the vacant ', {k:'land'}, ' near the railway station.']},
+        {parts:['We children are watching helplessly. Kindly raise this matter in your columns before the last open space of our ward ', {k:'end'}, ' forever.'], tag:'p'},
+        {parts:[{html:'Thanking you,'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'close'}], tag:'p', style:'margin-top:12px;'},
+        {parts:[{k:'signer'}], tag:'p'}
+      ],
+      blanks: { addr:{answer:'31, II Avenue, Anna Nagar West, Chennai'}, subject:{answer:'Loss of the playground in Anna Nagar West'}, place:{answer:'ground'}, thing:{answer:'phones'}, howmany:{answer:'five hundred'}, share:{answer:'a tenth'}, land:{answer:'plot'}, end:{answer:'disappears'}, close:{answer:'Yours faithfully,'}, signer:{answer:'Lakshmi Iyer'} },
+      bank: ['31, II Avenue, Anna Nagar West, Chennai','Loss of the playground in Anna Nagar West','ground','phones','five hundred','a tenth','plot','disappears','Lakshmi Iyer','12, Mount Road, Chennai','Shrinking bus services','park','books','two thousand','half','field','closes','Yours faithfully,']
+    }
+  ];
+  editorQs.forEach(function(q,i){ makeTapFill(panelEditor, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>
