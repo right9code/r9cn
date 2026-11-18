@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Writing — Q7 Essay &amp; Article</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.write-box .ttl { text-align: center; font-weight: 800; font-size: 1.02rem; }
+.write-box .byline { text-align: center; font-style: italic; color: var(--muted); font-size: .9rem; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VIII — Writing (Q7)</h1>
+      <p class="sub">Section B · Essay / Article · Format + tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q7:</strong> Article OR creative essay in about 120–150 words. Practise the structure with <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone). Article = title + byline + hook + causes/effects + solutions; essay = title + introduction + three body paragraphs + conclusion.</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-essay" type="button">Essay</button>
+      <button class="tab" id="tab-article" type="button">Article</button>
+    </div>
+  </div>
+
+  <div id="panel-essay" class="panel active"></div>
+  <div id="panel-article" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c8-q7-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c8-q7-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabEssay = document.getElementById('tab-essay'), tabArticle = document.getElementById('tab-article');
+  var panelEssay = document.getElementById('panel-essay'), panelArticle = document.getElementById('panel-article');
+  tabEssay.addEventListener('click', function(){ tabEssay.classList.add('active'); tabArticle.classList.remove('active'); panelEssay.classList.add('active'); panelArticle.classList.remove('active'); });
+  tabArticle.addEventListener('click', function(){ tabArticle.classList.add('active'); tabEssay.classList.remove('active'); panelArticle.classList.add('active'); panelEssay.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Topic:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      var p=document.createElement(block.tag||'p'); if(block.cls) p.className=block.cls;
+      block.parts.forEach(function(part){ if(typeof part==='string') p.appendChild(document.createTextNode(part)); else if(part && part.html){ var sp=document.createElement('span'); sp.innerHTML=part.html; p.appendChild(sp); } else p.appendChild(makeBlank(part.k)); });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // ESSAY TAB
+  makeSequenceCard(panelEssay, 'Arrange the parts of an essay in the correct order', [
+    'Title',
+    'Introduction: hook and main idea (thesis)',
+    'Body paragraph 1: first point with example',
+    'Body paragraph 2: second point with example',
+    'Body paragraph 3: third point / personal view',
+    'Conclusion: round off and leave a strong final thought'
+  ]);
+
+  var essayQs = [
+    {
+      title: 'Tap-to-fill essay (1)',
+      scenario: 'The Rainy Day I Will Never Forget (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['Some days slip away unnoticed, but ', {k:'date'}, ' is still fresh in my memory. The sky had been grey since morning, and by noon the rain was drumming on our classroom roof.']},
+        {parts:['We were halfway home when the road turned into a shallow stream. My friend Aarav and I sheltered under a shop ', {k:'shelter'}, ' An old woman selling flowers sat on the wet pavement, trying to protect her basket with a torn sheet.']},
+        {parts:['We held our umbrellas over her basket and helped her carry it to the bus stop. She smiled, pressed a ', {k:'flower'}, ' into my hand and said something I did not quite catch, but her eyes said everything.']},
+        {parts:['That evening the rain stopped and the streets shone under the lamps. The lesson of the day stayed with me: one thoughtful ', {k:'value'}, ' can brighten the greyest afternoon.']}
+      ],
+      blanks: { title:{answer:'The Rainy Day I Will Never Forget'}, date:{answer:'14 July 2026'}, shelter:{answer:'awning'}, flower:{answer:'marigold'}, value:{answer:'kindness'} },
+      bank: ['The Rainy Day I Will Never Forget','14 July 2026','awning','marigold','kindness','12 August 2025','gate','rose','anger','A Day at the Beach','bus stop','jasmine','haste']
+    },
+    {
+      title: 'Tap-to-fill essay (2)',
+      scenario: 'Why Every Student Should Learn to Cook (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['Most students can solve an equation but cannot boil a pot of rice. Learning to cook is a ', {k:'intro'}, ' that every school should encourage.']},
+        {parts:['Cooking teaches patience and planning. A simple meal needs vegetables to be washed, chopped and timed; if you rush, the ', {k:'b1'}, ' burns and the whole kitchen smells of smoke. Students who cook also begin to understand what goes into a balanced ', {k:'b1b'}, '.']},
+        {parts:['It saves money and protects health. A home-cooked meal costs less than a packet of chips and contains far less oil and salt. Cooking also reduces our dependence on ', {k:'b2'}, ' apps, which quietly empty our pockets every month.']},
+        {parts:['Above all, cooking is an act of care. Serving a hot meal to a tired parent or a sick sibling teaches ', {k:'b3'}, ' in a way that no lecture can.']},
+        {parts:['A generation that can feed itself is a generation that can look after ', {k:'close'}, '.']}
+      ],
+      blanks: { title:{answer:'Why Every Student Should Learn to Cook'}, intro:{answer:'life skill'}, b1:{answer:'dal'}, b1b:{answer:'diet'}, b2:{answer:'delivery'}, b3:{answer:'empathy'}, close:{answer:'others'} },
+      bank: ['Why Every Student Should Learn to Cook','life skill','dal','diet','delivery','empathy','others','hobby','cake','budget','shopping','anger','themselves','My Favourite Book']
+    },
+    {
+      title: 'Tap-to-fill essay (3)',
+      scenario: 'My Grandmother’s Kitchen (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['My grandmother’s kitchen is small, hot and always noisy — and it is my favourite ', {k:'intro'}, ' in the world.']},
+        {parts:['There is a blue gas stove, a shelf of steel ', {k:'b1'}, ' and a window that looks into a neem tree. She keeps her spices in little glass jars and never measures anything; a pinch of this and a handful of that is her ', {k:'b1b'}, '.']},
+        {parts:['When I was younger, I would sit on the floor and roll dough beside her, making shapes that were never quite round. She never laughed at them. Instead she fried each one and called it ', {k:'b2'}, '.']},
+        {parts:['The food tastes of more than masala. It tastes of the afternoons we spent talking, of her stories about the village, and of the way she hums while she works.']},
+        {parts:['Some rooms are built of bricks. Hers is built of ', {k:'close'}, '.']}
+      ],
+      blanks: { title:{answer:'My Grandmother’s Kitchen'}, intro:{answer:'room'}, b1:{answer:'dabbas'}, b1b:{answer:'recipe'}, b2:{answer:'perfect'}, close:{answer:'memory'} },
+      bank: ['My Grandmother’s Kitchen','room','dabbas','recipe','perfect','memory','garden','plates','secret','ugly','dust','The Old Bicycle']
+    },
+    {
+      title: 'Tap-to-fill essay (4)',
+      scenario: 'What Sportsmanship Taught Me (essay, ~120–150 words)',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {parts:['I learnt more about winning from a match I lost than from any match I won.']},
+        {parts:['It was the final of our inter-house ', {k:'b1'}, ' tournament last December, with the whole school watching. In the last two minutes I missed an easy shot, and the trophy went to the other house.']},
+        {parts:['For a moment I wanted to walk away. Then the captain of the opposite team came over, shook my hand and said, “Good ', {k:'b2'}, '.” His team clapped for us as we left the court.']},
+        {parts:['That evening our coach told us that ', {k:'b3'}, ' is not about never losing. It is about how you behave when you do. People forget the score by the next term, but they remember how you treated them.']},
+        {parts:['This year I play harder than ever, but I also cheer for the other side. Sportsmanship, I have learnt, is simply ', {k:'close'}, ' in a sports kit.']}
+      ],
+      blanks: { title:{answer:'What Sportsmanship Taught Me'}, b1:{answer:'cricket'}, b2:{answer:'game'}, b3:{answer:'sport'}, close:{answer:'respect'} },
+      bank: ['What Sportsmanship Taught Me','cricket','game','sport','respect','football','match','study','fear','My Best Friend']
+    }
+  ];
+  essayQs.forEach(function(q,i){ makeTapFill(panelEssay, (i+2)+'.', q); });
+
+  // ARTICLE TAB
+  makeSequenceCard(panelArticle, 'Arrange the parts of an article in the correct order', [
+    'Title (catchy and centred)',
+    'Byline (By Name, Class)',
+    'Introduction: a striking hook, then the topic',
+    'Body: causes and effects / analysis',
+    'Conclusion: practical solutions and a call to action'
+  ]);
+
+  var articleQs = [
+    {
+      title: 'Tap-to-fill article (1)',
+      scenario: 'Article for the school magazine on “Say No to Single-Use Plastic”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['A plastic carry bag is used for about twelve minutes and then thrown away, yet it can stay in the soil for ', {k:'hook'}, ' years. That single fact should make us think before we accept one at the shop.']},
+        {parts:['The causes are ordinary. Shopkeepers hand out free bags, and food stalls pack snacks in ', {k:'cause'}, ' containers. Convenience, not need, drives most of this waste.']},
+        {parts:['The effects reach far beyond our streets. Plastic blocks drains and causes flooding in the monsoon, animals swallow it and fall ill, and tiny pieces enter the ', {k:'effect'}, ' we eat and the water we drink.']},
+        {parts:['The solutions begin with small habits. Carry a cloth bag, refuse straws, use a steel bottle and separate waste at home. Our school can run a ', {k:'sol1'}, ' drive every term.']},
+        {parts:['The planet does not need a few people doing zero-waste perfectly. It needs millions of us doing one simple thing ', {k:'close'}, '.']}
+      ],
+      blanks: { title:{answer:'Say No to Single-Use Plastic'}, byline:{answer:'By Ira, Class VIII-A'}, hook:{answer:'five hundred'}, cause:{answer:'foam'}, effect:{answer:'fish'}, sol1:{answer:'collection'}, close:{answer:'regularly'} },
+      bank: ['Say No to Single-Use Plastic','By Ira, Class VIII-A','five hundred','foam','fish','collection','regularly','five','paper','rice','plantation','rarely','The Silent Canteen']
+    },
+    {
+      title: 'Tap-to-fill article (2)',
+      scenario: 'Article on “Why Sleep Matters More Than Cramming”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['Every exam season, students proudly announce how little they slept. Yet the brain does its most important work for memory while we are ', {k:'hook'}, '.']},
+        {parts:['Late-night revision feels productive because the pages keep turning. In reality, a tired brain reads the same paragraph four times and remembers none of it. Screens, late-night television and last-minute ', {k:'cause'}, ' keep us awake even after we close the books.']},
+        {parts:['The effects show up quickly. Sleepy students lose ', {k:'effect'}, ' in class, fall sick more often and feel anxious before tests they have actually prepared for.']},
+        {parts:['The remedy is unglamorous. Fix a bedtime, keep screens out of the bedroom for the last hour, revise in the ', {k:'sol1'}, ' instead of at midnight, and take a short walk after dinner. Seven to nine hours is not laziness; it is ', {k:'sol2'}, '.']},
+        {parts:['Study smart, sleep well, and let your brain finish the work you started during the ', {k:'close'}, '.']}
+      ],
+      blanks: { title:{answer:'Why Sleep Matters More Than Cramming'}, byline:{answer:'By Rehan, Class VIII-B'}, hook:{answer:'asleep'}, cause:{answer:'panic'}, effect:{answer:'concentration'}, sol1:{answer:'morning'}, sol2:{answer:'preparation'}, close:{answer:'day'} },
+      bank: ['Why Sleep Matters More Than Cramming','By Rehan, Class VIII-B','asleep','panic','concentration','morning','preparation','day','awake','revision','memory','evening','punishment','night']
+    },
+    {
+      title: 'Tap-to-fill article (3)',
+      scenario: 'Article on “The Hidden Cost of Fast Food”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['A burger, a cola and a paper cone of fries cost less than a home-cooked lunch. The real bill arrives later, and it is paid by our ', {k:'hook'}, '.']},
+        {parts:['Fast food is designed to be irresistible: fried, salted and sweetened in exact amounts that keep us coming back. Bright boards near schools and ', {k:'cause'}, ' prices make it the easiest choice.']},
+        {parts:['The effects are visible in our classrooms. Heavy meals make children sleepy after lunch, and a diet of chips and cold drinks slowly replaces the ', {k:'effect'}, ' that growing bodies need.']},
+        {parts:['None of this means we can never eat out, but such food should be an occasional ', {k:'sol1'}, ', not a daily habit. A tiffin from home and a bottle of water solve most of the problem. Reading the ', {k:'sol2'}, ' on a packet is worth learning.']},
+        {parts:['Our health is not a bargain. It is the one thing we cannot buy back with ', {k:'close'}, '.']}
+      ],
+      blanks: { title:{answer:'The Hidden Cost of Fast Food'}, byline:{answer:'By Zoya, Class VIII-C'}, hook:{answer:'bodies'}, cause:{answer:'low'}, effect:{answer:'vitamins'}, sol1:{answer:'treat'}, sol2:{answer:'labels'}, close:{answer:'money'} },
+      bank: ['The Hidden Cost of Fast Food','By Zoya, Class VIII-C','bodies','low','vitamins','treat','labels','money','pockets','high','sugar','habit','menus','time']
+    },
+    {
+      title: 'Tap-to-fill article (4)',
+      scenario: 'Article on “Why Every Student Should Learn First Aid”',
+      template: [
+        {cls:'ttl', parts:[{k:'title'}]},
+        {cls:'byline', parts:[{k:'byline'}]},
+        {parts:['Last winter a boy in our assembly fainted, and for two long minutes nobody knew what to do. That is when I realised that first aid is not a ', {k:'hook'}, ' — it is a basic life skill.']},
+        {parts:['The reason most of us cannot help is simple: nobody has taught us. We are taught trigonometry but not how to stop a ', {k:'cause'}, '. Fear of doing the wrong thing keeps bystanders frozen.']},
+        {parts:['The effects of that silence can be serious. A small cut becomes an infection, and in the worst cases minutes are lost while an ', {k:'effect'}, ' is called.']},
+        {parts:['The answer fits neatly into a school timetable. One workshop a year can teach us to clean a wound, treat a burn and call for help clearly. Every classroom should also keep a small ', {k:'sol1'}, '.']},
+        {parts:['Knowledge that saves a life is never wasted. Let us ask for that ', {k:'close'}, ' before we need it.']}
+      ],
+      blanks: { title:{answer:'Why Every Student Should Learn First Aid'}, byline:{answer:'By Vihaan, Class VIII-A'}, hook:{answer:'subject'}, cause:{answer:'nosebleed'}, effect:{answer:'ambulance'}, sol1:{answer:'kit'}, close:{answer:'lesson'} },
+      bank: ['Why Every Student Should Learn First Aid','By Vihaan, Class VIII-A','subject','nosebleed','ambulance','kit','lesson','hobby','fever','doctor','box','holiday']
+    }
+  ];
+  articleQs.forEach(function(q,i){ makeTapFill(panelArticle, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

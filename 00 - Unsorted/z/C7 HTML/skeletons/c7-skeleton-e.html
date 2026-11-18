@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 English — Flash Cards (Skeleton E)</title>
+<style>
+  :root {
+    --bg: #FAFAF7; --card: #FFFFFF; --border: #E4E4DE; --inner: #F1F1EC;
+    --text: #22252B; --muted: #8A8D95;
+    --ink: #22252B;
+    --good: #2E8B6E; --good-soft: #E2F2EC;
+    --again: #C2554F; --again-soft: #F7E5E3;
+    --font: "Georgia", "Times New Roman", serif;
+    --font-ui: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  }
+  [data-dark] { --bg: #14161A; --card: #1D2026; --border: #2C3038; --inner: #262A31;
+    --text: #ECEDEF; --muted: #9298A3; --good: #5CBF9C; --good-soft: rgba(92,191,156,0.14);
+    --again: #E0837D; --again-soft: rgba(224,131,125,0.14); }
+  @media (prefers-color-scheme: dark) { :root:not([data-light]) { --bg: #14161A; --card: #1D2026;
+    --border: #2C3038; --inner: #262A31; --text: #ECEDEF; --muted: #9298A3;
+    --good: #5CBF9C; --good-soft: rgba(92,191,156,0.14); --again: #E0837D; --again-soft: rgba(224,131,125,0.14); } }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font-ui); line-height: 1.55; }
+  .wrap { max-width: 480px; margin: 0 auto; padding: 1.1rem 1rem 2rem; min-height: 100vh; display: flex; flex-direction: column; }
+
+  .pane { display: none; flex: 1; }
+  .pane.active { display: flex; flex-direction: column; animation: fade .25s; }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+  /* ---------- DECK PICKER ---------- */
+  .h1 { font-family: var(--font); font-size: 1.5rem; font-weight: 700; margin: 1rem 0 0.3rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.4rem; }
+  .deck {
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 1rem 1.1rem; margin-bottom: 0.7rem; cursor: pointer;
+  }
+  .deck:active { background: var(--inner); }
+  .d-name { font-family: var(--font); font-size: 1.05rem; font-weight: 700; }
+  .d-sub { font-size: 0.78rem; color: var(--muted); }
+  .d-count { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
+  .d-count b { color: var(--text); }
+
+  /* ---------- STUDY ---------- */
+  .s-top { display: flex; justify-content: space-between; align-items: center; padding: 0.3rem 0 0.8rem; }
+  .quit { background: none; border: none; color: var(--muted); font-size: 0.85rem; cursor: pointer; font-family: var(--font-ui); }
+  .queue { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+  .queue b { color: var(--text); }
+  .again-tag { color: var(--again); font-weight: 700; }
+
+  .card {
+    flex: 1; background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 1.4rem 1.3rem; margin-bottom: 1rem; display: flex; flex-direction: column;
+    transition: transform .25s ease, opacity .25s ease; max-height: 78vh; overflow-y: auto;
+  }
+  .card.swipe-l { transform: translateX(-120%) rotate(-6deg); opacity: 0; }
+  .card.swipe-r { transform: translateX(120%) rotate(6deg); opacity: 0; }
+  .d-deck { font-size: 0.68rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 0.9rem; }
+  .passage { background: var(--inner); border-radius: 12px; padding: 0.9rem 1rem; font-size: 0.9rem;
+    color: var(--muted); margin-bottom: 1rem; line-height: 1.8; font-family: var(--font); }
+  .q { font-family: var(--font); font-size: 1.18rem; font-weight: 700; line-height: 1.5; margin-bottom: 1.2rem; }
+  .opt { border: 1px solid var(--border); border-radius: 13px; padding: 0.7rem 0.9rem;
+    margin-bottom: 0.55rem; font-size: 0.92rem; cursor: pointer; background: var(--bg); }
+  .opt-key { color: var(--muted); font-weight: 700; margin-right: 0.5rem; font-family: var(--font-ui); font-size: 0.8rem; }
+  .opt.right { border-color: var(--good); background: var(--good-soft); }
+  .opt.miss { border-color: var(--again); background: var(--again-soft); }
+  .opt.off { opacity: .5; pointer-events: none; }
+  .answer-box { display: none; border-top: 1px solid var(--border); margin-top: auto; padding-top: 1rem; }
+  .answer-box.show { display: block; animation: fade .3s; }
+  .a-tag { font-size: 0.68rem; font-weight: 700; color: var(--good); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 0.3rem; font-family: var(--font-ui); }
+  .a-text { font-family: var(--font); font-size: 0.95rem; line-height: 1.75; }
+  .why { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; font-family: var(--font-ui); }
+
+  .verdict-line { text-align: center; font-size: 0.85rem; margin-bottom: 0.5rem; min-height: 1.3em; }
+  .verdict-line.good { color: var(--good); font-weight: 700; }
+  .verdict-line.bad { color: var(--again); font-weight: 700; }
+
+  .judge { display: flex; gap: 0.7rem; padding-bottom: 1rem; }
+  .judge button {
+    flex: 1; padding: 1rem; border-radius: 16px; border: none; cursor: pointer;
+    font-family: var(--font-ui); font-weight: 800; font-size: 0.95rem; transition: transform .12s;
+  }
+  .judge button:active { transform: scale(.96); }
+  .btn-again { background: var(--again-soft); color: var(--again); }
+  .btn-good { background: var(--good-soft); color: var(--good); }
+  .judge .hint { display: block; font-size: 0.68rem; font-weight: 600; opacity: .75; margin-top: 0.2rem; }
+
+  /* ---------- DONE ---------- */
+  .done-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 2rem 1.5rem; text-align: center; margin-top: 4rem; }
+  .done-card .big { font-family: var(--font); font-size: 2.6rem; }
+  .done-card h2 { font-family: var(--font); font-size: 1.3rem; margin: 0.5rem 0 0.3rem; }
+  .done-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.4rem; }
+  .ghost-btn { background: none; border: 1.5px solid var(--border); color: var(--text);
+    border-radius: 14px; padding: 0.8rem 1.6rem; font-weight: 700; font-size: 0.9rem; cursor: pointer; font-family: var(--font-ui); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- DECK PICKER -->
+  <div class="pane active" id="v-home">
+    <div>
+      <div class="h1">Flash Cards</div>
+      <div class="sub">Not scored. You decide what you know. Cards you mark "Again" come back until the deck is clear.</div>
+      <div class="deck" onclick="start('reading')"><div><div class="d-name">Reading · Q1–Q2</div><div class="d-sub">passages &amp; questions</div></div><div class="d-count"><b>10</b> cards</div></div>
+      <div class="deck" onclick="start('writing')"><div><div class="d-name">Writing · Q4–Q7</div><div class="d-sub">notice, diary, email, essay</div></div><div class="d-count"><b>8</b> cards</div></div>
+      <div class="deck" onclick="start('grammar')"><div><div class="d-name">Grammar · Q3</div><div class="d-sub">blanks &amp; MCQs</div></div><div class="d-count"><b>12</b> cards</div></div>
+      <div class="deck" onclick="start('literature')"><div><div class="d-name">Literature · Q8–Q12</div><div class="d-sub">extracts &amp; answers</div></div><div class="d-count"><b>15</b> cards</div></div>
+      <div class="deck" onclick="start('mix')"><div><div class="d-name">🔀 Mixed review</div><div class="d-sub">random questions from everything</div></div><div class="d-count"><b>15</b> cards</div></div>
+    </div>
+  </div>
+
+  <!-- STUDY -->
+  <div class="pane" id="v-study">
+    <div class="s-top">
+      <button class="quit" onclick="quit()">✕ End session</button>
+      <div class="queue"><b id="q-left">12</b> left · <span class="again-tag" id="q-again">0 again</span></div>
+    </div>
+
+    <div class="card" id="card">
+      <div class="d-deck" id="c-deck">Grammar</div>
+      <div class="passage" id="c-pass">[Extract placeholder — shown when the card has one.]</div>
+      <div class="q" id="c-q">[Question placeholder — read it, tap your answer, then judge yourself honestly.]</div>
+      <div id="c-opts">
+        <div class="opt" onclick="choose(this,0)"><span class="opt-key">A.</span>[Option A]</div>
+        <div class="opt" onclick="choose(this,1)"><span class="opt-key">B.</span>[Option B]</div>
+        <div class="opt" onclick="choose(this,2)"><span class="opt-key">C.</span>[Option C]</div>
+        <div class="opt" onclick="choose(this,3)"><span class="opt-key">D.</span>[Option D]</div>
+      </div>
+      <div class="answer-box" id="answer-box">
+        <div class="a-tag">Answer</div>
+        <div class="a-text">[Full answer placeholder — the complete correct response, written out.]</div>
+        <div class="why">[Why / explanation placeholder — one line on the reasoning or rule.]</div>
+      </div>
+    </div>
+
+    <div class="verdict-line" id="verdict"></div>
+    <div class="judge">
+      <button class="btn-again" id="btn-again" onclick="judge(false)" disabled>↺ Again<span class="hint">show me this again</span></button>
+      <button class="btn-good" id="btn-good" onclick="judge(true)" disabled>✓ Got it<span class="hint">I know this</span></button>
+    </div>
+  </div>
+
+  <!-- DONE -->
+  <div class="pane" id="v-done">
+    <div class="done-card">
+      <div class="big">🎉</div>
+      <h2>Deck cleared!</h2>
+      <p id="done-sub">You marked every card as "Got it". [placeholder]</p>
+      <button class="ghost-btn" onclick="quit()">Pick another deck</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  /* workflow: ANKI-style. No scoring. Answer the card, the correct
+     answer is revealed, then the STUDENT judges: "Again" (re-queues
+     the card at the end of the session) or "Got it" (removes it).
+     Session ends when the queue is empty. */
+  const DECKS = { reading: 'Reading · Q1–Q2', writing: 'Writing · Q4–Q7', grammar: 'Grammar · Q3',
+                  literature: 'Literature · Q8–Q12', mix: 'Mixed review' };
+  let queue = [], answered = false, deckName = '';
+
+  function start(deck) {
+    deckName = DECKS[deck];
+    const n = deck === 'mix' ? 15 : (deck === 'literature' ? 15 : deck === 'grammar' ? 12 : deck === 'writing' ? 8 : 10);
+    queue = Array.from({ length: n }, (_, i) => i + 1);
+    show('v-study'); nextCard();
+  }
+  function show(id) {
+    document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active'); scrollTo(0, 0);
+  }
+  function quit() { show('v-home'); }
+  function nextCard() {
+    if (!queue.length) {
+      document.getElementById('done-sub').textContent =
+        'Deck "' + deckName + '" cleared. Cards you were unsure about can be repeated any time. [placeholder]';
+      show('v-done'); return;
+    }
+    answered = false;
+    const c = document.getElementById('card');
+    c.classList.remove('swipe-l','swipe-r');
+    document.getElementById('c-deck').textContent = deckName;
+    document.getElementById('c-pass').style.display = 'block'; /* placeholder: every card shows extract for demo */
+    document.getElementById('q-left').textContent = queue.length;
+    document.getElementById('q-again').textContent = (queue.length - 1 <= 0 ? 0 : 0) + ' again'; /* placeholder counter */
+    document.querySelectorAll('.opt').forEach(o => o.className = 'opt');
+    document.getElementById('answer-box').classList.remove('show');
+    document.getElementById('verdict').textContent = ''; document.getElementById('verdict').className = 'verdict-line';
+    document.getElementById('btn-again').disabled = true;
+    document.getElementById('btn-good').disabled = true;
+    c.scrollIntoView({ block: 'nearest' });
+  }
+  const CORRECT = 1;
+  function choose(el, i) {
+    if (answered) return; answered = true;
+    document.querySelectorAll('.opt').forEach((o, j) => {
+      o.classList.add('off');
+      if (j === CORRECT) o.classList.add('right');
+      else if (o === el) o.classList.add('miss');
+    });
+    const v = document.getElementById('verdict');
+    if (i === CORRECT) { v.className = 'verdict-line good'; v.textContent = '✓ Correct — did you feel sure?'; }
+    else { v.className = 'verdict-line bad'; v.textContent = '✗ The answer is B'; }
+    document.getElementById('answer-box').classList.add('show');
+    document.getElementById('btn-again').disabled = false;
+    document.getElementById('btn-good').disabled = false;
+  }
+  function judge(got) {
+    const c = document.getElementById('card');
+    if (got) { queue.shift(); c.classList.add('swipe-r'); }
+    else { const id = queue.shift(); queue.push(id); c.classList.add('swipe-l'); }
+    setTimeout(nextCard, 260);
+  }
+</script>
+</body>
+</html>

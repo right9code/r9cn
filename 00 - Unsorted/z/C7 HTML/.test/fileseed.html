@@ -1,0 +1,12 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>seed</title></head><body>
+<script>
+var out = [];
+try {
+  localStorage.setItem('c7-student', 'FileTest');
+  localStorage.setItem('c7-progress-v1', JSON.stringify({'grammar|grammar-nouns|0':1,'grammar|grammar-nouns|1':1}));
+  out.push('write OK');
+} catch (e) { out.push('BLOCKED: ' + e.name); }
+try { out.push('read back: ' + localStorage.getItem('c7-student')); } catch (e) { out.push('read BLOCKED: ' + e.name); }
+document.title = out.join(' | ');
+document.body.textContent = out.join(' | ');
+</script></body></html>

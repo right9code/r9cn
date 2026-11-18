@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 English — Practice (Skeleton B2 · Calm)</title>
+<style>
+  /* =========================================================
+     THREE CALM PALETTES × (light | dark), chosen with buttons.
+     Default = follow system.
+     ========================================================= */
+
+  /* ---- PALETTE 1 · SAGE (soft green, quiet study-room) ---- */
+  [data-scheme="sage"][data-mode="light"] {
+    --bg: #F3F6F2; --card: #FFFFFF; --inner: #E8EFE8; --border: #DCE5DB;
+    --text: #24312A; --muted: #6E7D72;
+    --accent: #4E8A6E; --accent-strong: #3D6F58; --accent-soft: #DFEDE5;
+    --warn: #C99245; --bad: #C25E5E; --bad-soft: #F5E1E1;
+    --grad: linear-gradient(135deg, #4E8A6E, #6BA98B);
+    --sec1: #5B7FA6; --sec2: #C99245; --sec3: #4E8A6E; --sec4: #9A7BB0;
+    --sec1-soft: #E3EBF4; --sec2-soft: #F6ECD9; --sec3-soft: #DFEDE5; --sec4-soft: #EDE6F3;
+  }
+  [data-scheme="sage"][data-mode="dark"] {
+    --bg: #0E1411; --card: #161D19; --inner: #1D2621; --border: #26302A;
+    --text: #E4EAE5; --muted: #8FA094;
+    --accent: #7FBC9B; --accent-strong: #96CDAE; --accent-soft: rgba(127,188,155,0.14);
+    --warn: #D9B36B; --bad: #E08B8B; --bad-soft: rgba(224,139,139,0.14);
+    --grad: linear-gradient(135deg, #3D6F58, #4E8A6E);
+    --sec1: #8AAECF; --sec2: #D9B36B; --sec3: #7FBC9B; --sec4: #B79FD0;
+    --sec1-soft: rgba(138,174,207,0.14); --sec2-soft: rgba(217,179,107,0.14); --sec3-soft: rgba(127,188,155,0.14); --sec4-soft: rgba(183,159,208,0.14);
+  }
+
+  /* ---- PALETTE 2 · LAVENDER (soft indigo, evening-calm) ---- */
+  [data-scheme="lavender"][data-mode="light"] {
+    --bg: #F5F5FA; --card: #FFFFFF; --inner: #EBEBF5; --border: #DFE0EE;
+    --text: #2A2838; --muted: #75738A;
+    --accent: #6675C9; --accent-strong: #525DAE; --accent-soft: #E4E7F8;
+    --warn: #B98A4E; --bad: #C25E6B; --bad-soft: #F5E1E5;
+    --grad: linear-gradient(135deg, #6675C9, #8A94D8);
+    --sec1: #5B9BB5; --sec2: #C2884E; --sec3: #5FA98A; --sec4: #8A79CC;
+    --sec1-soft: #E1EFF5; --sec2-soft: #F5EBDD; --sec3-soft: #E0EFE8; --sec4-soft: #E9E6F7;
+  }
+  [data-scheme="lavender"][data-mode="dark"] {
+    --bg: #111120; --card: #181829; --inner: #202034; --border: #2A2A40;
+    --text: #E6E6F0; --muted: #918FA8;
+    --accent: #9BA3F0; --accent-strong: #B3B9F5; --accent-soft: rgba(155,163,240,0.14);
+    --warn: #D4B37C; --bad: #E38B97; --bad-soft: rgba(227,139,151,0.14);
+    --grad: linear-gradient(135deg, #525DAE, #6675C9);
+    --sec1: #7FB8CE; --sec2: #D4B37C; --sec3: #85C4A8; --sec4: #AB9FE3;
+    --sec1-soft: rgba(127,184,206,0.14); --sec2-soft: rgba(212,179,124,0.14); --sec3-soft: rgba(133,196,168,0.14); --sec4-soft: rgba(171,159,227,0.14);
+  }
+
+  /* ---- PALETTE 3 · SANDSTONE (warm neutral, calm version of "sunny") ---- */
+  [data-scheme="sand"][data-mode="light"] {
+    --bg: #F8F4EE; --card: #FFFFFF; --inner: #F0E9DE; --border: #E5DCCE;
+    --text: #35302A; --muted: #877E70;
+    --accent: #B07A52; --accent-strong: #96653F; --accent-soft: #F3E7DB;
+    --warn: #A98A4B; --bad: #BC6455; --bad-soft: #F5E5E0;
+    --grad: linear-gradient(135deg, #B07A52, #C99A73);
+    --sec1: #6E93AE; --sec2: #B07A52; --sec3: #6FA07E; --sec4: #9780B5;
+    --sec1-soft: #E5EEF4; --sec2-soft: #F3E7DB; --sec3-soft: #E4EFE8; --sec4-soft: #ECE6F2;
+  }
+  [data-scheme="sand"][data-mode="dark"] {
+    --bg: #15120E; --card: #1D1914; --inner: #252019; --border: #2F2820;
+    --text: #EDE8E0; --muted: #A39887;
+    --accent: #D9A87D; --accent-strong: #E4BC97; --accent-soft: rgba(217,168,125,0.14);
+    --warn: #CBB277; --bad: #DE9184; --bad-soft: rgba(222,145,132,0.14);
+    --grad: linear-gradient(135deg, #96653F, #B07A52);
+    --sec1: #92B4CB; --sec2: #D9A87D; --sec3: #94C2A4; --sec4: #B4A2CF;
+    --sec1-soft: rgba(146,180,203,0.14); --sec2-soft: rgba(217,168,125,0.14); --sec3-soft: rgba(148,194,164,0.14); --sec4-soft: rgba(180,162,207,0.14);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg); color: var(--text); font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55; padding-bottom: 6rem; min-height: 100vh;
+    transition: background-color .25s ease, color .25s ease;
+  }
+  .wrap { max-width: 480px; margin: 0 auto; padding: 1rem 1rem 2rem; }
+
+  /* ---------- HEADER ---------- */
+  .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.1rem; gap: 0.5rem; }
+  .head-title { font-weight: 800; font-size: 0.98rem; flex: 1; min-width: 0; }
+  .ctrl {
+    background: var(--card); border: 1.5px solid var(--border); border-radius: 12px;
+    padding: 0.45rem 0.7rem; font-size: 0.82rem; font-weight: 700; cursor: pointer;
+    color: var(--text); white-space: nowrap; transition: transform .12s;
+  }
+  .ctrl:active { transform: scale(0.94); }
+
+  .pane { display: none; }
+  .pane.active { display: block; animation: fade .25s ease-out; }
+  @keyframes fade { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; } }
+
+  /* ---------- HOME ---------- */
+  .hero {
+    background: var(--grad); color: #fff; border-radius: 20px; padding: 1.15rem 1.25rem; margin-bottom: 1.15rem;
+  }
+  .hero h1 { font-size: 1.25rem; font-weight: 800; line-height: 1.3; }
+  .hero p { opacity: .92; font-size: 0.86rem; margin-top: 0.3rem; }
+  .hero .xp {
+    display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.8rem;
+    background: rgba(255,255,255,.2); border-radius: 999px; padding: 0.3rem 0.8rem;
+    font-size: 0.78rem; font-weight: 700;
+  }
+
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .tile {
+    background: var(--card); border: 1.5px solid var(--border); border-radius: 20px;
+    padding: 1rem; cursor: pointer; position: relative; overflow: hidden;
+    transition: transform .15s;
+  }
+  .tile:active { transform: scale(.96); }
+  .tile .t-emoji { font-size: 1.7rem; opacity: .9; }
+  .tile .t-name { font-weight: 800; margin-top: 0.45rem; font-size: 0.95rem; }
+  .tile .t-sub { font-size: 0.72rem; color: var(--muted); }
+  .ring-wrap { position: absolute; top: 0.85rem; right: 0.85rem; width: 32px; height: 32px; }
+  .ring-wrap svg { transform: rotate(-90deg); }
+  .ring-bg { fill: none; stroke: var(--inner); stroke-width: 4; }
+  .ring-fg { fill: none; stroke-width: 4; stroke-linecap: round; }
+  .tile.reading .ring-fg { stroke: var(--sec1); }
+  .tile.writing .ring-fg { stroke: var(--sec2); }
+  .tile.grammar .ring-fg { stroke: var(--sec3); }
+  .tile.lit .ring-fg { stroke: var(--sec4); }
+  .ring-num {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 0.5rem; font-weight: 700; color: var(--muted);
+  }
+
+  /* ---------- PRACTICE ---------- */
+  .p-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.9rem; }
+  .back {
+    background: var(--card); border: 1.5px solid var(--border); border-radius: 13px;
+    width: 40px; height: 40px; font-size: 1.05rem; cursor: pointer; font-weight: 700; color: var(--text);
+  }
+  .p-count { font-weight: 800; font-size: 0.92rem; }
+  .p-score { font-weight: 700; font-size: 0.92rem; color: var(--accent); }
+  .dots { display: flex; gap: 5px; justify-content: center; margin: 0.35rem 0 1rem; }
+  .dot { width: 7px; height: 7px; border-radius: 99px; background: var(--border); transition: all .25s; }
+  .dot.done { background: var(--accent); }
+  .dot.now { width: 20px; background: var(--accent-strong); }
+
+  .q-card {
+    background: var(--card); border: 1.5px solid var(--border); border-radius: 20px;
+    padding: 1.2rem;
+  }
+  .chip {
+    display: inline-block; font-size: 0.66rem; font-weight: 800; letter-spacing: .05em;
+    text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 999px; margin-bottom: 0.7rem;
+  }
+  .chip.mcq { background: var(--accent-soft); color: var(--accent-strong); }
+  .chip.extract { background: var(--sec2-soft); color: var(--sec2); }
+  .passage {
+    background: var(--inner); border-radius: 13px; padding: 0.85rem 1rem;
+    font-size: 0.88rem; color: var(--muted); margin-bottom: 0.9rem; line-height: 1.75;
+  }
+  .q-text { font-size: 1.02rem; font-weight: 700; line-height: 1.55; margin-bottom: 1rem; }
+
+  .opt {
+    display: flex; align-items: center; gap: 0.75rem;
+    border: 1.5px solid var(--border); border-radius: 15px;
+    padding: 0.75rem 0.85rem; margin-bottom: 0.55rem; cursor: pointer;
+    font-weight: 600; font-size: 0.9rem; background: var(--bg);
+    transition: all .15s; min-height: 48px;
+  }
+  .opt:active { transform: scale(.985); }
+  .opt-key {
+    width: 28px; height: 28px; border-radius: 9px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.76rem; background: var(--inner); color: var(--muted);
+  }
+  .opt.right { border-color: var(--accent); background: var(--accent-soft); }
+  .opt.right .opt-key { background: var(--accent); color: #fff; }
+  .opt.miss { border-color: var(--bad); background: var(--bad-soft); }
+  .opt.miss .opt-key { background: var(--bad); color: #fff; }
+  .opt.off { opacity: .5; pointer-events: none; }
+
+  .fb {
+    display: none; border-radius: 14px; padding: 0.75rem 0.95rem; margin-top: 0.7rem;
+    font-size: 0.86rem; font-weight: 600; line-height: 1.5; animation: fade .3s ease;
+  }
+  .fb.win { background: var(--accent-soft); color: var(--accent-strong); }
+  .fb.lose { background: var(--bad-soft); color: var(--bad); }
+
+  .model-btn {
+    display: none; width: 100%; margin-top: 0.9rem; padding: 0.7rem;
+    border: 1.5px dashed var(--border); border-radius: 14px; background: transparent;
+    color: var(--accent-strong); font-weight: 700; font-size: 0.85rem; cursor: pointer;
+  }
+  .model-box {
+    display: none; background: var(--inner); border-radius: 14px;
+    padding: 0.85rem 1rem; margin-top: 0.7rem; font-size: 0.87rem; line-height: 1.7; color: var(--text);
+  }
+  .model-box.show { display: block; animation: fade .3s ease; }
+  .model-box .tag { display: block; font-weight: 800; font-size: 0.66rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 0.3rem; color: var(--accent-strong); }
+
+  .nextbar {
+    position: fixed; bottom: 0; left: 0; right: 0; padding: 0.8rem 1rem 1.1rem;
+    display: none; justify-content: center;
+    background: linear-gradient(to top, var(--bg) 72%, transparent);
+  }
+  .nextbar.show { display: flex; }
+  .big-btn {
+    max-width: 440px; width: 100%; padding: 0.95rem; border: none; border-radius: 18px;
+    background: var(--accent); color: #fff; font-family: inherit;
+    font-size: 0.98rem; font-weight: 800; cursor: pointer; transition: transform .12s;
+  }
+  .big-btn:active { transform: scale(.97); }
+</style>
+</head>
+<body data-scheme="sage">
+<div class="wrap">
+
+  <div class="head">
+    <div class="head-title" id="head-title">Class 7 · English</div>
+    <button class="ctrl" id="scheme-btn" onclick="cycleScheme()">🎨 Sage</button>
+    <button class="ctrl" id="mode-btn" onclick="cycleMode()">🌗 Auto</button>
+  </div>
+
+  <!-- HOME -->
+  <div class="pane active" id="v-home">
+    <div class="hero">
+      <h1>Annual Exam Practice</h1>
+      <p>One question at a time. Take it slow, understand each answer.</p>
+      <div class="xp">12 / 45 questions · [placeholder]</div>
+    </div>
+    <div class="tiles">
+      <div class="tile reading" onclick="openS('reading')">
+        <div class="ring-wrap"><svg width="32" height="32"><circle class="ring-bg" cx="16" cy="16" r="13"/><circle class="ring-fg" cx="16" cy="16" r="13" stroke-dasharray="81.7" stroke-dashoffset="49"/></svg><div class="ring-num">40%</div></div>
+        <div class="t-emoji">📖</div><div class="t-name">Reading</div><div class="t-sub">Q1–Q2 · 10 questions</div>
+      </div>
+      <div class="tile writing" onclick="openS('writing')">
+        <div class="ring-wrap"><svg width="32" height="32"><circle class="ring-bg" cx="16" cy="16" r="13"/><circle class="ring-fg" cx="16" cy="16" r="13" stroke-dasharray="81.7" stroke-dashoffset="81.7"/></svg><div class="ring-num">0%</div></div>
+        <div class="t-emoji">✍️</div><div class="t-name">Writing</div><div class="t-sub">Q4–Q7 · 8 questions</div>
+      </div>
+      <div class="tile grammar" onclick="openS('grammar')">
+        <div class="ring-wrap"><svg width="32" height="32"><circle class="ring-bg" cx="16" cy="16" r="13"/><circle class="ring-fg" cx="16" cy="16" r="13" stroke-dasharray="81.7" stroke-dashoffset="69.4"/></svg><div class="ring-num">15%</div></div>
+        <div class="t-emoji">🧩</div><div class="t-name">Grammar</div><div class="t-sub">Q3 · 12 questions</div>
+      </div>
+      <div class="tile lit" onclick="openS('lit')">
+        <div class="ring-wrap"><svg width="32" height="32"><circle class="ring-bg" cx="16" cy="16" r="13"/><circle class="ring-fg" cx="16" cy="16" r="13" stroke-dasharray="81.7" stroke-dashoffset="61.3"/></svg><div class="ring-num">25%</div></div>
+        <div class="t-emoji">📚</div><div class="t-name">Literature</div><div class="t-sub">Q8–Q12 · 15 questions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRACTICE -->
+  <div class="pane" id="v-practice">
+    <div class="p-head">
+      <button class="back" onclick="goHome()">←</button>
+      <div class="p-count" id="p-count">Question 1 of 5</div>
+      <div class="p-score">2 ✓</div>
+    </div>
+    <div class="dots" id="dots">
+      <div class="dot done"></div><div class="dot now"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+
+    <div class="q-card">
+      <span class="chip extract">Extract based</span>
+      <div class="passage">[Passage placeholder — a short extract from the poem or story appears here first. Read it, then answer.]</div>
+      <span class="chip mcq">MCQ · one correct</span>
+      <div class="q-text">[Question placeholder — calm, exam-style wording.]</div>
+
+      <div class="opt" onclick="pick(this,0)"><div class="opt-key">A</div>[Option A placeholder]</div>
+      <div class="opt" onclick="pick(this,1)"><div class="opt-key">B</div>[Option B placeholder]</div>
+      <div class="opt" onclick="pick(this,2)"><div class="opt-key">C</div>[Option C placeholder]</div>
+      <div class="opt" onclick="pick(this,3)"><div class="opt-key">D</div>[Option D placeholder]</div>
+
+      <div class="fb win" id="fb-win">✓ Correct — [encouraging feedback placeholder]</div>
+      <div class="fb lose" id="fb-lose">✗ Not quite — [gentle explanation placeholder]</div>
+
+      <button class="model-btn" id="model-btn" onclick="reveal()">See a model answer</button>
+      <div class="model-box" id="model-box"><span class="tag">Model answer</span>[Model answer placeholder — key points an examiner looks for.]</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="nextbar" id="nextbar">
+  <button class="big-btn" id="big-btn" onclick="nextQ()">Next question →</button>
+</div>
+
+<script>
+  /* ================= THEME ENGINE =================
+     scheme: sage | lavender | sand  (palette)
+     mode:   auto | light | dark     (auto = follow system) */
+  const SCHEMES = ['sage', 'lavender', 'sand'];
+  const NAMES   = { sage: 'Sage', lavender: 'Lavender', sand: 'Sandstone' };
+  let scheme = 'sage', mode = 'auto';
+  const mq = window.matchMedia('(prefers-color-scheme: light)');
+
+  function apply() {
+    const b = document.body;
+    b.dataset.scheme = scheme;
+    b.dataset.mode = mode === 'auto' ? (mq.matches ? 'light' : 'dark') : mode;
+    document.getElementById('scheme-btn').textContent = '🎨 ' + NAMES[scheme];
+    document.getElementById('mode-btn').textContent =
+      mode === 'auto' ? '🌗 Auto' : mode === 'light' ? '☀️ Light' : '🌙 Dark';
+  }
+  function cycleScheme() { scheme = SCHEMES[(SCHEMES.indexOf(scheme) + 1) % SCHEMES.length]; apply(); }
+  function cycleMode() { mode = mode === 'auto' ? 'light' : mode === 'light' ? 'dark' : 'auto'; apply(); }
+  mq.addEventListener('change', () => { if (mode === 'auto') apply(); });
+  apply();
+
+  /* ================= SKELETON BEHAVIOUR ================= */
+  const TOTAL = 5; let qi = 0;
+  function show(id) {
+    document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    scrollTo(0, 0);
+  }
+  function goHome() {
+    document.getElementById('head-title').textContent = 'Class 7 · English';
+    document.getElementById('nextbar').classList.remove('show');
+    show('v-home');
+  }
+  function openS(k) {
+    const names = { reading: 'Reading · Q1–Q2', writing: 'Writing · Q4–Q7', grammar: 'Grammar · Q3', lit: 'Literature · Q8–Q12' };
+    document.getElementById('head-title').textContent = names[k];
+    qi = 0; resetQ(); show('v-practice');
+    document.getElementById('nextbar').classList.add('show');
+  }
+  function refresh() {
+    document.getElementById('p-count').textContent = 'Question ' + (qi + 1) + ' of ' + TOTAL;
+    document.getElementById('big-btn').textContent = qi === TOTAL - 1 ? 'Finish ✓' : 'Next question →';
+    document.querySelectorAll('#dots .dot').forEach((d, i) => {
+      d.className = 'dot' + (i < qi ? ' done' : i === qi ? ' now' : '');
+    });
+  }
+  function nextQ() { if (qi < TOTAL - 1) { qi++; resetQ(); } else { goHome(); } }
+  function resetQ() {
+    document.querySelectorAll('.opt').forEach(o => o.className = 'opt');
+    document.getElementById('fb-win').style.display = 'none';
+    document.getElementById('fb-lose').style.display = 'none';
+    document.getElementById('model-box').classList.remove('show');
+    document.getElementById('model-btn').style.display = 'none';
+    refresh();
+  }
+  const CORRECT = 1;
+  function pick(el, i) {
+    document.querySelectorAll('.opt').forEach((o, j) => {
+      o.classList.add('off');
+      if (j === CORRECT) o.classList.add('right');
+      else if (o === el) o.classList.add('miss');
+    });
+    document.getElementById('fb-win').style.display = i === CORRECT ? 'block' : 'none';
+    document.getElementById('fb-lose').style.display = i === CORRECT ? 'none' : 'block';
+    document.getElementById('model-btn').style.display = 'block';
+  }
+  function reveal() {
+    document.getElementById('model-box').classList.add('show');
+    document.getElementById('model-btn').style.display = 'none';
+  }
+</script>
+</body>
+</html>

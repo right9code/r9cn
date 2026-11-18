@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 English — Exam Drill (Skeleton C)</title>
+<style>
+  :root {
+    --bg: #0B1020;
+    --panel: #131A2E;
+    --panel2: #1B2340;
+    --line: #2A3352;
+    --text: #E8ECF6;
+    --muted: #7C87A8;
+    --accent: #2DD4BF;
+    --accent-dim: rgba(45,212,191,0.12);
+    --red: #F87171;
+    --red-dim: rgba(248,113,113,0.12);
+    --amber: #FBBF24;
+    --font: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.55; }
+  .wrap { max-width: 480px; margin: 0 auto; padding: 0 0.9rem 5.5rem; }
+
+  .view { display: none; }
+  .view.active { display: block; animation: fade .2s ease-out; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+
+  /* ---------- HOME ---------- */
+  .home-head { padding: 1.4rem 0 1rem; }
+  .home-head h1 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+  .home-head p { color: var(--muted); font-size: 0.86rem; margin-top: 0.2rem; }
+
+  .sec-row {
+    display: flex; align-items: center; gap: 1rem;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1rem 1.05rem; margin-bottom: 0.7rem; cursor: pointer;
+    transition: border-color .15s;
+  }
+  .sec-row:active { border-color: var(--accent); }
+  .sec-ring { width: 46px; height: 46px; flex-shrink: 0; }
+  .sec-ring svg { transform: rotate(-90deg); display: block; }
+  .ring-track { fill: none; stroke: var(--panel2); stroke-width: 5; }
+  .ring-fill { fill: none; stroke-width: 5; stroke-linecap: round; transition: stroke-dashoffset .4s; }
+  .ring-label {
+    fill: var(--text); font-size: 10.5px; font-weight: 700; text-anchor: middle;
+    font-family: var(--mono);
+  }
+  .sec-info { flex: 1; min-width: 0; }
+  .sec-name { font-weight: 700; font-size: 0.98rem; }
+  .sec-sub { font-size: 0.76rem; color: var(--muted); font-family: var(--mono); margin-top: 0.1rem; }
+  .sec-arrow { color: var(--muted); }
+
+  .stats-strip {
+    display: flex; gap: 0.7rem; margin-bottom: 1rem;
+  }
+  .stat {
+    flex: 1; background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 0.7rem 0.8rem;
+  }
+  .stat .num { font-family: var(--mono); font-weight: 700; font-size: 1.05rem; color: var(--accent); }
+  .stat .lbl { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+  /* ---------- PRACTICE ---------- */
+  .pbar {
+    position: sticky; top: 0; z-index: 10; background: var(--bg);
+    margin: 0 -0.9rem; padding: 0.7rem 0.9rem 0.6rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .pbar-row { display: flex; align-items: center; gap: 0.7rem; }
+  .pbar-back {
+    background: none; border: 1px solid var(--line); color: var(--text);
+    width: 34px; height: 34px; border-radius: 10px; cursor: pointer; flex-shrink: 0;
+    font-size: 1rem;
+  }
+  .pbar-title { font-weight: 700; font-size: 0.92rem; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pbar-count { font-family: var(--mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+  .pbar-line { height: 3px; background: var(--panel2); border-radius: 99px; margin-top: 0.6rem; overflow: hidden; }
+  .pbar-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width .3s; }
+
+  .swipe-hint {
+    text-align: center; color: var(--muted); font-size: 0.72rem; font-family: var(--mono);
+    padding: 0.7rem 0 0;
+  }
+
+  .qcard {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+    padding: 1.15rem 1.15rem 1.25rem; margin-top: 0.8rem;
+    touch-action: pan-y;
+  }
+  .qtag {
+    display: inline-block; font-family: var(--mono); font-size: 0.64rem; font-weight: 700;
+    color: var(--amber); border: 1px solid var(--line); border-radius: 6px;
+    padding: 0.15rem 0.5rem; margin-bottom: 0.65rem; text-transform: uppercase; letter-spacing: .06em;
+  }
+  .extract {
+    background: var(--panel2); border-radius: 12px; padding: 0.9rem 1rem;
+    font-size: 0.88rem; color: #B9C2DC; line-height: 1.8; margin-bottom: 0.9rem;
+    max-height: 180px; overflow-y: auto;
+  }
+  .qtext { font-size: 1rem; font-weight: 600; line-height: 1.6; margin-bottom: 1rem; }
+  .qnum { font-family: var(--mono); color: var(--accent); font-size: 0.75rem; font-weight: 700; margin-right: 0.45rem; }
+
+  .opt {
+    display: flex; gap: 0.7rem; align-items: flex-start;
+    border: 1px solid var(--line); border-radius: 12px;
+    padding: 0.72rem 0.8rem; margin-bottom: 0.5rem; cursor: pointer;
+    font-size: 0.9rem; color: #C6CEE6; background: var(--bg);
+    min-height: 46px; transition: all .15s;
+  }
+  .opt-key {
+    font-family: var(--mono); font-size: 0.75rem; font-weight: 700; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 7px; padding: 0.05rem 0.42rem;
+    flex-shrink: 0; margin-top: 0.05rem;
+  }
+  .opt.good { border-color: var(--accent); background: var(--accent-dim); color: var(--text); }
+  .opt.good .opt-key { background: var(--accent); border-color: var(--accent); color: #0B1020; }
+  .opt.bad { border-color: var(--red); background: var(--red-dim); color: var(--text); }
+  .opt.bad .opt-key { background: var(--red); border-color: var(--red); color: #0B1020; }
+  .opt.dim { opacity: .45; pointer-events: none; }
+
+  .verdict { display: none; margin-top: 0.85rem; font-size: 0.84rem; line-height: 1.6; border-radius: 10px; padding: 0.65rem 0.8rem; }
+  .verdict.good { display: block; background: var(--accent-dim); color: var(--accent); }
+  .verdict.bad { display: block; background: var(--red-dim); color: var(--red); }
+
+  .peek {
+    display: none; width: 100%; margin-top: 0.9rem; padding: 0.65rem;
+    background: none; border: 1px dashed var(--line); border-radius: 10px;
+    color: var(--muted); font-family: var(--mono); font-size: 0.78rem; cursor: pointer;
+  }
+  .solution {
+    display: none; margin-top: 0.7rem; background: var(--panel2); border-left: 3px solid var(--amber);
+    border-radius: 8px; padding: 0.85rem 0.95rem; font-size: 0.87rem; color: #C6CEE6; line-height: 1.75;
+  }
+  .solution.show { display: block; animation: fade .25s ease; }
+  .solution .s-tag { display: block; font-family: var(--mono); font-size: 0.62rem; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 0.3rem; }
+
+  /* bottom bar */
+  .dbar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
+    background: var(--panel); border-top: 1px solid var(--line);
+    display: none; gap: 0.6rem; padding: 0.7rem 0.9rem calc(0.7rem + env(safe-area-inset-bottom));
+    max-width: 480px; margin: 0 auto;
+  }
+  .dbar.show { display: flex; }
+  .dbar .half {
+    flex: 1; padding: 0.8rem; border-radius: 12px; border: none; cursor: pointer;
+    font-family: var(--font); font-weight: 700; font-size: 0.9rem;
+  }
+  .btn-ghost { background: var(--panel2); color: var(--text); border: 1px solid var(--line); }
+  .btn-main { background: var(--accent); color: #0B1020; }
+  .btn-main:disabled { opacity: .35; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HOME -->
+  <div class="view active" id="v-home">
+    <div class="home-head">
+      <h1>Exam Drill</h1>
+      <p>Class VII English · Annual revision, one question at a time.</p>
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat"><div class="num">12/45</div><div class="lbl">Attempted</div></div>
+      <div class="stat"><div class="num">78%</div><div class="lbl">Accuracy</div></div>
+      <div class="stat"><div class="num">3d</div><div class="lbl">Streak</div></div>
+    </div>
+
+    <div class="sec-row" onclick="openS('Reading · Q1–Q2', 10)">
+      <div class="sec-ring"><svg width="46" height="46"><circle class="ring-track" cx="23" cy="23" r="19"/><circle class="ring-fill" cx="23" cy="23" r="19" stroke="#7C87A8" stroke-dasharray="119.4" stroke-dashoffset="71.6"/><text class="ring-label" x="23" y="27">40%</text></svg></div>
+      <div class="sec-info"><div class="sec-name">Reading Skill</div><div class="sec-sub">Q1–Q2 · 10 QUESTIONS</div></div>
+      <div class="sec-arrow">›</div>
+    </div>
+    <div class="sec-row" onclick="openS('Writing · Q4–Q7', 8)">
+      <div class="sec-ring"><svg width="46" height="46"><circle class="ring-track" cx="23" cy="23" r="19"/><circle class="ring-fill" cx="23" cy="23" r="19" stroke="#7C87A8" stroke-dasharray="119.4" stroke-dashoffset="119.4"/><text class="ring-label" x="23" y="27">0%</text></svg></div>
+      <div class="sec-info"><div class="sec-name">Writing Skills</div><div class="sec-sub">Q4–Q7 · 8 QUESTIONS</div></div>
+      <div class="sec-arrow">›</div>
+    </div>
+    <div class="sec-row" onclick="openS('Grammar · Q3', 12)">
+      <div class="sec-ring"><svg width="46" height="46"><circle class="ring-track" cx="23" cy="23" r="19"/><circle class="ring-fill" cx="23" cy="23" r="19" stroke="#2DD4BF" stroke-dasharray="119.4" stroke-dashoffset="101.5"/><text class="ring-label" x="23" y="27" fill="#2DD4BF">15%</text></svg></div>
+      <div class="sec-info"><div class="sec-name">Grammar</div><div class="sec-sub">Q3 · 12 QUESTIONS</div></div>
+      <div class="sec-arrow">›</div>
+    </div>
+    <div class="sec-row" onclick="openS('Literature · Q8–Q12', 15)">
+      <div class="sec-ring"><svg width="46" height="46"><circle class="ring-track" cx="23" cy="23" r="19"/><circle class="ring-fill" cx="23" cy="23" r="19" stroke="#2DD4BF" stroke-dasharray="119.4" stroke-dashoffset="89.6"/><text class="ring-label" x="23" y="27" fill="#2DD4BF">25%</text></svg></div>
+      <div class="sec-info"><div class="sec-name">Literature</div><div class="sec-sub">Q8–Q12 · 15 QUESTIONS</div></div>
+      <div class="sec-arrow">›</div>
+    </div>
+  </div>
+
+  <!-- PRACTICE -->
+  <div class="view" id="v-practice">
+    <div class="pbar">
+      <div class="pbar-row">
+        <button class="pbar-back" onclick="goHome()">←</button>
+        <div class="pbar-title" id="p-title">Reading · Q1–Q2</div>
+        <div class="pbar-count" id="p-count">1/5</div>
+      </div>
+      <div class="pbar-line"><div class="pbar-fill" id="p-fill" style="width:20%"></div></div>
+    </div>
+
+    <div class="swipe-hint">⟵ swipe card to move between questions ⟶</div>
+
+    <div class="qcard" id="qcard">
+      <span class="qtag">Extract</span>
+      <div class="extract">[Passage placeholder — the poem / prose extract appears here. Scrollable if long. Read it, then answer below.]</div>
+      <span class="qtag">MCQ</span>
+      <div class="qtext"><span class="qnum">Q1.</span>[Question placeholder — focused, exam-style wording.]</div>
+
+      <div class="opt" onclick="pick(this,0)"><div class="opt-key">[A]</div>[Option A placeholder]</div>
+      <div class="opt" onclick="pick(this,1)"><div class="opt-key">[B]</div>[Option B placeholder]</div>
+      <div class="opt" onclick="pick(this,2)"><div class="opt-key">[C]</div>[Option C placeholder]</div>
+      <div class="opt" onclick="pick(this,3)"><div class="opt-key">[D]</div>[Option D placeholder]</div>
+
+      <div class="verdict" id="verdict"></div>
+      <button class="peek" id="peek-btn" onclick="peek()">▸ view solution + marking points</button>
+      <div class="solution" id="solution"><span class="s-tag">Solution</span>[Solution placeholder — the correct approach, step by step, plus what the examiner awards marks for.]</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM ACTION BAR -->
+<div class="dbar" id="dbar">
+  <button class="half btn-ghost" id="btn-peek" onclick="peek()">Solution</button>
+  <button class="half btn-main" id="btn-next" onclick="nextQ()">Next ›</button>
+</div>
+
+<script>
+  const TOTAL = 5; let qi = 0; let answered = false;
+  function show(id) {
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    scrollTo(0, 0);
+  }
+  function goHome() {
+    show('v-home');
+    document.getElementById('dbar').classList.remove('show');
+  }
+  function openS(name) {
+    document.getElementById('p-title').textContent = name;
+    qi = 0; resetQ(); show('v-practice');
+    document.getElementById('dbar').classList.add('show');
+  }
+  function refresh() {
+    document.getElementById('p-count').textContent = (qi + 1) + '/' + TOTAL;
+    document.getElementById('p-fill').style.width = ((qi + 1) / TOTAL * 100) + '%';
+    document.getElementById('btn-next').disabled = !answered;
+  }
+  function nextQ() {
+    if (qi < TOTAL - 1) { qi++; resetQ(); }
+    else { goHome(); }
+  }
+  function resetQ() {
+    answered = false;
+    document.querySelectorAll('.opt').forEach(o => o.className = 'opt');
+    document.getElementById('verdict').className = 'verdict';
+    document.getElementById('verdict').textContent = '';
+    document.getElementById('solution').classList.remove('show');
+    document.getElementById('peek-btn').style.display = 'none';
+    document.getElementById('btn-peek').textContent = 'Solution';
+    refresh();
+  }
+  const CORRECT = 1;
+  function pick(el, i) {
+    if (answered) return;
+    answered = true;
+    document.querySelectorAll('.opt').forEach((o, j) => {
+      o.classList.add('dim');
+      if (j === CORRECT) o.classList.remove('dim'), o.classList.add('good');
+      else if (o === el) o.classList.remove('dim'), o.classList.add('bad');
+    });
+    const v = document.getElementById('verdict');
+    if (i === CORRECT) { v.className = 'verdict good'; v.textContent = '✓ Correct — [praise placeholder]'; }
+    else { v.className = 'verdict bad'; v.textContent = '✗ Correct answer is [B] — [explanation placeholder]'; }
+    document.getElementById('peek-btn').style.display = 'block';
+    document.getElementById('btn-next').disabled = false;
+  }
+  function peek() {
+    document.getElementById('solution').classList.add('show');
+    document.getElementById('peek-btn').style.display = 'none';
+    document.getElementById('btn-peek').textContent = 'Hide';
+  }
+
+  /* ---- swipe navigation ---- */
+  const card = document.getElementById('qcard');
+  let sx = 0, sy = 0;
+  card.addEventListener('touchstart', e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+  card.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      if (dx < 0) nextQ(); else if (qi > 0) { qi--; resetQ(); }
+    }
+  }, { passive: true });
+</script>
+</body>
+</html>

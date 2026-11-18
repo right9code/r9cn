@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Reading — Section A (Q2)</title>
+<style>
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --border: #d8dee8;
+  --primary: #2563eb;
+  --primary-soft: #dbeafe;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #334155;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a5f;
+  --success: #4ade80;
+  --success-soft: #14532d;
+  --danger: #f87171;
+  --danger-soft: #7f1d1d;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+h1 { font-size: 1.2rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer;
+  flex: 0 0 auto;
+}
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; margin-bottom: 8px; }
+.tab {
+  flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+  padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer;
+}
+.tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.section-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px;
+}
+h2 { font-size: 1rem; margin: 0 0 8px; }
+.passage { font-size: 1rem; }
+.passage p { margin: 0 0 10px; }
+.passage p:last-child { margin-bottom: 0; }
+.table-wrap { overflow-x: auto; margin: 10px 0 0; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--surface-2); font-weight: 700; }
+.instructions { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
+.q {
+  border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px;
+  background: var(--surface);
+}
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 600; margin-bottom: 8px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.hint { font-weight: 500; color: var(--muted); }
+.options { display: grid; gap: 8px; }
+.opt {
+  display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 12px; border-radius: 10px; font-size: .97rem; cursor: pointer;
+}
+.opt.selected { border-color: var(--primary); background: var(--primary-soft); }
+.opt.correct { border-color: var(--success); background: var(--success-soft); }
+.opt.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.opt .letter { font-weight: 700; min-width: 1.2em; }
+.word-input {
+  width: 100%; max-width: 260px; padding: 10px 12px; font-size: 1rem; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+}
+.word-input.correct { border-color: var(--success); background: var(--success-soft); }
+.word-input.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.subpart { margin-top: 8px; }
+.subpart label { display: block; font-size: .92rem; margin-bottom: 4px; color: var(--muted); }
+.qtools { margin-top: 8px; }
+.link-btn {
+  border: 0; background: none; color: var(--primary); padding: 0; font: inherit; font-size: .88rem;
+  font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+}
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); }
+.feedback.bad { color: var(--danger); }
+.feedback.info { color: var(--muted); font-weight: 500; }
+.feedback .why { display: block; margin-top: 4px; font-weight: 500; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.btn {
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.scorebar {
+  margin-top: 12px; padding: 12px; border-radius: 12px; background: var(--surface-2);
+  border: 1px solid var(--border); font-weight: 700;
+}
+.small { font-size: .86rem; color: var(--muted); font-weight: 500; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Reading Skill (Q2)</h1>
+      <p class="sub">Section A, Q2 style · 5 passage-and-table sets × 10 questions</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Choose a passage"></nav>
+  <div class="card" id="passageCard"></div>
+  <div class="card" id="quiz"></div>
+  <div class="scorebar" id="scorebar" aria-live="polite"></div>
+</div>
+
+<script>
+(function () {
+  var PASSAGES = [
+    {
+      title: 'Save Every Drop',
+      paras: [
+        'Water is essential for life, yet fresh water is limited and must be used wisely. Only a tiny share of the water on earth is fit for drinking, and the same supply has to serve farms, factories, hospitals and homes. In many towns, people waste water without realising it, because it arrives so easily from a tap.',
+        'A single dripping tap can waste nearly 20 litres of water in a day. That is enough drinking water for a small family. Leaking pipes in bathrooms and gardens often go unnoticed for weeks, quietly draining away a resource that millions of people walk kilometres to collect.',
+        'Simple habits can make a big difference. Turning off the tap while brushing your teeth, fixing leaking pipes, and using a bucket instead of a hose to wash vehicles can save hundreds of litres every month. Taking shorter showers and watering plants in the evening also help, because less water evaporates in the cooler air.',
+        'Schools and communities can also help by practising rainwater harvesting, a method of collecting and storing rainwater from rooftops for later use. The collected water can be used for gardening and cleaning, which reduces the pressure on the town supply. In 2024, Sunrise Public School began a “Save Every Drop” campaign. Students checked taps for leaks, placed posters around the campus, and recorded how much water different actions saved in one month.',
+        'The results showed that small efforts, when done regularly, can stop water from being wasted and protect this precious resource for the future. The school now repeats the campaign every year, and several neighbouring schools have asked the students to explain their method.'
+      ],
+      table: {
+        caption: 'Water saved in one month during the campaign',
+        head: ['Water-saving action', 'Water saved in one month (litres)'],
+        rows: [['Fixing leaking taps', '120'], ['Turning off taps while brushing', '90'], ['Using buckets for cleaning', '80'], ['Collecting rainwater', '60']]
+      },
+      questions: [
+        { t: 'mcq', q: 'How much water can a single dripping tap waste in a day?', opts: ['5 litres', '10 litres', 'Nearly 20 litres', 'Nearly 100 litres'], a: 2, why: 'The passage states that a single dripping tap can waste nearly 20 litres of water in a day.' },
+        { t: 'mcq', q: 'What is the method of collecting and storing rainwater from rooftops called?', opts: ['Water recycling', 'Rainwater harvesting', 'Drip irrigation', 'Water filtering'], a: 1, why: 'Rainwater harvesting is the method of collecting and storing rainwater from rooftops for later use.' },
+        { t: 'mcq', q: 'According to the table, which action saved the most water in one month?', opts: ['Fixing leaking taps', 'Turning off taps while brushing', 'Using buckets for cleaning', 'Collecting rainwater'], a: 0, why: 'According to the table, fixing leaking taps saved 120 litres, which is the highest amount.' },
+        { t: 'mcq', q: 'What was the total amount of water saved in one month?', opts: ['290 litres', '310 litres', '330 litres', '350 litres'], a: 3, why: 'The total is 120 + 90 + 80 + 60 = 350 litres saved in one month.' },
+        { t: 'mcq', q: 'Which action saved the least amount of water according to the table?', opts: ['Fixing leaking taps', 'Using buckets for cleaning', 'Collecting rainwater', 'Turning off taps while brushing'], a: 2, why: 'According to the table, collecting rainwater saved 60 litres, which is the least among the actions listed.' },
+        { t: 'text', q: 'In which year did Sunrise Public School begin the campaign? <span class="hint">(one word)</span>', parts: [{ a: ['2024'], num: true }], why: 'The passage states that in 2024, Sunrise Public School began a “Save Every Drop” campaign.' },
+        { t: 'text', q: 'Fill in the blank: Fixing leaks can stop water from being ____________. <span class="hint">(one word)</span>', parts: [{ a: ['wasted'] }], why: 'Fixing leaks and using water carefully can stop water from being wasted.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Fresh water is unlimited and will never run out.”', a: false, why: 'The passage clearly states that fresh water is limited and must be used wisely.' },
+        { t: 'mcq', q: 'Complete the sentence: Saving water is important because ____________.', opts: ['water has no use in daily life', 'fresh water is limited and must be protected', 'leaking taps save more water', 'rain never falls on rooftops'], a: 1, why: 'Saving water is important because fresh water is limited and needs to be protected for the future.' },
+        { t: 'text', q: 'Fill in the blank: Turn off the tap while ____________ your teeth. <span class="hint">(one word)</span>', parts: [{ a: ['brushing'] }], why: 'The passage suggests turning off the tap while brushing your teeth to save water.' }
+      ]
+    },
+    {
+      title: 'The Reading Challenge',
+      paras: [
+        'Every October the library at Vidya Niketan runs a reading challenge. The rules are simple: a student who finishes a book writes two lines about it, and the librarian gives a sticker for the class chart. There are no prizes for the fastest reader, because the librarian has always insisted that reading quickly is not the same as reading well.',
+        'This year the challenge began with a problem. The library owned 900 books, but fewer than 200 were borrowed in a month. Most students chose the same three popular titles, and the shelves of poetry, biography and travel writing stayed untouched. The librarian added a rule: a sticker counted only if the student had not read that author before.',
+        'The result was unexpected. Class VI, which usually borrowed very little, went looking for new authors and finished 84 books. Class VII read 96, mostly mystery and animal stories. Class VIII, busy with a science project, managed only 72. Class IX, whose teacher read aloud for ten minutes at the end of every lesson, reached 108.',
+        'The chart on the library wall, however, showed something more useful than totals. The students who read the most were not the ones who read fastest; they were the ones who talked about their books. A short conversation at the issue desk, it turned out, did more for reading than any poster.',
+        'In November the librarian extended the challenge for another month, and the principal agreed to buy twenty new titles in the subjects that had been ignored. The library still owns 900 books. What changed is that more of them are being opened.'
+      ],
+      table: {
+        caption: 'Books read in October by each class',
+        head: ['Class', 'Books read in October'],
+        rows: [['Class VI', '84'], ['Class VII', '96'], ['Class VIII', '72'], ['Class IX', '108']]
+      },
+      questions: [
+        { t: 'mcq', q: 'How many books did Class IX read in October?', opts: ['72', '84', '96', '108'], a: 3, why: 'According to the table, Class IX read 108 books, the highest of the four classes.' },
+        { t: 'mcq', q: 'Which class read the fewest books?', opts: ['Class VI', 'Class VII', 'Class VIII', 'Class IX'], a: 2, why: 'Class VIII read 72 books, the lowest figure in the table.' },
+        { t: 'mcq', q: 'What was the total number of books read by the four classes?', opts: ['320', '340', '360', '380'], a: 2, why: 'The total is 84 + 96 + 72 + 108 = 360 books.' },
+        { t: 'mcq', q: 'How many more books did Class IX read than Class VIII?', opts: ['24', '36', '48', '60'], a: 1, why: 'Class IX read 108 and Class VIII read 72, so the difference is 108 − 72 = 36.' },
+        { t: 'mcq', q: 'What was the average number of books read by each class?', opts: ['72', '84', '90', '96'], a: 2, why: 'The total is 360 books shared by four classes, so the average is 360 ÷ 4 = 90.' },
+        { t: 'text', q: 'In which month is the reading challenge held? <span class="hint">(one word)</span>', parts: [{ a: ['october'] }], why: 'The passage begins: “Every October the library at Vidya Niketan runs a reading challenge.”' },
+        { t: 'text', q: 'Fill in the blank: A sticker counted only if the student had not read that ____________ before. <span class="hint">(one word)</span>', parts: [{ a: ['author'] }], why: 'The librarian added the rule that a sticker counted only if the student had not read that author before.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Class VIII read more books than Class VI.”', a: false, why: 'Class VIII read 72 books while Class VI read 84, so Class VIII read fewer, not more.' },
+        { t: 'mcq', q: 'Complete the sentence: The librarian extended the challenge because ____________.', opts: ['the library had no books left', 'students were reading more and asking for new titles', 'the principal ordered her to do so', 'no student had finished a book'], a: 1, why: 'The challenge was extended and twenty new titles were bought, because students were reading more and asking for new subjects.' },
+        { t: 'text', q: 'How many new titles did the principal agree to buy? <span class="hint">(one word)</span>', parts: [{ a: ['twenty', '20'] }], why: 'The principal agreed to buy twenty new titles in the subjects that had been ignored.' }
+      ]
+    },
+    {
+      title: 'The Waste Audit',
+      paras: [
+        'For one week in August, students at Greenfield School did something unusual: instead of emptying the bins, they opened them. Every lunchtime a team of eight weighed the waste from the canteen and the classrooms, sorted it into four materials, and wrote the figures on a chart in the corridor.',
+        'The first day was the shock. The bin outside the canteen was heavy with food — whole rotis, unopened packets of biscuits, half-eaten fruit — that had been bought and never finished. The students had expected plastic to be the biggest problem, because that is what most campaigns talk about. Paper came second, mostly worksheets printed on one side. Plastic was third, and glass, which hardly anyone thought about, was the smallest pile.',
+        'By Friday the team had 60 kilograms of waste in total. Nobody could say the school was dirty; the bins had simply hidden the truth. The team then asked a different question: what could have been avoided? Almost all the food could have been, if portions had been smaller and packets left unopened. Most of the paper could have been, if both sides had been used. The plastic and the glass could at least have been separated and sold.',
+        'The findings were read out at assembly. The canteen now serves smaller portions and keeps a “share table” where unopened packets are left for anyone who wants them. Food waste goes to a compost pit behind the kitchen, the office prints on both sides, and two bins — one for paper and glass, one for everything else — stand at the gate.',
+        'The audit cost nothing but a week of lunchtimes. The team’s report ended with a line that the principal has printed on a card above every bin: “We cannot manage what we have never weighed.”'
+      ],
+      table: {
+        caption: 'Waste collected in one week, sorted by material',
+        head: ['Material', 'Waste collected in one week (kg)'],
+        rows: [['Food', '25'], ['Paper', '18'], ['Plastic', '12'], ['Glass', '5']]
+      },
+      questions: [
+        { t: 'mcq', q: 'How much food waste was collected in the week?', opts: ['5 kilograms', '12 kilograms', '25 kilograms', '60 kilograms'], a: 2, why: 'According to the table, food waste came to 25 kilograms.' },
+        { t: 'mcq', q: 'Which material made up the largest share of the waste?', opts: ['Food', 'Paper', 'Plastic', 'Glass'], a: 0, why: 'Food was 25 kilograms, more than paper (18), plastic (12) or glass (5).' },
+        { t: 'mcq', q: 'What was the total amount of waste collected in one week?', opts: ['45 kilograms', '50 kilograms', '60 kilograms', '70 kilograms'], a: 2, why: 'The total is 25 + 18 + 12 + 5 = 60 kilograms.' },
+        { t: 'mcq', q: 'How much more food waste than plastic waste was collected?', opts: ['7 kilograms', '13 kilograms', '25 kilograms', '37 kilograms'], a: 1, why: 'Food was 25 kilograms and plastic 12, so the difference is 25 − 12 = 13 kilograms.' },
+        { t: 'mcq', q: 'If the food, paper and glass were all kept out of the landfill, how much waste would still go to it?', opts: ['5 kilograms', '12 kilograms', '18 kilograms', '48 kilograms'], a: 1, why: 'Food, paper and glass together weigh 25 + 18 + 5 = 48 kilograms, so the 12 kilograms of plastic would still go to the landfill.' },
+        { t: 'text', q: 'How many days did the audit last? <span class="hint">(one word)</span>', parts: [{ a: ['five', '5'], num: true }], why: 'The audit ran for one week, from the first day to Friday — five days.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) decayed food waste used to enrich soil —', a: ['compost'] }, { label: '(b) the amount of food served to one person —', a: ['portion', 'portions'] }], why: 'Food waste goes to a ‘compost’ pit, and a ‘portion’ is the amount of food served to one person.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “Plastic made up the largest share of the waste.”', a: false, why: 'Food was the largest at 25 kilograms; plastic was third at 12 kilograms.' },
+        { t: 'mcq', q: 'Complete the sentence: The students were surprised because ____________.', opts: ['the bins were always empty', 'they had expected plastic to be the biggest problem', 'the canteen had closed for the week', 'glass weighed the most of all'], a: 1, why: 'The students had expected plastic to be the biggest problem, because that is what most campaigns talk about.' },
+        { t: 'text', q: 'What did the team do to the waste each lunchtime before it was thrown away? <span class="hint">(one word)</span>', parts: [{ a: ['weighed'] }], why: 'Instead of emptying the bins, the team weighed the waste and sorted it into four materials.' }
+      ]
+    },
+    {
+      title: 'Cycle to School Week',
+      paras: [
+        'For five days in November, students at Nirmala School were asked to leave the car at home and come by bicycle. The idea came from the science club, which had counted the traffic outside the gate: between 7.40 and 8.00 in the morning, forty-one cars waited at the same crossing, and most carried a single child.',
+        'The first morning was chaos. Bicycles arrived from every direction, the racks were too few, and a boy who had not ridden for two years fell at the gate. By Tuesday two teachers were guiding the younger riders in from the corner, and the head boy had drawn a route map on the notice board. On Wednesday a puncture repair kit appeared, donated by a cycle shop down the road.',
+        'By Friday the racks were full long before the bell. The club counted the cyclists every morning and wrote the numbers on a chart. Monday’s figure, 120, looked unremarkable. Tuesday’s was 138. Wednesday’s 150 was helped by a clear sky. Thursday dipped to 132 when a shower fell at seven. Friday reached 160, the highest of the week, when the club promised a cricket match for the class with the most riders.',
+        'The club then did the arithmetic that made the week worth repeating. Each cyclist lived about three kilometres from school, so the week’s rides covered 2,100 kilometres that would otherwise have been driven. At 120 grams of carbon dioxide per kilometre, that is roughly 252 kilograms of the gas that never entered the air above the school gate.',
+        'Not everything worked. Two students live eleven kilometres away and came by bus instead, and one class had no cycle at all. The club has asked the panchayat for a covered rack and a spare set of cycles, so that next year the week is not limited to those who already own a bicycle.'
+      ],
+      table: {
+        caption: 'Cyclists counted at the school gate each morning',
+        head: ['Day', 'Students who cycled'],
+        rows: [['Monday', '120'], ['Tuesday', '138'], ['Wednesday', '150'], ['Thursday', '132'], ['Friday', '160']]
+      },
+      questions: [
+        { t: 'mcq', q: 'On which day did the most students cycle to school?', opts: ['Monday', 'Wednesday', 'Thursday', 'Friday'], a: 3, why: 'Friday reached 160 cyclists, the highest figure in the table.' },
+        { t: 'mcq', q: 'How many students cycled during the whole week?', opts: ['600', '680', '700', '720'], a: 2, why: 'The total is 120 + 138 + 150 + 132 + 160 = 700 student-trips.' },
+        { t: 'mcq', q: 'What was the average number of cyclists per day?', opts: ['120', '132', '140', '150'], a: 2, why: 'The week’s total is 700 over five days, so the average is 700 ÷ 5 = 140.' },
+        { t: 'mcq', q: 'How many more students cycled on Friday than on Monday?', opts: ['20', '28', '40', '48'], a: 2, why: 'Friday had 160 cyclists and Monday 120, so the difference is 160 − 120 = 40.' },
+        { t: 'mcq', q: 'If every cyclist rode 3 kilometres each day, how far did the week’s rides cover altogether?', opts: ['1,400 kilometres', '2,100 kilometres', '2,400 kilometres', '3,500 kilometres'], a: 1, why: '700 rides of 3 kilometres each cover 700 × 3 = 2,100 kilometres.' },
+        { t: 'text', q: 'How many days did the cycle week last? <span class="hint">(one word)</span>', parts: [{ a: ['five', '5'], num: true }], why: 'The passage says that for five days students were asked to come by bicycle.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) a person who rides a bicycle —', a: ['cyclist', 'cyclists'] }, { label: '(b) a small hole in a tyre —', a: ['puncture'] }], why: 'A ‘cyclist’ rides a bicycle, and a ‘puncture’ is a small hole in a tyre.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “More students cycled on Thursday than on Wednesday.”', a: false, why: 'Thursday had 132 cyclists and Wednesday 150, so fewer cycled on Thursday.' },
+        { t: 'mcq', q: 'Complete the sentence: Thursday’s figure was lower because ____________.', opts: ['a shower fell at seven', 'the racks were full', 'the class had a test', 'the cycle shop closed'], a: 0, why: 'The passage says Thursday dipped to 132 when a shower fell at seven.' },
+        { t: 'text', q: 'How many kilograms of carbon dioxide were kept out of the air? <span class="hint">(one word)</span>', parts: [{ a: ['252'], num: true }], why: 'At 120 grams per kilometre over 2,100 kilometres, roughly 252 kilograms of carbon dioxide were not released.' }
+      ]
+    },
+    {
+      title: 'Sleep, Screens and School',
+      paras: [
+        'Last term the school nurse asked 300 students one question that turned out to be harder to answer than expected: how much do you sleep? The answers were collected without names, so nobody had to pretend.',
+        'Students were then grouped by a second question — how long they looked at a screen after nine at night, whether a phone, a television or a laptop. The pattern in the answers was clear. The 90 students who kept screens out of the last hour before bed reported 8.5 hours of sleep on an average school night. The 120 who used a screen for up to an hour reported 8.0. The 60 who used one for one to two hours reported 7.2, and the 30 who used one for more than two hours reported only 6.4.',
+        'The nurse was careful about what the numbers mean. A survey of this kind cannot prove that screens cause short sleep; it may be that students who sleep badly are the ones who reach for a screen. What it can do is point at a habit worth testing. She asked one class to try a two-week experiment: phones charged outside the bedroom, no screens after nine. The class’s reported sleep rose by about forty minutes, and, more surprisingly, the number of students arriving late fell.',
+        'Not every family could follow the advice. In several homes the only screen is shared, and a study hour after dinner is the only quiet time a student has. The nurse’s final report says so plainly, and suggests a smaller rule that almost any household can keep: the last twenty minutes before sleep should belong to something that is not a screen.'
+      ],
+      table: {
+        caption: 'Screen time after 9 pm and average hours of sleep reported by 300 students',
+        head: ['Screen time after 9 pm', 'Students', 'Average sleep (hours)'],
+        rows: [['No screen', '90', '8.5'], ['Up to 1 hour', '120', '8.0'], ['1–2 hours', '60', '7.2'], ['More than 2 hours', '30', '6.4']]
+      },
+      questions: [
+        { t: 'mcq', q: 'Which group reported the most sleep?', opts: ['Students with no screen after 9 pm', 'Students with up to 1 hour of screen time', 'Students with 1–2 hours of screen time', 'Students with more than 2 hours of screen time'], a: 0, why: 'The group with no screen after 9 pm reported 8.5 hours, the highest in the table.' },
+        { t: 'mcq', q: 'How many hours of sleep did the group with more than two hours of screen time report?', opts: ['6.4', '7.2', '8.0', '8.5'], a: 0, why: 'According to the table, the group with more than two hours of screen time reported only 6.4 hours.' },
+        { t: 'mcq', q: 'How many students took part in the survey?', opts: ['180', '240', '300', '360'], a: 2, why: 'The four groups are 90 + 120 + 60 + 30 = 300 students.' },
+        { t: 'mcq', q: 'How many hours less sleep did the 1–2 hour group get than the no-screen group?', opts: ['0.7 hours', '1.3 hours', '1.5 hours', '2.1 hours'], a: 1, why: '8.5 − 7.2 = 1.3 hours less sleep for the 1–2 hour group.' },
+        { t: 'mcq', q: 'How many students used a screen for more than two hours after 9 pm?', opts: ['30', '60', '90', '120'], a: 0, why: 'According to the table, 30 students used a screen for more than two hours.' },
+        { t: 'text', q: 'After what time at night was screen time counted? <span class="hint">(one word)</span>', parts: [{ a: ['nine', '9'], num: true }], why: 'Students were grouped by how long they looked at a screen after nine at night.' },
+        { t: 'text', q: 'Find words from the passage which mean the following: <span class="hint">(one word each)</span>', parts: [{ label: '(a) without names being given —', a: ['anonymously'] }, { label: '(b) a set of questions used to collect information —', a: ['survey'] }], why: 'The answers were collected ‘anonymously’, and a ‘survey’ is a set of questions used to collect information.' },
+        { t: 'tf', q: 'State whether the following statement is TRUE or FALSE: “The survey proves that screens cause short sleep.”', a: false, why: 'The nurse says a survey of this kind cannot prove that screens cause short sleep.' },
+        { t: 'mcq', q: 'Complete the sentence: In the two-week experiment, the class’s reported sleep rose by ____________.', opts: ['about ten minutes', 'about twenty minutes', 'about forty minutes', 'about two hours'], a: 2, why: 'The passage says the class’s reported sleep rose by about forty minutes.' },
+        { t: 'text', q: 'Where were phones charged during the experiment? <span class="hint">(one word)</span>', parts: [{ a: ['outside'] }], why: 'The experiment asked for phones to be charged outside the bedroom.' }
+      ]
+    }
+  ];
+
+  var ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
+  var LETTERS = ['a', 'b', 'c', 'd'];
+
+  var root = document.documentElement;
+  try { var savedTheme = localStorage.getItem('c7-reading-theme'); if (savedTheme) root.setAttribute('data-theme', savedTheme); } catch (e) {}
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-reading-theme', next); } catch (e) {}
+  });
+
+  var tabsEl = document.getElementById('tabs');
+  var passageCard = document.getElementById('passageCard');
+  var quiz = document.getElementById('quiz');
+  var scorebar = document.getElementById('scorebar');
+  var cur = 0;
+  var state = PASSAGES.map(function () { return { sel: {}, text: {}, res: {}, score: null }; });
+
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function norm(s) { return (s || '').toString().trim().toLowerCase().replace(/\s+/g, ' '); }
+  function whyHtml(q) { return q.why ? '<span class="why">' + esc(q.why) + '</span>' : ''; }
+
+  function renderTabs() {
+    tabsEl.innerHTML = PASSAGES.map(function (p, i) {
+      return '<button type="button" class="tab' + (i === cur ? ' active' : '') + '" data-i="' + i + '">Passage ' + (i + 1) + '</button>';
+    }).join('');
+  }
+
+  function renderPassage() {
+    var p = PASSAGES[cur];
+    var html = '<span class="section-tag">Section A — Reading Skill</span>';
+    html += '<h2>' + (cur + 1) + '. ' + esc(p.title) + '</h2>';
+    html += '<div class="passage">' + p.paras.map(function (t) { return '<p>' + t + '</p>'; }).join('');
+    if (p.table) {
+      var tb = p.table;
+      html += '<div class="table-wrap"><table aria-label="' + esc(tb.caption) + '"><thead><tr>' +
+        tb.head.map(function (h) { return '<th>' + esc(h) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+        tb.rows.map(function (r) {
+          return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>';
+    }
+    html += '</div>';
+    passageCard.innerHTML = html;
+  }
+
+  function questionHtml(q, qi) {
+    var h = '<div class="q" data-qi="' + qi + '">';
+    h += '<div class="qhead"><span class="num">(' + ROMAN[qi] + ')</span> ' + q.q + '</div>';
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var opts = q.t === 'tf' ? ['TRUE', 'FALSE'] : q.opts;
+      h += '<div class="options">';
+      opts.forEach(function (o, oi) {
+        var val = q.t === 'tf' ? (oi === 0 ? 'true' : 'false') : String(oi);
+        h += '<button type="button" class="opt" data-val="' + val + '">' +
+          (q.t === 'tf' ? '' : '<span class="letter">(' + LETTERS[oi] + ')</span>') +
+          '<span>' + esc(o) + '</span></button>';
+      });
+      h += '</div>';
+    } else {
+      q.parts.forEach(function (part, pi) {
+        var id = 'q' + qi + 'p' + pi;
+        h += '<div class="subpart">';
+        if (part.label) h += '<label for="' + id + '">' + esc(part.label) + '</label>';
+        h += '<input id="' + id + '" class="word-input" data-part="' + pi + '" type="text" inputmode="' +
+          (part.num ? 'numeric' : 'text') + '" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Type one word">';
+        h += '</div>';
+      });
+    }
+    h += '<div class="qtools"><button type="button" class="link-btn show-ans" data-shown="false">Show answer</button></div>';
+    h += '<div class="feedback"></div>';
+    h += '</div>';
+    return h;
+  }
+
+  function renderQuiz() {
+    var p = PASSAGES[cur];
+    var html = '<p class="instructions"><strong>Answer the questions.</strong> Tap an option where choices are given; type <strong>one word</strong> where the answer is one word (capital or small letters both accepted). Use <strong>Check answers</strong> for feedback on all ten, or <strong>Show answer</strong> on a single question to see the model answer and why.</p>';
+    html += p.questions.map(questionHtml).join('');
+    html += '<div class="actions"><button class="btn primary" id="checkBtn" type="button">Check answers</button>' +
+      '<button class="btn" id="resetBtn" type="button">Reset this passage</button></div>';
+    quiz.innerHTML = html;
+    restore();
+    updateScore();
+  }
+
+  function resetShow(qEl) {
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'false'); sb.textContent = 'Show answer'; }
+  }
+
+  function mark(q, qi) {
+    var st = state[cur];
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return false;
+    var fb = qEl.querySelector('.feedback');
+    var ok = false;
+    qEl.classList.remove('correct', 'wrong');
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var ans = q.t === 'tf' ? String(q.a) : String(q.a);
+      var sel = st.sel[qi];
+      qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('correct', 'wrong'); });
+      var good = qEl.querySelector('.opt[data-val="' + ans + '"]');
+      if (good) good.classList.add('correct');
+      if (sel === undefined) {
+        if (good) good.classList.remove('correct');
+        fb.textContent = 'Not answered yet.';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      if (sel !== ans) {
+        var bad = qEl.querySelector('.opt[data-val="' + sel + '"]');
+        if (bad) { bad.classList.remove('correct'); bad.classList.add('wrong'); }
+      }
+      ok = sel === ans;
+      fb.innerHTML = esc(ok ? 'Correct.' : 'Not quite. The correct answer is highlighted.') + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    } else {
+      var inputs = qEl.querySelectorAll('.word-input');
+      var filled = true, goodCount = 0;
+      q.parts.forEach(function (part, pi) {
+        var inp = inputs[pi];
+        var val = norm((st.text[qi] || [])[pi] || '');
+        if (!inp) return;
+        inp.classList.remove('correct', 'wrong');
+        if (!val) { filled = false; return; }
+        if (part.a.some(function (x) { return norm(x) === val; })) { goodCount++; inp.classList.add('correct'); }
+        else inp.classList.add('wrong');
+      });
+      if (!filled) {
+        fb.textContent = q.parts.length > 1 ? 'Not answered yet (fill in both parts, one word each).' : 'Not answered yet (type one word).';
+        fb.className = 'feedback bad';
+        return false;
+      }
+      ok = goodCount === q.parts.length;
+      var msg;
+      if (ok) msg = 'Correct.';
+      else if (q.parts.length > 1) msg = 'Not quite. Correct answers: ' + q.parts.map(function (part, pi) { return '(' + LETTERS[pi] + ') ' + part.a[0]; }).join(', ') + '.';
+      else msg = 'Not quite. Correct answer: ' + q.parts[0].a[0] + '.';
+      fb.innerHTML = esc(msg) + whyHtml(q);
+      fb.className = 'feedback ' + (ok ? 'ok' : 'bad');
+    }
+    qEl.classList.add(ok ? 'correct' : 'wrong');
+    st.res[qi] = ok;
+    return ok;
+  }
+
+  function showAnswer(q, qi) {
+    var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+    if (!qEl) return;
+    var fb = qEl.querySelector('.feedback');
+    if (q.t === 'mcq' || q.t === 'tf') {
+      var ans = String(q.a);
+      qEl.querySelectorAll('.opt').forEach(function (b) { b.classList.toggle('correct', b.getAttribute('data-val') === ans); });
+      var label = q.t === 'tf' ? (q.a ? 'TRUE' : 'FALSE') : '(' + LETTERS[q.a] + ') ' + q.opts[q.a];
+      fb.innerHTML = esc('Answer: ' + label + '.') + whyHtml(q);
+    } else {
+      var txt = q.parts.map(function (part, pi) {
+        return q.parts.length > 1 ? '(' + LETTERS[pi] + ') ' + part.a[0] : part.a[0];
+      }).join('; ');
+      fb.innerHTML = esc('Answer: ' + txt + '.') + whyHtml(q);
+    }
+    fb.className = 'feedback info';
+    var sb = qEl.querySelector('.show-ans');
+    if (sb) { sb.setAttribute('data-shown', 'true'); sb.textContent = 'Hide answer'; }
+  }
+
+  function restore() {
+    var st = state[cur];
+    PASSAGES[cur].questions.forEach(function (q, qi) {
+      var qEl = quiz.querySelector('.q[data-qi="' + qi + '"]');
+      if (!qEl) return;
+      if (st.sel[qi] !== undefined) {
+        var b = qEl.querySelector('.opt[data-val="' + st.sel[qi] + '"]');
+        if (b) b.classList.add('selected');
+      }
+      if (st.text[qi]) {
+        var inputs = qEl.querySelectorAll('.word-input');
+        st.text[qi].forEach(function (v, pi) { if (inputs[pi]) inputs[pi].value = v; });
+      }
+    });
+    if (st.score !== null) {
+      PASSAGES[cur].questions.forEach(function (q, qi) { mark(q, qi); });
+    }
+  }
+
+  function updateScore() {
+    var st = state[cur];
+    var checked = state.filter(function (s) { return s.score !== null; });
+    var total = checked.reduce(function (a, s) { return a + s.score; }, 0);
+    var head = 'Passage ' + (cur + 1) + ': ' + (st.score === null ? '—' : st.score) + ' / ' + PASSAGES[cur].questions.length;
+    var note = checked.length
+      ? 'Checked so far: ' + checked.length + ' of ' + PASSAGES.length + ' passages · ' + total + ' / ' + (checked.length * PASSAGES[cur].questions.length) + ' correct.'
+      : 'Tap an option to choose it; you can change it any time before you check.';
+    scorebar.innerHTML = head + '<div class="small">' + note + '</div>';
+  }
+
+  document.addEventListener('click', function (ev) {
+    var tab = ev.target.closest('.tab');
+    if (tab) {
+      cur = Number(tab.getAttribute('data-i'));
+      renderTabs();
+      renderPassage();
+      renderQuiz();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (ev.target.id === 'checkBtn') {
+      var score = 0;
+      PASSAGES[cur].questions.forEach(function (q, qi) { if (mark(q, qi)) score++; });
+      state[cur].score = score;
+      updateScore();
+      return;
+    }
+
+    if (ev.target.id === 'resetBtn') {
+      state[cur] = { sel: {}, text: {}, res: {}, score: null };
+      renderQuiz();
+      updateScore();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    var sb = ev.target.closest('.show-ans');
+    if (sb && quiz.contains(sb)) {
+      var qEl = sb.closest('.q');
+      var qi = Number(qEl.getAttribute('data-qi'));
+      if (sb.getAttribute('data-shown') === 'true') {
+        var fb = qEl.querySelector('.feedback');
+        fb.textContent = '';
+        fb.className = 'feedback';
+        qEl.classList.remove('correct', 'wrong');
+        qEl.querySelectorAll('.opt').forEach(function (b) {
+          b.classList.remove('correct', 'wrong');
+          if (state[cur].sel[qi] !== undefined && b.getAttribute('data-val') === state[cur].sel[qi]) b.classList.add('selected');
+        });
+        resetShow(qEl);
+      } else {
+        showAnswer(PASSAGES[cur].questions[qi], qi);
+      }
+      return;
+    }
+
+    var opt = ev.target.closest('.opt');
+    if (opt && quiz.contains(opt)) {
+      var qBox = opt.closest('.q');
+      var qi2 = Number(qBox.getAttribute('data-qi'));
+      qBox.querySelectorAll('.opt').forEach(function (b) { b.classList.remove('selected', 'correct', 'wrong'); });
+      opt.classList.add('selected');
+      state[cur].sel[qi2] = opt.getAttribute('data-val');
+      delete state[cur].res[qi2];
+      state[cur].score = null;
+      qBox.classList.remove('correct', 'wrong');
+      var fb2 = qBox.querySelector('.feedback');
+      fb2.textContent = '';
+      fb2.className = 'feedback';
+      resetShow(qBox);
+      updateScore();
+    }
+  });
+
+  document.addEventListener('input', function (ev) {
+    var inp = ev.target.closest ? ev.target.closest('.word-input') : null;
+    if (!inp || !quiz.contains(inp)) return;
+    var qBox = inp.closest('.q');
+    var qi = Number(qBox.getAttribute('data-qi'));
+    var pi = Number(inp.getAttribute('data-part'));
+    var st = state[cur];
+    st.text[qi] = st.text[qi] || [];
+    st.text[qi][pi] = inp.value;
+    delete st.res[qi];
+    st.score = null;
+    inp.classList.remove('correct', 'wrong');
+    qBox.classList.remove('correct', 'wrong');
+    var fb = qBox.querySelector('.feedback');
+    fb.textContent = '';
+    fb.className = 'feedback';
+    resetShow(qBox);
+    updateScore();
+  });
+
+  renderTabs();
+  renderPassage();
+  renderQuiz();
+})();
+</script>
+</body>
+</html>

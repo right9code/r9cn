@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Writing — Q4 Notice</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --warn: #92400e; --warn-soft: #fef3c7; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --warn: #fcd34d; --warn-soft: #78350f; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.small { font-size: .86rem; color: var(--muted); font-weight: 500; margin-top: 4px; }
+/* sequence */
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+/* notice & tap-fill */
+.notice-box { border: 2px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.notice-box .inst { text-align: center; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 2px; }
+.notice-box .label-notice { text-align: center; font-weight: 800; margin: 4px 0 8px; }
+.notice-box .line { margin: 4px 0; }
+.notice-box .center { text-align: center; }
+.notice-box .right-block { margin-top: 10px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.chip.selected-bank { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); font-weight: 700; }
+.blank { display: inline-block; min-width: 80px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Writing (Q4: Notice)</h1>
+      <p class="sub">Section B · Format sequence + tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Notice format reminders:</strong> A notice is written under the <strong>name of the institution/school</strong> and enclosed in a box. It includes “NOTICE”, date, heading, body (what, when, where, who, whom to contact), and sign-off. The <strong>last line of the body</strong> should be: <em>“For further details, contact the undersigned.”</em></p>
+  </div>
+
+  <div class="card" id="part1">
+    <div class="qhead"><span class="num">Part 1.</span> Arrange the parts of a notice in the correct order</div>
+    <p class="prompt">Use ▲/▼ to arrange the notice format parts in the correct sequence, then check.</p>
+    <ul class="seq-list" id="seqList"></ul>
+    <div class="actions">
+      <button class="btn primary" id="seqCheck" type="button">Check order</button>
+      <button class="btn" id="seqReset" type="button">Reset</button>
+    </div>
+    <div class="feedback" id="seqFeedback"></div>
+  </div>
+
+  <div class="card">
+    <div class="qhead"><span class="num">Part 2.</span> Tap-to-fill notices (5 questions)</div>
+    <p class="prompt">Read each scenario. Tap a blank to select it, then tap an option from the bank to fill it. Tap a filled blank to clear it. Check each notice.</p>
+  </div>
+
+  <div id="fillQuestions"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c7-notice-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-notice-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  // Part 1: format sequence
+  var correctOrder = [
+    'Name of the Institution/School',
+    'NOTICE',
+    'Date',
+    'Heading / Title',
+    'Body (event details: what, when, where, who)',
+    'For further details, contact the undersigned.',
+    'Signature',
+    'Name',
+    'Designation'
+  ];
+  var seqList = document.getElementById('seqList');
+  var seqState = [];
+
+  function renderSeq() {
+    seqList.innerHTML = '';
+    seqState.forEach(function(text, idx){
+      var li = document.createElement('li');
+      li.className = 'seq-item';
+      li.dataset.correct = correctOrder[idx] === text ? '1' : '0';
+      li.innerHTML = '<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span>' +
+        '<div class="seq-controls"><button type="button" class="seq-btn up" aria-label="Move up">▲</button>' +
+        '<button type="button" class="seq-btn down" aria-label="Move down">▼</button></div>';
+      li.querySelector('.seq-text').textContent = text;
+      li.querySelector('.up').addEventListener('click', function(){ if(idx>0){ var t=seqState[idx-1]; seqState[idx-1]=seqState[idx]; seqState[idx]=t; renderSeq(); clearSeqFb(); } });
+      li.querySelector('.down').addEventListener('click', function(){ if(idx<seqState.length-1){ var t=seqState[idx+1]; seqState[idx+1]=seqState[idx]; seqState[idx]=t; renderSeq(); clearSeqFb(); } });
+      seqList.appendChild(li);
+    });
+  }
+  function clearSeqFb(){ document.getElementById('seqFeedback').textContent=''; document.getElementById('seqFeedback').className='feedback'; Array.from(seqList.children).forEach(function(li){li.classList.remove('correct','wrong');}); }
+  function resetSeq(){ seqState = shuffle(correctOrder); renderSeq(); clearSeqFb(); }
+  document.getElementById('seqCheck').addEventListener('click', function(){
+    var okCount=0;
+    Array.from(seqList.children).forEach(function(li, idx){
+      var ok = seqState[idx] === correctOrder[idx];
+      li.classList.toggle('correct', ok); li.classList.toggle('wrong', !ok);
+      if(ok) okCount++;
+    });
+    var fb = document.getElementById('seqFeedback');
+    fb.textContent = 'Correctly placed: '+okCount+' / '+correctOrder.length + (okCount===correctOrder.length ? ' — Correct order!' : '. Move the red items and try again.');
+    fb.className = 'feedback ' + (okCount===correctOrder.length ? 'ok':'bad');
+  });
+  document.getElementById('seqReset').addEventListener('click', resetSeq);
+  resetSeq();
+
+  // Part 2: tap-to-fill questions
+  var questions = [
+    {
+      scenario: 'You are the Head Boy of Green Valley Public School. Write a notice informing students of Classes VI to VIII that school timings will change from 1 December 2026 because of dense winter fog. The new timings will be 8:15 AM to 1:30 PM.',
+      template: [
+        {type:'inst', key:'inst'}, {type:'label'}, {type:'date', key:'date'},
+        {type:'heading', key:'heading'},
+        {type:'body', parts:['This is to inform students of Classes VI to VIII that the school timings will change from ', {k:'date2'}, ' because of ', {k:'reason'}, '. The new timings will be ', {k:'time'}, ' instead of 7:45 AM to 2:30 PM. Students are requested to reach school on time and inform their ', {k:'extra'}, ' about the change.']},
+        {type:'contact'}, {type:'sign'}, {type:'name', key:'name'}, {type:'desig', key:'desig'}
+      ],
+      blanks: {
+        inst: {answer:'GREEN VALLEY PUBLIC SCHOOL'},
+        date: {answer:'24 November 2026'},
+        heading: {answer:'CHANGE IN SCHOOL TIMINGS'},
+        date2: {answer:'1 December 2026'},
+        reason: {answer:'dense winter fog'},
+        time: {answer:'8:15 AM to 1:30 PM'},
+        extra: {answer:'parents'},
+        name: {answer:'Aditya Rao'},
+        desig: {answer:'Head Boy'}
+      },
+      bank: ['GREEN VALLEY PUBLIC SCHOOL','24 November 2026','CHANGE IN SCHOOL TIMINGS','1 December 2026','dense winter fog','8:15 AM to 1:30 PM','parents','Aditya Rao','Head Boy','heavy rain','10:00 AM to 4:00 PM','neighbours']
+    },
+    {
+      scenario: 'You are the Head Girl of Sunrise Model School. Write a notice informing students of Classes VI and VII about a Book Fair to be held in the school library from 20 to 22 October 2026 during school hours.',
+      template: [
+        {type:'inst', key:'inst'}, {type:'label'}, {type:'date', key:'date'},
+        {type:'heading', key:'heading'},
+        {type:'body', parts:['This is to inform students of Classes VI and VII that a ', {k:'event'}, ' will be organised in the ', {k:'venue'}, ' from ', {k:'date2'}, ' during ', {k:'time'}, '. Students may visit and purchase books of their choice.']},
+        {type:'contact'}, {type:'sign'}, {type:'name', key:'name'}, {type:'desig', key:'desig'}
+      ],
+      blanks: {
+        inst: {answer:'SUNRISE MODEL SCHOOL'},
+        date: {answer:'14 October 2026'},
+        heading: {answer:'BOOK FAIR'},
+        event: {answer:'Book Fair'},
+        date2: {answer:'20 to 22 October 2026'},
+        venue: {answer:'school library'},
+        time: {answer:'school hours'},
+        name: {answer:'Ananya Verma'},
+        desig: {answer:'Head Girl'}
+      },
+      bank: ['SUNRISE MODEL SCHOOL','14 October 2026','BOOK FAIR','Book Fair','20 to 22 October 2026','school library','school hours','Ananya Verma','Head Girl','school hall','4:00 PM','Sports Captain']
+    },
+    {
+      scenario: 'You are Arjun Singh of Class VII-B at Riverdale Public School. You found a blue water bottle in the science laboratory. Write a notice asking the owner to collect it from you.',
+      template: [
+        {type:'inst', key:'inst'}, {type:'label'}, {type:'date', key:'date'},
+        {type:'heading', key:'heading'},
+        {type:'body', parts:['This is to inform all students that a ', {k:'item'}, ' has been found in the ', {k:'venue'}, '. The owner may collect it from ', {k:'person'}, ' during the lunch break after showing proper identification.']},
+        {type:'contact'}, {type:'sign'}, {type:'name', key:'name'}, {type:'desig', key:'desig'}
+      ],
+      blanks: {
+        inst: {answer:'RIVERDALE PUBLIC SCHOOL'},
+        date: {answer:'10 August 2026'},
+        heading: {answer:'FOUND: BLUE WATER BOTTLE'},
+        item: {answer:'blue water bottle'},
+        venue: {answer:'science laboratory'},
+        person: {answer:'the undersigned in Class VII-B'},
+        name: {answer:'Arjun Singh'},
+        desig: {answer:'Class VII-B'}
+      },
+      bank: ['RIVERDALE PUBLIC SCHOOL','10 August 2026','FOUND: BLUE WATER BOTTLE','blue water bottle','science laboratory','the undersigned in Class VII-B','Arjun Singh','Class VII-B','school playground','red lunch box','Head Boy']
+    },
+    {
+      scenario: 'You are the Secretary of the Science Club of Harmony International School. Write a notice informing students of Classes VI to VIII about a Science Exhibition on 18 November 2026 in the school hall from 9:00 AM to 1:00 PM. Interested students must give their names by 10 November 2026.',
+      template: [
+        {type:'inst', key:'inst'}, {type:'label'}, {type:'date', key:'date'},
+        {type:'heading', key:'heading'},
+        {type:'body', parts:['This is to inform students of Classes VI to VIII that a ', {k:'event'}, ' will be held on ', {k:'date2'}, ' in the ', {k:'venue'}, ' from ', {k:'time'}, '. Interested students must give their names to their class teachers by ', {k:'deadline'}, '.']},
+        {type:'contact'}, {type:'sign'}, {type:'name', key:'name'}, {type:'desig', key:'desig'}
+      ],
+      blanks: {
+        inst: {answer:'HARMONY INTERNATIONAL SCHOOL'},
+        date: {answer:'1 November 2026'},
+        heading: {answer:'SCIENCE EXHIBITION'},
+        event: {answer:'Science Exhibition'},
+        date2: {answer:'18 November 2026'},
+        venue: {answer:'school hall'},
+        time: {answer:'9:00 AM to 1:00 PM'},
+        deadline: {answer:'10 November 2026'},
+        name: {answer:'Priya Nair'},
+        desig: {answer:'Secretary, Science Club'}
+      },
+      bank: ['HARMONY INTERNATIONAL SCHOOL','1 November 2026','SCIENCE EXHIBITION','Science Exhibition','18 November 2026','school hall','9:00 AM to 1:00 PM','10 November 2026','Priya Nair','Secretary, Science Club','school library','15 November 2026']
+    },
+    {
+      scenario: 'You are the Head Boy of Oakwood Senior School. Write a notice informing students of all classes about a Cleanliness Drive on 2 October 2026 in and around the school campus at 7:30 AM. Students should bring gloves and wear their house uniforms.',
+      template: [
+        {type:'inst', key:'inst'}, {type:'label'}, {type:'date', key:'date'},
+        {type:'heading', key:'heading'},
+        {type:'body', parts:['This is to inform all students that a ', {k:'event'}, ' will be conducted on ', {k:'date2'}, ' in and around the ', {k:'venue'}, ' at ', {k:'time'}, '. Students are requested to bring gloves and wear their ', {k:'extra'}, '.']},
+        {type:'contact'}, {type:'sign'}, {type:'name', key:'name'}, {type:'desig', key:'desig'}
+      ],
+      blanks: {
+        inst: {answer:'OAKWOOD SENIOR SCHOOL'},
+        date: {answer:'25 September 2026'},
+        heading: {answer:'CLEANLINESS DRIVE'},
+        event: {answer:'Cleanliness Drive'},
+        date2: {answer:'2 October 2026'},
+        venue: {answer:'school campus'},
+        time: {answer:'7:30 AM'},
+        extra: {answer:'house uniforms'},
+        name: {answer:'Kabir Sharma'},
+        desig: {answer:'Head Boy'}
+      },
+      bank: ['OAKWOOD SENIOR SCHOOL','25 September 2026','CLEANLINESS DRIVE','Cleanliness Drive','2 October 2026','school campus','7:30 AM','house uniforms','Kabir Sharma','Head Boy','sports uniforms','9:00 AM']
+    }
+  ];
+
+  var fillContainer = document.getElementById('fillQuestions');
+
+  questions.forEach(function(qd, qi){
+    var card = document.createElement('div');
+    card.className = 'q';
+    card.innerHTML = '<div class="qhead"><span class="num">2.'+(qi+1)+'</span> Notice writing (tap-to-fill)</div>';
+
+    var sc = document.createElement('div');
+    sc.className = 'scenario';
+    sc.innerHTML = '<strong>Scenario:</strong> ' + escapeHtml(qd.scenario);
+    card.appendChild(sc);
+
+    var box = document.createElement('div');
+    box.className = 'notice-box';
+    var state = { active: null }; // active blank id
+
+    function makeBlank(key){
+      var span = document.createElement('span');
+      span.className = 'blank';
+      span.dataset.key = key;
+      span.textContent = 'tap to fill';
+      span.addEventListener('click', function(e){
+        e.stopPropagation();
+        if (span.classList.contains('filled')) {
+          // clear
+          span.textContent = 'tap to fill';
+          span.classList.remove('filled','correct','wrong');
+          span.dataset.value = '';
+          state.active = span;
+          updateBankUsed();
+          setActive(span);
+          return;
+        }
+        setActive(span);
+      });
+      return span;
+    }
+
+    function setActive(span){
+      box.querySelectorAll('.blank').forEach(function(b){ b.classList.remove('active'); });
+      state.active = span;
+      if (span) span.classList.add('active');
+    }
+
+    qd.template.forEach(function(t){
+      if (t.type === 'inst') {
+        var d = document.createElement('div'); d.className = 'inst'; d.appendChild(makeBlank(t.key)); box.appendChild(d);
+      } else if (t.type === 'label') {
+        var d = document.createElement('div'); d.className = 'label-notice'; d.textContent = 'NOTICE'; box.appendChild(d);
+      } else if (t.type === 'date') {
+        var d = document.createElement('div'); d.className = 'line'; d.appendChild(makeBlank(t.key)); box.appendChild(d);
+      } else if (t.type === 'heading') {
+        var d = document.createElement('div'); d.className = 'line center'; d.style.fontWeight='700'; d.style.margin='8px 0'; d.appendChild(makeBlank(t.key)); box.appendChild(d);
+      } else if (t.type === 'body') {
+        var p = document.createElement('p'); p.className = 'line'; p.style.textAlign='justify';
+        t.parts.forEach(function(part){
+          if (typeof part === 'string') p.appendChild(document.createTextNode(part));
+          else p.appendChild(makeBlank(part.k));
+        });
+        box.appendChild(p);
+      } else if (t.type === 'contact') {
+        var p = document.createElement('p'); p.className = 'line'; p.style.marginTop='8px'; p.textContent = 'For further details, contact the undersigned.'; box.appendChild(p);
+      } else if (t.type === 'sign') {
+        var d = document.createElement('div'); d.className = 'right-block'; d.textContent = '(Signature)'; box.appendChild(d);
+      } else if (t.type === 'name') {
+        var d = document.createElement('div'); d.className = 'line'; d.appendChild(makeBlank(t.key)); box.appendChild(d);
+      } else if (t.type === 'desig') {
+        var d = document.createElement('div'); d.className = 'line'; d.appendChild(makeBlank(t.key)); box.appendChild(d);
+      }
+    });
+    card.appendChild(box);
+
+    // deselect active blank when clicking outside
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) { setActive(null); } });
+
+    var bankWrap = document.createElement('div');
+    bankWrap.innerHTML = '<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank = document.createElement('div'); bank.className = 'bank';
+    var bankItems = shuffle(qd.bank);
+    bankItems.forEach(function(text){
+      var chip = document.createElement('button');
+      chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){
+        e.stopPropagation();
+        if (chip.classList.contains('used')) return;
+        if (!state.active) {
+          // select first empty blank
+          var first = null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; });
+          if (first) setActive(first); else return;
+        }
+        var b = state.active;
+        b.textContent = text;
+        b.dataset.value = text;
+        b.classList.add('filled');
+        b.classList.remove('correct','wrong','active');
+        state.active = null;
+        updateBankUsed();
+      });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank);
+    card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var used = {};
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v){ used[v]=(used[v]||0)+1; } });
+      var counts = {};
+      bank.querySelectorAll('.chip').forEach(function(ch){
+        var v=ch.dataset.val; counts[v]=(counts[v]||0)+1;
+        var totalInBank = counts[v];
+        // count how many of this value used so far among same-valued chips
+        var usedSoFar = 0;
+        var idx = 0;
+        Array.from(bank.querySelectorAll('.chip')).forEach(function(c,i){ if(c===ch) idx=i; });
+        // simpler: mark chips used by matching filled blanks count
+      });
+      // recompute properly
+      var remaining = {};
+      bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var remCopy = Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){
+        var v=ch.dataset.val;
+        if (remCopy[v] > 0) { remCopy[v]--; ch.classList.remove('used'); }
+        else { ch.classList.add('used'); }
+      });
+    }
+
+    var fb = document.createElement('div'); fb.className='feedback';
+    var actions = document.createElement('div'); actions.className='actions';
+    var check = document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check this notice';
+    var reset = document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks = Array.from(box.querySelectorAll('.blank'));
+      var allFilled = true, okCount = 0;
+      blanks.forEach(function(b){
+        b.classList.remove('correct','wrong');
+        var key = b.dataset.key; var val = b.dataset.value || '';
+        if (!val) { allFilled = false; return; }
+        var correct = (qd.blanks[key] && qd.blanks[key].answer === val);
+        if (correct) { okCount++; b.classList.add('correct'); } else { b.classList.add('wrong'); }
+      });
+      if (!allFilled) {
+        fb.textContent = 'Fill all the blanks before checking. ('+okCount+' correct so far among filled ones.)';
+        fb.className = 'feedback info';
+        card.classList.remove('correct','wrong');
+        return;
+      }
+      fb.textContent = okCount + ' / ' + blanks.length + ' correct.' + (okCount===blanks.length ? ' Well done — the notice format and details are correct.' : ' Tap red blanks to clear and try again.');
+      fb.className = 'feedback ' + (okCount===blanks.length ? 'ok':'bad');
+      card.classList.toggle('correct', okCount===blanks.length);
+      card.classList.toggle('wrong', okCount!==blanks.length);
+    });
+    reset.addEventListener('click', function(){
+      box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); });
+      state.active = null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong');
+    });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(actions);
+    card.appendChild(fb);
+
+    fillContainer.appendChild(card);
+  });
+
+})();
+</script>
+</body>
+</html>

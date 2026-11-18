@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VIII Writing — Q5 Notice & Story Completion</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+.cue { font-style: italic; background: var(--surface-2); padding: 8px 10px; border-radius: 8px; border-left: 3px solid var(--primary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VIII — Writing (Q5)</h1>
+      <p class="sub">Section B · Notice / Story Completion · Tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q5:</strong> Notice (~50 words) OR Story completion (~120–150 words). Practise the format and key content with <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone).</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-notice" type="button">Notice</button>
+      <button class="tab" id="tab-story" type="button">Story Completion</button>
+    </div>
+  </div>
+
+  <div id="panel-notice" class="panel active"></div>
+  <div id="panel-story" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c8-q5-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c8-q5-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabNotice = document.getElementById('tab-notice'), tabStory = document.getElementById('tab-story');
+  var panelNotice = document.getElementById('panel-notice'), panelStory = document.getElementById('panel-story');
+  tabNotice.addEventListener('click', function(){ tabNotice.classList.add('active'); tabStory.classList.remove('active'); panelNotice.classList.add('active'); panelStory.classList.remove('active'); });
+  tabStory.addEventListener('click', function(){ tabStory.classList.add('active'); tabNotice.classList.remove('active'); panelStory.classList.add('active'); panelNotice.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+    if(qd.cue){ var cue=document.createElement('div'); cue.className='cue'; cue.innerHTML='<strong>Given opening:</strong> '+escapeHtml(qd.cue); card.appendChild(cue); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){
+        if(typeof part==='string') p.appendChild(document.createTextNode(part));
+        else if(part && part.html){ var span=document.createElement('span'); span.innerHTML=part.html; p.appendChild(span); }
+        else p.appendChild(makeBlank(part.k));
+      });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // NOTICE TAB
+  makeSequenceCard(panelNotice, 'Arrange the parts of a notice in the correct order', [
+    'Name of the school (heading)',
+    'The word NOTICE and the date',
+    'Subject line in capitals (what the notice is about)',
+    'Body: what, when, where, who and why (about 50 words)',
+    'Signature: name and designation of the writer'
+  ]);
+
+  var noticeQs = [
+    {
+      title: 'Tap-to-fill notice (1) — Book Swap Week',
+      scenario: 'Your school library is holding a Book Swap Week. As Library Secretary, write a notice in about 50 words for Classes VI to VIII.',
+      template: [
+        {parts:[{k:'school'}]},
+        {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
+        {parts:[{html:'Date: '}, {k:'date'}]},
+        {parts:[{k:'subject'}], tag:'p'},
+        {parts:['A Book Swap Week will be held in the library from ', {k:'from'}, ' to 2 October 2026. Students of Classes VI to VIII may ', {k:'act'}, ' one storybook during the ', {k:'when'}, '. Submit books to the librarian by ', {k:'by'}, '.']},
+        {parts:[{k:'signer'}], tag:'p'},
+        {parts:[{k:'post'}]}
+      ],
+      blanks: { school:{answer:'SUNRISE PUBLIC SCHOOL, NAGPUR'}, date:{answer:'21 September 2026'}, subject:{answer:'BOOK SWAP WEEK IN THE LIBRARY'}, from:{answer:'28 September 2026'}, act:{answer:'exchange'}, when:{answer:'lunch break'}, by:{answer:'26 September 2026'}, signer:{answer:'Aarav Menon'}, post:{answer:'Library Secretary'} },
+      bank: ['SUNRISE PUBLIC SCHOOL, NAGPUR','21 September 2026','BOOK SWAP WEEK IN THE LIBRARY','28 September 2026','exchange','lunch break','26 September 2026','Aarav Menon','Library Secretary','Yours sincerely','Dear students','SPORTS DAY','sell','morning assembly','2 October 2025']
+    },
+    {
+      title: 'Tap-to-fill notice (2) — Found: a pair of spectacles',
+      scenario: 'You found a pair of spectacles in the school reading room. As Head Girl, write a notice in about 50 words.',
+      template: [
+        {parts:[{k:'school'}]},
+        {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
+        {parts:[{html:'Date: '}, {k:'date'}]},
+        {parts:[{k:'subject'}], tag:'p'},
+        {parts:['A pair of spectacles in a ', {k:'case'}, ' was found in the reading room on ', {k:'found'}, '. The owner may collect it from the school ', {k:'place'}, ' during the lunch break on any working day after describing the case.']},
+        {parts:[{k:'signer'}], tag:'p'},
+        {parts:[{k:'post'}]}
+      ],
+      blanks: { school:{answer:"ST. ANNE'S HIGH SCHOOL, KOCHI"}, date:{answer:'4 November 2026'}, subject:{answer:'FOUND: A PAIR OF SPECTACLES'}, case:{answer:'blue case'}, found:{answer:'3 November 2026'}, place:{answer:'office'}, signer:{answer:'Nisha Varghese'}, post:{answer:'Head Girl'} },
+      bank: ["ST. ANNE'S HIGH SCHOOL, KOCHI",'4 November 2026','FOUND: A PAIR OF SPECTACLES','blue case','3 November 2026','office','case','Nisha Varghese','Head Girl','LOST: A WATER BOTTLE','red bag','5 November 2026','classroom','colour','Yours faithfully']
+    },
+    {
+      title: 'Tap-to-fill notice (3) — Inter-Class Rangoli Competition',
+      scenario: 'Your school is holding an Inter-Class Rangoli Competition before Diwali. As Cultural Secretary, write a notice in about 50 words.',
+      template: [
+        {parts:[{k:'school'}]},
+        {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
+        {parts:[{html:'Date: '}, {k:'date'}]},
+        {parts:[{k:'subject'}], tag:'p'},
+        {parts:['An Inter-Class Rangoli Competition will be held on ', {k:'on'}, ' in the school ', {k:'venue'}, ' at ', {k:'time'}, '. Each section will send a team of ', {k:'team'}, ' students; the ', {k:'theme'}, ' will be given on the spot. Register with your class teacher by ', {k:'by'}, '.']},
+        {parts:[{k:'signer'}], tag:'p'},
+        {parts:[{k:'post'}]}
+      ],
+      blanks: { school:{answer:'MODEL PUBLIC SCHOOL, JAIPUR'}, date:{answer:'9 October 2026'}, subject:{answer:'INTER-CLASS RANGOLI COMPETITION'}, on:{answer:'24 October 2026'}, venue:{answer:'courtyard'}, time:{answer:'9:00 a.m.'}, team:{answer:'four'}, theme:{answer:'theme'}, by:{answer:'18 October 2026'}, signer:{answer:'Rohan Bhatia'}, post:{answer:'Cultural Secretary'} },
+      bank: ['MODEL PUBLIC SCHOOL, JAIPUR','9 October 2026','INTER-CLASS RANGOLI COMPETITION','24 October 2026','courtyard','9:00 a.m.','four','theme','18 October 2026','Rohan Bhatia','Cultural Secretary','ANNUAL SPORTS MEET','hall','4:00 p.m.','three','song','28 October 2026']
+    },
+    {
+      title: 'Tap-to-fill notice (4) — Auditions for the Annual Day choir',
+      scenario: 'Auditions for the Annual Day choir are being held next week. As Music Secretary, write a notice in about 50 words.',
+      template: [
+        {parts:[{k:'school'}]},
+        {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
+        {parts:[{html:'Date: '}, {k:'date'}]},
+        {parts:[{k:'subject'}], tag:'p'},
+        {parts:['Auditions for the Annual Day ', {k:'what'}, ' will be held on ', {k:'on'}, ' in the ', {k:'venue'}, ' from 2:00 p.m. to 4:00 p.m. Students of Classes VI to VIII may prepare ', {k:'song'}, ' and give their names to the music teacher by ', {k:'by'}, '.']},
+        {parts:[{k:'signer'}], tag:'p'},
+        {parts:[{k:'post'}]}
+      ],
+      blanks: { school:{answer:'RIVERDALE SCHOOL, DEHRADUN'}, date:{answer:'6 July 2026'}, subject:{answer:'CHOIR AUDITIONS'}, what:{answer:'choir'}, on:{answer:'15 July 2026'}, venue:{answer:'music room'}, song:{answer:'one song'}, by:{answer:'12 July 2026'}, signer:{answer:'Sara Khan'}, post:{answer:'Music Secretary'} },
+      bank: ['RIVERDALE SCHOOL, DEHRADUN','6 July 2026','CHOIR AUDITIONS','choir','15 July 2026','music room','one song','12 July 2026','Sara Khan','Music Secretary','AUDITIONS FOR THE SCHOOL PLAY','drama club','two songs','16 July 2026','rejected','Yours truly']
+    }
+  ];
+  noticeQs.forEach(function(q,i){ makeTapFill(panelNotice, (i+2)+'.', q); });
+
+  // STORY TAB
+  makeSequenceCard(panelStory, 'Arrange the parts of a story completion in the correct order', [
+    'Title',
+    'Given opening / beginning (the cue)',
+    'Middle: develop the situation and build interest',
+    'Climax / turning point (problem or key moment)',
+    'Ending: resolution with a clear closing or message'
+  ]);
+
+  var storyQs = [
+    {
+      title: 'Tap-to-fill story completion (1)',
+      cue: '"The lights in the school library flickered once and then went out completely..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['The lights in the school library flickered once and then went out completely. I was alone at the back table with my history project half open, and the sudden darkness made my heart beat fast.'], tag:'p'},
+        {parts:['For a moment I sat still, listening to the wind at the windows. Then I remembered the small ', {k:'item'}, ' I always carry in my bag. Its thin yellow beam was not very bright, but it was just ', {k:'enough'}, ' to show me the shelves and the door.'], tag:'p'},
+        {parts:['Near the reading corner I heard a small voice. It was Naina of Class VI, crying because she could not find the way out. I held her ', {k:'act'}, ' and walked slowly to the exit, where the caretaker thanked me for staying ', {k:'endfeel'}, '.'], tag:'p'},
+        {parts:['When the lights came back, my classmates clapped. I understood that courage often begins with one small ', {k:'close'}, '.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'One Small Torch'}, item:{answer:'torch'}, enough:{answer:'enough'}, act:{answer:'hand'}, endfeel:{answer:'calm'}, close:{answer:'decision'} },
+      bank: ['One Small Torch','torch','enough','hand','calm','decision','The Dark Night','candle','too dim','arm','angry']
+    },
+    {
+      title: 'Tap-to-fill story completion (2)',
+      cue: '"As the last note of the song faded, Ananya realised that the whole hall had gone completely silent..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['As the last note of the song faded, Ananya realised that the whole hall had gone completely silent. She had practised for three weeks, but now every word seemed to have vanished from her ', {k:'place'}, '.'], tag:'p'},
+        {parts:['For two long seconds nobody moved. Then she looked at her music teacher in the front row, who smiled and nodded gently. Ananya took a deep breath, closed her eyes and began the second ', {k:'part'}, ' in a quiet, steady voice.'], tag:'p'},
+        {parts:['This time the words came easily, and her voice grew stronger with every line. When she finished, the hall burst into loud ', {k:'what'}, '. Her friends stood up and clapped, and the judge announced her name for the ', {k:'prize'}, '.'], tag:'p'},
+        {parts:['Walking back to her seat, Ananya understood that fear disappears the moment we decide to ', {k:'act'}, ' anyway.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Silent Hall'}, place:{answer:'memory'}, part:{answer:'verse'}, what:{answer:'applause'}, prize:{answer:'first prize'}, act:{answer:'try'} },
+      bank: ['The Silent Hall','memory','verse','applause','first prize','try','The Lost Song','book','chorus','silence','second prize','run']
+    },
+    {
+      title: 'Tap-to-fill story completion (3)',
+      cue: '"When Arjun opened the old wooden cupboard in his grandfather\'s room, a bundle of letters tied with red thread fell out..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['When Arjun opened the old wooden cupboard in his grandfather\'s room, a bundle of letters tied with red thread fell out. They were yellowed with age and written in a careful, sloping hand.'], tag:'p'},
+        {parts:['Arjun read them all afternoon. His great-grandfather had written them in 1942, when he left his village to join the ', {k:'what'}, ' movement. Each letter described long walks, empty stomachs and a stubborn hope that never ', {k:'fade'}, '.'], tag:'p'},
+        {parts:['That evening Arjun showed the bundle to his grandfather, whose eyes filled with tears. Together they decided to give the letters to the school ', {k:'place'}, ', so that other students could learn what ordinary people had done for the country.'], tag:'p'},
+        {parts:['The letters now lie in a glass case with a small note beside them. Arjun feels ', {k:'endfeel'}, ' every time he walks past, and he has started writing a diary of his own.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Red Thread'}, what:{answer:'freedom'}, fade:{answer:'faded'}, place:{answer:'museum'}, endfeel:{answer:'proud'} },
+      bank: ['The Red Thread','freedom','faded','museum','proud','The Old Cupboard','sports','stopped','library','ashamed']
+    },
+    {
+      title: 'Tap-to-fill story completion (4)',
+      cue: '"The school bus stopped at the wrong village, and by the time the driver noticed, the sun had already begun to set..."',
+      template: [
+        {parts:[{html:'<strong>Title:</strong> '}, {k:'title'}], tag:'p'},
+        {parts:['The school bus stopped at the wrong village, and by the time the driver noticed, the sun had already set. He had taken a narrow road at the last crossing, and now the bus stood beside a few houses with no signboard.'], tag:'p'},
+        {parts:['The driver kept apologising while the younger children cried. I counted twelve of us and asked everyone to stay near the bus. A farmer on a bicycle stopped, and when he heard our problem he led us to a small ', {k:'place'}, ' where villagers gave us water and a telephone.'], tag:'p'},
+        {parts:['Within an hour our class teacher arrived in a van and every child was home by eight. My mother asked if I was afraid. I told her I had been ', {k:'feel'}, ', but looking after the others had kept me steady.'], tag:'p'},
+        {parts:['That evening I learnt that a difficult ', {k:'close'}, ' can teach more than a straight road.'], tag:'p'}
+      ],
+      blanks: { title:{answer:'The Wrong Stop'}, place:{answer:'temple'}, feel:{answer:'worried'}, close:{answer:'detour'} },
+      bank: ['The Wrong Stop','temple','worried','detour','The Long Road','shop','excited','shortcut']
+    }
+  ];
+  storyQs.forEach(function(q,i){ makeTapFill(panelStory, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>

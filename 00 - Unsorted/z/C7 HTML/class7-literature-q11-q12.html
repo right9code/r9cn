@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VII Literature — Q11 &amp; Q12 Long Answers</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 9px 16px; border-radius: 999px; font-size: .9rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.qcard { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.qtop { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; margin-bottom: 6px; }
+.qnum { font-size: .78rem; font-weight: 800; color: var(--primary); }
+.src { font-size: .78rem; color: var(--muted); font-style: italic; text-align: right; }
+.qtext { font-weight: 600; margin: 0 0 10px; font-size: .97rem; }
+.wc { font-size: .76rem; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+.answer { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; font-size: .95rem; line-height: 2; }
+.blank { display: inline-block; min-width: 84px; border: 1px dashed var(--primary); background: var(--surface); color: var(--text); border-radius: 8px; padding: 2px 8px; margin: 0 2px; font-size: .9rem; font-weight: 600; cursor: pointer; line-height: 1.5; }
+.blank.active { border-style: solid; box-shadow: 0 0 0 2px var(--primary-soft); }
+.blank.filled { background: var(--primary-soft); border-style: solid; }
+.blank.ok { background: var(--success-soft); border-color: var(--success); color: var(--success); }
+.blank.bad { background: var(--danger-soft); border-color: var(--danger); color: var(--danger); }
+.bank { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+.chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; padding: 6px 10px; font-size: .88rem; cursor: pointer; }
+.chip.used { opacity: .35; }
+.fb { margin-top: 8px; font-size: .88rem; font-weight: 700; min-height: 1.1em; }
+.fb.ok { color: var(--success); } .fb.bad { color: var(--danger); } .fb.info { color: var(--muted); font-weight: 500; }
+.row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; align-items: center; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 9px 14px; border-radius: 10px; font-size: .92rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.link-btn { background: none; border: none; color: var(--primary); font-size: .85rem; font-weight: 600; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+.overall { font-size: .88rem; color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VII — Literature (Q11 &amp; Q12: Long Answers)</h1>
+      <p class="sub">2 questions · 5 options each · 5 marks · 120–150 words</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section C — Literature</span>
+    <p class="note"><strong>Each question is worth 5 marks and the answer must be 120–150 words.</strong> You would choose any one option in the exam, but practise all five here — the answer is already written, and you build it by tapping the right words into the blanks.</p>
+    <p class="note" style="margin-top:8px">Tap a blank, then tap a word below it. Tap a filled blank to take the word back.</p>
+    <p class="overall" id="overall" style="margin:10px 0 0"></p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" id="tabs" role="tablist"></div>
+  </div>
+
+  <div id="stage"></div>
+</div>
+
+<script>
+(function () {
+  var QUESTIONS = [
+    {
+      tab: "q11", src: "The Day the River Spoke",
+      q: "How does the writer make the river seem wise and kind? What does Jahnavi decide at the end, and why does that decision matter?",
+      parts: [
+        "The writer makes the river seem wise and kind by giving it ",
+        ["a voice, a long memory and a gentle sense of humour", "a loud voice and a short temper", "a boat and a fishing net", 0],
+        ". It greets Jahnavi like an old friend, laughs when she says she will be scared at school, and reminds her that ",
+        ["it has watched many frightened children grow brave", "it has never seen a school", "it is older than the village well", 0],
+        ". Even its teasing is kind: it never once tells her that her fear is silly. The evening details — the kingfisher, the bamboo, the cool sand under her feet — make the meeting feel calm and safe, as if the whole riverbank were listening to a child. Jahnavi leaves deciding ",
+        ["to become a teacher", "to stop going to school", "to live by the river", 0],
+        ", so that other children will not be afraid to learn. The river may exist only in her mind, but its advice is real: ",
+        ["fear passes, and courage grows by trying", "fear never really leaves us", "only clever children are brave", 0],
+        "."
+      ]
+    },
+    {
+      tab: "q11", src: "Animals, Birds, and Dr. Dolittle",
+      q: "Doctor Dolittle gives up a practice that earns him money and treats animals instead. Was that a foolish choice or a wise one? Give reasons from the chapter.",
+      parts: [
+        "Doctor Dolittle gives up a practice that earns him money and takes up ",
+        ["animal medicine", "teaching at a school", "selling medicines to sailors", 0],
+        " instead, so his sister and the villagers think him foolish. Yet the chapter shows that the choice was wise. Once he learns animal language from Polynesia, he can ",
+        ["ask each creature what is wrong", "guess what is wrong with each creature", "read about animals in books", 0],
+        " instead of guessing, and animals come from far away to be cured. He is ",
+        ["happier", "richer", "famous in the town", 0],
+        ", and his kindness earns him friends like Jip, Dab-Dab and Chee-Chee. His sister’s complaints and the neighbours’ gossip only make the contrast clearer: he was a failure by their measure and a success by his own. The story suggests that success is not only money: ",
+        ["work that uses your curiosity and helps others", "work that pays well and keeps you busy", "work that everyone approves of", 0],
+        " is worth more, even if the people around you laugh at the choice."
+      ]
+    },
+    {
+      tab: "q11", src: "The Tunnel",
+      q: "Sunder Singh calls the tunnel “mine” although the Government owns it. What does this tell us about the pleasure people take in work they care for?",
+      parts: [
+        "Sunder Singh calls the tunnel “mine” even though the Government owns it, because he walks through it every night, ",
+        ["knows every crack and stone", "has painted it blue", "has never been inside it", 0],
+        ", and keeps it safe for the trains. His words show that ",
+        ["ownership is not only a matter of papers", "the Government should sell the tunnel", "only owners can love a place", 0],
+        ": it grows from care. Suraj feels this at once, and it is why he stops being afraid of the dark. The same pride appears when the watchman calls ",
+        ["the night mail an old friend", "the night mail a nuisance", "the station master his enemy", 0],
+        " and says the forest is safer than the town. His work is lonely and poorly paid, but it gives him dignity. The chapter suggests that people who are trusted with responsibility, and who love what they do, ",
+        ["belong to their work", "are owned by their work", "escape from their work", 0],
+        " as much as it belongs to them."
+      ]
+    },
+    {
+      tab: "q11", src: "My Brother’s Great Invention",
+      q: "Anand’s machines caused more trouble than they solved. Do you think his family should have stopped him? What does the story suggest about encouraging young inventors?",
+      parts: [
+        "Anand’s machines caused more trouble than they solved: ",
+        ["the alarm soaked his father", "the alarm woke the whole colony", "the alarm never rang at all", 0],
+        ", the water bag caught Boppa, and the house was always full of wires and tools. Even so, the family should not have stopped him. His inventions began with ",
+        ["a real problem — thefts in the colony", "a wish to trouble his sister", "a school competition", 0],
+        ", and each failure taught him something about springs, weights and timing. A ban would have taught him only that mistakes are shameful, when mistakes were exactly how he learned. A patient listener was worth more than a tidy room. What he needed was ",
+        ["a safe corner, a few rules and someone to ask him questions", "a locked room and a strict timetable", "new tools and no advice from anyone", 0],
+        ", not a ban. The story gently suggests that encouraging a young inventor means ",
+        ["tolerating some mess", "demanding a success every week", "keeping the house perfectly tidy", 0],
+        ", some noise and a soaking or two along the way."
+      ]
+    },
+    {
+      tab: "q11", src: "North, South, East, West",
+      q: "Shaana writes postcards in her own voice, one place at a time. How does that form make the places she visits more interesting than a textbook page would?",
+      parts: [
+        "Shaana writes postcards ",
+        ["in her own excited voice", "in the voice of a teacher", "in the style of a news report", 0],
+        ", one place at a time, and that is what makes them better than a textbook page. A textbook tells us the height of a glacier; Shaana says she never knew such a place existed, and we feel her surprise. Each card is dated and addressed to a friend, so ",
+        ["the journey unfolds like a letter from someone we know", "the journey reads like a timetable", "the trip sounds like a history lesson", 0],
+        ". We also hear what she leaves out: the tiredness, the food she did not enjoy, the friend she misses. The details she notices — clothes, food, the way people speak — are ",
+        ["the details a child would notice", "the facts an examiner wants", "the figures a geographer collects", 0],
+        ". Geography becomes ",
+        ["a story of places seen through curious eyes", "a list of dates and distances", "a warning about travelling", 0],
+        " rather than a set of facts to memorise."
+      ]
+    },
+    {
+      tab: "q12", src: "Paper Boats",
+      q: "The child in “Paper Boats” writes his name on each boat and floats it down the stream. What does the poem suggest about hope and the wish to be remembered?",
+      parts: [
+        "The child in “Paper Boats” ",
+        ["writes his name and the name of his village", "writes only the date", "writes a message to his mother", 0],
+        " on each boat and floats them down the stream. He hopes someone in a strange land will find one and know who sent it. The poem is about hope: the boats may sink, yet he keeps launching them, and ",
+        ["the big clouds seem to sail with him", "the stream carries them back to him", "the villagers help him build them", 0],
+        ". The stream, the boats and the clouds are all small things, yet the poem makes them carry a very large feeling. It is also about ",
+        ["the wish to be remembered", "the wish to win a race", "the fear of deep water", 0],
+        ", the small human desire to leave a mark somewhere far away. Tagore turns a game into a quiet prayer that ",
+        ["the world will notice us, and answer kindly", "the world will leave us alone", "the boats will return home safely", 0],
+        ". Each boat is a small hello to a stranger."
+      ]
+    },
+    {
+      tab: "q12", src: "A Funny Man",
+      q: "Is the funny man in the poem foolish or wise? Give examples and explain what the poet wants us to feel about him.",
+      parts: [
+        "The funny man in the poem is foolish in the everyday sense: he wears ",
+        ["a shoe on his head", "a hat on his head", "a coat on his shoulders", 0],
+        ", puts hats on his feet and offers a bun instead of a rose. Yet the poet does not laugh at him cruelly, and that is the point. He is polite and harmless, and his odd behaviour makes ",
+        ["a dull street cheerful", "the neighbours angry", "the children frightened", 0],
+        ". His politeness is the strangest thing about him, and also the most likeable. He is not trying to impress anyone, and that is part of his charm. In a way he is wise, because he is ",
+        ["not afraid of what neighbours think", "sure that everyone admires him", "careful to follow every rule", 0],
+        " and he gives pleasure freely. The speaker’s amused, affectionate tone suggests that ",
+        ["harmless silliness is human", "silly people should be pitied", "only clever people are happy", 0],
+        ", and that we should enjoy what we cannot fully understand."
+      ]
+    },
+    {
+      tab: "q12", src: "Travel",
+      q: "In “Travel” the speaker watches trains but never boards one. How does the poet make the journey feel exciting even so?",
+      parts: [
+        "The speaker in “Travel” never boards a train. She watches from a hill as trains cross the landscape, and the poem makes each journey exciting through sound and colour: ",
+        ["the whistle, the rushing wind", "the chatter of passengers", "the smell of the engine", 0],
+        ", the “cinders red on the sky” that turn the night engine into ",
+        ["a streak of fire", "a grey cloud", "a line of lamps", 0],
+        ". Because she stays still, the trains seem to ",
+        ["carry all her longing", "bring her letters home", "return the same way", 0],
+        " with them. Night after night she returns to the same hill, and the poem never once sounds impatient. The distance is what makes the train beautiful, and she knows it. She does not care where they are going, only that they go. The poem shows that the wish to travel can be as strong as travel itself, and that ",
+        ["watching can be a kind of journey", "only real journeys matter", "waiting is a waste of time", 0],
+        "."
+      ]
+    },
+    {
+      tab: "q12", src: "My Dear Soldiers",
+      q: "How does the poet use images of weather and landscape to show what the soldiers endure?",
+      parts: [
+        "The poet shows what soldiers endure by placing them in ",
+        ["the worst weather the country has", "a peaceful valley in spring", "a parade ground in the morning", 0],
+        ". They stay awake while others sleep, “in wind, in snow, in scorching heat”, and they move ",
+        ["through mountains, valleys, deserts, marshes, seas and air", "from one city to the next", "only along the northern border", 0],
+        ". The list of landscapes makes their duty seem endless, and the phrase “prime of your youth” reminds us that they give ",
+        ["the best years of their lives", "their holidays and their pay", "a few months of service", 0],
+        ". There is no boasting in the poem, only a plain account of what is done for us while we are unaware. Its steady rhythm and simple words sound like a soldier’s own voice, calm and uncomplaining. It asks us to notice ",
+        ["quiet endurance rather than dramatic battles", "bravery only on the battlefield", "the uniforms more than the men", 0],
+        ". That watch is repeated night after night, and that is what makes it heroic."
+      ]
+    },
+    {
+      tab: "q12", src: "Your literature reader",
+      q: "Which poem in your reader speaks most directly to you, and why? Support your answer with lines and details from the poem.",
+      parts: [
+        "I would choose “My Dear Soldiers”, because it ",
+        ["speaks directly to the reader in a calm, grateful voice", "tells an exciting story with a twist", "uses difficult words and long lines", 0],
+        " and never becomes a speech. The soldier’s world is drawn in a few firm images — snow, heat, marshes, the night sky — and the repeated idea of ",
+        ["staying awake", "marching in step", "coming home", 0],
+        " gives the poem its quiet power. Other poems in the reader are cleverer or funnier, but none is so quietly honest. That, I think, is the test I would apply to any poem I choose. Unlike a story, it has no plot to hide behind, so every line is about ",
+        ["duty and sacrifice", "travel and adventure", "family and friends", 0],
+        ". Reading it makes me notice the people who guard ordinary mornings for the rest of us, and it reminds me that ",
+        ["gratitude should be shown in small, steady ways", "soldiers should be praised once a year", "war is the only kind of courage", 0],
+        "."
+      ]
+    }
+  ];
+
+  // Tidy spacing: a blank followed by punctuation should not leave a gap before it.
+  QUESTIONS.forEach(function (q) {
+    q.parts = q.parts.map(function (p) {
+      return typeof p === 'string' ? p.replace(/\s+([,.;:!?])/g, '$1') : p;
+    });
+  });
+
+  function fullAnswer(q) {
+    return q.parts.map(function (p) { return Array.isArray(p) ? p[p[3]] : p; }).join('').replace(/\s+/g, ' ').trim();
+  }
+  function wordCount(q) { return fullAnswer(q).split(' ').length; }
+
+  var TABS = [{ id: 'q11', name: 'Q11 · 5 marks' }, { id: 'q12', name: 'Q12 · 5 marks' }];
+  var tabsEl = document.getElementById('tabs');
+  var stage = document.getElementById('stage');
+  var overallEl = document.getElementById('overall');
+  var activeTab = 'q11';
+
+  var TOTAL_BLANKS = QUESTIONS.reduce(function (sum, q) {
+    return sum + q.parts.filter(function (p) { return Array.isArray(p); }).length;
+  }, 0);
+
+  var state = QUESTIONS.map(function (q) {
+    var n = q.parts.filter(function (p) { return Array.isArray(p); }).length;
+    return { filled: new Array(n).fill(null), done: new Array(n).fill(false), checked: false };
+  });
+
+  TABS.forEach(function (t, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'tab' + (t.id === activeTab ? ' active' : '');
+    b.textContent = t.name + ' (' + QUESTIONS.filter(function (q) { return q.tab === t.id; }).length + ' options)';
+    b.addEventListener('click', function () {
+      activeTab = t.id;
+      Array.prototype.forEach.call(tabsEl.children, function (c, k) { c.classList.toggle('active', TABS[k].id === t.id); });
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    tabsEl.appendChild(b);
+  });
+
+  function updateOverall() {
+    var got = 0, total = 0;
+    state.forEach(function (s) {
+      if (!s.checked) return;
+      s.done.forEach(function (d, i) { total++; if (d) got++; });
+    });
+    overallEl.textContent = total === 0 ? '' : 'Blanks correct so far: ' + got + ' / ' + total + ' (all answers total ' + TOTAL_BLANKS + ' blanks)';
+  }
+
+  function render() {
+    stage.innerHTML = '';
+    var qs = QUESTIONS.map(function (q, i) { return { q: q, i: i }; }).filter(function (x) { return x.q.tab === activeTab; });
+
+    qs.forEach(function (entry, pos) {
+      var q = entry.q, st = state[entry.i];
+      var card = document.createElement('div'); card.className = 'qcard';
+
+      var top = document.createElement('div'); top.className = 'qtop';
+      var num = document.createElement('div'); num.className = 'qnum';
+      num.textContent = 'Option ' + (pos + 1) + ' of ' + qs.length;
+      top.appendChild(num);
+      var src = document.createElement('div'); src.className = 'src'; src.textContent = q.src;
+      top.appendChild(src);
+      card.appendChild(top);
+
+      var qt = document.createElement('p'); qt.className = 'qtext';
+      qt.textContent = q.q;
+      card.appendChild(qt);
+
+      var wc = document.createElement('p'); wc.className = 'wc';
+      wc.textContent = 'Model answer: ' + wordCount(q) + ' words · limit 120–150 words · 5 marks';
+      card.appendChild(wc);
+
+      var ans = document.createElement('div'); ans.className = 'answer';
+      var blankEls = [];
+      var bi = 0;
+
+      q.parts.forEach(function (part) {
+        if (Array.isArray(part)) {
+          var idx = bi++;
+          var b = document.createElement('button');
+          b.type = 'button'; b.className = 'blank';
+          b.dataset.blank = idx;
+          var fill = st.filled[idx];
+          if (fill) { b.textContent = fill; b.classList.add('filled'); }
+          else { b.textContent = '________'; }
+          b.addEventListener('click', function () {
+            if (st.checked) return;
+            if (st.filled[idx]) {
+              st.filled[idx] = null;
+              redraw();
+              return;
+            }
+            activeBlank = idx;
+            redraw();
+          });
+          blankEls.push(b);
+          ans.appendChild(b);
+        } else {
+          ans.appendChild(document.createTextNode(part));
+        }
+      });
+      card.appendChild(ans);
+
+      var bank = document.createElement('div'); bank.className = 'bank';
+      var options = [];
+      q.parts.forEach(function (part) {
+        if (Array.isArray(part)) part.slice(0, 3).forEach(function (o) { options.push(o); });
+      });
+      options = options.map(function (o, k) { return { o: o, k: (k * 7 + 3) % 11 }; })
+        .sort(function (a, b) { return a.k - b.k; })
+        .map(function (x) { return x.o; });
+
+      var activeBlank = null;
+
+      function redraw() {
+        blankEls.forEach(function (el, idx) {
+          el.textContent = st.filled[idx] ? st.filled[idx] : '________';
+          el.className = 'blank' + (st.filled[idx] ? ' filled' : '') +
+            (!st.checked && activeBlank === idx ? ' active' : '') +
+            (st.checked ? (st.done[idx] ? ' ok' : ' bad') : '');
+        });
+        Array.prototype.forEach.call(bank.children, function (c) {
+          var used = st.filled.indexOf(c.dataset.word) !== -1;
+          c.className = 'chip' + (used ? ' used' : '');
+          c.disabled = used || st.checked;
+        });
+        var firstEmpty = st.filled.indexOf(null);
+        if (activeBlank !== null && st.filled[activeBlank]) activeBlank = null;
+        if (activeBlank === null) activeBlank = firstEmpty === -1 ? null : firstEmpty;
+        blankEls.forEach(function (el, idx) { el.classList.toggle('active', activeBlank === idx); });
+      }
+
+      options.forEach(function (word) {
+        var c = document.createElement('button');
+        c.type = 'button'; c.className = 'chip'; c.textContent = word; c.dataset.word = word;
+        c.addEventListener('click', function () {
+          if (st.checked) return;
+          var target = activeBlank;
+          if (target === null) target = st.filled.indexOf(null);
+          if (target === null || target === -1) return;
+          st.filled[target] = word;
+          activeBlank = st.filled.indexOf(null);
+          redraw();
+        });
+        bank.appendChild(c);
+      });
+      card.appendChild(bank);
+
+      var fb = document.createElement('div'); fb.className = 'fb';
+      card.appendChild(fb);
+
+      var row = document.createElement('div'); row.className = 'row';
+      var check = document.createElement('button'); check.type = 'button'; check.className = 'btn primary'; check.textContent = 'Check';
+      var reset = document.createElement('button'); reset.type = 'button'; reset.className = 'btn'; reset.textContent = 'Reset';
+      var show = document.createElement('button'); show.type = 'button'; show.className = 'link-btn'; show.textContent = 'Show answer';
+      row.appendChild(check); row.appendChild(reset); row.appendChild(show);
+      card.appendChild(row);
+
+      var correctIdx = q.parts.filter(function (p) { return Array.isArray(p); }).map(function (p) { return p[3]; });
+
+      check.addEventListener('click', function () {
+        var unanswered = st.filled.filter(function (f) { return f === null; }).length;
+        if (unanswered > 0) {
+          fb.className = 'fb info';
+          fb.textContent = 'Fill all ' + st.filled.length + ' blanks first. (' + (st.filled.length - unanswered) + ' done)';
+          return;
+        }
+        st.checked = true;
+        var right = 0;
+        blankEls.forEach(function (el, idx) {
+          var ok = st.filled[idx] === q.parts.filter(function (p) { return Array.isArray(p); })[idx][correctIdx[idx]];
+          st.done[idx] = ok;
+          if (ok) right++;
+          el.className = 'blank ' + (ok ? 'ok' : 'bad');
+        });
+        fb.className = 'fb ' + (right === st.filled.length ? 'ok' : 'bad');
+        fb.textContent = 'Score: ' + right + ' / ' + st.filled.length + (right === st.filled.length ? ' — correct!' : ' blanks correct.');
+        redraw();
+        updateOverall();
+      });
+
+      reset.addEventListener('click', function () {
+        state[entry.i] = { filled: new Array(st.filled.length).fill(null), done: new Array(st.filled.length).fill(false), checked: false };
+        fb.className = 'fb'; fb.textContent = '';
+        updateOverall();
+        render();
+      });
+
+      show.addEventListener('click', function () {
+        var parts = q.parts.filter(function (p) { return Array.isArray(p); });
+        blankEls.forEach(function (el, idx) {
+          el.textContent = parts[idx][correctIdx[idx]];
+          el.className = 'blank ok';
+        });
+        st.filled = parts.map(function (p, idx) { return p[correctIdx[idx]]; });
+        fb.className = 'fb info';
+        fb.textContent = 'The words in green complete a full ' + wordCount(q) + '-word answer — inside the 120–150 word limit.';
+        Array.prototype.forEach.call(bank.children, function (c) { c.disabled = true; c.classList.add('used'); });
+      });
+
+      redraw();
+      if (st.checked) {
+        blankEls.forEach(function (el, idx) {
+          el.className = 'blank ' + (st.filled[idx] === q.parts.filter(function (p) { return Array.isArray(p); })[idx][correctIdx[idx]] ? 'ok' : 'bad');
+        });
+      }
+      stage.appendChild(card);
+    });
+  }
+
+  // theme
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c7-q11-q12-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c7-q11-q12-theme', next); } catch (e) {}
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

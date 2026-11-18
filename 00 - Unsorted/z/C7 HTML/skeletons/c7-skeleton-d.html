@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 English — The Path (Skeleton D)</title>
+<style>
+  :root {
+    --bg: #F7F9FA; --card: #FFFFFF; --inner: #EDF2F4; --border: #DEE6E9;
+    --text: #1F2A33; --muted: #6B7A85;
+    --accent: #3B7EA1; --accent-soft: #E1EEF5;
+    --done: #4C9A6B; --done-soft: #E2F2E8;
+    --lock: #B7C3CA;
+    --r: 18px;
+    --font: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  }
+  [data-dark] { --bg: #101A21; --card: #17242C; --inner: #1E2F38; --border: #2A3B45;
+    --text: #E7EEF2; --muted: #8CA0AC; --accent: #6FB5D8; --accent-soft: rgba(111,181,216,0.14);
+    --done: #6FBE8F; --done-soft: rgba(111,190,143,0.14); --lock: #3A4B55; }
+  @media (prefers-color-scheme: dark) { :root:not([data-light]) { --bg: #101A21; --card: #17242C; --inner: #1E2F38; --border: #2A3B45;
+    --text: #E7EEF2; --muted: #8CA0AC; --accent: #6FB5D8; --accent-soft: rgba(111,181,216,0.14);
+    --done: #6FBE8F; --done-soft: rgba(111,190,143,0.14); --lock: #3A4B55; } }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.55; padding-bottom: 6rem; }
+  .wrap { max-width: 480px; margin: 0 auto; padding: 1.1rem 1rem 2rem; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; }
+  .top h1 { font-size: 1.15rem; font-weight: 800; }
+  .top .mode {
+    background: var(--card); border: 1.5px solid var(--border); color: var(--text);
+    border-radius: 12px; padding: 0.4rem 0.7rem; font-size: 0.8rem; font-weight: 700; cursor: pointer;
+  }
+
+  .pane { display: none; }
+  .pane.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; } }
+
+  /* ---------- THE PATH ---------- */
+  .path { position: relative; padding-left: 8px; }
+  .path-line {
+    position: absolute; left: 33px; top: 26px; bottom: 30px; width: 4px;
+    background: var(--border); border-radius: 99px;
+  }
+  .path-line-fill { position: absolute; left: 0; top: 0; width: 100%; height: 0%;
+    background: var(--done); border-radius: 99px; transition: height .4s; }
+  .node {
+    position: relative; display: flex; gap: 1rem; align-items: flex-start;
+    margin-bottom: 1.4rem; cursor: pointer;
+  }
+  .node-dot {
+    width: 50px; height: 50px; border-radius: 50%; flex-shrink: 0; z-index: 2;
+    background: var(--card); border: 3px solid var(--lock);
+    display: flex; align-items: center; justify-content: center; font-size: 1.35rem;
+    transition: all .25s;
+  }
+  .node.current .node-dot { border-color: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }
+  .node.done .node-dot { border-color: var(--done); background: var(--done-soft); }
+  .node-body { flex: 1; background: var(--card); border: 1.5px solid var(--border);
+    border-radius: var(--r); padding: 0.85rem 1rem; }
+  .node.locked .node-body { opacity: .55; }
+  .node-step { font-size: 0.68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .node-name { font-weight: 800; font-size: 1rem; margin-top: 0.1rem; }
+  .node-sub { font-size: 0.78rem; color: var(--muted); margin-top: 0.15rem; }
+  .node-bar { height: 7px; background: var(--inner); border-radius: 99px; margin-top: 0.55rem; overflow: hidden; }
+  .node-bar-fill { height: 100%; border-radius: 99px; transition: width .3s; }
+  .node.done .node-bar-fill { background: var(--done); }
+  .node.current .node-bar-fill { background: var(--accent); }
+  .node-tag {
+    display: inline-block; margin-top: 0.5rem; font-size: 0.7rem; font-weight: 800;
+    border-radius: 999px; padding: 0.2rem 0.65rem;
+  }
+  .tag-now { background: var(--accent-soft); color: var(--accent); }
+  .tag-ok { background: var(--done-soft); color: var(--done); }
+  .tag-lock { background: var(--inner); color: var(--muted); }
+
+  .finishline {
+    text-align: center; padding: 1rem; background: var(--card);
+    border: 2px dashed var(--border); border-radius: var(--r); color: var(--muted); font-weight: 700; font-size: 0.9rem;
+  }
+
+  /* ---------- PRACTICE ---------- */
+  .p-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.9rem; }
+  .back { background: var(--card); border: 1.5px solid var(--border); border-radius: 13px;
+    width: 40px; height: 40px; font-size: 1.05rem; cursor: pointer; color: var(--text); font-weight: 700; }
+  .p-mid { text-align: center; }
+  .p-sec { font-size: 0.68rem; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; }
+  .p-count { font-size: 0.8rem; color: var(--muted); }
+  .p-bar { width: 100%; height: 8px; background: var(--inner); border-radius: 99px; margin: 0.7rem 0 1rem; overflow: hidden; }
+  .p-bar-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width .3s; }
+
+  .q-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--r); padding: 1.15rem; }
+  .chip { display: inline-block; font-size: 0.66rem; font-weight: 800; text-transform: uppercase;
+    letter-spacing: .05em; background: var(--accent-soft); color: var(--accent);
+    padding: 0.22rem 0.65rem; border-radius: 999px; margin-bottom: 0.7rem; }
+  .passage { background: var(--inner); border-radius: 12px; padding: 0.85rem 1rem; font-size: 0.88rem;
+    color: var(--muted); margin-bottom: 0.9rem; line-height: 1.75; }
+  .q-text { font-size: 1rem; font-weight: 700; line-height: 1.55; margin-bottom: 1rem; }
+  .opt { display: flex; gap: 0.7rem; align-items: center; border: 1.5px solid var(--border);
+    border-radius: 14px; padding: 0.72rem 0.85rem; margin-bottom: 0.55rem; cursor: pointer;
+    font-weight: 600; font-size: 0.9rem; min-height: 47px; }
+  .opt-key { width: 27px; height: 27px; border-radius: 8px; flex-shrink: 0; background: var(--inner);
+    display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem; color: var(--muted); }
+  .opt.right { border-color: var(--done); background: var(--done-soft); }
+  .opt.right .opt-key { background: var(--done); color: #fff; }
+  .opt.miss { border-color: #C25E5E; background: #F5E1E1; }
+  .opt.miss .opt-key { background: #C25E5E; color: #fff; }
+  .opt.off { opacity: .5; pointer-events: none; }
+  .fb { display: none; margin-top: 0.7rem; border-radius: 12px; padding: 0.7rem 0.9rem; font-size: 0.85rem; font-weight: 600; }
+  .fb.win { display: block; background: var(--done-soft); color: var(--done); }
+  .fb.lose { display: block; background: #F5E1E1; color: #C25E5E; }
+  .model-btn { display: none; width: 100%; margin-top: 0.8rem; padding: 0.65rem; border: 1.5px dashed var(--border);
+    border-radius: 12px; background: none; color: var(--accent); font-weight: 700; font-size: 0.84rem; cursor: pointer; }
+  .model-box { display: none; background: var(--inner); border-radius: 12px; padding: 0.85rem 1rem;
+    margin-top: 0.7rem; font-size: 0.86rem; line-height: 1.7; }
+  .model-box.show { display: block; animation: fade .3s; }
+
+  .nextbar { position: fixed; bottom: 0; left: 0; right: 0; display: none; justify-content: center;
+    padding: 0.8rem 1rem 1.1rem; background: linear-gradient(to top, var(--bg) 70%, transparent); }
+  .nextbar.show { display: flex; }
+  .big-btn { max-width: 440px; width: 100%; padding: 0.95rem; border: none; border-radius: 16px;
+    background: var(--accent); color: #fff; font-family: inherit; font-weight: 800; font-size: 0.97rem; cursor: pointer; }
+  .big-btn:disabled { opacity: .4; }
+  /* unlocked pulse on home CTA */
+  .pulse { animation: pulse 2.2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 var(--accent-soft); } 50% { box-shadow: 0 0 0 8px var(--accent-soft); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <h1>The Revision Path 🗺️</h1>
+    <button class="mode" onclick="toggleDark()">🌗</button>
+  </div>
+
+  <!-- HOME: the path -->
+  <div class="pane active" id="v-home">
+    <div class="path" id="path">
+      <div class="path-line"><div class="path-line-fill" id="line-fill"></div></div>
+
+      <div class="node current" data-sec="reading" onclick="openS('reading')">
+        <div class="node-dot">📖</div>
+        <div class="node-body">
+          <div class="node-step">Step 1</div><div class="node-name">Reading Skill</div>
+          <div class="node-sub">Q1–Q2 · 10 questions</div>
+          <div class="node-bar"><div class="node-bar-fill" style="width:40%"></div></div>
+          <span class="node-tag tag-now">→ Continue here</span>
+        </div>
+      </div>
+
+      <div class="node locked" data-sec="writing">
+        <div class="node-dot">✍️</div>
+        <div class="node-body">
+          <div class="node-step">Step 2</div><div class="node-name">Writing Skills</div>
+          <div class="node-sub">Q4–Q7 · 8 questions · unlocks after Step 1</div>
+          <div class="node-bar"><div class="node-bar-fill" style="width:0%"></div></div>
+          <span class="node-tag tag-lock">🔒 Locked</span>
+        </div>
+      </div>
+
+      <div class="node locked" data-sec="grammar">
+        <div class="node-dot">🧩</div>
+        <div class="node-body">
+          <div class="node-step">Step 3</div><div class="node-name">Grammar</div>
+          <div class="node-sub">Q3 · 12 questions · unlocks after Step 2</div>
+          <div class="node-bar"><div class="node-bar-fill" style="width:0%"></div></div>
+          <span class="node-tag tag-lock">🔒 Locked</span>
+        </div>
+      </div>
+
+      <div class="node locked" data-sec="literature">
+        <div class="node-dot">📚</div>
+        <div class="node-body">
+          <div class="node-step">Step 4</div><div class="node-name">Literature</div>
+          <div class="node-sub">Q8–Q12 · 15 questions · unlocks after Step 3</div>
+          <div class="node-bar"><div class="node-bar-fill" style="width:0%"></div></div>
+          <span class="node-tag tag-lock">🔒 Locked</span>
+        </div>
+      </div>
+    </div>
+    <div class="finishline">🏁 Finish line — Exam ready!</div>
+  </div>
+
+  <!-- PRACTICE -->
+  <div class="pane" id="v-practice">
+    <div class="p-head">
+      <button class="back" onclick="goHome()">←</button>
+      <div class="p-mid"><div class="p-sec" id="p-sec">Reading</div><div class="p-count" id="p-count">Question 1 of 5</div></div>
+      <div class="p-count" id="p-score" style="font-weight:800; color:var(--done)">0 ✓</div>
+    </div>
+    <div class="p-bar"><div class="p-bar-fill" id="p-fill" style="width:20%"></div></div>
+
+    <div class="q-card">
+      <span class="chip">Extract</span>
+      <div class="passage">[Passage placeholder — extract shown first.]</div>
+      <div class="q-text">[Question placeholder for the current path step.]</div>
+      <div class="opt" onclick="pick(this,0)"><div class="opt-key">A</div>[Option A]</div>
+      <div class="opt" onclick="pick(this,1)"><div class="opt-key">B</div>[Option B]</div>
+      <div class="opt" onclick="pick(this,2)"><div class="opt-key">C</div>[Option C]</div>
+      <div class="opt" onclick="pick(this,3)"><div class="opt-key">D</div>[Option D]</div>
+      <div class="fb" id="fb"></div>
+      <button class="model-btn" id="model-btn" onclick="reveal()">See model answer</button>
+      <div class="model-box" id="model-box"><b>Model answer —</b> [placeholder]</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="nextbar" id="nextbar">
+  <button class="big-btn" id="big-btn" onclick="nextQ()">Next →</button>
+</div>
+
+<script>
+  /* workflow: strictly sequential — you can only practice the FIRST
+     incomplete section; later ones unlock when it reaches 100% */
+  const ORDER = ['reading','writing','grammar','literature'];
+  const META = { reading:['Step 1 · Reading','Reading'], writing:['Step 2 · Writing','Writing'],
+                 grammar:['Step 3 · Grammar','Grammar'], literature:['Step 4 · Literature','Literature'] };
+  const TOTAL = 5; let qi = 0, score = 0, cur = null;
+  let progress = { reading: 40, writing: 0, grammar: 0, literature: 0 }; // placeholder %
+
+  function currentSection() { return ORDER.find(s => progress[s] < 100); }
+  function renderPath() {
+    const curIdx = ORDER.indexOf(currentSection());
+    document.getElementById('line-fill').style.height = (curIdx / ORDER.length * 100) + '%';
+    document.querySelectorAll('.node').forEach(n => {
+      const s = n.dataset.sec, idx = ORDER.indexOf(s);
+      n.classList.remove('done','current','locked');
+      if (progress[s] >= 100) n.classList.add('done');
+      else if (idx === curIdx) { n.classList.add('current'); n.querySelector('.node-dot').classList.add('pulse'); }
+      else n.classList.add('locked');
+      const tag = n.querySelector('.node-tag');
+      if (progress[s] >= 100) { tag.className = 'node-tag tag-ok'; tag.textContent = '✓ Complete'; }
+      else if (idx === curIdx) { tag.className = 'node-tag tag-now'; tag.textContent = '→ Continue here'; }
+      else { tag.className = 'node-tag tag-lock'; tag.textContent = '🔒 Locked'; }
+      n.querySelector('.node-bar-fill').style.width = progress[s] + '%';
+      n.style.pointerEvents = (idx === curIdx || progress[s] >= 100) ? 'auto' : 'none';
+    });
+  }
+  function openS(s) { if (progress[s] >= 100 || s === currentSection()) {
+    cur = s; qi = 0; score = 0; resetQ(); show('v-practice');
+    document.getElementById('nextbar').classList.add('show'); } }
+  function goHome() { renderPath(); show('v-home');
+    document.getElementById('nextbar').classList.remove('show'); }
+  function show(id) { document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active'); scrollTo(0,0); }
+  function resetQ() {
+    document.getElementById('p-sec').textContent = META[cur][1];
+    document.getElementById('p-count').textContent = 'Question ' + (qi+1) + ' of ' + TOTAL;
+    document.getElementById('p-score').textContent = score + ' ✓';
+    document.getElementById('p-fill').style.width = ((qi+1)/TOTAL*100) + '%';
+    document.getElementById('big-btn').textContent = qi === TOTAL-1 ? 'Finish step ✓' : 'Next →';
+    document.getElementById('big-btn').disabled = true;
+    document.querySelectorAll('.opt').forEach(o => o.className = 'opt');
+    const fb = document.getElementById('fb'); fb.className = 'fb'; fb.textContent = '';
+    document.getElementById('model-box').classList.remove('show');
+    document.getElementById('model-btn').style.display = 'none';
+  }
+  function nextQ() { if (qi < TOTAL-1) { qi++; resetQ(); } else {
+    progress[cur] = 100; score = 0; goHome(); } }
+  const CORRECT = 1;
+  function pick(el, i) {
+    document.querySelectorAll('.opt').forEach((o,j) => {
+      o.classList.add('off');
+      if (j === CORRECT) o.classList.add('right');
+      else if (o === el) o.classList.add('miss');
+    });
+    const fb = document.getElementById('fb');
+    if (i === CORRECT) { score++; fb.className = 'fb win'; fb.textContent = '✓ Correct!'; }
+    else { fb.className = 'fb lose'; fb.textContent = '✗ The answer is B — [explanation placeholder]'; }
+    document.getElementById('p-score').textContent = score + ' ✓';
+    document.getElementById('model-btn').style.display = 'block';
+    document.getElementById('big-btn').disabled = false;
+  }
+  function reveal() { document.getElementById('model-box').classList.add('show');
+    document.getElementById('model-btn').style.display = 'none'; }
+  function toggleDark() {
+    const d = document.body.hasAttribute('data-dark'), l = document.body.hasAttribute('data-light');
+    document.body.removeAttribute('data-dark'); document.body.removeAttribute('data-light');
+    if (!d && !l) document.body.setAttribute('data-dark','');
+    else if (d) document.body.setAttribute('data-light','');
+    else document.body.removeAttribute('data-light');
+  }
+  renderPath();
+</script>
+</body>
+</html>

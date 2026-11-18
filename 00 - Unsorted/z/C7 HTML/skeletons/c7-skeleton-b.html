@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 English — Practice (Skeleton B)</title>
+<style>
+  :root {
+    --bg: #FFF6E9;
+    --card: #FFFFFF;
+    --inner: #FFF1DC;
+    --border: #F0DFC8;
+    --text: #2B2118;
+    --muted: #8A7A68;
+    --coral: #FF6B5E;
+    --coral-soft: #FFE4E0;
+    --teal: #0FA98B;
+    --teal-soft: #DFF6F0;
+    --purple: #7C5CFF;
+    --purple-soft: #ECE6FF;
+    --yellow: #FFC53D;
+    --yellow-soft: #FFF3D1;
+    --r: 22px;
+    --font: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--font);
+    line-height: 1.55; padding-bottom: 6rem;
+  }
+  .wrap { max-width: 480px; margin: 0 auto; padding: 1rem 1rem 2rem; }
+
+  /* ---------- HEADER ---------- */
+  .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.1rem; }
+  .streak {
+    background: var(--card); border: 2px solid var(--border); border-radius: 999px;
+    padding: 0.35rem 0.85rem; font-weight: 800; font-size: 0.85rem;
+    display: flex; align-items: center; gap: 0.3rem;
+  }
+  .streak b { color: var(--coral); }
+  .head-title { font-weight: 900; font-size: 1rem; }
+
+  .pane { display: none; }
+  .pane.active { display: block; animation: pop .3s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes pop { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: scale(1); } }
+
+  /* ---------- HOME (2x2 tiles) ---------- */
+  .hero {
+    background: linear-gradient(135deg, #FF6B5E, #FF9F45);
+    color: #fff; border-radius: var(--r); padding: 1.2rem 1.25rem; margin-bottom: 1.2rem;
+  }
+  .hero h1 { font-size: 1.35rem; font-weight: 900; line-height: 1.25; }
+  .hero p { opacity: .9; font-size: 0.88rem; margin-top: 0.3rem; }
+  .hero .xp {
+    display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.8rem;
+    background: rgba(255,255,255,.22); border-radius: 999px; padding: 0.3rem 0.8rem;
+    font-size: 0.8rem; font-weight: 800;
+  }
+
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .tile {
+    background: var(--card); border: 2px solid var(--border); border-radius: var(--r);
+    padding: 1rem; cursor: pointer; position: relative; overflow: hidden;
+    transition: transform .15s cubic-bezier(.34,1.56,.64,1);
+  }
+  .tile:active { transform: scale(.95); }
+  .tile .t-emoji { font-size: 2rem; }
+  .tile .t-name { font-weight: 900; margin-top: 0.4rem; font-size: 0.98rem; }
+  .tile .t-sub { font-size: 0.74rem; color: var(--muted); }
+  .ring-wrap { position: absolute; top: 0.85rem; right: 0.85rem; width: 34px; height: 34px; }
+  .ring-wrap svg { transform: rotate(-90deg); }
+  .ring-bg { fill: none; stroke: var(--inner); stroke-width: 4; }
+  .ring-fg { fill: none; stroke-width: 4; stroke-linecap: round; }
+  .tile.reading .ring-fg { stroke: var(--purple); }
+  .tile.writing .ring-fg { stroke: var(--yellow); }
+  .tile.grammar .ring-fg { stroke: var(--teal); }
+  .tile.lit .ring-fg { stroke: var(--coral); }
+  .ring-num {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 0.55rem; font-weight: 900; color: var(--muted); font-family: var(--font);
+  }
+
+  /* ---------- PRACTICE ---------- */
+  .p-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.9rem; }
+  .back {
+    background: var(--card); border: 2px solid var(--border); border-radius: 14px;
+    width: 42px; height: 42px; font-size: 1.15rem; cursor: pointer; font-weight: 900;
+  }
+  .p-count { font-weight: 900; font-size: 0.95rem; }
+  .dots { display: flex; gap: 5px; justify-content: center; margin: 0.4rem 0 1rem; }
+  .dot { width: 8px; height: 8px; border-radius: 99px; background: var(--border); transition: all .25s; }
+  .dot.done { background: var(--teal); }
+  .dot.now { width: 22px; background: var(--coral); }
+
+  .q-card {
+    background: var(--card); border: 2px solid var(--border); border-radius: var(--r);
+    padding: 1.25rem; box-shadow: 0 6px 0 var(--inner);
+  }
+  .chip {
+    display: inline-block; font-size: 0.68rem; font-weight: 900; letter-spacing: .05em;
+    text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 999px; margin-bottom: 0.7rem;
+  }
+  .chip.mcq { background: var(--purple-soft); color: var(--purple); }
+  .chip.extract { background: var(--yellow-soft); color: #B8860B; }
+  .passage {
+    background: var(--inner); border-radius: 14px; padding: 0.9rem 1rem;
+    font-size: 0.9rem; color: #5A4A38; margin-bottom: 0.9rem; line-height: 1.7;
+  }
+  .q-text { font-size: 1.05rem; font-weight: 800; line-height: 1.55; margin-bottom: 1rem; }
+
+  .opt {
+    display: flex; align-items: center; gap: 0.75rem;
+    border: 2px solid var(--border); border-radius: 16px;
+    padding: 0.8rem 0.9rem; margin-bottom: 0.6rem; cursor: pointer;
+    font-weight: 600; font-size: 0.92rem; background: #fff;
+    transition: all .15s; min-height: 50px;
+  }
+  .opt:active { transform: scale(.98); }
+  .opt-key {
+    width: 30px; height: 30px; border-radius: 10px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 0.8rem; background: var(--inner); color: var(--muted);
+  }
+  .opt.right { border-color: var(--teal); background: var(--teal-soft); }
+  .opt.right .opt-key { background: var(--teal); color: #fff; }
+  .opt.miss { border-color: var(--coral); background: var(--coral-soft); }
+  .opt.miss .opt-key { background: var(--coral); color: #fff; }
+  .opt.off { opacity: .55; pointer-events: none; }
+
+  .fb {
+    display: none; border-radius: 16px; padding: 0.8rem 1rem; margin-top: 0.7rem;
+    font-size: 0.88rem; font-weight: 700; line-height: 1.5;
+    animation: slideup .3s cubic-bezier(.34,1.56,.64,1);
+  }
+  @keyframes slideup { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .fb.win { background: var(--teal-soft); color: var(--teal); }
+  .fb.lose { background: var(--coral-soft); color: var(--coral); }
+
+  .model-btn {
+    display: none; width: 100%; margin-top: 0.9rem; padding: 0.75rem;
+    border: 2px dashed var(--border); border-radius: 16px; background: transparent;
+    color: var(--purple); font-weight: 900; font-size: 0.88rem; cursor: pointer;
+  }
+  .model-box {
+    display: none; background: var(--purple-soft); border-radius: 16px;
+    padding: 0.9rem 1rem; margin-top: 0.7rem; font-size: 0.88rem; line-height: 1.7; color: #4a3d9e;
+  }
+  .model-box.show { display: block; animation: slideup .3s ease; }
+  .model-box .tag { display: block; font-weight: 900; font-size: 0.68rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 0.3rem; color: var(--purple); }
+
+  /* bottom big button */
+  .nextbar { position: fixed; bottom: 0; left: 0; right: 0; padding: 0.8rem 1rem 1.1rem; display: none; justify-content: center; background: linear-gradient(to top, var(--bg) 70%, transparent); }
+  .nextbar.show { display: flex; }
+  .big-btn {
+    max-width: 440px; width: 100%; padding: 1rem; border: none; border-radius: 20px;
+    background: var(--text); color: #fff; font-family: var(--font);
+    font-size: 1rem; font-weight: 900; cursor: pointer;
+    transition: transform .12s;
+  }
+  .big-btn:active { transform: scale(.97); }
+  .big-btn:disabled { opacity: .35; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="streak">🔥 <b>5</b>-day streak <span style="color:var(--muted)">·</span> ⭐ 320 XP</div>
+    <div class="head-title" id="head-title">Class 7 · English</div>
+  </div>
+
+  <!-- HOME -->
+  <div class="pane active" id="v-home">
+    <div class="hero">
+      <h1>Annual Exam Practice 🎯</h1>
+      <p>One question at a time. Answer, learn, level up!</p>
+      <div class="xp">⭐ 12 / 45 questions · [placeholder]</div>
+    </div>
+    <div class="tiles">
+      <div class="tile reading" onclick="openS('reading')">
+        <div class="ring-wrap"><svg width="34" height="34"><circle class="ring-bg" cx="17" cy="17" r="14"/><circle class="ring-fg" cx="17" cy="17" r="14" stroke-dasharray="88" stroke-dashoffset="53"/></svg><div class="ring-num">40%</div></div>
+        <div class="t-emoji">📖</div><div class="t-name">Reading</div><div class="t-sub">Q1–Q2 · 10 questions</div>
+      </div>
+      <div class="tile writing" onclick="openS('writing')">
+        <div class="ring-wrap"><svg width="34" height="34"><circle class="ring-bg" cx="17" cy="17" r="14"/><circle class="ring-fg" cx="17" cy="17" r="14" stroke-dasharray="88" stroke-dashoffset="88"/></svg><div class="ring-num">0%</div></div>
+        <div class="t-emoji">✍️</div><div class="t-name">Writing</div><div class="t-sub">Q4–Q7 · 8 questions</div>
+      </div>
+      <div class="tile grammar" onclick="openS('grammar')">
+        <div class="ring-wrap"><svg width="34" height="34"><circle class="ring-bg" cx="17" cy="17" r="14"/><circle class="ring-fg" cx="17" cy="17" r="14" stroke-dasharray="88" stroke-dashoffset="75"/></svg><div class="ring-num">15%</div></div>
+        <div class="t-emoji">🧩</div><div class="t-name">Grammar</div><div class="t-sub">Q3 · 12 questions</div>
+      </div>
+      <div class="tile lit" onclick="openS('lit')">
+        <div class="ring-wrap"><svg width="34" height="34"><circle class="ring-bg" cx="17" cy="17" r="14"/><circle class="ring-fg" cx="17" cy="17" r="14" stroke-dasharray="88" stroke-dashoffset="66"/></svg><div class="ring-num">25%</div></div>
+        <div class="t-emoji">📚</div><div class="t-name">Literature</div><div class="t-sub">Q8–Q12 · 15 questions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRACTICE -->
+  <div class="pane" id="v-practice">
+    <div class="p-head">
+      <button class="back" onclick="goHome()">←</button>
+      <div class="p-count" id="p-count">Question 1 of 5</div>
+      <div class="p-count" style="color:var(--teal)">2 ✓</div>
+    </div>
+    <div class="dots" id="dots">
+      <div class="dot done"></div><div class="dot now"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+
+    <div class="q-card">
+      <span class="chip extract">Extract based</span>
+      <div class="passage">[Passage placeholder — a short extract from the poem or story appears here first. Read it, then answer.]</div>
+      <span class="chip mcq">MCQ · one correct</span>
+      <div class="q-text">[Big friendly question placeholder — e.g. What does the poet mean by "…"?]</div>
+
+      <div class="opt" onclick="pick(this,0)"><div class="opt-key">A</div>[Option A placeholder]</div>
+      <div class="opt" onclick="pick(this,1)"><div class="opt-key">B</div>[Option B placeholder]</div>
+      <div class="opt" onclick="pick(this,2)"><div class="opt-key">C</div>[Option C placeholder]</div>
+      <div class="opt" onclick="pick(this,3)"><div class="opt-key">D</div>[Option D placeholder]</div>
+
+      <div class="fb win" id="fb-win">🎉 Nice! +10 XP — [praise placeholder]</div>
+      <div class="fb lose" id="fb-lose">😅 Almost! [gentle explanation placeholder]</div>
+
+      <button class="model-btn" id="model-btn" onclick="reveal()">💡 Peek at a model answer</button>
+      <div class="model-box" id="model-box"><span class="tag">Model answer</span>[Model answer placeholder — key points an examiner looks for.]</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="nextbar" id="nextbar">
+  <button class="big-btn" id="big-btn" onclick="nextQ()">Next question →</button>
+</div>
+
+<script>
+  const TOTAL = 5; let qi = 0;
+  function show(id) {
+    document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    scrollTo(0, 0);
+  }
+  function goHome() {
+    document.getElementById('head-title').textContent = 'Class 7 · English';
+    document.getElementById('nextbar').classList.remove('show');
+    show('v-home');
+  }
+  function openS(k) {
+    const names = { reading: 'Reading · Q1–Q2', writing: 'Writing · Q4–Q7', grammar: 'Grammar · Q3', lit: 'Literature · Q8–Q12' };
+    document.getElementById('head-title').textContent = names[k];
+    qi = 0; resetQ(); show('v-practice');
+    document.getElementById('nextbar').classList.add('show');
+  }
+  function refresh() {
+    document.getElementById('p-count').textContent = 'Question ' + (qi + 1) + ' of ' + TOTAL;
+    document.getElementById('big-btn').textContent = qi === TOTAL - 1 ? 'Finish 🎉' : 'Next question →';
+    document.getElementById('big-btn').disabled = false;
+    document.querySelectorAll('#dots .dot').forEach((d, i) => {
+      d.className = 'dot' + (i < qi ? ' done' : i === qi ? ' now' : '');
+    });
+  }
+  function nextQ() { if (qi < TOTAL - 1) { qi++; resetQ(); } else { goHome(); } }
+  function resetQ() {
+    document.querySelectorAll('.opt').forEach(o => o.className = 'opt');
+    document.getElementById('fb-win').style.display = 'none';
+    document.getElementById('fb-lose').style.display = 'none';
+    document.getElementById('model-box').classList.remove('show');
+    document.getElementById('model-btn').style.display = 'none';
+    refresh();
+  }
+  const CORRECT = 1;
+  function pick(el, i) {
+    document.querySelectorAll('.opt').forEach((o, j) => {
+      o.classList.add('off');
+      if (j === CORRECT) o.classList.add('right');
+      else if (o === el) o.classList.add('miss');
+    });
+    document.getElementById('fb-win').style.display = i === CORRECT ? 'block' : 'none';
+    document.getElementById('fb-lose').style.display = i === CORRECT ? 'none' : 'block';
+    document.getElementById('model-btn').style.display = 'block';
+  }
+  function reveal() {
+    document.getElementById('model-box').classList.add('show');
+    document.getElementById('model-btn').style.display = 'none';
+  }
+</script>
+</body>
+</html>

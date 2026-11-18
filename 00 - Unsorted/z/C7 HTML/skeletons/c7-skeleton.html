@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 English — Annual Exam Practice</title>
+<style>
+  :root {
+    /* Dark mode by default (same language as Modals Master Suite) */
+    --bg: #090d16;
+    --card-bg: #121927;
+    --card-inner: #1a2336;
+    --border: #23314a;
+    --border-focus: #38bdf8;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --text-sub: #cbd5e1;
+    --primary: #38bdf8;
+    --primary-soft: rgba(56,189,248,0.12);
+    --success: #10b981;
+    --success-soft: rgba(16,185,129,0.12);
+    --danger: #ef4444;
+    --danger-soft: rgba(239,68,68,0.12);
+    --amber: #f59e0b;
+    --input-bg: #090e17;
+    --island-bg: rgba(14,20,32,0.92);
+    --radius: 12px;
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+  [data-theme="light"] {
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --card-inner: #f1f5f9;
+    --border: #cbd5e1;
+    --border-focus: #0284c7;
+    --text: #0f172a;
+    --text-muted: #64748b;
+    --text-sub: #33455e;
+    --primary: #0284c7;
+    --primary-soft: rgba(2,132,199,0.12);
+    --success: #059669;
+    --success-soft: rgba(5,150,105,0.12);
+    --danger: #dc2626;
+    --danger-soft: rgba(220,38,38,0.12);
+    --amber: #d97706;
+    --input-bg: #ffffff;
+    --island-bg: rgba(255,255,255,0.94);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f8fafc; --card-bg: #ffffff; --card-inner: #f1f5f9; --border: #cbd5e1;
+      --border-focus: #0284c7; --text: #0f172a; --text-muted: #64748b; --text-sub: #33455e;
+      --primary: #0284c7; --primary-soft: rgba(2,132,199,0.12);
+      --success: #059669; --success-soft: rgba(5,150,105,0.12);
+      --danger: #dc2626; --danger-soft: rgba(220,38,38,0.12);
+      --amber: #d97706; --input-bg: #ffffff; --island-bg: rgba(255,255,255,0.94);
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--font-main);
+    line-height: 1.6; padding-bottom: 6.5rem;
+    transition: background-color .25s ease, color .25s ease;
+  }
+
+  /* MOBILE-FIRST container */
+  .container { max-width: 480px; margin: 0 auto; padding: 1rem 0.9rem 2rem; }
+
+  /* ---------- TOP BAR ---------- */
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 1rem; gap: 0.5rem;
+  }
+  .brand { display: flex; align-items: center; gap: 0.55rem; }
+  .brand-badge {
+    width: 34px; height: 34px; border-radius: 10px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.85rem; color: #fff;
+    font-family: var(--font-mono);
+  }
+  .brand-name { font-weight: 800; font-size: 0.95rem; line-height: 1.2; }
+  .brand-sub { font-size: 0.72rem; color: var(--text-muted); }
+  .theme-toggle-btn {
+    background: var(--card-inner); border: 1px solid var(--border); color: var(--text);
+    font-size: 0.95rem; width: 34px; height: 34px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    transition: all .2s;
+  }
+  .theme-toggle-btn:active { transform: scale(0.92); }
+
+  /* ---------- PANES ---------- */
+  .pane { display: none; }
+  .pane.active { display: block; animation: fadeIn 0.25s ease-out; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ---------- HOME ---------- */
+  .home-hero {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.1rem 1.2rem; margin-bottom: 1.1rem;
+  }
+  .home-hero h1 { font-size: 1.2rem; font-weight: 800; line-height: 1.3; }
+  .home-hero p { color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem; }
+
+  .overall-bar {
+    background: var(--card-inner); border: 1px solid var(--border);
+    border-radius: 9999px; height: 10px; overflow: hidden; margin-top: 0.9rem;
+  }
+  .overall-fill {
+    height: 100%; width: 34%;
+    background: linear-gradient(90deg, #38bdf8, #2563eb);
+    border-radius: 9999px;
+  }
+  .overall-label { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.4rem; font-family: var(--font-mono); }
+
+  .sec-card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1rem 1.1rem; margin-bottom: 0.85rem;
+    display: flex; align-items: center; gap: 0.9rem; cursor: pointer;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .sec-card:active { transform: scale(0.985); }
+  .sec-card:active { border-color: var(--border-focus); }
+  .sec-icon {
+    width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+  }
+  .sec-icon.reading    { background: rgba(56,189,248,0.14); }
+  .sec-icon.writing    { background: rgba(245,158,11,0.14); }
+  .sec-icon.grammar    { background: rgba(16,185,129,0.14); }
+  .sec-icon.literature { background: rgba(168,85,247,0.16); }
+  .sec-info { flex: 1; min-width: 0; }
+  .sec-title { font-weight: 700; font-size: 0.98rem; }
+  .sec-desc { font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sec-right { text-align: right; flex-shrink: 0; }
+  .sec-count { font-family: var(--font-mono); font-size: 0.75rem; color: var(--primary); font-weight: 700; }
+  .sec-mini-bar { width: 64px; height: 6px; background: var(--card-inner); border-radius: 9999px; margin-top: 0.4rem; overflow: hidden; border: 1px solid var(--border); }
+  .sec-mini-fill { height: 100%; background: var(--primary); border-radius: 9999px; }
+  .sec-chev { color: var(--text-muted); font-size: 1.1rem; }
+
+  /* ---------- PRACTICE VIEW ---------- */
+  .prac-top {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 0.8rem 1rem; margin-bottom: 0.9rem;
+  }
+  .prac-meta { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  .topic-tag { font-size: 0.7rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.06em; }
+  .step-badge {
+    background: var(--card-inner); border: 1px solid var(--border); color: var(--primary);
+    font-family: var(--font-mono); font-size: 0.72rem; padding: 0.2rem 0.6rem;
+    border-radius: 9999px; font-weight: 700; white-space: nowrap;
+  }
+  .prac-title { font-size: 1rem; font-weight: 800; margin-top: 0.25rem; }
+  .prac-bar { background: var(--card-inner); border: 1px solid var(--border); height: 8px; border-radius: 9999px; margin-top: 0.7rem; overflow: hidden; }
+  .prac-bar-fill { height: 100%; width: 20%; background: var(--primary); border-radius: 9999px; transition: width .3s cubic-bezier(.16,1,.3,1); }
+
+  /* Question card */
+  .q-card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.1rem 1.1rem 1.2rem; margin-bottom: 1rem;
+  }
+  .q-pass {
+    background: var(--card-inner); border: 1px solid var(--border); border-radius: 8px;
+    padding: 0.9rem 1rem; margin-bottom: 0.9rem; font-size: 0.9rem; color: var(--text-sub);
+    line-height: 1.75;
+  }
+  .q-pass .pass-tag {
+    display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700;
+    color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;
+  }
+  .q-type-tag {
+    display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700;
+    color: var(--text-muted); border: 1px solid var(--border); border-radius: 9999px;
+    padding: 0.15rem 0.55rem; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .q-prompt { font-size: 0.98rem; font-weight: 600; line-height: 1.65; margin-bottom: 0.9rem; }
+
+  .opt {
+    display: flex; align-items: flex-start; gap: 0.7rem;
+    background: var(--card-inner); border: 1px solid var(--border);
+    border-radius: 10px; padding: 0.75rem 0.85rem; margin-bottom: 0.55rem;
+    cursor: pointer; font-size: 0.9rem; color: var(--text-sub);
+    transition: border-color .15s, background .15s;
+    min-height: 46px;
+  }
+  .opt:active { border-color: var(--border-focus); }
+  .opt-key {
+    width: 24px; height: 24px; border-radius: 7px; flex-shrink: 0;
+    border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--text-muted);
+  }
+  .opt.selected { border-color: var(--primary); background: var(--primary-soft); color: var(--text); }
+  .opt.selected .opt-key { background: var(--primary); border-color: var(--primary); color: #090d16; }
+  .opt.correct { border-color: var(--success); background: var(--success-soft); color: var(--text); }
+  .opt.correct .opt-key { background: var(--success); border-color: var(--success); color: #090d16; }
+  .opt.wrong { border-color: var(--danger); background: var(--danger-soft); color: var(--text); }
+  .opt.wrong .opt-key { background: var(--danger); border-color: var(--danger); color: #fff; }
+  .opt.locked { pointer-events: none; }
+
+  .feedback-msg {
+    margin-top: 0.8rem; padding: 0.6rem 0.85rem; border-radius: 8px;
+    font-size: 0.82rem; display: none; line-height: 1.5;
+  }
+  .fb-pass { background: var(--success-soft); border: 1px solid var(--success); color: var(--success); }
+  .fb-fail { background: var(--danger-soft); border: 1px solid var(--danger); color: var(--danger); }
+
+  /* Reveal (model answer) */
+  .reveal-btn {
+    background: transparent; border: 1px dashed var(--border); color: var(--primary);
+    font-weight: 700; font-size: 0.82rem; padding: 0.55rem 0.9rem; border-radius: 8px;
+    cursor: pointer; width: 100%;
+  }
+  .reveal-box {
+    display: none; background: var(--card-inner); border: 1px solid var(--border);
+    border-left: 3px solid var(--success); border-radius: 8px;
+    padding: 0.85rem 1rem; margin-top: 0.7rem; font-size: 0.88rem; color: var(--text-sub);
+    line-height: 1.7;
+  }
+  .reveal-box.show { display: block; animation: fadeIn .25s ease-out; }
+  .reveal-box .rb-tag {
+    display: block; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700;
+    color: var(--success); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem;
+  }
+
+  /* Floating island dock */
+  .floating-island-dock {
+    position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%);
+    background: var(--island-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border); box-shadow: 0 10px 32px rgba(0,0,0,0.35);
+    padding: 0.4rem 0.55rem; border-radius: 9999px;
+    display: flex; align-items: center; gap: 0.3rem; z-index: 100; max-width: 94vw;
+  }
+  .island-arrow {
+    background: var(--card-inner); border: 1px solid var(--border); color: var(--text);
+    width: 38px; height: 38px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 1rem; font-weight: 700; flex-shrink: 0; transition: all .2s;
+  }
+  .island-arrow:disabled { opacity: 0.3; cursor: not-allowed; }
+  .island-arrow.next { background: #2563eb; border-color: #2563eb; color: #fff; }
+  .island-divider { width: 1px; height: 22px; background: var(--border); margin: 0 0.1rem; flex-shrink: 0; }
+  .island-pill {
+    background: transparent; border: none; color: var(--text-muted);
+    font-size: 0.8rem; font-weight: 600; padding: 0.5rem 0.8rem;
+    border-radius: 9999px; cursor: pointer; white-space: nowrap;
+    display: flex; align-items: center; gap: 0.35rem;
+  }
+  .island-score { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); font-weight: 700; padding: 0 0.5rem; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- TOP BAR (always visible) -->
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-badge">C7</div>
+      <div>
+        <div class="brand-name">English Annual Exam</div>
+        <div class="brand-sub">Class VII · Revision &amp; Practice</div>
+      </div>
+    </div>
+    <button class="theme-toggle-btn" id="theme-btn" onclick="toggleTheme()"><span id="theme-icon">☀️</span></button>
+  </div>
+
+  <!-- ============ PANE 1: HOME ============ -->
+  <div class="pane active" id="pane-home">
+    <div class="home-hero">
+      <h1>Practice one question at a time 👇</h1>
+      <p>Pick a section from your annual exam paper. Your progress is saved on this phone.</p>
+      <div class="overall-bar"><div class="overall-fill"></div></div>
+      <div class="overall-label">12 / 45 questions attempted · [placeholder]</div>
+    </div>
+
+    <div class="sec-card" onclick="openSection('reading')">
+      <div class="sec-icon reading">📖</div>
+      <div class="sec-info">
+        <div class="sec-title">Reading Skill</div>
+        <div class="sec-desc">Q1 &amp; Q2 · passages with MCQs</div>
+      </div>
+      <div class="sec-right">
+        <div class="sec-count">10 Qs</div>
+        <div class="sec-mini-bar"><div class="sec-mini-fill" style="width:40%"></div></div>
+      </div>
+      <div class="sec-chev">›</div>
+    </div>
+
+    <div class="sec-card" onclick="openSection('writing')">
+      <div class="sec-icon writing">✍️</div>
+      <div class="sec-info">
+        <div class="sec-title">Writing Skills</div>
+        <div class="sec-desc">Q4–Q7 · notice, diary, email, essay</div>
+      </div>
+      <div class="sec-right">
+        <div class="sec-count">8 Qs</div>
+        <div class="sec-mini-bar"><div class="sec-mini-fill" style="width:0%"></div></div>
+      </div>
+      <div class="sec-chev">›</div>
+    </div>
+
+    <div class="sec-card" onclick="openSection('grammar')">
+      <div class="sec-icon grammar">🧩</div>
+      <div class="sec-info">
+        <div class="sec-title">Grammar</div>
+        <div class="sec-desc">Q3 · fill in the blanks, MCQs</div>
+      </div>
+      <div class="sec-right">
+        <div class="sec-count">12 Qs</div>
+        <div class="sec-mini-bar"><div class="sec-mini-fill" style="width:15%"></div></div>
+      </div>
+      <div class="sec-chev">›</div>
+    </div>
+
+    <div class="sec-card" onclick="openSection('literature')">
+      <div class="sec-icon literature">📚</div>
+      <div class="sec-info">
+        <div class="sec-title">Literature</div>
+        <div class="sec-desc">Q8–Q12 · extracts &amp; answers</div>
+      </div>
+      <div class="sec-right">
+        <div class="sec-count">15 Qs</div>
+        <div class="sec-mini-bar"><div class="sec-mini-fill" style="width:25%"></div></div>
+      </div>
+      <div class="sec-chev">›</div>
+    </div>
+  </div>
+
+  <!-- ============ PANE 2: PRACTICE ============ -->
+  <div class="pane" id="pane-practice">
+    <div class="prac-top">
+      <div class="prac-meta">
+        <span class="topic-tag" id="prac-topic">Reading Skill · Q1</span>
+        <button class="theme-toggle-btn" onclick="goHome()" style="width:30px;height:30px;font-size:0.85rem;" title="Back home">‹</button>
+      </div>
+      <div class="prac-title" id="prac-title">Practice: [Section Title Placeholder]</div>
+      <div class="prac-bar"><div class="prac-bar-fill" id="prac-bar-fill"></div></div>
+      <div class="overall-label" id="prac-count" style="margin-top:0.35rem;">Question 1 of 5</div>
+    </div>
+
+    <!-- QUESTION CARD (placeholder content) -->
+    <div class="q-card" id="q-card">
+      <!-- passage box (only shown for extract-based questions) -->
+      <div class="q-pass" id="q-pass">
+        <span class="pass-tag">Extract</span><br>
+        [Passage placeholder — the relevant extract from the poem / prose / reading passage will appear here. Students read it before answering the questions below.]
+      </div>
+
+      <span class="q-type-tag" id="q-type">MCQ · single correct</span>
+      <div class="q-prompt" id="q-prompt">[Question prompt placeholder — e.g. "Choose the correct option to complete the sentence."]</div>
+
+      <div id="q-options">
+        <div class="opt" onclick="pickOpt(this,0)"><div class="opt-key">A</div><div>[Option A placeholder]</div></div>
+        <div class="opt" onclick="pickOpt(this,1)"><div class="opt-key">B</div><div>[Option B placeholder]</div></div>
+        <div class="opt" onclick="pickOpt(this,2)"><div class="opt-key">C</div><div>[Option C placeholder]</div></div>
+        <div class="opt" onclick="pickOpt(this,3)"><div class="opt-key">D</div><div>[Option D placeholder]</div></div>
+      </div>
+
+      <div class="feedback-msg fb-pass" id="fb-ok">✓ Correct! [Positive feedback placeholder]</div>
+      <div class="feedback-msg fb-fail" id="fb-no">✗ Not quite. [Explanation placeholder]</div>
+
+      <button class="reveal-btn" id="reveal-btn" onclick="revealAnswer()">👁 Show model answer</button>
+      <div class="reveal-box" id="reveal-box">
+        <span class="rb-tag">Model answer</span>
+        [Model answer / explanation placeholder — what a top-scoring answer looks like, with key points the examiner wants.]
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FLOATING ISLAND DOCK (practice view only) -->
+<div class="floating-island-dock" id="dock-practice">
+  <button class="island-arrow" id="dock-prev" onclick="prevQ()">‹</button>
+  <div class="island-divider"></div>
+  <span class="island-score" id="dock-score">2/5 ✓</span>
+  <div class="island-divider"></div>
+  <button class="island-pill" onclick="goHome()">🏠 Home</button>
+  <div class="island-divider"></div>
+  <button class="island-arrow next" id="dock-next" onclick="nextQ()">›</button>
+</div>
+
+<script>
+  /* ---- Theme ---- */
+  function toggleTheme() {
+    const html = document.documentElement;
+    const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    html.dataset.theme = next;
+    document.getElementById('theme-icon').textContent = next === 'dark' ? '☀️' : '🌙';
+  }
+  /* start matching system, but default dark icon */
+  document.getElementById('theme-icon').textContent =
+    window.matchMedia('(prefers-color-scheme: light)').matches ? '🌙' : '☀️';
+
+  /* ---- View switching (skeleton behaviour) ---- */
+  const dock = document.getElementById('dock-practice');
+  function showPane(id) {
+    document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0 });
+    dock.style.display = (id === 'pane-practice') ? 'flex' : 'none';
+  }
+  function goHome() { showPane('pane-home'); }
+  function openSection(key) {
+    const titles = {
+      reading:    ['Reading Skill · Q1–Q2', 'Practice: Reading Comprehension'],
+      writing:    ['Writing Skills · Q4–Q7', 'Practice: Writing Tasks'],
+      grammar:    ['Grammar · Q3', 'Practice: Grammar'],
+      literature: ['Literature · Q8–Q12', 'Practice: Literature']
+    };
+    const t = titles[key] || titles.reading;
+    document.getElementById('prac-topic').textContent = t[0];
+    document.getElementById('prac-title').textContent = t[1];
+    showPane('pane-practice');
+  }
+
+  /* ---- Placeholder question interactions ---- */
+  const TOTAL = 5; let qi = 0;
+  function refreshDock() {
+    document.getElementById('prac-bar-fill').style.width = ((qi + 1) / TOTAL * 100) + '%';
+    document.getElementById('prac-count').textContent = 'Question ' + (qi + 1) + ' of ' + TOTAL;
+    document.getElementById('dock-prev').disabled = qi === 0;
+    document.getElementById('dock-next').disabled = qi === TOTAL - 1;
+  }
+  function prevQ() { if (qi > 0) { qi--; resetQ(); } }
+  function nextQ() { if (qi < TOTAL - 1) { qi++; resetQ(); } }
+  function resetQ() {
+    document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'correct', 'wrong', 'locked'));
+    document.getElementById('fb-ok').style.display = 'none';
+    document.getElementById('fb-no').style.display = 'none';
+    document.getElementById('reveal-box').classList.remove('show');
+    refreshDock();
+  }
+  const CORRECT = 1; /* placeholder: B is correct */
+  function pickOpt(el, i) {
+    document.querySelectorAll('.opt').forEach((o, j) => {
+      o.classList.add('locked');
+      if (j === CORRECT) o.classList.add('correct');
+      else if (o === el) o.classList.add('wrong');
+      else o.classList.remove('selected');
+    });
+    el.classList.add(i === CORRECT ? 'correct' : 'wrong');
+    const ok = document.getElementById('fb-ok'), no = document.getElementById('fb-no');
+    ok.style.display = i === CORRECT ? 'block' : 'none';
+    no.style.display = i === CORRECT ? 'none' : 'block';
+  }
+  function revealAnswer() {
+    document.getElementById('reveal-box').classList.add('show');
+    document.getElementById('reveal-btn').style.display = 'none';
+  }
+  refreshDock(); dock.style.display = 'none';
+</script>
+</body>
+</html>

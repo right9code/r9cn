@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Class VIII Writing — Q6 Formal Email</title>
+<style>
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
+  --border: #d8dee8; --primary: #2563eb; --primary-soft: #dbeafe; --success: #15803d; --success-soft: #dcfce7;
+  --danger: #b91c1c; --danger-soft: #fee2e2; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --surface: #111827; --surface-2: #1f2937; --text: #e5e7eb; --muted: #9ca3af;
+  --border: #334155; --primary: #60a5fa; --primary-soft: #1e3a5f; --success: #4ade80; --success-soft: #14532d;
+  --danger: #f87171; --danger-soft: #7f1d1d; --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.25);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; font-size: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 12px 12px 48px; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
+.sub { margin: 0; color: var(--muted); font-size: .9rem; }
+.icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 10px; padding: 8px 10px; font-size: .9rem; cursor: pointer; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); background: var(--primary-soft); padding: 3px 8px; border-radius: 999px; margin-bottom: 8px; }
+.note { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; margin: 0 -2px 8px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; }
+.tab { flex: 0 0 auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.panel { display: none; } .panel.active { display: block; }
+.q { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; background: var(--surface); }
+.q.correct { border-color: var(--success); background: var(--success-soft); }
+.q.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.qhead { font-weight: 700; margin-bottom: 6px; }
+.qhead .num { color: var(--primary); margin-right: 4px; }
+.prompt { margin: 0 0 8px; font-size: .95rem; }
+.feedback { margin-top: 8px; font-size: .9rem; font-weight: 600; min-height: 1.2em; }
+.feedback.ok { color: var(--success); } .feedback.bad { color: var(--danger); } .feedback.info { color: var(--muted); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.seq-list { list-style: none; padding: 0; margin: 8px 0; }
+.seq-item { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.seq-item.correct { border-color: var(--success); background: var(--success-soft); }
+.seq-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+.seq-text { flex: 1; font-size: .95rem; }
+.seq-controls { display: flex; flex-direction: column; gap: 4px; }
+.seq-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; width: 36px; height: 30px; font-size: 1rem; cursor: pointer; line-height: 1; }
+.seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
+.write-box { border: 2px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
+.write-box p { margin: 6px 0; }
+.write-box .hr { border-top: 1px solid var(--border); margin: 8px 0; }
+.scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.chip.used { opacity: .45; }
+.blank { display: inline-block; min-width: 70px; padding: 2px 8px; margin: 2px 2px; border-bottom: 2px solid var(--primary); color: var(--muted); font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; background: var(--surface-2); }
+.blank.filled { color: var(--text); }
+.blank.active { outline: 2px solid var(--primary); background: var(--primary-soft); }
+.blank.correct { border-bottom-color: var(--success); color: var(--success); background: var(--success-soft); }
+.blank.wrong { border-bottom-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Class VIII — Writing (Q6)</h1>
+      <p class="sub">Section B · Formal Email · Tap-to-fill practice</p>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button">Theme</button>
+  </header>
+
+  <div class="card">
+    <span class="section-tag">Section B — Writing</span>
+    <p class="note"><strong>Q6:</strong> Formal email in about 120–150 words. Practise the header format and the body (purpose → details → request → closing) with <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone).</p>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-principal" type="button">To the Principal</button>
+      <button class="tab" id="tab-teacher" type="button">To the Teacher</button>
+    </div>
+  </div>
+
+  <div id="panel-principal" class="panel active"></div>
+  <div id="panel-teacher" class="panel"></div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('c8-q6-theme'); } catch (e) {}
+  if (saved) root.setAttribute('data-theme', saved);
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('c8-q6-theme', next); } catch (e) {}
+  });
+
+  function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tabPrincipal = document.getElementById('tab-principal'), tabTeacher = document.getElementById('tab-teacher');
+  var panelPrincipal = document.getElementById('panel-principal'), panelTeacher = document.getElementById('panel-teacher');
+  tabPrincipal.addEventListener('click', function(){ tabPrincipal.classList.add('active'); tabTeacher.classList.remove('active'); panelPrincipal.classList.add('active'); panelTeacher.classList.remove('active'); });
+  tabTeacher.addEventListener('click', function(){ tabTeacher.classList.add('active'); tabPrincipal.classList.remove('active'); panelTeacher.classList.add('active'); panelPrincipal.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  function makeSequenceCard(container, title, correctOrder) {
+    var card = document.createElement('div'); card.className='q';
+    card.innerHTML = '<div class="qhead"><span class="num">1.</span> '+escapeHtml(title)+'</div><p class="prompt">Use ▲/▼ to arrange the parts in the correct order, then check.</p>';
+    var ul = document.createElement('ul'); ul.className='seq-list';
+    var state = shuffle(correctOrder);
+    function render(){
+      ul.innerHTML='';
+      state.forEach(function(text, idx){
+        var li=document.createElement('li'); li.className='seq-item';
+        li.innerHTML='<span class="seq-badge">'+(idx+1)+'</span><span class="seq-text"></span><div class="seq-controls"><button type="button" class="seq-btn up">▲</button><button type="button" class="seq-btn down">▼</button></div>';
+        li.querySelector('.seq-text').textContent=text;
+        li.querySelector('.up').addEventListener('click', function(){ if(idx>0){var t=state[idx-1];state[idx-1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        li.querySelector('.down').addEventListener('click', function(){ if(idx<state.length-1){var t=state[idx+1];state[idx+1]=state[idx];state[idx]=t; render(); fb.textContent=''; fb.className='feedback';} });
+        ul.appendChild(li);
+      });
+    }
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.className='btn primary'; check.type='button'; check.textContent='Check order';
+    var reset=document.createElement('button'); reset.className='btn'; reset.type='button'; reset.textContent='Reset';
+    var fb=document.createElement('div'); fb.className='feedback';
+    check.addEventListener('click', function(){
+      var ok=0; Array.from(ul.children).forEach(function(li,i){ var good=state[i]===correctOrder[i]; li.classList.toggle('correct',good); li.classList.toggle('wrong',!good); if(good) ok++; });
+      fb.textContent='Correctly placed: '+ok+' / '+correctOrder.length+(ok===correctOrder.length?' — Correct order!':'. Move the red items and try again.');
+      fb.className='feedback '+(ok===correctOrder.length?'ok':'bad');
+    });
+    reset.addEventListener('click', function(){ state=shuffle(correctOrder); render(); fb.textContent=''; fb.className='feedback'; });
+    actions.appendChild(check); actions.appendChild(reset);
+    card.appendChild(ul); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+    render();
+  }
+
+  function makeTapFill(container, numLabel, qd) {
+    var card=document.createElement('div'); card.className='q';
+    card.innerHTML='<div class="qhead"><span class="num">'+numLabel+'</span> '+escapeHtml(qd.title)+'</div>';
+    if(qd.scenario){ var sc=document.createElement('div'); sc.className='scenario'; sc.innerHTML='<strong>Scenario:</strong> '+escapeHtml(qd.scenario); card.appendChild(sc); }
+
+    var box=document.createElement('div'); box.className='write-box';
+    var state={active:null};
+    function setActive(span){ box.querySelectorAll('.blank').forEach(function(b){b.classList.remove('active');}); state.active=span; if(span) span.classList.add('active'); }
+    function makeBlank(key){
+      var span=document.createElement('span'); span.className='blank'; span.dataset.key=key; span.textContent='tap to fill';
+      span.addEventListener('click', function(e){ e.stopPropagation(); if(span.classList.contains('filled')){ span.textContent='tap to fill'; span.classList.remove('filled','correct','wrong'); span.dataset.value=''; setActive(span); updateBankUsed(); return; } setActive(span); });
+      return span;
+    }
+    qd.template.forEach(function(block){
+      if(block.hr){ var hr=document.createElement('div'); hr.className='hr'; box.appendChild(hr); return; }
+      var p=document.createElement(block.tag||'p'); if(block.style) p.setAttribute('style', block.style);
+      block.parts.forEach(function(part){ if(typeof part==='string') p.appendChild(document.createTextNode(part)); else if(part && part.html){ var sp=document.createElement('span'); sp.innerHTML=part.html; p.appendChild(sp); } else p.appendChild(makeBlank(part.k)); });
+      box.appendChild(p);
+    });
+    card.appendChild(box);
+    card.addEventListener('click', function(e){ if(!e.target.classList.contains('blank') && !e.target.classList.contains('chip')) setActive(null); });
+
+    var bankWrap=document.createElement('div'); bankWrap.innerHTML='<div style="font-size:.88rem;color:var(--muted);margin-top:6px;font-weight:600;">Word/phrase bank (tap a blank, then tap an option):</div>';
+    var bank=document.createElement('div'); bank.className='bank';
+    var bankItems=shuffle(qd.bank.slice());
+    bankItems.forEach(function(text){
+      var chip=document.createElement('button'); chip.type='button'; chip.className='chip'; chip.textContent=text; chip.dataset.val=text;
+      chip.addEventListener('click', function(e){ e.stopPropagation(); if(chip.classList.contains('used')) return; if(!state.active){ var first=null; box.querySelectorAll('.blank').forEach(function(b){ if(!first && !b.classList.contains('filled')) first=b; }); if(first) setActive(first); else return; }
+        var b=state.active; b.textContent=text; b.dataset.value=text; b.classList.add('filled'); b.classList.remove('correct','wrong','active'); state.active=null; updateBankUsed(); });
+      bank.appendChild(chip);
+    });
+    bankWrap.appendChild(bank); card.appendChild(bankWrap);
+
+    function updateBankUsed(){
+      var remaining={}; bankItems.forEach(function(v){ remaining[v]=(remaining[v]||0)+1; });
+      box.querySelectorAll('.blank.filled').forEach(function(b){ var v=b.dataset.value||''; if(v && remaining[v]>0) remaining[v]--; });
+      var rem=Object.assign({}, remaining);
+      bank.querySelectorAll('.chip').forEach(function(ch){ var v=ch.dataset.val; if(rem[v]>0){rem[v]--; ch.classList.remove('used');} else ch.classList.add('used'); });
+    }
+
+    var fb=document.createElement('div'); fb.className='feedback';
+    var actions=document.createElement('div'); actions.className='actions';
+    var check=document.createElement('button'); check.type='button'; check.className='btn primary'; check.textContent='Check';
+    var reset=document.createElement('button'); reset.type='button'; reset.className='btn'; reset.textContent='Reset';
+    check.addEventListener('click', function(){
+      var blanks=Array.from(box.querySelectorAll('.blank')); var all=true, ok=0;
+      blanks.forEach(function(b){ b.classList.remove('correct','wrong'); var key=b.dataset.key; var val=b.dataset.value||''; if(!val){all=false; return;} var correct=(qd.blanks[key]&&qd.blanks[key].answer===val); if(correct){ok++; b.classList.add('correct');} else b.classList.add('wrong'); });
+      if(!all){ fb.textContent='Fill all the blanks before checking. ('+ok+' correct so far.)'; fb.className='feedback info'; card.classList.remove('correct','wrong'); return; }
+      fb.textContent=ok+' / '+blanks.length+' correct.'+(ok===blanks.length?' Well done!':' Tap red blanks to clear and try again.'); fb.className='feedback '+(ok===blanks.length?'ok':'bad');
+      card.classList.toggle('correct', ok===blanks.length); card.classList.toggle('wrong', ok!==blanks.length);
+    });
+    reset.addEventListener('click', function(){ box.querySelectorAll('.blank').forEach(function(b){ b.textContent='tap to fill'; b.dataset.value=''; b.classList.remove('filled','correct','wrong','active'); }); state.active=null; updateBankUsed(); fb.textContent=''; fb.className='feedback'; card.classList.remove('correct','wrong'); });
+    actions.appendChild(check); actions.appendChild(reset); card.appendChild(actions); card.appendChild(fb);
+    container.appendChild(card);
+  }
+
+  // TO THE PRINCIPAL
+  makeSequenceCard(panelPrincipal, 'Arrange the parts of a formal email in the correct order', [
+    'Date',
+    'From (sender’s email address)',
+    'To (receiver’s email address)',
+    'Cc (Carbon Copy)',
+    'Bcc (Blind Carbon Copy)',
+    'Subject (short and clear)',
+    'Salutation (e.g. Respected Sir/Madam,)',
+    'Body: purpose, details, and request/action (~100–120 words)',
+    'Closing (e.g. Regards,)',
+    'Name and class/designation'
+  ]);
+
+  var principalQs = [
+    {
+      title: 'Tap-to-fill email to the Principal (1)',
+      scenario: 'You are Ishaan, Class VIII-B. Write an email to the Principal seeking permission to hold a one-day second-hand book fair in the school hall on 5 December 2026.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['Our school library plans to hold a one-day ', {k:'event'}, ' in the school hall on ', {k:'edate'}, ', from 9:00 a.m. to 3:00 p.m., and I am writing to seek your permission for it.']},
+        {parts:['Students of Classes VI to VIII will donate storybooks and encyclopaedias for the stalls. ', {k:'vol'}, ' volunteers will manage the counters, and the money raised will go to the ', {k:'fund'}, ' for new titles. Our English teacher, Mrs Nair, has agreed to supervise the event.']},
+        {parts:['I request you to grant permission and allow us to display a notice on the school board. We assure you that the hall will be left ', {k:'cond'}, ' and that no class will be disturbed.']},
+        {parts:['Thank you for your consideration.']},
+        {parts:[{k:'close'}]},
+        {parts:['Ishaan']},
+        {parts:['Class VIII-B']}
+      ],
+      blanks: { date:{answer:'20 November 2026'}, from:{answer:'ishaan.viiiB@school.edu'}, to:{answer:'principal@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Permission to hold a one-day book fair in the school hall'}, sal:{answer:'Respected Sir/Madam,'}, event:{answer:'book fair'}, edate:{answer:'5 December 2026'}, vol:{answer:'Ten'}, fund:{answer:'library fund'}, cond:{answer:'clean'}, close:{answer:'Regards,'} },
+      bank: ['20 November 2026','ishaan.viiiB@school.edu','principal@school.edu','classteacher@school.edu','record@school.edu','Permission to hold a one-day book fair in the school hall','Respected Sir/Madam,','book fair','5 December 2026','Ten','library fund','clean','Regards,','Dear friend,','Yours lovingly,','sports day','Four']
+    },
+    {
+      title: 'Tap-to-fill email to the Principal (2)',
+      scenario: 'You are Sara, Class VIII-A. Write an email to the Principal requesting permission to hold an inter-house debate in the auditorium on 20 November 2026.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['The school debating society wishes to hold an ', {k:'event'}, ' in the auditorium on ', {k:'edate'}, ', from 10:00 a.m. to 12:30 p.m., and I request your permission to go ahead.']},
+        {parts:['Four houses will send teams of ', {k:'team'}, ' speakers each. The motion will be “', {k:'motion'}, '”. Our Hindi teacher, ', {k:'judge'}, ', will judge the final round, and the society will manage the stage and the microphones.']},
+        {parts:['I request you to sanction the event and allow us to put up posters by 15 November. We will make sure that the auditorium is left ', {k:'cond'}, ' and that rehearsals do not clash with any test.']},
+        {parts:['Thank you for considering this request.']},
+        {parts:[{k:'close'}]},
+        {parts:['Sara']},
+        {parts:['Class VIII-A']}
+      ],
+      blanks: { date:{answer:'6 November 2026'}, from:{answer:'sara.viiiA@school.edu'}, to:{answer:'principal@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Permission to hold an inter-house debate in the auditorium'}, sal:{answer:'Respected Sir/Madam,'}, event:{answer:'inter-house debate'}, edate:{answer:'20 November 2026'}, team:{answer:'three'}, motion:{answer:'Books are better teachers than screens'}, judge:{answer:'Mr Bose'}, cond:{answer:'tidy'}, close:{answer:'Regards,'} },
+      bank: ['6 November 2026','sara.viiiA@school.edu','principal@school.edu','classteacher@school.edu','record@school.edu','Permission to hold an inter-house debate in the auditorium','Respected Sir/Madam,','inter-house debate','20 November 2026','three','Books are better teachers than screens','Mr Bose','tidy','Regards,','Dear Sir,','Yours faithfully,','quiz competition','five']
+    },
+    {
+      title: 'Tap-to-fill email to the Principal (3)',
+      scenario: 'You are Dev, Class VIII-C. Write an email to the Principal requesting permission to start a monthly wall magazine for the middle school.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['A group of students would like to start a ', {k:'freq'}, ' wall magazine for Classes VI to VIII on the ', {k:'place'}, ' outside the library, and I am writing to ask for your permission.']},
+        {parts:['The magazine will carry student poems, short book reviews, puzzles and drawings. An editorial team of eight students will collect entries every month, and our ', {k:'guide'}, ', Ms Fernandes, has agreed to guide the design. The first issue will be displayed on ', {k:'idate'}, '.']},
+        {parts:['I request you to allow us to use one section of the board and to announce the magazine in the morning assembly. The display will be changed at the start of every ', {k:'when'}, '.']},
+        {parts:['Thank you for considering our request.']},
+        {parts:[{k:'close'}]},
+        {parts:['Dev']},
+        {parts:['Class VIII-C']}
+      ],
+      blanks: { date:{answer:'18 November 2026'}, from:{answer:'dev.viiiC@school.edu'}, to:{answer:'principal@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Permission to start a monthly wall magazine'}, sal:{answer:'Respected Sir/Madam,'}, freq:{answer:'monthly'}, place:{answer:'notice board'}, guide:{answer:'art teacher'}, idate:{answer:'1 December 2026'}, when:{answer:'month'}, close:{answer:'Regards,'} },
+      bank: ['18 November 2026','dev.viiiC@school.edu','principal@school.edu','classteacher@school.edu','record@school.edu','Permission to start a monthly wall magazine','Respected Sir/Madam,','monthly','notice board','art teacher','1 December 2026','month','Regards,','weekly','classroom','science teacher','15 December 2026','week']
+    },
+    {
+      title: 'Tap-to-fill email to the Principal (4)',
+      scenario: 'You are Meher, Class VIII-A. Write an email to the Principal requesting permission to invite a children’s author for a reading session on 12 January 2027.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['I am writing to request permission to invite the children’s author Ms Kavita Rao to our school for a reading session on ', {k:'vdate'}, '.']},
+        {parts:['She has written four novels for young readers and has agreed to read from her ', {k:'book'}, ' and answer questions for forty-five minutes. The session would be held in the ', {k:'venue'}, ' from 11:00 a.m. to 12:00 noon for Classes VII and VIII.']},
+        {parts:['Our librarian, ', {k:'lib'}, ', will coordinate the visit, and the school will only need to provide a chair and a microphone. I request you to approve the visit and inform the transport office if a ', {k:'need'}, ' is needed.']},
+        {parts:['Thank you for your kind consideration.']},
+        {parts:[{k:'close'}]},
+        {parts:['Meher']},
+        {parts:['Class VIII-A']}
+      ],
+      blanks: { date:{answer:'5 January 2027'}, from:{answer:'meher.viiiA@school.edu'}, to:{answer:'principal@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Permission to invite an author for a reading session'}, sal:{answer:'Respected Sir/Madam,'}, vdate:{answer:'12 January 2027'}, book:{answer:'latest book'}, venue:{answer:'library'}, lib:{answer:'Mrs Iyer'}, need:{answer:'car'}, close:{answer:'Regards,'} },
+      bank: ['5 January 2027','meher.viiiA@school.edu','principal@school.edu','classteacher@school.edu','record@school.edu','Permission to invite an author for a reading session','Respected Sir/Madam,','12 January 2027','latest book','library','Mrs Iyer','car','Regards,','old book','hall','Mr Bose','bus','Yours faithfully,']
+    }
+  ];
+  principalQs.forEach(function(q,i){ makeTapFill(panelPrincipal, (i+2)+'.', q); });
+
+  // TO THE TEACHER
+  var teacherQs = [
+    {
+      title: 'Tap-to-fill email to the Class Teacher (1)',
+      scenario: 'You are Kabir, Class VIII-B. Write an email to your class teacher asking for three days’ leave to attend your cousin’s wedding in Lucknow.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['I am writing to request ', {k:'days'}, ' leave from ', {k:'dates'}, ' to attend my cousin’s wedding in ', {k:'city'}, '.']},
+        {parts:['The ceremony is at our family home, and my parents and I will travel by train on the evening of 17 November. I have collected the notes for the lessons I will miss, and my friend ', {k:'friend'}, ' has promised to share the classwork for those three days.']},
+        {parts:['I will finish all pending homework during the weekend and submit it on ', {k:'back'}, '. Kindly approve this leave and tell me if any ', {k:'test'}, ' is scheduled during this period.']},
+        {parts:['Thank you for your understanding.']},
+        {parts:[{k:'close'}]},
+        {parts:['Kabir']},
+        {parts:['Class VIII-B']}
+      ],
+      blanks: { date:{answer:'15 November 2026'}, from:{answer:'kabir.viiiB@school.edu'}, to:{answer:'classteacher@school.edu'}, cc:{answer:'principal@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for three days’ leave to attend a family wedding'}, sal:{answer:'Respected Ma’am,'}, days:{answer:'three days’'}, dates:{answer:'18 to 20 November 2026'}, city:{answer:'Lucknow'}, friend:{answer:'Aryan'}, back:{answer:'23 November'}, test:{answer:'test'}, close:{answer:'Regards,'} },
+      bank: ['15 November 2026','kabir.viiiB@school.edu','classteacher@school.edu','principal@school.edu','record@school.edu','Request for three days’ leave to attend a family wedding','Respected Ma’am,','three days’','18 to 20 November 2026','Lucknow','Aryan','23 November','test','Regards,','Dear Ma’am,','two days’','25 to 27 November 2026','Jaipur','Rohan','30 November','Yours faithfully,']
+    },
+    {
+      title: 'Tap-to-fill email to the Class Teacher (2)',
+      scenario: 'You are Naina, Class VIII-C. Write an email to your class teacher informing her of two days’ absence because of viral fever.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['Viral fever has kept me at home since 9 November 2026, and the doctor has advised two days of rest.']},
+        {parts:['I will miss school on ', {k:'dates'}, '.  My mother has spoken to the school office, and I am attaching the ', {k:'note'}, ' with this email. I have asked my neighbour, Riya, to collect any ', {k:'sheets'}, ' for me, and I will catch up on the lessons from the class group. I will also revise the chapters at home so that I do not fall behind.']},
+        {parts:['Please allow me this leave and tell me whether a ', {k:'cert'}, ' must be submitted when I return.']},
+        {parts:['Thank you for your consideration.']},
+        {parts:[{k:'close'}]},
+        {parts:['Naina']},
+        {parts:['Class VIII-C']}
+      ],
+      blanks: { date:{answer:'10 November 2026'}, from:{answer:'naina.viiiC@school.edu'}, to:{answer:'classteacher@school.edu'}, cc:{answer:'principal@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Leave of absence for two days due to viral fever'}, sal:{answer:'Respected Ma’am,'}, dates:{answer:'10 and 11 November'}, note:{answer:'doctor’s note'}, sheets:{answer:'worksheets'}, cert:{answer:'medical certificate'}, close:{answer:'Regards,'} },
+      bank: ['10 November 2026','naina.viiiC@school.edu','classteacher@school.edu','principal@school.edu','record@school.edu','Leave of absence for two days due to viral fever','Respected Ma’am,','10 and 11 November','doctor’s note','worksheets','medical certificate','Regards,','high fever','12 and 13 November','parent’s note','textbooks','sports certificate','Dear Ma’am,']
+    },
+    {
+      title: 'Tap-to-fill email to the Class Teacher (3)',
+      scenario: 'You are Arnav, Class VIII-A. Write an email to your class teacher requesting two extra days to submit your history project.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['My history project on the freedom movement was due on ', {k:'due'}, ', and I am writing to ask for two extra days.']},
+        {parts:['My grandmother was unwell last week and I had to travel with my parents to ', {k:'city'}, ' for three days. The research and charts are complete, but the written portion still needs careful ', {k:'work'}, '. If you allow me, I will submit the complete project on ', {k:'newdate'}, '.']},
+        {parts:['I understand that the deadline was announced a month ago, and I am sorry for the delay. I will accept any ', {k:'marks'}, ' you think are fair for the late submission.']},
+        {parts:['Thank you for your understanding.']},
+        {parts:[{k:'close'}]},
+        {parts:['Arnav']},
+        {parts:['Class VIII-A']}
+      ],
+      blanks: { date:{answer:'15 November 2026'}, from:{answer:'arnav.viiiA@school.edu'}, to:{answer:'classteacher@school.edu'}, cc:{answer:'principal@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for two extra days to submit the history project'}, sal:{answer:'Respected Ma’am,'}, due:{answer:'14 November 2026'}, city:{answer:'Hyderabad'}, work:{answer:'proofreading'}, newdate:{answer:'17 November 2026'}, marks:{answer:'marks'}, close:{answer:'Regards,'} },
+      bank: ['15 November 2026','arnav.viiiA@school.edu','classteacher@school.edu','principal@school.edu','record@school.edu','Request for two extra days to submit the history project','Respected Ma’am,','14 November 2026','Hyderabad','proofreading','17 November 2026','marks','Regards,','10 November 2026','Chennai','printing','25 November 2026','grades','Dear Ma’am,']
+    },
+    {
+      title: 'Tap-to-fill email to the Class Teacher (4)',
+      scenario: 'You are Tanvi, Class VIII-B. Write an email to your class teacher requesting two days’ leave to attend your elder sister’s graduation ceremony.',
+      template: [
+        {parts:['Date: ', {k:'date'}]},
+        {parts:['From: ', {k:'from'}]},
+        {parts:['To: ', {k:'to'}]},
+        {parts:['Cc: ', {k:'cc'}]},
+        {parts:['Bcc: ', {k:'bcc'}]},
+        {parts:['Subject: ', {k:'subj'}]},
+        {hr:true},
+        {parts:[{k:'sal'}]},
+        {parts:['I am writing to request leave for ', {k:'dates'}, ' to attend my elder sister’s graduation ceremony at the National Institute of Technology in ', {k:'city'}, '.']},
+        {parts:['The ceremony is on the morning of 27 November, and my family will leave on the evening of ', {k:'leave'}, '. I have copied the notes for the two days from my classmates, and I will finish the ', {k:'hw'}, ' before I go.']},
+        {parts:['I hope you will excuse me for these two days and allow me to miss the ', {k:'event'}, ' on 26 November; I will take the test again whenever it is held.']},
+        {parts:['Thank you for your kindness.']},
+        {parts:[{k:'close'}]},
+        {parts:['Tanvi']},
+        {parts:['Class VIII-B']}
+      ],
+      blanks: { date:{answer:'20 November 2026'}, from:{answer:'tanvi.viiiB@school.edu'}, to:{answer:'classteacher@school.edu'}, cc:{answer:'principal@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for two days’ leave to attend a family function'}, sal:{answer:'Respected Ma’am,'}, dates:{answer:'26 and 27 November 2026'}, city:{answer:'Bhopal'}, leave:{answer:'25 November'}, hw:{answer:'science worksheet'}, event:{answer:'inter-house quiz'}, close:{answer:'Regards,'} },
+      bank: ['20 November 2026','tanvi.viiiB@school.edu','classteacher@school.edu','principal@school.edu','record@school.edu','Request for two days’ leave to attend a family function','Respected Ma’am,','26 and 27 November 2026','Bhopal','25 November','science worksheet','inter-house quiz','Regards,','22 and 23 November 2026','Indore','24 November','maths worksheet','annual day','Dear Ma’am,']
+    }
+  ];
+  teacherQs.forEach(function(q,i){ makeTapFill(panelTeacher, (i+2)+'.', q); });
+
+})();
+</script>
+</body>
+</html>
