@@ -78,6 +78,15 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
     <p class="note"><strong>Q7:</strong> Formal email OR Letter to the Editor (about 120–150 words). Learn the layout with the <strong>sequence card</strong>, then complete solved samples by <strong>tapping blanks</strong>.</p>
   </div>
 
+  <div class="card format-check" id="emailBoxCheck">
+    <div class="qhead">Quick format check: email layout</div>
+    <p class="prompt">Complete the short answer by tapping each blank and selecting its answer.</p>
+    <p>An email is always enclosed inside a <button type="button" class="blank" data-answer="BOX">tap to fill</button>. The box has two portions: <button type="button" class="blank" data-answer="HEADER">tap to fill</button> and <button type="button" class="blank" data-answer="BODY">tap to fill</button>.</p>
+    <div class="bank"><button type="button" class="chip" data-choice="BOX">BOX</button><button type="button" class="chip" data-choice="HEADER">HEADER</button><button type="button" class="chip" data-choice="BODY">BODY</button></div>
+    <div class="actions"><button type="button" class="btn primary" data-check>Check</button><button type="button" class="btn" data-reset>Reset</button></div>
+    <div class="feedback" aria-live="polite"></div>
+  </div>
+
   <div class="tabs-wrap">
     <div class="tabs" role="tablist">
       <button class="tab active" id="tab-email" type="button">Formal Email</button>
@@ -202,6 +211,15 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
   }
 
   // FORMAL EMAIL TAB
+  // Tap-to-fill short-answer email format check.
+  document.querySelectorAll('.format-check').forEach(function(card){
+    var active=null, blanks=Array.from(card.querySelectorAll('.blank'));
+    blanks.forEach(function(blank){blank.addEventListener('click',function(){if(blank.dataset.value){blank.textContent='tap to fill';blank.dataset.value='';blank.classList.remove('filled','correct','wrong');}active=blank;blanks.forEach(function(b){b.classList.toggle('active',b===active);});});});
+    card.querySelectorAll('.chip[data-choice]').forEach(function(chip){chip.addEventListener('click',function(){if(!active)active=blanks.find(function(b){return !b.dataset.value;});if(!active)return;active.textContent=chip.dataset.choice;active.dataset.value=chip.dataset.choice;active.classList.add('filled');active.classList.remove('active','correct','wrong');active=blanks.find(function(b){return !b.dataset.value;})||null;blanks.forEach(function(b){b.classList.toggle('active',b===active);});});});
+    card.querySelector('[data-check]').addEventListener('click',function(){var complete=blanks.every(function(b){return !!b.dataset.value;}),right=0;blanks.forEach(function(b){var ok=b.dataset.value===b.dataset.answer;b.classList.toggle('correct',ok);b.classList.toggle('wrong',!!b.dataset.value&&!ok);if(ok)right++;});var fb=card.querySelector('.feedback');fb.textContent=complete?right+' / '+blanks.length+' correct.':'Fill the blank(s) before checking.';fb.className='feedback '+(complete&&right===blanks.length?'ok':complete?'bad':'info');});
+    card.querySelector('[data-reset]').addEventListener('click',function(){blanks.forEach(function(b){b.textContent='tap to fill';b.dataset.value='';b.classList.remove('filled','correct','wrong','active');});active=null;var fb=card.querySelector('.feedback');fb.textContent='';fb.className='feedback';});
+  });
+
   makeSequenceCard(panelEmail, 'Arrange the parts of a formal email in the correct order', [
     'Date',
     'From (your email address)',

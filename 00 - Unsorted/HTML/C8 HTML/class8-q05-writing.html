@@ -51,6 +51,9 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
 .seq-badge { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 1.4em; text-align: center; }
 .write-box { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--surface); margin: 8px 0; }
 .write-box p { margin: 6px 0; }
+#panel-notice .write-box p:nth-child(1),
+#panel-notice .write-box p:nth-child(2),
+#panel-notice .write-box p:nth-child(4) { text-align: center; font-weight: 700; }
 .scenario { font-size: .92rem; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 10px; margin-bottom: 8px; }
 .bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
 .chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 8px 10px; border-radius: 999px; font-size: .9rem; cursor: pointer; }
@@ -76,6 +79,15 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
   <div class="card">
     <span class="section-tag">Section B — Writing</span>
     <p class="note"><strong>Q5:</strong> Notice (~50 words) OR Story completion (~120–150 words). Practise the format and key content with <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone).</p>
+  </div>
+
+  <div class="card format-check" id="noticeBoxCheck">
+    <div class="qhead">Quick format check: notice layout</div>
+    <p class="prompt">Complete the short answer by tapping the blank and selecting its answer.</p>
+    <p>A notice is always enclosed inside a <button type="button" class="blank" data-answer="BOX">tap to fill</button>.</p>
+    <div class="bank"><button type="button" class="chip" data-choice="BOX">BOX</button></div>
+    <div class="actions"><button type="button" class="btn primary" data-check>Check</button><button type="button" class="btn" data-reset>Reset</button></div>
+    <div class="feedback" aria-live="polite"></div>
   </div>
 
   <div class="tabs-wrap">
@@ -201,13 +213,23 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
     container.appendChild(card);
   }
 
+  // Tap-to-fill short-answer format check.
+  document.querySelectorAll('.format-check').forEach(function(card){
+    var active=null, blanks=Array.from(card.querySelectorAll('.blank'));
+    blanks.forEach(function(blank){blank.addEventListener('click',function(){if(blank.dataset.value){blank.textContent='tap to fill';blank.dataset.value='';blank.classList.remove('filled','correct','wrong');}active=blank;blanks.forEach(function(b){b.classList.toggle('active',b===active);});});});
+    card.querySelectorAll('.chip[data-choice]').forEach(function(chip){chip.addEventListener('click',function(){if(!active)active=blanks.find(function(b){return !b.dataset.value;});if(!active)return;active.textContent=chip.dataset.choice;active.dataset.value=chip.dataset.choice;active.classList.add('filled');active.classList.remove('active','correct','wrong');active=blanks.find(function(b){return !b.dataset.value;})||null;blanks.forEach(function(b){b.classList.toggle('active',b===active);});});});
+    card.querySelector('[data-check]').addEventListener('click',function(){var complete=blanks.every(function(b){return !!b.dataset.value;}),right=0;blanks.forEach(function(b){var ok=b.dataset.value===b.dataset.answer;b.classList.toggle('correct',ok);b.classList.toggle('wrong',!!b.dataset.value&&!ok);if(ok)right++;});var fb=card.querySelector('.feedback');fb.textContent=complete?right+' / '+blanks.length+' correct.': 'Fill the blank(s) before checking.';fb.className='feedback '+(complete&&right===blanks.length?'ok':complete?'bad':'info');});
+    card.querySelector('[data-reset]').addEventListener('click',function(){blanks.forEach(function(b){b.textContent='tap to fill';b.dataset.value='';b.classList.remove('filled','correct','wrong','active');});active=null;var fb=card.querySelector('.feedback');fb.textContent='';fb.className='feedback';});
+  });
+
   // NOTICE TAB
   makeSequenceCard(panelNotice, 'Arrange the parts of a notice in the correct order', [
     'Name of the school (heading)',
     'The word NOTICE and the date',
     'Subject line in capitals (what the notice is about)',
-    'Body: what, when, where, who and why (about 50 words)',
-    'Signature: name and designation of the writer'
+    'Body begins “This is to inform…” and includes event date, time and venue (about 50 words)',
+    'For further details contact the undersigned.',
+    'Signature: name and designation of the writer',
   ]);
 
   var noticeQs = [
@@ -219,7 +241,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
         {parts:[{html:'Date: '}, {k:'date'}]},
         {parts:[{k:'subject'}], tag:'p'},
-        {parts:['A Book Swap Week will be held in the library from ', {k:'from'}, ' to 2 October 2026. Students of Classes VI to VIII may ', {k:'act'}, ' one storybook during the ', {k:'when'}, '. Submit books to the librarian by ', {k:'by'}, '.']},
+        {parts:['This is to inform to students of Classes VI to VIII that Book Swap Week is in the library from ', {k:'from'}, ' to 2 October 2026, during the ', {k:'when'}, '. ', {k:'act'}, ' one storybook; submit it by ', {k:'by'}, '. For further details contact the undersigned.']},
         {parts:[{k:'signer'}], tag:'p'},
         {parts:[{k:'post'}]}
       ],
@@ -234,7 +256,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
         {parts:[{html:'Date: '}, {k:'date'}]},
         {parts:[{k:'subject'}], tag:'p'},
-        {parts:['A pair of spectacles in a ', {k:'case'}, ' was found in the reading room on ', {k:'found'}, '. The owner may collect it from the school ', {k:'place'}, ' during the lunch break on any working day after describing the case.']},
+        {parts:['This is to inform to all students that spectacles in a ', {k:'case'}, ' were found in the reading room on ', {k:'found'}, ' at 10:30 a.m. Collect them from the school ', {k:'place'}, ' at lunch after describing the case. For further details contact the undersigned.']},
         {parts:[{k:'signer'}], tag:'p'},
         {parts:[{k:'post'}]}
       ],
@@ -249,7 +271,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
         {parts:[{html:'Date: '}, {k:'date'}]},
         {parts:[{k:'subject'}], tag:'p'},
-        {parts:['An Inter-Class Rangoli Competition will be held on ', {k:'on'}, ' in the school ', {k:'venue'}, ' at ', {k:'time'}, '. Each section will send a team of ', {k:'team'}, ' students; the ', {k:'theme'}, ' will be given on the spot. Register with your class teacher by ', {k:'by'}, '.']},
+        {parts:['This is to inform to students that Rangoli Competition is on ', {k:'on'}, ' at ', {k:'time'}, ' in the school ', {k:'venue'}, '. Teams have ', {k:'team'}, ' students; the ', {k:'theme'}, ' is announced there. Register by ', {k:'by'}, '. For further details contact the undersigned.']},
         {parts:[{k:'signer'}], tag:'p'},
         {parts:[{k:'post'}]}
       ],
@@ -264,15 +286,14 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p'},
         {parts:[{html:'Date: '}, {k:'date'}]},
         {parts:[{k:'subject'}], tag:'p'},
-        {parts:['Auditions for the Annual Day ', {k:'what'}, ' will be held on ', {k:'on'}, ' in the ', {k:'venue'}, ' from 2:00 p.m. to 4:00 p.m. Students of Classes VI to VIII may prepare ', {k:'song'}, ' and give their names to the music teacher by ', {k:'by'}, '.']},
+        {parts:['This is to inform to students of Classes VI to VIII that choir auditions are on ', {k:'on'}, ' in the ', {k:'venue'}, ' from 2:00 to 4:00 p.m. Prepare ', {k:'song'}, ' and register with the music teacher by ', {k:'by'}, '. For further details contact the undersigned.']},
         {parts:[{k:'signer'}], tag:'p'},
         {parts:[{k:'post'}]}
       ],
       blanks: { school:{answer:'RIVERDALE SCHOOL, DEHRADUN'}, date:{answer:'6 July 2026'}, subject:{answer:'CHOIR AUDITIONS'}, what:{answer:'choir'}, on:{answer:'15 July 2026'}, venue:{answer:'music room'}, song:{answer:'one song'}, by:{answer:'12 July 2026'}, signer:{answer:'Sara Khan'}, post:{answer:'Music Secretary'} },
       bank: ['RIVERDALE SCHOOL, DEHRADUN','6 July 2026','CHOIR AUDITIONS','choir','15 July 2026','music room','one song','12 July 2026','Sara Khan','Music Secretary','AUDITIONS FOR THE SCHOOL PLAY','drama club','two songs','16 July 2026','rejected','Yours truly']
     }
-  ];
-  noticeQs.forEach(function(q,i){ makeTapFill(panelNotice, (i+2)+'.', q); });
+  ];  noticeQs.forEach(function(q,i){ makeTapFill(panelNotice, (i+2)+'.', q); });
 
   // STORY TAB
   makeSequenceCard(panelStory, 'Arrange the parts of a story completion in the correct order', [

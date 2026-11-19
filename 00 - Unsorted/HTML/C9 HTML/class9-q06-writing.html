@@ -81,6 +81,15 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
     <p class="note"><strong>Q6:</strong> Notice OR Poster (not more than 50 words). Notices are boxed with the signature block at bottom-left; posters include a sketch, call to action and left-aligned issuer. Learn the format with the <strong>sequence card</strong>, then complete solved samples by <strong>tapping blanks</strong>.</p>
   </div>
 
+  <div class="card format-check" id="noticeBoxCheck">
+    <div class="qhead">Quick format check: notice layout</div>
+    <p class="prompt">Complete the short answer by tapping the blank and selecting its answer.</p>
+    <p>A notice is always enclosed inside a <button type="button" class="blank" data-answer="BOX">tap to fill</button>.</p>
+    <div class="bank"><button type="button" class="chip" data-choice="BOX">BOX</button></div>
+    <div class="actions"><button type="button" class="btn primary" data-check>Check</button><button type="button" class="btn" data-reset>Reset</button></div>
+    <div class="feedback" aria-live="polite"></div>
+  </div>
+
   <div class="tabs-wrap">
     <div class="tabs" role="tablist">
       <button class="tab active" id="tab-notice" type="button">Notice</button>
@@ -214,6 +223,15 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
     container.appendChild(card);
   }
 
+  // Tap-to-fill short-answer notice format check.
+  document.querySelectorAll('.format-check').forEach(function(card){
+    var active=null, blanks=Array.from(card.querySelectorAll('.blank'));
+    blanks.forEach(function(blank){blank.addEventListener('click',function(){if(blank.dataset.value){blank.textContent='tap to fill';blank.dataset.value='';blank.classList.remove('filled','correct','wrong');}active=blank;blanks.forEach(function(b){b.classList.toggle('active',b===active);});});});
+    card.querySelectorAll('.chip[data-choice]').forEach(function(chip){chip.addEventListener('click',function(){if(!active)active=blanks.find(function(b){return !b.dataset.value;});if(!active)return;active.textContent=chip.dataset.choice;active.dataset.value=chip.dataset.choice;active.classList.add('filled');active.classList.remove('active','correct','wrong');active=blanks.find(function(b){return !b.dataset.value;})||null;blanks.forEach(function(b){b.classList.toggle('active',b===active);});});});
+    card.querySelector('[data-check]').addEventListener('click',function(){var complete=blanks.every(function(b){return !!b.dataset.value;}),right=0;blanks.forEach(function(b){var ok=b.dataset.value===b.dataset.answer;b.classList.toggle('correct',ok);b.classList.toggle('wrong',!!b.dataset.value&&!ok);if(ok)right++;});var fb=card.querySelector('.feedback');fb.textContent=complete?right+' / '+blanks.length+' correct.':'Fill the blank(s) before checking.';fb.className='feedback '+(complete&&right===blanks.length?'ok':complete?'bad':'info');});
+    card.querySelector('[data-reset]').addEventListener('click',function(){blanks.forEach(function(b){b.textContent='tap to fill';b.dataset.value='';b.classList.remove('filled','correct','wrong','active');});active=null;var fb=card.querySelector('.feedback');fb.textContent='';fb.className='feedback';});
+  });
+
   // NOTICE TAB
   makeSequenceCard(panelNotice, 'Arrange the parts of a notice in the correct order', [
     'Enclose the notice in a box; centre the school name',
@@ -233,7 +251,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p', style:'text-align:center;font-weight:800;margin:4px 0;'},
         {parts:[{k:'date'}], style:'text-align:left;margin:10px 0;'},
         {parts:[{k:'subject'}], tag:'p', style:'text-align:center;font-weight:700;margin:4px 0 10px;'},
-        {parts:['A Tree Plantation Drive will be held on ', {k:'on'}, ' in the ', {k:'venue'}, '. Classes IX and X will plant ', {k:'howmany'}, ' saplings each and water the older ones. Bring your gloves; tools will be provided. Register with your class teacher by ', {k:'by'}, '.']},
+        {parts:['This is to inform to students of Classes IX and X that Tree Plantation Drive is on ', {k:'on'}, ' at 9:00 a.m. in the ', {k:'venue'}, '. Plant ', {k:'howmany'}, ' saplings; bring gloves. Register by ', {k:'by'}, '. For further details contact the undersigned.']},
         {parts:[{html:'(Signature)'}], tag:'p', style:'text-align:left;margin-top:14px;margin-bottom:0;'},
         {parts:[{k:'signer'}], tag:'p', style:'text-align:left;margin:0;'},
         {parts:[{k:'post'}], style:'text-align:left;margin:0;'}
@@ -250,7 +268,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p', style:'text-align:center;font-weight:800;margin:4px 0;'},
         {parts:[{k:'date'}], style:'text-align:left;margin:10px 0;'},
         {parts:[{k:'subject'}], tag:'p', style:'text-align:center;font-weight:700;margin:4px 0 10px;'},
-        {parts:['An Inter-House Chess Tournament will be played on ', {k:'on'}, ' in the ', {k:'venue'}, ' from ', {k:'time'}, ' onwards. Each house may field ', {k:'howmany'}, ' players from Classes IX and X. Matches will follow knockout rules. Give your names to your house captain by ', {k:'by'}, '.']},
+        {parts:['This is to inform to students of Classes IX and X that Chess Tournament is on ', {k:'on'}, ' from ', {k:'time'}, ' in the ', {k:'venue'}, '. Each house may enter ', {k:'howmany'}, ' players. Register with your captain by ', {k:'by'}, '. For further details contact the undersigned.']},
         {parts:[{html:'(Signature)'}], tag:'p', style:'text-align:left;margin-top:14px;margin-bottom:0;'},
         {parts:[{k:'signer'}], tag:'p', style:'text-align:left;margin:0;'},
         {parts:[{k:'post'}], style:'text-align:left;margin:0;'}
@@ -267,7 +285,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p', style:'text-align:center;font-weight:800;margin:4px 0;'},
         {parts:[{k:'date'}], style:'text-align:left;margin:10px 0;'},
         {parts:[{k:'subject'}], tag:'p', style:'text-align:center;font-weight:700;margin:4px 0 10px;'},
-        {parts:['I have lost my school identity card, bearing Roll No. ', {k:'roll'}, ', near the assembly ground on ', {k:'when'}, '. It is in a ', {k:'cover'}, '. The finder is requested to hand it over to the class teacher. A ', {k:'reward'}, ' awaits the finder.']},
+        {parts:['This is to inform to all students that I lost ID card ', {k:'roll'}, ' at the assembly ground on ', {k:'when'}, ' at 10:30 a.m. It has a ', {k:'cover'}, '. Return it to the class teacher; a ', {k:'reward'}, ' awaits you. For further details contact the undersigned.']},
         {parts:[{html:'(Signature)'}], tag:'p', style:'text-align:left;margin-top:14px;margin-bottom:0;'},
         {parts:[{k:'signer'}], tag:'p', style:'text-align:left;margin:0;'},
         {parts:[{k:'post'}], style:'text-align:left;margin:0;'}
@@ -284,7 +302,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
         {parts:[{html:'<strong>NOTICE</strong>'}], tag:'p', style:'text-align:center;font-weight:800;margin:4px 0;'},
         {parts:[{k:'date'}], style:'text-align:left;margin:10px 0;'},
         {parts:[{k:'subject'}], tag:'p', style:'text-align:center;font-weight:700;margin:4px 0 10px;'},
-        {parts:['An Inter-School Debate Competition will be held on ', {k:'on'}, ' at ', {k:'time'}, ' in the ', {k:'venue'}, '. The motion will be announced a week in advance. Each participating school may send ', {k:'howmany'}, ' speakers of Classes IX and X. Confirm your entry by ', {k:'by'}, '.']},
+        {parts:['This is to inform to students of Classes IX and X that Debate Competition is on ', {k:'on'}, ' at ', {k:'time'}, ' in the ', {k:'venue'}, '. Each school may send ', {k:'howmany'}, ' speakers. Confirm entry by ', {k:'by'}, '. For further details contact the undersigned.']},
         {parts:[{html:'(Signature)'}], tag:'p', style:'text-align:left;margin-top:14px;margin-bottom:0;'},
         {parts:[{k:'signer'}], tag:'p', style:'text-align:left;margin:0;'},
         {parts:[{k:'post'}], style:'text-align:left;margin:0;'}
@@ -292,8 +310,7 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
       blanks: { school:{answer:'MODERN SENIOR SCHOOL, CHENNAI'}, date:{answer:'2 October 2026'}, subject:{answer:'INTER-SCHOOL DEBATE COMPETITION'}, on:{answer:'16 October 2026'}, time:{answer:'11:00 a.m.'}, venue:{answer:'auditorium'}, howmany:{answer:'two'}, by:{answer:'9 October 2026'}, signer:{answer:'Aditi Raman'}, post:{answer:'Literary Club Secretary'} },
       bank: ['MODERN SENIOR SCHOOL, CHENNAI','2 October 2026','INTER-SCHOOL DEBATE COMPETITION','16 October 2026','11:00 a.m.','auditorium','two','9 October 2026','Aditi Raman','Literary Club Secretary','INTER-SCHOOL QUIZ CONTEST','three','10:00 a.m.','20 October 2026','Cultural Secretary']
     }
-  ];
-  noticeQs.forEach(function(q,i){ makeTapFill(panelNotice, (i+2)+'.', q); });
+  ];  noticeQs.forEach(function(q,i){ makeTapFill(panelNotice, (i+2)+'.', q); });
 
   // POSTER TAB
   makeSequenceCard(panelPoster, 'Arrange the parts of a poster in the correct order', [

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Class VII Writing — Q6 Email & Informal Letter</title>
+<title>Class VIII Writing — Q8 Informal Letter & Invitation</title>
 <style>
 :root {
   --bg: #f4f6f8; --surface: #ffffff; --surface-2: #eef2f7; --text: #1f2937; --muted: #5f6b7a;
@@ -67,47 +67,47 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
 <div class="wrap">
   <header>
     <div>
-      <h1>Class VII — Writing (Q6)</h1>
-      <p class="sub">Section B · Formal Email / Informal Letter · Tap-to-fill practice</p>
+      <h1>Class VIII — Writing (Q8)</h1>
+      <p class="sub">Section B · Informal Letter / Informal Invitation · Tap-to-fill practice</p>
     </div>
     <button class="icon-btn" id="themeBtn" type="button">Theme</button>
   </header>
 
   <div class="card">
     <span class="section-tag">Section B — Writing</span>
-    <p class="note"><strong>Q6:</strong> Formal email OR Informal letter (~120–150 words). Practice format and key content using <strong>format sequence</strong> and <strong>tap-to-fill</strong> on solved samples (low typing on phone).</p>
+    <p class="note"><strong>Q8:</strong> Informal letter OR Informal invitation (~120–150 words). First fix the <strong>format order</strong>, then practise the content with <strong>tap-to-fill</strong> on solved samples (almost no typing).</p>
   </div>
 
   <div class="tabs-wrap">
     <div class="tabs" role="tablist">
-      <button class="tab active" id="tab-email" type="button">Formal Email</button>
-      <button class="tab" id="tab-letter" type="button">Informal Letter</button>
+      <button class="tab active" id="tab-letter" type="button">Informal Letter</button>
+      <button class="tab" id="tab-invite" type="button">Informal Invitation</button>
     </div>
   </div>
 
-  <div id="panel-email" class="panel active"></div>
-  <div id="panel-letter" class="panel"></div>
+  <div id="panel-letter" class="panel active"></div>
+  <div id="panel-invite" class="panel"></div>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
   var saved = null;
-  try { saved = localStorage.getItem('c7-q6-theme'); } catch (e) {}
+  try { saved = localStorage.getItem('c8-q8-theme'); } catch (e) {}
   if (saved) root.setAttribute('data-theme', saved);
   document.getElementById('themeBtn').addEventListener('click', function () {
     var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
-    try { localStorage.setItem('c7-q6-theme', next); } catch (e) {}
+    try { localStorage.setItem('c8-q8-theme', next); } catch (e) {}
   });
 
   function shuffle(arr) { var a = arr.slice(); for (var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
   function escapeHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-  var tabEmail = document.getElementById('tab-email'), tabLetter = document.getElementById('tab-letter');
-  var panelEmail = document.getElementById('panel-email'), panelLetter = document.getElementById('panel-letter');
-  tabEmail.addEventListener('click', function(){ tabEmail.classList.add('active'); tabLetter.classList.remove('active'); panelEmail.classList.add('active'); panelLetter.classList.remove('active'); });
-  tabLetter.addEventListener('click', function(){ tabLetter.classList.add('active'); tabEmail.classList.remove('active'); panelLetter.classList.add('active'); panelEmail.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+  var tabLetter = document.getElementById('tab-letter'), tabInvite = document.getElementById('tab-invite');
+  var panelLetter = document.getElementById('panel-letter'), panelInvite = document.getElementById('panel-invite');
+  tabLetter.addEventListener('click', function(){ tabLetter.classList.add('active'); tabInvite.classList.remove('active'); panelLetter.classList.add('active'); panelInvite.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
+  tabInvite.addEventListener('click', function(){ tabInvite.classList.add('active'); tabLetter.classList.remove('active'); panelInvite.classList.add('active'); panelLetter.classList.remove('active'); window.scrollTo({top:0,behavior:'smooth'}); });
 
   function makeSequenceCard(container, title, correctOrder) {
     var card = document.createElement('div'); card.className='q';
@@ -197,117 +197,11 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
     container.appendChild(card);
   }
 
-  // FORMAL EMAIL TAB
-  makeSequenceCard(panelEmail, 'Arrange the parts of a formal email in the correct order', [
-    'Date',
-    'From (sender’s email address)',
-    'To (receiver’s email address)',
-    'Cc (Carbon Copy)',
-    'Bcc (Blind Carbon Copy)',
-    'Subject (short and clear)',
-    'Salutation (e.g. Respected Sir/Madam,)',
-    'Body: purpose, details, and request/action',
-    'Closing (e.g. Regards,)',
-    'Name and designation/class'
-  ]);
-
-  var emailQs = [
-    {
-      title: 'Tap-to-fill formal email (1)',
-      scenario: 'You are Ananya, Class VII-A. Write an email to your Principal asking for permission to hold an inter-class quiz competition in the school auditorium on 18 December 2026.',
-      template: [
-        {parts:['Date: ', {k:'date'}]},
-        {parts:['From: ', {k:'from'}]},
-        {parts:['To: ', {k:'to'}]},
-        {parts:['Cc: ', {k:'cc'}]},
-        {parts:['Bcc: ', {k:'bcc'}]},
-        {parts:['Subject: ', {k:'subj'}]},
-        {hr:true},
-        {parts:[{k:'sal'}]},
-        {parts:['I am Ananya of Class VII-A. I am writing to request your kind permission to hold an ', {k:'event'}, ' in the school auditorium on ', {k:'edate'}, '.']},
-        {parts:['The quiz will be conducted by our teacher, Ms Sharma, from 10:00 AM to 12:30 PM. Around ', {k:'count'}, ' students from Classes VI to VIII have shown interest, and the questions will be based on general knowledge and current affairs.']},
-        {parts:['I kindly request you to grant us permission for this event. We assure you that we will maintain ', {k:'value'}, ' and keep the auditorium tidy.']},
-        {parts:[{k:'close'}]},
-        {parts:['Ananya']},
-        {parts:['Class VII-A']}
-      ],
-      blanks: { date:{answer:'25 November 2026'}, from:{answer:'ananya.viiA@school.edu'}, to:{answer:'principal@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for permission to hold an inter-class quiz competition'}, sal:{answer:'Respected Sir/Madam,'}, event:{answer:'inter-class quiz competition'}, edate:{answer:'18 December 2026'}, count:{answer:'40'}, value:{answer:'discipline'}, close:{answer:'Regards,'} },
-      bank: ['25 November 2026','ananya.viiA@school.edu','principal@school.edu','classteacher@school.edu','record@school.edu','Request for permission to hold an inter-class quiz competition','Respected Sir/Madam,','inter-class quiz competition','18 December 2026','40','discipline','Regards,','Dear friend,','Yours lovingly,']
-    },
-    {
-      title: 'Tap-to-fill formal email (2)',
-      scenario: 'You are Rohan, Class VII-B. Write an email to the school librarian requesting to issue a reference book for one extra week for a project.',
-      template: [
-        {parts:['Date: ', {k:'date'}]},
-        {parts:['From: ', {k:'from'}]},
-        {parts:['To: ', {k:'to'}]},
-        {parts:['Cc: ', {k:'cc'}]},
-        {parts:['Bcc: ', {k:'bcc'}]},
-        {parts:['Subject: ', {k:'subj'}]},
-        {hr:true},
-        {parts:[{k:'sal'}]},
-        {parts:['I am Rohan of Class VII-B. I am writing to request you to kindly allow me to keep the ', {k:'item'}, ' for one more week.']},
-        {parts:['I need the book to complete my science project, which is due on ', {k:'edate'}, '. I have been using it carefully and will return it in ', {k:'cond'}, ' condition.']},
-        {parts:['I would be grateful if you could grant this extension. Thank you for your ', {k:'value'}, '.']},
-        {parts:[{k:'close'}]},
-        {parts:['Rohan']},
-        {parts:['Class VII-B']}
-      ],
-      blanks: { date:{answer:'12 September 2026'}, from:{answer:'rohan.viiB@school.edu'}, to:{answer:'librarian@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for extension of library book return date'}, sal:{answer:'Respected Sir/Madam,'}, item:{answer:'reference book'}, edate:{answer:'20 September 2026'}, cond:{answer:'good'}, value:{answer:'support'}, close:{answer:'Regards,'} },
-      bank: ['12 September 2026','rohan.viiB@school.edu','librarian@school.edu','classteacher@school.edu','record@school.edu','Request for extension of library book return date','Respected Sir/Madam,','reference book','20 September 2026','good','support','Regards,','Dear Librarian,','Yours faithfully,']
-    },
-    {
-      title: 'Tap-to-fill formal email (3)',
-      scenario: 'You are Meera, Sports Captain. Write an email to the coach requesting extra practice sessions before the inter-school athletics meet.',
-      template: [
-        {parts:['Date: ', {k:'date'}]},
-        {parts:['From: ', {k:'from'}]},
-        {parts:['To: ', {k:'to'}]},
-        {parts:['Cc: ', {k:'cc'}]},
-        {parts:['Bcc: ', {k:'bcc'}]},
-        {parts:['Subject: ', {k:'subj'}]},
-        {hr:true},
-        {parts:[{k:'sal'}]},
-        {parts:['I am Meera, the Sports Captain. I am writing to request you to kindly arrange ', {k:'item'}, ' for our team before the inter-school athletics meet.']},
-        {parts:['The meet is scheduled for ', {k:'edate'}, ', and our team wishes to improve its performance. Extra practice in the evening will help us build ', {k:'value'}, ' and coordination.']},
-        {parts:['I hope you will consider our request favourably. Thank you for your guidance and ', {k:'cond'}, '.']},
-        {parts:[{k:'close'}]},
-        {parts:['Meera']},
-        {parts:['Sports Captain']}
-      ],
-      blanks: { date:{answer:'3 August 2026'}, from:{answer:'meera.sports@school.edu'}, to:{answer:'coach@school.edu'}, cc:{answer:'classteacher@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for extra practice sessions'}, sal:{answer:'Respected Sir/Madam,'}, item:{answer:'extra practice sessions'}, edate:{answer:'18 August 2026'}, value:{answer:'stamina'}, cond:{answer:'encouragement'}, close:{answer:'Regards,'} },
-      bank: ['3 August 2026','meera.sports@school.edu','coach@school.edu','classteacher@school.edu','record@school.edu','Request for extra practice sessions','Respected Sir/Madam,','extra practice sessions','18 August 2026','stamina','encouragement','Regards,','Hello Coach,','Yours lovingly,']
-    },
-    {
-      title: 'Tap-to-fill formal email (4)',
-      scenario: 'You are Kabir, Class VII-C. Write an email to your class teacher informing her that you will be absent for two days due to a family function.',
-      template: [
-        {parts:['Date: ', {k:'date'}]},
-        {parts:['From: ', {k:'from'}]},
-        {parts:['To: ', {k:'to'}]},
-        {parts:['Cc: ', {k:'cc'}]},
-        {parts:['Bcc: ', {k:'bcc'}]},
-        {parts:['Subject: ', {k:'subj'}]},
-        {hr:true},
-        {parts:[{k:'sal'}]},
-        {parts:['I am Kabir of Class VII-C. I am writing to inform you that I will not be able to attend school on ', {k:'edate'}, ' due to a ', {k:'item'}, ' at home.']},
-        {parts:['I will make sure to complete all the missed classwork and homework after returning. I kindly request you to grant me ', {k:'value'}, ' for these two days.']},
-        {parts:['Thank you for your understanding and ', {k:'cond'}, '.']},
-        {parts:[{k:'close'}]},
-        {parts:['Kabir']},
-        {parts:['Class VII-C']}
-      ],
-      blanks: { date:{answer:'10 October 2026'}, from:{answer:'kabir.viiC@school.edu'}, to:{answer:'classteacher@school.edu'}, cc:{answer:'coordinator@school.edu'}, bcc:{answer:'record@school.edu'}, subj:{answer:'Request for leave of absence for two days'}, sal:{answer:'Respected Madam,'}, edate:{answer:'13 and 14 October 2026'}, item:{answer:'family function'}, value:{answer:'leave'}, cond:{answer:'support'}, close:{answer:'Regards,'} },
-      bank: ['10 October 2026','kabir.viiC@school.edu','classteacher@school.edu','coordinator@school.edu','record@school.edu','Request for leave of absence for two days','Respected Madam,','13 and 14 October 2026','family function','leave','support','Regards,','Dear Teacher,','Yours lovingly,']
-    }
-  ];
-  emailQs.forEach(function(q,i){ makeTapFill(panelEmail, (i+2)+'.', q); });
-
   // INFORMAL LETTER TAB
   makeSequenceCard(panelLetter, 'Arrange the parts of an informal letter in the correct order', [
     'Sender’s address',
     'Date',
-    'Salutation (e.g. Dear Rahul,)',
+    'Salutation (e.g. Dear Isha,)',
     'Introduction: greeting and reason for writing',
     'Main body: details, feelings, or news',
     'Conclusion: closing remarks / hope to meet or hear back',
@@ -317,75 +211,164 @@ h1 { font-size: 1.15rem; margin: 0 0 4px; line-height: 1.25; }
 
   var letterQs = [
     {
-      title: 'Tap-to-fill informal letter (1) — sharing experience',
-      scenario: 'You are Riya. Write a letter to your cousin telling him/her about a school trip you enjoyed.',
+      title: 'Tap-to-fill informal letter (1) — describing a visit',
+      scenario: 'You are Meera. Write a letter to your friend describing your visit to a newspaper printing press with your class.',
       template: [
         {parts:[{k:'addr1'}], style:'margin:0;'},
         {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
         {parts:[{k:'date'}]},
         {parts:[{k:'sal'}]},
-        {parts:['I hope you are doing well. I am writing to tell you about the wonderful ', {k:'event'}, ' our class went on last week.']},
-        {parts:['We visited a beautiful ', {k:'place'}, ' and saw many colourful butterflies and birds. Our teachers explained everything patiently, and we clicked lots of photographs. I felt so ', {k:'feel'}, ' throughout the day and learnt many new things.']},
-        {parts:['I really wish you had been there with me. Do write back soon and tell me what you have been doing. Give my regards to everyone at home.']},
+        {parts:['I hope you are well. Last Friday our class visited a ', {k:'place'}, ', and I want to describe the whole morning to you.']},
+        {parts:['The huge machines printed thousands of copies every hour, and the rolls of paper were almost as tall as a ', {k:'comp'}, '. A kind editor showed us how reporters type a story, how pages are ', {k:'verb'}, ', and how the bundles are loaded onto vans before dawn. He even let us hold a freshly printed page, still ', {k:'warm'}, ' from the machine.']},
+        {parts:['I kept thinking how much you would have enjoyed it, since you love reading the news. I am sure you would have asked the editor a dozen questions. Do write back and tell me about your own week, and give my regards to your parents.']},
         {parts:[{k:'close'}]},
         {parts:[{k:'name'}]}
       ],
-      blanks: { addr1:{answer:'12 Park Street'}, addr2:{answer:'Pune'}, date:{answer:'18 February 2026'}, sal:{answer:'Dear Amit,'}, event:{answer:'school trip'}, place:{answer:'butterfly garden'}, feel:{answer:'excited'}, close:{answer:'Yours lovingly,'}, name:{answer:'Riya'} },
-      bank: ['12 Park Street','Pune','18 February 2026','Dear Amit,','school trip','butterfly garden','excited','Yours lovingly,','Riya','Respected Sir,','Regards,','boring','office']
+      blanks: { addr1:{answer:'14 Nehru Colony'}, addr2:{answer:'Nagpur'}, date:{answer:'9 August 2026'}, sal:{answer:'Dear Isha,'}, place:{answer:'newspaper printing press'}, comp:{answer:'two-storey building'}, verb:{answer:'designed'}, warm:{answer:'warm'}, close:{answer:'Yours lovingly,'}, name:{answer:'Meera'} },
+      bank: ['14 Nehru Colony','Nagpur','9 August 2026','Dear Isha,','newspaper printing press','two-storey building','designed','warm','Yours lovingly,','Meera','Respected Sir,','Yours faithfully,','slowly']
     },
     {
-      title: 'Tap-to-fill informal letter (2) — invitation',
-      scenario: 'You are Kunal. Write a letter to your friend inviting him/her to your birthday celebration at home.',
+      title: 'Tap-to-fill informal letter (2) — news from school',
+      scenario: 'You are Rohan. Write a letter to your cousin about the new science laboratory in your school.',
       template: [
         {parts:[{k:'addr1'}], style:'margin:0;'},
         {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
         {parts:[{k:'date'}]},
         {parts:[{k:'sal'}]},
-        {parts:['I hope you are in good health. I am delighted to invite you to my ', {k:'event'}, ' at my home.']},
-        {parts:['The celebration will be held on ', {k:'edate'}, ' at ', {k:'time'}, ' at my residence. We have planned fun games, music, and a tasty dinner. It would make me very ', {k:'feel'}, ' if you could join us.']},
-        {parts:['Please do come and make the day special. I am eagerly looking forward to seeing you.']},
+        {parts:['I hope this letter finds you well. I have some exciting news: our school has opened a brand-new ', {k:'place'}, ', and we had our first practical lesson there yesterday.']},
+        {parts:['The room has long white tables with sinks, shiny taps, and cupboards full of ', {k:'items'}, '. Our teacher showed us how to light a Bunsen burner safely and how to test whether a liquid is an ', {k:'prop'}, ' using litmus paper. My partner and I were quite ', {k:'feel'}, ' at first, but our teacher guided us patiently. Everything we had only read about in the textbook suddenly made sense.']},
+        {parts:['I wish you could visit and see it for yourself. Write to me when you can and tell me whether your school has a lab like this. Give my love to Uncle and Aunty.']},
         {parts:[{k:'close'}]},
         {parts:[{k:'name'}]}
       ],
-      blanks: { addr1:{answer:'45 Lake View Road'}, addr2:{answer:'Jaipur'}, date:{answer:'2 March 2026'}, sal:{answer:'Dear Sameer,'}, event:{answer:'birthday celebration'}, edate:{answer:'10 March 2026'}, time:{answer:'5:00 PM'}, feel:{answer:'happy'}, close:{answer:'Yours affectionately,'}, name:{answer:'Kunal'} },
-      bank: ['45 Lake View Road','Jaipur','2 March 2026','Dear Sameer,','birthday celebration','10 March 2026','5:00 PM','happy','Yours affectionately,','Kunal','Regards,','meeting','9:00 AM']
+      blanks: { addr1:{answer:'7 Gandhi Road'}, addr2:{answer:'Bhopal'}, date:{answer:'22 September 2026'}, sal:{answer:'Dear Tanvi,'}, place:{answer:'science laboratory'}, items:{answer:'glass apparatus'}, prop:{answer:'acid'}, feel:{answer:'nervous'}, close:{answer:'Yours affectionately,'}, name:{answer:'Rohan'} },
+      bank: ['7 Gandhi Road','Bhopal','22 September 2026','Dear Tanvi,','science laboratory','glass apparatus','acid','nervous','Yours affectionately,','Rohan','Respected Madam,','Yours faithfully,','alkali']
     },
     {
-      title: 'Tap-to-fill informal letter (3) — thanking',
-      scenario: 'You are Neha. Write a letter to your grandmother thanking her for the lovely gift she sent you.',
+      title: 'Tap-to-fill informal letter (3) — something new I learnt',
+      scenario: 'You are Aditi. Write a letter to your friend about the swimming classes you joined this summer.',
       template: [
         {parts:[{k:'addr1'}], style:'margin:0;'},
         {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
         {parts:[{k:'date'}]},
         {parts:[{k:'sal'}]},
-        {parts:['I hope you are keeping well. I am writing to thank you for the beautiful ', {k:'event'}, ' you sent me for my birthday.']},
-        {parts:['I was so ', {k:'feel'}, ' when I opened the parcel and saw it. I have been using it every day, and it always reminds me of your ', {k:'value'}, ' and care.']},
-        {parts:['Thank you once again for making my day so special. I miss you and hope to visit you soon during the holidays.']},
+        {parts:['I hope your holidays are going well. I have finally done something I was afraid of for years: I have joined ', {k:'act'}, ' at the community pool near my house.']},
+        {parts:['For the first three days I only practised putting my face in the water and blowing ', {k:'noun'}, '. My coach, a cheerful young woman, never let me give up. By the end of the first week I could float on my back, and yesterday I swam a whole ', {k:'dist'}, ' without stopping. I was so ', {k:'feel'}, ' that I clapped for myself in the middle of the pool!']},
+        {parts:['The classes have also made me stronger and far less afraid of water. Do join me next summer if you can. Write soon and tell me how you are spending your holidays.']},
         {parts:[{k:'close'}]},
         {parts:[{k:'name'}]}
       ],
-      blanks: { addr1:{answer:'8 Rose Garden Lane'}, addr2:{answer:'Lucknow'}, date:{answer:'25 April 2026'}, sal:{answer:'Dear Grandma,'}, event:{answer:'storybook'}, feel:{answer:'delighted'}, value:{answer:'love'}, close:{answer:'Yours lovingly,'}, name:{answer:'Neha'} },
-      bank: ['8 Rose Garden Lane','Lucknow','25 April 2026','Dear Grandma,','storybook','delighted','love','Yours lovingly,','Neha','Respected Madam,','Regards,','angry','forgotten']
+      blanks: { addr1:{answer:'33 Riverside Apartments'}, addr2:{answer:'Kochi'}, date:{answer:'12 May 2026'}, sal:{answer:'Dear Sneha,'}, act:{answer:'swimming classes'}, noun:{answer:'bubbles'}, dist:{answer:'length'}, feel:{answer:'proud'}, close:{answer:'Yours lovingly,'}, name:{answer:'Aditi'} },
+      bank: ['33 Riverside Apartments','Kochi','12 May 2026','Dear Sneha,','swimming classes','bubbles','length','proud','Yours lovingly,','Aditi','Respected Sir,','Yours faithfully,','relieved']
     },
     {
-      title: 'Tap-to-fill informal letter (4) — advising a friend',
-      scenario: 'You are Arjun. Write a letter to your friend advising him/her to read books regularly during the holidays.',
+      title: 'Tap-to-fill informal letter (4) — saying sorry',
+      scenario: 'You are Farhan. Write a letter to your friend apologising for losing a book you had borrowed from him/her.',
       template: [
         {parts:[{k:'addr1'}], style:'margin:0;'},
         {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
         {parts:[{k:'date'}]},
         {parts:[{k:'sal'}]},
-        {parts:['I hope you are enjoying your holidays. I am writing to suggest that you spend some time reading ', {k:'event'}, ' every day.']},
-        {parts:['Reading regularly improves our vocabulary and makes us more ', {k:'feel'}, ' and confident. I have been reading an adventure story this week, and it has been both fun and ', {k:'value'}, '.']},
-        {parts:['Do try to make reading a daily habit. I am sure you will enjoy it. Write back soon and tell me about the books you choose.']},
+        {parts:['I hope you are well. I am writing with an apology that I should have sent much ', {k:'adv'}, '. Do you remember the ', {k:'item'}, ' you lent me last month? I have lost it.']},
+        {parts:['I kept it in my school bag, and I think it fell out on the bus during the heavy rain on Monday. I searched the bus, the lost-and-found desk, and even the conductor, but nobody had seen it. I feel terrible because it was your ', {k:'adj'}, ' copy, and you trusted me with it.']},
+        {parts:['I have already ordered a new copy from the bookshop, and it should reach me by Friday. I will bring it to you myself. I hope you will not mind waiting for a few days. Please forgive my ', {k:'noun'}, ', and thank you for being such a patient friend.']},
         {parts:[{k:'close'}]},
         {parts:[{k:'name'}]}
       ],
-      blanks: { addr1:{answer:'21 Hill Road'}, addr2:{answer:'Shimla'}, date:{answer:'5 June 2026'}, sal:{answer:'Dear Mohit,'}, event:{answer:'books'}, feel:{answer:'knowledgeable'}, value:{answer:'interesting'}, close:{answer:'Yours lovingly,'}, name:{answer:'Arjun'} },
-      bank: ['21 Hill Road','Shimla','5 June 2026','Dear Mohit,','books','knowledgeable','interesting','Yours lovingly,','Arjun','Regards,','Respected Sir,','careless','boring']
+      blanks: { addr1:{answer:'5 Bakery Lane'}, addr2:{answer:'Hyderabad'}, date:{answer:'3 November 2026'}, sal:{answer:'Dear Nikhil,'}, adv:{answer:'earlier'}, item:{answer:'detective novel'}, adj:{answer:'favourite'}, noun:{answer:'carelessness'}, close:{answer:'Yours affectionately,'}, name:{answer:'Farhan'} },
+      bank: ['5 Bakery Lane','Hyderabad','3 November 2026','Dear Nikhil,','earlier','detective novel','favourite','carelessness','Yours affectionately,','Farhan','Regards,','Yours faithfully,','kindness']
     }
   ];
   letterQs.forEach(function(q,i){ makeTapFill(panelLetter, (i+2)+'.', q); });
+
+  // INFORMAL INVITATION TAB
+  makeSequenceCard(panelInvite, 'Arrange the parts of an informal invitation letter in the correct order', [
+    'Sender’s address',
+    'Date',
+    'Salutation (e.g. Dear Aarav,)',
+    'Opening: the reason for writing (the invitation)',
+    'Details: what, when and where',
+    'What to bring or how to reply',
+    'Closing: hope they can come',
+    'Subscription (e.g. Yours affectionately,)',
+    'Sender’s name'
+  ]);
+
+  var inviteQs = [
+    {
+      title: 'Tap-to-fill invitation (1) — a night of star-gazing',
+      scenario: 'You are Dev. Write a letter inviting your friend to a star-gazing evening on your terrace.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. My father has borrowed a small telescope for the weekend, and I am inviting a few friends to my ', {k:'place'}, ' on Saturday to look at the night sky.']},
+        {parts:['I would love you to join us on our terrace in Dehradun on ', {k:'eventDate'}, ' at ', {k:'eventTime'}, '.']},
+        {parts:['My father will show us the craters of the moon, the rings of Saturn, and perhaps a shooting star or two. Amma is making hot ', {k:'food'}, ' and sandwiches, so we will not feel the cold. Please bring a warm ', {k:'item'}, ' and, if you have one, a pair of binoculars.']},
+        {parts:['It would be wonderful to have you with us. Tell me by Thursday so that I can arrange a sleeping bag for you. I am looking forward to a night full of stars and stories.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'18 Hill View Road'}, addr2:{answer:'Dehradun'}, date:{answer:'6 January 2026'}, sal:{answer:'Dear Aarav,'}, place:{answer:'terrace'}, eventDate:{answer:'10 January 2026'}, eventTime:{answer:'7:30 PM'}, food:{answer:'cocoa'}, item:{answer:'jacket'}, close:{answer:'Yours affectionately,'}, name:{answer:'Dev'} },
+      bank: ['18 Hill View Road','Dehradun','6 January 2026','Dear Aarav,','terrace','10 January 2026','7:30 PM','cocoa','jacket','Yours affectionately,','Dev','Respected Sir,','Yours faithfully,','4:00 PM']
+    },
+    {
+      title: 'Tap-to-fill invitation (2) — our school science fair',
+      scenario: 'You are Diya. Write a letter inviting your cousin to your school’s science fair next Saturday.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. Our school is holding its annual ', {k:'event'}, ' next Saturday, and I would love you to come and see it with your family.']},
+        {parts:['Please come to our school in Surat on ', {k:'eventDate'}, ' from ', {k:'eventTime'}, ' to enjoy the fair with me.']},
+        {parts:['My group has built a working model of a ', {k:'model'}, ', and we will explain it to visitors. There will be more than fifty stalls, with robots, simple machines, and a planetarium show in the audio-visual room. Our teacher says the best stalls win a small prize.']},
+        {parts:['Please ask Uncle to drop you at the main gate at ten, and I will meet you there. Do tell me by Wednesday whether you can come, because I want to show you our poster before the crowd arrives.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'26 Rose Villa'}, addr2:{answer:'Surat'}, date:{answer:'14 February 2026'}, sal:{answer:'Dear Meher,'}, event:{answer:'science fair'}, eventDate:{answer:'21 February 2026'}, eventTime:{answer:'10:00 AM to 4:00 PM'}, model:{answer:'rainwater harvester'}, close:{answer:'Yours lovingly,'}, name:{answer:'Diya'} },
+      bank: ['26 Rose Villa','Surat','14 February 2026','Dear Meher,','science fair','21 February 2026','10:00 AM to 4:00 PM','rainwater harvester','Yours lovingly,','Diya','Respected Madam,','Yours faithfully,','7:00 PM']
+    },
+    {
+      title: 'Tap-to-fill invitation (3) — mango season at the farm',
+      scenario: 'You are Ishaan. Write a letter inviting your friend to spend a few days at your uncle’s farm during the mango season.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. My uncle has invited me to his ', {k:'place'}, ' for the last week of May, and he has kindly said that I may bring a friend.']},
+        {parts:['I hope you can join me at my uncle’s farm near Ludhiana from ', {k:'eventDate'}, '; we can start each day at ', {k:'eventTime'}, '.']},
+        {parts:['The mango trees will be heavy with fruit, and we can help the workers pick baskets of ', {k:'fruit'}, ' every morning. There is also a pond where we can swim, a bicycle each for the lanes, and a pair of gentle bullocks to watch being fed. The whole house smells of ', {k:'food'}, ' and fresh bread all day.']},
+        {parts:['I have started counting the days. We would return on ', {k:'date2'}, ', well before school reopens. Please ask your parents and let me know soon, because Aunty wants to know how many plates to set at the table.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'9 Canal Road'}, addr2:{answer:'Ludhiana'}, date:{answer:'20 April 2026'}, sal:{answer:'Dear Vivaan,'}, place:{answer:'farm'}, eventDate:{answer:'24 to 30 May 2026'}, eventTime:{answer:'8:00 a.m.'}, fruit:{answer:'mangoes'}, food:{answer:'pickle'}, date2:{answer:'30 May'}, close:{answer:'Yours affectionately,'}, name:{answer:'Ishaan'} },
+      bank: ['9 Canal Road','Ludhiana','20 April 2026','Dear Vivaan,','farm','24 to 30 May 2026','8:00 a.m.','mangoes','pickle','30 May','Yours affectionately,','Ishaan','Regards,','Yours faithfully,','orchard']
+    },
+    {
+      title: 'Tap-to-fill invitation (4) — a book-swap party',
+      scenario: 'You are Naina. Write a letter inviting your friend to a book-swap party at your home on Sunday.',
+      template: [
+        {parts:[{k:'addr1'}], style:'margin:0;'},
+        {parts:[{k:'addr2'}], style:'margin:0 0 8px 0;'},
+        {parts:[{k:'date'}]},
+        {parts:[{k:'sal'}]},
+        {parts:['I hope you are well. I am having a small ', {k:'event'}, ', and I immediately thought of you because you always find the best titles.']},
+        {parts:['I am having a small book-swap party at my home, 41 Library Street, Kolkata, on Sunday, ', {k:'eventDate'}, ', at ', {k:'eventTime'}, ', and I would be delighted if you could join us.']},
+        {parts:['The idea is simple: everyone brings two books they have finished reading and goes home with two new ones. We will spread a mat on the ', {k:'place'}, ', put out cushions, and spend the afternoon reading, talking and eating. Amma is baking ', {k:'food'}, ', and I have made a list of books to recommend to you.']},
+        {parts:['Please bring the two books you are ready to part with. Do tell me by Friday, so that I can write a name tag for each reader. I am looking forward to swapping stories with you.']},
+        {parts:[{k:'close'}]},
+        {parts:[{k:'name'}]}
+      ],
+      blanks: { addr1:{answer:'41 Library Street'}, addr2:{answer:'Kolkata'}, date:{answer:'8 December 2026'}, sal:{answer:'Dear Tara,'}, event:{answer:'book-swap party'}, eventDate:{answer:'13 December 2026'}, place:{answer:'floor'}, food:{answer:'cookies'}, eventTime:{answer:'4:00 PM'}, close:{answer:'Yours lovingly,'}, name:{answer:'Naina'} },
+      bank: ['41 Library Street','Kolkata','8 December 2026','Dear Tara,','book-swap party','13 December 2026','floor','cookies','4:00 PM','Yours lovingly,','Naina','Respected Sir,','Yours faithfully,','terrace']
+    }
+  ];
+  inviteQs.forEach(function(q,i){ makeTapFill(panelInvite, (i+2)+'.', q); });
 
 })();
 </script>
